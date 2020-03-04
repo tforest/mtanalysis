@@ -1,0 +1,304 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Hyafin1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Hyafin1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	156	cox1_Hyafin1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	350997	59	156	1.08333e-59	191.928	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_1	Generic	Low-spin heme binding site	S82,R86,Y103,H110,M114,I115,V119	15	7	238461
+1	Query_1	Generic	D-pathway	Y67,N129,D140,N147,S150	9	5	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	387	cob_Hyafin1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	214425	5	381	1.7062e-178	500.968	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	321	orf321_1_Hyafin1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	73	169	1.94825e-20	84.2102	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	205	303	6.18983e-09	52.6239	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	665	nad5_Hyafin1_feature_11_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	177253	1	628	0	610.472	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	312	orf312_1_Hyafin1_feature_15_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	71	162	4.97754e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	186	279	1.49558e-10	57.2463	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	89	nad4L_Hyafin1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	351118	5	86	2.9422e-14	61.9718	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	251	cox2_Hyafin1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214438	19	248	1.25731e-112	322.548	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	417	nad3_Hyafin1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334119	19	113	2.41621e-17	76.685	pfam00507	Oxidored_q4	-	351141
+1	Query_9	Specific	189968	226	265	2.19237e-07	47.4838	pfam01391	Collagen	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	563	nad2_Hyafin1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	235603	2	487	3.32134e-83	267.457	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	60	orf61_Hyafin1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	353929	2	49	1.43094e-08	46.0648	cl15257	GIY-YIG_SF	N	-
+ENDDOMAINS
+SITES
+1	Query_11	Generic	active site	E34	6	1	198380
+1	Query_11	Generic	catalytic site	E34	2	1	198380
+1	Query_11	Generic	metal binding site	E34	1	1	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	269	cox3_Hyafin1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	278911	12	269	3.27123e-135	381.758	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_14	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_14	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_14	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,N190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_14	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_14	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_14	Specific	Phospholipid binding site	W65,W66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	248	nad6_Hyafin1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	354830	22	114	7.57966e-19	81.4209	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	259	atp6_Hyafin1_feature_93_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	273458	34	256	1.01962e-48	160.064	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	48	atp8_Hyafin1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	283561	1	48	4.41213e-10	48.1714	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	487	nad4_Hyafin1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	235622	1	484	8.50121e-130	385.71	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	361	nad1_Hyafin1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	333876	14	344	1.40972e-117	342.53	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	74	atp9_Hyafin1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	349422	6	70	2.90703e-19	72.9275	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	228	orf229_Hyafin1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	273636	8	209	1.22384e-28	107.086	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	461	orf462_Hyafin1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	350997	24	98	1.67774e-46	167.66	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_24	Specific	334330	198	276	4.59024e-11	59.1723	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_24	Generic	Low-spin heme binding site	Y94	15	1	238461
+1	Query_24	Generic	K-pathway	T39,K42	7	2	238461
+1	Query_24	Generic	Putative proton exit pathway	H91,D92	5	2	238461
+1	Query_24	Generic	Putative water exit pathway	D87,H91,D92	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_25	Peptide	221	orf221_Hyafin1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	91	188	1.56483e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	210	orf211_Hyafin1_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Superfamily	350997	10	97	1.24828e-31	119.51	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+1	Query_26	Generic	Binuclear center (active site)	H55,H56	4	2	238461
+1	Query_26	Generic	K-pathway	Y10,S21,H55,H56,K72	7	5	238461
+1	Query_26	Generic	Putative proton exit pathway	H56	5	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	469	orf470_Hyafin1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	350997	1	133	2.42118e-76	246.626	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_27	Specific	334330	332	428	1.88755e-20	85.751	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	223	286	0.000888939	38.3715	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+SITES
+1	Query_27	Generic	Binuclear center (active site)	H130	4	1	238461
+1	Query_27	Generic	Low-spin heme binding site	W16	15	1	238461
+1	Query_27	Generic	D-pathway	S46,S47,N53,T57	9	4	238461
+1	Query_27	Generic	K-pathway	H130	7	1	238461
+1	Query_27	Generic	Putative water exit pathway	D117,Q122,H123	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	259	atp6_Hyafin1_feature_5_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	351082	34	152	6.89126e-22	90.3432	cl00413	ATP-synt_A	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	48	atp8_Hyafin1_feature_7_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	283561	1	48	4.41213e-10	48.1714	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	487	nad4_Hyafin1_feature_9_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Non-specific	235622	1	140	2.57827e-17	84.0985	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	361	nad1_Hyafin1_feature_11_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	333876	14	344	1.40972e-117	342.53	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	74	atp9_Hyafin1_feature_15_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	349422	6	70	2.90703e-19	72.9275	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_34	Peptide	570	cox1_Hyafin1_feature_23_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	238833	53	554	0	829.433	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_34	Specific	Binuclear center (heme a3/CuB)	H283,H332,H333,H418	4	4	238833
+1	Query_34	Specific	Low-spin heme (heme a) binding site	H104,H420,S424,T466,S503	5	5	238833
+1	Query_34	Specific	D-pathway	Y61,N123,D134,N141,S144,S199,S200,N206,T210	9	9	238833
+1	Query_34	Specific	K-pathway	H283,Y287,S298,H332,H333,T358,K361	7	7	238833
+1	Query_34	Specific	Electron transfer pathway	F419,R480,R481	3	3	238833
+1	Query_34	Specific	Putative proton exit pathway	H333,H410,D411,R480,R481	5	5	238833
+1	Query_34	Specific	Putative water exit pathway	D270,Q275,H276,D406,H410,D411,R480	7	7	238833
+1	Query_34	Specific	Subunit I/II interface	N98,D270,K307,F310,G311,T336,V337,G338,V341,R344,L352,I360,F363,Y370,G371,G372,L384,N402,A403,L405,I407,A408,F409,H410,D411,L475,Q476,R480,R481,I482,G491,W492	32	32	238833
+1	Query_34	Specific	Subunit I/III interface	P133,F137,R139,W146,D187,F191,T209,N213,V233,L240,P243,M251,T260,S261,F262,G267,G268,D270,F280,Y317,M320,G323,V324,V328	25	24	238833
+1	Query_34	Specific	Subunit I/IV interface	L81,S84,G85,M450,K453,V454,D487,V505	8	8	238833
+1	Query_34	Specific	Subunit I/Vb interface	S308,Y312,A553	3	3	238833
+1	Query_34	Specific	Subunit I/VIa interface	I178,R256,N257,F258,N259	5	5	238833
+1	Query_34	Specific	Subunit I/VIb interface	G338	1	1	238833
+1	Query_34	Specific	Subunit I/VIc interface	G371	1	1	238833
+1	Query_34	Specific	Subunit I/VIIa interface	F157,G160	2	2	238833
+1	Query_34	Specific	Subunit I/VIIb interface	D487,G491	2	2	238833
+1	Query_34	Specific	Subunit I/VIIc interface	F67,L71,A74,L78,S159,G160,I442,Y515,L518	9	9	238833
+1	Query_34	Specific	Subunit I/VIIIb interface	L451,W508	2	2	238833
+1	Query_34	Specific	Dimer interface	V233,L240,F280,Y317,M320,G323,V324,V328	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	274	orf274_Hyafin1_feature_27_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Non-specific	273636	54	255	1.43942e-27	105.546	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_36	Peptide	363	orf363_Hyafin1_feature_31_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	100	178	1.35457e-10	57.6315	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	317	orf317_Hyafin1_feature_35_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	187	284	1.04838e-14	68.8022	pfam00961	LAGLIDADG_1	-	45
+2	Query_37	Specific	334330	82	157	0.000645607	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	336	orf336_Hyafin1_feature_39_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	334330	199	295	5.12816e-19	80.7434	pfam00961	LAGLIDADG_1	-	45
+2	Query_38	Specific	334330	90	153	0.00508364	35.6751	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	387	cob_Hyafin1_feature_42_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	214425	5	381	1.7062e-178	500.968	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	321	orf321_2_Hyafin1_feature_46_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	334330	73	169	1.94825e-20	84.2102	pfam00961	LAGLIDADG_1	-	45
+2	Query_40	Specific	334330	205	303	6.18983e-09	52.6239	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	665	nad5_Hyafin1_feature_49_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Non-specific	177253	1	628	0	610.472	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	312	orf312_2_Hyafin1_feature_53_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	71	162	4.97754e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+2	Query_42	Specific	334330	186	279	1.49558e-10	57.2463	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	89	nad4L_Hyafin1_feature_56_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	351118	5	86	2.9422e-14	61.9718	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	145	cox2_Hyafin1_feature_62_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	259979	7	141	1.07599e-86	248.639	cd13912	CcO_II_C	-	354382
+ENDDOMAINS
+SITES
+2	Query_45	Specific	CuA binding site	H80,C115,E117,C119,H123,M126	6	6	259979
+2	Query_45	Specific	subunit I/II interface	K90,D92,P95,R97,N99,Q114,C115,S116,E117,I121,H123,S124	12	12	259979
+2	Query_45	Specific	subunit II/IV interface	T110,Y112	2	2	259979
+2	Query_45	Specific	subunit II/VIb interface	P7,A8,S10,L12,Q23,R70,A76,R97,L98,N99,Q100	11	11	259979
+2	Query_45	Specific	subunit II/VIc interface	D58,R60,E65,L66,E108	5	5	259979
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

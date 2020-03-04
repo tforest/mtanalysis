@@ -1,0 +1,244 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Hetpy1_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Hetpy1_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_5	Peptide	73	atp9_Hetpy1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	349422	6	70	3.48009e-20	75.2387	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	99	orf99_Hetpy1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	238828	2	92	8.64446e-31	108.057	cd01651	RT_G2_intron	NC	295487
+ENDDOMAINS
+SITES
+1	Query_6	Specific	putative nucleic acid binding site	G80	1	1	238828
+1	Query_6	Specific	putative NTP binding site	D26,I27,L28,G29,L30,F31,Q79	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	178	orf178_Hetpy1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	275209	1	159	6.21765e-53	171.872	TIGR04416	group_II_RT_mat	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	170	orf170_Hetpy1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	279664	5	101	8.72592e-15	67.1095	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	144	orf144_Hetpy1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	238828	51	138	1.35884e-31	111.909	cd01651	RT_G2_intron	C	295487
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	171	nad6_Hetpy1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	354830	5	167	1.26149e-27	101.616	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	87	nad4L_Hetpy1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	351118	2	86	2.4881e-15	64.4279	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	631	nad5_Hetpy1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	177253	1	629	0	608.161	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	256	atp6_Hetpy1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	273458	25	253	4.08551e-50	163.916	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	384	cob_Hetpy1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	177203	3	366	4.31284e-167	472.082	MTH00145	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	124	orf124_Hetpy1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	279664	56	116	1.5299e-05	41.3011	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	119	nad3_Hetpy1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334119	18	112	4.88487e-31	105.575	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	509	nad2_Hetpy1_feature_93_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	235603	10	442	6.9663e-87	275.161	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	251	cox2_Hetpy1_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	177126	12	251	5.02377e-117	334.056	MTH00051	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	537	cob_Hetpy1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	177203	1	311	1.02379e-139	408.524	MTH00145	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	266	cox3_Hetpy1_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	278911	9	265	8.75447e-111	319.741	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_27	Specific	Subunit I/III interface	A79,K82,G83,S94,F97,A101,I102,H108,G196,V197,S200,F204	12	12	238834
+1	Query_27	Specific	Subunit III/Vb interface	N163	1	1	238834
+1	Query_27	Specific	Subunit III/VIa interface	F132,E133,L134,F151,V177,V187,S188,A189,S194,D195,G196	11	11	238834
+1	Query_27	Specific	Subunit III/VIb interface	M124	1	1	238834
+1	Query_27	Specific	Subunit III/VIIa interface	L61,R64,D65,A68,T71,L72,L73	7	7	238834
+1	Query_27	Specific	Phospholipid binding site	W62,F63,V66,V67,G70,H76,G87,M88,F91,M219,R226,L238,G239	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	391	orf392_Hetpy1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334330	120	216	2.60984e-13	65.3354	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	334330	262	361	0.000250782	39.9123	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	533	cox1_Hetpy1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	238833	11	490	0	826.351	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_31	Specific	Binuclear center (heme a3/CuB)	H243,H293,H294,H379	4	4	238833
+1	Query_31	Specific	Low-spin heme (heme a) binding site	H64,H381,S385,T427,S464	5	5	238833
+1	Query_31	Specific	D-pathway	Y20,N83,D94,N101,S104,S159,S160,N166,T170	9	9	238833
+1	Query_31	Specific	K-pathway	H243,Y248,S259,H293,H294,T319,K322	7	7	238833
+1	Query_31	Specific	Electron transfer pathway	F380,R441,R442	3	3	238833
+1	Query_31	Specific	Putative proton exit pathway	H294,H371,D372,R441,R442	5	5	238833
+1	Query_31	Specific	Putative water exit pathway	D230,Q235,H236,D367,H371,D372,R441	7	7	238833
+1	Query_31	Specific	Subunit I/II interface	N58,D230,K268,F271,G272,A297,V298,G299,V302,R305,M313,I321,F324,Y331,G332,G333,M345,N363,A364,L366,V368,A369,L370,H371,D372,L436,A437,R441,R442,I443,E452,W453	32	32	238833
+1	Query_31	Specific	Subunit I/III interface	T11,P93,F97,R99,W106,D147,F151,T169,N173,I193,L200,P203,M211,T220,S221,F222,G227,G228,D230,F240,Y278,F281,G284,I285,I289	25	25	238833
+1	Query_31	Specific	Subunit I/IV interface	M40,S43,S44,Q411,H414,I415,D448,V466	8	8	238833
+1	Query_31	Specific	Subunit I/VIa interface	L138,R216,N217,F218,N219	5	5	238833
+1	Query_31	Specific	Subunit I/VIb interface	G299	1	1	238833
+1	Query_31	Specific	Subunit I/VIc interface	G332	1	1	238833
+1	Query_31	Specific	Subunit I/VIIa interface	S117,L120	2	2	238833
+1	Query_31	Specific	Subunit I/VIIb interface	D448,E452	2	2	238833
+1	Query_31	Specific	Subunit I/VIIc interface	F26,L30,A33,L37,A119,L120,I403,W476,L479	9	9	238833
+1	Query_31	Specific	Subunit I/VIIIb interface	L412,A469	2	2	238833
+1	Query_31	Specific	Dimer interface	I193,L200,F240,Y278,F281,G284,I285,I289	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_33	Peptide	397	orf397_Hetpy1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	339260	277	348	3.09146e-05	41.7644	pfam14528	LAGLIDADG_3	-	352872
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	470	orf470_Hetpy1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Superfamily	353929	179	234	1.18633e-06	46.45	cl15257	GIY-YIG_SF	C	-
+1	Query_34	Specific	197761	309	359	0.000192992	39.0882	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+1	Query_34	Generic	active site	Y182,Y193,G195,R203,Y207	6	5	198380
+1	Query_34	Generic	catalytic site	R203	2	1	198380
+1	Query_34	Generic	GIY-YIG motif/motif A	G180,I181,Y182,Y193,V194,G195	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	327	orf327_Hetpy1_feature_28_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	334330	186	289	2.00046e-10	56.8611	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	249	nad1_Hetpy1_feature_35_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Specific	333876	1	237	4.99689e-85	255.09	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	39	orf38_Hetpy1_feature_37_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Superfamily	355698	4	37	0.00850718	30.7792	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	480	nad4_Hetpy1_feature_45_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Specific	235622	12	479	2.14207e-143	419.993	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_42	Peptide	58	orf59_Hetpy1_feature_47_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	238038	8	58	1.95993e-06	39.7624	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+2	Query_42	Specific	active site	E31,H33,H34,I35,P37,N48,I49,H53,K54,H57	11	10	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	140	orf140_Hetpy1_feature_49_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Non-specific	275209	11	87	2.28679e-05	42.4448	TIGR04416	group_II_RT_mat	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	168	orf168_Hetpy1_feature_53_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	225881	82	166	1.28321e-05	43.6741	COG3344	YkfC	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	181	orf181_Hetpy1_feature_61_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	238828	36	177	4.8633e-75	224.387	cd01651	RT_G2_intron	C	295487
+ENDDOMAINS
+SITES
+2	Query_46	Specific	putative nucleic acid binding site	G164	1	1	238828
+2	Query_46	Specific	putative NTP binding site	D110,I111,K112,K113,C114,F115,Q163	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_47	Peptide	345	orf345_Hetpy1_feature_63_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Non-specific	279664	118	216	1.39769e-23	94.4586	pfam01348	Intron_maturas2	C	45
+2	Query_47	Superfamily	295487	16	94	9.698e-17	78.0116	cl02808	RT_like	N	-
+2	Query_47	Specific	238038	260	310	0.00984199	33.9844	cd00085	HNHc	N	350893
+ENDDOMAINS
+SITES
+2	Query_47	Generic	active site	Y38,D40,D41,L90,S91	13	5	238185
+2	Query_47	Generic	NTP binding site	D40	8	1	238185
+2	Query_47	Specific	active site	E270,H272,H273,I274,H276,N295,R296,C302,R303,H306,H310	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_48	Peptide	48	atp8_Hetpy1_feature_65_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Non-specific	283561	1	48	1.11723e-05	37.0006	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

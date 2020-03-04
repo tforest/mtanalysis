@@ -1,0 +1,151 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Colce1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Colce1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	388	cob_Colce1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	214440	10	367	1.52831e-179	502.775	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	325	orf325_Colce1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	273636	110	321	5.68309e-25	99.7677	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	307	orf307_Colce1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	67	132	1.97176e-06	45.3051	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	101	orf100_Colce1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	355698	21	95	8.35802e-06	42.4552	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	494	nad4_Colce1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	235622	41	491	2.0974e-132	392.643	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	548	cox1_Colce1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	238833	25	527	0	862.945	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_9	Specific	Binuclear center (heme a3/CuB)	H256,H305,H306,H391	4	4	238833
+1	Query_9	Specific	Low-spin heme (heme a) binding site	H77,H393,S397,T439,S476	5	5	238833
+1	Query_9	Specific	D-pathway	Y34,N96,D107,N114,S117,S172,S173,N179,T183	9	9	238833
+1	Query_9	Specific	K-pathway	H256,Y260,S271,H305,H306,T331,K334	7	7	238833
+1	Query_9	Specific	Electron transfer pathway	F392,R453,R454	3	3	238833
+1	Query_9	Specific	Putative proton exit pathway	H306,H383,D384,R453,R454	5	5	238833
+1	Query_9	Specific	Putative water exit pathway	D243,Q248,H249,D379,H383,D384,R453	7	7	238833
+1	Query_9	Specific	Subunit I/II interface	N71,D243,K280,F283,G284,T309,V310,G311,V314,R317,L325,I333,F336,Y343,G344,G345,L357,N375,A376,L378,I380,A381,F382,H383,D384,L448,Q449,R453,R454,I455,G464,W465	32	32	238833
+1	Query_9	Specific	Subunit I/III interface	T25,P106,F110,R112,W119,D160,F164,T182,N186,I206,L213,P216,M224,T233,S234,F235,G240,G241,D243,F253,Y290,M293,G296,I297,I301	25	25	238833
+1	Query_9	Specific	Subunit I/IV interface	L54,S57,G58,V423,K426,I427,D460,V478	8	8	238833
+1	Query_9	Specific	Subunit I/Vb interface	S281,Y285,A526	3	3	238833
+1	Query_9	Specific	Subunit I/VIa interface	L151,R229,N230,F231,N232	5	5	238833
+1	Query_9	Specific	Subunit I/VIb interface	G311	1	1	238833
+1	Query_9	Specific	Subunit I/VIc interface	G344	1	1	238833
+1	Query_9	Specific	Subunit I/VIIa interface	F130,C133	2	2	238833
+1	Query_9	Specific	Subunit I/VIIb interface	D460,G464	2	2	238833
+1	Query_9	Specific	Subunit I/VIIc interface	F40,L44,A47,L51,A132,C133,I415,Y488,L491	9	9	238833
+1	Query_9	Specific	Subunit I/VIIIb interface	L424,W481	2	2	238833
+1	Query_9	Specific	Dimer interface	I206,L213,F253,Y290,M293,G296,I297,I301	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	368	nad1_Colce1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	333876	12	351	2.24816e-107	316.722	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	54	atp8_Colce1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	283561	1	48	2.71658e-08	43.9342	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	263	atp6_Colce1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	273458	33	260	1.39736e-51	167.768	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	269	cox3_Colce1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	278911	12	269	1.51856e-131	372.514	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_15	Specific	Subunit I/III interface	A82,K85,G86,S97,M100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_15	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_15	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_15	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_15	Specific	Subunit III/VIIa interface	L64,R67,D68,A71,T74,F75,L76	7	7	238834
+1	Query_15	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_17	Peptide	236	nad6_Colce1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	354830	22	228	3.71785e-19	81.5857	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	561	nad2_Colce1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	235603	124	486	1.20063e-82	265.916	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	136	nad3_Colce1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334119	26	113	6.33886e-13	60.1214	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	74	atp9_Colce1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	349422	6	70	3.90968e-20	75.2387	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	250	cox2_Colce1_feature_105_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	214438	18	249	2.20094e-114	326.785	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	89	nad4L_Colce1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	351118	3	87	7.53104e-17	68.6651	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	660	nad5_Colce1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	177253	1	632	0	617.405	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

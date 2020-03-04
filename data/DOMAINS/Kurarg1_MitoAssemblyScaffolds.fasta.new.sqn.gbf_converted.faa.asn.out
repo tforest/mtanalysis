@@ -1,0 +1,202 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Kurarg1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Kurarg1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	223	orf223_Kurarg1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	355698	4	188	2.36774e-14	71.3452	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	311	orf310_Kurarg1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	355698	19	311	9.08278e-33	125.538	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	328	orf328_Kurarg1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	353041	193	284	0.000468281	40.4163	cl10012	DnaQ_like_exo	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	1450	orf1449_Kurarg1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	355698	552	956	1.65736e-66	232.624	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	99	orf99_Kurarg1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	355698	32	99	1.34324e-05	41.5648	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	251	orf251_Kurarg1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	355698	3	208	9.23363e-16	75.9676	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	297	orf297_Kurarg1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	314924	38	166	0.0083621	37.7606	pfam12128	DUF3584	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	252	cox2_Kurarg1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	214402	1	251	6.12265e-113	324.011	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	73	atp9_Kurarg1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	349422	6	70	1.35959e-14	60.9863	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	52	atp8_Kurarg1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	283561	1	48	2.34629e-05	36.6154	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	121	nad3_Kurarg1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334119	28	113	1.49867e-27	96.7154	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	697	nad2_Kurarg1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	356474	146	583	7.0198e-61	211.218	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	209	nad6_Kurarg1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	354830	1	203	5.25767e-20	83.1265	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	500	nad4_Kurarg1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	235622	22	498	2.26103e-144	423.074	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	347	nad1_Kurarg1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	333876	22	336	6.99289e-122	352.931	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	260	atp6_Kurarg1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	351082	16	260	1.69648e-47	157.861	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	270	cox3_Kurarg1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	177199	12	268	1.8062e-117	336.863	MTH00141	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_24	Specific	Subunit I/III interface	Q82,K85,G86,S97,M100,S104,I105,H111,S199,V200,T203,C207	12	12	238834
+1	Query_24	Specific	Subunit III/Vb interface	A166	1	1	238834
+1	Query_24	Specific	Subunit III/VIa interface	F135,A136,I137,Y154,I180,V190,E191,A192,A197,D198,S199	11	11	238834
+1	Query_24	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_24	Specific	Subunit III/VIIa interface	L64,R67,D68,V71,T74,Y75,L76	7	7	238834
+1	Query_24	Specific	Phospholipid binding site	W65,F66,V69,I70,S73,H79,G90,V91,F94,F222,R229,V241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_25	Peptide	181	orf181_Kurarg1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	70	165	1.84918e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	400	cob_Kurarg1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	177203	3	379	2.86135e-179	503.669	MTH00145	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	298	orf298_Kurarg1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	85	263	3.39216e-40	137.677	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	640	nad5_Kurarg1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	177253	1	615	0	614.709	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	88	nad4L_Kurarg1_feature_105_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	351118	5	88	7.05497e-15	63.5125	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	528	cox1_Kurarg1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	238833	8	512	0	853.7	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_30	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_30	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_30	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_30	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_30	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_30	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_30	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_30	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,S293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,L341,N359,A360,L362,I364,A365,F366,H367,D368,L432,A433,R437,R438,I439,I448,W449	32	32	238833
+1	Query_30	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,V190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,F277,G280,I281,I285	25	25	238833
+1	Query_30	Specific	Subunit I/IV interface	L37,A40,A41,F407,K410,V411,D444,I462	8	8	238833
+1	Query_30	Specific	Subunit I/Vb interface	S265,Y269,S511	3	3	238833
+1	Query_30	Specific	Subunit I/VIa interface	I135,R213,N214,F215,N216	5	5	238833
+1	Query_30	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_30	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_30	Specific	Subunit I/VIIa interface	V114,L117	2	2	238833
+1	Query_30	Specific	Subunit I/VIIb interface	D444,I448	2	2	238833
+1	Query_30	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,S116,L117,I399,Y472,F475	9	9	238833
+1	Query_30	Specific	Subunit I/VIIIb interface	L408,V465	2	2	238833
+1	Query_30	Specific	Dimer interface	V190,L197,F237,Y274,F277,G280,I281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_31	Peptide	359	orf359_Kurarg1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	334330	203	303	1.17368e-16	74.5802	pfam00961	LAGLIDADG_1	-	45
+1	Query_31	Specific	334330	84	165	0.000830402	37.9863	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	362	orf362_Kurarg1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	334330	235	331	4.87113e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+1	Query_32	Specific	334330	118	205	1.21155e-10	57.6315	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_35	Peptide	222	orf223_Kurarg1_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	335245	29	204	3.07191e-43	143.07	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

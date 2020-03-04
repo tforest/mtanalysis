@@ -1,0 +1,165 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Lashi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Lashi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	219	nad6_Lashi1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	354830	22	214	2.76631e-17	76.1929	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	269	cox3_Lashi1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	278911	12	269	3.15667e-134	379.062	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_3	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_3	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_3	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_3	Specific	Subunit III/VIb interface	I127	1	1	238834
+1	Query_3	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_3	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,I91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	268	atp6_Lashi1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	273458	43	265	1.49573e-49	162.761	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	50	atp8_Lashi1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	283561	1	48	1.5727e-08	44.3194	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	509	nad4_Lashi1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235622	49	506	1.65399e-123	370.302	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	370	nad1_Lashi1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	333876	26	353	1.67005e-110	324.811	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	551	cox1_Lashi1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	238833	30	532	0	844.07	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Binuclear center (heme a3/CuB)	H261,H310,H311,H396	4	4	238833
+1	Query_8	Specific	Low-spin heme (heme a) binding site	H82,H398,S402,T444,S481	5	5	238833
+1	Query_8	Specific	D-pathway	Y39,N101,D112,N119,S122,S177,S178,N184,T188	9	9	238833
+1	Query_8	Specific	K-pathway	H261,Y265,S276,H310,H311,T336,K339	7	7	238833
+1	Query_8	Specific	Electron transfer pathway	F397,R458,R459	3	3	238833
+1	Query_8	Specific	Putative proton exit pathway	H311,H388,D389,R458,R459	5	5	238833
+1	Query_8	Specific	Putative water exit pathway	D248,Q253,H254,D384,H388,D389,R458	7	7	238833
+1	Query_8	Specific	Subunit I/II interface	N76,D248,K285,F288,G289,T314,V315,G316,V319,R322,L330,I338,F341,Y348,G349,G350,L362,N380,A381,L383,I385,A386,F387,H388,D389,L453,Q454,R458,R459,I460,G469,W470	32	32	238833
+1	Query_8	Specific	Subunit I/III interface	T30,P111,F115,R117,W124,D165,F169,T187,N191,I211,L218,P221,M229,T238,S239,F240,G245,G246,D248,F258,Y295,M298,G301,V302,I306	25	25	238833
+1	Query_8	Specific	Subunit I/IV interface	M59,S62,G63,T428,K431,A432,D465,V483	8	8	238833
+1	Query_8	Specific	Subunit I/Vb interface	S286,Y290,A531	3	3	238833
+1	Query_8	Specific	Subunit I/VIa interface	V156,R234,N235,F236,N237	5	5	238833
+1	Query_8	Specific	Subunit I/VIb interface	G316	1	1	238833
+1	Query_8	Specific	Subunit I/VIc interface	G349	1	1	238833
+1	Query_8	Specific	Subunit I/VIIa interface	F135,C138	2	2	238833
+1	Query_8	Specific	Subunit I/VIIb interface	D465,G469	2	2	238833
+1	Query_8	Specific	Subunit I/VIIc interface	F45,L49,A52,L56,A137,C138,I420,Y493,L496	9	9	238833
+1	Query_8	Specific	Subunit I/VIIIb interface	L429,F486	2	2	238833
+1	Query_8	Specific	Dimer interface	I211,L218,F258,Y295,M298,G301,V302,I306	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	425	orf425_Lashi1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	190	256	3.32513e-07	48.0015	pfam00961	LAGLIDADG_1	C	45
+1	Query_9	Specific	334330	296	376	0.00864147	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	391	cob_Lashi1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214440	10	367	2.02917e-180	505.086	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	1700	nad5_Lashi1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	634	0	645.91	MTH00210	ND5	-	45
+1	Query_11	Specific	336179	987	1048	7.12894e-08	53.5617	pfam05672	MAP7	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	89	nad4L_Lashi1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	351118	3	86	1.62122e-16	67.7497	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	250	cox2_Lashi1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214438	18	247	4.19773e-111	318.696	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	74	atp9_Lashi1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	349422	6	70	2.57488e-18	70.6163	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	137	nad3_Lashi1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	19	113	1.01797e-19	77.4554	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	563	nad2_Lashi1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	124	481	1.06804e-82	265.916	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	224	cox2_Lashi1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	214438	18	224	3.07037e-98	284.799	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	74	atp9_Lashi1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	349422	6	70	2.57488e-18	70.6163	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	137	nad3_Lashi1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334119	19	113	1.01797e-19	77.4554	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	563	nad2_Lashi1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	235603	124	481	1.06804e-82	265.916	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

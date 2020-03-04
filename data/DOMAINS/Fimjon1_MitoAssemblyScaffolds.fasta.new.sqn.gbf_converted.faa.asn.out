@@ -1,0 +1,400 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Fimjon1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Fimjon1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	386	cob_Fimjon1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	214440	12	367	0	507.398	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	270	atp6_Fimjon1_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	351082	10	242	2.28723e-30	113.07	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	568	nad4_Fimjon1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	235622	9	469	1.66761e-134	400.733	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	242	cox2_Fimjon1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	214402	13	226	9.49962e-89	261.994	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	150	orf150_Fimjon1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	353929	13	122	8.87015e-07	44.1389	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_10	Generic	active site	Y15,Y25,G27,K35,H39,E109	6	6	198380
+1	Query_10	Generic	catalytic site	K35,E109	2	2	198380
+1	Query_10	Generic	metal binding site	E109	1	1	198380
+1	Query_10	Generic	GIY-YIG motif/motif A	G13,I14,Y15,Y25,I26,G27	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	41	orf41_Fimjon1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	355698	4	38	2.96591e-10	51.9652	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	361	nad2_Fimjon1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	356474	97	361	2.90674e-39	144.964	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	321	orf321_Fimjon1_feature_27_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	355698	1	282	3.09127e-49	170.221	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	63	orf63_Fimjon1_feature_29_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	355698	1	47	6.37722e-10	52.3504	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	131	orf131_Fimjon1_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	355698	1	131	4.25763e-23	92.7963	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	66	orf66_Fimjon1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	355698	2	66	1.44613e-06	43.1056	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	207	orf207_Fimjon1_feature_38_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334865	179	204	0.00167598	35.9567	pfam02257	RFX_DNA_binding	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	121	orf121_Fimjon1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	225913	17	119	3.30046e-07	47.0442	COG3378	COG3378	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	651	nad5_Fimjon1_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Non-specific	177253	19	641	6.70851e-165	485.667	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	105	nad4L_Fimjon1_feature_23_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Superfamily	351118	36	83	2.36311e-05	39.6302	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	41	nad3_Fimjon1_feature_25_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Superfamily	351141	2	41	1.72628e-15	63.3445	cl00535	Oxidored_q4	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	322	nad1_Fimjon1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Specific	333876	5	289	3.08906e-89	268.957	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	74	atp9_Fimjon1_feature_9_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_42	Specific	349422	6	69	1.39222e-17	68.6903	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	498	cox1_Fimjon1_feature_11_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_43	Specific	238833	11	479	0	749.697	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_43	Specific	Binuclear center (heme a3/CuB)	H242,H291,H292,H377	4	4	238833
+1	Query_43	Specific	Low-spin heme (heme a) binding site	H64,H379,S383,V425,T462	5	5	238833
+1	Query_43	Specific	D-pathway	Y20,N83,D94,N101,S104,S158,S159,N165,T169	9	9	238833
+1	Query_43	Specific	K-pathway	H242,Y246,S257,H291,H292,T317,K320	7	7	238833
+1	Query_43	Specific	Electron transfer pathway	F378,R439,R440	3	3	238833
+1	Query_43	Specific	Putative proton exit pathway	H292,H369,D370,R439,R440	5	5	238833
+1	Query_43	Specific	Putative water exit pathway	D229,Q234,H235,D365,H369,D370,R439	7	7	238833
+1	Query_43	Specific	Subunit I/II interface	N58,D229,K266,F269,G270,A295,V296,G297,V300,R303,M311,I319,F322,Y329,G330,G331,I343,N361,A362,I364,I366,A367,L368,H369,D370,I434,A435,R439,R440,I441,A450,W451	32	32	238833
+1	Query_43	Specific	Subunit I/III interface	T11,A93,F97,R99,W106,D146,L150,T168,N172,I192,L199,P202,M210,T219,S220,F221,G226,G227,D229,F239,Y276,*279,G282,L283,I287	25	25	238833
+1	Query_43	Specific	Subunit I/IV interface	L40,S43,A44,K409,L412,I413,D446,I464	8	8	238833
+1	Query_43	Specific	Subunit I/VIa interface	T137,R215,N216,L217,N218	5	5	238833
+1	Query_43	Specific	Subunit I/VIb interface	G297	1	1	238833
+1	Query_43	Specific	Subunit I/VIc interface	G330	1	1	238833
+1	Query_43	Specific	Subunit I/VIIa interface	I117,F120	2	2	238833
+1	Query_43	Specific	Subunit I/VIIb interface	D446,A450	2	2	238833
+1	Query_43	Specific	Subunit I/VIIc interface	F26,I30,A33,I37,L119,F120,I401,A474,V477	9	9	238833
+1	Query_43	Specific	Subunit I/VIIIb interface	W410,F467	2	2	238833
+1	Query_43	Specific	Dimer interface	I192,L199,F239,Y276,*279,G282,L283,I287	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_51	Peptide	128	nad2_Fimjon1_feature_8_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_51	Non-specific	214453	14	94	0.00241881	36.1615	MTH00196	ND2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	321	orf321_Fimjon1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_52	Superfamily	355698	1	282	3.09127e-49	170.221	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	63	orf63_Fimjon1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_53	Superfamily	355698	1	47	6.37722e-10	52.3504	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	131	orf131_Fimjon1_feature_9_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_55	Superfamily	355698	1	131	4.25763e-23	92.7963	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	66	orf66_Fimjon1_feature_11_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_56	Superfamily	355698	2	66	1.44613e-06	43.1056	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	207	orf207_Fimjon1_feature_15_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_58	Specific	334865	179	204	0.00167598	35.9567	pfam02257	RFX_DNA_binding	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	128	nad2_Fimjon1_feature_17_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_59	Non-specific	214453	14	94	0.00241881	36.1615	MTH00196	ND2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	50	cox1_Fimjon1_feature_4_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_62	Superfamily	350997	2	33	3.61025e-13	60.9597	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+1	Query_62	Generic	K-pathway	Y4,S15	7	2	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_63	Peptide	305	orf306_Fimjon1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_63	Specific	334330	168	264	1.59459e-15	70.7282	pfam00961	LAGLIDADG_1	-	45
+1	Query_63	Specific	334330	63	131	0.000635079	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	128	nad2_Fimjon1_feature_8_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_64	Non-specific	214453	14	94	0.00241881	36.1615	MTH00196	ND2	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_68	Peptide	121	orf121_Fimjon1_feature_6_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Non-specific	225913	17	119	3.30046e-07	47.0442	COG3378	COG3378	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	226	cox3_Fimjon1_feature_2_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Specific	238834	1	226	2.15791e-87	258.215	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_70	Specific	Subunit I/III interface	A57,R60,G61,S72,M75,S79,F80,H86,S174,V175,N178,M182	12	12	238834
+2	Query_70	Specific	Subunit III/Vb interface	T141	1	1	238834
+2	Query_70	Specific	Subunit III/VIa interface	W110,G111,I112,W129,F155,Y165,Y166,S167,A172,D173,S174	11	11	238834
+2	Query_70	Specific	Subunit III/VIb interface	I102	1	1	238834
+2	Query_70	Specific	Subunit III/VIIa interface	Q40,R43,D44,R47,K50,G51	7	6	238834
+2	Query_70	Specific	Phospholipid binding site	W41,W42,V45,I46,A49,H54,G65,F66,F69,F197,R204,L216,G217	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_72	Peptide	238	nad2_Fimjon1_feature_6_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Superfamily	356474	72	236	7.37802e-09	55.2121	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	41	orf41_Fimjon1_feature_8_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Superfamily	355698	4	38	2.96591e-10	51.9652	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	226	cox3_Fimjon1_feature_2_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_75	Specific	238834	1	226	2.15791e-87	258.215	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_75	Specific	Subunit I/III interface	A57,R60,G61,S72,M75,S79,F80,H86,S174,V175,N178,M182	12	12	238834
+2	Query_75	Specific	Subunit III/Vb interface	T141	1	1	238834
+2	Query_75	Specific	Subunit III/VIa interface	W110,G111,I112,W129,F155,Y165,Y166,S167,A172,D173,S174	11	11	238834
+2	Query_75	Specific	Subunit III/VIb interface	I102	1	1	238834
+2	Query_75	Specific	Subunit III/VIIa interface	Q40,R43,D44,R47,K50,G51	7	6	238834
+2	Query_75	Specific	Phospholipid binding site	W41,W42,V45,I46,A49,H54,G65,F66,F69,F197,R204,L216,G217	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_76	Peptide	129	orf130_Fimjon1_feature_4_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_76	Specific	334330	40	129	8.09177e-14	62.2538	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	66	orf67_Fimjon1_feature_6_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_77	Specific	334330	21	66	1.11152e-05	39.1419	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	131	orf131_Fimjon1_feature_5_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_81	Superfamily	355698	1	131	4.25763e-23	92.7963	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	66	orf66_Fimjon1_feature_7_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_82	Superfamily	355698	2	66	1.44613e-06	43.1056	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	207	orf207_Fimjon1_feature_11_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_84	Specific	334865	179	204	0.00167598	35.9567	pfam02257	RFX_DNA_binding	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_85	Peptide	322	nad1_Fimjon1_feature_13_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_85	Specific	333876	5	289	3.08906e-89	268.957	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	340	nad2_Fimjon1_feature_2_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_86	Superfamily	356474	196	281	1.86637e-21	94.5025	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	66	orf67_Fimjon1_feature_4_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_87	Specific	334330	21	66	1.11152e-05	39.1419	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	129	orf130_Fimjon1_feature_6_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_88	Specific	334330	40	129	8.09177e-14	62.2538	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	226	cox3_Fimjon1_feature_8_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_89	Specific	238834	1	226	2.15791e-87	258.215	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_89	Specific	Subunit I/III interface	A57,R60,G61,S72,M75,S79,F80,H86,S174,V175,N178,M182	12	12	238834
+2	Query_89	Specific	Subunit III/Vb interface	T141	1	1	238834
+2	Query_89	Specific	Subunit III/VIa interface	W110,G111,I112,W129,F155,Y165,Y166,S167,A172,D173,S174	11	11	238834
+2	Query_89	Specific	Subunit III/VIb interface	I102	1	1	238834
+2	Query_89	Specific	Subunit III/VIIa interface	Q40,R43,D44,R47,K50,G51	7	6	238834
+2	Query_89	Specific	Phospholipid binding site	W41,W42,V45,I46,A49,H54,G65,F66,F69,F197,R204,L216,G217	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_92	Peptide	66	orf67_Fimjon1_feature_4_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_92	Specific	334330	21	66	1.11152e-05	39.1419	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_93	Peptide	129	orf130_Fimjon1_feature_6_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_93	Specific	334330	40	129	8.09177e-14	62.2538	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	226	cox3_Fimjon1_feature_8_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_94	Specific	238834	1	226	2.15791e-87	258.215	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_94	Specific	Subunit I/III interface	A57,R60,G61,S72,M75,S79,F80,H86,S174,V175,N178,M182	12	12	238834
+2	Query_94	Specific	Subunit III/Vb interface	T141	1	1	238834
+2	Query_94	Specific	Subunit III/VIa interface	W110,G111,I112,W129,F155,Y165,Y166,S167,A172,D173,S174	11	11	238834
+2	Query_94	Specific	Subunit III/VIb interface	I102	1	1	238834
+2	Query_94	Specific	Subunit III/VIIa interface	Q40,R43,D44,R47,K50,G51	7	6	238834
+2	Query_94	Specific	Phospholipid binding site	W41,W42,V45,I46,A49,H54,G65,F66,F69,F197,R204,L216,G217	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_96	Peptide	132	orf132_Fimjon1_feature_2_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_96	Superfamily	355698	1	124	1.25358e-21	88.5591	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	63	orf63_Fimjon1_feature_4_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_97	Superfamily	355698	1	47	6.37722e-10	52.3504	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	131	orf131_Fimjon1_feature_9_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_99	Superfamily	355698	1	131	4.25763e-23	92.7963	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_100	Peptide	66	orf66_Fimjon1_feature_11_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_100	Superfamily	355698	2	66	1.44613e-06	43.1056	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	207	orf207_Fimjon1_feature_15_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_102	Specific	334865	179	204	0.00167598	35.9567	pfam02257	RFX_DNA_binding	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_103	Peptide	41	orf41_Fimjon1_feature_17_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_103	Superfamily	355698	4	38	2.96591e-10	51.9652	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_104	Peptide	238	nad2_Fimjon1_feature_2_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_104	Superfamily	356474	72	236	7.37802e-09	55.2121	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_105	Peptide	322	nad1_Fimjon1_feature_4_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_105	Specific	333876	5	289	3.08906e-89	268.957	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_107	Peptide	128	nad2_Fimjon1_feature_4_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_107	Non-specific	214453	14	94	0.00241881	36.1615	MTH00196	ND2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_108	Peptide	305	orf306_Fimjon1_feature_6_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_108	Specific	334330	168	264	1.59459e-15	70.7282	pfam00961	LAGLIDADG_1	-	45
+2	Query_108	Specific	334330	63	131	0.000635079	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_109	Peptide	50	cox1_Fimjon1_feature_8_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_109	Superfamily	350997	2	33	3.61025e-13	60.9597	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+2	Query_109	Generic	K-pathway	Y4,S15	7	2	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_110	Peptide	121	orf121_Fimjon1_feature_2_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_110	Non-specific	225913	17	119	3.30046e-07	47.0442	COG3378	COG3378	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

@@ -1,0 +1,173 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Epityp1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Epityp1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	52	atp8_Epityp1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	283561	1	48	8.73595e-05	35.0746	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	478	nad2_Epityp1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	235603	29	466	5.67046e-92	287.487	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	115	nad3_Epityp1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334119	19	112	4.77222e-27	95.1746	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	261	atp6_Epityp1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	351082	19	261	6.23503e-45	151.313	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	530	cox1_Epityp1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	238833	12	514	0	848.308	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Binuclear center (heme a3/CuB)	H244,H293,H294,H379	4	4	238833
+1	Query_6	Specific	Low-spin heme (heme a) binding site	H65,H381,S385,T427,S464	5	5	238833
+1	Query_6	Specific	D-pathway	Y21,N84,D95,N102,S105,S160,S161,N167,T171	9	9	238833
+1	Query_6	Specific	K-pathway	H244,Y248,S259,H293,H294,T319,K322	7	7	238833
+1	Query_6	Specific	Electron transfer pathway	F380,R441,R442	3	3	238833
+1	Query_6	Specific	Putative proton exit pathway	H294,H371,D372,R441,R442	5	5	238833
+1	Query_6	Specific	Putative water exit pathway	D231,Q236,H237,D367,H371,D372,R441	7	7	238833
+1	Query_6	Specific	Subunit I/II interface	N59,D231,K268,F271,G272,A297,V298,G299,V302,R305,M313,I321,F324,Y331,G332,G333,L345,N363,A364,M366,V368,A369,L370,H371,D372,L436,A437,R441,R442,I443,G452,W453	32	32	238833
+1	Query_6	Specific	Subunit I/III interface	T12,P94,F98,R100,W107,D148,F152,V170,N174,V194,L201,P204,M212,T221,S222,F223,G228,G229,D231,F241,Y278,F281,G284,I285,L289	25	25	238833
+1	Query_6	Specific	Subunit I/IV interface	L41,S44,S45,F411,K414,I415,D448,F466	8	8	238833
+1	Query_6	Specific	Subunit I/Vb interface	P269,Y273,T513	3	3	238833
+1	Query_6	Specific	Subunit I/VIa interface	I139,R217,N218,F219,N220	5	5	238833
+1	Query_6	Specific	Subunit I/VIb interface	G299	1	1	238833
+1	Query_6	Specific	Subunit I/VIc interface	G332	1	1	238833
+1	Query_6	Specific	Subunit I/VIIa interface	L118,L121	2	2	238833
+1	Query_6	Specific	Subunit I/VIIb interface	D448,G452	2	2	238833
+1	Query_6	Specific	Subunit I/VIIc interface	F27,I31,A34,L38,S120,L121,I403,F476,F479	9	9	238833
+1	Query_6	Specific	Subunit I/VIIIb interface	L412,I469	2	2	238833
+1	Query_6	Specific	Dimer interface	V194,L201,F241,Y278,F281,G284,I285,L289	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	306	orf306_Epityp1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	353929	59	142	2.7993e-13	64.1692	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_7	Generic	active site	Y61,Y71,G73,R81,Y85,E130	6	6	198380
+1	Query_7	Generic	catalytic site	R81,E130	2	2	198380
+1	Query_7	Generic	metal binding site	E130	1	1	198380
+1	Query_7	Generic	GIY-YIG motif/motif A	G59,V60,Y61,Y71,I72,G73	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	480	nad4_Epityp1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	235622	16	477	6.02198e-136	401.118	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	271	cox3_Epityp1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	238834	27	268	1.94035e-116	333.714	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_10	Specific	Subunit I/III interface	N83,S86,G87,S98,F101,S105,V106,H112,S200,V201,T204,A208	12	12	238834
+1	Query_10	Specific	Subunit III/Vb interface	E167	1	1	238834
+1	Query_10	Specific	Subunit III/VIa interface	F136,G137,I138,F155,I181,Y191,N192,A193,S198,D199,S200	11	11	238834
+1	Query_10	Specific	Subunit III/VIb interface	Q128	1	1	238834
+1	Query_10	Specific	Subunit III/VIIa interface	L65,R68,D69,T72,T75,Y76,L77	7	7	238834
+1	Query_10	Specific	Phospholipid binding site	W66,F67,I70,I71,G74,H80,G91,V92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	245	cox2_Epityp1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	214402	3	245	6.3072e-114	325.937	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	660	nad5_Epityp1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	235836	1	613	0	613.319	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	88	nad4L_Epityp1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	351118	5	87	3.94826e-11	53.8826	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	200	nad6_Epityp1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Superfamily	354830	8	104	1.93149e-21	86.8137	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	336	orf335_Epityp1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	355698	237	332	2.09403e-07	51.9652	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	385	cob_Epityp1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	214440	10	366	2.76564e-170	479.278	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	236	orf236_Epityp1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	335245	47	216	8.17843e-42	139.989	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	339	nad1_Epityp1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	333876	20	326	3.76078e-114	332.9	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	73	atp9_Epityp1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	349422	6	70	3.06645e-15	62.9123	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	975	orf974_Epityp1_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	355698	370	794	4.7821e-63	220.683	cl28058	DNA_pol_B_2	-	-
+1	Query_27	Superfamily	353046	818	899	0.00575677	39.9997	cl10023	POLBc	NC	-
+1	Query_27	Non-specific	234767	224	390	0.0079353	40.2064	PRK00448	polC	C	45
+ENDDOMAINS
+SITES
+1	Query_27	Generic	active site	D849	8	1	99912
+1	Query_27	Generic	metal-binding site 	D847,D849,S850	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	1121	orf1121_Epityp1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	355471	416	1064	1.71644e-60	222.591	cl25973	RNA_pol	N	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

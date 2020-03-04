@@ -1,0 +1,141 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Boledp1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Boledp1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	251	cox2_Boledp1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	214402	9	251	1.66636e-112	322.855	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	73	atp9_Boledp1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	349422	6	70	3.34723e-15	62.5271	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	898	orf898_Boledp1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	281206	309	740	3.04038e-85	280.389	pfam03175	DNA_pol_B_2	-	355698
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	267	atp6_Boledp1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	351082	16	267	6.39007e-47	156.32	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	527	cox1_Boledp1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238833	7	511	0	855.626	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_5	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_5	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_5	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_5	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_5	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_5	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_5	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,S292,V293,G294,V297,R300,M308,I316,F319,Y326,G327,G328,L340,N358,A359,L361,V363,A364,L365,H366,D367,L431,A432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_5	Specific	Subunit I/III interface	T7,P89,F93,R95,W102,D143,F147,T165,N169,V189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_5	Specific	Subunit I/IV interface	M36,M39,S40,F406,Q409,V410,D443,V461	8	8	238833
+1	Query_5	Specific	Subunit I/Vb interface	P264,Y268,S510	3	3	238833
+1	Query_5	Specific	Subunit I/VIa interface	I134,R212,N213,F214,N215	5	5	238833
+1	Query_5	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_5	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_5	Specific	Subunit I/VIIa interface	L113,L116	2	2	238833
+1	Query_5	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_5	Specific	Subunit I/VIIc interface	F22,I26,A29,L33,S115,L116,I398,Y471,F474	9	9	238833
+1	Query_5	Specific	Subunit I/VIIIb interface	L407,V464	2	2	238833
+1	Query_5	Specific	Dimer interface	V189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	53	atp8_Boledp1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	283561	1	48	0.000257063	33.919	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	331	nad1_Boledp1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	333876	13	319	2.00598e-115	335.982	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	383	cob_Boledp1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214440	10	366	2.53095e-161	456.551	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	268	cox3_Boledp1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	238834	22	265	1.19541e-112	323.699	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_9	Specific	Subunit I/III interface	Q80,K83,G84,S95,F98,S102,I103,H109,S197,V198,S201,C205	12	12	238834
+1	Query_9	Specific	Subunit III/Vb interface	N164	1	1	238834
+1	Query_9	Specific	Subunit III/VIa interface	F133,A134,I135,F152,L178,A188,N189,S190,S195,D196,S197	11	11	238834
+1	Query_9	Specific	Subunit III/VIb interface	Q125	1	1	238834
+1	Query_9	Specific	Subunit III/VIIa interface	F62,R65,D66,N69,T72,L73,G74	7	7	238834
+1	Query_9	Specific	Phospholipid binding site	W63,F64,V67,G68,A71,H77,G88,F89,F92,F220,R227,Q239,G240	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_10	Peptide	88	nad4L_Boledp1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351118	5	88	4.51633e-15	63.8977	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	665	nad5_Boledp1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	620	0	621.643	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	485	nad4_Boledp1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235622	31	485	9.04044e-132	390.332	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	203	nad6_Boledp1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	354830	8	78	2.88647e-20	83.7321	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	542	nad2_Boledp1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235603	6	533	2.00356e-74	243.575	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	119	nad3_Boledp1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334119	20	112	5.53274e-30	102.879	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

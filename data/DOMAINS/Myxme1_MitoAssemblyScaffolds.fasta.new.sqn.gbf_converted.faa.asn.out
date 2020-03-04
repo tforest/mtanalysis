@@ -1,0 +1,160 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Myxme1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Myxme1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	609	cox1_Myxme1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	238833	21	499	0	849.848	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Binuclear center (heme a3/CuB)	H253,H302,H303,H388	4	4	238833
+1	Query_2	Specific	Low-spin heme (heme a) binding site	H74,H390,S394,T436,S473	5	5	238833
+1	Query_2	Specific	D-pathway	Y30,N93,D104,N111,S114,S169,S170,N176,T180	9	9	238833
+1	Query_2	Specific	K-pathway	H253,Y257,S268,H302,H303,T328,K331	7	7	238833
+1	Query_2	Specific	Electron transfer pathway	F389,R450,R451	3	3	238833
+1	Query_2	Specific	Putative proton exit pathway	H303,H380,D381,R450,R451	5	5	238833
+1	Query_2	Specific	Putative water exit pathway	A240,Q245,H246,D376,H380,D381,R450	7	7	238833
+1	Query_2	Specific	Subunit I/II interface	N68,A240,K277,F280,G281,A306,V307,G308,V311,R314,M322,I330,F333,Y340,G341,G342,F354,N372,A373,L375,L377,A378,F379,H380,D381,L445,Q446,R450,R451,I452,G461,W462	32	32	238833
+1	Query_2	Specific	Subunit I/III interface	T21,P103,F107,R109,W116,D157,F161,A179,N183,I203,L210,P213,M221,T230,S231,F232,S237,G238,A240,F250,Y287,M290,G293,L294,I298	25	25	238833
+1	Query_2	Specific	Subunit I/IV interface	M50,A53,A54,V420,K423,I424,D457,V475	8	8	238833
+1	Query_2	Specific	Subunit I/VIa interface	I148,R226,N227,F228,N229	5	5	238833
+1	Query_2	Specific	Subunit I/VIb interface	G308	1	1	238833
+1	Query_2	Specific	Subunit I/VIc interface	G341	1	1	238833
+1	Query_2	Specific	Subunit I/VIIa interface	A127,F130	2	2	238833
+1	Query_2	Specific	Subunit I/VIIb interface	D457,G461	2	2	238833
+1	Query_2	Specific	Subunit I/VIIc interface	F36,L40,T43,I47,T129,F130,I412,Y485,L488	9	9	238833
+1	Query_2	Specific	Subunit I/VIIIb interface	Y421,I478	2	2	238833
+1	Query_2	Specific	Dimer interface	I203,L210,F250,Y287,M290,G293,L294,I298	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	762	orf762_Myxme1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	238828	319	590	1.49302e-64	214.372	cd01651	RT_G2_intron	-	295487
+1	Query_4	Non-specific	279664	616	721	6.13277e-29	112.178	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+1	Query_4	Specific	putative active site	D393,I394,S395,L396,A397,F401,Q450,G451,Y534,D536,D537,L586,G587	13	13	238828
+1	Query_4	Specific	putative nucleic acid binding site	G451	1	1	238828
+1	Query_4	Specific	putative NTP binding site	D393,I394,S395,L396,A397,F401,Q450,D536	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	48	atp8_Myxme1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	283561	1	48	2.17716e-07	41.623	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	257	atp6_Myxme1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	273458	11	254	2.77641e-47	156.598	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	293	cox3_Myxme1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	278911	36	293	1.18682e-113	328.216	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Subunit I/III interface	K106,A109,G110,S121,F124,A128,I129,H135,S223,I224,T227,F231	12	12	238834
+1	Query_8	Specific	Subunit III/Vb interface	G190	1	1	238834
+1	Query_8	Specific	Subunit III/VIa interface	F159,D160,L161,Y178,I204,F214,Y215,S216,A221,D222,S223	11	11	238834
+1	Query_8	Specific	Subunit III/VIb interface	Y151	1	1	238834
+1	Query_8	Specific	Subunit III/VIIa interface	L88,R91,D92,I95,T98,F99,L100	7	7	238834
+1	Query_8	Specific	Phospholipid binding site	W89,L90,V93,V94,G97,H103,G114,F115,F118,M246,R253,V265,G266	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	270	orf271_Myxme1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	335245	80	254	6.14092e-37	128.433	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	222	nad6_Myxme1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334114	28	217	1.77276e-09	54.0031	pfam00499	Oxidored_q3	-	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	393	nad1_Myxme1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	333876	6	374	4.32379e-92	278.972	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	424	cob_Myxme1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214440	10	367	5.88796e-175	492.76	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	875	orf875_Myxme1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	353929	45	148	1.93452e-11	60.7024	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_13	Generic	active site	Y48,Y59,G61,R71,H75,E136	6	6	198380
+1	Query_13	Generic	catalytic site	R71,E136	2	2	198380
+1	Query_13	Generic	metal binding site	E136	1	1	198380
+1	Query_13	Generic	GIY-YIG motif/motif A	G46,V47,Y48,Y59,I60,G61	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	640	nad2_Myxme1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	356474	155	528	2.10616e-50	181.558	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	146	nad3_Myxme1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	30	123	2.26626e-25	92.093	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	76	atp9_Myxme1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351103	2	75	3.83114e-17	68.3374	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	304	cox2_Myxme1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	177223	27	294	4.15979e-68	211.378	MTH00168	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	88	nad4L_Myxme1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	351118	1	86	3.15764e-08	46.5638	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	689	nad5_Myxme1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	235836	97	665	3.65408e-179	523.952	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	311	nad4_Myxme1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	235622	1	310	8.7822e-52	177.317	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

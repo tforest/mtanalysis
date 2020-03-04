@@ -1,0 +1,159 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Disorn1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Disorn1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	322	orf323_Disorn1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	273636	128	258	1.84829e-14	70.8777	TIGR01453	grpIintron_endo	C	45
+1	Query_1	Specific	334119	1	43	1.68379e-10	56.6546	pfam00507	Oxidored_q4	N	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	537	cox1_Disorn1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	238833	8	513	0	847.537	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_2	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T424,S461	5	5	238833
+1	Query_2	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_2	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_2	Specific	Electron transfer pathway	F376,R438,R439	3	3	238833
+1	Query_2	Specific	Putative proton exit pathway	H290,H367,D368,R438,R439	5	5	238833
+1	Query_2	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R438	7	7	238833
+1	Query_2	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,S293,V294,G295,V298,R301,M309,I317,F320,A327,G328,G329,L341,N359,A360,I362,V364,A365,L366,H367,D368,L433,A434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_2	Specific	Subunit I/III interface	T8,V90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_2	Specific	Subunit I/IV interface	L37,A40,G41,L408,Q411,I412,D445,V463	8	8	238833
+1	Query_2	Specific	Subunit I/Vb interface	P265,Y269,A512	3	3	238833
+1	Query_2	Specific	Subunit I/VIa interface	L135,R213,N214,F215,N216	5	5	238833
+1	Query_2	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_2	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_2	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_2	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_2	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,S116,F117,I400,Y473,L476	9	9	238833
+1	Query_2	Specific	Subunit I/VIIIb interface	L409,V466	2	2	238833
+1	Query_2	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	345	orf345_Disorn1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	198392	87	174	7.51098e-22	88.0516	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_3	Specific	284793	199	236	8.05907e-06	42.1144	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+SITES
+1	Query_3	Specific	putative active site	Y89,Y100,G102,R110,Y114,E159,N171	7	7	198392
+1	Query_3	Specific	putative metal binding site	E159	1	1	198392
+1	Query_3	Specific	GIY-YIG motif/motif A	G87,I88,Y89,Y100,V101,G102	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	341	orf341_Disorn1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	197	298	8.32991e-11	58.0167	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	77	163	1.32631e-07	48.7719	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	351	orf351_Disorn1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	85	179	4.91856e-22	88.8326	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	225	orf225_Disorn1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	335245	39	207	3.94984e-63	193.917	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	355	orf355_Disorn1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	84	181	3.77939e-12	61.8686	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	206	311	2.52151e-09	53.7795	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	311	orf311_Disorn1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	186	275	6.85705e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	80	146	2.25376e-05	42.6087	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	245	orf245_Disorn1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	100	178	7.75756e-08	48.7719	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	209	241	0.00110697	37.2159	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	252	orf252_Disorn1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	273636	45	238	3.02006e-31	114.405	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	262	orf262_Disorn1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	273636	56	255	2.59886e-34	122.88	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	424	orf424_Disorn1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	198392	59	152	4.99342e-22	89.5924	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_12	Non-specific	273636	57	255	9.09685e-20	87.0561	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_12	Specific	putative active site	Y61,Y72,G74,R82,Y86,E140,N152	7	7	198392
+1	Query_12	Specific	putative metal binding site	E140	1	1	198392
+1	Query_12	Specific	GIY-YIG motif/motif A	G59,L60,Y61,Y72,V73,G74	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	229	orf229_Disorn1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	353929	104	190	8.94221e-19	77.6512	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_13	Generic	active site	Y107,Y118,G120,R128,Y132,E179	6	6	198380
+1	Query_13	Generic	catalytic site	R128,E179	2	2	198380
+1	Query_13	Generic	metal binding site	E179	1	1	198380
+1	Query_13	Generic	GIY-YIG motif/motif A	I105,I106,Y107,Y118,V119,G120	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	279	orf279_Disorn1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	273636	32	273	5.22659e-43	145.992	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	67	orf68_Disorn1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	353929	2	53	3.29038e-08	45.2944	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_16	Generic	active site	G3,R11,Y15	6	3	198380
+1	Query_16	Generic	catalytic site	R11	2	1	198380
+1	Query_16	Generic	GIY-YIG motif/motif A	I2,G3	6	2	198380
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

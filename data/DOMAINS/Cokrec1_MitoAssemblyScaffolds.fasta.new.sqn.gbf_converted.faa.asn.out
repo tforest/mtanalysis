@@ -1,0 +1,2048 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cokrec1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cokrec1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	368	orf368_Cokrec1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	354865	172	312	9.64362e-11	59.2013	cl21549	rve	-	-
+1	Query_1	Non-specific	307583	106	162	0.000894919	37.2139	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	175	orf175_Cokrec1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	307583	91	133	1.41163e-05	41.0658	pfam01498	HTH_Tnp_Tc3_2	N	45
+1	Query_2	Specific	335095	2	39	0.00638206	33.0975	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	150	orf150_Cokrec1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	307583	94	132	0.000763792	36.0583	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	235	orf235_Cokrec1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	338478	112	226	6.83887e-19	79.6008	pfam12762	DDE_Tnp_IS1595	-	351520
+1	Query_6	Specific	339008	42	84	0.000159841	38.1498	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	500	orf500_Cokrec1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	260006	6	129	1.07775e-48	163.432	cd09274	RNase_HI_RT_Ty3	-	353835
+1	Query_7	Specific	334200	288	398	2.04271e-19	83.4678	pfam00665	rve	-	354865
+1	Query_7	Specific	338895	373	435	7.46667e-05	40.6594	pfam13683	rve_3	-	354992
+ENDDOMAINS
+SITES
+1	Query_7	Specific	active site	D10,E54,D81,D124	4	4	260006
+1	Query_7	Specific	RNA/DNA hybrid binding site	D10,A11,S12,D13,A49,V50,Q51,E54,D81,Y114,R128	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	414	orf414_Cokrec1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	238825	265	399	1.01393e-74	230.56	cd01647	RT_LTR	C	295487
+1	Query_8	Specific	133136	36	122	3.12895e-11	59.2724	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+1	Query_8	Specific	putative active site	D328,L329,K330,S331,G332,Y333,F362,G363,Y390,D392,D393	13	11	238825
+1	Query_8	Specific	putative nucleic acid binding site	G363	1	1	238825
+1	Query_8	Specific	putative NTP binding site	D328,L329,K330,S331,G332,Y333,F362,D392	8	8	238825
+1	Query_8	Specific	inhibitor binding site	D49,G51,S53,V76,E77,I78,I115	7	7	133136
+1	Query_8	Specific	catalytic motif	D49,S50,G51	3	3	133136
+1	Query_8	Specific	Catalytic residue	D49	1	1	133136
+1	Query_8	Specific	Active site flap	V76,E77,I78,A79,I83,A84,E85,I86	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	781	orf781_Cokrec1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	335181	74	207	6.20827e-10	59.6687	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	468	orf468_Cokrec1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334200	145	243	3.09514e-18	80.001	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	320	orf320_Cokrec1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	238825	1	104	1.54352e-47	157.757	cd01647	RT_LTR	N	295487
+1	Query_13	Specific	260006	198	319	2.51472e-47	154.958	cd09274	RNase_HI_RT_Ty3	-	353835
+ENDDOMAINS
+SITES
+1	Query_13	Specific	putative nucleic acid binding site	G26	1	1	238825
+1	Query_13	Specific	active site	D202,E246,D272,D314	4	4	260006
+1	Query_13	Specific	RNA/DNA hybrid binding site	D202,A203,S204,I205,S241,I242,N243,E246,D272,Y305,R318	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	588	orf588_Cokrec1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	295487	525	580	3.67251e-20	88.0361	cl02808	RT_like	C	-
+1	Query_14	Specific	133136	269	362	1.30483e-13	66.5912	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+1	Query_14	Specific	inhibitor binding site	D283,G285,A287,L312,T313,G314,L355	7	7	133136
+1	Query_14	Specific	catalytic motif	D283,T284,G285	3	3	133136
+1	Query_14	Specific	Catalytic residue	D283	1	1	133136
+1	Query_14	Specific	Active site flap	L312,T313,G314,F315,T319,S320,E321,T322	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	360	orf360_Cokrec1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	356550	62	150	3.92374e-06	44.6328	cl29674	Retrotrans_gag	-	-
+1	Query_15	Non-specific	173561	291	310	8.77205e-06	44.7977	PTZ00368	PTZ00368	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	343	orf343_Cokrec1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	354865	144	287	2.04467e-13	66.5201	cl21549	rve	-	-
+1	Query_18	Non-specific	307583	65	136	2.81499e-08	49.9254	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	383	orf383_Cokrec1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	335181	133	276	1.32595e-09	57.3575	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	217	orf217_Cokrec1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	307583	94	135	0.00312353	34.9027	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	343	orf343_Cokrec1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	307583	87	135	2.48322e-07	47.229	pfam01498	HTH_Tnp_Tc3_2	N	45
+1	Query_22	Superfamily	354865	143	289	4.70373e-07	48.4158	cl21549	rve	-	-
+1	Query_22	Superfamily	354815	2	39	0.000129989	38.8458	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+1	Query_22	Generic	DNA-binding interface	R2,S34,S35,C37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	437	orf437_Cokrec1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	335181	2	78	1.82666e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	343	orf343_Cokrec1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Superfamily	354865	143	289	1.19511e-10	58.8161	cl21549	rve	-	-
+1	Query_26	Non-specific	307583	83	135	1.96253e-07	47.6142	pfam01498	HTH_Tnp_Tc3_2	N	45
+1	Query_26	Specific	335095	2	39	0.00175675	35.7939	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+SITES
+1	Query_26	Generic	DNA-binding interface	R2,A34,T35,S37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	369	orf369_Cokrec1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	354865	145	288	3.55382e-12	63.4385	cl21549	rve	-	-
+1	Query_27	Non-specific	307583	63	135	7.68703e-09	51.4662	pfam01498	HTH_Tnp_Tc3_2	-	45
+1	Query_27	Specific	335095	3	39	0.00144964	35.7939	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	911	orf911_Cokrec1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	238825	2	152	1.41764e-67	222.856	cd01647	RT_LTR	-	295487
+1	Query_28	Specific	260006	252	409	4.11203e-42	149.565	cd09274	RNase_HI_RT_Ty3	-	353835
+1	Query_28	Specific	334200	567	681	3.25829e-18	81.1566	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+1	Query_28	Specific	putative active site	D41,L42,K43,S44,G45,Y46,M75,G76,Y103,D105,D106,L150,G151	13	13	238825
+1	Query_28	Specific	putative nucleic acid binding site	G76	1	1	238825
+1	Query_28	Specific	putative NTP binding site	D41,L42,K43,S44,G45,Y46,M75,D105	8	8	238825
+1	Query_28	Specific	active site	D256,E334,D361,D404	4	4	260006
+1	Query_28	Specific	RNA/DNA hybrid binding site	D256,S257,S258,D259,P329,A330,Q331,E334,D361,Y394,R408	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	795	orf795_Cokrec1_feature_20_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	335181	120	228	4.57905e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	147	orf147_Cokrec1_feature_24_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	354865	69	102	0.000174181	39.171	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_33	Peptide	252	orf252_Cokrec1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Superfamily	354865	52	198	3.65941e-08	51.1122	cl21549	rve	-	-
+2	Query_33	Non-specific	307583	20	44	0.00430158	34.9027	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	847	orf847_Cokrec1_feature_30_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	335181	133	276	5.66726e-09	56.9723	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	241	orf241_Cokrec1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	315923	40	190	1.19173e-27	102.729	pfam13358	DDE_3	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	132	orf132_Cokrec1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	354865	58	79	9.24888e-06	42.2526	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	654	orf654_Cokrec1_feature_18_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	335181	8	87	2.29186e-06	48.8831	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	340	orf340_Cokrec1_feature_24_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Superfamily	354865	144	287	1.14709e-08	53.0381	cl21549	rve	-	-
+2	Query_49	Non-specific	307583	70	135	2.27321e-07	47.229	pfam01498	HTH_Tnp_Tc3_2	-	45
+2	Query_49	Specific	335095	2	43	5.23733e-05	40.0311	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	339	orf339_Cokrec1_feature_28_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Superfamily	354865	143	289	1.222e-08	53.0381	cl21549	rve	-	-
+2	Query_51	Non-specific	307583	87	135	2.55343e-06	44.5326	pfam01498	HTH_Tnp_Tc3_2	N	45
+2	Query_51	Superfamily	354815	2	39	0.000175977	38.4606	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+2	Query_51	Generic	DNA-binding interface	R2,S34,S35,C37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_54	Peptide	673	orf673_Cokrec1_feature_34_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	335181	185	328	2.00552e-09	57.7427	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	366	orf366_Cokrec1_feature_38_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Non-specific	307583	63	135	3.79827e-09	52.6218	pfam01498	HTH_Tnp_Tc3_2	-	45
+2	Query_56	Superfamily	354865	145	286	8.91842e-09	53.4233	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	801	orf801_Cokrec1_feature_42_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	335181	160	311	1.08195e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	467	orf467_Cokrec1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	133136	270	353	1.19007e-06	46.5608	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+2	Query_60	Specific	inhibitor binding site	D271,G273,S275,N301,F302,L303,L346	7	7	133136
+2	Query_60	Specific	catalytic motif	D271,S272,G273	3	3	133136
+2	Query_60	Specific	Catalytic residue	D271	1	1	133136
+2	Query_60	Specific	Active site flap	N301,F302,L303,N304,N308,V309,S310,R311	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_62	Peptide	136	orf136_Cokrec1_feature_8_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Superfamily	354865	9	79	3.04181e-07	46.4898	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	241	orf241_Cokrec1_feature_10_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Superfamily	354865	42	194	8.49312e-13	63.4385	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	196	orf196_Cokrec1_feature_24_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Non-specific	307583	118	175	0.00151954	35.6731	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	613	orf613_Cokrec1_feature_30_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Specific	335181	58	189	7.60206e-07	50.0387	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	868	orf868_Cokrec1_feature_34_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Specific	335181	226	377	0.000201917	43.4903	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_74	Peptide	171	orf171_Cokrec1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Superfamily	354865	2	117	4.56366e-06	43.7934	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	388	orf388_Cokrec1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Superfamily	354865	143	286	3.39455e-11	60.7421	cl21549	rve	-	-
+3	Query_75	Non-specific	307583	63	135	7.8326e-10	54.5478	pfam01498	HTH_Tnp_Tc3_2	-	45
+3	Query_75	Specific	335095	3	39	0.00488139	34.6383	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_76	Peptide	897	orf897_Cokrec1_feature_8_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Specific	335181	210	311	7.39158e-08	53.5055	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	343	orf343_Cokrec1_feature_18_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Superfamily	354865	143	289	1.10733e-08	53.0381	cl21549	rve	-	-
+3	Query_81	Non-specific	307583	87	135	2.27348e-07	47.229	pfam01498	HTH_Tnp_Tc3_2	N	45
+3	Query_81	Superfamily	354815	2	39	0.000112165	38.8458	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+3	Query_81	Generic	DNA-binding interface	R2,S34,S35,C37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_82	Peptide	245	orf245_Cokrec1_feature_20_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_82	Specific	334200	10	121	3.58737e-13	63.8226	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	330	orf330_Cokrec1_feature_28_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Non-specific	307583	63	135	3.93893e-11	58.0146	pfam01498	HTH_Tnp_Tc3_2	-	45
+3	Query_86	Superfamily	354865	143	286	2.27946e-09	54.9641	cl21549	rve	-	-
+3	Query_86	Specific	339008	2	38	6.41827e-05	39.6906	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+SITES
+3	Query_86	Generic	DNA-binding interface	R2,G34,T35,S37,N38,V39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_88	Peptide	271	orf271_Cokrec1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Specific	335181	6	133	8.31453e-07	48.4979	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	777	orf777_Cokrec1_feature_8_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_91	Specific	335181	64	215	2.04965e-11	63.9059	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	343	orf343_Cokrec1_feature_18_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Non-specific	307583	63	135	2.03758e-11	58.785	pfam01498	HTH_Tnp_Tc3_2	-	45
+3	Query_96	Superfamily	354865	143	286	2.20112e-09	54.9641	cl21549	rve	-	-
+3	Query_96	Specific	339008	2	38	5.64674e-05	39.6906	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+SITES
+3	Query_96	Generic	DNA-binding interface	R2,G34,T35,S37,N38,V39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_103	Peptide	777	orf777_Cokrec1_feature_32_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_103	Specific	335181	64	215	2.04965e-11	63.9059	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_106	Peptide	757	orf757_Cokrec1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_106	Specific	335181	58	189	1.02102e-05	46.9571	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_109	Peptide	904	orf904_Cokrec1_feature_16_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_109	Specific	335181	242	318	1.13578e-07	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_115	Peptide	904	orf904_Cokrec1_feature_10_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_115	Specific	335181	242	318	1.13578e-07	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_116	Peptide	235	orf235_Cokrec1_feature_12_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_116	Specific	338478	112	226	6.83887e-19	79.6008	pfam12762	DDE_Tnp_IS1595	-	351520
+4	Query_116	Specific	339008	42	84	0.000159841	38.1498	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_118	Peptide	795	orf795_Cokrec1_feature_16_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_118	Specific	335181	120	228	4.53641e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_121	Peptide	510	orf510_Cokrec1_feature_22_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_121	Superfamily	356550	216	284	0.00170381	37.6992	cl29674	Retrotrans_gag	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_123	Peptide	317	orf317_Cokrec1_feature_8_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_123	Superfamily	354865	118	261	3.84373e-12	62.6681	cl21549	rve	-	-
+4	Query_123	Non-specific	307583	39	110	3.93718e-08	49.5402	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_125	Peptide	293	orf293_Cokrec1_feature_12_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_125	Superfamily	351117	7	208	2.44693e-15	72.7096	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+4	Query_125	Generic	putative catalytic site	N13,E39,Y113,D144,N146,D201	8	6	197306
+4	Query_125	Generic	putative metal binding site	E39	2	1	197306
+4	Query_125	Generic	putative phosphate binding site	Y113,N146	3	2	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_126	Peptide	170	orf170_Cokrec1_feature_14_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_126	Superfamily	356550	39	114	5.29882e-05	40.0104	cl29674	Retrotrans_gag	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_127	Peptide	193	orf193_Cokrec1_feature_16_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_127	Superfamily	354865	1	157	1.42691e-19	80.3873	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_130	Peptide	340	orf340_Cokrec1_feature_22_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_130	Superfamily	354865	144	287	1.60582e-11	61.1273	cl21549	rve	-	-
+4	Query_130	Non-specific	307583	93	135	0.000154747	39.525	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_134	Peptide	1192	orf1192_Cokrec1_feature_32_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_134	Specific	238827	589	871	1.87277e-46	165.927	cd01650	RT_nLTR_like	-	295487
+4	Query_134	Superfamily	351117	66	266	5.10115e-08	54.6053	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+4	Query_134	Specific	putative active site	D676,I677,K678,A679,A680,Y681,Q735,G736,Y799,D801,D802,L867,G868	13	13	238827
+4	Query_134	Specific	putative nucleic acid binding site	G736	1	1	238827
+4	Query_134	Specific	putative NTP binding site	D676,I677,K678,A679,A680,Y681,Q735,D801	8	8	238827
+4	Query_134	Generic	putative catalytic site	E72,Y143,D174,N176,D232,D261,H262	8	7	197306
+4	Query_134	Generic	putative metal binding site	E72,D261	2	2	197306
+4	Query_134	Generic	putative phosphate binding site	Y143,N176,H262	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_139	Peptide	165	orf165_Cokrec1_feature_10_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_139	Specific	133136	12	101	1.86187e-13	62.354	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+4	Query_139	Specific	inhibitor binding site	D26,G28,T30,I53,I54,R55,I95	7	7	133136
+4	Query_139	Specific	catalytic motif	D26,T27,G28	3	3	133136
+4	Query_139	Specific	Catalytic residue	D26	1	1	133136
+4	Query_139	Specific	Active site flap	I53,I54,R55,Y56,T60,M61,Q62,A63	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_140	Peptide	340	orf340_Cokrec1_feature_12_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_140	Superfamily	354865	143	284	3.18716e-12	63.0533	cl21549	rve	-	-
+4	Query_140	Non-specific	307583	94	135	1.58785e-05	42.2214	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_144	Peptide	199	orf199_Cokrec1_feature_20_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_144	Superfamily	354865	1	152	6.4271e-16	71.1425	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_145	Peptide	368	orf368_Cokrec1_feature_22_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_145	Superfamily	354865	172	312	3.87334e-11	60.3569	cl21549	rve	-	-
+4	Query_145	Non-specific	307583	106	162	0.000894919	37.2139	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_146	Peptide	167	orf167_Cokrec1_feature_24_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_146	Specific	335095	8	43	0.000341201	36.5643	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_148	Peptide	904	orf904_Cokrec1_feature_30_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_148	Specific	335181	242	318	1.13578e-07	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+SESSION	5	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_152	Peptide	343	orf343_Cokrec1_feature_2_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_152	Non-specific	307583	63	135	2.03758e-11	58.785	pfam01498	HTH_Tnp_Tc3_2	-	45
+5	Query_152	Superfamily	354865	143	286	2.20112e-09	54.9641	cl21549	rve	-	-
+5	Query_152	Specific	339008	2	38	5.64674e-05	39.6906	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+SITES
+5	Query_152	Generic	DNA-binding interface	R2,G34,T35,S37,N38,V39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_158	Peptide	616	orf616_Cokrec1_feature_14_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_158	Specific	335181	14	126	4.45575e-07	50.8091	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_160	Peptide	795	orf795_Cokrec1_feature_2_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_160	Specific	335181	153	304	6.79692e-07	50.8091	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_161	Peptide	672	orf672_Cokrec1_feature_4_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_161	Specific	335181	76	197	1.995e-10	60.8243	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_164	Peptide	338	orf338_Cokrec1_feature_10_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_164	Superfamily	354865	143	289	1.47124e-10	58.4309	cl21549	rve	-	-
+5	Query_164	Non-specific	307583	83	135	1.87412e-07	47.6142	pfam01498	HTH_Tnp_Tc3_2	N	45
+5	Query_164	Non-specific	225949	19	107	0.00162012	38.1314	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_165	Peptide	312	orf312_Cokrec1_feature_12_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_165	Superfamily	354865	143	286	8.68001e-11	58.8161	cl21549	rve	-	-
+5	Query_165	Non-specific	307583	63	135	4.32109e-09	52.2366	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_166	Peptide	1032	orf1032_Cokrec1_feature_14_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_166	Specific	238827	367	647	4.47747e-46	164.772	cd01650	RT_nLTR_like	-	295487
+ENDDOMAINS
+SITES
+5	Query_166	Specific	putative active site	D453,I454,K455,A456,A457,Y458,Q512,G513,Y575,D577,D578,L643,G644	13	13	238827
+5	Query_166	Specific	putative nucleic acid binding site	G513	1	1	238827
+5	Query_166	Specific	putative NTP binding site	D453,I454,K455,A456,A457,Y458,Q512,D577	8	8	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_167	Peptide	430	orf430_Cokrec1_feature_16_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_167	Superfamily	351117	39	215	2.90028e-08	53.4497	cl00490	EEP	C	-
+ENDDOMAINS
+SITES
+5	Query_167	Generic	putative catalytic site	N45,E71,Y141,D169,N171	8	5	197306
+5	Query_167	Generic	putative metal binding site	E71	2	1	197306
+5	Query_167	Generic	putative phosphate binding site	Y141,N171	3	2	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_174	Peptide	193	orf193_Cokrec1_feature_10_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_174	Non-specific	307583	65	136	3.10066e-07	45.6882	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_177	Peptide	847	orf847_Cokrec1_feature_16_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_177	Specific	335181	133	276	5.66726e-09	56.9723	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_178	Peptide	343	orf343_Cokrec1_feature_18_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_178	Superfamily	354865	143	289	1.35587e-09	55.7345	cl21549	rve	-	-
+5	Query_178	Non-specific	307583	83	135	2.14359e-07	47.6142	pfam01498	HTH_Tnp_Tc3_2	N	45
+5	Query_178	Non-specific	225949	12	107	0.000783018	38.9018	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_179	Peptide	847	orf847_Cokrec1_feature_20_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_179	Specific	335181	133	276	7.58873e-08	53.5055	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	5
+SESSION	6	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_184	Peptide	800	orf800_Cokrec1_feature_8_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_184	Specific	335181	160	311	1.08034e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_187	Peptide	305	orf305_Cokrec1_feature_14_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_187	Specific	338478	112	216	3.44543e-17	76.5192	pfam12762	DDE_Tnp_IS1595	C	351520
+6	Query_187	Specific	339008	42	84	0.000318574	37.3794	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_190	Peptide	300	orf299_Cokrec1_feature_20_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_190	Superfamily	351117	39	260	5.16433e-12	63.4649	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+6	Query_190	Generic	putative catalytic site	N45,E71,Y141,D169,N171,D227,D255,H256	8	8	197306
+6	Query_190	Generic	putative metal binding site	E71,D255	2	2	197306
+6	Query_190	Generic	putative phosphate binding site	Y141,N171,H256	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_191	Peptide	728	orf728_Cokrec1_feature_2_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_191	Specific	335181	19	152	1.05633e-12	67.7579	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_193	Peptide	348	orf348_Cokrec1_feature_6_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_193	Specific	335181	163	304	2.983e-09	56.2019	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_194	Peptide	769	orf769_Cokrec1_feature_8_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_194	Specific	238827	323	564	2.31888e-37	138.963	cd01650	RT_nLTR_like	-	295487
+ENDDOMAINS
+SITES
+6	Query_194	Specific	putative active site	D407,Q408,E409,K410,A411,Y412,Q466,G467,Y518,D520,D521	13	11	238827
+6	Query_194	Specific	putative nucleic acid binding site	G467	1	1	238827
+6	Query_194	Specific	putative NTP binding site	D407,Q408,E409,K410,A411,Y412,Q466,D520	8	8	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_205	Peptide	387	orf387_Cokrec1_feature_30_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_205	Specific	334163	202	371	7.34231e-07	48.4675	pfam00589	Phage_integrase	-	350955
+6	Query_205	Superfamily	353373	88	158	0.0092722	34.9608	cl12235	Phage_int_SAM_1	-	-
+ENDDOMAINS
+SITES
+6	Query_205	Generic	active site	R227,R336,W359,Y369	5	4	271175
+6	Query_205	Generic	DNA binding site	Q213,R227,P228,T315,Q317,Y369	7	6	271175
+ENDSITES
+ENDQUERY
+QUERY	Query_207	Peptide	513	orf513_Cokrec1_feature_34_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_207	Specific	260007	319	440	5.96529e-45	153.593	cd09275	RNase_HI_RT_DIRS1	-	353835
+6	Query_207	Specific	239684	92	209	3.63547e-30	113.593	cd03714	RT_DIRS1	-	295487
+ENDDOMAINS
+SITES
+6	Query_207	Specific	RNA/DNA hybrid binding site	D323,A324,S325,N326,S355,I356,N357,E360,D384,H425,R439	11	11	260007
+6	Query_207	Specific	putative active site	D93,L94,S95,D96,A97,F98,F127,G128,Y157,D159,D160,L205,G206	13	13	239684
+6	Query_207	Specific	putative nucleic acid binding site	G128	1	1	239684
+6	Query_207	Specific	putative NTP binding site	D93,L94,S95,D96,A97,F98,F127,D159	8	8	239684
+ENDSITES
+ENDQUERY
+QUERY	Query_208	Peptide	118	orf118_Cokrec1_feature_2_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_208	Specific	289056	11	72	0.00439264	35.2455	pfam12252	SidE	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_211	Peptide	906	orf906_Cokrec1_feature_8_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_211	Specific	238825	512	688	2.0876e-81	259.835	cd01647	RT_LTR	-	295487
+6	Query_211	Specific	260006	782	903	1.97959e-46	161.506	cd09274	RNase_HI_RT_Ty3	-	353835
+6	Query_211	Specific	133136	238	333	1.0228e-06	47.3312	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+6	Query_211	Specific	putative active site	D575,A576,A577,S578,G579,Y580,F609,G610,F637,D639,D640,L684,G685	13	13	238825
+6	Query_211	Specific	putative nucleic acid binding site	G610	1	1	238825
+6	Query_211	Specific	putative NTP binding site	D575,A576,A577,S578,G579,Y580,F609,D639	8	8	238825
+6	Query_211	Specific	active site	D786,E830,D856,D898	4	4	260006
+6	Query_211	Specific	RNA/DNA hybrid binding site	D786,A787,S788,G789,D825,S826,V827,E830,D856,H889,R902	11	11	260006
+6	Query_211	Specific	inhibitor binding site	D249,G251,A253,I276,A277,S278,I326	7	7	133136
+6	Query_211	Specific	catalytic motif	D249,S250,G251	3	3	133136
+6	Query_211	Specific	Catalytic residue	D249	1	1	133136
+6	Query_211	Specific	Active site flap	I276,A277,S278,I279,K283,N292,K293,R294	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_213	Peptide	1175	orf1175_Cokrec1_feature_12_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_213	Specific	238825	742	923	5.66668e-55	188.958	cd01647	RT_LTR	-	295487
+6	Query_213	Specific	260006	1019	1138	4.22335e-54	183.848	cd09274	RNase_HI_RT_Ty3	-	353835
+6	Query_213	Specific	133136	535	630	1.67809e-06	47.3312	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+6	Query_213	Specific	putative active site	D812,L813,R814,Q815,A816,F817,F846,G847,F872,D874,D875,L919,G920	13	13	238825
+6	Query_213	Specific	putative nucleic acid binding site	G847	1	1	238825
+6	Query_213	Specific	putative NTP binding site	D812,L813,R814,Q815,A816,F817,F846,D874	8	8	238825
+6	Query_213	Specific	active site	D1023,E1064,D1089,D1132	4	4	260006
+6	Query_213	Specific	RNA/DNA hybrid binding site	D1023,A1024,S1025,N1026,S1059,T1060,T1061,E1064,D1089,H1122,R1136	11	11	260006
+6	Query_213	Specific	inhibitor binding site	D549,G551,S553,L579,A580,T581,V626	7	7	133136
+6	Query_213	Specific	catalytic motif	D549,S550,G551	3	3	133136
+6	Query_213	Specific	Catalytic residue	D549	1	1	133136
+6	Query_213	Specific	Active site flap	L579,A580,T581,S582,S586,K587,R588,F589	8	8	133136
+ENDSITES
+ENDQUERY
+ENDSESSION	6
+SESSION	7	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_214	Peptide	349	orf349_Cokrec1_feature_14_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_214	Specific	334200	81	187	7.60369e-19	80.7714	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_215	Peptide	210	orf210_Cokrec1_feature_16_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_215	Specific	349274	118	166	5.53885e-15	65.9613	cd00024	CD_CSD	-	355790
+ENDDOMAINS
+SITES
+7	Query_215	Specific	putative peptide binding site	Y118,E119,V120,E121,A122,V137,W139,K140,D141,Y142,D146,T148,W149,E150,P151,S153,N154,K163,Y164	20	19	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_216	Peptide	125	orf125_Cokrec1_feature_18_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_216	Superfamily	356550	49	118	0.00016006	37.6992	cl29674	Retrotrans_gag	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_221	Peptide	773	orf773_Cokrec1_feature_2_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_221	Specific	335181	64	197	1.18055e-12	67.3727	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_224	Peptide	904	orf904_Cokrec1_feature_8_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_224	Specific	335181	242	318	1.13578e-07	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_228	Peptide	200	orf200_Cokrec1_feature_16_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_228	Specific	107221	62	188	3.35916e-25	93.3876	cd06464	ACD_sHsps-like	-	320797
+ENDDOMAINS
+SITES
+7	Query_228	Specific	putative dimer interface	D62,M63,I64,E65,T66,H73,E75,P77,G78,R160,G180,I181	12	12	107221
+ENDSITES
+ENDQUERY
+QUERY	Query_229	Peptide	518	orf518_Cokrec1_feature_18_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_229	Non-specific	225949	141	271	0.000324964	40.8278	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_234	Peptide	757	orf757_Cokrec1_feature_10_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_234	Specific	335181	58	189	2.19483e-07	51.9647	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_236	Peptide	868	orf868_Cokrec1_feature_14_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_236	Specific	335181	226	377	7.82262e-07	50.4239	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_239	Peptide	847	orf847_Cokrec1_feature_6_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_239	Specific	335181	133	276	5.66726e-09	56.9723	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	7
+SESSION	8	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_246	Peptide	341	orf341_Cokrec1_feature_8_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_246	Superfamily	354865	145	288	1.76153e-12	63.8237	cl21549	rve	-	-
+8	Query_246	Non-specific	307583	63	135	1.21392e-08	51.081	pfam01498	HTH_Tnp_Tc3_2	-	45
+8	Query_246	Specific	335095	3	39	0.00216925	35.4087	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_248	Peptide	388	orf388_Cokrec1_feature_14_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_248	Superfamily	354865	184	336	2.8379e-14	69.2165	cl21549	rve	-	-
+8	Query_248	Non-specific	307583	118	175	1.59548e-05	42.2214	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_249	Peptide	343	orf343_Cokrec1_feature_16_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_249	Superfamily	354865	144	287	1.88942e-13	66.5201	cl21549	rve	-	-
+8	Query_249	Non-specific	307583	65	136	2.76029e-08	49.9254	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_250	Peptide	180	orf180_Cokrec1_feature_18_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_250	Non-specific	307583	93	135	0.00232361	34.9027	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_252	Peptide	340	orf340_Cokrec1_feature_22_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_252	Superfamily	354865	143	284	3.48157e-12	63.0533	cl21549	rve	-	-
+8	Query_252	Non-specific	307583	94	135	8.90147e-06	42.9918	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_258	Peptide	458	orf458_Cokrec1_feature_6_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_258	Superfamily	353278	412	455	0.0038473	39.3986	cl11493	PQQ_DH_like	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_259	Peptide	349	orf349_Cokrec1_feature_8_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_259	Specific	335181	120	228	2.13163e-08	53.5055	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_260	Peptide	332	orf332_Cokrec1_feature_12_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_260	Superfamily	354865	176	319	8.38389e-10	56.1197	cl21549	rve	-	-
+8	Query_260	Non-specific	307583	109	167	1.51305e-06	44.9178	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_261	Peptide	368	orf368_Cokrec1_feature_14_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_261	Superfamily	354865	172	312	3.61879e-11	60.3569	cl21549	rve	-	-
+8	Query_261	Non-specific	307583	106	162	0.00678147	34.9027	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_262	Peptide	153	orf153_Cokrec1_feature_16_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_262	Superfamily	354865	14	97	1.21241e-08	50.3418	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_263	Peptide	369	orf369_Cokrec1_feature_18_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_263	Non-specific	307583	109	161	3.33901e-07	46.8438	pfam01498	HTH_Tnp_Tc3_2	N	45
+8	Query_263	Superfamily	354865	169	315	4.11728e-06	45.7194	cl21549	rve	-	-
+8	Query_263	Superfamily	354815	28	66	0.000695312	36.9198	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+8	Query_263	Generic	DNA-binding interface	R28,A60,T61,S63,R64,I65	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_270	Peptide	368	orf368_Cokrec1_feature_8_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_270	Superfamily	354865	172	312	3.76213e-11	60.3569	cl21549	rve	-	-
+8	Query_270	Non-specific	307583	106	162	0.000894919	37.2139	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_272	Peptide	801	orf801_Cokrec1_feature_12_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_272	Specific	335181	160	311	1.07185e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_273	Peptide	337	orf337_Cokrec1_feature_2_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_273	Specific	335181	160	285	1.20636e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_281	Peptide	262	orf262_Cokrec1_feature_18_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_281	Non-specific	307583	65	136	7.28757e-08	48.3846	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_284	Peptide	774	orf773_Cokrec1_feature_24_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_284	Specific	335181	133	276	5.87162e-08	53.8907	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	8
+SESSION	9	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_288	Peptide	339	orf339_Cokrec1_feature_8_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_288	Superfamily	354865	143	289	1.24585e-08	53.0381	cl21549	rve	-	-
+9	Query_288	Non-specific	307583	87	135	1.37391e-07	47.9994	pfam01498	HTH_Tnp_Tc3_2	N	45
+9	Query_288	Superfamily	354815	2	39	0.000177716	38.4606	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+9	Query_288	Generic	DNA-binding interface	R2,S34,S35,C37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_290	Peptide	757	orf757_Cokrec1_feature_12_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_290	Specific	335181	58	189	2.19483e-07	51.9647	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_293	Peptide	485	orf485_Cokrec1_feature_2_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_293	Specific	335181	242	318	8.92238e-08	52.3499	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_298	Peptide	773	orf773_Cokrec1_feature_12_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_298	Specific	335181	64	197	1.27351e-12	67.3727	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_303	Peptide	795	orf795_Cokrec1_feature_8_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_303	Specific	335181	120	228	4.57905e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_306	Peptide	368	orf368_Cokrec1_feature_2_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_306	Superfamily	354865	172	312	9.64362e-11	59.2013	cl21549	rve	-	-
+9	Query_306	Non-specific	307583	106	162	0.000894919	37.2139	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_308	Peptide	615	orf615_Cokrec1_feature_8_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_308	Specific	335181	14	126	4.44668e-07	50.8091	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_310	Peptide	386	orf386_Cokrec1_feature_12_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_310	Superfamily	356550	57	150	1.04766e-11	60.8112	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_314	Peptide	424	orf424_Cokrec1_feature_8_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_314	Superfamily	295487	9	88	3.20124e-12	65.3902	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+9	Query_314	Generic	active site	F14,D16,D17,L84,G85	13	5	238185
+9	Query_314	Generic	NTP binding site	D16	8	1	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_316	Peptide	279	orf279_Cokrec1_feature_12_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_316	Specific	339261	103	186	3.1646e-08	50.7987	pfam14529	Exo_endo_phos_2	C	351117
+ENDDOMAINS
+SITES
+9	Query_316	Generic	putative catalytic site	D123,N125,D181	8	3	197306
+9	Query_316	Generic	putative phosphate binding site	N125	3	1	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_320	Peptide	139	orf139_Cokrec1_feature_4_from_C_28, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_320	Superfamily	354865	13	96	6.49767e-08	48.0306	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	9
+SESSION	10	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_323	Peptide	757	orf757_Cokrec1_feature_10_from_C_28, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_323	Specific	335181	58	189	7.79658e-07	50.4239	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_325	Peptide	305	orf305_Cokrec1_feature_14_from_C_28, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_325	Specific	338478	112	216	3.44543e-17	76.5192	pfam12762	DDE_Tnp_IS1595	C	351520
+10	Query_325	Specific	339008	42	84	0.000318574	37.3794	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_328	Peptide	343	orf343_Cokrec1_feature_4_from_C_29, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_328	Superfamily	354865	143	289	1.19531e-09	55.7345	cl21549	rve	-	-
+10	Query_328	Non-specific	307583	83	135	2.41124e-07	47.229	pfam01498	HTH_Tnp_Tc3_2	N	45
+10	Query_328	Specific	335095	2	39	0.00112757	36.1791	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+SITES
+10	Query_328	Generic	DNA-binding interface	R2,A34,T35,S37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_329	Peptide	284	orf284_Cokrec1_feature_6_from_C_29, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_329	Specific	335181	160	261	1.09154e-07	51.1943	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_333	Peptide	236	orf236_Cokrec1_feature_14_from_C_29, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_333	Superfamily	354865	39	180	4.07914e-12	61.5125	cl21549	rve	-	-
+10	Query_333	Non-specific	307583	2	31	0.00786682	34.1323	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_335	Peptide	217	orf217_Cokrec1_feature_4_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_335	Non-specific	307583	74	133	0.000253544	37.9843	pfam01498	HTH_Tnp_Tc3_2	-	45
+10	Query_335	Superfamily	354815	16	42	0.0044827	34.9119	cl21459	HTH	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_336	Peptide	160	orf160_Cokrec1_feature_6_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_336	Superfamily	354865	6	113	1.63886e-09	53.0381	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_339	Peptide	132	orf132_Cokrec1_feature_12_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_339	Superfamily	354865	58	79	9.24888e-06	42.2526	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_341	Peptide	469	orf469_Cokrec1_feature_16_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_341	Specific	315923	283	433	6.29361e-27	105.425	pfam13358	DDE_3	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_343	Peptide	795	orf795_Cokrec1_feature_20_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_343	Specific	335181	120	228	4.57905e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_344	Peptide	207	orf207_Cokrec1_feature_2_from_C_31, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_344	Non-specific	307583	113	155	0.000362336	37.5991	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_348	Peptide	1192	orf1192_Cokrec1_feature_12_from_C_31, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_348	Specific	238827	589	871	1.87277e-46	165.927	cd01650	RT_nLTR_like	-	295487
+10	Query_348	Superfamily	351117	66	266	5.10115e-08	54.6053	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+10	Query_348	Specific	putative active site	D676,I677,K678,A679,A680,Y681,Q735,G736,Y799,D801,D802,L867,G868	13	13	238827
+10	Query_348	Specific	putative nucleic acid binding site	G736	1	1	238827
+10	Query_348	Specific	putative NTP binding site	D676,I677,K678,A679,A680,Y681,Q735,D801	8	8	238827
+10	Query_348	Generic	putative catalytic site	E72,Y143,D174,N176,D232,D261,H262	8	7	197306
+10	Query_348	Generic	putative metal binding site	E72,D261	2	2	197306
+10	Query_348	Generic	putative phosphate binding site	Y143,N176,H262	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_355	Peptide	757	orf757_Cokrec1_feature_8_from_C_32, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_355	Specific	335181	58	189	7.79658e-07	50.4239	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	10
+SESSION	11	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_357	Peptide	301	orf301_Cokrec1_feature_12_from_C_32, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_357	Specific	335181	160	285	1.81099e-09	56.5871	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_363	Peptide	187	orf187_Cokrec1_feature_10_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_363	Non-specific	318733	137	157	0.00641775	32.9248	pfam16588	zf-C2H2_10	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_364	Peptide	217	orf217_Cokrec1_feature_12_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_364	Specific	238825	84	194	1.03415e-61	190.114	cd01647	RT_LTR	C	295487
+ENDDOMAINS
+SITES
+11	Query_364	Specific	putative nucleic acid binding site	G182	1	1	238825
+11	Query_364	Specific	putative NTP binding site	D147,L148,K149,S150,G151,Y152,F181	8	7	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_366	Peptide	128	orf128_Cokrec1_feature_16_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_366	Superfamily	354815	4	32	0.0031914	33.0678	cl21459	HTH	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_367	Peptide	330	orf330_Cokrec1_feature_18_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_367	Non-specific	307583	63	135	2.1957e-11	58.785	pfam01498	HTH_Tnp_Tc3_2	-	45
+11	Query_367	Superfamily	354865	143	286	9.78912e-10	56.1197	cl21549	rve	-	-
+11	Query_367	Specific	339008	2	38	6.05063e-05	39.6906	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+SITES
+11	Query_367	Generic	DNA-binding interface	R2,G34,T35,S37,N38,V39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_368	Peptide	954	orf954_Cokrec1_feature_2_from_C_34, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_368	Specific	260006	178	301	9.90778e-50	171.136	cd09274	RNase_HI_RT_Ty3	-	353835
+11	Query_368	Specific	238825	1	80	1.51535e-29	115.77	cd01647	RT_LTR	N	295487
+11	Query_368	Specific	334200	461	573	1.81509e-15	73.0674	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+11	Query_368	Specific	active site	D182,E226,D253,D296	4	4	260006
+11	Query_368	Specific	RNA/DNA hybrid binding site	D182,A183,S184,D185,P221,A222,Q223,E226,D253,Y286,R300	11	11	260006
+11	Query_368	Specific	putative nucleic acid binding site	G2	1	1	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_369	Peptide	219	orf219_Cokrec1_feature_4_from_C_34, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_369	Superfamily	295487	146	214	8.37778e-12	61.98	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_376	Peptide	334	orf334_Cokrec1_feature_18_from_C_34, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_376	Specific	335181	31	107	2.93534e-08	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_378	Peptide	591	orf591_Cokrec1_feature_4_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_378	Specific	238825	385	561	2.21307e-83	257.909	cd01647	RT_LTR	-	295487
+11	Query_378	Specific	133136	111	206	1.1349e-06	46.946	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+11	Query_378	Specific	putative active site	D448,A449,A450,S451,G452,Y453,F482,G483,F510,D512,D513,L557,G558	13	13	238825
+11	Query_378	Specific	putative nucleic acid binding site	G483	1	1	238825
+11	Query_378	Specific	putative NTP binding site	D448,A449,A450,S451,G452,Y453,F482,D512	8	8	238825
+11	Query_378	Specific	inhibitor binding site	D122,G124,A126,I149,A150,S151,I199	7	7	133136
+11	Query_378	Specific	catalytic motif	D122,S123,G124	3	3	133136
+11	Query_378	Specific	Catalytic residue	D122	1	1	133136
+11	Query_378	Specific	Active site flap	I149,A150,S151,I152,K156,N165,K166,R167	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_380	Peptide	125	orf125_Cokrec1_feature_8_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_380	Superfamily	356550	49	118	0.00016006	37.6992	cl29674	Retrotrans_gag	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_384	Peptide	908	orf908_Cokrec1_feature_16_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_384	Specific	335181	246	322	1.14163e-07	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_389	Peptide	801	orf801_Cokrec1_feature_12_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_389	Specific	335181	160	311	1.08195e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_390	Peptide	301	orf301_Cokrec1_feature_2_from_C_37, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_390	Specific	309014	69	161	3.5213e-12	61.5816	pfam03732	Retrotrans_gag	-	356550
+11	Query_390	Specific	306581	264	280	0.000289099	37.1137	pfam00098	zf-CCHC	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_391	Peptide	498	orf498_Cokrec1_feature_4_from_C_37, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_391	Specific	238825	210	387	8.7325e-89	269.08	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+11	Query_391	Specific	putative active site	D274,L275,T276,S277,G278,Y279,F308,G309,Y336,D338,D339,L383,G384	13	13	238825
+11	Query_391	Specific	putative nucleic acid binding site	G309	1	1	238825
+11	Query_391	Specific	putative NTP binding site	D274,L275,T276,S277,G278,Y279,F308,D338	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_392	Peptide	468	orf468_Cokrec1_feature_6_from_C_37, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_392	Specific	334200	145	243	3.34763e-18	80.001	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_393	Peptide	917	orf917_Cokrec1_feature_8_from_C_37, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_393	Specific	238825	525	701	3.20707e-83	264.843	cd01647	RT_LTR	-	295487
+11	Query_393	Specific	260006	795	916	5.35541e-45	157.654	cd09274	RNase_HI_RT_Ty3	-	353835
+11	Query_393	Specific	133136	269	362	7.6524e-14	67.7468	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+11	Query_393	Specific	putative active site	D588,A589,A590,F591,G592,F593,M622,G623,F650,D652,D653,L697,G698	13	13	238825
+11	Query_393	Specific	putative nucleic acid binding site	G623	1	1	238825
+11	Query_393	Specific	putative NTP binding site	D588,A589,A590,F591,G592,F593,M622,D652	8	8	238825
+11	Query_393	Specific	active site	D799,E843,D869,D911	4	4	260006
+11	Query_393	Specific	RNA/DNA hybrid binding site	D799,A800,S801,I802,S838,I839,N840,E843,D869,Y902,R915	11	11	260006
+11	Query_393	Specific	inhibitor binding site	D283,G285,A287,L312,T313,G314,L355	7	7	133136
+11	Query_393	Specific	catalytic motif	D283,T284,G285	3	3	133136
+11	Query_393	Specific	Catalytic residue	D283	1	1	133136
+11	Query_393	Specific	Active site flap	L312,T313,G314,F315,T319,S320,E321,T322	8	8	133136
+ENDSITES
+ENDQUERY
+ENDSESSION	11
+SESSION	12	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_394	Peptide	360	orf360_Cokrec1_feature_10_from_C_37, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_394	Superfamily	356550	62	150	4.04024e-06	44.6328	cl29674	Retrotrans_gag	-	-
+12	Query_394	Non-specific	173561	291	310	8.77205e-06	44.7977	PTZ00368	PTZ00368	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_395	Peptide	471	orf471_Cokrec1_feature_12_from_C_37, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_395	Specific	334200	143	256	2.00976e-17	77.6898	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_396	Peptide	637	orf636_Cokrec1_feature_2_from_C_38, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_396	Specific	335181	250	326	9.33133e-08	52.7351	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_398	Peptide	366	orf366_Cokrec1_feature_6_from_C_38, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_398	Non-specific	307583	63	135	3.79827e-09	52.6218	pfam01498	HTH_Tnp_Tc3_2	-	45
+12	Query_398	Superfamily	354865	145	286	8.91842e-09	53.4233	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_399	Peptide	779	orf779_Cokrec1_feature_8_from_C_38, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_399	Specific	335181	76	197	1.94307e-10	61.2095	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_403	Peptide	1230	orf1230_Cokrec1_feature_6_from_C_39, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_403	Specific	238825	173	356	2.24866e-79	257.909	cd01647	RT_LTR	-	295487
+12	Query_403	Specific	260006	454	577	2.14466e-49	170.751	cd09274	RNase_HI_RT_Ty3	-	353835
+12	Query_403	Specific	334200	737	849	2.11409e-15	73.4526	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+12	Query_403	Specific	putative active site	D243,L244,K245,S246,G247,Y248,M277,G278,Y305,D307,D308,V352,G353	13	13	238825
+12	Query_403	Specific	putative nucleic acid binding site	G278	1	1	238825
+12	Query_403	Specific	putative NTP binding site	D243,L244,K245,S246,G247,Y248,M277,D307	8	8	238825
+12	Query_403	Specific	active site	D458,E502,D529,D572	4	4	260006
+12	Query_403	Specific	RNA/DNA hybrid binding site	D458,A459,S460,D461,P497,T498,Q499,E502,D529,Y562,R576	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_404	Peptide	166	orf166_Cokrec1_feature_8_from_C_39, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_404	Specific	197667	129	145	0.000270725	36.2672	smart00343	ZnF_C2HC	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_405	Peptide	366	orf366_Cokrec1_feature_10_from_C_39, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_405	Non-specific	307583	63	135	3.58137e-09	52.6218	pfam01498	HTH_Tnp_Tc3_2	-	45
+12	Query_405	Superfamily	354865	145	286	9.63369e-09	53.4233	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_407	Peptide	368	orf368_Cokrec1_feature_4_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_407	Specific	335181	58	189	6.57775e-07	49.2683	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_409	Peptide	801	orf801_Cokrec1_feature_8_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_409	Specific	335181	160	311	1.08195e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_410	Peptide	421	orf421_Cokrec1_feature_10_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_410	Specific	335181	160	311	4.69553e-09	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_418	Peptide	77	bas1_Cokrec1_feature_2_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_418	Non-specific	140280	2	73	1.05739e-34	116.543	PTZ00253	PTZ00253	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_419	Peptide	468	orf468_Cokrec1_feature_4_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_419	Specific	334200	145	243	3.09514e-18	80.001	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_420	Peptide	917	orf917_Cokrec1_feature_6_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_420	Specific	238825	525	701	3.20707e-83	264.843	cd01647	RT_LTR	-	295487
+12	Query_420	Specific	260006	795	916	5.35541e-45	157.654	cd09274	RNase_HI_RT_Ty3	-	353835
+12	Query_420	Specific	133136	269	362	7.6524e-14	67.7468	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+12	Query_420	Specific	putative active site	D588,A589,A590,F591,G592,F593,M622,G623,F650,D652,D653,L697,G698	13	13	238825
+12	Query_420	Specific	putative nucleic acid binding site	G623	1	1	238825
+12	Query_420	Specific	putative NTP binding site	D588,A589,A590,F591,G592,F593,M622,D652	8	8	238825
+12	Query_420	Specific	active site	D799,E843,D869,D911	4	4	260006
+12	Query_420	Specific	RNA/DNA hybrid binding site	D799,A800,S801,I802,S838,I839,N840,E843,D869,Y902,R915	11	11	260006
+12	Query_420	Specific	inhibitor binding site	D283,G285,A287,L312,T313,G314,L355	7	7	133136
+12	Query_420	Specific	catalytic motif	D283,T284,G285	3	3	133136
+12	Query_420	Specific	Catalytic residue	D283	1	1	133136
+12	Query_420	Specific	Active site flap	L312,T313,G314,F315,T319,S320,E321,T322	8	8	133136
+ENDSITES
+ENDQUERY
+ENDSESSION	12
+SESSION	13	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_421	Peptide	360	orf360_Cokrec1_feature_8_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_421	Superfamily	356550	62	150	3.92374e-06	44.6328	cl29674	Retrotrans_gag	-	-
+13	Query_421	Non-specific	173561	291	310	8.77205e-06	44.7977	PTZ00368	PTZ00368	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_423	Peptide	801	orf801_Cokrec1_feature_12_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_423	Specific	335181	160	311	1.08195e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_425	Peptide	803	orf803_Cokrec1_feature_6_from_C_43, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_425	Specific	335181	96	229	4.57365e-10	60.0539	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_429	Peptide	415	orf415_Cokrec1_feature_14_from_C_43, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_429	Specific	334200	143	256	2.46833e-17	77.3046	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_435	Peptide	637	orf637_Cokrec1_feature_12_from_C_44, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_435	Specific	335181	1	63	8.84185e-06	46.9571	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_438	Peptide	445	orf445_Cokrec1_feature_18_from_C_44, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_438	Specific	335181	153	304	8.33544e-07	49.2683	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_440	Peptide	166	orf166_Cokrec1_feature_2_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_440	Specific	334200	11	60	2.08796e-07	46.8738	pfam00665	rve	N	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_441	Peptide	170	orf170_Cokrec1_feature_4_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_441	Specific	349274	64	112	7.15851e-16	67.5021	cd00024	CD_CSD	-	355790
+ENDDOMAINS
+SITES
+13	Query_441	Specific	putative peptide binding site	Y64,D65,V66,E67,A68,V83,W85,K86,G87,Y88,D92,T94,W95,E96,P97,E99,N100,I106,E109,Y110	20	20	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_444	Peptide	137	orf137_Cokrec1_feature_10_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_444	Non-specific	225949	19	107	0.000130399	39.287	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_445	Peptide	140	orf140_Cokrec1_feature_12_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_445	Superfamily	354865	2	117	0.000104324	39.5562	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_449	Peptide	659	orf659_Cokrec1_feature_20_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_449	Specific	260006	47	168	7.93855e-46	158.425	cd09274	RNase_HI_RT_Ty3	-	353835
+13	Query_449	Specific	334200	360	461	2.11766e-16	75.3786	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+13	Query_449	Specific	active site	D51,E95,D121,D163	4	4	260006
+13	Query_449	Specific	RNA/DNA hybrid binding site	D51,A52,S53,G54,D90,S91,V92,E95,D121,H154,R167	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_450	Peptide	185	orf185_Cokrec1_feature_22_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_450	Specific	238825	7	168	9.83631e-82	239.805	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+13	Query_450	Specific	putative active site	D55,A56,A57,S58,G59,Y60,F89,G90,F117,D119,D120,L164,G165	13	13	238825
+13	Query_450	Specific	putative nucleic acid binding site	G90	1	1	238825
+13	Query_450	Specific	putative NTP binding site	D55,A56,A57,S58,G59,Y60,F89,D119	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_451	Peptide	390	orf390_Cokrec1_feature_24_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_451	Specific	133136	238	333	4.13019e-07	47.3312	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+13	Query_451	Specific	inhibitor binding site	D249,G251,A253,I276,A277,S278,I326	7	7	133136
+13	Query_451	Specific	catalytic motif	D249,S250,G251	3	3	133136
+13	Query_451	Specific	Catalytic residue	D249	1	1	133136
+13	Query_451	Specific	Active site flap	I276,A277,S278,I279,K283,N292,K293,R294	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_453	Peptide	387	orf387_Cokrec1_feature_2_from_C_46, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_453	Specific	335181	64	197	1.81499e-11	62.7503	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_454	Peptide	103	orf103_Cokrec1_feature_4_from_C_46, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_454	Specific	335095	2	39	0.00362088	32.7123	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+SITES
+13	Query_454	Generic	DNA-binding interface	R2,A34,T35,S37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_455	Peptide	234	orf234_Cokrec1_feature_6_from_C_46, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_455	Superfamily	354865	34	180	9.17049e-09	52.2677	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_456	Peptide	1230	orf1230_Cokrec1_feature_8_from_C_46, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_456	Specific	238825	173	356	2.16109e-79	257.909	cd01647	RT_LTR	-	295487
+13	Query_456	Specific	260006	454	577	2.89659e-49	170.366	cd09274	RNase_HI_RT_Ty3	-	353835
+13	Query_456	Specific	334200	737	849	2.11409e-15	73.4526	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+13	Query_456	Specific	putative active site	D243,L244,K245,S246,G247,Y248,M277,G278,Y305,D307,D308,V352,G353	13	13	238825
+13	Query_456	Specific	putative nucleic acid binding site	G278	1	1	238825
+13	Query_456	Specific	putative NTP binding site	D243,L244,K245,S246,G247,Y248,M277,D307	8	8	238825
+13	Query_456	Specific	active site	D458,E502,D529,D572	4	4	260006
+13	Query_456	Specific	RNA/DNA hybrid binding site	D458,A459,S460,D461,P497,T498,Q499,E502,D529,Y562,R576	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_457	Peptide	299	orf299_Cokrec1_feature_10_from_C_46, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_457	Superfamily	356550	79	169	3.93994e-09	52.722	cl29674	Retrotrans_gag	-	-
+13	Query_457	Specific	197667	262	278	1.69853e-05	40.5044	smart00343	ZnF_C2HC	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	13
+SESSION	14	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_463	Peptide	499	orf499_Cokrec1_feature_4_from_C_47, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_463	Specific	335181	14	126	2.95183e-07	50.8091	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_465	Peptide	305	orf305_Cokrec1_feature_8_from_C_47, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_465	Specific	338478	112	216	3.44543e-17	76.5192	pfam12762	DDE_Tnp_IS1595	C	351520
+14	Query_465	Specific	339008	42	84	0.000318574	37.3794	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_469	Peptide	219	orf218_Cokrec1_feature_2_from_C_48, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_469	Specific	338814	13	58	0.00228825	35.2957	pfam13551	HTH_29	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_474	Peptide	343	orf343_Cokrec1_feature_12_from_C_48, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_474	Superfamily	354865	143	289	1.29244e-08	53.0381	cl21549	rve	-	-
+14	Query_474	Non-specific	307583	87	135	1.13506e-06	45.303	pfam01498	HTH_Tnp_Tc3_2	N	45
+14	Query_474	Superfamily	354815	2	39	0.000152137	38.4606	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+14	Query_474	Generic	DNA-binding interface	R2,S34,S35,C37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_483	Peptide	801	orf801_Cokrec1_feature_8_from_C_50, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_483	Specific	335181	160	311	1.08195e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_484	Peptide	102	orf102_Cokrec1_feature_2_from_C_51, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_484	Specific	336734	21	95	2.70704e-05	38.7011	pfam07544	Med9	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_487	Peptide	904	orf904_Cokrec1_feature_8_from_C_51, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_487	Specific	335181	242	318	1.13578e-07	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_488	Peptide	262	orf262_Cokrec1_feature_12_from_C_51, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_488	Specific	335242	28	192	1.67584e-53	170.714	pfam03152	UFD1	-	355637
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_489	Peptide	229	orf229_Cokrec1_feature_14_from_C_51, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_489	Non-specific	178635	31	221	1.80862e-26	106.495	PLN03086	PLN03086	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_491	Peptide	868	orf868_Cokrec1_feature_4_from_C_52, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_491	Specific	335181	226	377	8.19533e-07	50.4239	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_493	Peptide	400	orf400_Cokrec1_feature_4_from_C_53, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_493	Specific	335181	117	260	3.70145e-08	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	14
+SESSION	15	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_494	Peptide	343	orf343_Cokrec1_feature_6_from_C_53, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_494	Superfamily	354865	144	287	2.04467e-13	66.5201	cl21549	rve	-	-
+15	Query_494	Non-specific	307583	65	136	2.81499e-08	49.9254	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_497	Peptide	161	orf161_Cokrec1_feature_12_from_C_53, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_497	Specific	289056	11	72	0.00701555	36.0159	pfam12252	SidE	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_498	Peptide	343	orf343_Cokrec1_feature_14_from_C_53, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_498	Non-specific	307583	87	135	2.48322e-07	47.229	pfam01498	HTH_Tnp_Tc3_2	N	45
+15	Query_498	Superfamily	354865	143	289	4.70373e-07	48.4158	cl21549	rve	-	-
+15	Query_498	Superfamily	354815	2	39	0.000129989	38.8458	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+15	Query_498	Generic	DNA-binding interface	R2,S34,S35,C37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_500	Peptide	779	orf779_Cokrec1_feature_18_from_C_53, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_500	Specific	238825	385	561	2.94845e-82	259.835	cd01647	RT_LTR	-	295487
+15	Query_500	Specific	260006	655	776	1.31109e-46	161.506	cd09274	RNase_HI_RT_Ty3	-	353835
+15	Query_500	Specific	133136	111	206	8.72746e-07	47.3312	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+15	Query_500	Specific	putative active site	D448,A449,A450,S451,G452,Y453,F482,G483,F510,D512,D513,L557,G558	13	13	238825
+15	Query_500	Specific	putative nucleic acid binding site	G483	1	1	238825
+15	Query_500	Specific	putative NTP binding site	D448,A449,A450,S451,G452,Y453,F482,D512	8	8	238825
+15	Query_500	Specific	active site	D659,E703,D729,D771	4	4	260006
+15	Query_500	Specific	RNA/DNA hybrid binding site	D659,A660,S661,G662,D698,S699,V700,E703,D729,H762,R775	11	11	260006
+15	Query_500	Specific	inhibitor binding site	D122,G124,A126,I149,A150,S151,I199	7	7	133136
+15	Query_500	Specific	catalytic motif	D122,S123,G124	3	3	133136
+15	Query_500	Specific	Catalytic residue	D122	1	1	133136
+15	Query_500	Specific	Active site flap	I149,A150,S151,I152,K156,N165,K166,R167	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_501	Peptide	801	orf801_Cokrec1_feature_2_from_C_54, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_501	Specific	335181	160	311	1.08195e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_502	Peptide	422	orf422_Cokrec1_feature_6_from_C_54, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_502	Superfamily	354810	1	233	1.72475e-87	268.699	cl21453	PKc_like	N	-
+ENDDOMAINS
+SITES
+15	Query_502	Specific	polypeptide substrate binding site	D35,K37,E39,L56,F71,C72,G73,T74,A75,E76,E103,T109,W112	16	13	270722
+15	Query_502	Specific	activation loop (A-loop)	T52,D53,F54,G55,L56,S57,K58,E62,S63,N64,N65,T67,T68,H69,T70,F71,C72,G73,T74,A75,E76	23	21	270722
+15	Query_502	Specific	hydrophobic motif (HM)	F227,D228,G229,Y230,S231,F232	6	6	270722
+15	Query_502	Specific	turn motif phosphorylation site	T211	1	1	270722
+ENDSITES
+ENDQUERY
+QUERY	Query_504	Peptide	104	orf104_Cokrec1_feature_10_from_C_54, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_504	Superfamily	354836	21	80	3.81275e-06	43.5207	cl21494	Abhydrolase	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_505	Peptide	157	orf157_Cokrec1_feature_12_from_C_54, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_505	Superfamily	354836	32	144	3.6249e-10	57.0027	cl21494	Abhydrolase	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_509	Peptide	773	orf773_Cokrec1_feature_10_from_C_55, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_509	Specific	335181	64	197	1.27351e-12	67.3727	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_517	Peptide	100	orf100_Cokrec1_feature_16_from_C_56, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_517	Specific	333835	23	45	0.00489782	31.8888	pfam00096	zf-C2H2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_522	Peptide	779	orf779_Cokrec1_feature_4_from_C_57, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_522	Specific	335181	76	197	1.94307e-10	61.2095	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_524	Peptide	141	orf141_Cokrec1_feature_10_from_C_57, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_524	Superfamily	332023	1	130	6.32586e-47	158.977	cl27202	Mpp10	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_526	Peptide	773	orf773_Cokrec1_feature_4_from_C_58, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_526	Specific	335181	64	197	1.18055e-12	67.3727	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_528	Peptide	331	orf331_Cokrec1_feature_8_from_C_58, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_528	Superfamily	354314	232	304	9.33013e-14	65.3049	cl17169	RRM_SF	-	-
+15	Query_528	Specific	223796	174	283	2.93366e-07	51.101	COG0724	RRM	C	45
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_529	Peptide	123	orf122_Cokrec1_feature_2_from_C_59, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_529	Specific	133136	2	56	1.35034e-06	43.094	cd00303	retropepsin_like	N	353244
+ENDDOMAINS
+SITES
+15	Query_529	Specific	Active site flap	V12,E13,T14,A15,I19,S20,L21	8	7	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_530	Peptide	301	orf301_Cokrec1_feature_4_from_C_59, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_530	Specific	309014	69	161	3.5213e-12	61.5816	pfam03732	Retrotrans_gag	-	356550
+15	Query_530	Specific	306581	264	280	0.000289099	37.1137	pfam00098	zf-CCHC	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_532	Peptide	795	orf795_Cokrec1_feature_8_from_C_59, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_532	Specific	335181	120	228	4.53641e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	15
+SESSION	16	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_538	Peptide	401	orf401_Cokrec1_feature_6_from_C_60, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_538	Superfamily	353278	355	398	0.00314867	39.3986	cl11493	PQQ_DH_like	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_539	Peptide	405	orf405_Cokrec1_feature_8_from_C_60, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_539	Specific	335181	120	228	4.10162e-08	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_544	Peptide	676	orf676_Cokrec1_feature_10_from_C_61, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_544	Specific	335181	226	377	1.17744e-06	49.6535	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_547	Peptide	156	orf156_Cokrec1_feature_2_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_547	Superfamily	352968	1	149	4.51607e-75	229.726	cl09506	catalase_like	N	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_548	Peptide	450	orf450_Cokrec1_feature_4_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_548	Specific	334200	151	252	1.5918e-16	74.9934	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_549	Peptide	413	orf413_Cokrec1_feature_6_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_549	Specific	238825	7	168	4.88645e-80	244.042	cd01647	RT_LTR	-	295487
+16	Query_549	Specific	260006	262	383	9.93992e-48	158.81	cd09274	RNase_HI_RT_Ty3	-	353835
+ENDDOMAINS
+SITES
+16	Query_549	Specific	putative active site	D55,A56,A57,S58,G59,Y60,F89,G90,F117,D119,D120,L164,G165	13	13	238825
+16	Query_549	Specific	putative nucleic acid binding site	G90	1	1	238825
+16	Query_549	Specific	putative NTP binding site	D55,A56,A57,S58,G59,Y60,F89,D119	8	8	238825
+16	Query_549	Specific	active site	D266,E310,D336,D378	4	4	260006
+16	Query_549	Specific	RNA/DNA hybrid binding site	D266,A267,S268,G269,D305,S306,V307,E310,D336,H369,R382	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_550	Peptide	536	orf536_Cokrec1_feature_8_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_550	Specific	133136	238	333	5.85628e-07	47.3312	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+16	Query_550	Specific	inhibitor binding site	D249,G251,A253,I276,A277,S278,I326	7	7	133136
+16	Query_550	Specific	catalytic motif	D249,S250,G251	3	3	133136
+16	Query_550	Specific	Catalytic residue	D249	1	1	133136
+16	Query_550	Specific	Active site flap	I276,A277,S278,I279,K283,N292,K293,R294	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_551	Peptide	305	orf305_Cokrec1_feature_10_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_551	Superfamily	356550	49	140	3.70324e-05	41.5512	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_554	Peptide	779	orf779_Cokrec1_feature_6_from_C_63, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_554	Specific	335181	76	197	1.94307e-10	61.2095	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_555	Peptide	639	orf639_Cokrec1_feature_8_from_C_63, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_555	Specific	335181	1	63	2.83571e-06	48.4979	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_558	Peptide	244	orf244_Cokrec1_feature_6_from_C_64, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_558	Specific	335181	1	63	4.03833e-06	46.1867	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_562	Peptide	699	orf699_Cokrec1_feature_14_from_C_64, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_562	Specific	335181	226	377	1.23789e-06	49.6535	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_565	Peptide	911	orf911_Cokrec1_feature_4_from_C_65, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_565	Specific	238825	1	153	7.92684e-71	231.33	cd01647	RT_LTR	-	295487
+16	Query_565	Specific	260006	251	370	1.04385e-52	179.226	cd09274	RNase_HI_RT_Ty3	-	353835
+16	Query_565	Specific	334200	524	637	2.62866e-17	78.4602	pfam00665	rve	-	354865
+16	Query_565	Non-specific	236912	636	739	0.00700504	39.9349	PRK11448	hsdR	C	45
+ENDDOMAINS
+SITES
+16	Query_565	Specific	putative active site	D40,L41,T42,S43,G44,Y45,F74,G75,Y102,D104,D105,L149,G150	13	13	238825
+16	Query_565	Specific	putative nucleic acid binding site	G75	1	1	238825
+16	Query_565	Specific	putative NTP binding site	D40,L41,T42,S43,G44,Y45,F74,D104	8	8	238825
+16	Query_565	Specific	active site	D255,E297,D322,D365	4	4	260006
+16	Query_565	Specific	RNA/DNA hybrid binding site	D255,S256,S257,D258,P292,A293,Q294,E297,D322,Y355,R369	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_567	Peptide	301	orf301_Cokrec1_feature_8_from_C_65, ORGANISM Genus species Unclassified.,
+DOMAINS
+16	Query_567	Specific	309014	69	161	3.5213e-12	61.5816	pfam03732	Retrotrans_gag	-	356550
+16	Query_567	Specific	306581	264	280	0.000289099	37.1137	pfam00098	zf-CCHC	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	16
+SESSION	17	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_568	Peptide	579	orf579_Cokrec1_feature_2_from_C_66, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_568	Specific	238827	3	243	1.04582e-37	138.578	cd01650	RT_nLTR_like	-	295487
+ENDDOMAINS
+SITES
+17	Query_568	Specific	putative active site	D61,I62,K63,A64,A65,Y66,Q120,G121,F169,D171,D172,L239,G240	13	13	238827
+17	Query_568	Specific	putative nucleic acid binding site	G121	1	1	238827
+17	Query_568	Specific	putative NTP binding site	D61,I62,K63,A64,A65,Y66,Q120,D171	8	8	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_570	Peptide	1275	orf1275_Cokrec1_feature_6_from_C_66, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_570	Specific	238827	581	861	4.82111e-46	165.157	cd01650	RT_nLTR_like	-	295487
+17	Query_570	Specific	339261	157	278	1.49826e-12	65.4363	pfam14529	Exo_endo_phos_2	-	351117
+ENDDOMAINS
+SITES
+17	Query_570	Specific	putative active site	D667,I668,K669,A670,A671,Y672,Q726,G727,Y789,D791,D792,L857,G858	13	13	238827
+17	Query_570	Specific	putative nucleic acid binding site	G727	1	1	238827
+17	Query_570	Specific	putative NTP binding site	D667,I668,K669,A670,A671,Y672,Q726,D791	8	8	238827
+17	Query_570	Generic	putative catalytic site	N67,E93,Y163,D191,N193,D249,D277,H278	8	8	197306
+17	Query_570	Generic	putative metal binding site	E93,D277	2	2	197306
+17	Query_570	Generic	putative phosphate binding site	Y163,N193,H278	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_576	Peptide	340	orf340_Cokrec1_feature_4_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_576	Superfamily	354865	143	284	2.9176e-12	63.4385	cl21549	rve	-	-
+17	Query_576	Non-specific	307583	94	135	1.6514e-05	42.2214	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_578	Peptide	305	orf305_Cokrec1_feature_8_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_578	Specific	338478	112	216	3.44543e-17	76.5192	pfam12762	DDE_Tnp_IS1595	C	351520
+17	Query_578	Specific	339008	42	84	0.000318574	37.3794	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_579	Peptide	288	orf288_Cokrec1_feature_10_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_579	Superfamily	353278	242	285	0.00176455	39.3986	cl11493	PQQ_DH_like	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_583	Peptide	757	orf757_Cokrec1_feature_4_from_C_69, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_583	Specific	335181	58	189	7.79658e-07	50.4239	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_585	Peptide	167	orf167_Cokrec1_feature_10_from_C_69, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_585	Superfamily	354314	98	149	7.40156e-12	57.6655	cl17169	RRM_SF	C	-
+17	Query_585	Non-specific	235334	6	47	0.00297199	37.2347	PRK05035	PRK05035	NC	45
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_592	Peptide	179	orf179_Cokrec1_feature_2_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_592	Non-specific	307583	64	111	1.00691e-06	44.1474	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_593	Peptide	143	orf143_Cokrec1_feature_4_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_593	Superfamily	354865	24	89	4.0919e-06	43.4082	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_595	Peptide	343	orf343_Cokrec1_feature_8_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_595	Non-specific	307583	63	135	6.66696e-12	60.3258	pfam01498	HTH_Tnp_Tc3_2	-	45
+17	Query_595	Superfamily	354865	143	286	6.36226e-10	56.5049	cl21549	rve	-	-
+17	Query_595	Specific	339008	2	38	5.64674e-05	39.6906	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+SITES
+17	Query_595	Generic	DNA-binding interface	R2,G34,T35,S37,N38,V39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_597	Peptide	247	orf247_Cokrec1_feature_12_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_597	Superfamily	351117	6	81	4.07892e-09	54.6053	cl00490	EEP	N	-
+ENDDOMAINS
+SITES
+17	Query_597	Generic	putative catalytic site	D50,N74,H75	8	3	197306
+17	Query_597	Generic	putative metal binding site	N74	2	1	197306
+17	Query_597	Generic	putative phosphate binding site	H75	3	1	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_598	Peptide	174	orf174_Cokrec1_feature_14_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_598	Superfamily	295487	48	142	3.98973e-18	77.7166	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+17	Query_598	Generic	active site	Q51,G52,Y96,D98,D99	13	5	238185
+17	Query_598	Generic	nucleic acid binding site	G52	1	1	238185
+17	Query_598	Generic	NTP binding site	Q51,D98	8	2	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_600	Peptide	413	orf413_Cokrec1_feature_18_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_600	Specific	338524	168	215	1.94327e-11	60.441	pfam12859	ANAPC1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_603	Peptide	1073	orf1072_Cokrec1_feature_2_from_C_73, ORGANISM Genus species Unclassified.,
+DOMAINS
+17	Query_603	Specific	238827	564	833	6.52372e-51	178.639	cd01650	RT_nLTR_like	-	295487
+17	Query_603	Specific	339261	117	235	5.77999e-16	75.0663	pfam14529	Exo_endo_phos_2	-	351117
+ENDDOMAINS
+SITES
+17	Query_603	Specific	putative active site	D651,I652,K653,S654,A655,Y656,Q710,G711,F759,D761,D762,L829,G830	13	13	238827
+17	Query_603	Specific	putative nucleic acid binding site	G711	1	1	238827
+17	Query_603	Specific	putative NTP binding site	D651,I652,K653,S654,A655,Y656,Q710,D761	8	8	238827
+17	Query_603	Generic	putative catalytic site	Y123,D151,N153,D209,D233,H234	8	6	197306
+17	Query_603	Generic	putative metal binding site	D233	2	1	197306
+17	Query_603	Generic	putative phosphate binding site	Y123,N153,H234	3	3	197306
+ENDSITES
+ENDQUERY
+ENDSESSION	17
+SESSION	18	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_610	Peptide	786	orf786_Cokrec1_feature_2_from_C_74, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_610	Specific	335181	153	304	6.10941e-07	50.8091	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_612	Peptide	416	orf416_Cokrec1_feature_6_from_C_74, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_612	Specific	335181	133	276	3.50321e-08	53.5055	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_614	Peptide	125	orf125_Cokrec1_feature_4_from_C_75, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_614	Superfamily	356550	49	118	0.00016006	37.6992	cl29674	Retrotrans_gag	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_616	Peptide	779	orf779_Cokrec1_feature_8_from_C_75, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_616	Specific	238825	385	561	2.94845e-82	259.835	cd01647	RT_LTR	-	295487
+18	Query_616	Specific	260006	655	776	1.31109e-46	161.506	cd09274	RNase_HI_RT_Ty3	-	353835
+18	Query_616	Specific	133136	111	206	8.72746e-07	47.3312	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+18	Query_616	Specific	putative active site	D448,A449,A450,S451,G452,Y453,F482,G483,F510,D512,D513,L557,G558	13	13	238825
+18	Query_616	Specific	putative nucleic acid binding site	G483	1	1	238825
+18	Query_616	Specific	putative NTP binding site	D448,A449,A450,S451,G452,Y453,F482,D512	8	8	238825
+18	Query_616	Specific	active site	D659,E703,D729,D771	4	4	260006
+18	Query_616	Specific	RNA/DNA hybrid binding site	D659,A660,S661,G662,D698,S699,V700,E703,D729,H762,R775	11	11	260006
+18	Query_616	Specific	inhibitor binding site	D122,G124,A126,I149,A150,S151,I199	7	7	133136
+18	Query_616	Specific	catalytic motif	D122,S123,G124	3	3	133136
+18	Query_616	Specific	Catalytic residue	D122	1	1	133136
+18	Query_616	Specific	Active site flap	I149,A150,S151,I152,K156,N165,K166,R167	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_618	Peptide	343	orf343_Cokrec1_feature_12_from_C_75, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_618	Superfamily	354865	143	289	1.34279e-09	55.7345	cl21549	rve	-	-
+18	Query_618	Non-specific	307583	83	135	2.14359e-07	47.6142	pfam01498	HTH_Tnp_Tc3_2	N	45
+18	Query_618	Non-specific	225949	12	107	0.000948061	38.9018	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_619	Peptide	161	orf161_Cokrec1_feature_14_from_C_75, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_619	Specific	289056	11	72	0.00701555	36.0159	pfam12252	SidE	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_620	Peptide	356	orf355_Cokrec1_feature_2_from_C_76, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_620	Superfamily	354865	172	312	1.25378e-09	55.7345	cl21549	rve	-	-
+18	Query_620	Non-specific	307583	106	162	0.000971668	37.2139	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_622	Peptide	107	orf107_Cokrec1_feature_8_from_C_76, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_622	Superfamily	354865	11	72	1.11861e-16	69.9869	cl21549	rve	N	-
+18	Query_622	Superfamily	353817	46	102	0.00761202	32.5265	cl14633	DD	-	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_623	Peptide	385	orf385_Cokrec1_feature_10_from_C_76, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_623	Superfamily	354865	170	312	5.06738e-15	71.5277	cl21549	rve	-	-
+18	Query_623	Non-specific	307583	92	162	1.55596e-09	53.7774	pfam01498	HTH_Tnp_Tc3_2	-	45
+18	Query_623	Superfamily	354815	44	84	7.33159e-05	41.3248	cl21459	HTH	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_624	Peptide	366	orf366_Cokrec1_feature_12_from_C_76, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_624	Superfamily	354865	143	286	1.86676e-10	58.4309	cl21549	rve	-	-
+18	Query_624	Non-specific	307583	63	135	5.84573e-09	51.8514	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_629	Peptide	757	orf757_Cokrec1_feature_10_from_C_77, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_629	Specific	335181	58	189	7.79658e-07	50.4239	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_633	Peptide	219	orf219_Cokrec1_feature_8_from_C_78, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_633	Superfamily	354865	126	173	0.00148154	37.6302	cl21549	rve	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_635	Peptide	262	orf262_Cokrec1_feature_4_from_C_79, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_635	Superfamily	354865	34	177	3.13279e-11	59.5865	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_636	Peptide	343	orf343_Cokrec1_feature_6_from_C_79, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_636	Non-specific	307583	87	135	6.60831e-08	48.7698	pfam01498	HTH_Tnp_Tc3_2	N	45
+18	Query_636	Superfamily	354865	143	289	6.72926e-08	50.727	cl21549	rve	-	-
+18	Query_636	Superfamily	354815	2	39	0.000120156	38.8458	cl21459	HTH	-	-
+ENDDOMAINS
+SITES
+18	Query_636	Generic	DNA-binding interface	R2,S34,S35,C37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_637	Peptide	1145	orf1145_Cokrec1_feature_10_from_C_79, ORGANISM Genus species Unclassified.,
+DOMAINS
+18	Query_637	Specific	238825	210	387	8.55628e-85	272.161	cd01647	RT_LTR	-	295487
+18	Query_637	Specific	260006	485	604	1.45464e-52	179.611	cd09274	RNase_HI_RT_Ty3	-	353835
+18	Query_637	Specific	334200	758	871	2.31706e-17	78.8454	pfam00665	rve	-	354865
+18	Query_637	Specific	133136	2	56	2.02797e-05	44.2496	cd00303	retropepsin_like	N	353244
+ENDDOMAINS
+SITES
+18	Query_637	Specific	putative active site	D274,L275,T276,S277,G278,Y279,F308,G309,Y336,D338,D339,L383,G384	13	13	238825
+18	Query_637	Specific	putative nucleic acid binding site	G309	1	1	238825
+18	Query_637	Specific	putative NTP binding site	D274,L275,T276,S277,G278,Y279,F308,D338	8	8	238825
+18	Query_637	Specific	active site	D489,E531,D556,D599	4	4	260006
+18	Query_637	Specific	RNA/DNA hybrid binding site	D489,S490,S491,D492,P526,A527,Q528,E531,D556,Y589,R603	11	11	260006
+18	Query_637	Specific	Active site flap	V12,E13,T14,A15,I19,S20,L21	8	7	133136
+ENDSITES
+ENDQUERY
+ENDSESSION	18
+SESSION	19	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_638	Peptide	301	orf301_Cokrec1_feature_12_from_C_79, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_638	Specific	309014	69	161	3.5213e-12	61.5816	pfam03732	Retrotrans_gag	-	356550
+19	Query_638	Specific	306581	264	280	0.000289099	37.1137	pfam00098	zf-CCHC	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_647	Peptide	211	orf211_Cokrec1_feature_14_from_C_81, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_647	Specific	212491	1	163	4.84868e-31	113.148	cd05233	SDR_c	N	355392
+ENDDOMAINS
+SITES
+19	Query_647	Specific	active site	N50,S79,Y92,K96	4	4	212491
+ENDSITES
+ENDQUERY
+QUERY	Query_648	Peptide	315	orf315_Cokrec1_feature_16_from_C_81, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_648	Non-specific	224117	9	112	0.00792951	37.7716	COG1196	Smc	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_649	Peptide	130	orf130_Cokrec1_feature_18_from_C_81, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_649	Superfamily	354810	3	34	4.61347e-08	49.5314	cl21453	PKc_like	N	-
+19	Query_649	Specific	338275	66	85	0.00958849	32.5879	pfam12202	OSR1_C	NC	45
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_651	Peptide	627	orf627_Cokrec1_feature_4_from_C_82, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_651	Specific	335181	160	311	2.96394e-09	57.3575	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_656	Peptide	211	orf211_Cokrec1_feature_2_from_C_83, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_656	Specific	238825	5	181	2.97214e-86	252.131	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+19	Query_656	Specific	putative active site	D68,A69,A70,S71,G72,Y73,F102,G103,F130,D132,D133,L177,G178	13	13	238825
+19	Query_656	Specific	putative nucleic acid binding site	G103	1	1	238825
+19	Query_656	Specific	putative NTP binding site	D68,A69,A70,S71,G72,Y73,F102,D132	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_657	Peptide	171	orf171_Cokrec1_feature_4_from_C_83, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_657	Specific	260006	47	168	3.20637e-51	159.58	cd09274	RNase_HI_RT_Ty3	-	353835
+ENDDOMAINS
+SITES
+19	Query_657	Specific	active site	D51,E95,D121,D163	4	4	260006
+19	Query_657	Specific	RNA/DNA hybrid binding site	D51,A52,S53,G54,D90,S91,V92,E95,D121,H154,R167	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_658	Peptide	343	orf343_Cokrec1_feature_6_from_C_83, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_658	Superfamily	354865	143	289	1.34279e-09	55.7345	cl21549	rve	-	-
+19	Query_658	Non-specific	307583	83	135	2.14359e-07	47.6142	pfam01498	HTH_Tnp_Tc3_2	N	45
+19	Query_658	Non-specific	225949	12	107	0.000948061	38.9018	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_659	Peptide	161	orf161_Cokrec1_feature_8_from_C_83, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_659	Specific	289056	11	72	0.00701555	36.0159	pfam12252	SidE	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_661	Peptide	293	orf293_Cokrec1_feature_12_from_C_83, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_661	Specific	335181	133	276	1.37756e-08	53.8907	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_666	Peptide	511	orf511_Cokrec1_feature_8_from_C_84, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_666	Specific	335181	158	322	1.03282e-06	49.2683	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_667	Peptide	305	orf305_Cokrec1_feature_2_from_C_85, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_667	Specific	338478	112	216	3.44543e-17	76.5192	pfam12762	DDE_Tnp_IS1595	C	351520
+19	Query_667	Specific	339008	42	84	0.000318574	37.3794	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_670	Peptide	430	orf430_Cokrec1_feature_8_from_C_85, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_670	Superfamily	351117	39	215	2.90028e-08	53.4497	cl00490	EEP	C	-
+ENDDOMAINS
+SITES
+19	Query_670	Generic	putative catalytic site	N45,E71,Y141,D169,N171	8	5	197306
+19	Query_670	Generic	putative metal binding site	E71	2	1	197306
+19	Query_670	Generic	putative phosphate binding site	Y141,N171	3	2	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_671	Peptide	460	orf460_Cokrec1_feature_10_from_C_85, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_671	Superfamily	295487	367	430	2.32296e-14	71.9386	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_672	Peptide	470	orf470_Cokrec1_feature_12_from_C_85, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_672	Superfamily	295487	2	212	1.66502e-22	95.4358	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+19	Query_672	Generic	active site	D18,I19,K20,A21,A22,Y23,Q77,G78,Y140,D142,D143,L208,G209	13	13	238185
+19	Query_672	Generic	nucleic acid binding site	G78	1	1	238185
+19	Query_672	Generic	NTP binding site	D18,I19,K20,A21,A22,Y23,Q77,D142	8	8	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_673	Peptide	102	orf102_Cokrec1_feature_14_from_C_85, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_673	Superfamily	354865	37	79	2.01407e-05	40.3266	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_674	Peptide	419	orf418_Cokrec1_feature_2_from_C_86, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_674	Specific	133136	238	333	4.79003e-07	47.3312	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+19	Query_674	Specific	inhibitor binding site	D249,G251,A253,I276,A277,S278,I326	7	7	133136
+19	Query_674	Specific	catalytic motif	D249,S250,G251	3	3	133136
+19	Query_674	Specific	Catalytic residue	D249	1	1	133136
+19	Query_674	Specific	Active site flap	I276,A277,S278,I279,K283,N292,K293,R294	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_675	Peptide	305	orf305_Cokrec1_feature_4_from_C_86, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_675	Superfamily	356550	49	140	3.70324e-05	41.5512	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_679	Peptide	164	orf164_Cokrec1_feature_14_from_C_86, ORGANISM Genus species Unclassified.,
+DOMAINS
+19	Query_679	Non-specific	227396	9	132	1.04385e-10	58.7484	COG5064	SRP1	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	19
+SESSION	20	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_681	Peptide	801	orf801_Cokrec1_feature_4_from_C_87, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_681	Specific	335181	160	311	1.08195e-08	55.8167	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_682	Peptide	153	orf153_Cokrec1_feature_8_from_C_87, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_682	Superfamily	354865	20	100	8.92902e-07	45.3342	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_686	Peptide	728	orf728_Cokrec1_feature_8_from_C_88, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_686	Specific	335181	19	152	1.05633e-12	67.7579	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_688	Peptide	219	orf219_Cokrec1_feature_4_from_C_89, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_688	Superfamily	354865	2	74	2.7742e-15	69.9869	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_689	Peptide	379	orf379_Cokrec1_feature_6_from_C_89, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_689	Superfamily	354865	283	329	5.2099e-06	45.7194	cl21549	rve	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_690	Peptide	234	orf234_Cokrec1_feature_8_from_C_89, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_690	Superfamily	354865	34	177	7.58567e-09	52.6529	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_691	Peptide	103	orf103_Cokrec1_feature_10_from_C_89, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_691	Specific	335095	2	39	0.00362088	32.7123	pfam02796	HTH_7	-	354815
+ENDDOMAINS
+SITES
+20	Query_691	Generic	DNA-binding interface	R2,A34,T35,S37,R38,I39	8	6	259851
+ENDSITES
+ENDQUERY
+QUERY	Query_692	Peptide	205	orf205_Cokrec1_feature_12_from_C_89, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_692	Non-specific	307583	94	133	0.000630449	36.8287	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_695	Peptide	204	orf204_Cokrec1_feature_18_from_C_89, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_695	Superfamily	354865	14	157	4.12403e-13	63.8237	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_696	Peptide	331	orf331_Cokrec1_feature_2_from_C_90, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_696	Specific	335181	58	189	6.70799e-07	49.2683	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_699	Peptide	301	orf301_Cokrec1_feature_8_from_C_90, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_699	Specific	335181	160	285	1.81099e-09	56.5871	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_702	Peptide	167	orf167_Cokrec1_feature_2_from_C_91, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_702	Superfamily	354865	2	117	5.6435e-07	46.4898	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_703	Peptide	235	orf235_Cokrec1_feature_4_from_C_91, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_703	Specific	338478	112	226	6.83887e-19	79.6008	pfam12762	DDE_Tnp_IS1595	-	351520
+20	Query_703	Specific	339008	42	84	0.000159841	38.1498	pfam13936	HTH_38	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_707	Peptide	695	orf695_Cokrec1_feature_12_from_C_91, ORGANISM Genus species Unclassified.,
+DOMAINS
+20	Query_707	Specific	335181	23	131	3.47938e-08	54.2759	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	20
+ENDDATA

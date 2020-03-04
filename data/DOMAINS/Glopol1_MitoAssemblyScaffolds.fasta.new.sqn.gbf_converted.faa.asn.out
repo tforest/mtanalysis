@@ -1,0 +1,141 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Glopol1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Glopol1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	74	atp9_Glopol1_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	349422	6	70	7.1241e-17	67.1495	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	339	nad4_Glopol1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	235622	1	339	5.48412e-74	236.638	PRK05846	PRK05846	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	661	nad5_Glopol1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	214400	1	646	2.89404e-135	409.852	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	159	cox3_Glopol1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	238834	1	158	1.35571e-43	143.81	cd01665	Cyt_c_Oxidase_III	N	294143
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Subunit III/Vb interface	N78	1	1	238834
+1	Query_6	Specific	Subunit III/VIa interface	L47,S48,L49,Y66,I92,S102,W103,S104,S109,D110,S111	11	11	238834
+1	Query_6	Specific	Subunit III/VIb interface	L39	1	1	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	514	cox1_Glopol1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	238833	12	474	0	713.873	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_7	Specific	Binuclear center (heme a3/CuB)	P243,H292,H293,H378	4	4	238833
+1	Query_7	Specific	Low-spin heme (heme a) binding site	H65,H380,S384,V426,T463	5	5	238833
+1	Query_7	Specific	D-pathway	Y21,N84,D95,N102,G105,S159,S160,N166,T170	9	9	238833
+1	Query_7	Specific	K-pathway	P243,Y247,S258,H292,H293,T318,K321	7	7	238833
+1	Query_7	Specific	Electron transfer pathway	F379,R440,R441	3	3	238833
+1	Query_7	Specific	Putative proton exit pathway	H293,H370,D371,R440,R441	5	5	238833
+1	Query_7	Specific	Putative water exit pathway	D230,Q235,H236,D366,H370,D371,R440	7	7	238833
+1	Query_7	Specific	Subunit I/II interface	N59,D230,K267,F270,G271,*296,V297,G298,I301,R304,I312,V320,F323,Y330,G331,G332,I344,N362,A363,I365,V367,A368,L369,H370,D371,L435,N436,R440,R441,I442,G451,W452	32	32	238833
+1	Query_7	Specific	Subunit I/III interface	T12,P94,F98,R100,W107,D147,L151,V169,N173,I193,L200,P203,*211,T220,S221,F222,G227,G228,D230,S240,Y277,I280,G283,V284,I288	25	25	238833
+1	Query_7	Specific	Subunit I/IV interface	L41,S44,G45,K410,Y413,V414,N447,I465	8	8	238833
+1	Query_7	Specific	Subunit I/VIa interface	S138,R216,N217,*218,N219	5	5	238833
+1	Query_7	Specific	Subunit I/VIb interface	G298	1	1	238833
+1	Query_7	Specific	Subunit I/VIc interface	G331	1	1	238833
+1	Query_7	Specific	Subunit I/VIIa interface	T118,F121	2	2	238833
+1	Query_7	Specific	Subunit I/VIIb interface	N447,G451	2	2	238833
+1	Query_7	Specific	Subunit I/VIIIb interface	L411,I468	2	2	238833
+1	Query_7	Specific	Dimer interface	I193,L200,S240,Y277,I280,G283,V284,I288	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	200	orf200_Glopol1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	103	195	3.81251e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	109	orf109_Glopol1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	50	109	0.00253202	34.5195	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	160	orf160_Glopol1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	81	154	6.76108e-05	39.5271	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	105	orf105_Glopol1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	46	104	0.000336463	36.4455	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	119	nad3_Glopol1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	18	112	5.70216e-19	74.759	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	210	nad1_Glopol1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	333876	3	210	9.50806e-59	186.524	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	64	nad4L_Glopol1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	351118	1	62	1.09085e-06	41.5562	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	216	atp6_Glopol1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	351082	28	189	2.57206e-24	95.736	cl00413	ATP-synt_A	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	244	cox2_Glopol1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	214402	1	239	1.61743e-93	274.32	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	299	cob_Glopol1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	214440	10	299	2.65512e-128	369.111	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	267	orf267_Glopol1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	335245	67	247	1.21962e-38	132.67	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

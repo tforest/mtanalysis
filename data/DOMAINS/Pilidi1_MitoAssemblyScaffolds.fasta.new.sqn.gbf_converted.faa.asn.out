@@ -1,0 +1,436 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Pilidi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Pilidi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	129	cob_Pilidi1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	333783	1	97	5.37884e-38	123.735	pfam00032	Cytochrom_B_C	-	350938
+ENDDOMAINS
+SITES
+1	Query_1	Generic	Qo binding site	I7,P9,E10,L13,F16,Y17,M33	7	7	238179
+1	Query_1	Generic	interchain domain interface	R50,S51,F56,R57	33	4	238179
+1	Query_1	Generic	intrachain domain interface	Q2,T3,P4,I7,P9,E10,W11,Y12,L27,I37,I40,L41,L43,P44,L45,D47	43	16	238179
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	225	orf226_Pilidi1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	273636	78	221	4.23583e-30	110.553	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	446	orf446_Pilidi1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	353929	193	280	1.52442e-08	51.4576	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_4	Generic	active site	Y194,L205,G207,R215,Y219,E265	6	6	198380
+1	Query_4	Generic	catalytic site	R215,E265	2	2	198380
+1	Query_4	Generic	metal binding site	E265	1	1	198380
+1	Query_4	Generic	GIY-YIG motif/motif A	V193,Y194,L205,V206,G207	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	446	cox1_Pilidi1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238833	1	430	0	687.294	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Binuclear center (heme a3/CuB)	E158,H207,H208,H293	4	4	238833
+1	Query_5	Specific	K-pathway	E158,Y162,S173,H207,H208,T233,K236	7	7	238833
+1	Query_5	Specific	Electron transfer pathway	F294,R356,R357	3	3	238833
+1	Query_5	Specific	Putative proton exit pathway	H208,H285,D286,R356,R357	5	5	238833
+1	Query_5	Specific	Putative water exit pathway	D145,Q150,H151,D281,H285,D286,R356	7	7	238833
+1	Query_5	Specific	Subunit I/II interface	D145,K182,F185,G186,T211,V212,G213,V216,R219,L227,I235,F238,Y245,G246,G247,L259,N277,A278,L280,I282,A283,F284,H285,D286,L351,Q352,R356,R357,I358,G367,W368	32	31	238833
+1	Query_5	Specific	Subunit I/III interface	P8,F12,R14,W21,D62,F66,T84,N88,I108,L115,P118,M126,T135,S136,F137,G142,G143,D145,Y155,Y192,M195,G198,I199,I203	25	24	238833
+1	Query_5	Specific	Subunit I/Vb interface	S183,Y187,S429	3	3	238833
+1	Query_5	Specific	Subunit I/VIa interface	V53,R131,N132,F133,N134	5	5	238833
+1	Query_5	Specific	Subunit I/VIb interface	G213	1	1	238833
+1	Query_5	Specific	Subunit I/VIc interface	G246	1	1	238833
+1	Query_5	Specific	Subunit I/VIIa interface	F32,C35	2	2	238833
+1	Query_5	Specific	Subunit I/VIIb interface	D363,G367	2	2	238833
+1	Query_5	Specific	Subunit I/VIIIb interface	L326,W384	2	2	238833
+1	Query_5	Specific	Dimer interface	I108,L115,Y155,Y192,M195,G198,I199,I203	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	319	orf319_Pilidi1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	159	268	9.48019e-21	84.9806	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	41	125	2.25688e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	259	orf259_Pilidi1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	135	233	4.37819e-21	84.5954	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	4	76	7.93341e-16	70.7282	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	427	orf427_Pilidi1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	146	240	1.42736e-21	88.4474	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	296	381	3.31036e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	457	orf457_Pilidi1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	80	167	1.27362e-12	63.4094	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	201	320	1.12559e-08	52.2387	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	246	orf246_Pilidi1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	273636	25	241	1.30646e-27	104.775	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	466	orf466_Pilidi1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	240	306	7.62221e-06	44.1495	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	293	orf293_Pilidi1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	155	266	3.08237e-15	69.9578	pfam00961	LAGLIDADG_1	-	45
+1	Query_13	Specific	334330	47	132	0.000512886	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	441	orf441_Pilidi1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	152	250	2.09321e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	309	411	1.57857e-17	77.2766	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	352	orf352_Pilidi1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	214	313	1.70816e-20	84.9806	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	96	165	0.0016684	37.2159	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	279	orf279_Pilidi1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	157	250	6.74038e-16	71.4986	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	273	orf273_Pilidi1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	198392	51	138	1.31216e-27	101.919	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_18	Non-specific	273636	50	256	3.76565e-23	93.9897	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_18	Specific	putative active site	Y54,Y65,G67,R75,Y79,E124,N136	7	7	198392
+1	Query_18	Specific	putative metal binding site	E124	1	1	198392
+1	Query_18	Specific	GIY-YIG motif/motif A	G52,I53,Y54,Y65,I66,G67	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	493	orf493_Pilidi1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	354370	48	476	0	548.399	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	250	cox2_Pilidi1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	214438	18	248	6.59257e-109	312.918	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	266	orf266_Pilidi1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	353929	1	63	0.00040761	38.3609	cl15257	GIY-YIG_SF	N	-
+ENDDOMAINS
+SITES
+1	Query_23	Generic	active site	Y3,E48	6	2	198380
+1	Query_23	Generic	catalytic site	E48	2	1	198380
+1	Query_23	Generic	metal binding site	E48	1	1	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	435	orf435_Pilidi1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	353929	57	143	6.8461e-06	44.1389	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_24	Generic	active site	Y60,Y71,G73,R81,H85,E139	6	6	198380
+1	Query_24	Generic	catalytic site	R81,E139	2	2	198380
+1	Query_24	Generic	metal binding site	E139	1	1	198380
+1	Query_24	Generic	GIY-YIG motif/motif A	G58,C59,Y60,Y71,V72,G73	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	246	orf246_Pilidi1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	53	228	4.54395e-48	156.167	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	634	orf634_Pilidi1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	144	237	2.8859e-15	71.4986	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	282	389	1.65894e-10	58.0167	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Non-specific	273636	553	633	3.40702e-05	45.0694	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_27	Generic	DNA binding site	L566,I570,M571,Q575,G576,V581,N582,Y584,R602,K606,S611,T614,I616,R617,Y618,Y629	21	16	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	140	nad3_Pilidi1_feature_31_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334119	19	113	2.1813e-22	84.389	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	89	orf90_Pilidi1_feature_33_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	25	60	0.00204184	34.1343	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	129	orf129_Pilidi1_feature_35_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	335245	1	97	1.42103e-34	117.262	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	862	nad2_Pilidi1_feature_37_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	235603	45	402	1.28687e-84	278.628	PRK05777	PRK05777	N	356474
+1	Query_31	Specific	334330	582	679	1.27935e-21	89.9882	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_32	Peptide	661	nad5_Pilidi1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Non-specific	177253	1	632	0	602.768	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	390	orf390_Pilidi1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	271	361	5.01455e-05	41.8383	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	738	orf738_Pilidi1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	334330	30	144	1.18311e-11	61.4834	pfam00961	LAGLIDADG_1	-	45
+2	Query_34	Specific	334330	205	287	2.70642e-11	60.3279	pfam00961	LAGLIDADG_1	C	45
+2	Query_34	Specific	334330	588	706	5.75577e-10	56.8611	pfam00961	LAGLIDADG_1	-	45
+2	Query_34	Specific	334330	471	564	0.00163548	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	203	orf203_Pilidi1_feature_20_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	40	159	3.86369e-17	73.0394	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	165	orf165_Pilidi1_feature_22_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	35	135	6.53693e-32	109.633	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	373	orf373_Pilidi1_feature_24_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	334330	58	144	0.000361237	39.1419	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	249	orf249_Pilidi1_feature_28_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	273636	42	246	2.3793e-32	117.487	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	453	orf453_Pilidi1_feature_30_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	335245	324	431	2.00896e-22	93.3795	pfam03161	LAGLIDADG_2	C	45
+2	Query_40	Specific	335245	64	227	2.26707e-20	87.6015	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	512	orf512_Pilidi1_feature_34_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	334330	101	199	3.22882e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+2	Query_41	Specific	334330	249	362	1.32714e-12	63.7946	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	124	orf124_Pilidi1_feature_37_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	48	109	1.87291e-11	56.0907	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	60	orf61_Pilidi1_feature_41_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334330	6	60	3.18914e-05	37.6011	pfam00961	LAGLIDADG_1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	88	orf89_Pilidi1_feature_43_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	334330	21	77	1.58676e-09	49.9275	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	112	nad4L_Pilidi1_feature_45_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Superfamily	351118	5	79	1.50706e-18	73.9129	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	267	atp6_Pilidi1_feature_7_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	351082	22	267	1.4595e-48	160.557	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	430	orf430_Pilidi1_feature_11_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Non-specific	273636	80	277	6.06455e-37	134.05	TIGR01453	grpIintron_endo	-	45
+2	Query_49	Specific	197761	376	430	2.91451e-05	41.0142	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	254	orf254_Pilidi1_feature_15_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	76	173	4.00762e-25	95.381	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	372	orf372_Pilidi1_feature_17_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	334330	76	175	3.11239e-25	98.0774	pfam00961	LAGLIDADG_1	-	45
+2	Query_51	Specific	334330	233	330	8.83814e-24	93.8402	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	55	atp8_Pilidi1_feature_20_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	283561	1	48	9.50184e-12	52.7938	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	930	nad2_Pilidi1_feature_24_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Superfamily	356474	45	128	3.33732e-18	88.7245	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	389	nad1_Pilidi1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	333876	26	372	2.57446e-108	320.189	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	465	orf465_Pilidi1_feature_8_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	214677	116	196	7.82933e-08	49.342	smart00465	GIYc	-	353929
+2	Query_56	Specific	197761	389	448	1.22377e-06	45.2514	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_56	Generic	active site	Y120,Y132,G134,R142,H146,E184	6	6	198380
+2	Query_56	Generic	catalytic site	R142,E184	2	2	198380
+2	Query_56	Generic	metal binding site	E184	1	1	198380
+2	Query_56	Generic	GIY-YIG motif/motif A	G118,I119,Y120,Y132,I133,G134	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_57	Peptide	105	orf105_Pilidi1_feature_12_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Non-specific	273636	75	105	8.41849e-07	45.0694	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	515	nad4_Pilidi1_feature_15_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	235622	63	511	2.26714e-124	372.613	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	266	orf267_Pilidi1_feature_14_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	335245	43	210	7.26085e-32	115.336	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	369	cob_Pilidi1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	214440	10	367	1.16254e-171	481.974	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_64	Peptide	317	orf317_Pilidi1_feature_8_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_64	Specific	334330	76	170	9.21111e-21	84.9806	pfam00961	LAGLIDADG_1	-	45
+3	Query_64	Specific	334330	208	301	1.43087e-06	45.6903	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	303	orf303_Pilidi1_feature_18_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_67	Specific	334330	48	158	2.89673e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	313	orf313_Pilidi1_feature_22_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_68	Non-specific	273636	97	302	3.78123e-27	105.546	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	476	orf476_Pilidi1_feature_10_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_70	Non-specific	173412	248	404	0.00236477	40.5095	PTZ00121	PTZ00121	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	269	cox3_Pilidi1_feature_12_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Specific	278911	12	269	7.36792e-140	393.314	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+3	Query_71	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,A203,F207	12	12	238834
+3	Query_71	Specific	Subunit III/Vb interface	G166	1	1	238834
+3	Query_71	Specific	Subunit III/VIa interface	F135,E136,L137,W154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+3	Query_71	Specific	Subunit III/VIb interface	I127	1	1	238834
+3	Query_71	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+3	Query_71	Specific	Phospholipid binding site	W65,F66,V69,I70,A73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_72	Peptide	383	orf383_Pilidi1_feature_16_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_72	Specific	334330	76	177	7.07626e-27	102.7	pfam00961	LAGLIDADG_1	-	45
+3	Query_72	Specific	334330	250	351	1.63329e-23	93.455	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	246	orf246_Pilidi1_feature_20_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Specific	335245	50	222	5.4637e-48	156.167	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	321	orf321_Pilidi1_feature_24_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Specific	334330	181	296	1.73403e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	126	orf126_Pilidi1_feature_28_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Specific	334330	5	90	1.03804e-18	74.5802	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_76	Peptide	226	nad6_Pilidi1_feature_6_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Superfamily	354830	22	215	1.22402e-21	87.9693	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	196	orf196_Pilidi1_feature_2_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Specific	333719	71	187	0.00704006	36.7294	NF000535	MSCRAMM_SdrC	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	74	cob_Pilidi1_feature_2_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Specific	333783	4	74	1.14355e-11	54.7846	pfam00032	Cytochrom_B_C	-	350938
+ENDDOMAINS
+SITES
+3	Query_78	Generic	Qo binding site	F4,Y5,M21	7	3	238179
+3	Query_78	Generic	interchain domain interface	I42,S43,F48,R49	33	4	238179
+3	Query_78	Generic	intrachain domain interface	L15,I25,I28,L29,L31,L36,Q37,D39	43	8	238179
+ENDSITES
+ENDQUERY
+ENDSESSION	3
+ENDDATA

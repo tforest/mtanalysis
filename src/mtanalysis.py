@@ -9,15 +9,24 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-def gen_files_list(args):
+# custom modules
+import rpsb_parser
+
+def gen_files_list(input_source, source_type):
     lst = []
-    if args.f:
-        lst += args.f
-    if args.r:
-        lst += [args.r+"/"+f for f in listdir(args.r) if isfile(join(args.r, f))]
+    if source_type == "FOLDER":
+        lst += [input_source+"/"+f for f in listdir(input_source) if isfile(join(input_source, f))]
+    elif source_type == "FILES_LIST":
+        lst += input_source
     #store unique filenames in list to be returned
     lst = list(set(lst))
     lst.sort()
+    return lst
+def input_source_selector(args):
+    if args.f:
+        lst = gen_files_list(args.f, "FILES_LIST")
+    if args.r:
+        lst = gen_files_list(args.r, "FOLDER")
     return lst
 def print_entry(entry):
     for line in entry:
@@ -26,7 +35,8 @@ def load_data(args):
     """
     """
     data = {}
-    files_lst = gen_files_list(args)
+    files_lst = input_source_selector(args)
+    print(files_lst)
     for k, file in enumerate(files_lst):
         print("Reading file: {}/{} ({}%)".format(1+k, len(files_lst),
                                                100*(k+1)/len(files_lst)))
@@ -126,6 +136,9 @@ def main():
     """ 
     """
     parser = argparse.ArgumentParser()
+    parser.add_argument("-a",
+                        help="Perform analysis of genomes",
+                        action="store_true")
     parser.add_argument("-f",
                         help="input file(s)",
                         action="store",
@@ -134,18 +147,35 @@ def main():
                         help="repertory with input files",
                         action="store")
     parser.add_argument("-ids",
-                        help="ids file",
+                        help="ids file for annotation (usually in CSV format)",
+                        action="store")
+    parser.add_argument("-rpsb",
+                        help="parse RPS-BLAST results got from rpsbproc",
+                        action="store")
+    parser.add_argument("-comp",
+                        help="Compare FASTA files to Domains identified by rpsb",
                         action="store")
     try:
         args = parser.parse_args()
-        data, f_lst = load_data(args)
-        for f in data.values():
-            fname = f_lst[list(data.values()).index(f)].split('/')[-1]
-            analyse_file(f, fname)
+        if args.f or args.r:
+            # if it is a basic analysis
+            data, f_lst = load_data(args)
+            if args.a:
+                # if analysis is chosen
+                for f in data.values():
+                    fname = f_lst[list(data.values()).index(f)].split('/')[-1]
+                    analyse_file(f, fname)
         if args.ids:
+            # add annotation mode
             add_annotation(args, f_lst)
+        if args.rpsb:      
+            domains = rpsb_parser.parse(args.rpsb)
+            if (args.f or args.r) and args.comp:
+                # if input masta files then, compare to parsing
+                rpsb_parser.compare(data, f_lst, domains, out_folder = args.comp)
+                
     except:
-        # if optionnal arguments are not specified
+        # if mandatory arguments are not specified
         traceback.print_exc()
         parser.print_help()
         sys.exit(0)

@@ -1,0 +1,350 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Greab1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Greab1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	360	nad1_Greab1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	333876	25	343	1.44838e-111	327.122	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	508	orf508_Greab1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	214677	86	167	7.20032e-05	41.2528	smart00465	GIYc	-	353929
+1	Query_3	Specific	197761	200	256	0.000377088	38.3178	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	451	orf451_Greab1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334582	24	102	4.41763e-10	55.8037	pfam01541	GIY-YIG	-	353929
+1	Query_5	Non-specific	273636	24	288	0.000342187	41.6026	TIGR01453	grpIintron_endo	-	45
+1	Query_5	Specific	284793	311	350	0.000684177	36.7216	pfam07453	NUMOD1	-	299755
+1	Query_5	Specific	197761	392	444	0.000885107	37.1622	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+1	Query_5	Generic	active site	Y28,Y39,G42,R50,H54,E93	6	6	198380
+1	Query_5	Generic	catalytic site	R50,E93	2	2	198380
+1	Query_5	Generic	metal binding site	E93	1	1	198380
+1	Query_5	Generic	GIY-YIG motif/motif A	G26,I27,Y28,Y39,I41,G42	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	488	nad4_Greab1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235622	31	484	7.25545e-127	378.006	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	191	orf192_Greab1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	27	120	8.00931e-14	64.1798	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	48	atp8_Greab1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	283561	1	48	1.79857e-09	46.6306	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	260	atp6_Greab1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351082	15	260	8.60588e-48	158.631	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	209	orf209_Greab1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	355698	3	137	1.40688e-08	53.626	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	221	nad6_Greab1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	354830	22	92	5.23522e-16	72.9465	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	269	cox3_Greab1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	278911	12	269	5.67149e-136	383.684	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_13	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_13	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_13	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,T190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_13	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_13	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_13	Specific	Phospholipid binding site	W65,W66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	469	orf469_Greab1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	180	279	1.19025e-26	103.085	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	341	439	2.09184e-19	83.0546	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	487	orf487_Greab1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	70	172	2.41401e-15	71.4986	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	216	341	4.55002e-06	44.9199	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	189	orf190_Greab1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	273636	6	186	5.03074e-35	122.109	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	272	orf273_Greab1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	273636	56	264	3.82024e-36	127.887	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	270	orf271_Greab1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	273636	74	269	7.88972e-34	121.724	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	606	nad2_Greab1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	235603	25	510	2.90621e-81	263.605	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	134	nad3_Greab1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334119	25	113	3.8905e-14	63.203	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	386	cob_Greab1_feature_112_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	214425	5	379	3.60986e-180	505.206	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	357	orf357_Greab1_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	273636	133	355	1.4587e-27	107.472	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	264	orf264_Greab1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	273636	23	263	1.96205e-29	110.168	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	685	cox1_Greab1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	238833	49	550	0	840.989	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_28	Specific	Binuclear center (heme a3/CuB)	H279,H328,H329,H414	4	4	238833
+1	Query_28	Specific	Low-spin heme (heme a) binding site	H100,H416,S420,T462,S499	5	5	238833
+1	Query_28	Specific	D-pathway	Y57,N119,D130,N137,S140,S195,S196,N202,T206	9	9	238833
+1	Query_28	Specific	K-pathway	H279,Y283,S294,H328,H329,T354,K357	7	7	238833
+1	Query_28	Specific	Electron transfer pathway	F415,R476,R477	3	3	238833
+1	Query_28	Specific	Putative proton exit pathway	H329,H406,D407,R476,R477	5	5	238833
+1	Query_28	Specific	Putative water exit pathway	D266,Q271,H272,D402,H406,D407,R476	7	7	238833
+1	Query_28	Specific	Subunit I/II interface	N94,D266,K303,F306,G307,T332,V333,G334,V337,R340,L348,I356,F359,Y366,G367,G368,L380,N398,A399,L401,I403,A404,F405,H406,D407,L471,Q472,R476,R477,I478,G487,W488	32	32	238833
+1	Query_28	Specific	Subunit I/III interface	P129,F133,R135,W142,D183,F187,T205,N209,V229,L236,P239,M247,T256,S257,F258,G263,G264,D266,F276,Y313,M316,G319,V320,V324	25	24	238833
+1	Query_28	Specific	Subunit I/IV interface	L77,S80,G81,T446,K449,V450,D483,V501	8	8	238833
+1	Query_28	Specific	Subunit I/Vb interface	S304,Y308,A549	3	3	238833
+1	Query_28	Specific	Subunit I/VIa interface	V174,R252,N253,F254,N255	5	5	238833
+1	Query_28	Specific	Subunit I/VIb interface	G334	1	1	238833
+1	Query_28	Specific	Subunit I/VIc interface	G367	1	1	238833
+1	Query_28	Specific	Subunit I/VIIa interface	F153,G156	2	2	238833
+1	Query_28	Specific	Subunit I/VIIb interface	D483,G487	2	2	238833
+1	Query_28	Specific	Subunit I/VIIc interface	F63,L67,A70,L74,S155,G156,I438,Y511,L514	9	9	238833
+1	Query_28	Specific	Subunit I/VIIIb interface	L447,W504	2	2	238833
+1	Query_28	Specific	Dimer interface	V229,L236,F276,Y313,M316,G319,V320,V324	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_29	Peptide	331	orf331_Greab1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	198392	76	163	2.15479e-25	97.2964	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_29	Non-specific	273636	75	326	1.70277e-08	53.9289	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_29	Specific	putative active site	Y78,Y89,G91,R99,Y103,E148,N160	7	7	198392
+1	Query_29	Specific	putative metal binding site	E148	1	1	198392
+1	Query_29	Specific	GIY-YIG motif/motif A	G76,V77,Y78,Y89,V90,G91	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	302	orf302_Greab1_feature_135_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	151	260	2.05868e-17	75.7358	pfam00961	LAGLIDADG_1	-	45
+1	Query_30	Specific	334330	33	127	4.19618e-07	47.2311	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	366	orf366_Greab1_feature_139_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	334330	96	192	8.88512e-22	88.4474	pfam00961	LAGLIDADG_1	-	45
+1	Query_31	Specific	334330	248	337	1.40738e-05	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	370	orf370_Greab1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	334330	221	326	5.87849e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+1	Query_32	Specific	334330	91	187	7.18168e-08	49.9275	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_33	Peptide	324	orf324_Greab1_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	195	291	9.17445e-21	84.9806	pfam00961	LAGLIDADG_1	-	45
+2	Query_33	Specific	334330	86	154	1.16218e-05	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	361	orf361_Greab1_feature_151_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	334330	223	322	2.50417e-18	79.2026	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	413	orf413_Greab1_feature_155_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	273636	121	323	2.35293e-50	168.718	TIGR01453	grpIintron_endo	-	45
+2	Query_35	Specific	197761	360	410	0.000157837	39.0882	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	263	orf263_Greab1_feature_159_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	36	131	1.14593e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+2	Query_36	Specific	334330	172	261	2.26202e-10	56.0907	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	259	orf259_Greab1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	137	233	2.98237e-18	77.2766	pfam00961	LAGLIDADG_1	-	45
+2	Query_37	Specific	334330	11	77	9.21804e-11	57.2463	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	240	orf240_Greab1_feature_164_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	349422	16	47	1.74013e-05	41.3412	cd18182	ATP-synt_Fo_c_ATP5G3	N	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_39	Peptide	252	cox2_Greab1_feature_166_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	214438	19	248	3.74747e-110	316.385	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	288	orf288_Greab1_feature_170_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	273636	50	283	1.11927e-57	183.741	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	444	orf444_Greab1_feature_176_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Superfamily	353929	109	195	5.75079e-13	64.1692	cl15257	GIY-YIG_SF	-	-
+2	Query_41	Non-specific	273636	109	349	0.000177696	42.373	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+2	Query_41	Generic	active site	Y111,Y122,G124,R132,Y135,E180	6	6	198380
+2	Query_41	Generic	catalytic site	R132,E180	2	2	198380
+2	Query_41	Generic	metal binding site	E180	1	1	198380
+2	Query_41	Generic	GIY-YIG motif/motif A	G109,V110,Y111,Y122,V123,G124	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	273	orf273_Greab1_feature_178_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	197761	225	270	1.79231e-06	44.0958	smart00497	IENR1	-	299755
+2	Query_42	Non-specific	273636	2	272	2.86911e-06	46.9953	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	89	nad4L_Greab1_feature_183_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Superfamily	351118	5	86	1.83443e-17	70.0609	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	653	nad5_Greab1_feature_185_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Non-specific	177253	1	630	0	596.219	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	320	orf320_Greab1_feature_191_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	180	288	1.81704e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	18	119	1.5662e-15	71.1134	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	430	orf430_Greab1_feature_193_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	301	400	9.11194e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	188	orf188_Greab1_feature_196_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	334330	12	102	8.19295e-16	69.1874	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	564	nad1_Greab1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	333876	25	81	5.84417e-11	63.6457	pfam00146	NADHdh	C	351105
+2	Query_49	Specific	214677	142	223	5.03303e-05	41.638	smart00465	GIYc	-	353929
+2	Query_49	Specific	197761	256	312	0.000227882	39.0882	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	188	orf188_Greab1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	334330	12	102	8.19295e-16	69.1874	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	397	nad5_Greab1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Non-specific	214400	2	375	2.84696e-94	294.292	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	510	orf511_Greab1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	334330	381	480	7.96837e-15	69.9578	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	318	orf319_Greab1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	334330	178	286	1.64647e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+2	Query_54	Specific	334330	16	117	1.43079e-15	71.1134	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	72	orf73_Greab1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	334330	7	40	2.55645e-07	43.3791	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	243	orf244_Greab1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	121	220	1.94087e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	397	nad5_Greab1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Non-specific	214400	2	375	1.00886e-90	285.047	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	188	orf188_Greab1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	334330	12	102	7.93571e-16	69.1874	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

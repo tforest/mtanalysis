@@ -1,0 +1,178 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Amarub1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Amarub1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	529	cox1_Amarub1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	9	513	0	827.892	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	Q241,H290,H291,H376	4	4	238833
+1	Query_1	Specific	Low-spin heme (heme a) binding site	H62,H378,S382,T424,S461	5	5	238833
+1	Query_1	Specific	D-pathway	Y18,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238833
+1	Query_1	Specific	K-pathway	Q241,Y245,S256,H290,H291,T316,K319	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F377,R438,R439	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H291,H368,D369,R438,R439	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D228,Q233,H234,D364,H368,D369,R438	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	N56,D228,K265,F268,G269,S294,V295,G296,V299,R302,M310,I318,F321,Y328,G329,G330,L342,N360,A361,L363,V365,A366,F367,H368,D369,L433,A434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_1	Specific	Subunit I/III interface	T9,P91,F95,R97,W104,D145,F149,S167,N171,V191,L198,P201,M209,T218,S219,F220,G225,G226,D228,F238,Y275,F278,G281,I282,L286	25	25	238833
+1	Query_1	Specific	Subunit I/IV interface	L38,S41,S42,F408,K411,I412,D445,V463	8	8	238833
+1	Query_1	Specific	Subunit I/Vb interface	P266,Y270,T512	3	3	238833
+1	Query_1	Specific	Subunit I/VIa interface	I136,R214,N215,F216,N217	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G296	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G329	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	I115,L118	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_1	Specific	Subunit I/VIIc interface	F24,I28,A31,L35,S117,L118,I400,Y473,F476	9	9	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	L409,V466	2	2	238833
+1	Query_1	Specific	Dimer interface	V191,L198,F238,Y275,F278,G281,I282,L286	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	255	orf255_Amarub1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	353929	163	249	9.27643e-11	56.8504	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_2	Generic	active site	Y164,F175,D177,K185,Y189,E238	6	6	198380
+1	Query_2	Generic	catalytic site	K185,E238	2	2	198380
+1	Query_2	Generic	metal binding site	E238	1	1	198380
+1	Query_2	Generic	GIY-YIG motif/motif A	I163,Y164,F175,V176,D177	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	259	orf259_Amarub1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	168	257	2.07197e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	39	129	5.58654e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	324	orf324_Amarub1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	208	302	2.24087e-18	78.8174	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	100	180	0.000102093	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	314	orf314_Amarub1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	193	282	4.50795e-07	47.2311	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	87	153	6.6083e-06	43.7643	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	242	orf242_Amarub1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	354484	68	149	0.00286352	37.8513	cl19854	DUF1002	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	255	atp6_Amarub1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273458	30	252	5.66977e-47	155.442	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	667	nad5_Amarub1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	235836	1	632	0	557.08	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	88	nad4L_Amarub1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	5	88	2.06316e-15	64.6681	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	52	atp8_Amarub1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	283561	1	48	0.000427436	33.1486	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	543	cob_Amarub1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	214440	10	366	1.01363e-175	499.308	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	269	cox3_Amarub1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	238834	23	266	9.36708e-118	336.795	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_12	Specific	Subunit I/III interface	E81,H84,G85,S96,F99,S103,I104,H110,G198,V199,S202,A206	12	12	238834
+1	Query_12	Specific	Subunit III/Vb interface	A165	1	1	238834
+1	Query_12	Specific	Subunit III/VIa interface	F134,A135,I136,Y153,A179,S189,E190,A191,S196,D197,G198	11	11	238834
+1	Query_12	Specific	Subunit III/VIb interface	M126	1	1	238834
+1	Query_12	Specific	Subunit III/VIIa interface	L63,R66,D67,T70,T73,Y74,L75	7	7	238834
+1	Query_12	Specific	Phospholipid binding site	W64,F65,V68,I69,G72,H78,G89,V90,F93,F221,R228,Q240,G241	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	73	atp9_Amarub1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351103	1	72	3.21344e-16	65.641	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	338	nad1_Amarub1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	333876	20	326	1.70218e-124	359.094	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	960	orf960_Amarub1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	355698	364	784	8.71356e-47	174.073	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	124	nad3_Amarub1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334119	27	113	3.73317e-29	100.953	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	585	nad2_Amarub1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	235603	136	493	2.36806e-71	236.641	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	225	nad6_Amarub1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Superfamily	354830	8	104	3.38724e-17	76.4133	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	490	nad4_Amarub1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	235622	4	488	6.2793e-143	419.222	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	253	cox2_Amarub1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	214402	7	253	8.47178e-111	318.618	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	722	orf722_Amarub1_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	234767	65	260	0.00384973	40.5916	PRK00448	polC	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

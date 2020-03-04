@@ -1,0 +1,151 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Asprobu1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Asprobu1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	339	orf340_Asprobu1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	350997	2	74	2.05733e-41	150.326	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_1	Specific	334330	249	337	5.03415e-09	53.0091	pfam00961	LAGLIDADG_1	-	45
+1	Query_1	Specific	334330	109	205	3.45454e-06	44.9199	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_1	Generic	Low-spin heme binding site	Y72	15	1	238461
+1	Query_1	Generic	K-pathway	T17,K20	7	2	238461
+1	Query_1	Generic	Putative proton exit pathway	H69,D70	5	2	238461
+1	Query_1	Generic	Putative water exit pathway	D65,H69,D70	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	363	orf363_Asprobu1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	350997	2	43	3.94163e-26	108.724	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_2	Specific	334330	237	331	4.01686e-17	75.7358	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	334330	126	205	0.00391495	36.4455	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_2	Generic	Binuclear center (active site)	H37	4	1	238461
+1	Query_2	Generic	K-pathway	H37,Y42	7	2	238461
+1	Query_2	Generic	Putative water exit pathway	D24,Q29,H30	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	493	orf494_Asprobu1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	350997	16	137	2.01347e-73	240.077	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_3	Specific	334330	224	321	1.64308e-15	71.8838	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	344	449	4.80587e-13	64.9502	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_3	Generic	Low-spin heme binding site	W71	15	1	238461
+1	Query_3	Generic	D-pathway	N25,D36,N43,S46,S101,S102,N108,T112	9	8	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	269	cox3_Asprobu1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	278911	12	269	2.56646e-144	404.87	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Subunit I/III interface	A82,K85,G86,S97,F100,A104,I105,H111,S199,V200,S203,F207	12	12	238834
+1	Query_5	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_5	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,T190,V191,S192,S197,D198,S199	11	11	238834
+1	Query_5	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_5	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_5	Specific	Phospholipid binding site	W65,F66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	218	nad6_Asprobu1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	354830	31	114	9.25031e-15	69.4797	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	257	atp6_Asprobu1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	351082	12	257	4.74188e-52	169.417	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	48	atp8_Asprobu1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	283561	1	48	1.83849e-09	46.6306	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	488	nad4_Asprobu1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	235622	8	484	4.57682e-134	396.495	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	335	nad1_Asprobu1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	333876	10	319	1.99253e-118	343.686	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	74	atp9_Asprobu1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	351103	1	72	3.44764e-14	60.6334	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	143	atp9_Asprobu1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	349422	16	71	1.39664e-12	58.6752	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	386	cob_Asprobu1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	214440	10	365	0	512.02	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	562	nad2_Asprobu1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	130	484	4.69618e-82	264.375	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	663	nad5_Asprobu1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	214400	1	630	0	596.674	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	89	nad4L_Asprobu1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	351118	5	87	6.31286e-19	73.9129	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	253	cox2_Asprobu1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	214438	18	247	4.6484e-108	310.992	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	135	nad3_Asprobu1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334119	21	113	5.12348e-16	67.8254	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

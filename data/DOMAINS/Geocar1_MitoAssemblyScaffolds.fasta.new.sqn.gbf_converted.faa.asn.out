@@ -1,0 +1,327 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Geocar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Geocar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	176	orf177_Geocar1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	335245	84	164	4.00975e-12	61.0227	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	390	orf391_Geocar1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	44	147	1.37493e-15	71.8838	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	362	rps3_Geocar1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	283074	34	347	3.21473e-07	51.4435	pfam05316	VAR1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	345	nad1_Geocar1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	333876	12	328	1.38064e-117	341.76	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	488	nad4_Geocar1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235622	23	484	4.63274e-138	406.511	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	257	atp6_Geocar1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	351082	6	257	1.07896e-52	170.958	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	117	orf118_Geocar1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	33	116	8.5311e-10	51.4683	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	386	orf387_Geocar1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	198392	134	221	1.36138e-25	98.8372	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_12	Non-specific	273636	133	384	3.54414e-11	62.0181	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_12	Specific	putative active site	Y136,Y147,G149,R157,Y161,E206,N218	7	7	198392
+1	Query_12	Specific	putative metal binding site	E206	1	1	198392
+1	Query_12	Specific	GIY-YIG motif/motif A	G134,V135,Y136,Y147,V148,G149	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	462	cox1_Geocar1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	238833	5	444	0	663.412	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_15	Specific	D-pathway	N13,D24,N31,S34,S89,S90,N96,T100	9	8	238833
+1	Query_15	Specific	K-pathway	Y177,S188,H222,H223,T248,K251	7	6	238833
+1	Query_15	Specific	Electron transfer pathway	F309,R370,R371	3	3	238833
+1	Query_15	Specific	Putative proton exit pathway	H223,H300,D301,R370,R371	5	5	238833
+1	Query_15	Specific	Putative water exit pathway	D160,Q165,H166,D296,H300,D301,R370	7	7	238833
+1	Query_15	Specific	Subunit I/II interface	D160,K197,F200,G201,T226,V227,G228,M231,R234,L242,I250,F253,Y260,G261,G262,L274,N292,A293,L295,I297,A298,F299,H300,D301,L365,Q366,R370,R371,I372,G381,W382	32	31	238833
+1	Query_15	Specific	Subunit I/III interface	P23,F27,R29,W36,D77,F81,T99,N103,I123,L130,P133,I141,T150,S151,F152,G157,G158,D160,Y207,M210,G213,V214,V218	25	23	238833
+1	Query_15	Specific	Subunit I/Vb interface	S198,Q202,A443	3	3	238833
+1	Query_15	Specific	Subunit I/VIa interface	I68,R146,N147,F148,N149	5	5	238833
+1	Query_15	Specific	Subunit I/VIb interface	G228	1	1	238833
+1	Query_15	Specific	Subunit I/VIc interface	G261	1	1	238833
+1	Query_15	Specific	Subunit I/VIIa interface	F47,S50	2	2	238833
+1	Query_15	Specific	Subunit I/VIIb interface	D377,G381	2	2	238833
+1	Query_15	Specific	Subunit I/VIIIb interface	L341,A398	2	2	238833
+1	Query_15	Specific	Dimer interface	I123,L130,Y207,M210,G213,V214,V218	8	7	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	513	orf513_Geocar1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	363	472	1.3771e-21	89.2178	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	44	158	3.74302e-17	76.5062	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	245	329	0.000236944	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	315	orf315_Geocar1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	24	129	6.29115e-21	85.3658	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	184	272	0.00206138	36.8307	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	410	orf410_Geocar1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	353929	156	250	3.84878e-11	58.7764	cl15257	GIY-YIG_SF	-	-
+1	Query_18	Specific	197761	260	313	1.36207e-06	44.8662	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+1	Query_18	Generic	active site	Y158,Y169,G171,I179,Y183,E235	6	6	198380
+1	Query_18	Generic	catalytic site	I179,E235	2	2	198380
+1	Query_18	Generic	metal binding site	E235	1	1	198380
+1	Query_18	Generic	GIY-YIG motif/motif A	G156,V157,Y158,Y169,V170,G171	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	387	orf387_Geocar1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	106	192	1.52379e-15	71.4986	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	238	343	4.85182e-10	56.0907	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	291	orf291_Geocar1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	162	259	1.77666e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+1	Query_20	Specific	334330	45	130	0.00450707	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	286	orf286_Geocar1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	59	131	2.41988e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	246	orf246_Geocar1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	55	164	1.31471e-10	56.4759	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	401	orf401_Geocar1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	171	237	1.72879e-06	46.0755	pfam00961	LAGLIDADG_1	C	45
+1	Query_23	Specific	334330	277	355	0.00469382	36.0603	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	229	orf229_Geocar1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	42	210	1.02599e-50	162.33	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	353	orf353_Geocar1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	230	327	3.2634e-13	64.9502	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	520	orf520_Geocar1_feature_112_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	335245	321	488	2.38746e-47	161.945	pfam03161	LAGLIDADG_2	-	45
+1	Query_28	Specific	334330	91	222	9.03474e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	329	orf329_Geocar1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	64	157	9.18663e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	48	atp8_Geocar1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Non-specific	283561	1	48	1.44771e-08	44.3194	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	66	atp9_Geocar1_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	349422	6	58	7.5407e-18	69.0755	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_33	Peptide	621	orf621_Geocar1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Non-specific	282904	125	416	1.76076e-15	79.9603	pfam05109	Herpes_BLLF1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	582	nad2_Geocar1_feature_130_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	235603	140	506	1.01896e-85	274.391	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_37	Peptide	125	nad3_Geocar1_feature_139_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334119	20	114	1.39864e-11	56.2694	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	390	cob_Geocar1_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	214440	10	367	3.11126e-169	476.582	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	266	orf266_Geocar1_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	335245	48	244	2.03256e-21	87.9867	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	309	orf309_Geocar1_feature_163_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	53	129	2.51373e-05	42.2235	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	319	orf319_Geocar1_feature_167_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	334330	74	170	1.05524e-21	87.677	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	334330	206	301	1.48068e-07	48.7719	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	208	nad6_Geocar1_feature_182_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Superfamily	354830	24	205	1.38059e-22	89.6749	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	269	cox3_Geocar1_feature_186_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	278911	12	269	2.67848e-134	379.447	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_47	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,S104,V105,H111,G199,A200,S203,F207	12	12	238834
+2	Query_47	Specific	Subunit III/Vb interface	G166	1	1	238834
+2	Query_47	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,S190,V191,S192,S197,D198,G199	11	11	238834
+2	Query_47	Specific	Subunit III/VIb interface	L127	1	1	238834
+2	Query_47	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+2	Query_47	Specific	Phospholipid binding site	W65,F66,V69,V70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_48	Peptide	324	orf324_Geocar1_feature_192_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	334330	178	296	2.52385e-12	62.2538	pfam00961	LAGLIDADG_1	-	45
+2	Query_48	Specific	334330	57	154	4.91661e-05	41.4531	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	189	orf189_Geocar1_feature_198_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	335245	1	171	7.21984e-41	135.751	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	129	orf129_Geocar1_feature_204_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	35	127	8.01924e-22	82.6694	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	251	cox2_Geocar1_feature_207_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	214438	19	249	3.21305e-104	301.362	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	256	orf256_Geocar1_feature_217_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	335245	64	238	8.33263e-43	143.07	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	90	nad4L_Geocar1_feature_224_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Superfamily	351118	1	86	5.03575e-18	71.6017	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	673	nad5_Geocar1_feature_226_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Non-specific	177253	1	633	0	594.679	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	453	orf454_Geocar1_feature_229_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	334330	320	420	1.58296e-33	121.575	pfam00961	LAGLIDADG_1	-	45
+2	Query_55	Specific	334330	136	237	2.72454e-28	107.322	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	418	orf418_Geocar1_feature_232_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	285	385	7.74326e-34	121.575	pfam00961	LAGLIDADG_1	-	45
+2	Query_56	Specific	334330	101	202	1.56182e-28	107.707	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	149	orf149_Geocar1_feature_240_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	335245	5	128	1.85955e-26	97.2315	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	320	orf320_Geocar1_feature_242_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	334330	195	288	8.43432e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+2	Query_58	Specific	334330	74	161	5.66206e-05	41.4531	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	393	orf393_Geocar1_feature_246_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	334330	252	354	4.26825e-11	59.1723	pfam00961	LAGLIDADG_1	-	45
+2	Query_59	Specific	334330	124	214	0.000167573	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	497	orf497_Geocar1_feature_250_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	91	188	1.01547e-22	92.2994	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	378	467	1.39654e-07	49.5423	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	272	340	0.00814257	35.6751	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	202	orf202_Geocar1_feature_252_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	334330	100	186	0.0012711	36.8307	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	219	orf220_Geocar1_feature_275_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	334330	36	153	9.08564e-09	51.0831	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

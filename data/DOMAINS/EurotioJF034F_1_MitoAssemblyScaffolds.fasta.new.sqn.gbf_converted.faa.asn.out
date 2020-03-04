@@ -1,0 +1,136 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	EurotioJF034F_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	EurotioJF034F_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	56	atp8_EurotioJF034F_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	283561	1	48	6.47905e-08	43.1638	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	255	atp6_EurotioJF034F_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	273458	23	252	1.05314e-47	157.368	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	212	nad6_EurotioJF034F_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	354830	48	207	8.38753e-16	71.9557	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	496	nad4_EurotioJF034F_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	235622	32	477	2.56104e-122	366.835	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	538	nad2_EurotioJF034F_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	235603	125	514	1.61616e-82	264.761	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	269	cox3_EurotioJF034F_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	278911	12	269	3.93779e-125	356.335	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,T200,S203,F207	12	12	238834
+1	Query_6	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_6	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,T190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_6	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_6	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_6	Specific	Phospholipid binding site	W65,F66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	74	atp9_EurotioJF034F_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	349422	6	70	7.54438e-19	71.7719	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	262	cox2_EurotioJF034F_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	214402	24	256	1.39579e-103	300.514	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	89	nad4L_EurotioJF034F_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	5	86	1.38175e-17	70.4461	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	667	nad5_EurotioJF034F_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	214400	1	633	0	578.184	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	355	nad1_EurotioJF034F_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	333876	9	338	1.91073e-110	324.041	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	391	cob_EurotioJF034F_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214440	10	367	4.15951e-171	481.589	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	135	nad3_EurotioJF034F_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334119	26	113	1.36338e-14	64.3586	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	568	cox1_EurotioJF034F_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	238833	42	544	0	815.566	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_15	Specific	Binuclear center (heme a3/CuB)	H273,H322,H323,H408	4	4	238833
+1	Query_15	Specific	Low-spin heme (heme a) binding site	H94,H410,S414,T456,S493	5	5	238833
+1	Query_15	Specific	D-pathway	Y51,N113,D124,N131,S134,S189,S190,N196,T200	9	9	238833
+1	Query_15	Specific	K-pathway	H273,Y277,S288,H322,H323,T348,K351	7	7	238833
+1	Query_15	Specific	Electron transfer pathway	F409,R470,R471	3	3	238833
+1	Query_15	Specific	Putative proton exit pathway	H323,H400,D401,R470,R471	5	5	238833
+1	Query_15	Specific	Putative water exit pathway	D260,Q265,H266,D396,H400,D401,R470	7	7	238833
+1	Query_15	Specific	Subunit I/II interface	N88,D260,K297,F300,G301,T326,V327,G328,V331,R334,L342,I350,F353,Y360,G361,G362,L374,N392,A393,L395,I397,A398,F399,H400,D401,L465,Q466,R470,R471,I472,G481,W482	32	32	238833
+1	Query_15	Specific	Subunit I/III interface	C42,P123,F127,R129,W136,D177,F181,T199,N203,I223,L230,P233,M241,T250,S251,F252,G257,G258,D260,F270,Y307,M310,G313,V314,V318	25	25	238833
+1	Query_15	Specific	Subunit I/IV interface	L71,S74,G75,L440,K443,V444,D477,V495	8	8	238833
+1	Query_15	Specific	Subunit I/Vb interface	N298,Y302,S543	3	3	238833
+1	Query_15	Specific	Subunit I/VIa interface	L168,R246,N247,F248,N249	5	5	238833
+1	Query_15	Specific	Subunit I/VIb interface	G328	1	1	238833
+1	Query_15	Specific	Subunit I/VIc interface	G361	1	1	238833
+1	Query_15	Specific	Subunit I/VIIa interface	F147,M150	2	2	238833
+1	Query_15	Specific	Subunit I/VIIb interface	D477,G481	2	2	238833
+1	Query_15	Specific	Subunit I/VIIc interface	F57,A61,A64,L68,G149,M150,I432,Y505,L508	9	9	238833
+1	Query_15	Specific	Subunit I/VIIIb interface	W441,L498	2	2	238833
+1	Query_15	Specific	Dimer interface	I223,L230,F270,Y307,M310,G313,V314,V318	8	8	238833
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

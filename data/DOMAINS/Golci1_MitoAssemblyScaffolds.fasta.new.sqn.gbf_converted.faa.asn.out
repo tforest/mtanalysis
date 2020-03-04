@@ -1,0 +1,447 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Golci1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Golci1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_15	Peptide	422	orf422_Golci1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	88	173	1.61073e-08	51.8535	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	197	nad1_Golci1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	333876	2	171	3.29167e-62	194.999	pfam00146	NADHdh	C	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	733	cob_Golci1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	238828	314	583	1.52565e-80	255.974	cd01651	RT_G2_intron	-	295487
+1	Query_34	Non-specific	279664	606	730	1.23025e-25	102.933	pfam01348	Intron_maturas2	-	45
+1	Query_34	Non-specific	164595	1	33	2.49804e-09	59.7144	MTH00022	CYTB	C	45
+ENDDOMAINS
+SITES
+1	Query_34	Specific	putative active site	D389,I390,S391,K392,C393,F394,Q444,G445,Y527,D529,D530,L579,G580	13	13	238828
+1	Query_34	Specific	putative nucleic acid binding site	G445	1	1	238828
+1	Query_34	Specific	putative NTP binding site	D389,I390,S391,K392,C393,F394,Q444,D529	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	695	orf695_Golci1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	238828	268	532	5.94188e-72	232.862	cd01651	RT_G2_intron	-	295487
+1	Query_35	Non-specific	279664	558	657	1.86639e-24	99.4662	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+1	Query_35	Specific	putative active site	D342,H343,K344,F345,N346,V394,G395,Y478,D480,D481,L528,G529	13	12	238828
+1	Query_35	Specific	putative nucleic acid binding site	G395	1	1	238828
+1	Query_35	Specific	putative NTP binding site	D342,H343,K344,F345,N346,V394,D480	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_36	Peptide	283	orf283_Golci1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Specific	335245	47	227	5.22005e-19	81.8235	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	323	orf324_Golci1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Non-specific	273636	114	311	2.52564e-20	87.4413	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	756	orf756_Golci1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	238828	313	585	3.60312e-82	260.981	cd01651	RT_G2_intron	-	295487
+1	Query_39	Non-specific	279664	608	735	4.90034e-22	92.5326	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+1	Query_39	Specific	putative active site	D387,F388,K389,A390,C391,F392,P440,G441,Y530,D532,E533,L581,G582	13	13	238828
+1	Query_39	Specific	putative nucleic acid binding site	G441	1	1	238828
+1	Query_39	Specific	putative NTP binding site	D387,F388,K389,A390,C391,F392,P440,D532	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	169	nad4_Golci1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_43	Non-specific	235622	12	169	4.47552e-31	116.455	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	313	nad4_Golci1_feature_129_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_44	Non-specific	235622	1	201	2.78271e-53	181.554	PRK05846	PRK05846	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_54	Peptide	611	orf611_Golci1_feature_149_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	238828	175	444	3.97952e-70	225.928	cd01651	RT_G2_intron	-	295487
+2	Query_54	Non-specific	279664	479	590	6.60344e-33	122.963	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+2	Query_54	Specific	putative active site	D248,I249,H250,G251,F252,F253,Q302,G303,Y391,D393,Y394,L440,G441	13	13	238828
+2	Query_54	Specific	putative nucleic acid binding site	G303	1	1	238828
+2	Query_54	Specific	putative NTP binding site	D248,I249,H250,G251,F252,F253,Q302,D393	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_58	Peptide	277	cox1_Golci1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Superfamily	350997	7	277	1.03964e-169	478.131	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+2	Query_58	Generic	Binuclear center (active site)	H143,H192,H193	4	3	238461
+2	Query_58	Generic	Low-spin heme binding site	W29,Y273	15	2	238461
+2	Query_58	Generic	D-pathway	S59,S60,N66,T70	9	4	238461
+2	Query_58	Generic	K-pathway	H143,Y147,S158,H192,H193,T218,K221	7	7	238461
+2	Query_58	Generic	Putative proton exit pathway	H193,H270,D271	5	3	238461
+2	Query_58	Generic	Putative water exit pathway	D130,Q135,H136,D266,H270,D271	7	6	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_60	Peptide	322	orf322_1_Golci1_feature_165_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	193	283	2.19461e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	87	154	7.01627e-06	43.7643	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	437	orf437_1_Golci1_feature_169_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	273636	144	349	7.92321e-57	186.438	TIGR01453	grpIintron_endo	-	45
+2	Query_61	Specific	197761	383	433	1.06037e-08	51.0294	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	152	cox1_Golci1_feature_178_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Superfamily	350997	1	136	1.28264e-57	186.15	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_65	Generic	Low-spin heme binding site	H2,L5,S6,R62,R63,F92	15	6	238461
+2	Query_65	Generic	Putative proton exit pathway	R62,R63	5	2	238461
+2	Query_65	Generic	Putative water exit pathway	R62	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_67	Peptide	282	orf283_Golci1_feature_182_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Specific	334330	182	274	1.30001e-23	91.9142	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	22	orf23_Golci1_feature_190_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Non-specific	236123	3	19	0.000165498	34.5084	PRK07883	PRK07883	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	111	nad4L_Golci1_feature_194_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Superfamily	351118	5	80	2.70833e-16	68.1349	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	398	nad5_Golci1_feature_202_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_77	Non-specific	214400	1	371	1.11224e-86	274.647	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	426	orf426_1_Golci1_feature_206_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_78	Specific	334330	307	397	0.000316639	39.5271	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_79	Peptide	48	atp8_Golci1_feature_211_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_79	Non-specific	283561	1	48	1.21709e-07	42.0082	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	138	nad3_Golci1_feature_227_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_87	Specific	334119	19	113	1.26557e-11	56.6546	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	290	nad6_Golci1_feature_238_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_91	Superfamily	354830	29	125	2.91153e-19	83.3469	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_93	Peptide	407	cox3_Golci1_feature_244_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_93	Specific	278911	14	261	4.22175e-127	366.736	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_93	Specific	Subunit I/III interface	A84,R87,G88,S99,L102,A106,I107,H113,G201,A202,S205,F209	12	12	238834
+2	Query_93	Specific	Subunit III/Vb interface	G168	1	1	238834
+2	Query_93	Specific	Subunit III/VIa interface	F137,E138,L139,W156,V182,K192,F193,S194,S199,D200,G201	11	11	238834
+2	Query_93	Specific	Subunit III/VIb interface	M129	1	1	238834
+2	Query_93	Specific	Subunit III/VIIa interface	F66,R69,D70,S73,T76,Y77,L78	7	7	238834
+2	Query_93	Specific	Phospholipid binding site	W67,W68,V71,I72,G75,H81,G92,V93,F96,F224,R231,L243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_94	Peptide	437	orf437_2_Golci1_feature_250_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_94	Specific	334330	150	249	5.09926e-27	103.855	pfam00961	LAGLIDADG_1	-	45
+2	Query_94	Specific	334330	308	406	2.81086e-20	84.9806	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	458	orf458_1_Golci1_feature_254_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_95	Specific	334330	76	174	1.22e-17	77.6618	pfam00961	LAGLIDADG_1	-	45
+2	Query_95	Specific	334330	220	320	7.05218e-06	44.5347	pfam00961	LAGLIDADG_1	-	45
+2	Query_95	Specific	197761	414	455	0.0017228	36.3918	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	374	nad2_Golci1_feature_273_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_99	Specific	235603	10	363	7.6377e-79	249.738	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_100	Peptide	687	orf687_1_Golci1_feature_277_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_100	Specific	238828	269	530	2.55297e-67	220.15	cd01651	RT_G2_intron	-	295487
+2	Query_100	Non-specific	279664	558	662	2.00841e-17	79.0506	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+2	Query_100	Specific	putative active site	D341,I342,S343,K344,C345,F346,Q396,G397,Y480,F482,D483	13	11	238828
+2	Query_100	Specific	putative nucleic acid binding site	G397	1	1	238828
+2	Query_100	Specific	putative NTP binding site	D341,I342,S343,K344,C345,F346,Q396,F482	8	8	238828
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_126	Peptide	422	orf422_Golci1_feature_36_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_126	Specific	334330	88	173	1.61073e-08	51.8535	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_135	Peptide	197	nad1_Golci1_feature_84_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_135	Specific	333876	2	171	3.29167e-62	194.999	pfam00146	NADHdh	C	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_145	Peptide	733	cob_Golci1_feature_109_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_145	Specific	238828	314	583	1.52565e-80	255.974	cd01651	RT_G2_intron	-	295487
+3	Query_145	Non-specific	279664	606	730	1.23025e-25	102.933	pfam01348	Intron_maturas2	-	45
+3	Query_145	Non-specific	164595	1	33	2.49804e-09	59.7144	MTH00022	CYTB	C	45
+ENDDOMAINS
+SITES
+3	Query_145	Specific	putative active site	D389,I390,S391,K392,C393,F394,Q444,G445,Y527,D529,D530,L579,G580	13	13	238828
+3	Query_145	Specific	putative nucleic acid binding site	G445	1	1	238828
+3	Query_145	Specific	putative NTP binding site	D389,I390,S391,K392,C393,F394,Q444,D529	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_146	Peptide	695	orf695_Golci1_feature_111_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_146	Specific	238828	268	532	5.94188e-72	232.862	cd01651	RT_G2_intron	-	295487
+3	Query_146	Non-specific	279664	558	657	1.86639e-24	99.4662	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+3	Query_146	Specific	putative active site	D342,H343,K344,F345,N346,V394,G395,Y478,D480,D481,L528,G529	13	12	238828
+3	Query_146	Specific	putative nucleic acid binding site	G395	1	1	238828
+3	Query_146	Specific	putative NTP binding site	D342,H343,K344,F345,N346,V394,D480	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_147	Peptide	283	orf283_Golci1_feature_113_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_147	Specific	335245	47	227	5.22005e-19	81.8235	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_148	Peptide	323	orf324_Golci1_feature_115_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_148	Non-specific	273636	114	311	2.52564e-20	87.4413	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_150	Peptide	756	orf756_Golci1_feature_119_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_150	Specific	238828	313	585	3.60312e-82	260.981	cd01651	RT_G2_intron	-	295487
+3	Query_150	Non-specific	279664	608	735	4.90034e-22	92.5326	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+3	Query_150	Specific	putative active site	D387,F388,K389,A390,C391,F392,P440,G441,Y530,D532,E533,L581,G582	13	13	238828
+3	Query_150	Specific	putative nucleic acid binding site	G441	1	1	238828
+3	Query_150	Specific	putative NTP binding site	D387,F388,K389,A390,C391,F392,P440,D532	8	8	238828
+ENDSITES
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_154	Peptide	169	nad4_Golci1_feature_127_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_154	Non-specific	235622	12	169	4.47552e-31	116.455	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_155	Peptide	313	nad4_Golci1_feature_129_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_155	Non-specific	235622	1	201	2.78271e-53	181.554	PRK05846	PRK05846	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_165	Peptide	611	orf611_Golci1_feature_149_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_165	Specific	238828	175	444	3.97952e-70	225.928	cd01651	RT_G2_intron	-	295487
+4	Query_165	Non-specific	279664	479	590	6.60344e-33	122.963	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+4	Query_165	Specific	putative active site	D248,I249,H250,G251,F252,F253,Q302,G303,Y391,D393,Y394,L440,G441	13	13	238828
+4	Query_165	Specific	putative nucleic acid binding site	G303	1	1	238828
+4	Query_165	Specific	putative NTP binding site	D248,I249,H250,G251,F252,F253,Q302,D393	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_169	Peptide	277	cox1_Golci1_feature_157_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_169	Superfamily	350997	7	277	1.03964e-169	478.131	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+4	Query_169	Generic	Binuclear center (active site)	H143,H192,H193	4	3	238461
+4	Query_169	Generic	Low-spin heme binding site	W29,Y273	15	2	238461
+4	Query_169	Generic	D-pathway	S59,S60,N66,T70	9	4	238461
+4	Query_169	Generic	K-pathway	H143,Y147,S158,H192,H193,T218,K221	7	7	238461
+4	Query_169	Generic	Putative proton exit pathway	H193,H270,D271	5	3	238461
+4	Query_169	Generic	Putative water exit pathway	D130,Q135,H136,D266,H270,D271	7	6	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_171	Peptide	322	orf322_2_Golci1_feature_165_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_171	Specific	334330	193	283	2.19461e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+4	Query_171	Specific	334330	87	154	7.01627e-06	43.7643	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_172	Peptide	437	orf437_3_Golci1_feature_169_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_172	Specific	273636	144	349	7.92321e-57	186.438	TIGR01453	grpIintron_endo	-	45
+4	Query_172	Specific	197761	383	433	1.06037e-08	51.0294	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_176	Peptide	152	cox1_Golci1_feature_178_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_176	Superfamily	350997	1	136	1.28264e-57	186.15	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+4	Query_176	Generic	Low-spin heme binding site	H2,L5,S6,R62,R63,F92	15	6	238461
+4	Query_176	Generic	Putative proton exit pathway	R62,R63	5	2	238461
+4	Query_176	Generic	Putative water exit pathway	R62	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_178	Peptide	282	orf283_Golci1_feature_182_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_178	Specific	334330	182	274	1.30001e-23	91.9142	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_182	Peptide	22	orf23_Golci1_feature_190_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_182	Non-specific	236123	3	19	0.000165498	34.5084	PRK07883	PRK07883	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_184	Peptide	111	nad4L_Golci1_feature_194_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_184	Superfamily	351118	5	80	2.70833e-16	68.1349	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_188	Peptide	398	nad5_Golci1_feature_202_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_188	Non-specific	214400	1	371	1.11224e-86	274.647	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_189	Peptide	426	orf426_2_Golci1_feature_206_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_189	Specific	334330	307	397	0.000316639	39.5271	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_190	Peptide	48	atp8_Golci1_feature_211_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_190	Non-specific	283561	1	48	1.21709e-07	42.0082	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_198	Peptide	138	nad3_Golci1_feature_227_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_198	Specific	334119	19	113	1.26557e-11	56.6546	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_202	Peptide	290	nad6_Golci1_feature_238_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_202	Superfamily	354830	29	125	2.91153e-19	83.3469	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_204	Peptide	407	cox3_Golci1_feature_244_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_204	Specific	278911	14	261	4.22175e-127	366.736	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+4	Query_204	Specific	Subunit I/III interface	A84,R87,G88,S99,L102,A106,I107,H113,G201,A202,S205,F209	12	12	238834
+4	Query_204	Specific	Subunit III/Vb interface	G168	1	1	238834
+4	Query_204	Specific	Subunit III/VIa interface	F137,E138,L139,W156,V182,K192,F193,S194,S199,D200,G201	11	11	238834
+4	Query_204	Specific	Subunit III/VIb interface	M129	1	1	238834
+4	Query_204	Specific	Subunit III/VIIa interface	F66,R69,D70,S73,T76,Y77,L78	7	7	238834
+4	Query_204	Specific	Phospholipid binding site	W67,W68,V71,I72,G75,H81,G92,V93,F96,F224,R231,L243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_205	Peptide	437	orf437_4_Golci1_feature_250_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_205	Specific	334330	150	249	5.09926e-27	103.855	pfam00961	LAGLIDADG_1	-	45
+4	Query_205	Specific	334330	308	406	2.81086e-20	84.9806	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_206	Peptide	458	orf458_2_Golci1_feature_254_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_206	Specific	334330	76	174	1.22e-17	77.6618	pfam00961	LAGLIDADG_1	-	45
+4	Query_206	Specific	334330	220	320	7.05218e-06	44.5347	pfam00961	LAGLIDADG_1	-	45
+4	Query_206	Specific	197761	414	455	0.0017228	36.3918	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+SESSION	5	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_210	Peptide	374	nad2_Golci1_feature_273_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_210	Specific	235603	10	363	7.6377e-79	249.738	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_211	Peptide	687	orf687_2_Golci1_feature_277_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_211	Specific	238828	269	530	2.55297e-67	220.15	cd01651	RT_G2_intron	-	295487
+5	Query_211	Non-specific	279664	558	662	2.00841e-17	79.0506	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+5	Query_211	Specific	putative active site	D341,I342,S343,K344,C345,F346,Q396,G397,Y480,F482,D483	13	11	238828
+5	Query_211	Specific	putative nucleic acid binding site	G397	1	1	238828
+5	Query_211	Specific	putative NTP binding site	D341,I342,S343,K344,C345,F346,Q396,F482	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_223	Peptide	114	orf114_Golci1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_223	Non-specific	178914	34	67	0.00408832	35.0845	PRK00173	rph	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_227	Peptide	213	orf213_Golci1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_227	Superfamily	355698	19	195	5.27417e-11	60.9448	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_228	Peptide	244	orf244_Golci1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_228	Superfamily	355698	1	244	4.37923e-52	174.844	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_229	Peptide	193	orf193_Golci1_feature_6_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_229	Superfamily	355698	29	183	1.17054e-22	93.9519	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	5
+ENDDATA

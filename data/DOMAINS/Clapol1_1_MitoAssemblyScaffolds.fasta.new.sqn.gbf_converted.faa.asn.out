@@ -1,0 +1,224 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Clapol1_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Clapol1_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	47	atp9_Clapol1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	349422	6	47	2.92445e-10	49.0452	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	29	cox3_Clapol1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	294143	7	28	2.09865e-05	37.4673	cl00211	Heme_Cu_Oxidase_III_like	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	53	orf54_Clapol1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	353929	2	33	3.54502e-07	42.2129	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_14	Generic	active site	Y3,Y15,G17,R25,Y29	6	5	198380
+1	Query_14	Generic	catalytic site	R25	2	1	198380
+1	Query_14	Generic	GIY-YIG motif/motif A	I2,Y3,Y15,V16,G17	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	237	cob_Clapol1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	214440	17	237	3.52583e-92	274.737	MTH00156	CYTB	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	101	orf101_Clapol1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	197761	3	39	1.60637e-05	38.703	smart00497	IENR1	N	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	107	orf107_Clapol1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	355698	1	106	5.7403e-08	48.8836	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	94	orf94_Clapol1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Superfamily	355698	1	94	7.13146e-19	79.3143	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	292	orf292_Clapol1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	355698	5	125	7.44905e-15	73.9215	cl28058	DNA_pol_B_2	N	-
+1	Query_27	Non-specific	223494	82	196	0.000910522	40.4855	COG0417	PolB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	266	cox2_Clapol1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Non-specific	177126	7	233	2.35541e-80	241.609	MTH00051	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	88	orf89_Clapol1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Non-specific	177113	1	24	7.12261e-05	38.9144	MTH00038	COX2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	511	nad5_Clapol1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Non-specific	177253	1	482	4.61393e-119	362.788	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	111	orf111_Clapol1_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_46	Specific	334330	22	111	2.03703e-11	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	481	cox1_Clapol1_feature_130_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_48	Specific	238833	12	470	0	649.545	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_48	Specific	Low-spin heme (heme a) binding site	H65,H362,S366,V408,T445	5	5	238833
+1	Query_48	Specific	D-pathway	Y21,N84,D95,N102,S105,S159,S160,N166,T170	9	9	238833
+1	Query_48	Specific	K-pathway	Y229,S240,D274,H275,T300,K303	7	6	238833
+1	Query_48	Specific	Electron transfer pathway	F361,R422,R423	3	3	238833
+1	Query_48	Specific	Putative proton exit pathway	H275,H352,D353,R422,R423	5	5	238833
+1	Query_48	Specific	Subunit I/II interface	N59,K249,F252,G253,S278,V279,G280,V283,R286,M294,I302,F305,Y312,G313,G314,*326,N344,S345,L347,V349,A350,*351,H352,D353,L417,S418,R422,R423,I424,G433,W434	32	31	238833
+1	Query_48	Specific	Subunit I/III interface	T12,P94,F98,R100,W107,D147,L151,T169,N173,I193,L200,P203,M211,T220,G221,F222,S227,G228,Y259,L262,G265,V266,I270	25	23	238833
+1	Query_48	Specific	Subunit I/IV interface	L41,S44,G45,K392,L395,I396,D429,I447	8	8	238833
+1	Query_48	Specific	Subunit I/VIa interface	S138,R216,N217,L218,N219	5	5	238833
+1	Query_48	Specific	Subunit I/VIb interface	G280	1	1	238833
+1	Query_48	Specific	Subunit I/VIc interface	G313	1	1	238833
+1	Query_48	Specific	Subunit I/VIIa interface	T118,F121	2	2	238833
+1	Query_48	Specific	Subunit I/VIIb interface	D429,G433	2	2	238833
+1	Query_48	Specific	Subunit I/VIIc interface	L27,I31,A34,L38,L120,F121,I384,G457,V460	9	9	238833
+1	Query_48	Specific	Subunit I/VIIIb interface	W393,L450	2	2	238833
+1	Query_48	Specific	Dimer interface	I193,L200,Y259,L262,G265,V266,I270	8	7	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_65	Peptide	46	orf47_Clapol1_feature_187_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_65	Specific	334330	1	45	0.00256	32.2083	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	55	orf56_Clapol1_feature_189_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_66	Specific	334330	12	45	0.000382677	34.5195	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	62	orf62_Clapol1_feature_193_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_68	Specific	334330	13	61	0.000324948	34.9047	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	154	orf155_Clapol1_feature_195_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_69	Specific	334330	48	154	1.15315e-20	80.7434	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	48	orf48_Clapol1_feature_199_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_71	Specific	334330	2	28	0.000295799	34.5195	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	46	orf47_Clapol1_feature_201_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_72	Specific	334330	6	46	0.00170817	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	85	orf86_Clapol1_feature_203_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_73	Specific	334330	8	68	0.00141339	34.1343	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	64	orf65_Clapol1_feature_205_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_74	Specific	334330	3	64	2.62654e-05	37.9863	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	68	orf69_Clapol1_feature_219_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_78	Specific	334330	22	67	0.00188113	33.3639	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_79	Peptide	52	orf52_Clapol1_feature_221_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_79	Specific	334330	1	52	7.44128e-05	36.4455	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_87	Peptide	104	orf104_Clapol1_feature_239_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_87	Superfamily	355698	44	96	1.51391e-05	41.5648	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	113	orf113_Clapol1_feature_241_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_88	Superfamily	355698	1	113	3.52375e-19	80.8551	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	135	orf135_Clapol1_feature_243_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_89	Superfamily	355698	1	83	4.32798e-15	70.0695	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_90	Peptide	80	orf79_Clapol1_feature_245_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_90	Superfamily	355698	16	73	1.8952e-07	46.3072	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	55	nad2_Clapol1_feature_255_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_94	Superfamily	356474	1	52	1.20322e-14	65.2273	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	306	nad1_Clapol1_feature_257_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_95	Specific	333876	11	293	8.98362e-90	269.727	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	122	orf122_Clapol1_feature_263_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_96	Superfamily	353929	41	119	1.60673e-17	71.1028	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+2	Query_96	Generic	active site	Y44,Y55,G57,R65,H69,E112	6	6	198380
+2	Query_96	Generic	catalytic site	R65,E112	2	2	198380
+2	Query_96	Generic	metal binding site	E112	1	1	198380
+2	Query_96	Generic	GIY-YIG motif/motif A	G42,I43,Y44,Y55,I56,G57	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_97	Peptide	91	nad3_Clapol1_feature_266_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_97	Superfamily	351141	20	91	2.49161e-21	80.6785	cl00535	Oxidored_q4	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

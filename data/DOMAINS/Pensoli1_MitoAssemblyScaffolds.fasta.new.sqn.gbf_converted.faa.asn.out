@@ -1,0 +1,133 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Pensoli1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Pensoli1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	573	cox1_Pensoli1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	56	557	0	849.463	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	H286,H335,H336,H421	4	4	238833
+1	Query_1	Specific	Low-spin heme (heme a) binding site	H107,H423,S427,T469,S506	5	5	238833
+1	Query_1	Specific	D-pathway	Y64,N126,D137,N144,S147,S202,S203,N209,T213	9	9	238833
+1	Query_1	Specific	K-pathway	H286,Y290,S301,H335,H336,T361,K364	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F422,R483,R484	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H336,H413,D414,R483,R484	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D273,Q278,H279,D409,H413,D414,R483	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	N101,D273,N311,F313,G314,T339,V340,G341,V344,R347,L355,I363,F366,Y373,G374,G375,L387,N405,A406,L408,V410,A411,F412,H413,D414,L478,Q479,R483,R484,I485,G494,W495	32	32	238833
+1	Query_1	Specific	Subunit I/III interface	P136,F140,R142,W149,D190,F194,T212,N216,I236,L243,P246,M254,T263,S264,F265,G270,G271,D273,F283,Y320,M323,G326,V327,I331	25	24	238833
+1	Query_1	Specific	Subunit I/IV interface	L84,S87,G88,F453,K456,V457,D490,V508	8	8	238833
+1	Query_1	Specific	Subunit I/VIa interface	I181,R259,N260,F261,N262	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G341	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G374	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	F160,T163	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D490,G494	2	2	238833
+1	Query_1	Specific	Subunit I/VIIc interface	F70,V74,A77,L81,A162,T163,I445,Y518,L521	9	9	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	A454,W511	2	2	238833
+1	Query_1	Specific	Dimer interface	I236,L243,F283,Y320,M323,G326,V327,I331	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	269	cox3_Pensoli1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	278911	12	269	8.11848e-135	380.603	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_3	Specific	Subunit I/III interface	A82,K85,G86,S97,F100,A104,I105,H111,G199,V200,S203,F207	12	12	238834
+1	Query_3	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_3	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_3	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_3	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_3	Specific	Phospholipid binding site	W65,F66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	216	nad6_Pensoli1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	354830	25	216	2.62675e-21	86.8137	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	257	atp6_Pensoli1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	273458	32	254	2.70838e-50	164.301	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	48	atp8_Pensoli1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	283561	1	48	5.57137e-09	45.475	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	488	nad4_Pensoli1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	235622	32	487	3.16557e-134	396.881	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	351	nad1_Pensoli1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	333876	11	335	6.40173e-110	322.5	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	385	cob_Pensoli1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	214425	3	378	0	515.221	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	562	nad2_Pensoli1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	235603	2	483	7.89182e-75	245.501	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	659	nad5_Pensoli1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	214400	1	627	0	590.896	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	89	nad4L_Pensoli1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	351118	5	87	2.1671e-19	75.0685	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	253	cox2_Pensoli1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	214438	18	247	4.30563e-108	310.992	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	135	nad3_Pensoli1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	26	113	2.26691e-13	61.277	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	74	atp9_Pensoli1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351103	1	72	1.14293e-14	61.789	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

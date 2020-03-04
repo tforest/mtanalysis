@@ -1,0 +1,173 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Corcam1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Corcam1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	352	cox1_Corcam1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	350997	7	352	0	603.706	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_1	Generic	Binuclear center (active site)	H239,H288,H289	4	3	238461
+1	Query_1	Generic	Low-spin heme binding site	S31,R35,F53,H60,M64,I65,V69,W125	15	8	238461
+1	Query_1	Generic	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238461
+1	Query_1	Generic	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238461
+1	Query_1	Generic	Putative proton exit pathway	H289	5	1	238461
+1	Query_1	Generic	Putative water exit pathway	D226,Q231,H232	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	328	orf328_Corcam1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	200	296	8.47669e-21	85.3658	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	334330	91	158	1.23823e-05	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	375	orf375_Corcam1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	93	187	1.89685e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	249	337	3.50286e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	269	cox3_Corcam1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	238834	23	266	2.83466e-120	343.344	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Subunit I/III interface	E81,N84,G85,S96,F99,S103,V104,H110,G198,V199,S202,A206	12	12	238834
+1	Query_4	Specific	Subunit III/Vb interface	A165	1	1	238834
+1	Query_4	Specific	Subunit III/VIa interface	F134,A135,I136,Y153,I179,S189,E190,A191,A196,D197,G198	11	11	238834
+1	Query_4	Specific	Subunit III/VIb interface	L126	1	1	238834
+1	Query_4	Specific	Subunit III/VIIa interface	L63,R66,D67,V70,S73,Y74,L75	7	7	238834
+1	Query_4	Specific	Phospholipid binding site	W64,F65,V68,V69,A72,H78,G89,V90,F93,F221,R228,N240,G241	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	253	atp6_Corcam1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	273458	28	250	1.2268e-47	157.368	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	50	atp8_Corcam1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	283561	1	48	4.56455e-05	35.845	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	223	nad6_Corcam1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	354830	3	111	2.39267e-18	79.4949	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	328	nad1_Corcam1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	333876	10	311	4.85144e-117	339.834	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	387	cob_Corcam1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214440	10	366	0	518.954	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	325	orf325_Corcam1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	335245	132	306	4.02731e-64	200.08	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	292	orf292_Corcam1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	273636	61	290	6.39368e-24	96.3009	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	73	atp9_Corcam1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	351103	1	72	2.94411e-16	65.641	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	125	nad3_Corcam1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334119	19	112	6.84064e-28	97.871	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	289	nad2_Corcam1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	356474	52	222	7.96639e-37	136.104	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	113	orf113_Corcam1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	335245	13	95	1.01641e-17	73.3491	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	253	cox2_Corcam1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	214402	7	253	1.28176e-112	323.24	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	224	orf224_Corcam1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	223496	2	145	0.009212	36.6619	COG0419	SbcC	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	485	nad4_Corcam1_feature_20_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	235622	32	479	1.31425e-142	418.067	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	686	nad5_Corcam1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	177253	1	626	0	580.811	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	201	orf201_Corcam1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	335245	1	178	8.98581e-32	113.025	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	88	nad4L_Corcam1_feature_29_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Superfamily	351118	3	87	1.39984e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	67	nad4L_Corcam1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	351118	1	67	2.19746e-10	51.1862	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	297	nad5_Corcam1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Non-specific	177253	1	213	5.91071e-11	62.718	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	141	orf141_Corcam1_feature_8_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	335245	1	121	6.66337e-23	87.9867	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

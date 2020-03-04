@@ -1,0 +1,126 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Currey1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Currey1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	243	nad6_Currey1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	354830	23	202	4.6955e-25	97.5993	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	371	nad1_Currey1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	333876	12	354	2.88773e-113	332.13	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	672	nad4_Currey1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	235622	1	480	3.58518e-135	405.74	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	249	cox2_Currey1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	214438	17	246	1.89808e-111	319.467	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	567	cox1_Currey1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	238833	35	536	0	791.683	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_7	Specific	Binuclear center (heme a3/CuB)	H265,H314,H315,H400	4	4	238833
+1	Query_7	Specific	Low-spin heme (heme a) binding site	H86,H402,S406,T448,S485	5	5	238833
+1	Query_7	Specific	D-pathway	Y43,N105,D116,N123,S126,S181,S182,N188,T192	9	9	238833
+1	Query_7	Specific	K-pathway	H265,Y269,S280,H314,H315,T340,K343	7	7	238833
+1	Query_7	Specific	Electron transfer pathway	F401,R462,R463	3	3	238833
+1	Query_7	Specific	Putative proton exit pathway	H315,H392,D393,R462,R463	5	5	238833
+1	Query_7	Specific	Putative water exit pathway	D252,Q257,H258,D388,H392,D393,R462	7	7	238833
+1	Query_7	Specific	Subunit I/II interface	N80,D252,K289,F292,G293,T318,V319,G320,V323,R326,L334,I342,F345,Y352,G353,G354,L366,N384,A385,L387,I389,A390,F391,H392,D393,L457,Q458,R462,R463,I464,G473,W474	32	32	238833
+1	Query_7	Specific	Subunit I/III interface	P115,F119,R121,L128,D169,F173,T191,N195,I215,L222,P225,M233,T242,S243,F244,G249,G250,D252,F262,Y299,C302,G305,I306,V310	25	24	238833
+1	Query_7	Specific	Subunit I/IV interface	L63,S66,G67,L432,K435,A436,D469,A487	8	8	238833
+1	Query_7	Specific	Subunit I/Vb interface	S290,Y294,A535	3	3	238833
+1	Query_7	Specific	Subunit I/VIa interface	I160,R238,N239,F240,N241	5	5	238833
+1	Query_7	Specific	Subunit I/VIb interface	G320	1	1	238833
+1	Query_7	Specific	Subunit I/VIc interface	G353	1	1	238833
+1	Query_7	Specific	Subunit I/VIIa interface	F139,G142	2	2	238833
+1	Query_7	Specific	Subunit I/VIIb interface	D469,G473	2	2	238833
+1	Query_7	Specific	Subunit I/VIIc interface	F49,V53,A56,L60,G141,G142,I424,Y497,L500	9	9	238833
+1	Query_7	Specific	Subunit I/VIIIb interface	Y433,V490	2	2	238833
+1	Query_7	Specific	Dimer interface	I215,L222,F262,Y299,C302,G305,I306,V310	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	401	cob_Currey1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214440	14	364	8.71529e-173	486.212	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	255	atp6_Currey1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	273458	8	250	5.07276e-51	165.842	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	922	nad5_Currey1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	214400	1	628	0	607.459	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	89	nad4L_Currey1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	351118	5	86	1.63578e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	269	cox3_Currey1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	278911	12	269	5.04757e-130	368.662	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_13	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_13	Specific	Subunit III/Vb interface	K166	1	1	238834
+1	Query_13	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_13	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_13	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,I76	7	7	238834
+1	Query_13	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	393	nad3_Currey1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334119	19	112	6.13113e-15	69.7514	pfam00507	Oxidored_q4	-	351141
+1	Query_14	Specific	334180	324	359	0.00413352	35.1568	pfam00628	PHD	C	354958
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	640	nad2_Currey1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235603	27	565	1.88568e-81	264.761	PRK05777	PRK05777	-	356474
+1	Query_15	Non-specific	275316	394	491	0.00518329	39.6184	TIGR04523	Mplasa_alph_rch	N	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

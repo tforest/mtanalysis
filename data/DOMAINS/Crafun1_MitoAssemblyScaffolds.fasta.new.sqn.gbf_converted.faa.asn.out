@@ -1,0 +1,174 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Crafun1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Crafun1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	114	orf114_Crafun1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	353814	59	99	0.00652899	34.4696	cl14615	PI-PLCc_GDPD_SF	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	88	nad4L_Crafun1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	351118	3	87	1.52707e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	684	nad5_Crafun1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	177253	1	616	0	560.781	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	73	atp9_Crafun1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	351103	1	72	2.36544e-16	66.0262	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	386	cob_Crafun1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214440	10	366	3.31123e-176	494.301	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	339	nad1_Crafun1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	333876	21	322	1.6781e-121	351.775	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	226	nad6_Crafun1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	354830	1	121	7.29332e-21	86.0433	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	503	cox1_Crafun1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	238833	1	487	0	815.18	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Binuclear center (heme a3/CuB)	H215,H264,H265,H350	4	4	238833
+1	Query_11	Specific	Low-spin heme (heme a) binding site	H36,H352,S356,T398,S435	5	5	238833
+1	Query_11	Specific	D-pathway	N55,D66,N73,S76,S131,S132,N138,T142	9	8	238833
+1	Query_11	Specific	K-pathway	H215,Y219,S230,H264,H265,T290,K293	7	7	238833
+1	Query_11	Specific	Electron transfer pathway	F351,R412,R413	3	3	238833
+1	Query_11	Specific	Putative proton exit pathway	H265,H342,D343,R412,R413	5	5	238833
+1	Query_11	Specific	Putative water exit pathway	D202,Q207,H208,D338,H342,D343,R412	7	7	238833
+1	Query_11	Specific	Subunit I/II interface	N30,D202,K239,F242,G243,S268,V269,G270,V273,R276,M284,I292,F295,Y302,G303,G304,L316,N334,A335,L337,I339,A340,F341,H342,D343,L407,A408,R412,R413,I414,G423,W424	32	32	238833
+1	Query_11	Specific	Subunit I/III interface	P65,F69,R71,W78,D119,F123,S141,N145,I165,L172,P175,M183,T192,S193,F194,G199,G200,D202,F212,Y249,F252,G255,I256,L260	25	24	238833
+1	Query_11	Specific	Subunit I/IV interface	L12,S15,S16,F382,K385,I386,D419,M437	8	8	238833
+1	Query_11	Specific	Subunit I/Vb interface	P240,Y244,T486	3	3	238833
+1	Query_11	Specific	Subunit I/VIa interface	I110,R188,N189,F190,N191	5	5	238833
+1	Query_11	Specific	Subunit I/VIb interface	G270	1	1	238833
+1	Query_11	Specific	Subunit I/VIc interface	G303	1	1	238833
+1	Query_11	Specific	Subunit I/VIIa interface	M89,L92	2	2	238833
+1	Query_11	Specific	Subunit I/VIIb interface	D419,G423	2	2	238833
+1	Query_11	Specific	Subunit I/VIIc interface	I2,A5,L9,S91,L92,I374,Y447,F450	9	8	238833
+1	Query_11	Specific	Subunit I/VIIIb interface	L383,I440	2	2	238833
+1	Query_11	Specific	Dimer interface	I165,L172,F212,Y249,F252,G255,I256,L260	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	378	orf378_Crafun1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	91	195	2.99674e-23	92.6846	pfam00961	LAGLIDADG_1	-	45
+1	Query_12	Specific	334330	251	340	0.000119697	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	337	orf337_Crafun1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	197	302	6.09558e-16	72.269	pfam00961	LAGLIDADG_1	-	45
+1	Query_13	Specific	334330	75	172	4.16899e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	380	orf380_Crafun1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	252	348	7.34862e-14	66.8762	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	112	199	3.2094e-10	56.4759	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	313	orf313_Crafun1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	190	286	2.75898e-16	73.0394	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	82	159	0.000184605	39.9123	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	283	orf283_Crafun1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	43	138	2.15409e-14	67.2614	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	189	277	9.36147e-09	51.8535	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	496	nad4_Crafun1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	235622	46	496	1.46863e-146	428.852	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	82	orf83_Crafun1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	16	50	1.369e-06	41.8383	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	608	nad2_Crafun1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	356474	161	525	3.37799e-60	207.751	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	135	nad3_Crafun1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334119	27	112	7.2552e-28	98.2562	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	52	atp8_Crafun1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	283561	1	48	0.000311164	33.5338	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	254	atp6_Crafun1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	273458	29	251	1.02149e-45	152.36	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	259	cox2_Crafun1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	214402	13	259	6.09111e-113	324.396	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	269	cox3_Crafun1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	238834	23	266	6.95466e-120	342.188	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_26	Specific	Subunit I/III interface	E81,N84,G85,S96,F99,S103,V104,H110,G198,V199,S202,A206	12	12	238834
+1	Query_26	Specific	Subunit III/Vb interface	A165	1	1	238834
+1	Query_26	Specific	Subunit III/VIa interface	F134,A135,I136,Y153,I179,S189,E190,A191,A196,D197,G198	11	11	238834
+1	Query_26	Specific	Subunit III/VIb interface	L126	1	1	238834
+1	Query_26	Specific	Subunit III/VIIa interface	L63,R66,D67,I70,S73,Y74,L75	7	7	238834
+1	Query_26	Specific	Phospholipid binding site	W64,F65,V68,V69,A72,H78,G89,V90,F93,F221,R228,N240,G241	13	13	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

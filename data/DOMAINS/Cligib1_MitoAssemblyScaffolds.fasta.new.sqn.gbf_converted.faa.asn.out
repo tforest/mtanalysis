@@ -1,0 +1,214 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cligib1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cligib1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_3	Peptide	340	orf340_Cligib1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	355698	3	214	6.42749e-24	101.656	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	142	orf142_Cligib1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	355698	28	130	1.31265e-18	80.4699	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	346	orf346_Cligib1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	355698	258	334	3.72825e-08	54.2764	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	122	orf122_Cligib1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	355698	3	101	5.96575e-08	49.2688	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	136	orf135_Cligib1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	355698	25	124	4.08201e-19	81.6255	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	356	orf356_Cligib1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	355698	266	343	6.38917e-08	53.8912	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	52	atp8_Cligib1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	283561	1	48	0.000105238	34.6894	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	332	nad1_Cligib1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	333876	14	320	5.02386e-121	350.234	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	386	cob_Cligib1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	214440	10	366	1.22227e-178	500.464	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	254	cox2_Cligib1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	214402	7	249	4.16264e-110	316.692	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	527	cox1_Cligib1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	238833	7	511	0	835.596	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_16	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_16	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_16	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_16	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_16	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_16	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_16	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_16	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,S292,V293,G294,V297,R300,M308,I316,F319,Y326,G327,G328,L340,N358,A359,L361,I363,A364,F365,H366,D367,L431,A432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_16	Specific	Subunit I/III interface	T7,P89,F93,R95,W102,D143,F147,S165,N169,I189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_16	Specific	Subunit I/IV interface	L36,S39,S40,F406,K409,I410,D443,V461	8	8	238833
+1	Query_16	Specific	Subunit I/Vb interface	P264,Y268,T510	3	3	238833
+1	Query_16	Specific	Subunit I/VIa interface	I134,R212,N213,F214,N215	5	5	238833
+1	Query_16	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_16	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_16	Specific	Subunit I/VIIa interface	I113,L116	2	2	238833
+1	Query_16	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_16	Specific	Subunit I/VIIc interface	F22,I26,A29,L33,S115,L116,I398,Y471,F474	9	9	238833
+1	Query_16	Specific	Subunit I/VIIIb interface	L407,I464	2	2	238833
+1	Query_16	Specific	Dimer interface	I189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_17	Peptide	483	nad4_Cligib1_feature_93_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	235622	31	480	8.0252e-145	423.845	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	210	nad6_Cligib1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	354830	1	100	2.37876e-17	76.4133	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	560	nad2_Cligib1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	235603	104	483	1.94319e-76	249.353	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	126	nad3_Cligib1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334119	27	112	4.58122e-28	98.2562	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	255	atp6_Cligib1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	273458	30	252	9.93536e-47	155.057	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	73	atp9_Cligib1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	349422	6	70	4.71213e-16	64.8383	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_25	Peptide	664	nad5_Cligib1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	177253	1	620	0	585.819	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	88	nad4L_Cligib1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Superfamily	351118	7	88	2.85968e-15	64.2829	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	230	cox3_Cligib1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	238834	1	227	7.01069e-113	322.928	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_27	Specific	Subunit I/III interface	Q42,S45,G46,S57,F60,S64,V65,H71,G159,V160,S163,A167	12	12	238834
+1	Query_27	Specific	Subunit III/Vb interface	A126	1	1	238834
+1	Query_27	Specific	Subunit III/VIa interface	F95,A96,I97,Y114,I140,S150,E151,A152,S157,D158,G159	11	11	238834
+1	Query_27	Specific	Subunit III/VIb interface	I87	1	1	238834
+1	Query_27	Specific	Subunit III/VIIa interface	L24,R27,D28,T31,T34,F35,L36	7	7	238834
+1	Query_27	Specific	Phospholipid binding site	W25,F26,V29,I30,G33,H39,G50,V51,F54,F182,R189,Q201,G202	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_33	Peptide	269	cox3_Cligib1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	238834	23	266	3.02706e-120	343.344	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_33	Specific	Subunit I/III interface	Q81,S84,G85,S96,F99,S103,V104,H110,G198,V199,S202,A206	12	12	238834
+1	Query_33	Specific	Subunit III/Vb interface	A165	1	1	238834
+1	Query_33	Specific	Subunit III/VIa interface	F134,A135,I136,Y153,I179,S189,E190,A191,S196,D197,G198	11	11	238834
+1	Query_33	Specific	Subunit III/VIb interface	I126	1	1	238834
+1	Query_33	Specific	Subunit III/VIIa interface	L63,R66,D67,T70,T73,F74,L75	7	7	238834
+1	Query_33	Specific	Phospholipid binding site	W64,F65,V68,I69,G72,H78,G89,V90,F93,F221,R228,Q240,G241	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_34	Peptide	88	nad4L_Cligib1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Superfamily	351118	7	88	2.85968e-15	64.2829	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	99	nad5_Cligib1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Non-specific	177253	2	64	1.71694e-13	64.2588	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	627	nad5_Cligib1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Non-specific	177253	1	620	0	587.36	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_37	Peptide	88	nad4L_Cligib1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Superfamily	351118	7	88	2.85968e-15	64.2829	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	269	cox3_Cligib1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	238834	23	266	3.02706e-120	343.344	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_38	Specific	Subunit I/III interface	Q81,S84,G85,S96,F99,S103,V104,H110,G198,V199,S202,A206	12	12	238834
+2	Query_38	Specific	Subunit III/Vb interface	A165	1	1	238834
+2	Query_38	Specific	Subunit III/VIa interface	F134,A135,I136,Y153,I179,S189,E190,A191,S196,D197,G198	11	11	238834
+2	Query_38	Specific	Subunit III/VIb interface	I126	1	1	238834
+2	Query_38	Specific	Subunit III/VIIa interface	L63,R66,D67,T70,T73,F74,L75	7	7	238834
+2	Query_38	Specific	Phospholipid binding site	W64,F65,V68,I69,G72,H78,G89,V90,F93,F221,R228,Q240,G241	13	13	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

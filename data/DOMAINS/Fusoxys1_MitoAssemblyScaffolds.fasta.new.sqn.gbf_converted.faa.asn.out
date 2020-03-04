@@ -1,0 +1,146 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Fusoxys1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Fusoxys1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	269	cox3_Fusoxys1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	278911	12	269	1.87626e-136	384.84	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,V200,T203,F207	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,L76	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	266	atp6_Fusoxys1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	351082	22	266	1.4848e-57	183.669	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	48	atp8_Fusoxys1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	283561	1	48	3.08726e-08	43.549	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	485	nad4_Fusoxys1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	235622	1	482	9.974e-130	385.325	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	369	nad1_Fusoxys1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	333876	16	352	4.97172e-111	326.352	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	549	cox1_Fusoxys1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	238833	31	531	0	858.708	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_7	Specific	Binuclear center (heme a3/CuB)	H262,H311,H312,H397	4	4	238833
+1	Query_7	Specific	Low-spin heme (heme a) binding site	H83,H399,S403,T445,S482	5	5	238833
+1	Query_7	Specific	D-pathway	Y40,N102,D113,N120,S123,S178,S179,N185,T189	9	9	238833
+1	Query_7	Specific	K-pathway	H262,Y266,S277,H311,H312,T337,K340	7	7	238833
+1	Query_7	Specific	Electron transfer pathway	F398,R459,R460	3	3	238833
+1	Query_7	Specific	Putative proton exit pathway	H312,H389,D390,R459,R460	5	5	238833
+1	Query_7	Specific	Putative water exit pathway	D249,Q254,H255,D385,H389,D390,R459	7	7	238833
+1	Query_7	Specific	Subunit I/II interface	N77,D249,K286,F289,G290,T315,V316,G317,V320,R323,L331,I339,F342,Y349,G350,G351,L363,N381,A382,L384,I386,A387,F388,H389,D390,L454,Q455,R459,R460,I461,G470,W471	32	32	238833
+1	Query_7	Specific	Subunit I/III interface	T31,P112,F116,R118,W125,D166,F170,T188,N192,I212,L219,P222,M230,T239,S240,F241,G246,G247,D249,F259,Y296,M299,G302,I303,I307	25	25	238833
+1	Query_7	Specific	Subunit I/IV interface	L60,S63,G64,N429,K432,V433,D466,I484	8	8	238833
+1	Query_7	Specific	Subunit I/VIa interface	L157,R235,N236,F237,N238	5	5	238833
+1	Query_7	Specific	Subunit I/VIb interface	G317	1	1	238833
+1	Query_7	Specific	Subunit I/VIc interface	G350	1	1	238833
+1	Query_7	Specific	Subunit I/VIIa interface	F136,I139	2	2	238833
+1	Query_7	Specific	Subunit I/VIIb interface	D466,G470	2	2	238833
+1	Query_7	Specific	Subunit I/VIIc interface	F46,L50,A53,L57,A138,I139,I421,Y494,L497	9	9	238833
+1	Query_7	Specific	Subunit I/VIIIb interface	L430,W487	2	2	238833
+1	Query_7	Specific	Dimer interface	I212,L219,F259,Y296,M299,G302,I303,I307	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	390	cob_Fusoxys1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214440	10	367	1.66972e-164	464.64	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	292	orf292_Fusoxys1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	273636	76	287	1.28383e-26	103.62	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	662	nad5_Fusoxys1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	177253	1	632	0	608.931	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	304	orf304_Fusoxys1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	183	279	2.34131e-09	53.7795	pfam00961	LAGLIDADG_1	-	45
+1	Query_11	Specific	334330	70	153	1.13729e-06	46.0755	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	89	nad4L_Fusoxys1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	351118	5	86	2.71574e-17	69.6757	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	249	cox2_Fusoxys1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214438	15	248	7.73553e-112	320.237	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	74	atp9_Fusoxys1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	349422	6	62	1.91531e-18	71.0015	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	137	nad3_Fusoxys1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	19	113	2.10321e-29	102.108	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	554	nad2_Fusoxys1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	124	479	1.2593e-82	265.531	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	223	nad6_Fusoxys1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	354830	28	218	3.45311e-17	76.1929	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

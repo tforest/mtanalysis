@@ -1,0 +1,352 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Microd1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Microd1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	331	nad6_Microd1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	354830	20	108	6.90647e-12	63.0961	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	440	cob_Microd1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	214440	10	365	3.86567e-172	486.212	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	257	atp6_Microd1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	351082	12	257	1.50505e-48	160.172	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	212	orf213_Microd1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	273636	14	209	2.15503e-24	95.5305	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	121	orf121_Microd1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	273636	26	116	0.000167062	38.9062	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	1437	nad2_Microd1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	356474	26	335	7.56029e-38	149.201	cl29598	Proton_antipo_M	C	-
+1	Query_9	Specific	283903	895	988	3.49863e-06	48.3559	pfam06346	Drf_FH1	C	45
+1	Query_9	Non-specific	236304	1190	1268	0.00388817	41.3119	PRK08581	PRK08581	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	201	nad6_Microd1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	354830	25	189	1.1896e-16	73.8817	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	302	orf302_Microd1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	355698	8	276	3.15086e-55	185.244	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	536	orf535_Microd1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	355698	433	536	1.72484e-05	46.9576	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	269	cox3_Microd1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	278911	12	269	2.97419e-129	366.736	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_14	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_14	Specific	Subunit III/Vb interface	K166	1	1	238834
+1	Query_14	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_14	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_14	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,L76	7	7	238834
+1	Query_14	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	359	orf359_Microd1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	52	150	5.97884e-13	64.1798	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	194	285	2.84876e-09	53.7795	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	577	nad2_Microd1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	26	502	4.12427e-85	272.85	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	140	nad3_Microd1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334119	26	112	5.18979e-13	60.5066	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	155	orf155_Microd1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	350862	55	143	0.00648438	35.4045	cl00015	nt_trans	NC	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	738	cox1_Microd1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	238833	11	487	0	834.44	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Binuclear center (heme a3/CuB)	H241,H290,H291,H376	4	4	238833
+1	Query_19	Specific	Low-spin heme (heme a) binding site	H62,H378,S382,T424,S461	5	5	238833
+1	Query_19	Specific	D-pathway	Y19,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238833
+1	Query_19	Specific	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238833
+1	Query_19	Specific	Electron transfer pathway	F377,R438,R439	3	3	238833
+1	Query_19	Specific	Putative proton exit pathway	H291,H368,D369,R438,R439	5	5	238833
+1	Query_19	Specific	Putative water exit pathway	D228,Q233,H234,D364,H368,D369,R438	7	7	238833
+1	Query_19	Specific	Subunit I/II interface	N56,D228,K265,F268,G269,T294,V295,G296,V299,R302,L310,I318,F321,Y328,G329,G330,L342,N360,A361,L363,I365,A366,F367,H368,D369,L433,Q434,R438,R439,V440,G449,W450	32	32	238833
+1	Query_19	Specific	Subunit I/III interface	P91,F95,R97,L104,D145,F149,T167,N171,I191,L198,P201,M209,T218,S219,F220,G225,G226,D228,F238,Y275,C278,G281,I282,L286	25	24	238833
+1	Query_19	Specific	Subunit I/IV interface	L39,S42,G43,L408,K411,A412,D445,A463	8	8	238833
+1	Query_19	Specific	Subunit I/VIa interface	I136,R214,N215,F216,N217	5	5	238833
+1	Query_19	Specific	Subunit I/VIb interface	G296	1	1	238833
+1	Query_19	Specific	Subunit I/VIc interface	G329	1	1	238833
+1	Query_19	Specific	Subunit I/VIIa interface	F115,G118	2	2	238833
+1	Query_19	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_19	Specific	Subunit I/VIIc interface	F25,V29,A32,L36,G117,G118,I400,Y473,L476	9	9	238833
+1	Query_19	Specific	Subunit I/VIIIb interface	Y409,V466	2	2	238833
+1	Query_19	Specific	Dimer interface	I191,L198,F238,Y275,C278,G281,I282,L286	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	277	orf277_1_Microd1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	53	148	4.20989e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+1	Query_20	Specific	334330	186	273	4.991e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	170	orf170_1_Microd1_feature_128_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Superfamily	353929	92	149	1.39653e-14	65.3248	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_21	Generic	active site	Y95,S106,G108,R116,Y120	6	5	198380
+1	Query_21	Generic	catalytic site	R116	2	1	198380
+1	Query_21	Generic	GIY-YIG motif/motif A	G93,I94,Y95,S106,V107,G108	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	241	cox2_Microd1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	214438	9	238	4.14958e-113	323.319	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	308	orf308_1_Microd1_feature_135_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	273636	73	307	3.04131e-52	170.644	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	89	nad4L_Microd1_feature_138_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	351118	5	86	1.45139e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	904	nad5_Microd1_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	177253	1	633	0	630.887	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	287	orf287_1_Microd1_feature_144_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	235600	78	184	0.00518903	37.9848	PRK05771	PRK05771	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_29	Peptide	371	nad1_Microd1_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_29	Specific	333876	12	354	1.03e-120	351.005	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	365	nad4_Microd1_feature_160_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Non-specific	235622	9	365	1.89833e-81	256.668	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	143	nad5_Microd1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Non-specific	235836	1	143	1.91544e-54	179.969	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	89	nad4L_Microd1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Superfamily	351118	5	86	1.45139e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	241	cox2_Microd1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	214438	9	238	4.14958e-113	323.319	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	308	orf308_2_Microd1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	273636	73	307	3.04131e-52	170.644	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	671	cox1_Microd1_feature_13_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	238833	5	420	0	724.273	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+2	Query_35	Specific	Binuclear center (heme a3/CuB)	H174,H223,H224,H309	4	4	238833
+2	Query_35	Specific	D-pathway	N14,D25,N32,S35,S90,S91,N97,T101	9	8	238833
+2	Query_35	Specific	K-pathway	H174,Y178,S189,H223,H224,T249,K252	7	7	238833
+2	Query_35	Specific	Electron transfer pathway	F310,R371,R372	3	3	238833
+2	Query_35	Specific	Putative proton exit pathway	H224,H301,D302,R371,R372	5	5	238833
+2	Query_35	Specific	Putative water exit pathway	D161,Q166,H167,D297,H301,D302,R371	7	7	238833
+2	Query_35	Specific	Subunit I/II interface	D161,K198,F201,G202,T227,V228,G229,V232,R235,L243,I251,F254,Y261,G262,G263,L275,N293,A294,L296,I298,A299,F300,H301,D302,L366,Q367,R371,R372,V373,G382,W383	32	31	238833
+2	Query_35	Specific	Subunit I/III interface	P24,F28,R30,L37,D78,F82,T100,N104,I124,L131,P134,M142,T151,S152,F153,G158,G159,D161,F171,Y208,C211,G214,I215,L219	25	24	238833
+2	Query_35	Specific	Subunit I/VIa interface	I69,R147,N148,F149,N150	5	5	238833
+2	Query_35	Specific	Subunit I/VIb interface	G229	1	1	238833
+2	Query_35	Specific	Subunit I/VIc interface	G262	1	1	238833
+2	Query_35	Specific	Subunit I/VIIa interface	F48,G51	2	2	238833
+2	Query_35	Specific	Subunit I/VIIb interface	D378,G382	2	2	238833
+2	Query_35	Specific	Subunit I/VIIIb interface	Y342,V399	2	2	238833
+2	Query_35	Specific	Dimer interface	I124,L131,F171,Y208,C211,G214,I215,L219	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_36	Peptide	170	orf170_2_Microd1_feature_17_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Superfamily	353929	92	149	1.39653e-14	65.3248	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_36	Generic	active site	Y95,S106,G108,R116,Y120	6	5	198380
+2	Query_36	Generic	catalytic site	R116	2	1	198380
+2	Query_36	Generic	GIY-YIG motif/motif A	G93,I94,Y95,S106,V107,G108	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	277	orf277_2_Microd1_feature_21_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	53	148	4.20989e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+2	Query_37	Specific	334330	186	273	4.991e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	782	nad5_Microd1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Non-specific	214400	1	506	7.21838e-165	489.973	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	287	orf287_2_Microd1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	235600	78	184	0.00518903	37.9848	PRK05771	PRK05771	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	374	cox1_Microd1_feature_6_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Superfamily	350997	11	372	0	598.698	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+2	Query_40	Generic	Binuclear center (active site)	H241,H290,H291	4	3	238461
+2	Query_40	Generic	Low-spin heme binding site	S34,R38,Y55,H62,M66,I67,V71,W127,L371	15	9	238461
+2	Query_40	Generic	D-pathway	Y19,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238461
+2	Query_40	Generic	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238461
+2	Query_40	Generic	Putative proton exit pathway	H291,H368,D369	5	3	238461
+2	Query_40	Generic	Putative water exit pathway	D228,Q233,H234,D364,H368,D369	7	6	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_41	Peptide	281	cox1_Microd1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Superfamily	350997	15	250	5.80987e-97	293.235	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+2	Query_41	Generic	Binuclear center (active site)	H245	4	1	238461
+2	Query_41	Generic	Low-spin heme binding site	S38,R42,Y59,H66,M70,I71,V75,W131	15	8	238461
+2	Query_41	Generic	D-pathway	Y23,N85,D96,N103,S106,L158	9	6	238461
+2	Query_41	Generic	K-pathway	H245,Y249	7	2	238461
+2	Query_41	Generic	Putative water exit pathway	D232,Q237,H238	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	374	cox1_Microd1_feature_7_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Superfamily	350997	11	372	0	598.698	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+2	Query_42	Generic	Binuclear center (active site)	H241,H290,H291	4	3	238461
+2	Query_42	Generic	Low-spin heme binding site	S34,R38,Y55,H62,M66,I67,V71,W127,L371	15	9	238461
+2	Query_42	Generic	D-pathway	Y19,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238461
+2	Query_42	Generic	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238461
+2	Query_42	Generic	Putative proton exit pathway	H291,H368,D369	5	3	238461
+2	Query_42	Generic	Putative water exit pathway	D228,Q233,H234,D364,H368,D369	7	6	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	581	cox1_Microd1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	350997	1	307	0	563.645	cl00275	Heme_Cu_Oxidase_I	C	-
+2	Query_43	Specific	334330	357	452	2.1979e-13	66.1058	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	334330	490	577	4.11374e-10	56.8611	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+2	Query_43	Generic	Binuclear center (active site)	H176,H225,H226	4	3	238461
+2	Query_43	Generic	Low-spin heme binding site	M1,I2,V6,W62,L306	15	5	238461
+2	Query_43	Generic	D-pathway	N16,D27,N34,S37,S92,S93,N99,T103	9	8	238461
+2	Query_43	Generic	K-pathway	H176,Y180,S191,H225,H226,T251,K254	7	7	238461
+2	Query_43	Generic	Putative proton exit pathway	H226,H303,D304	5	3	238461
+2	Query_43	Generic	Putative water exit pathway	D163,Q168,H169,D299,H303,D304	7	6	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_44	Peptide	210	orf210_Microd1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	315878	30	185	2.27996e-17	75.0738	pfam13302	Acetyltransf_3	-	356580
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	132	orf132_Microd1_feature_4_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	335245	4	98	9.20859e-06	42.5331	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	27	cob_Microd1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Non-specific	164595	1	27	0.000621523	33.5209	MTH00022	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	302	orf302_Microd1_feature_6_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Superfamily	355698	8	276	3.15086e-55	185.244	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	485	orf485_Microd1_feature_8_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	355698	382	485	3.97483e-05	45.802	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	132	orf132_Microd1_feature_2_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	335245	4	98	9.20859e-06	42.5331	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	127	cob_Microd1_feature_4_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Non-specific	214440	10	127	4.94298e-55	174.97	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

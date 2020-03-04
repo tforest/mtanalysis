@@ -1,0 +1,146 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Escweb1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Escweb1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	1073	nad4_Escweb1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	235622	1	375	4.95939e-93	305.588	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	269	orf269_Escweb1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	273636	1	180	8.27694e-43	145.221	TIGR01453	grpIintron_endo	-	45
+1	Query_2	Specific	197761	215	265	5.289e-08	48.333	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	172	cox1_Escweb1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	350997	1	156	1.97745e-77	238.537	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_3	Generic	Binuclear center (active site)	H20	4	1	238461
+1	Query_3	Generic	Low-spin heme binding site	Y15,H22,L25,S26,R82,R83,F112	15	7	238461
+1	Query_3	Generic	Putative proton exit pathway	H12,D13,R82,R83	5	4	238461
+1	Query_3	Generic	Putative water exit pathway	D8,H12,D13,R82	7	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	262	atp6_Escweb1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	351082	18	262	2.21588e-47	157.476	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	679	orf680_Escweb1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	552	652	1.46896e-15	72.6542	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	2060	orf2061_Escweb1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	353929	81	132	3.28323e-05	44.1389	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_9	Generic	active site	Y84,Y95,G97,R105,Y109	6	5	198380
+1	Query_9	Generic	catalytic site	R105	2	1	198380
+1	Query_9	Generic	GIY-YIG motif/motif A	G82,I83,Y84,Y95,I96,G97	6	6	198380
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_11	Peptide	1778	nad2_Escweb1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_11	Superfamily	356474	1414	1702	4.26865e-56	203.129	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	137	nad3_Escweb1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_12	Specific	334119	26	113	1.93816e-26	94.4042	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	64	atp9_Escweb1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_13	Specific	349422	6	63	3.51605e-20	74.8535	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	1780	orf1780_Escweb1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_15	Superfamily	353929	121	208	1.10363e-13	68.0212	cl15257	GIY-YIG_SF	-	-
+2	Query_15	Non-specific	273636	121	362	5.76795e-05	46.2249	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+2	Query_15	Generic	active site	Y124,Y135,G137,R145,Y148,E193	6	6	198380
+2	Query_15	Generic	catalytic site	R145,E193	2	2	198380
+2	Query_15	Generic	metal binding site	E193	1	1	198380
+2	Query_15	Generic	GIY-YIG motif/motif A	G122,V123,Y124,Y135,V136,G137	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	20	cox2_Escweb1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_16	Non-specific	214438	1	19	0.00193943	31.7226	MTH00154	COX2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	89	nad4L_Escweb1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_17	Superfamily	351118	3	87	4.3208e-17	69.0503	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	1870	nad5_Escweb1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_18	Non-specific	177253	1	70	2.77959e-08	58.4808	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	273	orf274_Escweb1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_19	Specific	334330	82	175	1.38431e-23	91.529	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	2587	orf2588_Escweb1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_20	Non-specific	273636	143	357	1.5385e-25	106.701	TIGR01453	grpIintron_endo	-	45
+2	Query_20	Superfamily	355020	6	70	1.0093e-17	83.5716	cl23723	Cytochrome_b_N	NC	-
+ENDDOMAINS
+SITES
+2	Query_20	Generic	heme bL binding site	R17,H20,S21,A24,I65,G66,G69,Y70	22	8	238176
+2	Query_20	Generic	heme bH binding site	F27,V31,H34,I35,R37,A51,W52,G55,T56,I58,L59	22	11	238176
+2	Query_20	Generic	Qo binding site	I60,I63,G64,F67,L68	11	5	238176
+2	Query_20	Generic	interchain domain interface	R8,D9,V10,N11,N12,W14,L15,I16,L19,P47	24	10	238176
+2	Query_20	Generic	intrachain domain interface	L15,Y18,L19,N22,T23,S25,A26,F28,F29,Y32,F39,Y40,Y41,A42,S43,Y44,R48,T49,W52,V53,T56,L59,I60,Y70	46	24	238176
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	366	nad1_Escweb1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_21	Specific	333876	26	349	5.37369e-108	318.263	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

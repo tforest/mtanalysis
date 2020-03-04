@@ -1,0 +1,357 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Hypcer1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Hypcer1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	467	cox1_Hypcer1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	1	447	0	738.526	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	H176,H225,H226,H311	4	4	238833
+1	Query_1	Specific	D-pathway	N16,D27,N34,S37,S92,S93,N99,T103	9	8	238833
+1	Query_1	Specific	K-pathway	H176,Y180,S191,H225,H226,T251,K254	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F312,R373,R374	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H226,H303,D304,R373,R374	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D163,Q168,H169,D299,H303,D304,R373	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	D163,K200,F203,G204,T229,V230,G231,V234,R237,L245,I253,F256,Y263,G264,G265,L277,N295,A296,L298,I300,A301,F302,H303,D304,L368,Q369,R373,R374,I375,G384,W385	32	31	238833
+1	Query_1	Specific	Subunit I/III interface	P26,F30,R32,W39,D80,F84,T102,N106,I126,L133,P136,M144,T153,S154,F155,G160,G161,D163,F173,Y210,M213,G216,I217,I221	25	24	238833
+1	Query_1	Specific	Subunit I/Vb interface	S201,Y205,A446	3	3	238833
+1	Query_1	Specific	Subunit I/VIa interface	V71,R149,N150,F151,N152	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G231	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G264	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	F50,V53	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D380,G384	2	2	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	L344,W401	2	2	238833
+1	Query_1	Specific	Dimer interface	I126,L133,F173,Y210,M213,G216,I217,I221	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	437	orf437_Hypcer1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	291	391	1.18702e-26	102.7	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	334330	133	233	2.20729e-26	101.929	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	308	orf308_Hypcer1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	179	279	7.73401e-25	95.7662	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	19	116	9.78203e-20	82.2842	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	350	orf350_Hypcer1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	80	167	1.08364e-12	63.4094	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	201	306	3.05661e-12	61.8686	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	323	orf323_Hypcer1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	176	281	1.00745e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	57	153	1.56638e-05	42.9939	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	306	orf306_Hypcer1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	177	280	3.76788e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	60	149	1.96291e-09	53.7795	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	349	orf349_Hypcer1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	213	312	3.87092e-17	75.7358	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	318	orf318_Hypcer1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	188	285	1.00554e-18	79.5878	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	83	150	0.00010383	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	273	orf273_Hypcer1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	47	140	6.16316e-10	54.9351	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	182	258	1.04615e-06	46.0755	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	269	orf269_Hypcer1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	273636	51	251	2.6448e-27	104.775	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	368	nad1_Hypcer1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	333876	13	351	5.25006e-109	320.959	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	329	orf329_Hypcer1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	197761	283	325	0.00075676	36.777	smart00497	IENR1	-	299755
+1	Query_13	Specific	284793	192	229	0.000802177	36.3364	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	492	nad4_Hypcer1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	235622	34	487	6.63268e-126	375.695	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	50	atp8_Hypcer1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	283561	1	48	7.22824e-08	42.7786	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	264	atp6_Hypcer1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351082	19	264	3.00288e-49	162.483	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	342	orf342_Hypcer1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	54	153	2.84732e-25	97.6922	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	213	308	1.74483e-22	89.9882	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	459	orf459_Hypcer1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	354370	25	447	1.02329e-175	499.479	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	116	orf117_Hypcer1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	353929	51	116	1.71503e-10	52.9984	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_20	Generic	active site	Y54,Y65,G67,R75,Y79	6	5	198380
+1	Query_20	Generic	catalytic site	R75	2	1	198380
+1	Query_20	Generic	GIY-YIG motif/motif A	G52,I53,Y54,Y65,I66,G67	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	218	nad6_Hypcer1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Superfamily	354830	24	213	4.72588e-24	93.9121	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	479	orf479_Hypcer1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	81	179	2.79104e-16	74.195	pfam00961	LAGLIDADG_1	-	45
+1	Query_22	Specific	334330	226	338	3.5852e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	269	cox3_Hypcer1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	278911	12	269	4.51959e-142	399.092	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_23	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_23	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_23	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_23	Specific	Subunit III/VIb interface	I127	1	1	238834
+1	Query_23	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_23	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	341	orf341_Hypcer1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	203	319	7.33001e-11	58.0167	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	188	orf188_Hypcer1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	57	157	4.34127e-25	93.0698	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	453	orf453_Hypcer1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	68	159	4.14767e-15	70.7282	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	203	316	1.56085e-07	49.1571	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	303	orf304_Hypcer1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	273636	105	291	2.07834e-29	111.324	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	434	orf434_Hypcer1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	141	239	7.0334e-26	100.389	pfam00961	LAGLIDADG_1	-	45
+1	Query_30	Specific	334330	297	396	3.24205e-22	90.3734	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	430	orf431_Hypcer1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	334330	51	143	9.75064e-16	72.269	pfam00961	LAGLIDADG_1	-	45
+1	Query_31	Specific	334330	190	294	0.00102915	37.9863	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_33	Peptide	139	orf140_Hypcer1_feature_145_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	34	124	2.30173e-14	64.1798	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	199	orf199_Hypcer1_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	334330	37	143	7.54057e-07	45.6903	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	561	nad2_Hypcer1_feature_155_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	235603	134	487	8.73232e-81	260.909	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	258	orf258_Hypcer1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	130	230	8.49907e-23	89.2178	pfam00961	LAGLIDADG_1	-	45
+2	Query_36	Specific	334330	16	72	1.09471e-11	59.5575	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	423	orf423_Hypcer1_feature_165_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	133	234	2.27293e-27	104.626	pfam00961	LAGLIDADG_1	-	45
+2	Query_37	Specific	334330	294	391	5.98415e-21	86.9066	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	444	orf444_Hypcer1_feature_168_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	334330	158	256	2.39875e-24	96.5366	pfam00961	LAGLIDADG_1	-	45
+2	Query_38	Specific	334330	314	414	8.23449e-23	92.2994	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	442	orf443_Hypcer1_feature_170_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	334330	156	254	2.97479e-24	96.1514	pfam00961	LAGLIDADG_1	-	45
+2	Query_39	Specific	334330	312	412	1.00174e-22	91.9142	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	776	nad3_Hypcer1_feature_172_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Superfamily	354370	336	769	4.08111e-143	427.832	cl18945	Beta_elim_lyase	-	-
+2	Query_40	Specific	334119	2	47	5.70736e-07	47.795	pfam00507	Oxidored_q4	N	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	68	atp9_Hypcer1_feature_174_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	349422	8	66	1.23931e-17	68.6903	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	350	orf351_Hypcer1_feature_176_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Non-specific	273636	130	345	1.81119e-34	125.576	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	252	cox2_Hypcer1_feature_180_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	214438	20	252	8.97097e-107	307.911	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	295	orf295_Hypcer1_feature_184_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	273636	57	291	6.96377e-59	187.208	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	111	orf111_Hypcer1_feature_187_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Superfamily	354370	13	88	3.77067e-14	66.5144	cl18945	Beta_elim_lyase	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	230	orf230_Hypcer1_feature_189_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Superfamily	354370	39	218	1.35774e-58	190.934	cl18945	Beta_elim_lyase	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	339	orf339_Hypcer1_feature_193_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	315878	159	323	6.85652e-25	97.8006	pfam13302	Acetyltransf_3	-	356580
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	147	nad4L_Hypcer1_feature_195_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	177231	3	80	2.25906e-21	82.3873	MTH00180	ND4L	-	351118
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	87	orf88_Hypcer1_feature_197_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	1	50	6.46561e-10	50.6979	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	832	nad5_Hypcer1_feature_201_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Non-specific	214400	1	629	0	626.334	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	522	orf522_Hypcer1_feature_205_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	334330	108	206	5.23505e-19	81.899	pfam00961	LAGLIDADG_1	-	45
+2	Query_53	Specific	334330	256	369	7.82769e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	339	orf339_Hypcer1_feature_209_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	334330	182	299	4.56824e-14	67.2614	pfam00961	LAGLIDADG_1	-	45
+2	Query_54	Specific	334330	63	147	0.000166863	39.9123	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	531	cob_Hypcer1_feature_214_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	214440	10	364	0	518.568	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	504	orf504_Hypcer1_feature_218_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	114	206	1.46597e-14	69.1874	pfam00961	LAGLIDADG_1	-	45
+2	Query_56	Specific	197761	441	496	0.00211739	36.0066	smart00497	IENR1	-	299755
+2	Query_56	Specific	334330	254	360	0.00642098	36.0603	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	315	orf315_Hypcer1_feature_222_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Non-specific	273636	98	304	7.29136e-29	110.168	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	294	orf294_Hypcer1_feature_226_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	334330	51	133	4.24508e-05	41.4531	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	151	orf151_Hypcer1_feature_229_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	335245	20	131	8.48934e-39	128.818	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	351	orf352_Hypcer1_feature_231_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	273636	151	328	4.35715e-43	148.303	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

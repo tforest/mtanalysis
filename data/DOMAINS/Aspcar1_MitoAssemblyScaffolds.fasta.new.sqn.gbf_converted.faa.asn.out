@@ -1,0 +1,149 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Aspcar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Aspcar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	48	atp8_Aspcar1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	283561	1	48	3.17399e-10	48.5566	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	254	atp6_Aspcar1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	351082	9	254	1.2812e-51	168.261	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	220	nad6_Aspcar1_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	354830	27	119	1.43763e-15	71.7909	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	269	cox3_Aspcar1_feature_15_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	278911	12	269	8.34702e-142	398.322	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Subunit I/III interface	A82,K85,G86,S97,F100,A104,I105,H111,S199,V200,S203,F207	12	12	238834
+1	Query_4	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_4	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,T190,V191,S192,S197,D198,S199	11	11	238834
+1	Query_4	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_4	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_4	Specific	Phospholipid binding site	W65,F66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	136	nad3_Aspcar1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334119	19	113	4.30068e-16	68.2106	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	253	cox2_Aspcar1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214438	18	247	1.231e-107	309.837	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	74	atp9_Aspcar1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351103	1	72	5.8663e-15	62.5594	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	352	nad1_Aspcar1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	333876	11	335	2.52833e-112	328.663	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	488	nad4_Aspcar1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	235622	32	487	6.52786e-131	388.406	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	488	nad4_Aspcar1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235622	32	487	6.52786e-131	388.406	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	352	nad1_Aspcar1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	333876	11	335	2.52833e-112	328.663	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	387	cob_Aspcar1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	214440	10	367	0	513.176	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	559	nad2_Aspcar1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	132	482	1.85601e-75	247.041	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	658	nad5_Aspcar1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	214400	1	630	0	609.77	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	89	nad4L_Aspcar1_feature_28_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	351118	5	87	4.08048e-19	74.2981	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	557	orf557_Aspcar1_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	338277	49	101	0.00710239	36.089	pfam12210	Hrs_helical	C	45
+1	Query_21	Superfamily	354317	502	527	0.00786787	38.7429	cl17173	AdoMet_MTases	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	588	cox1_Aspcar1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	238833	67	568	0	850.619	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_22	Specific	Binuclear center (heme a3/CuB)	H297,H346,H347,H432	4	4	238833
+1	Query_22	Specific	Low-spin heme (heme a) binding site	H118,H434,S438,T480,S517	5	5	238833
+1	Query_22	Specific	D-pathway	Y75,N137,D148,N155,S158,S213,S214,N220,T224	9	9	238833
+1	Query_22	Specific	K-pathway	H297,Y301,S312,H346,H347,T372,K375	7	7	238833
+1	Query_22	Specific	Electron transfer pathway	F433,R494,R495	3	3	238833
+1	Query_22	Specific	Putative proton exit pathway	H347,H424,D425,R494,R495	5	5	238833
+1	Query_22	Specific	Putative water exit pathway	D284,Q289,H290,D420,H424,D425,R494	7	7	238833
+1	Query_22	Specific	Subunit I/II interface	N112,D284,N322,F324,G325,T350,V351,G352,V355,R358,L366,I374,F377,Y384,G385,G386,L398,N416,A417,L419,V421,A422,F423,H424,D425,L489,Q490,R494,R495,I496,G505,W506	32	32	238833
+1	Query_22	Specific	Subunit I/III interface	P147,F151,R153,W160,D201,F205,T223,N227,I247,L254,P257,M265,T274,S275,F276,G281,G282,D284,F294,Y331,M334,G337,V338,L342	25	24	238833
+1	Query_22	Specific	Subunit I/IV interface	L95,S98,G99,F464,K467,V468,D501,V519	8	8	238833
+1	Query_22	Specific	Subunit I/VIa interface	I192,R270,N271,F272,N273	5	5	238833
+1	Query_22	Specific	Subunit I/VIb interface	G352	1	1	238833
+1	Query_22	Specific	Subunit I/VIc interface	G385	1	1	238833
+1	Query_22	Specific	Subunit I/VIIa interface	F171,T174	2	2	238833
+1	Query_22	Specific	Subunit I/VIIb interface	D501,G505	2	2	238833
+1	Query_22	Specific	Subunit I/VIIc interface	F81,L85,A88,L92,A173,T174,L456,Y529,L532	9	9	238833
+1	Query_22	Specific	Subunit I/VIIIb interface	A465,W522	2	2	238833
+1	Query_22	Specific	Dimer interface	I247,L254,F294,Y331,M334,G337,V338,L342	8	8	238833
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

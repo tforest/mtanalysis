@@ -1,0 +1,473 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	HyFL1150_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	HyFL1150_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	582	cob_HyFL1150_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	214440	10	126	8.34187e-52	181.134	MTH00156	CYTB	C	45
+1	Query_1	Specific	333719	464	510	0.00125078	41.737	NF000535	MSCRAMM_SdrC	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	446	orf446_HyFL1150_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	56	150	4.398e-20	84.5954	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	197761	383	438	7.77387e-05	39.8586	smart00497	IENR1	-	299755
+1	Query_2	Non-specific	273636	307	437	0.0029294	38.9062	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	367	nad5_HyFL1150_feature_9_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	235836	2	302	4.39942e-109	331.738	PRK06590	PRK06590	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	359	orf359_1_HyFL1150_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	273	352	0.00866887	35.2899	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	100	orf100_HyFL1150_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	2	82	7.402e-07	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	373	orf373_HyFL1150_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	335245	161	342	3.7149e-37	131.899	pfam03161	LAGLIDADG_2	-	45
+1	Query_8	Specific	197761	107	144	3.92099e-05	40.629	smart00497	IENR1	N	299755
+1	Query_8	Non-specific	273636	57	143	4.084e-05	43.9138	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	314	orf314_HyFL1150_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	193	281	9.6894e-09	51.8535	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	84	165	4.05854e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	337	orf337_HyFL1150_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	177	296	1.79901e-16	73.8098	pfam00961	LAGLIDADG_1	-	45
+1	Query_10	Specific	334330	58	143	2.58808e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	123	nad5_HyFL1150_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	123	1.71276e-45	155.166	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	414	orf414_HyFL1150_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	273636	200	377	1.01773e-30	117.102	TIGR01453	grpIintron_endo	-	45
+1	Query_12	Superfamily	351118	1	82	3.4278e-08	50.801	cl00492	Oxidored_q2	-	-
+1	Query_12	Non-specific	177253	86	138	1.90306e-05	46.5396	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	384	orf384_HyFL1150_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	335245	276	372	1.26382e-19	84.9051	pfam03161	LAGLIDADG_2	C	45
+1	Query_13	Specific	335245	41	211	9.66122e-17	76.8159	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	439	orf439_HyFL1150_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	305	406	7.64485e-30	111.174	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	144	245	1.15647e-28	108.093	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	432	orf432_HyFL1150_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	150	252	3.47956e-24	95.7662	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	313	405	1.43545e-21	88.8326	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	177231	7	80	3.3043e-20	84.6985	MTH00180	ND4L	-	351118
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	909	orf909_HyFL1150_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	315878	642	806	2.70102e-15	73.533	pfam13302	Acetyltransf_3	-	356580
+1	Query_16	Non-specific	214443	181	270	0.00446454	40.5226	MTH00163	ND4	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	250	cox2_HyFL1150_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	214438	18	247	1.09272e-106	307.525	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	418	orf418_HyFL1150_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	353929	80	167	3.53875e-13	64.5544	cl15257	GIY-YIG_SF	-	-
+1	Query_18	Non-specific	273636	80	323	2.88979e-05	44.6842	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_18	Generic	active site	Y83,Y94,G96,R104,Y107,E152	6	6	198380
+1	Query_18	Generic	catalytic site	R104,E152	2	2	198380
+1	Query_18	Generic	metal binding site	E152	1	1	198380
+1	Query_18	Generic	GIY-YIG motif/motif A	G81,I82,Y83,Y94,V95,G96	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	296	orf296_HyFL1150_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	273636	58	291	2.08225e-57	183.356	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	424	orf424_HyFL1150_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	136	236	1.70085e-28	107.322	pfam00961	LAGLIDADG_1	-	45
+1	Query_20	Specific	334330	294	393	1.18027e-26	102.7	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	74	atp9_HyFL1150_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	349422	6	70	1.59073e-19	73.6979	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	796	nad3_HyFL1150_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	354370	359	791	2.78846e-136	410.883	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	446	cox1_HyFL1150_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	350997	1	316	0	544.77	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_25	Generic	Binuclear center (active site)	H70,H119,H120,H205	4	4	238461
+1	Query_25	Generic	Low-spin heme binding site	Y200,H207,F210,C211,R267,R268,F297	15	7	238461
+1	Query_25	Generic	K-pathway	H70,Y74,S85,H119,H120,T145,K148	7	7	238461
+1	Query_25	Generic	Putative proton exit pathway	H120,H197,D198,R267,R268	5	5	238461
+1	Query_25	Generic	Putative water exit pathway	D57,Q62,H63,D193,H197,D198,R267	7	7	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	269	orf269_HyFL1150_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	139	239	5.59971e-25	95.381	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	2	79	8.93712e-16	70.7282	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	338	orf338_HyFL1150_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	211	309	1.50294e-09	54.5499	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	80	167	1.46051e-07	48.7719	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	345	orf345_HyFL1150_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334330	204	300	1.33173e-18	79.5878	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	334330	86	154	3.38101e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	444	orf444_HyFL1150_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	216	283	2.54711e-06	45.6903	pfam00961	LAGLIDADG_1	C	45
+1	Query_29	Specific	334330	322	401	0.00176958	37.6011	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_30	Peptide	430	orf430_HyFL1150_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Specific	334330	141	239	1.16973e-24	97.307	pfam00961	LAGLIDADG_1	-	45
+2	Query_30	Specific	334330	298	400	2.69136e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	355	orf355_HyFL1150_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	334330	217	316	8.49617e-17	74.9654	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	273	orf273_HyFL1150_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Specific	334330	47	140	8.1578e-13	63.0242	pfam00961	LAGLIDADG_1	-	45
+2	Query_32	Specific	334330	182	268	3.72349e-08	49.9275	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	317	orf317_HyFL1150_feature_38_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	334330	92	168	6.6857e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	270	orf270_HyFL1150_feature_42_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Non-specific	273636	11	261	3.9775e-30	112.094	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	334	orf334_HyFL1150_feature_45_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	52	151	3.25887e-23	91.9142	pfam00961	LAGLIDADG_1	-	45
+2	Query_36	Specific	334330	209	300	8.54592e-23	90.7586	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	407	orf407_HyFL1150_feature_47_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Non-specific	273636	129	206	1.01522e-06	48.9213	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	298	orf298_HyFL1150_feature_49_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Non-specific	273636	80	293	4.84797e-36	128.272	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	184	nad1_HyFL1150_feature_51_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	333876	1	173	1.9158e-43	146.078	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	292	orf292_HyFL1150_feature_55_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	273636	97	289	1.06798e-42	145.606	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	550	nad4_HyFL1150_feature_58_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	235622	9	484	5.30079e-120	362.598	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	464	orf464_HyFL1150_feature_62_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	173	272	2.53199e-26	101.929	pfam00961	LAGLIDADG_1	-	45
+2	Query_42	Specific	334330	330	430	1.79818e-24	96.9218	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	50	atp8_HyFL1150_feature_67_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Non-specific	283561	1	48	4.13592e-07	40.8526	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	263	atp6_HyFL1150_feature_69_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	273458	36	260	1.39373e-49	162.761	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	359	orf359_HyFL1150_feature_73_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	72	171	4.93772e-24	94.6106	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	231	326	1.30069e-18	79.973	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	401	orf401_HyFL1150_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	315878	219	382	4.98906e-17	76.9998	pfam13302	Acetyltransf_3	-	356580
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	316	orf316_HyFL1150_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	315878	84	261	1.22641e-15	72.3774	pfam13302	Acetyltransf_3	-	356580
+2	Query_49	Non-specific	250634	3	63	0.00117988	38.6905	pfam01456	Mucin	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	298	orf298_HyFL1150_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Non-specific	235050	7	88	0.00248622	38.9195	PRK02546	PRK02546	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	388	orf389_HyFL1150_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	334330	75	174	1.92487e-25	98.8478	pfam00961	LAGLIDADG_1	-	45
+2	Query_53	Specific	334330	254	353	7.03504e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	370	orf370_HyFL1150_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	334330	7	70	2.29039e-07	48.3867	pfam00961	LAGLIDADG_1	N	45
+2	Query_54	Specific	334330	119	227	0.000368523	39.1419	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	251	cob_HyFL1150_feature_16_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Non-specific	214440	11	231	1.71066e-96	286.293	MTH00156	CYTB	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	294	orf294_HyFL1150_feature_20_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	51	133	2.14391e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	318	orf318_2_HyFL1150_feature_24_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	334330	73	169	1.34435e-16	73.8098	pfam00961	LAGLIDADG_1	-	45
+2	Query_57	Specific	334330	205	302	0.000826611	37.9863	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	102	orf102_HyFL1150_feature_28_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	334330	14	100	8.18023e-05	37.9863	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	312	cox1_HyFL1150_feature_41_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Superfamily	350997	30	91	1.37623e-30	119.895	cl00275	Heme_Cu_Oxidase_I	C	-
+2	Query_61	Specific	334330	207	304	6.54538e-24	93.455	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+2	Query_61	Generic	Low-spin heme binding site	S54,R58,Y75,H82,M86,I87,V91	15	7	238461
+2	Query_61	Generic	D-pathway	Y39	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_62	Peptide	170	orf171_HyFL1150_feature_43_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	334330	80	165	1.55282e-14	65.3354	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	907	orf907_HyFL1150_feature_47_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Non-specific	275209	318	719	6.91245e-98	310.544	TIGR04416	group_II_RT_mat	-	45
+2	Query_64	Specific	238038	848	907	0.00020025	39.7624	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+2	Query_64	Specific	active site	H870,H877,H878,Q879,P881,N893,L894,H898,S899,H902,H907	11	11	238038
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_65	Peptide	877	orf878_HyFL1150_feature_49_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_65	Specific	335245	217	385	3.17542e-51	176.968	pfam03161	LAGLIDADG_2	-	45
+3	Query_65	Specific	334330	594	707	2.27599e-15	72.269	pfam00961	LAGLIDADG_1	-	45
+3	Query_65	Superfamily	353929	827	877	2.62627e-08	51.8428	cl15257	GIY-YIG_SF	C	-
+3	Query_65	Specific	334330	476	560	0.000113374	41.8383	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+3	Query_65	Generic	active site	Y830,Y841,G843,R851,Y855	6	5	198380
+3	Query_65	Generic	catalytic site	R851	2	1	198380
+3	Query_65	Generic	GIY-YIG motif/motif A	G828,V829,Y830,Y841,I842,G843	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_66	Peptide	172	orf173_HyFL1150_feature_51_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_66	Non-specific	273636	1	141	1.8347e-13	65.0997	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	110	orf111_HyFL1150_feature_53_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_67	Specific	334330	26	68	1.21963e-07	45.6903	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	317	orf318_HyFL1150_feature_57_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_69	Specific	334330	25	126	4.33868e-26	99.233	pfam00961	LAGLIDADG_1	-	45
+3	Query_69	Specific	334330	184	283	8.9885e-25	95.7662	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	147	orf148_HyFL1150_feature_59_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_70	Specific	334330	38	106	8.97286e-11	54.9351	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	384	orf385_HyFL1150_feature_61_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Specific	334330	111	206	9.07869e-19	80.3582	pfam00961	LAGLIDADG_1	-	45
+3	Query_71	Specific	334330	262	347	1.29745e-05	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	415	orf416_HyFL1150_feature_63_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_72	Specific	334330	129	229	2.02498e-27	104.626	pfam00961	LAGLIDADG_1	-	45
+3	Query_72	Specific	334330	287	386	5.16148e-25	98.0774	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	266	orf266_HyFL1150_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Specific	335245	42	214	1.87817e-37	129.588	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	323	nad2_HyFL1150_feature_27_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Superfamily	356474	49	291	1.9862e-47	165.764	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_76	Peptide	423	orf423_HyFL1150_feature_31_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Specific	334330	135	235	2.49229e-27	104.241	pfam00961	LAGLIDADG_1	-	45
+3	Query_76	Specific	334330	296	393	2.43855e-24	96.1514	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	493	orf493_HyFL1150_feature_34_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Superfamily	353929	183	310	3.43522e-13	64.9396	cl15257	GIY-YIG_SF	-	-
+3	Query_77	Non-specific	273636	182	484	1.36897e-08	55.0845	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+3	Query_77	Generic	active site	Y186,Y197,G199,R207,Y212,E295	6	6	198380
+3	Query_77	Generic	catalytic site	R207,E295	2	2	198380
+3	Query_77	Generic	metal binding site	E295	1	1	198380
+3	Query_77	Generic	GIY-YIG motif/motif A	G184,V185,Y186,Y197,V198,G199	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_78	Peptide	269	cox3_HyFL1150_feature_10_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Specific	278911	12	269	6.65877e-131	370.973	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+3	Query_78	Specific	Subunit I/III interface	A82,L85,G86,S97,L100,A104,I105,H111,G199,S200,T203,F207	12	12	238834
+3	Query_78	Specific	Subunit III/Vb interface	G166	1	1	238834
+3	Query_78	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+3	Query_78	Specific	Subunit III/VIb interface	A127	1	1	238834
+3	Query_78	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,F75,L76	7	7	238834
+3	Query_78	Specific	Phospholipid binding site	W65,F66,I69,V70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_79	Peptide	254	orf254_HyFL1150_feature_14_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_79	Specific	334330	24	122	1.10083e-06	45.6903	pfam00961	LAGLIDADG_1	-	45
+3	Query_79	Specific	197761	204	248	0.00386762	34.4658	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	339	orf339_HyFL1150_feature_16_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_80	Specific	334330	208	308	1.55445e-26	100.774	pfam00961	LAGLIDADG_1	-	45
+3	Query_80	Specific	334330	50	150	3.55656e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	134	nad6_HyFL1150_feature_23_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	334114	75	124	5.68736e-09	50.5363	pfam00499	Oxidored_q3	N	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	553	orf554_HyFL1150_feature_25_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_82	Specific	334330	146	244	6.31251e-18	78.8174	pfam00961	LAGLIDADG_1	-	45
+3	Query_82	Specific	334114	10	48	4.69734e-07	48.9955	pfam00499	Oxidored_q3	C	354830
+3	Query_82	Specific	334330	291	404	0.000218034	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	82	orf83_HyFL1150_feature_27_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Specific	334330	1	82	5.4766e-11	53.3943	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_85	Peptide	142	orf143_HyFL1150_feature_31_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_85	Specific	334330	86	140	5.95565e-06	42.2235	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

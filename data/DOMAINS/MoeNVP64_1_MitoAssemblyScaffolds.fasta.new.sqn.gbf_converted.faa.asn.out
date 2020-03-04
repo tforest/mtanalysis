@@ -1,0 +1,290 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	MoeNVP64_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	MoeNVP64_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	103	orf104_MoeNVP64_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	273636	7	96	3.77992e-11	56.6253	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_1	Generic	DNA binding site	H21,P22,L23,Y24,H28,T32,M36,S37,S41,H42,T46,V47,Y49,I66,K70,S75,T78,R80,K81,Y82	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	354	orf355_MoeNVP64_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	273636	108	347	6.2771e-45	153.31	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	360	orf360_MoeNVP64_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	273636	89	356	2.34738e-47	159.474	TIGR01453	grpIintron_endo	-	45
+1	Query_3	Specific	311417	257	292	9.72305e-10	52.9948	pfam07460	NUMOD3	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	385	cob_MoeNVP64_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	214425	3	377	3.36225e-178	500.198	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	675	nad5_MoeNVP64_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	177253	1	630	0	621.643	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	92	orf93_MoeNVP64_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	353929	18	79	3.18871e-08	46.45	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_7	Generic	active site	Y26,G28,R36,Y40	6	4	198380
+1	Query_7	Generic	catalytic site	R36	2	1	198380
+1	Query_7	Generic	GIY-YIG motif/motif A	Y26,V27,G28	6	3	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	87	nad4L_MoeNVP64_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	351118	5	87	3.42172e-11	53.8826	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	199	nad6_MoeNVP64_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	354830	8	199	2.70231e-22	88.9045	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	173	orf174_MoeNVP64_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	198392	92	173	5.96081e-21	81.5032	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_11	Specific	putative active site	Y95,Y106,G108,R116,H120,E159,N171	7	7	198392
+1	Query_11	Specific	putative metal binding site	E159	1	1	198392
+1	Query_11	Specific	GIY-YIG motif/motif A	G93,I94,Y95,Y106,I107,G108	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	806	nad4_MoeNVP64_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235622	1	475	8.75883e-149	445.416	PRK05846	PRK05846	-	45
+1	Query_13	Specific	334330	522	624	4.08408e-24	97.307	pfam00961	LAGLIDADG_1	-	45
+1	Query_13	Specific	334330	683	776	9.38438e-13	64.565	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	245	orf245_MoeNVP64_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	335245	53	228	2.38697e-36	126.121	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	254	cox3_MoeNVP64_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	278911	8	247	1.2995e-114	328.986	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Subunit I/III interface	K78,Q81,G82,S93,F96,S100,L101,H107,S195,V196,S199,F203	12	12	238834
+1	Query_17	Specific	Subunit III/Vb interface	F162	1	1	238834
+1	Query_17	Specific	Subunit III/VIa interface	W131,E132,V133,L150,L176,I186,N187,A188,A193,D194,S195	11	11	238834
+1	Query_17	Specific	Subunit III/VIb interface	A123	1	1	238834
+1	Query_17	Specific	Subunit III/VIIa interface	L60,R63,D64,I67,T70,F71,Q72	7	7	238834
+1	Query_17	Specific	Phospholipid binding site	W61,F62,I65,I66,G69,H75,G86,F87,F90,F218,R225,V237,G238	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	76	orf77_MoeNVP64_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	6	45	4.31968e-06	40.6827	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	331	orf332_MoeNVP64_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	273636	110	326	1.34217e-41	143.68	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	253	orf254_MoeNVP64_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	20	118	2.23624e-27	101.159	pfam00961	LAGLIDADG_1	-	45
+1	Query_21	Specific	334330	176	249	4.43527e-15	68.8022	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	233	orf233_MoeNVP64_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	198392	27	113	8.45032e-23	88.0516	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_22	Specific	putative active site	Y30,Y41,G43,R51,Y55,E98,N110	7	7	198392
+1	Query_22	Specific	putative metal binding site	E98	1	1	198392
+1	Query_22	Specific	GIY-YIG motif/motif A	G28,I29,Y30,Y41,I42,G43	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	530	nad2_MoeNVP64_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	235603	139	524	1.13264e-77	251.664	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	101	nad3_MoeNVP64_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334119	19	101	7.13547e-28	96.7154	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	72	orf73_MoeNVP64_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	353929	22	72	5.02759e-10	50.302	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_25	Generic	active site	Y25,Y36,G38,R46,Y50	6	5	198380
+1	Query_25	Generic	catalytic site	R46	2	1	198380
+1	Query_25	Generic	GIY-YIG motif/motif A	G23,I24,Y25,Y36,I37,G38	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	149	orf150_MoeNVP64_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	273636	1	142	3.12017e-21	85.1301	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_26	Generic	DNA binding site	N93,P94,M95,Y96,H100,S104,M108,N109,K113,G114,T118,K120,K122,A139,D143	21	15	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	143	orf144_MoeNVP64_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	353929	62	111	6.95833e-09	49.5316	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_27	Generic	active site	Y65,Y76,G78,R86,Y90	6	5	198380
+1	Query_27	Generic	catalytic site	R86	2	1	198380
+1	Query_27	Generic	GIY-YIG motif/motif A	G63,I64,Y65,Y76,V77,G78	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	535	cox1_MoeNVP64_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	238833	8	513	0	847.537	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_28	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_28	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T424,S461	5	5	238833
+1	Query_28	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_28	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_28	Specific	Electron transfer pathway	F376,R438,R439	3	3	238833
+1	Query_28	Specific	Putative proton exit pathway	H290,H367,D368,R438,R439	5	5	238833
+1	Query_28	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R438	7	7	238833
+1	Query_28	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,S293,V294,G295,V298,R301,M309,I317,F320,A327,G328,G329,L341,N359,A360,I362,V364,A365,L366,H367,D368,L433,A434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_28	Specific	Subunit I/III interface	T8,V90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_28	Specific	Subunit I/IV interface	L37,A40,G41,L408,Q411,I412,D445,V463	8	8	238833
+1	Query_28	Specific	Subunit I/Vb interface	P265,Y269,A512	3	3	238833
+1	Query_28	Specific	Subunit I/VIa interface	L135,R213,N214,F215,N216	5	5	238833
+1	Query_28	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_28	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_28	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_28	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_28	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,S116,F117,I400,Y473,L476	9	9	238833
+1	Query_28	Specific	Subunit I/VIIIb interface	L409,V466	2	2	238833
+1	Query_28	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_29	Peptide	325	orf325_MoeNVP64_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	198392	71	158	2.41005e-22	88.822	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_29	Non-specific	273636	70	322	1.49819e-08	53.9289	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_29	Specific	putative active site	Y73,Y84,G86,R94,Y98,E143,N155	7	7	198392
+1	Query_29	Specific	putative metal binding site	E143	1	1	198392
+1	Query_29	Specific	GIY-YIG motif/motif A	G71,V72,Y73,Y84,V85,G86	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	361	orf361_MoeNVP64_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	85	179	1.71565e-21	87.677	pfam00961	LAGLIDADG_1	-	45
+1	Query_30	Specific	334330	235	324	3.13947e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	318	orf318_MoeNVP64_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Non-specific	273636	105	315	1.95053e-29	111.709	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	204	orf205_MoeNVP64_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	273636	1	193	5.59396e-36	125.191	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	279	rps3_MoeNVP64_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Non-specific	130082	14	267	6.0073e-07	48.8521	TIGR01009	rpsC_bact	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	257	atp6_MoeNVP64_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Superfamily	351082	14	257	2.63167e-56	180.203	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	47	atp8_MoeNVP64_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Non-specific	283561	1	47	0.000300436	33.5338	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	82	atp9_MoeNVP64_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	349422	15	79	1.40671e-24	86.7947	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_38	Peptide	264	orf265_MoeNVP64_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Specific	273636	63	261	8.19386e-42	142.14	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	281	orf281_MoeNVP64_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Non-specific	313658	43	121	0.00233992	37.2811	pfam10473	CENP-F_leu_zip	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	197	orf197_MoeNVP64_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_40	Non-specific	237177	15	82	0.00695071	36.2946	PRK12704	PRK12704	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_41	Peptide	280	orf281_MoeNVP64_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	273636	33	277	9.58746e-40	137.517	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	229	orf229_MoeNVP64_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Non-specific	273636	157	223	1.23296e-06	47.3805	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	234	cox2_MoeNVP64_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Non-specific	214402	5	233	6.66502e-106	305.136	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

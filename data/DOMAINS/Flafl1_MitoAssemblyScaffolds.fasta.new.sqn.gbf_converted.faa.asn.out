@@ -1,0 +1,180 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Flafl1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Flafl1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_4	Peptide	661	nad5_Flafl1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	177253	1	616	0	622.798	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	100	nad4L_Flafl1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	351118	5	90	1.09097e-15	65.8237	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	212	orf212_Flafl1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	275209	155	199	3.42128e-05	43.6004	TIGR04416	group_II_RT_mat	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	531	orf531_Flafl1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	295487	1	186	7.1452e-13	67.9964	cl02808	RT_like	C	-
+1	Query_8	Superfamily	295487	152	231	1.82468e-05	43.4936	cl02808	RT_like	-	-
+ENDDOMAINS
+SITES
+1	Query_8	Generic	active site	D51,L52,E53,A54,F55,F56,Q154,G155,Y180,D182,D183	13	11	238185
+1	Query_8	Generic	nucleic acid binding site	G155	1	1	238185
+1	Query_8	Generic	NTP binding site	D51,L52,E53,A54,F55,F56,Q154,D182	8	8	238185
+1	Query_8	Generic	active site	Q154,G155,Y180,D182,D183,L227,G228	13	7	238185
+1	Query_8	Generic	nucleic acid binding site	G155	1	1	238185
+1	Query_8	Generic	NTP binding site	Q154,D182	8	2	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	191	nad4_Flafl1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	235622	4	75	6.408e-15	71.7721	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	73	atp9_Flafl1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	349422	6	70	9.39556e-16	64.0679	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	204	nad6_Flafl1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	354830	1	108	1.41724e-18	79.2745	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	519	nad2_Flafl1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	235603	7	454	5.17884e-78	252.434	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	125	nad3_Flafl1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334119	26	113	5.61126e-29	100.567	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	499	nad4_Flafl1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	235622	12	496	4.94506e-139	409.592	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	168	orf168_Flafl1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	355698	74	168	1.05108e-08	53.2408	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	113	orf113_Flafl1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	355698	9	113	6.13713e-18	77.3883	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	951	orf950_Flafl1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	281206	300	694	2.44678e-80	268.062	pfam03175	DNA_pol_B_2	-	355698
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	536	cox1_Flafl1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	238833	13	517	0	861.019	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_27	Specific	Binuclear center (heme a3/CuB)	H245,H294,H295,H380	4	4	238833
+1	Query_27	Specific	Low-spin heme (heme a) binding site	H66,H382,S386,T428,S465	5	5	238833
+1	Query_27	Specific	D-pathway	Y22,N85,D96,N103,S106,S161,S162,N168,T172	9	9	238833
+1	Query_27	Specific	K-pathway	H245,Y249,S260,H294,H295,T320,K323	7	7	238833
+1	Query_27	Specific	Electron transfer pathway	F381,R442,R443	3	3	238833
+1	Query_27	Specific	Putative proton exit pathway	H295,H372,D373,R442,R443	5	5	238833
+1	Query_27	Specific	Putative water exit pathway	D232,Q237,H238,D368,H372,D373,R442	7	7	238833
+1	Query_27	Specific	Subunit I/II interface	N60,D232,K269,F272,G273,A298,V299,G300,V303,R306,M314,I322,F325,Y332,G333,G334,L346,N364,A365,M367,I369,A370,L371,H372,D373,L437,A438,R442,R443,I444,G453,W454	32	32	238833
+1	Query_27	Specific	Subunit I/III interface	T13,P95,F99,R101,W108,D149,F153,T171,N175,I195,L202,P205,M213,T222,S223,F224,G229,G230,D232,F242,Y279,F282,G285,I286,L290	25	25	238833
+1	Query_27	Specific	Subunit I/IV interface	L42,A45,A46,F412,K415,V416,D449,V467	8	8	238833
+1	Query_27	Specific	Subunit I/Vb interface	P270,Y274,A516	3	3	238833
+1	Query_27	Specific	Subunit I/VIa interface	I140,R218,N219,F220,N221	5	5	238833
+1	Query_27	Specific	Subunit I/VIb interface	G300	1	1	238833
+1	Query_27	Specific	Subunit I/VIc interface	G333	1	1	238833
+1	Query_27	Specific	Subunit I/VIIa interface	L119,L122	2	2	238833
+1	Query_27	Specific	Subunit I/VIIb interface	D449,G453	2	2	238833
+1	Query_27	Specific	Subunit I/VIIc interface	F28,I32,A35,L39,A121,L122,I404,Y477,F480	9	9	238833
+1	Query_27	Specific	Subunit I/VIIIb interface	L413,A470	2	2	238833
+1	Query_27	Specific	Dimer interface	I195,L202,F242,Y279,F282,G285,I286,L290	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	108	orf108_Flafl1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Superfamily	355698	33	108	4.59227e-13	63.136	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	260	atp6_Flafl1_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	273458	35	257	2.58728e-45	151.59	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	164	nad4_Flafl1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	235622	125	160	0.000790525	38.645	PRK05846	PRK05846	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	339	nad1_Flafl1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	333876	33	327	4.20072e-116	337.908	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	387	cob_Flafl1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	214440	10	366	3.63439e-160	453.47	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	272	cox3_Flafl1_feature_137_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	238834	36	269	7.74272e-116	332.173	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_37	Specific	Subunit I/III interface	Q84,N87,G88,S99,F102,S106,V107,H113,S201,V202,S205,A209	12	12	238834
+1	Query_37	Specific	Subunit III/Vb interface	G168	1	1	238834
+1	Query_37	Specific	Subunit III/VIa interface	F137,A138,I139,Y156,I182,S192,E193,A194,S199,D200,S201	11	11	238834
+1	Query_37	Specific	Subunit III/VIb interface	Q129	1	1	238834
+1	Query_37	Specific	Subunit III/VIIa interface	L66,R69,D70,T73,T76,Y77,E78	7	7	238834
+1	Query_37	Specific	Phospholipid binding site	W67,L68,V71,T72,A75,H81,G92,F93,F96,F224,R231,Q243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_39	Peptide	251	cox2_Flafl1_feature_141_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	214438	20	250	5.40988e-116	331.023	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

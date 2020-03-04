@@ -1,0 +1,135 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	MarPMI226_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	MarPMI226_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	222	nad6_MarPMI226_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	354830	22	217	6.17512e-17	75.4225	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	269	cox3_MarPMI226_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	278911	12	269	1.40759e-135	382.529	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_3	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,V200,T203,F207	12	12	238834
+1	Query_3	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_3	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_3	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_3	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_3	Specific	Phospholipid binding site	W65,F66,I69,V70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	255	atp6_MarPMI226_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	351082	11	255	3.59739e-56	179.817	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	48	atp8_MarPMI226_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	283561	1	48	6.30047e-08	42.7786	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	485	nad4_MarPMI226_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235622	1	482	1.23505e-133	395.34	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	369	nad1_MarPMI226_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	333876	14	352	1.91299e-112	329.819	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	537	cox1_MarPMI226_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	238833	16	496	0	829.818	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_9	Specific	Binuclear center (heme a3/CuB)	H247,H296,H297,H382	4	4	238833
+1	Query_9	Specific	Low-spin heme (heme a) binding site	H68,H384,S388,T430,S467	5	5	238833
+1	Query_9	Specific	D-pathway	Y25,N87,D98,N105,S108,S163,S164,N170,T174	9	9	238833
+1	Query_9	Specific	K-pathway	H247,Y251,S262,H296,H297,T322,K325	7	7	238833
+1	Query_9	Specific	Electron transfer pathway	F383,R444,R445	3	3	238833
+1	Query_9	Specific	Putative proton exit pathway	H297,H374,D375,R444,R445	5	5	238833
+1	Query_9	Specific	Putative water exit pathway	D234,Q239,H240,D370,H374,D375,R444	7	7	238833
+1	Query_9	Specific	Subunit I/II interface	N62,D234,K271,F274,G275,T300,V301,G302,V305,R308,L316,I324,F327,Y334,G335,G336,L348,N366,A367,L369,I371,A372,F373,H374,D375,L439,Q440,R444,R445,I446,G455,W456	32	32	238833
+1	Query_9	Specific	Subunit I/III interface	T16,P97,F101,R103,W110,D151,F155,T173,N177,I197,L204,P207,M215,T224,S225,F226,G231,G232,D234,F244,Y281,M284,G287,I288,I292	25	25	238833
+1	Query_9	Specific	Subunit I/IV interface	L45,S48,G49,N414,K417,V418,D451,I469	8	8	238833
+1	Query_9	Specific	Subunit I/VIa interface	L142,R220,N221,F222,N223	5	5	238833
+1	Query_9	Specific	Subunit I/VIb interface	G302	1	1	238833
+1	Query_9	Specific	Subunit I/VIc interface	G335	1	1	238833
+1	Query_9	Specific	Subunit I/VIIa interface	F121,C124	2	2	238833
+1	Query_9	Specific	Subunit I/VIIb interface	D451,G455	2	2	238833
+1	Query_9	Specific	Subunit I/VIIc interface	F31,L35,A38,L42,A123,C124,M406,Y479,L482	9	9	238833
+1	Query_9	Specific	Subunit I/VIIIb interface	L415,W472	2	2	238833
+1	Query_9	Specific	Dimer interface	I197,L204,F244,Y281,M284,G287,I288,I292	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_10	Peptide	387	cob_MarPMI226_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214440	10	367	2.13837e-173	486.982	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	664	nad5_MarPMI226_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	632	0	596.219	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	89	nad4L_MarPMI226_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	351118	5	86	2.71574e-17	69.6757	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	249	cox2_MarPMI226_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214438	17	248	7.65132e-112	320.622	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	74	atp9_MarPMI226_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	349422	6	62	1.47231e-18	71.3867	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	137	nad3_MarPMI226_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	19	113	4.81937e-29	101.338	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	561	nad2_MarPMI226_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	124	481	1.83605e-85	273.235	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

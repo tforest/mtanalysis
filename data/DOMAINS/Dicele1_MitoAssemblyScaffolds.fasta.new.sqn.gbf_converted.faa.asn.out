@@ -1,0 +1,330 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Dicele1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Dicele1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	88	nad4L_Dicele1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	351118	5	87	3.92637e-12	56.579	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	659	nad5_Dicele1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	177253	1	621	0	675.57	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	270	cox3_Dicele1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	278911	13	270	2.41167e-130	369.432	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_3	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_3	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_3	Specific	Subunit III/VIa interface	W136,E137,V138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_3	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_3	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,T75,F76,L77	7	7	238834
+1	Query_3	Specific	Phospholipid binding site	W66,F67,I70,S71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	325	nad1_Dicele1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	333876	7	315	6.91036e-127	364.872	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	197	nad6_Dicele1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	354830	8	188	1.50396e-26	99.6901	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	48	atp8_Dicele1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	283561	1	47	1.04609e-05	37.3858	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	234	orf234_Dicele1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	335245	47	217	2.90658e-53	168.879	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	74	atp9_Dicele1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	349422	6	70	1.44861e-15	63.6827	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	230	orf231_Dicele1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	273636	27	226	1.42611e-41	140.599	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	387	cob_Dicele1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	214425	3	380	0	526.006	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	273	orf273_Dicele1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	273636	62	271	3.49285e-34	122.88	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	528	cox1_Dicele1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	238833	8	512	0	879.894	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_12	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_12	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_12	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_12	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_12	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_12	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_12	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_12	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,T293,V294,G295,V298,R301,I309,I317,F320,Y327,G328,G329,L341,N359,A360,M362,V364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_12	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_12	Specific	Subunit I/IV interface	L37,A40,G41,L407,Q410,I411,D444,V462	8	8	238833
+1	Query_12	Specific	Subunit I/Vb interface	P265,Y269,S511	3	3	238833
+1	Query_12	Specific	Subunit I/VIa interface	I135,R213,N214,F215,N216	5	5	238833
+1	Query_12	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_12	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_12	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_12	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_12	Specific	Subunit I/VIIc interface	F23,V27,A30,L34,A116,F117,I399,Y472,L475	9	9	238833
+1	Query_12	Specific	Subunit I/VIIIb interface	L408,L465	2	2	238833
+1	Query_12	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	302	orf302_Dicele1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	273636	46	290	3.18617e-32	118.642	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	358	orf358_Dicele1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	81	175	4.03085e-23	91.9142	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	231	320	0.000624135	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	124	nad3_Dicele1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	28	112	1.23686e-36	119.827	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	496	nad2_Dicele1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	52	444	4.51515e-91	285.561	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	259	atp6_Dicele1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	273458	13	256	8.13536e-56	178.554	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	802	orf802_Dicele1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	238828	337	502	2.88016e-26	107.672	cd01651	RT_G2_intron	C	295487
+1	Query_18	Non-specific	279664	687	787	1.03327e-09	57.0943	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+1	Query_18	Specific	putative nucleic acid binding site	S466	1	1	238828
+1	Query_18	Specific	putative NTP binding site	D395,I396,S397,K398,Y399,I400,E465	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	255	cox2_Dicele1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	177126	16	255	5.21591e-118	336.753	MTH00051	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	475	nad4_Dicele1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	214462	1	464	1.34615e-174	498.808	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	165	orf165_Dicele1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	225913	11	162	1.78926e-09	55.1334	COG3378	COG3378	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	48	atp8_Dicele1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	283561	1	47	5.91423e-05	35.4598	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	259	atp6_Dicele1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	273458	13	256	1.95656e-55	177.398	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	233	cox2_Dicele1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	214402	17	232	8.44909e-109	312.455	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	270	cox3_Dicele1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	278911	13	269	2.03722e-132	374.825	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_25	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_25	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_25	Specific	Subunit III/VIa interface	W136,E137,V138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_25	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_25	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,T75,F76,Q77	7	7	238834
+1	Query_25	Specific	Phospholipid binding site	W66,F67,I70,T71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	204	orf204_Dicele1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	102	176	0.000191007	39.1419	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	232	orf232_Dicele1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	41	212	6.79232e-52	165.412	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	133	orf134_Dicele1_feature_27_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	353929	104	130	1.19876e-05	41.0636	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_28	Generic	active site	Y115,Y126,G128	6	3	198380
+1	Query_28	Generic	GIY-YIG motif/motif A	G113,V114,Y115,Y126,I127,G128	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_29	Peptide	74	orf73_Dicele1_feature_31_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	355698	18	53	0.000237507	36.9424	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	52	atp9_Dicele1_feature_33_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	349422	6	52	3.08826e-07	41.7264	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_31	Peptide	243	orf244_Dicele1_feature_35_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	273636	41	238	3.62443e-41	139.828	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	131	orf131_Dicele1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Non-specific	225913	8	124	5.51054e-12	61.2966	COG3378	COG3378	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	208	cox1_Dicele1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Superfamily	350997	1	192	1.91053e-117	343.003	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_34	Generic	Low-spin heme binding site	S32,R36,Y54,H61,M65,I66,V70,W126	15	8	238461
+1	Query_34	Generic	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	339	orf339_Dicele1_feature_20_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	334330	187	294	1.02934e-18	79.973	pfam00961	LAGLIDADG_1	-	45
+1	Query_35	Specific	334330	65	161	6.82121e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	359	orf359_Dicele1_feature_24_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Specific	334330	82	176	1.40232e-22	90.7586	pfam00961	LAGLIDADG_1	-	45
+1	Query_36	Specific	334330	232	321	0.00051036	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	243	orf244_Dicele1_feature_10_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_40	Specific	273636	41	238	3.62443e-41	139.828	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_41	Peptide	52	atp9_Dicele1_feature_12_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	349422	6	52	3.08826e-07	41.7264	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	74	orf73_Dicele1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Superfamily	355698	18	53	0.000237507	36.9424	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	52	atp9_Dicele1_feature_6_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	349422	6	52	3.08826e-07	41.7264	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_44	Peptide	243	orf244_Dicele1_feature_8_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	273636	41	238	3.62443e-41	139.828	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	243	orf244_Dicele1_feature_14_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	273636	41	238	3.62443e-41	139.828	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	74	orf73_Dicele1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	355698	18	53	0.000237507	36.9424	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	52	atp9_Dicele1_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	349422	6	52	3.08826e-07	41.7264	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_50	Peptide	243	orf244_Dicele1_feature_8_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	273636	41	238	3.62443e-41	139.828	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	74	orf73_Dicele1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Superfamily	355698	18	53	0.000237507	36.9424	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	190	orf190_Dicele1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Non-specific	273636	54	190	6.74047e-30	109.012	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

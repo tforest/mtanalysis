@@ -1,0 +1,447 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Crudry1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Crudry1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	217	orf218_Crudry1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334330	121	203	3.64822e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+1	Query_1	Specific	334330	1	52	0.000220882	39.1419	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	331	orf332_Crudry1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	40	137	3.20901e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	334330	195	299	9.04815e-18	77.2766	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	172	orf172_Crudry1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	355698	23	69	2.36454e-06	46.1872	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	274	cox3_Crudry1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	214439	15	254	6.00474e-116	332.915	MTH00155	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Subunit I/III interface	Q85,K88,G89,S100,F103,S107,V108,H114,S202,V203,A206,A210	12	12	238834
+1	Query_6	Specific	Subunit III/Vb interface	G169	1	1	238834
+1	Query_6	Specific	Subunit III/VIa interface	F138,A139,I140,Y157,I183,S193,E194,S195,A200,D201,S202	11	11	238834
+1	Query_6	Specific	Subunit III/VIb interface	Q130	1	1	238834
+1	Query_6	Specific	Subunit III/VIIa interface	L67,R70,D71,T74,T77,Y78,Q79	7	7	238834
+1	Query_6	Specific	Phospholipid binding site	W68,F69,I72,T73,G76,H82,G93,V94,F97,F225,R232,I244,G245	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	142	orf142_Crudry1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	335245	47	125	1.92053e-14	66.0303	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	88	nad4L_Crudry1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351118	7	87	9.67137e-15	63.1273	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	675	nad5_Crudry1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	647	0	625.109	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	168	orf168_Crudry1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	35	134	2.03653e-24	90.7586	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	119	orf119_Crudry1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	177253	1	72	4.08418e-12	61.1772	MTH00210	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	429	orf430_Crudry1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	201	302	1.86511e-24	96.5366	pfam00961	LAGLIDADG_1	-	45
+1	Query_18	Specific	334330	361	411	9.21527e-11	58.4019	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	80	orf81_Crudry1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	5	49	5.40074e-10	50.6979	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	169	orf170_Crudry1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	17	95	1.56445e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	263	orf264_Crudry1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	145	244	1.22421e-24	94.2254	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	125	orf126_Crudry1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	42	117	6.9756e-06	41.4531	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	249	cox2_Crudry1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	214402	1	249	1.36793e-112	322.855	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	610	orf610_Crudry1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	101	193	5.59665e-14	68.0318	pfam00961	LAGLIDADG_1	-	45
+1	Query_24	Specific	334330	244	350	1.68677e-10	58.0167	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	215	orf215_Crudry1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	273636	18	210	3.33384e-44	146.762	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	328	orf328_Crudry1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	122	296	5.0397e-49	161.56	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	442	orf442_Crudry1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	129	227	5.59711e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	288	404	2.26484e-13	65.7206	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	270	orf270_Crudry1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	353929	1	63	5.95443e-05	40.6721	cl15257	GIY-YIG_SF	N	-
+ENDDOMAINS
+SITES
+1	Query_28	Generic	active site	Y3,E48	6	2	198380
+1	Query_28	Generic	catalytic site	E48	2	1	198380
+1	Query_28	Generic	metal binding site	E48	1	1	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_32	Peptide	435	orf435_Crudry1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	355698	174	429	1.51191e-31	125.153	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	347	orf347_Crudry1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Superfamily	355698	13	160	1.97606e-09	58.5136	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	475	orf474_Crudry1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Superfamily	355698	14	331	3.5803e-34	133.242	cl28058	DNA_pol_B_2	N	-
+1	Query_35	Superfamily	353046	334	395	1.26781e-05	46.9333	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_35	Generic	active site	D342	8	1	99912
+1	Query_35	Generic	metal-binding site 	D340,D342,S343	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_36	Peptide	335	orf334_Crudry1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Superfamily	355698	235	316	2.87684e-13	70.0695	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	75	orf75_Crudry1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Superfamily	355698	4	67	0.00154789	35.0164	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_40	Peptide	131	orf131_Crudry1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Superfamily	355698	29	111	9.56432e-14	66.2176	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	68	orf68_Crudry1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Superfamily	355698	4	55	7.00081e-09	49.654	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	112	orf112_Crudry1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Superfamily	355698	16	50	0.000613499	37.3276	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	80	orf79_Crudry1_feature_112_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	355698	15	61	0.00963097	32.7052	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	72	orf72_Crudry1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Superfamily	355698	17	55	0.000147525	37.4477	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	542	orf542_Crudry1_feature_124_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	355698	40	474	3.4657e-57	197.571	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	320	nad6_Crudry1_feature_130_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Superfamily	354830	1	203	5.79351e-13	66.1777	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	122	nad3_Crudry1_feature_134_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	334119	27	112	1.42102e-28	99.4118	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	588	nad2_Crudry1_feature_136_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	235603	111	495	6.62282e-75	246.271	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	260	atp6_Crudry1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Superfamily	351082	18	260	8.5331e-47	155.935	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	120	cob_Crudry1_feature_149_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	333783	10	74	8.24529e-32	107.942	pfam00032	Cytochrom_B_C	C	350938
+ENDDOMAINS
+SITES
+2	Query_58	Generic	Qo binding site	L10,F13,Y14,M30	7	4	238179
+2	Query_58	Generic	interchain domain interface	R47,V48,F53,R54	33	4	238179
+2	Query_58	Generic	intrachain domain interface	L24,L34,L37,L38,L40,P41,F42,D44	43	8	238179
+ENDSITES
+ENDQUERY
+QUERY	Query_60	Peptide	202	orf203_Crudry1_feature_155_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Non-specific	273636	59	174	1.25527e-25	98.2269	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	90	orf91_Crudry1_feature_159_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	335245	11	90	3.05794e-18	73.7343	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	459	orf459_Crudry1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Superfamily	355698	45	439	2.3872e-39	147.495	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	120	orf120_Crudry1_feature_163_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Superfamily	355698	64	107	0.000662668	37.8329	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	398	cob_Crudry1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Specific	214440	10	366	0	515.487	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	172	orf172_2_Crudry1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Specific	335245	9	152	3.20737e-38	128.433	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	465	orf465_Crudry1_feature_9_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Specific	334330	70	165	8.82927e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+2	Query_69	Specific	334330	237	351	5.42951e-07	47.6163	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	725	nad2_Crudry1_feature_15_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Non-specific	273636	417	619	1.79674e-19	87.4413	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	530	cox1_Crudry1_feature_23_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Superfamily	350997	8	241	6.87909e-134	397.239	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+2	Query_72	Generic	Binuclear center (active site)	Y240	4	1	238461
+2	Query_72	Generic	Low-spin heme binding site	S32,R36,F54,H61,M65,I66,V70,W126	15	8	238461
+2	Query_72	Generic	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238461
+2	Query_72	Generic	K-pathway	Y240	7	1	238461
+2	Query_72	Generic	Putative water exit pathway	D227,Q232,H233	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_73	Peptide	695	orf695_Crudry1_feature_27_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Specific	334330	517	652	0.00242326	37.6011	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	387	orf387_Crudry1_feature_31_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_74	Specific	334330	106	202	5.98223e-18	78.4322	pfam00961	LAGLIDADG_1	-	45
+2	Query_74	Specific	334330	261	349	0.00274466	36.8307	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	385	orf385_Crudry1_feature_35_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_75	Superfamily	353929	134	227	3.45681e-12	61.858	cl15257	GIY-YIG_SF	-	-
+2	Query_75	Specific	197761	237	290	1.67262e-05	41.7846	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_75	Generic	active site	Y137,Y154,G156,R164,Y168,E212	6	6	198380
+2	Query_75	Generic	catalytic site	R164,E212	2	2	198380
+2	Query_75	Generic	metal binding site	E212	1	1	198380
+2	Query_75	Generic	GIY-YIG motif/motif A	G135,V136,Y137,Y154,V155,G156	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_76	Peptide	230	orf230_Crudry1_feature_39_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_76	Specific	334330	100	200	1.21028e-19	80.3582	pfam00961	LAGLIDADG_1	-	45
+2	Query_76	Specific	334330	5	37	0.00289386	36.0603	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	312	orf312_Crudry1_feature_43_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_77	Specific	334330	184	280	5.98472e-12	61.0983	pfam00961	LAGLIDADG_1	-	45
+2	Query_77	Specific	334330	65	154	5.81274e-09	52.6239	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	347	orf347_Crudry1_feature_45_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_78	Specific	334330	220	314	3.58841e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+2	Query_78	Specific	334330	112	180	1.39325e-06	46.0755	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_79	Peptide	276	orf276_Crudry1_feature_49_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_79	Specific	335245	72	251	3.83163e-55	175.427	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_81	Peptide	401	orf401_Crudry1_feature_57_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	273636	103	306	8.19556e-56	182.586	TIGR01453	grpIintron_endo	-	45
+3	Query_81	Specific	197761	341	391	1.43278e-05	41.7846	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	325	orf325_Crudry1_feature_61_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_82	Non-specific	273636	96	293	7.27213e-29	110.168	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	311	orf311_Crudry1_feature_65_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Specific	197761	129	180	0.00338749	34.851	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	249	orf249_Crudry1_feature_69_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_84	Non-specific	273636	34	242	1.84911e-28	107.086	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	548	nad4_Crudry1_feature_76_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Specific	235622	31	480	7.36924e-145	426.156	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	220	orf221_Crudry1_feature_98_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_87	Specific	335245	30	201	4.53867e-57	178.123	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	302	orf303_Crudry1_feature_100_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Specific	334330	36	137	2.11509e-15	70.343	pfam00961	LAGLIDADG_1	-	45
+3	Query_88	Specific	334330	206	288	8.85164e-09	51.8535	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	331	orf332_Crudry1_feature_102_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Specific	334330	40	137	3.20901e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+3	Query_89	Specific	334330	195	299	9.04815e-18	77.2766	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_93	Peptide	225	orf224_Crudry1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_93	Superfamily	355698	107	225	4.36609e-10	58.5136	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	91	orf91_Crudry1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Superfamily	355698	14	85	2.15917e-16	71.9955	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	216	orf216_Crudry1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_95	Superfamily	355698	16	205	2.71803e-21	90.8703	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	194	orf193_Crudry1_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Superfamily	355698	60	177	9.91605e-07	47.848	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	156	orf156_Crudry1_feature_18_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_97	Specific	308247	35	137	0.00271934	36.998	pfam02534	T4SS-DNA_transf	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_98	Peptide	73	atp9_Crudry1_feature_20_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_98	Specific	349422	6	70	5.37803e-13	57.1344	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_99	Peptide	52	atp8_Crudry1_feature_26_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_99	Non-specific	283561	1	48	5.57528e-05	35.4598	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_101	Peptide	338	nad1_Crudry1_feature_34_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_101	Specific	333876	32	326	1.60132e-120	349.079	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_104	Peptide	398	cob_Crudry1_feature_45_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_104	Specific	214440	10	366	0	515.487	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_105	Peptide	172	orf172_3_Crudry1_feature_49_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_105	Specific	335245	9	152	3.20737e-38	128.433	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_106	Peptide	465	orf465_Crudry1_feature_52_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_106	Specific	334330	70	165	8.82927e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+3	Query_106	Specific	334330	237	351	5.42951e-07	47.6163	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

@@ -1,0 +1,135 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Issorie2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Issorie2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	269	cox3_Issorie2_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	294143	13	268	1.04557e-105	307.03	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A82,R85,G86,S97,A100,S104,L105,H111,S199,V200,S203,A207	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	T135,E136,L137,W154,V180,T190,F191,A192,A197,D198,S199	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	V127	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	L64,R67,D68,V71,T74,Y75,L76	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W65,T66,I69,V70,G73,H79,G90,F91,F94,M222,R229,L241,N242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	256	atp6_Issorie2_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	273458	27	253	6.3953e-39	135.026	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	542	cox1_Issorie2_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	238833	18	499	0	827.892	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Binuclear center (heme a3/CuB)	H250,H299,H300,H385	4	4	238833
+1	Query_4	Specific	Low-spin heme (heme a) binding site	H71,H387,S391,T433,S470	5	5	238833
+1	Query_4	Specific	D-pathway	Y27,N90,D101,N108,S111,S166,S167,N173,T177	9	9	238833
+1	Query_4	Specific	K-pathway	H250,Y254,S265,H299,H300,T325,K328	7	7	238833
+1	Query_4	Specific	Electron transfer pathway	F386,R447,R448	3	3	238833
+1	Query_4	Specific	Putative proton exit pathway	H300,H377,D378,R447,R448	5	5	238833
+1	Query_4	Specific	Putative water exit pathway	D237,Q242,H243,D373,H377,D378,R447	7	7	238833
+1	Query_4	Specific	Subunit I/II interface	N65,D237,K274,F277,G278,V303,V304,G305,V308,R311,M319,I327,F330,Y337,G338,G339,V351,N369,A370,L372,I374,A375,F376,H377,D378,M442,N443,R447,R448,I449,G458,F459	32	32	238833
+1	Query_4	Specific	Subunit I/III interface	T18,S100,F104,R106,W113,D154,F158,T176,N180,F200,M207,P210,L218,T227,S228,F229,G234,G235,D237,F247,Y284,G287,G290,F291,L295	25	25	238833
+1	Query_4	Specific	Subunit I/IV interface	L47,A50,A51,V417,K420,I421,D454,I472	8	8	238833
+1	Query_4	Specific	Subunit I/VIa interface	I145,R223,N224,F225,N226	5	5	238833
+1	Query_4	Specific	Subunit I/VIb interface	G305	1	1	238833
+1	Query_4	Specific	Subunit I/VIc interface	G338	1	1	238833
+1	Query_4	Specific	Subunit I/VIIa interface	S124,L127	2	2	238833
+1	Query_4	Specific	Subunit I/VIIb interface	D454,G458	2	2	238833
+1	Query_4	Specific	Subunit I/VIIc interface	F33,L37,F40,V44,A126,L127,V409,Y482,L485	9	9	238833
+1	Query_4	Specific	Subunit I/VIIIb interface	L418,L475	2	2	238833
+1	Query_4	Specific	Dimer interface	F200,M207,F247,Y284,G287,G290,F291,L295	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	150	nad3_Issorie2_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334119	21	123	1.46663e-15	67.055	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	544	nad2_Issorie2_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	356474	31	461	8.45961e-42	156.134	cl29598	Proton_antipo_M	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	385	cob_Issorie2_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214440	11	367	6.27517e-168	473.115	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	482	nad4_Issorie2_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	235622	66	477	5.55955e-106	324.078	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	353	nad1_Issorie2_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	333876	17	339	5.19288e-90	272.039	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	169	nad6_Issorie2_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334114	30	80	0.00483474	35.1284	pfam00499	Oxidored_q3	C	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	76	atp9_Issorie2_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	349422	8	72	8.16987e-22	79.4759	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	48	atp8_Issorie2_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	283561	1	48	0.000434622	33.1486	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	595	nad5_Issorie2_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	235836	13	555	8.66427e-152	450.379	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	83	nad4L_Issorie2_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	351118	3	76	8.31278e-05	37.4639	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	246	cox2_Issorie2_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	214438	16	243	3.18245e-99	288.265	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

@@ -1,0 +1,198 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Morhum1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Morhum1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	534	cox1_Morhum1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	238833	8	513	0	847.922	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_2	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T424,S461	5	5	238833
+1	Query_2	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_2	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_2	Specific	Electron transfer pathway	F376,R438,R439	3	3	238833
+1	Query_2	Specific	Putative proton exit pathway	H290,H367,D368,R438,R439	5	5	238833
+1	Query_2	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R438	7	7	238833
+1	Query_2	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,S293,V294,G295,V298,R301,M309,I317,F320,A327,G328,G329,L341,N359,A360,I362,V364,A365,L366,H367,D368,L433,A434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_2	Specific	Subunit I/III interface	T8,V90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_2	Specific	Subunit I/IV interface	L37,A40,G41,L408,Q411,I412,D445,V463	8	8	238833
+1	Query_2	Specific	Subunit I/Vb interface	P265,Y269,A512	3	3	238833
+1	Query_2	Specific	Subunit I/VIa interface	L135,R213,N214,F215,N216	5	5	238833
+1	Query_2	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_2	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_2	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_2	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_2	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,S116,F117,I400,Y473,L476	9	9	238833
+1	Query_2	Specific	Subunit I/VIIIb interface	L409,V466	2	2	238833
+1	Query_2	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	343	orf343_Morhum1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	198392	78	165	9.23808e-24	93.0592	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_3	Non-specific	273636	77	329	1.13146e-07	51.6177	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_3	Specific	putative active site	Y80,Y91,G93,R101,Y105,E150,N162	7	7	198392
+1	Query_3	Specific	putative metal binding site	E150	1	1	198392
+1	Query_3	Specific	GIY-YIG motif/motif A	G78,I79,Y80,Y91,V92,G93	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	309	orf309_Morhum1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	273636	99	299	1.62271e-38	135.206	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	256	atp6_Morhum1_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	273458	11	253	5.18093e-55	176.243	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	247	cox3_Morhum1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	278911	8	247	1.0428e-113	326.29	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Subunit I/III interface	K78,Q81,G82,S93,F96,S100,L101,H107,S195,V196,S199,F203	12	12	238834
+1	Query_6	Specific	Subunit III/Vb interface	F162	1	1	238834
+1	Query_6	Specific	Subunit III/VIa interface	W131,E132,V133,L150,L176,I186,N187,A188,A193,D194,S195	11	11	238834
+1	Query_6	Specific	Subunit III/VIb interface	A123	1	1	238834
+1	Query_6	Specific	Subunit III/VIIa interface	L60,R63,D64,I67,T70,F71,Q72	7	7	238834
+1	Query_6	Specific	Phospholipid binding site	W61,F62,I65,I66,S69,H75,G86,F87,F90,F218,R225,V237,G238	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	495	nad4_Morhum1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	235622	1	475	3.64464e-137	404.585	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	253	cox2_Morhum1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	214402	12	248	1.13452e-117	335.952	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	274	orf275_Morhum1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	273636	130	267	3.29544e-26	102.079	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	321	nad1_Morhum1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	333876	7	311	2.1514e-112	327.893	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	386	cob_Morhum1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214440	10	366	4.59342e-178	498.923	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	664	nad5_Morhum1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	235836	1	630	0	611.393	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	87	nad4L_Morhum1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	351118	5	87	4.07848e-10	51.1862	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	259	orf259_Morhum1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	273636	52	250	8.06062e-30	110.938	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	258	orf258_Morhum1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	273636	51	249	7.21708e-30	111.324	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	85	orf86_Morhum1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	353929	32	83	4.49473e-08	45.6796	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_18	Generic	active site	Y33,Y44,G46,R54,Y58	6	5	198380
+1	Query_18	Generic	catalytic site	R54	2	1	198380
+1	Query_18	Generic	GIY-YIG motif/motif A	I32,Y33,Y44,I45,G46	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	283	rps3_Morhum1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	283074	11	193	0.000437608	41.0431	pfam05316	VAR1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	200	nad6_Morhum1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	354830	8	199	4.88111e-26	98.5345	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	73	atp9_Morhum1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	349422	6	70	1.14922e-21	79.0907	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	47	atp8_Morhum1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	283561	1	47	0.000260543	33.5338	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	396	orf396_Morhum1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	273636	147	392	2.68126e-42	147.532	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	394	orf395_Morhum1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	273636	145	390	3.71376e-42	147.147	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	101	nad3_Morhum1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334119	19	101	1.01266e-27	96.3302	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	525	nad2_Morhum1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	235603	139	519	1.10796e-75	246.656	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	289	orf290_Morhum1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	16	111	2.93002e-16	72.6542	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	169	269	5.25346e-13	63.7946	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

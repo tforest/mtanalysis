@@ -1,0 +1,114 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Corsim1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Corsim1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	250	cox2_Corsim1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	214438	18	247	1.53119e-108	312.148	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	803	nad2_Corsim1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	356474	124	365	1.14541e-50	184.639	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	197	nad6_Corsim1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334114	35	80	1.09506e-07	48.6103	pfam00499	Oxidored_q3	C	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	269	cox3_Corsim1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	278911	12	269	9.87597e-131	370.202	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,A203,F207	12	12	238834
+1	Query_5	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_5	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,N190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_5	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_5	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_5	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,V241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	262	atp6_Corsim1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273458	15	259	1.79158e-52	170.079	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	1270	nad1_Corsim1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	333876	25	360	7.22291e-105	333.671	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	561	cox1_Corsim1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	238833	39	541	0	845.226	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_9	Specific	Binuclear center (heme a3/CuB)	H270,H319,H320,H405	4	4	238833
+1	Query_9	Specific	Low-spin heme (heme a) binding site	H91,H407,S411,T453,S490	5	5	238833
+1	Query_9	Specific	D-pathway	Y48,N110,D121,N128,S131,S186,S187,N193,T197	9	9	238833
+1	Query_9	Specific	K-pathway	H270,Y274,S285,H319,H320,T345,K348	7	7	238833
+1	Query_9	Specific	Electron transfer pathway	F406,R467,R468	3	3	238833
+1	Query_9	Specific	Putative proton exit pathway	H320,H397,D398,R467,R468	5	5	238833
+1	Query_9	Specific	Putative water exit pathway	D257,Q262,H263,D393,H397,D398,R467	7	7	238833
+1	Query_9	Specific	Subunit I/II interface	N85,D257,K294,F297,G298,T323,V324,G325,V328,R331,L339,I347,F350,Y357,G358,G359,L371,N389,A390,L392,I394,A395,F396,H397,D398,L462,Q463,R467,R468,I469,G478,W479	32	32	238833
+1	Query_9	Specific	Subunit I/III interface	T39,P120,F124,R126,W133,D174,F178,T196,N200,I220,L227,P230,M238,T247,S248,F249,G254,G255,D257,F267,Y304,M307,G310,I311,I315	25	25	238833
+1	Query_9	Specific	Subunit I/IV interface	M68,S71,G72,L437,K440,V441,D474,V492	8	8	238833
+1	Query_9	Specific	Subunit I/Vb interface	S295,Y299,A540	3	3	238833
+1	Query_9	Specific	Subunit I/VIa interface	I165,R243,N244,F245,N246	5	5	238833
+1	Query_9	Specific	Subunit I/VIb interface	G325	1	1	238833
+1	Query_9	Specific	Subunit I/VIc interface	G358	1	1	238833
+1	Query_9	Specific	Subunit I/VIIa interface	F144,C147	2	2	238833
+1	Query_9	Specific	Subunit I/VIIb interface	D474,G478	2	2	238833
+1	Query_9	Specific	Subunit I/VIIc interface	F54,L58,A61,L65,A146,C147,I429,Y502,L505	9	9	238833
+1	Query_9	Specific	Subunit I/VIIIb interface	L438,G495	2	2	238833
+1	Query_9	Specific	Dimer interface	I220,L227,F267,Y304,M307,G310,I311,I315	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_10	Peptide	390	cob_Corsim1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214440	10	367	0	510.864	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	683	nad5_Corsim1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	214400	1	642	0	580.11	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	89	nad4L_Corsim1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351118	3	86	1.26196e-16	68.1349	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

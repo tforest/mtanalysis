@@ -1,0 +1,147 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Jahaq1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Jahaq1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	791	nad5_Jahaq1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	177253	1	630	0	619.331	MTH00210	ND5	-	45
+1	Query_1	Non-specific	275316	656	791	0.00319363	40.774	TIGR04523	Mplasa_alph_rch	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	89	nad4L_Jahaq1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	351118	5	86	3.98879e-14	61.5866	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	389	cob_Jahaq1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	214440	10	364	2.67347e-176	494.686	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	256	atp6_Jahaq1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	273458	28	253	4.69565e-49	160.835	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	564	cox1_Jahaq1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238833	36	537	0	790.913	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Binuclear center (heme a3/CuB)	H266,H315,H316,H401	4	4	238833
+1	Query_5	Specific	Low-spin heme (heme a) binding site	H87,H403,S407,T449,S486	5	5	238833
+1	Query_5	Specific	D-pathway	Y44,N106,D117,N124,S127,S182,S183,N189,T193	9	9	238833
+1	Query_5	Specific	K-pathway	H266,Y270,S281,H315,H316,T341,K344	7	7	238833
+1	Query_5	Specific	Electron transfer pathway	F402,R463,R464	3	3	238833
+1	Query_5	Specific	Putative proton exit pathway	H316,H393,D394,R463,R464	5	5	238833
+1	Query_5	Specific	Putative water exit pathway	D253,Q258,H259,D389,H393,D394,R463	7	7	238833
+1	Query_5	Specific	Subunit I/II interface	N81,D253,K290,F293,G294,T319,V320,G321,V324,R327,L335,I343,F346,Y353,G354,G355,L367,N385,A386,L388,V390,A391,F392,H393,D394,L458,Q459,R463,R464,V465,G474,W475	32	32	238833
+1	Query_5	Specific	Subunit I/III interface	P116,F120,R122,L129,D170,F174,T192,N196,I216,L223,P226,M234,T243,S244,F245,G250,G251,D253,F263,Y300,C303,G306,I307,L311	25	24	238833
+1	Query_5	Specific	Subunit I/IV interface	L64,S67,G68,L433,K436,A437,D470,V488	8	8	238833
+1	Query_5	Specific	Subunit I/Vb interface	S291,Y295,S536	3	3	238833
+1	Query_5	Specific	Subunit I/VIa interface	I161,R239,N240,F241,N242	5	5	238833
+1	Query_5	Specific	Subunit I/VIb interface	G321	1	1	238833
+1	Query_5	Specific	Subunit I/VIc interface	G354	1	1	238833
+1	Query_5	Specific	Subunit I/VIIa interface	F140,G143	2	2	238833
+1	Query_5	Specific	Subunit I/VIIb interface	D470,G474	2	2	238833
+1	Query_5	Specific	Subunit I/VIIc interface	F50,V54,A57,L61,G142,G143,I425,Y498,L501	9	9	238833
+1	Query_5	Specific	Subunit I/VIIIb interface	Y434,A491	2	2	238833
+1	Query_5	Specific	Dimer interface	I216,L223,F263,Y300,C303,G306,I307,L311	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	358	orf358_Jahaq1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	85	177	5.63378e-18	78.047	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	234	322	6.33076e-05	41.4531	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	308	orf308_Jahaq1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	172	271	1.74737e-08	51.0831	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	53	144	3.1808e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	250	cox2_Jahaq1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214438	18	247	4.26048e-112	321.007	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	456	orf456_Jahaq1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	319112	337	447	0.00334561	39.0509	pfam17061	PARM	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	1174	orf1174_Jahaq1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	185194	544	671	0.00788198	40.1121	PRK15294	PRK15294	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	228	nad6_Jahaq1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	354830	22	191	3.29687e-19	81.8061	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	600	nad4_Jahaq1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235622	1	488	3.89577e-131	393.029	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	269	cox3_Jahaq1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	278911	12	269	1.0061e-129	367.891	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_13	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_13	Specific	Subunit III/Vb interface	K166	1	1	238834
+1	Query_13	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_13	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_13	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,M76	7	7	238834
+1	Query_13	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	589	nad2_Jahaq1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235603	126	517	6.61985e-84	269.768	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	349	nad3_Jahaq1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334119	21	112	1.29967e-21	87.4706	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	371	nad1_Jahaq1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	333876	12	354	3.5248e-114	334.441	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

@@ -1,0 +1,156 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Lophiu1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Lophiu1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	370	nad1_Lophiu1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	333876	12	353	7.51603e-117	340.989	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	70	nad4_Lophiu1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	223940	1	59	4.39861e-06	41.8111	COG1008	NuoM	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	385	nad3_Lophiu1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334119	21	112	1.10998e-14	68.981	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	603	nad2_Lophiu1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	235603	126	528	7.20662e-85	272.85	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	269	cox3_Lophiu1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	278911	12	269	4.32396e-133	376.366	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_6	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_6	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_6	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_6	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,I76	7	7	238834
+1	Query_6	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	649	cox1_Lophiu1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	238833	15	516	0	856.012	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_7	Specific	Binuclear center (heme a3/CuB)	H245,H294,H295,H380	4	4	238833
+1	Query_7	Specific	Low-spin heme (heme a) binding site	H66,H382,S386,T428,S465	5	5	238833
+1	Query_7	Specific	D-pathway	Y23,N85,D96,N103,S106,S161,S162,N168,T172	9	9	238833
+1	Query_7	Specific	K-pathway	H245,Y249,S260,H294,H295,T320,K323	7	7	238833
+1	Query_7	Specific	Electron transfer pathway	F381,R442,R443	3	3	238833
+1	Query_7	Specific	Putative proton exit pathway	H295,H372,D373,R442,R443	5	5	238833
+1	Query_7	Specific	Putative water exit pathway	D232,Q237,H238,D368,H372,D373,R442	7	7	238833
+1	Query_7	Specific	Subunit I/II interface	N60,D232,K269,F272,G273,T298,V299,G300,V303,R306,L314,I322,F325,Y332,G333,G334,L346,N364,A365,L367,I369,A370,F371,H372,D373,L437,Q438,R442,R443,I444,G453,W454	32	32	238833
+1	Query_7	Specific	Subunit I/III interface	P95,F99,R101,W108,D149,F153,T171,N175,I195,L202,P205,M213,T222,S223,F224,G229,G230,D232,F242,Y279,C282,G285,I286,V290	25	24	238833
+1	Query_7	Specific	Subunit I/IV interface	L43,S46,G47,L412,K415,V416,D449,V467	8	8	238833
+1	Query_7	Specific	Subunit I/Vb interface	S270,Y274,C515	3	3	238833
+1	Query_7	Specific	Subunit I/VIa interface	I140,R218,N219,F220,N221	5	5	238833
+1	Query_7	Specific	Subunit I/VIb interface	G300	1	1	238833
+1	Query_7	Specific	Subunit I/VIc interface	G333	1	1	238833
+1	Query_7	Specific	Subunit I/VIIa interface	F119,G122	2	2	238833
+1	Query_7	Specific	Subunit I/VIIb interface	D449,G453	2	2	238833
+1	Query_7	Specific	Subunit I/VIIc interface	F29,I33,A36,L40,S121,G122,I404,Y477,L480	9	9	238833
+1	Query_7	Specific	Subunit I/VIIIb interface	L413,I470	2	2	238833
+1	Query_7	Specific	Dimer interface	I195,L202,F242,Y279,C282,G285,I286,V290	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	278	orf278_Lophiu1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	273636	55	254	6.52488e-27	104.005	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	74	atp9_Lophiu1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	349422	6	70	2.00253e-19	73.3127	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	373	orf373_Lophiu1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	307627	140	307	6.13937e-05	44.7814	pfam01576	Myosin_tail_1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	257	atp6_Lophiu1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	273458	32	254	7.00987e-50	163.146	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	303	orf303_Lophiu1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	185594	216	287	2.58352e-07	51.9995	PTZ00395	PTZ00395	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	204	nad6_Lophiu1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	354830	26	198	1.6423e-19	81.5857	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	654	nad5_Lophiu1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	177253	1	628	0	605.464	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	89	nad4L_Lophiu1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	351118	1	86	2.04864e-15	65.0533	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	387	cob_Lophiu1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	214440	10	366	0	507.398	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	197	orf197_Lophiu1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	335245	6	177	4.11829e-57	177.353	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	313	nad4_Lophiu1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	235622	1	308	1.66067e-87	270.535	PRK05846	PRK05846	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	261	cox2_Lophiu1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	214438	28	259	1.78287e-98	287.11	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

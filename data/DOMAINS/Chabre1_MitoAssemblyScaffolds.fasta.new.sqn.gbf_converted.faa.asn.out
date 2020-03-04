@@ -1,0 +1,251 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Chabre1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Chabre1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	179	cox1_Chabre1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	350997	23	42	2.90974e-07	49.0185	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	368	orf369_Chabre1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	350997	6	37	1.10876e-11	65.5821	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_2	Specific	339260	241	275	0.0034893	35.6012	pfam14528	LAGLIDADG_3	C	352872
+ENDDOMAINS
+SITES
+1	Query_2	Generic	Binuclear center (active site)	H6	4	1	238461
+1	Query_2	Generic	K-pathway	H6,Y10,S21	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	346	orf347_Chabre1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	99	177	3.43153e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	336	orf337_Chabre1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	350997	2	32	7.11035e-18	84.0716	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_4	Specific	334330	208	304	2.29871e-12	62.2538	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	91	178	4.95159e-08	49.9275	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_4	Generic	Putative water exit pathway	D24,Q29,H30	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	438	orf438_Chabre1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	166	263	1.22241e-13	66.491	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	288	391	2.01105e-13	65.7206	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Superfamily	350997	4	60	3.63943e-12	67.8933	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+1	Query_6	Generic	D-pathway	T6	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	422	orf423_Chabre1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	350997	1	50	4.21392e-15	76.7529	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_7	Superfamily	353929	180	265	8.42409e-12	60.7024	cl15257	GIY-YIG_SF	-	-
+1	Query_7	Specific	197761	275	328	9.12074e-05	39.8586	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+1	Query_7	Generic	D-pathway	S27,S28,N34	9	3	238461
+1	Query_7	Generic	active site	Y183,Y194,G196,R204,Y208,E250	6	6	198380
+1	Query_7	Generic	catalytic site	R204,E250	2	2	198380
+1	Query_7	Generic	metal binding site	E250	1	1	198380
+1	Query_7	Generic	GIY-YIG motif/motif A	G181,V182,Y183,Y194,V195,G196	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	444	orf445_Chabre1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	155	249	8.07115e-23	92.2994	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Superfamily	350997	38	74	1.2086e-19	91.0052	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_8	Generic	Low-spin heme binding site	W72	15	1	238461
+1	Query_8	Generic	D-pathway	N44,S47	9	2	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	347	orf348_Chabre1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	195	305	2.20698e-15	70.7282	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	73	169	3.65303e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	345	orf346_Chabre1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	191	303	8.31192e-12	60.7131	pfam00961	LAGLIDADG_1	-	45
+1	Query_10	Specific	334330	68	165	5.58861e-07	47.2311	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	79	cox1_Chabre1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	350997	1	70	3.36162e-31	113.039	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_11	Generic	Low-spin heme binding site	S32,R36,Y54,H61,M65,I66,V70	15	7	238461
+1	Query_11	Generic	D-pathway	Y17	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	88	nad4L_Chabre1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	351118	5	87	1.02172e-16	68.1349	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	657	nad5_Chabre1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	177253	1	621	0	699.838	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	376	orf376_Chabre1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	235	348	4.48912e-14	67.2614	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	78	199	7.62483e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	475	nad4_Chabre1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	214462	1	464	0	516.912	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	48	atp8_Chabre1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	283561	1	47	1.31615e-06	39.697	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	385	orf385_Chabre1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	15	114	1.21174e-18	79.973	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	182	274	3.09951e-08	50.6979	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	74	atp9_Chabre1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	349422	46	74	1.22453e-10	51.3564	cd18182	ATP-synt_Fo_c_ATP5G3	NC	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_25	Peptide	236	cox2_Chabre1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	214402	17	232	1.68757e-107	309.373	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	58	orf58_Chabre1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Non-specific	273636	1	56	7.33873e-08	45.8397	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	259	atp6_Chabre1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	273458	13	256	4.4829e-56	178.939	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	265	cox3_Chabre1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	278911	8	264	1.96449e-130	369.432	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_31	Specific	Subunit I/III interface	A78,K81,G82,S93,F96,S100,I101,H107,G195,V196,S199,M203	12	12	238834
+1	Query_31	Specific	Subunit III/Vb interface	G162	1	1	238834
+1	Query_31	Specific	Subunit III/VIa interface	W131,E132,V133,Y150,V176,Y186,N187,A188,S193,D194,G195	11	11	238834
+1	Query_31	Specific	Subunit III/VIb interface	A123	1	1	238834
+1	Query_31	Specific	Subunit III/VIIa interface	L60,K63,D64,R67,T70,F71,L72	7	7	238834
+1	Query_31	Specific	Phospholipid binding site	W61,F62,I65,S66,G69,H75,G86,F87,F90,F218,R225,L237,G238	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_33	Peptide	212	nad6_Chabre1_feature_129_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Superfamily	354830	8	203	1.09151e-29	108.55	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	331	nad1_Chabre1_feature_134_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	235692	6	320	6.37458e-130	373.373	PRK06076	PRK06076	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	392	cob_Chabre1_feature_138_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Non-specific	214425	14	380	0	517.147	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	317	orf317_Chabre1_feature_142_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	334330	73	167	2.73656e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+1	Query_37	Specific	334330	205	301	0.00571495	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	262	orf262_Chabre1_feature_146_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Specific	335245	59	243	3.21909e-49	159.634	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_41	Peptide	241	orf242_Chabre1_feature_155_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Non-specific	273636	35	239	6.16867e-37	129.043	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	125	nad3_Chabre1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334119	28	112	1.70769e-39	127.146	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	534	nad2_Chabre1_feature_159_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	235603	6	468	1.4255e-88	280.169	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	396	orf396_Chabre1_feature_163_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Superfamily	350997	2	88	1.9101e-56	192.313	cl00275	Heme_Cu_Oxidase_I	NC	-
+2	Query_45	Specific	334330	126	222	8.36593e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+2	Query_45	Specific	334330	290	364	0.000222004	39.9123	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+SITES
+2	Query_45	Generic	Binuclear center (active site)	H2,H3,H88	4	3	238461
+2	Query_45	Generic	Low-spin heme binding site	H83	15	1	238461
+2	Query_45	Generic	K-pathway	H2,H3,T28,K31	7	4	238461
+2	Query_45	Generic	Putative proton exit pathway	H3,H80,D81	5	3	238461
+2	Query_45	Generic	Putative water exit pathway	D76,H80,D81	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_46	Peptide	237	orf238_Chabre1_feature_165_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	98	198	2.27274e-15	69.1874	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

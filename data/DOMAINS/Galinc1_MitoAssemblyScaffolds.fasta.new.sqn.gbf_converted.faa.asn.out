@@ -1,0 +1,156 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Galinc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Galinc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	117	nad3_Galinc1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334119	19	113	8.68517e-30	102.108	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	556	nad2_Galinc1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	235603	113	518	1.22664e-74	244.73	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	527	cox1_Galinc1_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238833	7	511	0	854.856	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_5	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_5	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_5	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_5	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_5	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_5	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_5	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,T292,V293,G294,V297,R300,M308,I316,F319,Y326,G327,G328,L340,N358,A359,M361,I363,A364,L365,H366,D367,L431,S432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_5	Specific	Subunit I/III interface	T7,P89,F93,R95,W102,D143,F147,T165,N169,V189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_5	Specific	Subunit I/IV interface	L36,A39,A40,L406,K409,I410,D443,S461	8	8	238833
+1	Query_5	Specific	Subunit I/Vb interface	P264,Y268,S510	3	3	238833
+1	Query_5	Specific	Subunit I/VIa interface	V134,R212,N213,F214,N215	5	5	238833
+1	Query_5	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_5	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_5	Specific	Subunit I/VIIa interface	V113,L116	2	2	238833
+1	Query_5	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_5	Specific	Subunit I/VIIc interface	F22,I26,A29,L33,S115,L116,I398,Y471,F474	9	9	238833
+1	Query_5	Specific	Subunit I/VIIIb interface	L407,I464	2	2	238833
+1	Query_5	Specific	Dimer interface	V189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	177	orf177_Galinc1_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	198392	57	142	4.36154e-24	89.9776	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_6	Specific	putative active site	Y58,Y69,G71,R79,F83,E130,S142	7	7	198392
+1	Query_6	Specific	putative metal binding site	E130	1	1	198392
+1	Query_6	Specific	GIY-YIG motif/motif A	I57,Y58,Y69,I70,G71	6	5	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	52	atp8_Galinc1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	283561	1	48	0.000124028	34.6894	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	388	cob_Galinc1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214440	10	366	1.69452e-180	505.086	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	260	orf260_Galinc1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	335245	68	241	1.76125e-53	170.419	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	337	nad1_Galinc1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	333876	31	260	2.18859e-92	277.431	pfam00146	NADHdh	C	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	273	cox3_Galinc1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	278911	15	270	1.59966e-124	354.794	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_13	Specific	Subunit I/III interface	E84,K87,G88,S99,F102,S106,V107,H113,S201,V202,S205,A209	12	12	238834
+1	Query_13	Specific	Subunit III/Vb interface	G168	1	1	238834
+1	Query_13	Specific	Subunit III/VIa interface	F137,G138,I139,Y156,I182,S192,E193,A194,S199,D200,S201	11	11	238834
+1	Query_13	Specific	Subunit III/VIb interface	Q129	1	1	238834
+1	Query_13	Specific	Subunit III/VIIa interface	L66,R69,D70,S73,T76,L77,L78	7	7	238834
+1	Query_13	Specific	Phospholipid binding site	W67,F68,I71,V72,S75,H81,G92,I93,F96,F224,R231,Q243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	487	orf487_Galinc1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	355698	291	474	7.70724e-11	63.9064	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	88	nad4L_Galinc1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	351118	7	88	1.49528e-12	57.3494	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	661	nad5_Galinc1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	177253	1	640	0	635.51	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	487	nad4_Galinc1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	235622	1	487	9.78071e-151	438.867	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	277	nad6_Galinc1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Superfamily	354830	8	200	9.39994e-21	87.1989	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	73	atp9_Galinc1_feature_129_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	349422	6	70	6.74626e-15	61.7567	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_32	Peptide	263	atp6_Galinc1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	273458	38	260	1.91943e-46	154.672	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	258	cox2_Galinc1_feature_133_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Non-specific	214402	14	255	6.32915e-113	324.011	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

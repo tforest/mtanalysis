@@ -1,0 +1,310 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Blatri_F986_2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Blatri_F986_2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_13	Peptide	298	orf298_Blatri_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	238825	45	224	2.36175e-43	146.201	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+1	Query_13	Specific	putative active site	D113,C114,T115,E116,A117,F118,F147,G148,F173,D175,D176,L220,G221	13	13	238825
+1	Query_13	Specific	putative nucleic acid binding site	G148	1	1	238825
+1	Query_13	Specific	putative NTP binding site	D113,C114,T115,E116,A117,F118,F147,D175	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	278	orf278_Blatri_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	133136	175	267	2.24734e-09	53.1092	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+1	Query_16	Specific	inhibitor binding site	D185,G187,D189,N215,F216,L217,L260	7	7	133136
+1	Query_16	Specific	catalytic motif	D185,T186,G187	3	3	133136
+1	Query_16	Specific	Catalytic residue	D185	1	1	133136
+1	Query_16	Specific	Active site flap	N215,F216,L217,S218,D222,A223,S224,W225	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	1362	orf1362_Blatri_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	238825	313	487	1.67261e-39	144.66	cd01647	RT_LTR	-	295487
+1	Query_20	Specific	260006	583	709	2.11445e-37	136.468	cd09274	RNase_HI_RT_Ty3	-	353835
+1	Query_20	Specific	334200	917	1027	4.14905e-19	84.2382	pfam00665	rve	-	354865
+1	Query_20	Specific	349274	1204	1252	3.76013e-13	64.8057	cd00024	CD_CSD	-	355790
+1	Query_20	Superfamily	353244	101	182	0.000557591	40.0124	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+1	Query_20	Specific	putative active site	D375,I376,S377,G378,A379,F380,F409,G410,Y436,D438,D439,L483,G484	13	13	238825
+1	Query_20	Specific	putative nucleic acid binding site	G410	1	1	238825
+1	Query_20	Specific	putative NTP binding site	D375,I376,S377,G378,A379,F380,F409,D438	8	8	238825
+1	Query_20	Specific	active site	D586,E633,D659,D703	4	4	260006
+1	Query_20	Specific	RNA/DNA hybrid binding site	D586,A587,S588,N589,S628,T629,T630,E633,D659,W693,R707	11	11	260006
+1	Query_20	Specific	putative peptide binding site	F1204,E1205,F1206,D1207,A1208,V1223,W1225,K1226,N1227,Y1228,D1232,S1234,W1235,L1236,P1237,D1239,H1240,K1249,Y1250	20	19	349274
+1	Query_20	Generic	inhibitor binding site	D115,G117,D119,L145,E146,F147	7	6	133137
+1	Query_20	Generic	catalytic motif	D115,T116,G117	3	3	133137
+1	Query_20	Generic	Catalytic residue	D115	1	1	133137
+1	Query_20	Generic	Active site flap	L145,E146,F147,I148,S153,V154,A155,R156	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_45	Peptide	610	orf610_Blatri_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_45	Specific	335181	185	311	0.000348769	41.9495	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	1592	orf1592_Blatri_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_46	Specific	238825	797	957	4.21364e-57	195.122	cd01647	RT_LTR	-	295487
+1	Query_46	Specific	260006	1051	1171	2.30248e-52	179.611	cd09274	RNase_HI_RT_Ty3	-	353835
+1	Query_46	Specific	334200	1322	1431	9.99431e-17	77.3046	pfam00665	rve	-	354865
+1	Query_46	Specific	133136	498	591	9.25795e-07	48.1016	cd00303	retropepsin_like	-	353244
+1	Query_46	Non-specific	227414	206	296	5.87987e-05	45.612	COG5082	AIR1	C	45
+ENDDOMAINS
+SITES
+1	Query_46	Specific	putative active site	D844,L845,L846,K847,A848,F849,F878,G879,Y906,D908,D909,L953,G954	13	13	238825
+1	Query_46	Specific	putative nucleic acid binding site	G879	1	1	238825
+1	Query_46	Specific	putative NTP binding site	D844,L845,L846,K847,A848,F849,F878,D908	8	8	238825
+1	Query_46	Specific	active site	D1055,E1097,D1122,D1165	4	4	260006
+1	Query_46	Specific	RNA/DNA hybrid binding site	D1055,A1056,S1057,E1058,P1092,T1093,V1094,E1097,D1122,H1155,R1169	11	11	260006
+1	Query_46	Specific	inhibitor binding site	D512,G514,T516,V540,M541,F542,I584	7	7	133136
+1	Query_46	Specific	catalytic motif	D512,G513,G514	3	3	133136
+1	Query_46	Specific	Catalytic residue	D512	1	1	133136
+1	Query_46	Specific	Active site flap	V540,M541,F542,G543,M547,Y548,H549,P550	8	8	133136
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_47	Peptide	1688	orf1688_Blatri_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	260006	988	1107	1.64329e-46	162.662	cd09274	RNase_HI_RT_Ty3	-	353835
+2	Query_47	Specific	238825	706	891	6.95157e-31	120.393	cd01647	RT_LTR	-	295487
+2	Query_47	Specific	334200	1306	1419	2.60041e-18	81.927	pfam00665	rve	-	354865
+2	Query_47	Specific	349274	1602	1650	1.44274e-15	72.1244	cd00024	CD_CSD	-	355790
+2	Query_47	Specific	133136	504	596	4.04457e-07	49.2572	cd00303	retropepsin_like	-	353244
+2	Query_47	Superfamily	356550	168	266	5.80985e-06	46.1736	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+SITES
+2	Query_47	Specific	active site	D992,E1033,D1058,D1101	4	4	260006
+2	Query_47	Specific	RNA/DNA hybrid binding site	D992,A993,S994,A995,S1028,T1029,T1030,E1033,D1058,Y1091,R1105	11	11	260006
+2	Query_47	Specific	putative active site	D779,I780,H781,A782,C783,F784,F815,G816,Y841,D843,D844,L889,G890	13	13	238825
+2	Query_47	Specific	putative nucleic acid binding site	G816	1	1	238825
+2	Query_47	Specific	putative NTP binding site	D779,I780,H781,A782,C783,F784,F815,D843	8	8	238825
+2	Query_47	Specific	putative peptide binding site	Y1602,E1603,V1604,Q1605,A1606,V1621,W1623,K1624,G1625,Y1626,E1631,T1633,W1634,E1635,P1636,E1638,H1639,L1648,Y1649	20	19	349274
+2	Query_47	Specific	inhibitor binding site	D518,G520,D522,L547,A548,H549,C589	7	7	133136
+2	Query_47	Specific	catalytic motif	D518,T519,G520	3	3	133136
+2	Query_47	Specific	Catalytic residue	D518	1	1	133136
+2	Query_47	Specific	Active site flap	L547,A548,H549,K550,V554,S555,R556,I557	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_48	Peptide	543	orf543_Blatri_feature_4_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	356550	200	298	4.00478e-07	48.0996	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	391	orf391_Blatri_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	238825	219	391	4.65099e-27	105.755	cd01647	RT_LTR	-	295487
+2	Query_49	Specific	133136	17	109	9.32868e-06	43.4792	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+2	Query_49	Specific	putative active site	D292,I293,H294,A295,C296,F297,F328,G329,Y354,D356,D357	13	11	238825
+2	Query_49	Specific	putative nucleic acid binding site	G329	1	1	238825
+2	Query_49	Specific	putative NTP binding site	D292,I293,H294,A295,C296,F297,F328,D356	8	8	238825
+2	Query_49	Specific	inhibitor binding site	D31,G33,D35,V58,Q59,L60,C102	7	7	133136
+2	Query_49	Specific	catalytic motif	D31,T32,G33	3	3	133136
+2	Query_49	Specific	Catalytic residue	D31	1	1	133136
+2	Query_49	Specific	Active site flap	V58,Q59,L60,A61,Q65,T66,V67,P68	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_50	Peptide	183	orf183_Blatri_feature_8_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	260006	62	174	6.7619e-44	141.476	cd09274	RNase_HI_RT_Ty3	-	353835
+ENDDOMAINS
+SITES
+2	Query_50	Specific	RNA/DNA hybrid binding site	D66,A67,S68,A69,S102,T103,T104,E107,D132,Y165	11	10	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_51	Peptide	394	orf393_Blatri_feature_10_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	334200	85	198	8.30124e-19	81.1566	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	614	orf614_Blatri_feature_12_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	335181	192	324	4.94396e-08	53.5055	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	1640	orf1640_Blatri_feature_4_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	260006	985	1105	1.48435e-43	154.188	cd09274	RNase_HI_RT_Ty3	-	353835
+2	Query_60	Specific	238825	720	890	7.06772e-42	151.594	cd01647	RT_LTR	-	295487
+2	Query_60	Specific	334200	1241	1354	1.97196e-14	71.1414	pfam00665	rve	-	354865
+2	Query_60	Specific	349274	1530	1578	8.86839e-14	66.7317	cd00024	CD_CSD	-	355790
+2	Query_60	Specific	133136	498	588	3.49586e-06	46.5608	cd00303	retropepsin_like	-	353244
+2	Query_60	Non-specific	307923	1180	1222	0.00138942	37.7009	pfam02022	Integrase_Zn	-	45
+ENDDOMAINS
+SITES
+2	Query_60	Specific	active site	D989,E1031,D1056,D1099	4	4	260006
+2	Query_60	Specific	RNA/DNA hybrid binding site	D989,A990,S991,Q992,S1026,A1027,T1028,E1031,D1056,H1089,R1103	11	11	260006
+2	Query_60	Specific	putative active site	D779,L780,S781,N782,A783,Y784,F813,G814,F839,D841,D842,L886,G887	13	13	238825
+2	Query_60	Specific	putative nucleic acid binding site	G814	1	1	238825
+2	Query_60	Specific	putative NTP binding site	D779,L780,S781,N782,A783,Y784,F813,D841	8	8	238825
+2	Query_60	Specific	putative peptide binding site	F1530,T1531,V1532,E1533,D1534,V1549,W1551,A1552,G1553,F1554,A1558,T1560,W1561,E1562,P1563,S1565,S1566,I1572,R1575,Y1576	20	20	349274
+2	Query_60	Specific	inhibitor binding site	D508,G510,T512,K532,N533,L584	7	6	133136
+2	Query_60	Specific	catalytic motif	D508,T509,G510	3	3	133136
+2	Query_60	Specific	Catalytic residue	D508	1	1	133136
+2	Query_60	Specific	Active site flap	K532,N533,V534,K546,I547,S548,R549	8	7	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_70	Peptide	173	orf173_Blatri_feature_18_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Specific	340095	39	143	0.00723306	35.9588	pfam17380	DUF5401	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	608	orf608_Blatri_feature_6_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_74	Specific	335181	206	332	1.9436e-06	48.8831	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_89	Peptide	663	orf663_Blatri_feature_8_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Specific	260006	108	226	4.79348e-37	134.157	cd09274	RNase_HI_RT_Ty3	-	353835
+3	Query_89	Specific	334200	379	481	2.56972e-10	58.0446	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+3	Query_89	Specific	active site	D112,E153,D178,D221	4	4	260006
+3	Query_89	Specific	RNA/DNA hybrid binding site	D112,A113,S114,A115,G148,S149,S150,E153,D178,F211,R225	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_106	Peptide	140	orf140_Blatri_feature_13_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_106	Specific	334865	21	64	0.000226384	37.4975	pfam02257	RFX_DNA_binding	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_107	Peptide	259	atp6_Blatri_feature_17_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_107	Specific	273458	13	256	2.24054e-56	179.709	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_108	Peptide	173	cox2_Blatri_feature_19_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_108	Non-specific	177126	16	173	5.90549e-69	208.867	MTH00051	COX2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_129	Peptide	233	orf233_Blatri_feature_2_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_129	Specific	338478	105	210	9.87054e-21	84.6084	pfam12762	DDE_Tnp_IS1595	C	351520
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_141	Peptide	587	orf587_Blatri_feature_8_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_141	Specific	335181	185	311	4.45251e-06	47.7275	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_142	Peptide	147	nad1_Blatri_feature_21_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_142	Superfamily	351105	2	147	8.35604e-61	189.633	cl00469	NADHdh	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_149	Peptide	237	orf237_Blatri_feature_2_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_149	Non-specific	226951	143	232	0.00066898	40.1623	COG4585	COG4585	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_153	Peptide	464	orf464_Blatri_feature_10_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_153	Specific	238825	250	429	3.17316e-44	152.75	cd01647	RT_LTR	-	295487
+4	Query_153	Specific	133136	35	127	1.72704e-08	51.5684	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+4	Query_153	Specific	putative active site	D318,C319,T320,E321,A322,F323,F352,G353,F378,D380,D381,L425,G426	13	13	238825
+4	Query_153	Specific	putative nucleic acid binding site	G353	1	1	238825
+4	Query_153	Specific	putative NTP binding site	D318,C319,T320,E321,A322,F323,F352,D380	8	8	238825
+4	Query_153	Specific	inhibitor binding site	D45,G47,D49,N75,F76,L77,L120	7	7	133136
+4	Query_153	Specific	catalytic motif	D45,T46,G47	3	3	133136
+4	Query_153	Specific	Catalytic residue	D45	1	1	133136
+4	Query_153	Specific	Active site flap	N75,F76,L77,S78,D82,A83,S84,R85	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_155	Peptide	140	orf140_Blatri_feature_8_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_155	Specific	334865	21	64	0.000226384	37.4975	pfam02257	RFX_DNA_binding	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_156	Peptide	337	orf338_Blatri_feature_22_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_156	Specific	334330	187	286	1.6965e-13	65.3354	pfam00961	LAGLIDADG_1	-	45
+4	Query_156	Specific	334330	72	166	5.66647e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_157	Peptide	337	orf338_Blatri_feature_16_from_C_28, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_157	Specific	334330	187	286	1.6965e-13	65.3354	pfam00961	LAGLIDADG_1	-	45
+4	Query_157	Specific	334330	72	166	5.66647e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_179	Peptide	345	orf345_Blatri_feature_16_from_C_32, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_179	Specific	337786	143	251	3.83977e-18	78.0096	pfam10551	MULE	-	355122
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_181	Peptide	865	orf865_Blatri_feature_4_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_181	Specific	238827	285	539	1.08885e-49	174.402	cd01650	RT_nLTR_like	-	295487
+ENDDOMAINS
+SITES
+4	Query_181	Specific	putative active site	D372,I373,A374,K375,A376,Y377,Q430,G431,F470,D472,D473,L535,G536	13	13	238827
+4	Query_181	Specific	putative nucleic acid binding site	G431	1	1	238827
+4	Query_181	Specific	putative NTP binding site	D372,I373,A374,K375,A376,Y377,Q430,D472	8	8	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_184	Peptide	372	orf372_Blatri_feature_4_from_C_34, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_184	Specific	307583	97	167	6.90889e-14	65.7186	pfam01498	HTH_Tnp_Tc3_2	-	45
+4	Query_184	Superfamily	354865	175	324	6.10374e-06	45.3342	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+SESSION	5	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_186	Peptide	584	orf584_Blatri_feature_2_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_186	Specific	335181	183	351	1.42878e-09	58.1279	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_224	Peptide	376	orf376_Blatri_feature_4_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_224	Specific	337786	76	183	1.23343e-20	85.3284	pfam10551	MULE	-	355122
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	5
+ENDDATA

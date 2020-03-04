@@ -1,0 +1,609 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	MorAD185_1_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	MorAD185_1_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	131	orf131_MorAD185_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	273636	9	119	1.18968e-24	93.2193	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_2	Generic	DNA binding site	N75,P76,M77,F78,H82,T86,M90,S91,G95,G96,T98,R116	21	12	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	185	orf185_MorAD185_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	273636	7	178	4.30695e-28	104.005	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	287	orf288_MorAD185_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273636	52	280	8.89285e-55	176.422	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	116	orf116_MorAD185_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	355698	2	104	3.26063e-14	66.988	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	339	nad1_MorAD185_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	333876	7	311	2.11136e-115	335.982	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	139	orf140_MorAD185_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	3	33	2.50095e-07	45.6903	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	209	orf210_MorAD185_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	273636	13	201	3.47374e-16	73.5741	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_11	Generic	DNA binding site	R116,G117,M118,L119,H123,T127,M131,I132,T136,G137,L141,N142,G144,L171,L175,S180,T183,S185,R186,Y187,E197	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	303	nad6_MorAD185_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	354830	8	199	2.91337e-25	99.3049	cl21484	Oxidored_q3	-	-
+1	Query_12	Non-specific	273636	272	300	3.11107e-06	46.9953	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	102	orf102_MorAD185_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	273636	7	90	1.05802e-07	47.3805	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	87	nad4L_MorAD185_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351118	5	87	4.66289e-14	61.2014	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	239	nad5_MorAD185_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	235836	1	239	6.8634e-87	269.336	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	123	orf123_MorAD185_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	273636	23	97	0.00058843	37.7506	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	225	orf225_MorAD185_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	335245	41	207	7.72961e-60	185.442	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	87	orf87_MorAD185_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	353929	35	67	3.27003e-06	41.1038	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_18	Generic	active site	Y38,Y49,G51,R59,H63	6	5	198380
+1	Query_18	Generic	catalytic site	R59	2	1	198380
+1	Query_18	Generic	GIY-YIG motif/motif A	G36,I37,Y38,Y49,I50,G51	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	219	orf220_MorAD185_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	273636	1	209	5.20599e-40	135.976	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_19	Generic	DNA binding site	N98,P99,M100,Y101,H105,T109,M113,S114,T118,G119,P123,N124,K151,R179,K183,P188,T191,Y193,N194,Y195,Q205	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	424	nad5_MorAD185_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	214400	1	384	2.07624e-113	344.753	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	255	orf255_2_MorAD185_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	335245	61	237	6.44379e-43	143.455	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	344	orf345_MorAD185_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	273636	112	343	9.3375e-48	160.244	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	255	cox2_MorAD185_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	214402	1	250	1.38756e-118	338.263	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	258	orf259_MorAD185_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	273636	33	254	1.65848e-50	164.481	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	297	orf298_MorAD185_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	47	100	5.34481e-10	55.3203	pfam00961	LAGLIDADG_1	N	45
+1	Query_27	Specific	334330	155	252	2.07012e-08	51.0831	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	292	orf292_MorAD185_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	273636	98	289	3.76749e-34	123.265	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	619	nad4_MorAD185_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	235622	1	490	1.91178e-140	417.681	PRK05846	PRK05846	-	45
+1	Query_29	Specific	335245	534	617	5.00753e-16	76.0455	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	339	orf339_MorAD185_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Non-specific	273636	97	325	3.64035e-29	111.324	TIGR01453	grpIintron_endo	-	45
+1	Query_30	Non-specific	235622	1	64	3.25942e-11	64.0681	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	676	orf676_MorAD185_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	295487	212	325	5.95522e-12	65.6852	cl02808	RT_like	C	-
+1	Query_32	Superfamily	295487	438	505	2.56119e-05	43.1084	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+1	Query_32	Generic	active site	D289,L290,K291,G292,F293,F294	13	6	238185
+1	Query_32	Generic	NTP binding site	D289,L290,K291,G292,F293,F294	8	6	238185
+1	Query_32	Generic	active site	Y448,D450,D451,L501,G502	13	5	238185
+1	Query_32	Generic	NTP binding site	D450	8	1	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_33	Peptide	680	orf680_MorAD185_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	238333	46	167	2.00536e-22	93.061	cd00593	RIBOc	-	350987
+ENDDOMAINS
+SITES
+1	Query_33	Specific	active site	E66,E69,D73,N145,K148	5	5	238333
+1	Query_33	Specific	metal binding site	E69,N145,K148	3	3	238333
+1	Query_33	Specific	dimerization interface	E66,I67,I70,L71,S74,Q77,S78,S81,I82,I84,Y85,N86,L96,Y155,Y164	15	15	238333
+ENDSITES
+ENDQUERY
+QUERY	Query_34	Peptide	539	cox1_MorAD185_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	238833	8	513	0	849.463	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_34	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_34	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T424,S461	5	5	238833
+1	Query_34	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_34	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_34	Specific	Electron transfer pathway	F376,R438,R439	3	3	238833
+1	Query_34	Specific	Putative proton exit pathway	H290,H367,D368,R438,R439	5	5	238833
+1	Query_34	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R438	7	7	238833
+1	Query_34	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,A293,V294,G295,V298,R301,M309,I317,F320,A327,G328,G329,L341,N359,A360,I362,V364,A365,L366,H367,D368,L433,A434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_34	Specific	Subunit I/III interface	T8,V90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_34	Specific	Subunit I/IV interface	L37,A40,G41,L408,Q411,I412,D445,V463	8	8	238833
+1	Query_34	Specific	Subunit I/Vb interface	P265,Y269,A512	3	3	238833
+1	Query_34	Specific	Subunit I/VIa interface	L135,R213,N214,F215,N216	5	5	238833
+1	Query_34	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_34	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_34	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_34	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_34	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,S116,F117,I400,Y473,L476	9	9	238833
+1	Query_34	Specific	Subunit I/VIIIb interface	L409,V466	2	2	238833
+1	Query_34	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	259	orf259_MorAD185_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	334330	168	257	1.37069e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+1	Query_35	Specific	334330	39	133	6.11289e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	363	orf363_MorAD185_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Specific	273636	126	353	1.04962e-41	144.836	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	407	orf407_MorAD185_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	273636	115	319	2.23338e-53	176.422	TIGR01453	grpIintron_endo	-	45
+1	Query_37	Specific	197761	356	403	9.91758e-06	42.555	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	321	orf321_MorAD185_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Non-specific	273636	85	314	4.82766e-38	134.436	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_39	Peptide	339	orf339_MorAD185_feature_112_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	273636	107	323	8.8257e-45	152.155	TIGR01453	grpIintron_endo	-	45
+2	Query_39	Specific	349411	8	70	0.00466764	36.9937	cd00310	ATP-synt_Fo_a_6	N	45
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_40	Peptide	242	orf242_MorAD185_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	335245	59	225	2.93744e-58	181.975	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	351	orf351_MorAD185_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	334330	211	311	4.40479e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	334	orf334_MorAD185_feature_124_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	208	304	6.42415e-17	74.9654	pfam00961	LAGLIDADG_1	-	45
+2	Query_42	Specific	334330	99	173	1.49306e-05	42.9939	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	514	orf514_MorAD185_feature_128_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	334330	87	189	1.93373e-18	80.3582	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	334330	389	477	2.47323e-09	54.5499	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	334330	283	351	3.05564e-06	45.6903	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	298	orf298_MorAD185_feature_132_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334330	174	268	5.89749e-13	63.7946	pfam00961	LAGLIDADG_1	-	45
+2	Query_44	Specific	334330	55	142	2.50929e-08	50.6979	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	373	orf373_MorAD185_feature_136_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	334330	84	178	7.99651e-22	88.8326	pfam00961	LAGLIDADG_1	-	45
+2	Query_45	Specific	334330	233	322	5.32581e-06	44.5347	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	313	orf313_MorAD185_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	166	269	4.35252e-13	64.1798	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	48	141	6.07799e-07	46.8459	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	313	orf313_MorAD185_feature_144_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	198392	46	142	4.06692e-24	93.4444	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_47	Specific	284793	168	204	0.000208406	37.8772	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+SITES
+2	Query_47	Specific	putative active site	Y49,Y60,G62,R70,Y74,E127,N139	7	7	198392
+2	Query_47	Specific	putative metal binding site	E127	1	1	198392
+2	Query_47	Specific	GIY-YIG motif/motif A	G47,I48,Y49,Y60,I61,G62	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_48	Peptide	465	orf466_MorAD185_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	198392	122	209	1.66799e-22	91.1332	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_48	Specific	197761	413	464	2.19935e-07	47.1774	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_48	Specific	putative active site	Y125,Y136,G138,R146,Y150,E194,N206	7	7	198392
+2	Query_48	Specific	putative metal binding site	E194	1	1	198392
+2	Query_48	Specific	GIY-YIG motif/motif A	G123,V124,Y125,Y136,I137,G138	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_49	Peptide	535	nad2_MorAD185_feature_149_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	235603	146	527	3.89412e-81	260.909	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	272	orf273_MorAD185_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	273636	42	265	2.64688e-46	154.081	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	367	atp8_MorAD185_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	273636	100	363	1.65394e-38	136.747	TIGR01453	grpIintron_endo	-	45
+2	Query_51	Specific	283561	1	42	2.65639e-09	52.4086	pfam05933	Fun_ATP-synt_8	-	45
+2	Query_51	Specific	311417	212	254	5.00309e-07	45.676	pfam07460	NUMOD3	-	45
+2	Query_51	Specific	311417	260	288	0.000648068	36.8164	pfam07460	NUMOD3	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	160	orf161_MorAD185_feature_159_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Superfamily	353929	73	159	2.80849e-15	66.4804	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+2	Query_52	Generic	active site	Y76,Y87,G89,R97,Y101,E152	6	6	198380
+2	Query_52	Generic	catalytic site	R97,E152	2	2	198380
+2	Query_52	Generic	metal binding site	E152	1	1	198380
+2	Query_52	Generic	GIY-YIG motif/motif A	G74,I75,Y76,Y87,I88,G89	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_53	Peptide	147	orf148_MorAD185_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Non-specific	273636	1	139	1.22507e-21	85.9005	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_53	Generic	DNA binding site	H56,P57,F58,Y59,G63,P67,R71,T72,T82,G83,S87,L88,K90,T111,K115,S120,T123,S125,L126,Y127,E137	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_55	Peptide	269	orf270_MorAD185_feature_165_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Non-specific	273636	54	253	1.01461e-34	124.035	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	254	cox3_MorAD185_feature_167_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Superfamily	294143	9	250	4.25085e-98	286.999	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+2	Query_56	Specific	Subunit I/III interface	K79,Q82,G83,S94,F97,S101,L102,H108,S196,V197,S200,F204	12	12	238834
+2	Query_56	Specific	Subunit III/Vb interface	Y163	1	1	238834
+2	Query_56	Specific	Subunit III/VIa interface	W132,E133,L134,M151,L177,I187,N188,A189,A194,D195,S196	11	11	238834
+2	Query_56	Specific	Subunit III/VIb interface	A124	1	1	238834
+2	Query_56	Specific	Subunit III/VIIa interface	L61,R64,D65,I68,T71,Y72,L73	7	7	238834
+2	Query_56	Specific	Phospholipid binding site	W62,F63,I66,I67,G70,H76,G87,F88,F91,F219,R226,V238,G239	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_57	Peptide	969	orf969_MorAD185_feature_169_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Superfamily	355698	630	825	0.000893925	42.7204	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	601	orf601_MorAD185_feature_171_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	334321	188	600	8.24349e-101	311.317	pfam00940	RNA_pol	-	355471
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	708	orf708_MorAD185_feature_173_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Non-specific	223644	26	136	5.40197e-16	77.6766	COG0571	Rnc	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	133	orf134_MorAD185_feature_175_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	9	104	3.97009e-22	83.825	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	221	orf221_MorAD185_feature_177_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	335245	140	221	4.73647e-17	75.2751	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	140	orf141_MorAD185_feature_179_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	334330	2	96	5.05347e-10	52.6239	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	237	orf238_MorAD185_feature_181_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	335245	45	213	3.64976e-63	194.302	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	187	orf188_MorAD185_feature_183_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Specific	334330	28	125	1.74763e-13	63.0242	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	268	atp6_MorAD185_feature_185_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Superfamily	351082	25	268	4.12298e-54	175.195	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	446	orf447_MorAD185_feature_187_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Non-specific	273636	198	432	5.04121e-34	126.346	TIGR01453	grpIintron_endo	-	45
+2	Query_66	Superfamily	351082	58	154	4.01846e-08	53.8093	cl00413	ATP-synt_A	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_70	Peptide	244	orf245_MorAD185_feature_195_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_70	Non-specific	273636	93	223	3.00165e-28	106.316	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	276	orf277_MorAD185_feature_197_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Non-specific	273636	64	273	5.57535e-32	117.102	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	73	atp9_MorAD185_feature_199_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_72	Specific	349422	6	70	4.33239e-21	77.5499	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_73	Peptide	124	orf124_MorAD185_feature_205_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Non-specific	273636	7	120	2.75117e-13	63.1737	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_73	Generic	DNA binding site	N28,K29,K33,T37,M41,S42,K46,G47,V51,N52,G54,K90,K94,N99,T102,L104,K105,Y106	21	18	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_74	Peptide	341	orf341_MorAD185_feature_207_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Specific	273636	114	337	1.04488e-47	159.859	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+3	Query_74	Generic	DNA binding site	N261,P262,M263,F264,H268,T272,I276,S277,N281,K282,I286,Y287,K289,K306,T310,S315,T318,T320,R321,Y322,E332	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_75	Peptide	174	orf174_MorAD185_feature_209_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Specific	335245	2	144	1.1021e-28	104.165	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_76	Peptide	239	orf239_MorAD185_feature_211_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Specific	335245	52	222	1.83029e-56	177.353	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	53	orf53_MorAD185_feature_213_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Specific	334330	17	49	0.00152657	32.9787	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	82	orf83_MorAD185_feature_215_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Specific	334330	11	82	3.88687e-12	56.0907	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	320	orf320_MorAD185_feature_227_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_80	Specific	334330	74	175	4.99206e-27	101.929	pfam00961	LAGLIDADG_1	-	45
+3	Query_80	Specific	334330	234	319	9.52441e-17	74.195	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	255	orf255_MorAD185_feature_229_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	273636	50	255	8.10382e-43	144.451	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	354	rps3_MorAD185_feature_235_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_82	Non-specific	283074	24	263	9.03857e-05	43.7395	pfam05316	VAR1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	217	orf218_MorAD185_feature_237_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Non-specific	273636	18	167	4.53746e-30	110.553	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	124	orf125_MorAD185_feature_239_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_84	Specific	198392	31	119	5.70793e-22	82.6588	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+3	Query_84	Specific	putative active site	F32,Y43,G45,R53,Y57,E109	7	6	198392
+3	Query_84	Specific	putative metal binding site	E109	1	1	198392
+3	Query_84	Specific	GIY-YIG motif/motif A	I31,F32,Y43,I44,G45	6	5	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_85	Peptide	110	orf110_MorAD185_feature_241_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_85	Non-specific	238175	1	76	4.91273e-07	44.3858	cd00283	GIY-YIG_Cterm	C	45
+ENDDOMAINS
+SITES
+3	Query_85	Generic	DNA binding site	L31,L32,R36,T40,M44,S45,G49,T50,T51,Y53,T70,E74	21	12	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_86	Peptide	90	orf91_MorAD185_feature_245_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Specific	214677	41	90	5.26347e-09	48.1864	smart00465	GIYc	C	353929
+ENDDOMAINS
+SITES
+3	Query_86	Generic	active site	Y45,Y56,G58,R66,H70	6	5	198380
+3	Query_86	Generic	catalytic site	R66	2	1	198380
+3	Query_86	Generic	GIY-YIG motif/motif A	G43,I44,Y45,Y56,I57,G58	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_88	Peptide	124	orf124_MorAD185_feature_257_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Superfamily	353929	42	124	1.84569e-16	68.4064	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+3	Query_88	Generic	active site	Y45,Y56,G58,R66,Y70,K116	6	6	198380
+3	Query_88	Generic	catalytic site	R66,K116	2	2	198380
+3	Query_88	Generic	metal binding site	K116	1	1	198380
+3	Query_88	Generic	GIY-YIG motif/motif A	G43,I44,Y45,Y56,I57,G58	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_90	Peptide	328	orf329_MorAD185_feature_261_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_90	Specific	273636	110	327	2.73585e-41	142.91	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	377	cob_MorAD185_feature_263_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_91	Specific	214440	5	349	5.64005e-174	488.138	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_92	Peptide	183	orf183_MorAD185_feature_267_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_92	Specific	335245	1	161	1.90204e-34	119.188	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	286	orf286_MorAD185_feature_273_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Specific	334330	44	127	3.5951e-06	44.5347	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	132	orf132_MorAD185_feature_277_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_95	Non-specific	273636	7	117	1.19531e-17	75.1149	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_95	Generic	DNA binding site	N27,P28,M31,L32,H36,T40,L44,S45,K49,G50,P55,E56,K58,R87,E91,S96,T99,L101,K102,Y103,Q113	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_96	Peptide	109	orf109_MorAD185_feature_279_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Specific	197761	50	102	0.000169254	36.3918	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	111	orf111_MorAD185_feature_281_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_97	Specific	198392	17	108	2.36704e-21	80.3476	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+3	Query_97	Specific	putative active site	Y20,Y31,G33,R43,H47,E93,N105	7	7	198392
+3	Query_97	Specific	putative metal binding site	E93	1	1	198392
+3	Query_97	Specific	GIY-YIG motif/motif A	G18,I19,Y20,Y31,I32,G33	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_98	Peptide	440	orf440_MorAD185_feature_285_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_98	Specific	334330	44	134	1.14562e-16	74.9654	pfam00961	LAGLIDADG_1	-	45
+3	Query_98	Specific	334330	196	302	2.18745e-07	48.7719	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	231	orf231_MorAD185_feature_288_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_99	Specific	335245	41	213	1.42613e-65	200.08	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_100	Peptide	168	orf168_MorAD185_feature_290_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_100	Non-specific	273636	3	158	1.05911e-25	97.4565	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_100	Generic	DNA binding site	N70,P71,M72,Y73,H77,T81,M85,S86,K90,G91,A96,I97,K99,K127,K131,S136,T139,S141,R142,Y143,Q153	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_101	Peptide	304	orf304_MorAD185_feature_292_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_101	Specific	273636	20	298	7.97811e-45	151.384	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	319	orf319_MorAD185_feature_294_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_102	Non-specific	273636	63	308	8.9489e-32	117.872	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

@@ -1,0 +1,456 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Dotsy1.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Dotsy1.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	99	orf99_Dotsy1.fasta.new.sqn.gbf_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334321	1	93	6.45781e-14	65.1745	pfam00940	RNA_pol	N	355471
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	214	orf214_Dotsy1.fasta.new.sqn.gbf_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	273636	2	213	2.81496e-38	131.354	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	153	orf153_Dotsy1.fasta.new.sqn.gbf_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	273636	7	150	2.03276e-22	88.2117	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	99	orf99_Dotsy1.fasta.new.sqn.gbf_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	353929	61	94	1.19151e-05	39.9017	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_7	Generic	active site	Y63,Y74,R76,R84,Y88	6	5	198380
+1	Query_7	Generic	catalytic site	R84	2	1	198380
+1	Query_7	Generic	GIY-YIG motif/motif A	G61,V62,Y63,Y74,G75,R76	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	288	orf289_Dotsy1.fasta.new.sqn.gbf_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	273636	147	272	8.934e-20	85.1301	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	542	orf543_Dotsy1.fasta.new.sqn.gbf_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	142	240	1.2189e-17	78.047	pfam00961	LAGLIDADG_1	-	45
+1	Query_11	Specific	334330	289	400	1.55141e-07	49.5423	pfam00961	LAGLIDADG_1	-	45
+1	Query_11	Specific	334114	17	107	2.86254e-07	49.3807	pfam00499	Oxidored_q3	C	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	208	orf209_Dotsy1.fasta.new.sqn.gbf_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	95	195	2.79275e-18	76.121	pfam00961	LAGLIDADG_1	-	45
+1	Query_12	Specific	334330	1	32	2.54036e-07	47.2311	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	158	orf158_Dotsy1.fasta.new.sqn.gbf_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	86	152	9.15716e-12	58.0167	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	257	atp6_Dotsy1.fasta.new.sqn.gbf_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	273458	10	254	5.32661e-48	158.524	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	360	orf360_Dotsy1.fasta.new.sqn.gbf_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	235	332	2.32485e-23	92.6846	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	78	177	9.41595e-23	91.1438	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	347	orf347_Dotsy1.fasta.new.sqn.gbf_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	217	315	5.73802e-22	88.8326	pfam00961	LAGLIDADG_1	-	45
+1	Query_18	Specific	334330	60	157	7.85691e-20	83.0546	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	371	orf371_Dotsy1.fasta.new.sqn.gbf_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	273636	34	217	4.60778e-33	122.494	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	379	orf379_Dotsy1.fasta.new.sqn.gbf_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	273636	147	359	8.23266e-39	137.902	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	230	orf230_Dotsy1.fasta.new.sqn.gbf_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	284793	177	213	0.000229044	37.492	pfam07453	NUMOD1	-	299755
+1	Query_21	Non-specific	273636	22	88	0.00490858	36.9802	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	491	cox3_Dotsy1.fasta.new.sqn.gbf_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	278911	12	211	1.85432e-103	309.726	pfam00510	COX3	C	294143
+1	Query_23	Specific	334330	240	338	4.20192e-21	87.677	pfam00961	LAGLIDADG_1	-	45
+1	Query_23	Specific	334330	400	484	9.40931e-14	66.8762	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_23	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_23	Specific	Subunit III/Vb interface	K166	1	1	238834
+1	Query_23	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,A190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_23	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_23	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,L76	7	7	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	430	orf430_Dotsy1.fasta.new.sqn.gbf_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	144	242	8.89188e-26	100.389	pfam00961	LAGLIDADG_1	-	45
+1	Query_24	Specific	334330	301	399	2.83288e-18	79.5878	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	381	orf381_Dotsy1.fasta.new.sqn.gbf_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	96	246	2.59439e-08	51.0831	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	421	orf421_Dotsy1.fasta.new.sqn.gbf_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	57	155	1.50907e-16	74.5802	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	199	290	9.10285e-11	58.0167	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	203	orf204_Dotsy1.fasta.new.sqn.gbf_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	18	185	1.5825e-51	163.486	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	314	orf315_Dotsy1.fasta.new.sqn.gbf_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334330	38	135	6.94231e-26	98.4626	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	334330	216	295	6.88489e-13	63.4094	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_29	Peptide	210	orf210_Dotsy1.fasta.new.sqn.gbf_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_29	Superfamily	294143	16	82	1.53502e-07	49.9721	cl00211	Heme_Cu_Oxidase_III_like	C	-
+ENDDOMAINS
+SITES
+2	Query_29	Generic	Subunit I/III interface	L41,V45,I46	9	3	238227
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	585	nad2_Dotsy1.fasta.new.sqn.gbf_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Specific	235603	7	510	4.43113e-83	267.457	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	416	orf416_Dotsy1.fasta.new.sqn.gbf_feature_112_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	334330	285	384	4.85691e-25	98.0774	pfam00961	LAGLIDADG_1	-	45
+2	Query_31	Specific	334330	129	227	5.13176e-24	95.381	pfam00961	LAGLIDADG_1	-	45
+2	Query_31	Superfamily	321991	92	132	0.00261185	37.2185	cl02563	PX_domain	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_32	Peptide	382	orf382_Dotsy1.fasta.new.sqn.gbf_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Non-specific	273636	194	381	4.77807e-30	114.79	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	188	orf188_Dotsy1.fasta.new.sqn.gbf_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	59	156	1.07506e-24	92.2994	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	351	nad3_Dotsy1.fasta.new.sqn.gbf_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	334119	27	112	3.58529e-17	75.5294	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	501	nad4_Dotsy1.fasta.new.sqn.gbf_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	235622	1	481	3.46843e-118	356.435	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	267	orf267_Dotsy1.fasta.new.sqn.gbf_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Superfamily	333710	196	259	0.00324804	35.4298	cl28890	FYVE_like_SF	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	452	nad4L_Dotsy1.fasta.new.sqn.gbf_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	143	245	4.1365e-25	98.4626	pfam00961	LAGLIDADG_1	-	45
+2	Query_37	Specific	177231	5	88	3.58448e-20	84.6985	MTH00180	ND4L	-	351118
+2	Query_37	Specific	334330	306	405	9.18607e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	880	nad5_Dotsy1.fasta.new.sqn.gbf_feature_129_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Non-specific	177253	1	633	0	636.665	MTH00210	ND5	-	45
+2	Query_38	Non-specific	237862	718	838	1.73786e-06	51.5021	PRK14948	PRK14948	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	483	orf483_Dotsy1.fasta.new.sqn.gbf_feature_133_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	334330	81	179	2.82941e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+2	Query_39	Specific	334330	227	340	4.02762e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	693	orf693_Dotsy1.fasta.new.sqn.gbf_feature_137_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	334330	310	400	7.14757e-17	76.121	pfam00961	LAGLIDADG_1	-	45
+2	Query_40	Specific	334330	448	554	1.80635e-15	72.269	pfam00961	LAGLIDADG_1	-	45
+2	Query_40	Specific	197761	633	684	0.000599454	37.9326	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	169	orf169_Dotsy1.fasta.new.sqn.gbf_feature_139_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	334330	36	136	1.65394e-33	113.871	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	326	orf326_Dotsy1.fasta.new.sqn.gbf_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	167	286	8.45134e-17	74.5802	pfam00961	LAGLIDADG_1	-	45
+2	Query_42	Specific	334330	47	133	9.07466e-08	49.1571	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	434	orf434_Dotsy1.fasta.new.sqn.gbf_feature_148_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334321	181	429	1.08227e-60	201.92	pfam00940	RNA_pol	C	355471
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	385	cob_Dotsy1.fasta.new.sqn.gbf_feature_150_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	214440	10	364	1.64486e-175	492.375	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	253	orf253_Dotsy1.fasta.new.sqn.gbf_feature_154_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	335245	46	233	4.35955e-35	123.04	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	323	orf323_Dotsy1.fasta.new.sqn.gbf_feature_158_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Non-specific	273636	106	308	2.34982e-24	98.2269	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	301	orf301_Dotsy1.fasta.new.sqn.gbf_feature_162_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	334330	48	158	8.28813e-07	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	297	orf297_Dotsy1.fasta.new.sqn.gbf_feature_166_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	334330	51	127	1.71798e-05	42.6087	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	273	orf273_Dotsy1.fasta.new.sqn.gbf_feature_170_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	28	124	5.2683e-21	84.9806	pfam00961	LAGLIDADG_1	-	45
+2	Query_50	Specific	334330	160	255	2.29532e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	116	orf116_Dotsy1.fasta.new.sqn.gbf_feature_178_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	335245	3	98	2.53285e-36	121.114	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	371	nad1_Dotsy1.fasta.new.sqn.gbf_feature_181_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	333876	12	354	1.21144e-119	348.308	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	397	orf397_Dotsy1.fasta.new.sqn.gbf_feature_185_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	334330	113	204	4.43128e-15	70.343	pfam00961	LAGLIDADG_1	-	45
+2	Query_54	Specific	334330	250	366	9.07868e-11	58.0167	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_58	Peptide	118	orf118_Dotsy1.fasta.new.sqn.gbf_feature_197_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_58	Specific	284793	26	65	0.00194134	33.64	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	345	orf345_Dotsy1.fasta.new.sqn.gbf_feature_201_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_59	Specific	334330	56	155	2.9541e-25	97.6922	pfam00961	LAGLIDADG_1	-	45
+3	Query_59	Specific	334330	213	312	7.03478e-23	91.1438	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	103	orf103_Dotsy1.fasta.new.sqn.gbf_feature_203_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_60	Non-specific	273636	27	103	2.87095e-12	59.7069	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_60	Generic	DNA binding site	N51,P52,M53,F54,H58,T62,M66,K69,K70,P74,N75,V77,S94,I98,S103	21	15	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_63	Peptide	237	cox2_Dotsy1.fasta.new.sqn.gbf_feature_210_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_63	Specific	214438	5	235	1.2974e-113	324.474	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	333	orf333_Dotsy1.fasta.new.sqn.gbf_feature_214_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_64	Superfamily	353929	2	82	1.71534e-09	53.7688	cl15257	GIY-YIG_SF	-	-
+3	Query_64	Non-specific	273636	3	238	0.00195131	38.9062	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+3	Query_64	Generic	active site	Y9,G11,R19,Y22,E67	6	5	198380
+3	Query_64	Generic	catalytic site	R19,E67	2	2	198380
+3	Query_64	Generic	metal binding site	E67	1	1	198380
+3	Query_64	Generic	GIY-YIG motif/motif A	Y9,V10,G11	6	3	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_65	Peptide	373	orf373_Dotsy1.fasta.new.sqn.gbf_feature_218_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_65	Superfamily	353929	127	217	1.5429e-13	65.3248	cl15257	GIY-YIG_SF	-	-
+3	Query_65	Non-specific	273636	126	370	3.48171e-07	50.0769	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+3	Query_65	Generic	active site	Y130,Y141,G143,R151,Y155,E202	6	6	198380
+3	Query_65	Generic	catalytic site	R151,E202	2	2	198380
+3	Query_65	Generic	metal binding site	E202	1	1	198380
+3	Query_65	Generic	GIY-YIG motif/motif A	G128,I129,Y130,Y141,V142,G143	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_66	Peptide	308	orf308_Dotsy1.fasta.new.sqn.gbf_feature_222_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_66	Specific	273636	73	307	3.4051e-57	183.356	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	551	cox1_Dotsy1.fasta.new.sqn.gbf_feature_225_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_67	Specific	238833	11	487	0	781.283	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+3	Query_67	Specific	Binuclear center (heme a3/CuB)	H241,H290,H291,H376	4	4	238833
+3	Query_67	Specific	Low-spin heme (heme a) binding site	H62,H378,S382,T424,S461	5	5	238833
+3	Query_67	Specific	D-pathway	Y19,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238833
+3	Query_67	Specific	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238833
+3	Query_67	Specific	Electron transfer pathway	F377,R438,R439	3	3	238833
+3	Query_67	Specific	Putative proton exit pathway	H291,H368,D369,R438,R439	5	5	238833
+3	Query_67	Specific	Putative water exit pathway	D228,Q233,H234,D364,H368,D369,R438	7	7	238833
+3	Query_67	Specific	Subunit I/II interface	N56,D228,K265,F268,G269,T294,V295,G296,V299,R302,L310,I318,F321,Y328,G329,G330,L342,N360,A361,L363,I365,A366,F367,H368,D369,L433,Q434,R438,R439,I440,G449,W450	32	32	238833
+3	Query_67	Specific	Subunit I/III interface	P91,F95,R97,L104,D145,F149,T167,N171,I191,L198,P201,M209,T218,S219,F220,G225,G226,D228,F238,Y275,C278,G281,I282,V286	25	24	238833
+3	Query_67	Specific	Subunit I/IV interface	L39,S42,G43,L408,K411,A412,D445,A463	8	8	238833
+3	Query_67	Specific	Subunit I/VIa interface	I136,R214,N215,F216,N217	5	5	238833
+3	Query_67	Specific	Subunit I/VIb interface	G296	1	1	238833
+3	Query_67	Specific	Subunit I/VIc interface	G329	1	1	238833
+3	Query_67	Specific	Subunit I/VIIa interface	F115,G118	2	2	238833
+3	Query_67	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+3	Query_67	Specific	Subunit I/VIIc interface	F25,V29,A32,L36,G117,G118,I400,Y473,L476	9	9	238833
+3	Query_67	Specific	Subunit I/VIIIb interface	Y409,A466	2	2	238833
+3	Query_67	Specific	Dimer interface	I191,L198,F238,Y275,C278,G281,I282,V286	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_68	Peptide	139	orf140_Dotsy1.fasta.new.sqn.gbf_feature_228_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_68	Non-specific	273636	6	109	1.14703e-10	56.6253	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_68	Generic	DNA binding site	N49,P50,I51,F52,K56,T60,I64,K66,T67,Y71,N72,D74,G85,K89,S94,T97,K99,K100,Y101	21	19	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_69	Peptide	269	orf269_Dotsy1.fasta.new.sqn.gbf_feature_231_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_69	Specific	198392	124	214	5.51438e-22	86.896	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+3	Query_69	Specific	putative active site	Y127,Y138,G140,R148,Y152,E199,N211	7	7	198392
+3	Query_69	Specific	putative metal binding site	E199	1	1	198392
+3	Query_69	Specific	GIY-YIG motif/motif A	G125,V126,Y127,Y138,I139,G140	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_71	Peptide	282	orf282_Dotsy1.fasta.new.sqn.gbf_feature_237_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Specific	334330	59	154	2.80425e-14	66.8762	pfam00961	LAGLIDADG_1	-	45
+3	Query_71	Specific	334330	192	275	1.14417e-09	54.1647	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	444	orf444_Dotsy1.fasta.new.sqn.gbf_feature_241_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_72	Specific	273636	150	355	2.489e-53	177.578	TIGR01453	grpIintron_endo	-	45
+3	Query_72	Specific	197761	388	440	8.9579e-07	45.6366	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	332	orf332_Dotsy1.fasta.new.sqn.gbf_feature_245_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Specific	334330	195	291	8.67246e-21	85.3658	pfam00961	LAGLIDADG_1	-	45
+3	Query_73	Specific	334330	86	154	0.000131441	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	645	orf645_Dotsy1.fasta.new.sqn.gbf_feature_249_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Specific	334330	516	611	1.26108e-15	72.6542	pfam00961	LAGLIDADG_1	-	45
+3	Query_74	Specific	334330	397	484	1.59524e-08	52.2387	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	350	orf350_Dotsy1.fasta.new.sqn.gbf_feature_253_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Specific	334330	80	177	2.5799e-13	64.9502	pfam00961	LAGLIDADG_1	-	45
+3	Query_75	Specific	334330	201	306	8.85797e-10	54.9351	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_76	Peptide	344	orf344_Dotsy1.fasta.new.sqn.gbf_feature_257_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Specific	198392	90	177	1.15261e-27	103.46	cd10445	GIY-YIG_bI1_like	-	353929
+3	Query_76	Non-specific	273636	89	341	2.40107e-09	56.6253	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+3	Query_76	Specific	putative active site	Y92,Y103,G105,R113,Y117,E162,N174	7	7	198392
+3	Query_76	Specific	putative metal binding site	E162	1	1	198392
+3	Query_76	Specific	GIY-YIG motif/motif A	G90,V91,Y92,Y103,V104,G105	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_80	Peptide	136	orf136_Dotsy1.fasta.new.sqn.gbf_feature_266_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_80	Specific	333820	57	132	2.53725e-07	47.287	pfam00078	RVT_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	127	orf127_Dotsy1.fasta.new.sqn.gbf_feature_268_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Superfamily	295487	9	119	3.95714e-13	62.9888	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+3	Query_81	Generic	active site	D82,L83,Q84,Q85,F86,F87	13	6	238185
+3	Query_81	Generic	NTP binding site	D82,L83,Q84,Q85,F86,F87	8	6	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_83	Peptide	627	orf627_Dotsy1.fasta.new.sqn.gbf_feature_272_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Specific	334321	19	70	2.22597e-07	53.2333	pfam00940	RNA_pol	C	355471
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

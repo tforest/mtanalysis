@@ -1,0 +1,267 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Abobi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Abobi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	377	cob_Abobi1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	214440	3	359	2.71514e-179	501.62	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	495	cox1_Abobi1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	238833	8	490	0	817.492	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_2	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_2	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_2	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_2	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_2	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_2	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_2	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,A293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,L341,N359,A360,M362,I364,A365,L366,H367,D368,L432,S433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_2	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,V190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,F277,G280,I281,L285	25	25	238833
+1	Query_2	Specific	Subunit I/IV interface	L37,A40,A41,F407,N410,V411,D444,V462	8	8	238833
+1	Query_2	Specific	Subunit I/VIa interface	V135,R213,N214,F215,N216	5	5	238833
+1	Query_2	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_2	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_2	Specific	Subunit I/VIIa interface	L114,L117	2	2	238833
+1	Query_2	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_2	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,A116,L117,I399,Y472,F475	9	9	238833
+1	Query_2	Specific	Subunit I/VIIIb interface	L408,V465	2	2	238833
+1	Query_2	Specific	Dimer interface	V190,L197,F237,Y274,F277,G280,I281,L285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	345	orf345_Abobi1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	187	303	3.72399e-13	64.565	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	51	136	6.71205e-09	52.6239	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	405	orf405_Abobi1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	125	221	4.04781e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	280	365	4.26592e-05	41.8383	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	339	orf339_1_Abobi1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	190	295	6.5019e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	68	165	5.78077e-13	64.1798	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	421	orf421_1_Abobi1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	190	257	2.85914e-06	45.3051	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	333	orf333_1_Abobi1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	194	294	3.29061e-12	61.8686	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	83	163	0.000441276	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	273	cox3_Abobi1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	278911	16	271	1.71338e-112	324.364	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Subunit I/III interface	E85,K88,G89,S100,F103,S107,V108,H114,S202,V203,T206,A210	12	12	238834
+1	Query_8	Specific	Subunit III/Vb interface	A169	1	1	238834
+1	Query_8	Specific	Subunit III/VIa interface	F138,A139,I140,Y157,I183,S193,Q194,A195,A200,D201,S202	11	11	238834
+1	Query_8	Specific	Subunit III/VIb interface	Q130	1	1	238834
+1	Query_8	Specific	Subunit III/VIIa interface	F67,K70,D71,T74,T77,F78,L79	7	7	238834
+1	Query_8	Specific	Phospholipid binding site	W68,F69,I72,N73,G76,H82,G93,M94,F97,F225,R232,I244,G245	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	88	nad4L_Abobi1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	7	88	5.03542e-15	63.8977	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	663	nad5_Abobi1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	235836	1	533	0	595.6	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	663	nad5_Abobi1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	616	0	638.591	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	88	nad4L_Abobi1_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	351118	7	88	5.03542e-15	63.8977	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	273	cox3_Abobi1_feature_16_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	278911	16	271	1.71338e-112	324.364	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_13	Specific	Subunit I/III interface	E85,K88,G89,S100,F103,S107,V108,H114,S202,V203,T206,A210	12	12	238834
+1	Query_13	Specific	Subunit III/Vb interface	A169	1	1	238834
+1	Query_13	Specific	Subunit III/VIa interface	F138,A139,I140,Y157,I183,S193,Q194,A195,A200,D201,S202	11	11	238834
+1	Query_13	Specific	Subunit III/VIb interface	Q130	1	1	238834
+1	Query_13	Specific	Subunit III/VIIa interface	F67,K70,D71,T74,T77,F78,L79	7	7	238834
+1	Query_13	Specific	Phospholipid binding site	W68,F69,I72,N73,G76,H82,G93,M94,F97,F225,R232,I244,G245	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	146	nad3_Abobi1_feature_8_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	26	112	3.82372e-30	104.419	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	574	nad2_Abobi1_feature_10_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	121	495	9.10479e-78	253.205	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	52	atp8_Abobi1_feature_18_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	283561	1	48	2.85781e-05	36.2302	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	383	orf383_Abobi1_feature_12_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	355698	322	373	0.00179403	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	552	orf551_Abobi1_feature_14_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Superfamily	355698	17	418	1.4917e-68	228.001	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	696	orf696_Abobi1_feature_16_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	355471	46	645	6.04577e-68	237.999	cl25973	RNA_pol	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	349	nad4_Abobi1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	235622	12	349	8.97719e-106	318.685	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	250	orf250_Abobi1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	335245	64	227	2.09568e-53	170.034	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	358	cox1_Abobi1_feature_9_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	350997	1	342	0	559.023	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_25	Generic	Binuclear center (active site)	H70,H119,H120,H205	4	4	238461
+1	Query_25	Generic	Low-spin heme binding site	Y200,H207,L210,S211,R267,R268,F297	15	7	238461
+1	Query_25	Generic	K-pathway	H70,Y74,S85,H119,H120,T145,K148	7	7	238461
+1	Query_25	Generic	Putative proton exit pathway	H120,H197,D198,R267,R268	5	5	238461
+1	Query_25	Generic	Putative water exit pathway	D57,Q62,H63,D193,H197,D198,R267	7	7	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	333	orf333_2_Abobi1_feature_13_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	194	294	3.29061e-12	61.8686	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	83	163	0.000441276	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	421	orf421_2_Abobi1_feature_17_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	190	257	2.85914e-06	45.3051	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	339	orf339_2_Abobi1_feature_21_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334330	190	295	6.5019e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	334330	68	165	5.78077e-13	64.1798	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	258	orf259_Abobi1_feature_24_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	2	74	5.34936e-14	65.7206	pfam00961	LAGLIDADG_1	N	45
+1	Query_29	Specific	334330	133	218	0.000144928	39.9123	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_31	Peptide	146	nad3_Abobi1_feature_4_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	334119	26	112	3.82372e-30	104.419	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	574	nad2_Abobi1_feature_6_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Specific	235603	121	495	9.10479e-78	253.205	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	52	atp8_Abobi1_feature_14_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Non-specific	283561	1	48	2.85781e-05	36.2302	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	394	orf393_Abobi1_feature_2_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Superfamily	355698	17	383	1.28134e-66	217.986	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	383	orf383_Abobi1_feature_4_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Superfamily	355698	322	373	0.00179403	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	261	atp6_Abobi1_feature_2_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Superfamily	351082	19	261	3.0039e-51	167.491	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	205	nad6_Abobi1_feature_4_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Superfamily	354830	1	195	3.49064e-22	88.5193	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	251	cox2_Abobi1_feature_8_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Non-specific	214402	7	248	3.40868e-113	324.396	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	574	nad2_Abobi1_feature_2_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	235603	121	495	9.10479e-78	253.205	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	146	nad3_Abobi1_feature_4_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334119	26	112	3.82372e-30	104.419	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

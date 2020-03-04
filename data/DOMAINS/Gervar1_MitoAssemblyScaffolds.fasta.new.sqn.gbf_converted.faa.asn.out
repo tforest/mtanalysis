@@ -1,0 +1,144 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Gervar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Gervar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	69	nad3_Gervar1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334119	1	64	7.91068e-15	62.4326	pfam00507	Oxidored_q4	N	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	140	orf140_Gervar1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	335245	1	140	1.40716e-33	115.336	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	63	atp9_Gervar1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	349422	6	63	4.70473e-17	66.7643	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	177	atp6_Gervar1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	349411	10	170	2.04352e-30	108.256	cd00310	ATP-synt_Fo_a_6	-	45
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	163	nad6_Gervar1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	354830	1	35	1.43389e-10	56.7682	cl21484	Oxidored_q3	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	120	nad1_Gervar1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	333876	1	108	1.09864e-31	113.336	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	451	nad2_Gervar1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	356474	112	451	2.97922e-52	182.328	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	693	nad5_Gervar1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	639	1.19779e-166	491.83	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	372	cob_Gervar1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214440	12	367	1.84788e-180	504.316	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	186	orf186_Gervar1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	335245	6	169	2.13358e-30	108.787	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	478	nad4_Gervar1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235622	2	457	1.22366e-145	425.771	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	150	orf150_Gervar1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	335245	12	128	3.38057e-29	104.55	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	496	cox1_Gervar1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	238833	11	479	0	760.482	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Binuclear center (heme a3/CuB)	H242,H291,H292,H377	4	4	238833
+1	Query_17	Specific	Low-spin heme (heme a) binding site	H64,H379,S383,V425,T462	5	5	238833
+1	Query_17	Specific	D-pathway	Y20,N83,D94,N101,S104,S158,S159,N165,T169	9	9	238833
+1	Query_17	Specific	K-pathway	H242,Y246,S257,H291,H292,T317,K320	7	7	238833
+1	Query_17	Specific	Electron transfer pathway	F378,R439,R440	3	3	238833
+1	Query_17	Specific	Putative proton exit pathway	H292,H369,D370,R439,R440	5	5	238833
+1	Query_17	Specific	Putative water exit pathway	D229,Q234,H235,D365,H369,D370,R439	7	7	238833
+1	Query_17	Specific	Subunit I/II interface	N58,D229,K266,F269,G270,A295,V296,G297,V300,R303,M311,I319,F322,Y329,G330,G331,L343,N361,A362,I364,L366,A367,L368,H369,D370,I434,S435,R439,R440,I441,A450,W451	32	32	238833
+1	Query_17	Specific	Subunit I/III interface	T11,A93,F97,R99,W106,D146,L150,T168,N172,I192,L199,P202,M210,T219,S220,F221,G226,G227,D229,F239,Y276,L279,G282,L283,I287	25	25	238833
+1	Query_17	Specific	Subunit I/IV interface	L40,S43,A44,K409,L412,I413,D446,I464	8	8	238833
+1	Query_17	Specific	Subunit I/VIa interface	T137,R215,N216,L217,N218	5	5	238833
+1	Query_17	Specific	Subunit I/VIb interface	G297	1	1	238833
+1	Query_17	Specific	Subunit I/VIc interface	G330	1	1	238833
+1	Query_17	Specific	Subunit I/VIIa interface	I117,F120	2	2	238833
+1	Query_17	Specific	Subunit I/VIIb interface	D446,A450	2	2	238833
+1	Query_17	Specific	Subunit I/VIIc interface	F26,I30,A33,I37,L119,F120,I401,A474,V477	9	9	238833
+1	Query_17	Specific	Subunit I/VIIIb interface	W410,F467	2	2	238833
+1	Query_17	Specific	Dimer interface	I192,L199,F239,Y276,L279,G282,L283,I287	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	156	orf156_Gervar1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	335245	2	154	9.60618e-23	87.9867	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	239	cox2_Gervar1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	214402	5	236	3.70194e-96	280.868	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	114	cox3_Gervar1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	238834	1	113	8.47088e-47	149.974	cd01665	Cyt_c_Oxidase_III	NC	294143
+ENDDOMAINS
+SITES
+1	Query_21	Specific	Subunit III/Vb interface	L67	1	1	238834
+1	Query_21	Specific	Subunit III/VIa interface	W36,G37,I38,L55,L81,Y91,Y92,S93,S98,D99,S100	11	11	238834
+1	Query_21	Specific	Subunit III/VIb interface	V28	1	1	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

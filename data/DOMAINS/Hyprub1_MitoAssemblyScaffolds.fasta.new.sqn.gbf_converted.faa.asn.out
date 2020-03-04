@@ -1,0 +1,163 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Hyprub1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Hyprub1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	269	cox3_Hyprub1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	278911	12	269	5.98351e-140	393.7	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_2	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_2	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_2	Specific	Subunit III/VIb interface	I127	1	1	238834
+1	Query_2	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_2	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	220	nad6_Hyprub1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	354830	24	215	5.63294e-23	91.2157	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	264	atp6_Hyprub1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	351082	19	264	5.31695e-49	161.713	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	50	atp8_Hyprub1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	283561	1	48	4.46035e-08	43.1638	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	492	nad4_Hyprub1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235622	34	487	2.28781e-127	379.547	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	368	nad1_Hyprub1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	333876	13	351	4.22243e-109	321.344	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	552	cox1_Hyprub1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	238833	25	527	0	830.588	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Binuclear center (heme a3/CuB)	H256,H305,H306,H391	4	4	238833
+1	Query_8	Specific	Low-spin heme (heme a) binding site	H77,H393,S397,T439,S476	5	5	238833
+1	Query_8	Specific	D-pathway	Y34,N96,D107,N114,S117,S172,S173,N179,T183	9	9	238833
+1	Query_8	Specific	K-pathway	H256,Y260,S271,H305,H306,T331,K334	7	7	238833
+1	Query_8	Specific	Electron transfer pathway	F392,R453,R454	3	3	238833
+1	Query_8	Specific	Putative proton exit pathway	H306,H383,D384,R453,R454	5	5	238833
+1	Query_8	Specific	Putative water exit pathway	D243,Q248,H249,D379,H383,D384,R453	7	7	238833
+1	Query_8	Specific	Subunit I/II interface	N71,D243,K280,F283,G284,T309,V310,G311,V314,R317,L325,I333,F336,Y343,G344,G345,L357,N375,A376,L378,I380,A381,F382,H383,D384,L448,Q449,R453,R454,I455,G464,W465	32	32	238833
+1	Query_8	Specific	Subunit I/III interface	T25,P106,F110,R112,W119,D160,F164,T182,N186,I206,L213,P216,M224,T233,S234,F235,G240,G241,D243,F253,Y290,M293,G296,I297,I301	25	25	238833
+1	Query_8	Specific	Subunit I/IV interface	M54,S57,G58,L423,K426,V427,D460,I478	8	8	238833
+1	Query_8	Specific	Subunit I/Vb interface	S281,Y285,A526	3	3	238833
+1	Query_8	Specific	Subunit I/VIa interface	V151,R229,N230,F231,N232	5	5	238833
+1	Query_8	Specific	Subunit I/VIb interface	G311	1	1	238833
+1	Query_8	Specific	Subunit I/VIc interface	G344	1	1	238833
+1	Query_8	Specific	Subunit I/VIIa interface	F130,V133	2	2	238833
+1	Query_8	Specific	Subunit I/VIIb interface	D460,G464	2	2	238833
+1	Query_8	Specific	Subunit I/VIIc interface	F40,L44,A47,L51,A132,V133,I415,Y488,L491	9	9	238833
+1	Query_8	Specific	Subunit I/VIIIb interface	L424,W481	2	2	238833
+1	Query_8	Specific	Dimer interface	I206,L213,F253,Y290,M293,G296,I297,I301	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	267	orf267_Hyprub1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	273636	50	250	1.34199e-29	110.553	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	408	orf408_Hyprub1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	273636	115	320	3.92802e-60	194.142	TIGR01453	grpIintron_endo	-	45
+1	Query_10	Specific	197761	354	404	3.0492e-08	49.4886	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	300	orf300_Hyprub1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	149	259	8.38826e-19	79.5878	pfam00961	LAGLIDADG_1	-	45
+1	Query_11	Specific	334330	29	115	2.11466e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	391	cob_Hyprub1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214440	10	367	7.67201e-179	501.234	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	301	orf301_Hyprub1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	273636	86	287	4.82575e-28	107.472	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	678	nad5_Hyprub1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	177253	1	630	0	592.753	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	257	orf257_Hyprub1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	137	227	8.30383e-06	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	89	nad4L_Hyprub1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	351118	3	86	4.8384e-17	68.9053	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	252	cox2_Hyprub1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	214438	20	249	1.44002e-109	314.844	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	74	atp9_Hyprub1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	349422	8	70	1.75568e-19	73.6979	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	140	nad3_Hyprub1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334119	19	113	2.06358e-18	74.3738	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	552	nad2_Hyprub1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	235603	124	478	9.57857e-81	260.523	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

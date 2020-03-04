@@ -1,0 +1,844 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mormul1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mormul1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	238	orf238_Mormul1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	273636	34	234	4.58983e-50	162.555	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	378	orf378_Mormul1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	273636	90	366	7.20488e-38	135.206	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	103	orf104_Mormul1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	353929	4	65	3.54775e-13	59.5468	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_3	Generic	active site	Y4,Y15,G17,R25,Y29	6	5	198380
+1	Query_3	Generic	catalytic site	R25	2	1	198380
+1	Query_3	Generic	GIY-YIG motif/motif A	Y4,Y15,V16,G17	6	4	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	117	orf117_Mormul1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	353929	47	108	4.67573e-13	59.5468	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_4	Generic	active site	Y48,Y59,G61,R69,Y73	6	5	198380
+1	Query_4	Generic	catalytic site	R69	2	1	198380
+1	Query_4	Generic	GIY-YIG motif/motif A	I47,Y48,Y59,V60,G61	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	286	orf287_Mormul1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	273636	51	276	1.07044e-53	173.726	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	333	nad1_Mormul1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	333876	7	311	3.37607e-116	337.908	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	260	orf260_Mormul1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	284793	122	160	3.38429e-05	39.8032	pfam07453	NUMOD1	-	299755
+1	Query_7	Specific	197761	202	256	0.00180066	35.6214	smart00497	IENR1	-	299755
+1	Query_7	Specific	197761	46	99	0.00473665	34.4658	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	157	orf157_Mormul1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334321	12	137	7.00539e-34	122.184	pfam00940	RNA_pol	C	355471
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	181	orf181_Mormul1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	355471	1	178	1.87099e-22	93.1641	cl25973	RNA_pol	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	94	orf94_Mormul1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	198392	2	83	3.41338e-23	84.5848	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_12	Specific	putative metal binding site	E73	1	1	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	262	cox2_Mormul1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	214402	14	257	2.10954e-117	335.567	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	390	orf391_Mormul1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	94	193	8.49699e-26	99.6182	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	248	345	8.79401e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	365	orf365_Mormul1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	273636	160	357	2.0339e-48	162.555	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	174	orf175_Mormul1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	273636	86	152	2.32574e-06	45.8397	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	208	orf208_Mormul1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	353929	130	193	1.94133e-16	71.1028	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_18	Generic	active site	Y133,Y144,G146,R154,Y158	6	5	198380
+1	Query_18	Generic	catalytic site	R154	2	1	198380
+1	Query_18	Generic	GIY-YIG motif/motif A	G131,V132,Y133,Y144,V145,G146	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	195	orf196_Mormul1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	273636	25	192	2.40863e-28	105.16	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_19	Generic	DNA binding site	N112,P113,M114,F115,H119,T123,M127,S128,L132,G133,P137,N138,K140,S161,I165,S170,S173,S175,R176,Y177	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	791	nad4_Mormul1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	235622	1	462	1.56796e-142	428.852	PRK05846	PRK05846	-	45
+1	Query_20	Specific	334330	510	610	3.36315e-23	94.6106	pfam00961	LAGLIDADG_1	-	45
+1	Query_20	Specific	334330	669	762	4.7921e-13	65.7206	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	339	orf340_Mormul1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	50	147	3.19568e-24	94.6106	pfam00961	LAGLIDADG_1	-	45
+1	Query_21	Specific	334330	206	306	1.82685e-23	92.6846	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	246	nad5_Mormul1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	214462	9	237	9.25046e-76	237.257	MTH00217	ND4	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	158	orf159_Mormul1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	353929	84	144	1.08594e-14	64.9396	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_23	Generic	active site	Y85,Y96,G98,R106,Y110	6	5	198380
+1	Query_23	Generic	catalytic site	R106	2	1	198380
+1	Query_23	Generic	GIY-YIG motif/motif A	V84,Y85,Y96,V97,G98	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	150	orf151_Mormul1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	273636	42	137	9.05605e-24	91.6785	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+SITES
+1	Query_24	Generic	DNA binding site	N115,P116,M117,N118,H122,T126,M130,S131,K135	21	9	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_25	Peptide	266	cox3_Mormul1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	278911	9	266	1.03032e-120	344.779	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_25	Specific	Subunit I/III interface	K79,Q82,G83,S94,F97,S101,L102,H108,S196,V197,S200,F204	12	12	238834
+1	Query_25	Specific	Subunit III/Vb interface	F163	1	1	238834
+1	Query_25	Specific	Subunit III/VIa interface	W132,E133,V134,L151,L177,I187,N188,A189,A194,D195,S196	11	11	238834
+1	Query_25	Specific	Subunit III/VIb interface	A124	1	1	238834
+1	Query_25	Specific	Subunit III/VIIa interface	L61,R64,D65,I68,T71,F72,Q73	7	7	238834
+1	Query_25	Specific	Phospholipid binding site	W62,F63,I66,I67,G70,H76,G87,F88,F91,F219,R226,V238,G239	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	230	orf230_Mormul1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	38	210	6.45668e-62	190.835	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	245	orf245_Mormul1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	53	228	1.51757e-39	134.211	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	29	orf30_Mormul1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	353929	4	28	7.25868e-07	40.2869	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_28	Generic	active site	Y5,Y16,G18,R26	6	4	198380
+1	Query_28	Generic	catalytic site	R26	2	1	198380
+1	Query_28	Generic	GIY-YIG motif/motif A	I4,Y5,Y16,V17,G18	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_29	Peptide	164	orf164_Mormul1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	198392	53	150	1.47668e-20	80.3476	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_29	Specific	putative active site	Y56,Y67,G69,R77,Y81,E143	7	6	198392
+1	Query_29	Specific	putative metal binding site	E143	1	1	198392
+1	Query_29	Specific	GIY-YIG motif/motif A	G54,V55,Y56,Y67,I68,G69	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	146	orf147_Mormul1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Non-specific	273636	28	135	2.29622e-15	69.3369	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_30	Generic	DNA binding site	N60,H61,F62,F63,H67,I71,M75,S76,S80,I81,T85,T86,Y88,R105,E109,S114,T117,K119,R120,Y121,E131	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_32	Peptide	315	orf316_Mormul1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	334330	30	128	7.73748e-22	88.0622	pfam00961	LAGLIDADG_1	-	45
+1	Query_32	Specific	334330	183	282	5.72022e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	306	orf306_Mormul1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	334330	172	275	1.79666e-26	100.003	pfam00961	LAGLIDADG_1	-	45
+1	Query_33	Specific	334330	13	113	1.0884e-25	98.0774	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	304	orf305_Mormul1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	334330	170	273	2.42135e-26	99.6182	pfam00961	LAGLIDADG_1	-	45
+1	Query_34	Specific	334330	11	111	1.56311e-25	97.307	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	312	orf313_Mormul1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	334330	29	127	2.8448e-20	83.825	pfam00961	LAGLIDADG_1	-	45
+1	Query_35	Specific	334330	182	282	2.03612e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	74	orf75_Mormul1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Superfamily	353929	26	59	5.18204e-05	37.2053	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_36	Generic	active site	Y29,Y40,G42,W50,Y54	6	5	198380
+1	Query_36	Generic	catalytic site	W50	2	1	198380
+1	Query_36	Generic	GIY-YIG motif/motif A	G27,I28,Y29,Y40,V41,G42	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	209	nad2_Mormul1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Superfamily	356474	146	209	3.64495e-13	67.1533	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	238	nad5_Mormul1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Non-specific	235836	1	236	4.40865e-85	264.713	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	274	orf274_1_Mormul1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	335245	83	255	2.20076e-54	173.501	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	143	orf143_Mormul1_feature_9_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_40	Specific	334330	43	142	8.16777e-15	65.3354	pfam00961	LAGLIDADG_1	-	45
+1	Query_40	Non-specific	215356	6	71	0.00276616	36.548	PLN02659	PLN02659	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	148	orf149_Mormul1_feature_11_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Specific	334330	33	134	1.04925e-16	70.343	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	96	orf97_Mormul1_feature_13_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_42	Superfamily	353929	1	85	6.49889e-15	63.3988	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_42	Generic	active site	Y11,G13,T21,Y23,E75	6	5	198380
+1	Query_42	Generic	catalytic site	T21,E75	2	2	198380
+1	Query_42	Generic	metal binding site	E75	1	1	198380
+1	Query_42	Generic	GIY-YIG motif/motif A	Y11,V12,G13	6	3	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	34	orf35_Mormul1_feature_15_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_43	Superfamily	353929	1	27	0.000161295	34.5089	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_43	Generic	active site	Y4,Y15,G17,D25	6	4	198380
+1	Query_43	Generic	catalytic site	D25	2	1	198380
+1	Query_43	Generic	GIY-YIG motif/motif A	G2,I3,Y4,Y15,I16,G17	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_44	Peptide	150	orf150_Mormul1_feature_19_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_44	Specific	198392	49	139	2.65235e-24	89.5924	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_44	Specific	putative active site	Y52,Y63,G65,R73,Y77,E129	7	6	198392
+1	Query_44	Specific	putative metal binding site	E129	1	1	198392
+1	Query_44	Specific	GIY-YIG motif/motif A	G50,I51,Y52,Y63,I64,G65	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_45	Peptide	143	orf143_Mormul1_feature_21_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_45	Non-specific	273636	4	141	2.02195e-28	103.62	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_45	Generic	DNA binding site	N82,P83,M84,Y85,H89,T93,M97,S98,G102,G103,T105,R123,E127,N132,A135,I137,R138,Y139	21	18	238175
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_46	Peptide	33	orf34_Mormul1_feature_23_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Non-specific	234792	3	21	1.06821e-05	38.5604	PRK00558	uvrC	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	76	orf77_Mormul1_feature_25_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Non-specific	273636	1	71	5.61592e-15	65.8701	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	121	orf121_Mormul1_feature_27_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Non-specific	273636	1	106	6.2286e-15	67.4109	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_48	Generic	DNA binding site	H34,P35,M36,F37,R41,A45,I49,G50,G54,T55,I56,Y58,R75,K79,S84,T87,S90,Y91,C92,K101	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_49	Peptide	117	orf118_Mormul1_feature_31_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Superfamily	353929	47	107	8.30717e-10	51.0724	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_49	Generic	active site	F48,N59,G61,Q69,Y73	6	5	198380
+2	Query_49	Generic	catalytic site	Q69	2	1	198380
+2	Query_49	Generic	GIY-YIG motif/motif A	I47,F48,N59,V60,G61	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_50	Peptide	254	orf255_Mormul1_feature_33_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	198392	97	202	9.20705e-27	99.2224	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_50	Specific	311417	209	237	0.00569908	33.7348	pfam07460	NUMOD3	-	45
+ENDDOMAINS
+SITES
+2	Query_50	Specific	putative active site	Y100,Y111,G113,R121,Y125,E187,N199	7	7	198392
+2	Query_50	Specific	putative metal binding site	E187	1	1	198392
+2	Query_50	Specific	GIY-YIG motif/motif A	G98,V99,Y100,Y111,V112,G113	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_51	Peptide	362	orf362_Mormul1_feature_35_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Non-specific	273636	116	320	6.3428e-35	127.117	TIGR01453	grpIintron_endo	C	45
+2	Query_51	Non-specific	238175	309	362	2.05061e-13	65.957	cd00283	GIY-YIG_Cterm	C	45
+ENDDOMAINS
+SITES
+2	Query_51	Generic	DNA binding site	H347,P348,N349,F350,R354,T358,M362	21	7	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_52	Peptide	181	orf181_Mormul1_feature_39_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Superfamily	353929	102	135	4.63265e-06	42.9833	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_52	Generic	active site	F105,Y116,D118,R126,Y130	6	5	198380
+2	Query_52	Generic	catalytic site	R126	2	1	198380
+2	Query_52	Generic	GIY-YIG motif/motif A	G103,I104,F105,Y116,V117,D118	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_53	Peptide	194	orf194_Mormul1_feature_43_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Non-specific	273636	47	168	4.42349e-17	75.5001	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	298	orf299_Mormul1_feature_47_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	273636	42	294	7.37618e-39	135.591	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	103	orf104_Mormul1_feature_49_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Non-specific	273636	1	90	8.30801e-06	41.9878	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_55	Generic	DNA binding site	T27,M31,S32,K36,G42,P46,M47,K49,T73,K77,S82	21	11	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_56	Peptide	407	cox1_Mormul1_feature_51_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	125	227	2.81294e-21	87.677	pfam00961	LAGLIDADG_1	-	45
+2	Query_56	Specific	334330	286	381	8.72201e-18	78.047	pfam00961	LAGLIDADG_1	-	45
+2	Query_56	Superfamily	350997	1	28	7.7623e-06	47.5553	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+2	Query_56	Generic	Low-spin heme binding site	T32,Y43	15	2	238461
+2	Query_56	Generic	D-pathway	Y17	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_57	Peptide	87	orf87_Mormul1_feature_55_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Superfamily	353929	11	74	2.84365e-11	53.7688	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_57	Generic	active site	N12,Y23,S25,R33,Y37	6	5	198380
+2	Query_57	Generic	catalytic site	R33	2	1	198380
+2	Query_57	Generic	GIY-YIG motif/motif A	I11,N12,Y23,V24,S25	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_58	Peptide	182	orf183_Mormul1_feature_57_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Non-specific	273636	28	176	4.53926e-25	96.3009	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_58	Generic	DNA binding site	N88,P89,F90,F91,H95,A99,M103,S104,T108,G109,S113,D114,K117,K146,E150,S155,T158,L160,R161,Y162,W173	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_59	Peptide	235	atp8_Mormul1_feature_59_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	198392	134	224	6.01063e-24	91.1332	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_59	Non-specific	283561	1	47	0.000838429	36.2302	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+SITES
+2	Query_59	Specific	putative active site	Y137,Y148,G150,R158,Y162,E214	7	6	198392
+2	Query_59	Specific	putative metal binding site	E214	1	1	198392
+2	Query_59	Specific	GIY-YIG motif/motif A	G135,I136,Y137,Y148,V149,G150	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_60	Peptide	400	orf400_Mormul1_feature_61_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	119	218	1.02311e-20	86.1362	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	278	370	1.3732e-12	63.4094	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	162	orf163_Mormul1_feature_65_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Non-specific	273636	35	156	1.86949e-23	91.2933	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_61	Generic	DNA binding site	N67,H68,F69,Y70,H74,A78,I82,S83,T97,G98,P102,T103,K105,T126,N130,S135,T138,S140,N141,Y142,K152	21	21	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_62	Peptide	149	orf150_Mormul1_feature_67_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	198392	48	138	3.67597e-24	89.2072	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+2	Query_62	Specific	putative active site	Y51,Y62,G64,R72,Y76,E128	7	6	198392
+2	Query_62	Specific	putative metal binding site	E128	1	1	198392
+2	Query_62	Specific	GIY-YIG motif/motif A	G49,V50,Y51,Y62,V63,G64	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_63	Peptide	297	orf298_Mormul1_feature_71_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Non-specific	273636	44	287	1.30682e-37	132.51	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	73	atp9_Mormul1_feature_73_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Specific	349422	6	70	1.14922e-21	79.0907	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_65	Peptide	127	orf128_Mormul1_feature_77_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Superfamily	353929	47	110	1.13338e-11	56.4652	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_65	Generic	active site	Y50,Y61,G63,R71,Y75	6	5	198380
+2	Query_65	Generic	catalytic site	R71	2	1	198380
+2	Query_65	Generic	GIY-YIG motif/motif A	G48,I49,Y50,Y61,V62,G63	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_66	Peptide	1048	orf1048_Mormul1_feature_83_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Superfamily	355471	248	1046	5.00574e-95	320.047	cl25973	RNA_pol	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	470	cox1_Mormul1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Specific	238833	1	443	0	742.763	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+2	Query_67	Specific	Binuclear center (heme a3/CuB)	H170,H219,H220,H305	4	4	238833
+2	Query_67	Specific	D-pathway	N10,D21,N28,S31,S86,S87,N93,T97	9	8	238833
+2	Query_67	Specific	K-pathway	H170,Y174,S185,H219,H220,T245,K248	7	7	238833
+2	Query_67	Specific	Electron transfer pathway	F306,R368,R369	3	3	238833
+2	Query_67	Specific	Putative proton exit pathway	H220,H297,D298,R368,R369	5	5	238833
+2	Query_67	Specific	Putative water exit pathway	D157,Q162,H163,D293,H297,D298,R368	7	7	238833
+2	Query_67	Specific	Subunit I/II interface	D157,K194,F197,G198,S223,V224,G225,V228,R231,M239,I247,F250,A257,G258,G259,L271,N289,A290,I292,V294,A295,L296,H297,D298,L363,A364,R368,R369,I370,G379,W380	32	31	238833
+2	Query_67	Specific	Subunit I/III interface	V20,F24,R26,W33,D74,F78,T96,N100,I120,L127,P130,M138,T147,S148,F149,G154,G155,D157,F167,Y204,L207,G210,V211,I215	25	24	238833
+2	Query_67	Specific	Subunit I/Vb interface	P195,Y199,A442	3	3	238833
+2	Query_67	Specific	Subunit I/VIa interface	L65,R143,N144,F145,N146	5	5	238833
+2	Query_67	Specific	Subunit I/VIb interface	G225	1	1	238833
+2	Query_67	Specific	Subunit I/VIc interface	G258	1	1	238833
+2	Query_67	Specific	Subunit I/VIIa interface	A44,F47	2	2	238833
+2	Query_67	Specific	Subunit I/VIIb interface	D375,G379	2	2	238833
+2	Query_67	Specific	Subunit I/VIIIb interface	L339,V396	2	2	238833
+2	Query_67	Specific	Dimer interface	I120,L127,F167,Y204,L207,G210,V211,I215	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_68	Peptide	349	orf349_Mormul1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Specific	334330	189	308	4.19615e-17	75.7358	pfam00961	LAGLIDADG_1	-	45
+2	Query_68	Specific	334330	56	141	4.98405e-11	58.7871	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	356	orf356_Mormul1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Specific	334330	207	312	1.37585e-12	63.0242	pfam00961	LAGLIDADG_1	-	45
+2	Query_69	Specific	334330	85	181	1.1434e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	311	orf311_Mormul1_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Specific	334330	186	275	1.97522e-08	51.0831	pfam00961	LAGLIDADG_1	-	45
+2	Query_70	Specific	334330	80	146	1.33111e-05	42.9939	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	335	orf335_Mormul1_feature_18_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Specific	334330	209	305	1.12687e-19	82.2842	pfam00961	LAGLIDADG_1	-	45
+2	Query_71	Specific	334330	100	178	1.51644e-06	45.6903	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	364	orf364_Mormul1_feature_22_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Specific	334330	224	324	1.45351e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	211	orf211_Mormul1_feature_26_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Non-specific	273636	94	210	4.43517e-35	123.265	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	257	orf257_Mormul1_feature_28_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_74	Specific	273636	38	252	2.08117e-42	143.68	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	178	orf178_Mormul1_feature_31_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_75	Specific	198392	79	167	7.72327e-21	81.5032	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+2	Query_75	Specific	putative active site	Y80,Y91,G93,R101,Y105,E157	7	6	198392
+2	Query_75	Specific	putative metal binding site	E157	1	1	198392
+2	Query_75	Specific	GIY-YIG motif/motif A	V79,Y80,Y91,V92,G93	6	5	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_76	Peptide	188	orf188_Mormul1_feature_33_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_76	Non-specific	273636	45	188	2.70271e-15	70.4925	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_76	Generic	DNA binding site	P105,H106,M107,F108,H112,T116,I120,S121,F128,G129,P142,S143,K145,R175,V179,S184,T187	21	17	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_77	Peptide	279	orf279_Mormul1_feature_35_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_77	Specific	273636	47	266	1.47747e-39	137.132	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	172	orf172_Mormul1_feature_39_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_78	Superfamily	353929	101	163	1.54992e-17	73.0288	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_78	Generic	active site	Y104,Y115,G117,R125,Y129	6	5	198380
+2	Query_78	Generic	catalytic site	R125	2	1	198380
+2	Query_78	Generic	GIY-YIG motif/motif A	G102,I103,Y104,Y115,I116,G117	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_79	Peptide	120	orf121_Mormul1_feature_41_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_79	Non-specific	273636	1	106	2.10525e-17	73.9593	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+SITES
+2	Query_79	Generic	DNA binding site	N83,I84,F85,F86,H90,S94,I98,S99,K103,G104,P108	21	11	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_80	Peptide	67	cob_Mormul1_feature_45_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_80	Non-specific	177145	2	34	4.99637e-06	41.59	MTH00074	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	182	orf182_Mormul1_feature_47_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_81	Non-specific	273636	20	161	3.17124e-22	88.9821	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	238	atp6_Mormul1_feature_49_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_82	Specific	273458	32	238	1.44746e-49	161.605	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	218	orf219_Mormul1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_84	Non-specific	273636	1	214	4.81068e-34	120.568	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_85	Peptide	228	nad6_Mormul1_feature_6_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_85	Superfamily	354830	8	199	1.86628e-24	95.4529	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	199	orf200_Mormul1_feature_10_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_86	Non-specific	273636	20	193	2.46399e-22	89.7525	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_86	Generic	DNA binding site	H112,T116,I120,S121,K125,G126,N130,D131,T133,N163,E167,S172,T175,L177,S178,Y179,W190	21	17	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_87	Peptide	132	orf133_Mormul1_feature_12_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_87	Non-specific	273636	9	124	2.5972e-13	63.5589	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_87	Generic	DNA binding site	H47,P48,M49,Y50,H54,T58,I62,S63,S67,K68,V72,Y73,A75,L94,K98,S103,T106,S108,R109,Y110	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_88	Peptide	186	orf187_Mormul1_feature_16_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_88	Non-specific	273636	28	168	6.68077e-23	90.5229	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_88	Generic	DNA binding site	N98,P99,N100,F101,R105,T109,M113,S114,G118,T119,I121,R138,K142,D147,T150,L152,K153,Y154,Q164	21	19	238175
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_89	Peptide	177	orf177_Mormul1_feature_18_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Superfamily	353929	95	154	1.0885e-15	68.4064	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_89	Generic	active site	Y98,Y109,G111,T119,Y123	6	5	198380
+3	Query_89	Generic	catalytic site	T119	2	1	198380
+3	Query_89	Generic	GIY-YIG motif/motif A	G96,V97,Y98,Y109,V110,G111	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_90	Peptide	109	orf109_Mormul1_feature_20_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_90	Non-specific	273636	7	108	0.00233308	35.4394	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	278	orf279_Mormul1_feature_24_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_91	Non-specific	273636	58	270	8.65864e-34	122.109	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_92	Peptide	97	orf98_Mormul1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_92	Superfamily	353929	15	73	1.89218e-14	62.2432	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_92	Generic	active site	Y18,Y28,G30,R38,Y42	6	5	198380
+3	Query_92	Generic	catalytic site	R38	2	1	198380
+3	Query_92	Generic	GIY-YIG motif/motif A	G16,I17,Y18,Y28,I29,G30	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_93	Peptide	87	orf88_Mormul1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_93	Specific	311417	6	41	4.65277e-12	54.5356	pfam07460	NUMOD3	-	45
+ENDDOMAINS
+SITES
+3	Query_93	Generic	DNA binding site	H26,P27,F28,Y29,H33,T37,M41,S42,G46,T47,T48,Y50,R67,E71,D76,T79,I81,R82,Y83	21	19	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_94	Peptide	171	orf172_Mormul1_feature_6_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Non-specific	273636	26	139	4.23053e-14	67.0257	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	322	orf323_Mormul1_feature_10_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_95	Non-specific	273636	77	316	4.05027e-37	131.739	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	256	orf256_Mormul1_feature_12_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Specific	273636	34	252	1.99082e-51	166.792	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	101	orf102_Mormul1_feature_15_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_97	Non-specific	273636	7	95	4.84877e-12	58.9365	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_97	Generic	DNA binding site	N24,P25,M26,K27,H31,T35,M39,I40,G44,I45,S46,N48,R65,E69,S74,T77,L79,R80,Y81,W92	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_98	Peptide	204	orf205_Mormul1_feature_17_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_98	Specific	198392	84	189	7.0827e-21	82.2736	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+3	Query_98	Specific	putative active site	Y87,Y98,D100,R108,Y112,E174,N186	7	7	198392
+3	Query_98	Specific	putative metal binding site	E174	1	1	198392
+3	Query_98	Specific	GIY-YIG motif/motif A	G85,V86,Y87,Y98,I99,D100	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_99	Peptide	71	orf72_Mormul1_feature_21_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_99	Specific	197761	15	62	1.91816e-10	50.259	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_100	Peptide	137	orf138_Mormul1_feature_23_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_100	Specific	198392	36	126	5.4714e-21	80.7328	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+3	Query_100	Specific	putative active site	N39,Y50,G52,R60,Y64,E116	7	6	198392
+3	Query_100	Specific	putative metal binding site	E116	1	1	198392
+3	Query_100	Specific	GIY-YIG motif/motif A	G37,I38,N39,Y50,V51,G52	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_101	Peptide	301	orf301_Mormul1_feature_25_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_101	Non-specific	130082	1	251	5.2792e-11	60.7933	TIGR01009	rpsC_bact	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	161	orf162_Mormul1_feature_27_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_102	Non-specific	273636	28	153	1.43689e-20	83.5893	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_103	Peptide	142	orf143_Mormul1_feature_29_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_103	Superfamily	353929	59	122	4.32259e-14	63.0136	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_103	Generic	active site	Y62,Y73,G75,R83,Y87	6	5	198380
+3	Query_103	Generic	catalytic site	R83	2	1	198380
+3	Query_103	Generic	GIY-YIG motif/motif A	G60,I61,Y62,Y73,I74,G75	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_104	Peptide	148	orf149_Mormul1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_104	Specific	334330	33	134	1.04925e-16	70.343	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_105	Peptide	143	orf143_Mormul1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_105	Specific	334330	43	142	8.16777e-15	65.3354	pfam00961	LAGLIDADG_1	-	45
+3	Query_105	Non-specific	215356	6	71	0.00276616	36.548	PLN02659	PLN02659	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_106	Peptide	260	nad5_Mormul1_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_106	Non-specific	235836	1	236	6.77139e-86	267.795	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_107	Peptide	274	orf274_2_Mormul1_feature_10_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_107	Specific	335245	83	255	2.20076e-54	173.501	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_108	Peptide	190	orf190_Mormul1_feature_13_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_108	Specific	335245	133	190	1.08412e-06	46.3851	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_109	Peptide	288	orf289_Mormul1_feature_15_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_109	Specific	273636	37	278	1.08969e-52	171.03	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_112	Peptide	218	orf219_Mormul1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_112	Non-specific	273636	1	214	4.81068e-34	120.568	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_113	Peptide	171	nad6_Mormul1_feature_8_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_113	Superfamily	354830	2	142	1.24089e-11	59.6293	cl21484	Oxidored_q3	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_114	Peptide	199	orf200_Mormul1_feature_12_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_114	Non-specific	273636	20	193	2.46399e-22	89.7525	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_114	Generic	DNA binding site	H112,T116,I120,S121,K125,G126,N130,D131,T133,N163,E167,S172,T175,L177,S178,Y179,W190	21	17	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_115	Peptide	100	orf101_Mormul1_feature_2_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_115	Non-specific	273636	6	94	9.29125e-12	58.1661	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_115	Generic	DNA binding site	N23,P24,M25,K26,H30,T34,M38,I39,G43,I44,S45,N47,R64,E68,S73,T76,L78,K79,Y80,K90	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_116	Peptide	256	orf256_Mormul1_feature_5_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_116	Specific	273636	34	252	1.99082e-51	166.792	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_117	Peptide	148	orf148_Mormul1_feature_7_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_117	Non-specific	273636	4	142	2.00952e-22	88.2117	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_117	Generic	DNA binding site	H66,T70,L74,S75,S79,E80,T82,K83,L85,R112,E116,S121,S124,T126,K127,Y128,W139	21	17	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_118	Peptide	149	orf150_Mormul1_feature_9_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_118	Superfamily	353929	78	141	9.09291e-15	64.9396	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_118	Generic	active site	Y81,Y92,G94,R102,Y106	6	5	198380
+3	Query_118	Generic	catalytic site	R102	2	1	198380
+3	Query_118	Generic	GIY-YIG motif/motif A	G79,I80,Y81,Y92,I93,G94	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_119	Peptide	322	orf323_Mormul1_feature_2_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_119	Non-specific	273636	77	316	4.05027e-37	131.739	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_120	Peptide	198	orf198_Mormul1_feature_4_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_120	Specific	273636	34	197	7.38988e-43	142.525	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

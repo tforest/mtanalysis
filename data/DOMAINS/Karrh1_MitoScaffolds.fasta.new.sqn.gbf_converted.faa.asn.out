@@ -1,0 +1,197 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Karrh1_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Karrh1_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	266	cox2_Karrh1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	214438	34	263	4.46562e-113	324.089	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	156	orf156_Karrh1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	350997	1	105	4.27568e-41	143.007	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_3	Generic	Low-spin heme binding site	R56,R57,F86	15	3	238461
+1	Query_3	Generic	Putative proton exit pathway	R56,R57	5	2	238461
+1	Query_3	Generic	Putative water exit pathway	R56	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	408	orf409_Karrh1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	350997	1	128	7.92172e-84	264.345	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_4	Specific	334330	182	277	7.17254e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	317	403	1.35987e-10	57.6315	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_4	Generic	Binuclear center (active site)	H48,H49	4	2	238461
+1	Query_4	Generic	K-pathway	Y3,S14,H48,H49,T74,K77	7	6	238461
+1	Query_4	Generic	Putative proton exit pathway	H49,H126,D127	5	3	238461
+1	Query_4	Generic	Putative water exit pathway	D122,H126,D127	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	446	orf447_Karrh1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	350997	11	121	8.51491e-62	208.106	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_6	Specific	334330	219	299	5.01292e-06	44.9199	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_6	Generic	D-pathway	S38,S39,N45,T49	9	4	238461
+1	Query_6	Generic	Putative water exit pathway	D109,Q114,H115	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	765	orf765_Karrh1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	350997	1	58	8.32968e-22	99.4796	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_7	Specific	334330	137	229	5.0929e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	284	373	0.000331199	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_7	Generic	Low-spin heme binding site	W56	15	1	238461
+1	Query_7	Generic	D-pathway	N10,D21,N28,S31	9	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_10	Peptide	352	orf352_Karrh1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	350997	35	105	6.08042e-29	116.7	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_10	Specific	198392	179	266	4.71655e-27	101.919	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_10	Specific	197761	292	341	0.00433383	34.851	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+1	Query_10	Generic	Low-spin heme binding site	S68,R72,Y89,H96,M100,I101,V105	15	7	238461
+1	Query_10	Generic	D-pathway	Y53	9	1	238461
+1	Query_10	Specific	putative active site	Y181,Y192,G194,R202,Y206,E251,N263	7	7	198392
+1	Query_10	Specific	putative metal binding site	E251	1	1	198392
+1	Query_10	Specific	GIY-YIG motif/motif A	G179,V180,Y181,Y192,V193,G194	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	560	orf560_Karrh1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	355471	389	557	2.25335e-18	88.9269	cl25973	RNA_pol	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	229	nad6_Karrh1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	354830	20	204	1.38295e-26	101.066	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	287	orf288_Karrh1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	273636	97	282	3.29396e-41	141.369	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	486	nad3_Karrh1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334119	26	112	3.66378e-13	65.129	pfam00507	Oxidored_q4	-	351141
+1	Query_18	Non-specific	179877	293	473	0.00990452	38.2782	PRK04778	PRK04778	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	599	nad2_Karrh1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	235603	26	524	7.81559e-81	262.064	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	269	cox3_Karrh1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	278911	12	269	5.81965e-130	368.276	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_20	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_20	Specific	Subunit III/Vb interface	K166	1	1	238834
+1	Query_20	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,A190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_20	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_20	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,I76	7	7	238834
+1	Query_20	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	392	cob_Karrh1_feature_105_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	214440	10	366	8.28823e-176	493.53	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	307	orf307_Karrh1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	273636	92	305	2.98734e-26	102.849	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	255	atp6_Karrh1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	273458	27	252	1.27896e-47	157.368	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	938	nad5_Karrh1_feature_126_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	214400	1	628	0	636.734	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_29	Peptide	303	orf303_Karrh1_feature_130_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_29	Specific	334330	182	277	5.02538e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+2	Query_29	Specific	334330	67	158	9.6933e-08	49.1571	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	445	orf445_Karrh1_feature_134_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Specific	334330	312	412	1.74267e-31	115.797	pfam00961	LAGLIDADG_1	-	45
+2	Query_30	Specific	334330	152	253	1.71811e-27	105.011	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	89	nad4L_Karrh1_feature_137_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Superfamily	351118	5	86	1.48329e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	223	orf224_Karrh1_feature_141_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Non-specific	273636	29	206	6.92178e-28	104.775	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	371	nad1_Karrh1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	333876	12	354	2.48823e-119	347.538	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	556	nad4_Karrh1_feature_148_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	235622	9	481	1.92212e-133	397.266	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	438	orf438_Karrh1_feature_152_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	306	406	1.66236e-25	99.6182	pfam00961	LAGLIDADG_1	-	45
+2	Query_36	Specific	334330	150	248	1.27459e-21	88.8326	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

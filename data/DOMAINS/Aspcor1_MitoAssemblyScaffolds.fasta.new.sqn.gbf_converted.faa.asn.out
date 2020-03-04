@@ -1,0 +1,180 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Aspcor1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Aspcor1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	597	cox1_Aspcor1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	80	581	0	816.721	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	Q310,H359,H360,H445	4	4	238833
+1	Query_1	Specific	Low-spin heme (heme a) binding site	H131,H447,S451,T493,S530	5	5	238833
+1	Query_1	Specific	D-pathway	Y88,N150,D161,N168,S171,S226,S227,N233,T237	9	9	238833
+1	Query_1	Specific	K-pathway	Q310,Y314,S325,H359,H360,T385,K388	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F446,R507,R508	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H360,H437,D438,R507,R508	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D297,Q302,H303,D433,H437,D438,R507	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	N125,D297,N335,F337,G338,T363,V364,G365,V368,R371,L379,I387,F390,Y397,G398,G399,L411,N429,A430,L432,V434,A435,F436,H437,D438,L502,Q503,R507,R508,I509,G518,W519	32	32	238833
+1	Query_1	Specific	Subunit I/III interface	P160,L164,R166,W173,D214,F218,I236,N240,I260,L267,P270,M278,T287,S288,F289,G294,G295,D297,S307,Y344,M347,G350,V351,I355	25	24	238833
+1	Query_1	Specific	Subunit I/IV interface	L108,S111,G112,F477,K480,V481,D514,V532	8	8	238833
+1	Query_1	Specific	Subunit I/VIa interface	I205,R283,N284,F285,N286	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G365	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G398	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	F184,S187	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D514,G518	2	2	238833
+1	Query_1	Specific	Subunit I/VIIc interface	F94,L98,A101,L105,A186,S187,L469,Y542,L545	9	9	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	A478,W535	2	2	238833
+1	Query_1	Specific	Dimer interface	I260,L267,S307,Y344,M347,G350,V351,I355	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	231	orf231_Aspcor1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	3	98	3.75375e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	140	227	1.91276e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	411	orf411_Aspcor1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	122	220	3.03357e-23	93.0698	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	279	381	6.15648e-17	75.7358	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	291	orf291_Aspcor1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	167	259	1.42449e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	56	135	0.00244065	36.4455	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	296	orf296_Aspcor1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	68	134	0.00021813	39.5271	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	305	orf305_Aspcor1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	182	277	6.77943e-16	71.8838	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	65	150	1.20816e-08	51.4683	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	338	orf338_Aspcor1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	68	165	2.34623e-14	68.0318	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	189	294	3.73783e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	269	cox3_Aspcor1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	278911	12	269	1.18267e-140	395.626	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Subunit I/III interface	A82,K85,G86,S97,F100,A104,I105,H111,S199,V200,S203,F207	12	12	238834
+1	Query_11	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_11	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,T190,V191,S192,S197,D198,S199	11	11	238834
+1	Query_11	Specific	Subunit III/VIb interface	L127	1	1	238834
+1	Query_11	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_11	Specific	Phospholipid binding site	W65,F66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	216	nad6_Aspcor1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	354830	25	216	2.92047e-14	68.3241	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	257	atp6_Aspcor1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	351082	12	257	2.56138e-52	170.187	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	48	atp8_Aspcor1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	283561	1	48	2.82093e-09	46.2454	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	488	nad4_Aspcor1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235622	32	484	2.59402e-133	394.569	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	350	nad1_Aspcor1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	333876	9	333	3.20209e-106	313.255	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	385	cob_Aspcor1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	214440	10	367	0	517.798	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	340	orf340_Aspcor1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	273636	116	327	6.04547e-24	97.4565	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	562	nad2_Aspcor1_feature_105_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	235603	2	483	3.27296e-81	262.064	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	665	nad5_Aspcor1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	214400	1	627	0	603.992	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	352	orf352_Aspcor1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	234	324	2.41356e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	89	nad4L_Aspcor1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	351118	5	87	4.08048e-19	74.2981	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	253	cox2_Aspcor1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	214438	18	247	1.76308e-109	314.459	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	135	nad3_Aspcor1_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334119	21	113	4.35685e-16	68.2106	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	74	atp9_Aspcor1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	349422	6	70	4.31356e-19	72.5423	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

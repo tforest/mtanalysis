@@ -1,0 +1,165 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Lasov1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Lasov1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	229	nad6_Lasov1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	354830	22	215	6.55094e-21	86.4285	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	269	cox3_Lasov1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	278911	12	269	2.52842e-133	376.751	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_3	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,S199,V200,T203,F207	12	12	238834
+1	Query_3	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_3	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,N190,V191,A192,S197,D198,S199	11	11	238834
+1	Query_3	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_3	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_3	Specific	Phospholipid binding site	W65,F66,I69,I70,S73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	567	cox1_Lasov1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238833	25	527	0	838.678	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Binuclear center (heme a3/CuB)	H256,H305,H306,H391	4	4	238833
+1	Query_5	Specific	Low-spin heme (heme a) binding site	H77,H393,S397,T439,S476	5	5	238833
+1	Query_5	Specific	D-pathway	Y34,N96,D107,N114,S117,S172,S173,N179,T183	9	9	238833
+1	Query_5	Specific	K-pathway	H256,Y260,S271,H305,H306,T331,K334	7	7	238833
+1	Query_5	Specific	Electron transfer pathway	F392,R453,R454	3	3	238833
+1	Query_5	Specific	Putative proton exit pathway	H306,H383,D384,R453,R454	5	5	238833
+1	Query_5	Specific	Putative water exit pathway	D243,Q248,H249,D379,H383,D384,R453	7	7	238833
+1	Query_5	Specific	Subunit I/II interface	N71,D243,K280,F283,G284,T309,V310,G311,V314,R317,L325,I333,F336,Y343,G344,G345,L357,N375,A376,L378,I380,A381,F382,H383,D384,L448,Q449,R453,R454,I455,G464,W465	32	32	238833
+1	Query_5	Specific	Subunit I/III interface	T25,P106,F110,R112,W119,D160,F164,T182,N186,I206,L213,P216,M224,T233,S234,F235,G240,G241,D243,F253,Y290,M293,G296,V297,I301	25	25	238833
+1	Query_5	Specific	Subunit I/IV interface	M54,S57,G58,L423,K426,A427,D460,V478	8	8	238833
+1	Query_5	Specific	Subunit I/Vb interface	S281,Y285,A526	3	3	238833
+1	Query_5	Specific	Subunit I/VIa interface	V151,R229,N230,F231,N232	5	5	238833
+1	Query_5	Specific	Subunit I/VIb interface	G311	1	1	238833
+1	Query_5	Specific	Subunit I/VIc interface	G344	1	1	238833
+1	Query_5	Specific	Subunit I/VIIa interface	F130,C133	2	2	238833
+1	Query_5	Specific	Subunit I/VIIb interface	D460,G464	2	2	238833
+1	Query_5	Specific	Subunit I/VIIc interface	F40,L44,A47,L51,A132,C133,M415,Y488,L491	9	9	238833
+1	Query_5	Specific	Subunit I/VIIIb interface	L424,W481	2	2	238833
+1	Query_5	Specific	Dimer interface	I206,L213,F253,Y290,M293,G296,V297,I301	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	403	cob_Lasov1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	214440	10	367	6.04378e-178	499.308	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	237	atp6_Lasov1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273458	4	234	2.48821e-48	158.524	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	54	atp8_Lasov1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	283561	1	48	1.30118e-09	47.401	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	496	nad4_Lasov1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	235622	43	493	1.49487e-126	377.621	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	369	nad1_Lasov1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	333876	12	352	2.61026e-106	314.025	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	662	nad5_Lasov1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	642	0	576.574	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	89	nad4L_Lasov1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	351118	3	86	1.62122e-16	67.7497	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	250	cox2_Lasov1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214438	18	249	6.75168e-107	307.911	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	74	atp9_Lasov1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351103	1	72	7.22087e-15	62.1742	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	154	nad3_Lasov1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334119	19	89	5.06698e-13	60.8918	pfam00507	Oxidored_q4	C	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	566	nad2_Lasov1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	235603	123	495	4.20238e-78	253.975	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	244	orf244_Lasov1_feature_24_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	353929	23	117	1.32676e-07	47.9908	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_20	Generic	active site	Y26,Y38,G40,G48,H52,E106	6	6	198380
+1	Query_20	Generic	catalytic site	G48,E106	2	2	198380
+1	Query_20	Generic	metal binding site	E106	1	1	198380
+1	Query_20	Generic	GIY-YIG motif/motif A	G24,I25,Y26,Y38,I39,G40	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	566	nad2_Lasov1_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	235603	123	495	4.20238e-78	253.975	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	154	nad3_Lasov1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334119	19	89	5.06698e-13	60.8918	pfam00507	Oxidored_q4	C	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	74	atp9_Lasov1_feature_38_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	351103	1	72	7.22087e-15	62.1742	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	156	cox2_Lasov1_feature_40_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	214402	4	155	3.16197e-51	163.383	MTH00023	COX2	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

@@ -1,0 +1,96 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Chylag1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Chylag1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	382	nad4_Chylag1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	235622	8	381	6.70147e-98	299.81	PRK05846	PRK05846	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	108	orf108_Chylag1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	335245	2	93	8.84772e-30	104.165	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	97	cox3_Chylag1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	294143	1	97	1.5573e-35	120.698	cl00211	Heme_Cu_Oxidase_III_like	NC	-
+ENDDOMAINS
+SITES
+1	Query_4	Generic	Subunit I/III interface	S86,V87,S90,M94	9	4	238227
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	110	orf110_Chylag1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	354315	13	70	0.00799533	33.4824	cl17171	PH-like	NC	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	53	atp6_Chylag1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351082	6	52	1.54439e-09	50.5118	cl00413	ATP-synt_A	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	235	cob_Chylag1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	214440	1	234	8.99242e-103	301.701	MTH00156	CYTB	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	44	nad5_Chylag1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	235836	3	44	1.3054e-17	72.8837	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	177	cox2_Chylag1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214438	4	177	1.493e-75	225.478	MTH00154	COX2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	20	nad2_Chylag1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	177245	3	20	0.000792427	32.6811	MTH00199	ND2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	107	cox1_Chylag1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	350997	1	107	2.71123e-48	159.956	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_16	Generic	Binuclear center (active site)	H53	4	1	238461
+1	Query_16	Generic	Low-spin heme binding site	Y48,H55,L58,S59	15	4	238461
+1	Query_16	Generic	Putative proton exit pathway	H45,D46	5	2	238461
+1	Query_16	Generic	Putative water exit pathway	D41,H45,D46	7	3	238461
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

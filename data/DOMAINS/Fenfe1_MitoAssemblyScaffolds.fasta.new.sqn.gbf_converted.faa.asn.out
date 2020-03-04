@@ -1,0 +1,188 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Fenfe1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Fenfe1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	217	orf218_Fenfe1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	273636	1	202	9.51831e-25	96.6861	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	198	nad6_Fenfe1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	354830	20	192	8.34287e-18	77.1837	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	605	nad2_Fenfe1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	235603	25	530	5.76184e-80	260.138	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	397	nad3_Fenfe1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334119	19	112	1.40128e-14	68.5958	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	257	atp6_Fenfe1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	273458	10	254	6.56982e-50	163.146	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	447	orf447_Fenfe1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	350997	46	116	3.42526e-28	116.315	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_7	Specific	198392	193	279	2.05232e-24	96.1408	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_7	Specific	197761	306	355	0.00855176	34.0806	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+1	Query_7	Generic	Low-spin heme binding site	S79,R83,Y100,H107,M111,I112,V116	15	7	238461
+1	Query_7	Generic	D-pathway	Y64	9	1	238461
+1	Query_7	Specific	putative active site	Y195,Y206,G208,R216,Y220,E265,N277	7	7	198392
+1	Query_7	Specific	putative metal binding site	E265	1	1	198392
+1	Query_7	Specific	GIY-YIG motif/motif A	G193,V194,Y195,Y206,V207,G208	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	137	orf138_Fenfe1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	55	137	1.5307e-10	54.1647	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	97	orf98_Fenfe1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	13	97	0.00163132	34.5195	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	41	orf42_Fenfe1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	1	39	8.04847e-05	35.6751	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	200	orf200_Fenfe1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	350997	1	196	3.31216e-107	315.962	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_14	Generic	Binuclear center (active site)	H85	4	1	238461
+1	Query_14	Generic	Low-spin heme binding site	Y80,H87,L90,S91,R147,R148,F177	15	7	238461
+1	Query_14	Generic	K-pathway	T25,K28	7	2	238461
+1	Query_14	Generic	Putative proton exit pathway	H77,D78,R147,R148	5	4	238461
+1	Query_14	Generic	Putative water exit pathway	D73,H77,D78,R147	7	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	298	cox2_Fenfe1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	214438	66	295	3.584e-111	320.622	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	89	nad4L_Fenfe1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351118	5	86	1.45139e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	795	nad5_Fenfe1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	214400	1	630	0	619.015	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	384	orf384_Fenfe1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	265	355	8.09582e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	149	orf149_Fenfe1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	2	78	3.98495e-11	56.0907	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	490	nad4_Fenfe1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	235622	1	481	8.42387e-125	372.998	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	371	nad1_Fenfe1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	333876	12	354	4.5397e-120	349.464	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	86	orf87_Fenfe1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	273636	3	81	5.14744e-14	63.5589	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_26	Generic	DNA binding site	H10,P11,F12,L13,H17,S21,M25,S26,R30,L31,V35,K36,V52,N56,S61,T64,R66,N67,Y68,R78	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	179	orf180_Fenfe1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Non-specific	273636	96	173	8.23417e-09	52.7733	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	203	orf204_Fenfe1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	273636	1	117	5.83841e-14	67.4109	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	133	orf134_Fenfe1_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	353929	85	121	4.58766e-08	47.2204	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_29	Generic	active site	Y88,F99,G101,R109,Y113	6	5	198380
+1	Query_29	Generic	catalytic site	R109	2	1	198380
+1	Query_29	Generic	GIY-YIG motif/motif A	G86,I87,Y88,F99,V100,G101	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	269	cox3_Fenfe1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	278911	12	269	1.53108e-127	362.113	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_30	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_30	Specific	Subunit III/Vb interface	K166	1	1	238834
+1	Query_30	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_30	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_30	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,I76	7	7	238834
+1	Query_30	Specific	Phospholipid binding site	W65,F66,I69,I70,L73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_31	Peptide	312	orf312_Fenfe1_feature_128_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	334330	173	288	7.67219e-14	66.1058	pfam00961	LAGLIDADG_1	-	45
+1	Query_31	Specific	334330	52	149	0.0092141	34.9047	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	221	cob_Fenfe1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	214440	10	132	1.63601e-62	198.082	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

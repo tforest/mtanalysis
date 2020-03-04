@@ -1,0 +1,125 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Glonio1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Glonio1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	263	atp6_Glonio1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	273458	38	260	3.25817e-48	158.909	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	840	orf841_Glonio1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	238833	25	367	0	652.626	cd01663	Cyt_c_Oxidase_I	C	350997
+1	Query_3	Specific	273636	535	738	1.04878e-58	199.149	TIGR01453	grpIintron_endo	-	45
+1	Query_3	Specific	284793	774	810	1.25271e-05	42.4996	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+SITES
+1	Query_3	Specific	D-pathway	Y33,N95,D106,N113,S116,S171,S172,N178,T182	9	9	238833
+1	Query_3	Specific	K-pathway	H255,Y259,S270,H304,H305,T330,K333	7	7	238833
+1	Query_3	Specific	Subunit I/III interface	P105,F109,R111,W118,D159,F163,T181,N185,I205,L212,P215,M223,T232,S233,F234,A239,G240,D242,F252,Y289,C292,G295,I296,V300	25	24	238833
+1	Query_3	Specific	Subunit I/VIa interface	T150,R228,N229,F230,N231	5	5	238833
+1	Query_3	Specific	Subunit I/VIb interface	G310	1	1	238833
+1	Query_3	Specific	Subunit I/VIc interface	G343	1	1	238833
+1	Query_3	Specific	Subunit I/VIIa interface	F129,G132	2	2	238833
+1	Query_3	Specific	Dimer interface	I205,L212,F252,Y289,C292,G295,I296,V300	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	152	orf152_Glonio1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	350997	1	130	5.43356e-42	144.933	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_4	Generic	Low-spin heme binding site	R56,R57,F86	15	3	238461
+1	Query_4	Generic	Putative proton exit pathway	R56,R57	5	2	238461
+1	Query_4	Generic	Putative water exit pathway	R56	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	250	cox2_Glonio1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	214438	18	247	1.34476e-114	327.556	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	89	nad4L_Glonio1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	351118	3	87	2.73415e-17	69.4355	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	1036	nad5_Glonio1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	177253	1	630	0	633.969	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	877	nad4_Glonio1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	235622	31	489	2.737e-136	415.37	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	386	cob_Glonio1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214440	10	367	1.94462e-179	502.39	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	601	nad2_Glonio1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	235603	149	534	1.89604e-76	250.508	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	261	nad3_Glonio1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334119	20	112	6.86421e-13	62.8178	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	371	nad1_Glonio1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	333876	12	354	2.31314e-107	317.107	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	194	nad6_Glonio1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	354830	25	189	3.35448e-17	75.4225	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	269	cox3_Glonio1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	278911	12	269	1.34168e-124	354.794	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_16	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,A199,V200,S203,F207	12	12	238834
+1	Query_16	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_16	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,D191,S192,S197,D198,A199	11	11	238834
+1	Query_16	Specific	Subunit III/VIb interface	A127	1	1	238834
+1	Query_16	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_16	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

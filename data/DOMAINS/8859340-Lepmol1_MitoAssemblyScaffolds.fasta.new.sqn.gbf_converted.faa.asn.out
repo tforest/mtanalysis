@@ -1,0 +1,127 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	8859340-Lepmol1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	8859340-Lepmol1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	52	atp8_8859340-Lepmol1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	283561	1	48	0.0015721	31.993	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	73	atp9_8859340-Lepmol1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	349422	6	70	5.98068e-15	62.1419	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	251	cox2_8859340-Lepmol1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	214438	20	248	2.01941e-116	332.178	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	875	orf875_8859340-Lepmol1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	282904	466	708	0.000929468	42.9812	pfam05109	Herpes_BLLF1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	975	orf975_8859340-Lepmol1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	281206	359	812	1.56189e-97	314.671	pfam03175	DNA_pol_B_2	-	355698
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	204	nad6_8859340-Lepmol1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	354830	8	107	6.84303e-19	80.2653	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	684	nad2_8859340-Lepmol1_feature_9_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	235603	134	554	1.18972e-77	255.901	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	121	nad3_8859340-Lepmol1_feature_11_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334119	27	113	2.49904e-28	98.6414	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	94	orf94_8859340-Lepmol1_feature_15_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	355698	10	93	0.00648908	33.8608	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	504	nad4_8859340-Lepmol1_feature_11_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235622	8	501	2.29366e-141	415.755	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	259	atp6_8859340-Lepmol1_feature_15_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	273458	37	256	3.7374e-45	151.205	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	260	cox1_8859340-Lepmol1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	350997	1	241	8.33492e-143	409.18	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_18	Generic	Binuclear center (active site)	H18,H19,H104	4	3	238461
+1	Query_18	Generic	Low-spin heme binding site	Y99,H106,L109,S110,R166,R167,F196	15	7	238461
+1	Query_18	Generic	K-pathway	H18,H19,T44,K47	7	4	238461
+1	Query_18	Generic	Putative proton exit pathway	H19,H96,D97,R166,R167	5	5	238461
+1	Query_18	Generic	Putative water exit pathway	D92,H96,D97,R166	7	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	272	cox3_8859340-Lepmol1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	238834	36	269	1.09334e-114	329.091	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Subunit I/III interface	Q84,N87,G88,S99,F102,S106,V107,H113,S201,V202,S205,A209	12	12	238834
+1	Query_19	Specific	Subunit III/Vb interface	G168	1	1	238834
+1	Query_19	Specific	Subunit III/VIa interface	F137,A138,I139,Y156,I182,S192,E193,A194,S199,D200,S201	11	11	238834
+1	Query_19	Specific	Subunit III/VIb interface	Q129	1	1	238834
+1	Query_19	Specific	Subunit III/VIIa interface	L66,R69,D70,T73,T76,Y77,E78	7	7	238834
+1	Query_19	Specific	Phospholipid binding site	W67,L68,V71,T72,A75,H81,G92,F93,F96,F224,R231,Q243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	93	nad4L_8859340-Lepmol1_feature_6_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	351118	7	86	6.09484e-15	63.8977	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	673	nad5_8859340-Lepmol1_feature_8_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	177253	1	618	0	629.732	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

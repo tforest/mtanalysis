@@ -1,0 +1,173 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cervir1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cervir1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	433	orf432_Cervir1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	355698	247	430	1.09802e-34	134.013	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	407	orf407_Cervir1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	355698	2	267	4.15019e-56	191.022	cl28058	DNA_pol_B_2	N	-
+1	Query_3	Superfamily	353046	251	331	0.000957756	40.7701	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_3	Generic	active site	D277	8	1	99912
+1	Query_3	Generic	metal-binding site 	D275,D277,S278	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	127	orf127_Cervir1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	281556	11	100	0.00225653	36.246	pfam03569	Peptidase_C8	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	1167	orf1167_Cervir1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	355698	603	985	3.66455e-50	184.474	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	394	orf395_Cervir1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	287	387	1.25306e-26	101.929	pfam00961	LAGLIDADG_1	-	45
+1	Query_10	Specific	334330	130	226	2.1619e-16	73.8098	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	488	nad4_Cervir1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235622	1	485	2.40343e-142	417.681	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	259	atp6_Cervir1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	273458	37	256	3.07869e-45	151.205	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	676	nad5_Cervir1_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	177253	1	618	0	630.502	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	94	nad4L_Cervir1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	351118	7	86	2.47962e-15	65.0533	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	272	cox3_Cervir1_feature_38_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	238834	36	269	8.30832e-117	334.484	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_22	Specific	Subunit I/III interface	Q84,N87,G88,S99,F102,S106,V107,H113,S201,V202,S205,A209	12	12	238834
+1	Query_22	Specific	Subunit III/Vb interface	G168	1	1	238834
+1	Query_22	Specific	Subunit III/VIa interface	F137,A138,I139,Y156,I182,S192,E193,A194,S199,D200,S201	11	11	238834
+1	Query_22	Specific	Subunit III/VIb interface	Q129	1	1	238834
+1	Query_22	Specific	Subunit III/VIIa interface	L66,R69,D70,T73,T76,Y77,E78	7	7	238834
+1	Query_22	Specific	Phospholipid binding site	W67,L68,V71,T72,A75,H81,G92,F93,F96,F224,R231,Q243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	98	cox1_Cervir1_feature_40_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	350997	2	79	1.79216e-22	89.4644	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_23	Generic	Low-spin heme binding site	R4,R5,F34	15	3	238461
+1	Query_23	Generic	Putative proton exit pathway	R4,R5	5	2	238461
+1	Query_23	Generic	Putative water exit pathway	R4	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	54	atp8_Cervir1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	283561	1	48	0.000301356	33.919	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	73	atp9_Cervir1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	349422	6	70	3.16887e-15	62.9123	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	204	nad6_Cervir1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	354830	8	107	6.03426e-19	80.2653	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	251	cox2_Cervir1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	214438	20	248	2.8759e-117	334.104	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	546	orf546_Cervir1_feature_18_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Non-specific	223021	152	343	0.000248142	44.1589	PHA03247	PHA03247	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	848	orf847_Cervir1_feature_22_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	355698	291	616	5.66047e-54	194.104	cl28058	DNA_pol_B_2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	237	orf236_Cervir1_feature_26_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Superfamily	355698	38	206	5.52119e-07	49.774	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	209	orf209_Cervir1_feature_28_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Superfamily	355698	3	181	6.02795e-28	108.975	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_35	Peptide	56	orf56_Cervir1_feature_30_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Superfamily	355698	1	48	1.16277e-05	40.024	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	749	nad2_Cervir1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	235603	159	607	3.03465e-68	232.404	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	138	nad3_Cervir1_feature_6_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334119	27	113	8.22946e-28	98.2562	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	488	nad4_Cervir1_feature_16_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	235622	1	485	2.40343e-142	417.681	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

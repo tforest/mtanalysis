@@ -1,0 +1,264 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Kicala1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Kicala1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	133	orf133_Kicala1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	354401	53	114	0.00246026	36.1096	cl19252	MreC	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	166	orf167_Kicala1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	22	98	0.00352913	34.9047	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	263	cox3_Kicala1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	177199	8	263	4.18595e-105	305.276	MTH00141	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Subunit I/III interface	K76,N79,G80,S91,F94,S98,L99,H105,G193,I194,N197,A201	12	12	238834
+1	Query_11	Specific	Subunit III/Vb interface	S160	1	1	238834
+1	Query_11	Specific	Subunit III/VIa interface	F129,G130,L131,W148,I174,Y184,Y185,A186,A191,D192,G193	11	11	238834
+1	Query_11	Specific	Subunit III/VIb interface	I121	1	1	238834
+1	Query_11	Specific	Subunit III/VIIa interface	L58,K61,D62,T65,T68,F69,L70	7	7	238834
+1	Query_11	Specific	Phospholipid binding site	W59,W60,V63,I64,S67,H73,G84,F85,F88,F216,R223,M235,G236	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	231	orf231_Kicala1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	335245	41	211	8.81886e-57	177.738	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	104	nad4L_Kicala1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	351118	4	86	9.38909e-11	53.4974	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	116	nad3_Kicala1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351141	4	111	1.79354e-34	114.961	cl00535	Oxidored_q4	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	501	nad4_Kicala1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235622	1	492	2.94495e-133	394.955	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	778	nad2_Kicala1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	1	336	1.56153e-85	279.013	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	541	cox1_Kicala1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	238833	9	500	0	844.456	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Binuclear center (heme a3/CuB)	H241,H290,H291,H376	4	4	238833
+1	Query_17	Specific	Low-spin heme (heme a) binding site	H62,H378,S382,T424,S461	5	5	238833
+1	Query_17	Specific	D-pathway	Y18,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238833
+1	Query_17	Specific	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238833
+1	Query_17	Specific	Electron transfer pathway	F377,R438,R439	3	3	238833
+1	Query_17	Specific	Putative proton exit pathway	H291,H368,D369,R438,R439	5	5	238833
+1	Query_17	Specific	Putative water exit pathway	D228,Q233,H234,D364,H368,D369,R438	7	7	238833
+1	Query_17	Specific	Subunit I/II interface	N56,D228,K265,F268,G269,T294,V295,G296,V299,R302,M310,I318,F321,Y328,G329,G330,M342,N360,A361,I363,T365,S366,L367,H368,D369,L433,A434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_17	Specific	Subunit I/III interface	T9,V91,F95,R97,W104,D145,F149,T167,N171,I191,F198,P201,M209,S218,S219,F220,G225,G226,D228,F238,Y275,M278,G281,V282,I286	25	25	238833
+1	Query_17	Specific	Subunit I/IV interface	L38,M41,G42,V408,R411,I412,D445,L463	8	8	238833
+1	Query_17	Specific	Subunit I/Vb interface	P266,Y270,T500	3	3	238833
+1	Query_17	Specific	Subunit I/VIa interface	I136,R214,N215,F216,N217	5	5	238833
+1	Query_17	Specific	Subunit I/VIb interface	G296	1	1	238833
+1	Query_17	Specific	Subunit I/VIc interface	G329	1	1	238833
+1	Query_17	Specific	Subunit I/VIIa interface	S115,F118	2	2	238833
+1	Query_17	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_17	Specific	Subunit I/VIIc interface	F24,I28,I31,L35,A117,F118,I400,Y473,L476	9	9	238833
+1	Query_17	Specific	Subunit I/VIIIb interface	L409,I466	2	2	238833
+1	Query_17	Specific	Dimer interface	I191,F198,F238,Y275,M278,G281,V282,I286	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	142	orf142_Kicala1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	198392	57	139	9.21462e-27	95.3704	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_18	Specific	putative active site	Y58,Y69,G71,R79,Y83,E130	7	6	198392
+1	Query_18	Specific	putative metal binding site	E130	1	1	198392
+1	Query_18	Specific	GIY-YIG motif/motif A	I57,Y58,Y69,I70,G71	6	5	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	356	orf356_Kicala1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	100	177	1.91192e-10	56.8611	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	336	orf336_Kicala1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	206	303	6.16525e-16	72.269	pfam00961	LAGLIDADG_1	-	45
+1	Query_20	Specific	334330	101	179	0.000122107	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	367	orf367_Kicala1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	227	327	1.44502e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+1	Query_21	Specific	334330	111	200	0.00260874	36.8307	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	223	orf223_Kicala1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	273636	50	223	3.64659e-33	118.642	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	305	orf305_Kicala1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	78	156	1.58186e-07	48.3867	pfam00961	LAGLIDADG_1	-	45
+1	Query_24	Specific	334330	184	275	0.000127263	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	298	orf298_Kicala1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	170	266	1.20972e-13	65.3354	pfam00961	LAGLIDADG_1	-	45
+1	Query_25	Specific	334330	51	100	0.000115578	40.2975	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	365	orf365_Kicala1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	90	187	1.04681e-11	60.7131	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	212	319	1.35113e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	359	orf359_Kicala1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	82	176	1.34282e-23	93.455	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	232	321	0.00074607	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	647	nad5_Kicala1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	235836	1	587	0	633.734	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	300	nad1_Kicala1_feature_124_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	333876	3	287	3.53134e-98	290.913	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	208	nad6_Kicala1_feature_126_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334114	19	132	1.5824e-12	62.0923	pfam00499	Oxidored_q3	-	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	387	cob_Kicala1_feature_128_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	214440	10	366	2.91665e-178	499.308	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	274	orf274_Kicala1_feature_132_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	273636	54	269	4.09298e-23	93.6045	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	151	orf151_Kicala1_feature_141_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Specific	334321	24	90	3.46378e-12	62.4781	pfam00940	RNA_pol	NC	355471
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	129	orf129_Kicala1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Superfamily	355471	2	127	2.79289e-09	53.4886	cl25973	RNA_pol	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	249	atp6_Kicala1_feature_145_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Superfamily	351082	27	249	8.44574e-50	162.903	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_39	Peptide	50	atp8_Kicala1_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	283561	1	43	0.000690685	32.7634	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	257	cox2_Kicala1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	214438	18	243	1.86197e-93	274.013	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	253	rps3_Kicala1_feature_165_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Non-specific	130082	90	246	0.00418832	37.2961	TIGR01009	rpsC_bact	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	73	atp9_Kicala1_feature_167_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	349422	6	69	9.0329e-21	76.7795	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	46	orf46_Kicala1_feature_169_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	334330	18	40	0.00986532	30.6675	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	182	orf183_Kicala1_feature_171_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334330	20	85	2.46787e-05	41.0679	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	62	orf63_Kicala1_feature_173_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	334330	1	61	5.16143e-10	49.9275	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	138	orf138_Kicala1_feature_175_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	20	115	2.43037e-08	48.3867	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	42	orf43_Kicala1_feature_177_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	20	37	0.00288292	31.8231	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	60	orf61_Kicala1_feature_179_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	353929	23	56	3.58158e-06	39.9017	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_48	Generic	active site	Y26,Y37,G39,R47,Y51	6	5	198380
+2	Query_48	Generic	catalytic site	R47	2	1	198380
+2	Query_48	Generic	GIY-YIG motif/motif A	G24,I25,Y26,Y37,I38,G39	6	6	198380
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

@@ -1,0 +1,270 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Lycper1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Lycper1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	93	nad1_Lycper1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	351105	16	93	1.81438e-26	98.5094	cl00469	NADHdh	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	682	nad5_Lycper1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	177253	1	634	0	562.322	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	88	nad4L_Lycper1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	351118	5	87	2.89097e-15	64.2829	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	271	cox3_Lycper1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	238834	25	268	1.1134e-119	341.803	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Subunit I/III interface	E83,N86,G87,S98,F101,S105,I106,H112,S200,V201,S204,C208	12	12	238834
+1	Query_4	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_4	Specific	Subunit III/VIa interface	F136,A137,I138,Y155,V181,S191,E192,A193,A198,D199,S200	11	11	238834
+1	Query_4	Specific	Subunit III/VIb interface	V128	1	1	238834
+1	Query_4	Specific	Subunit III/VIIa interface	L65,R68,D69,I72,T75,Y76,L77	7	7	238834
+1	Query_4	Specific	Phospholipid binding site	W66,F67,V70,V71,G74,H80,G91,I92,F95,F223,R230,F242,N243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	238	nad6_Lycper1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	354830	1	100	1.10657e-19	83.3469	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	498	nad4_Lycper1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	235622	38	494	3.75402e-138	407.281	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	528	cox1_Lycper1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	238833	7	512	0	851.389	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_8	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_8	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_8	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_8	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_8	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_8	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_8	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,S292,V293,G294,V297,R300,M308,I316,F319,Y326,G327,G328,L340,N358,A359,L361,V363,A364,F365,H366,D367,L431,A432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_8	Specific	Subunit I/III interface	T7,P89,F93,R95,W102,D143,F147,S165,N169,V189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_8	Specific	Subunit I/IV interface	L36,S39,S40,F406,K409,I410,D443,V461	8	8	238833
+1	Query_8	Specific	Subunit I/Vb interface	P264,Y268,T511	3	3	238833
+1	Query_8	Specific	Subunit I/VIa interface	I134,R212,N213,F214,N215	5	5	238833
+1	Query_8	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_8	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_8	Specific	Subunit I/VIIa interface	M113,L116	2	2	238833
+1	Query_8	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_8	Specific	Subunit I/VIIc interface	F22,I26,A29,L33,S115,L116,I398,Y471,F474	9	9	238833
+1	Query_8	Specific	Subunit I/VIIIb interface	L407,I464	2	2	238833
+1	Query_8	Specific	Dimer interface	V189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	282	orf282_Lycper1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	34	129	1.13282e-11	59.9427	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	173	213	0.000247378	39.1419	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	326	orf326_Lycper1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	203	299	8.68142e-19	79.973	pfam00961	LAGLIDADG_1	-	45
+1	Query_10	Specific	334330	90	166	1.78313e-06	45.6903	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	559	nad2_Lycper1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	235603	128	547	9.65739e-79	255.516	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	128	nad3_Lycper1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334119	28	112	5.42783e-28	98.2562	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	260	orf260_Lycper1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	335245	36	214	4.37774e-41	138.833	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	52	atp8_Lycper1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	283561	1	48	4.38126e-05	35.845	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	73	atp9_Lycper1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	351103	1	72	1.0758e-16	66.7966	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	96	cox3_Lycper1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	238834	1	93	4.7355e-45	144.966	cd01665	Cyt_c_Oxidase_III	N	294143
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	88	nad4L_Lycper1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	351118	5	87	2.89097e-15	64.2829	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	682	nad5_Lycper1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	177253	1	634	0	562.322	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	342	nad1_Lycper1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	333876	24	330	2.00085e-120	349.079	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	271	atp6_Lycper1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	273458	56	268	7.51221e-46	153.131	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	390	cob_Lycper1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	214440	10	366	6.24187e-165	465.796	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	253	cox2_Lycper1_feature_25_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	214402	12	253	2.87117e-109	314.766	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	140	orf140_Lycper1_feature_37_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	355698	36	139	6.00996e-08	50.1592	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	156	orf156_Lycper1_feature_39_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	355698	13	137	4.75702e-24	96.2631	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	228	orf228_Lycper1_feature_41_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	355698	1	228	7.83785e-42	147.109	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	52	atp8_Lycper1_feature_24_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	283561	1	48	4.38126e-05	35.845	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	73	atp9_Lycper1_feature_28_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Superfamily	351103	1	72	1.0758e-16	66.7966	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	228	orf228_Lycper1_feature_50_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Superfamily	355698	1	228	7.83785e-42	147.109	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	156	orf156_Lycper1_feature_52_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Superfamily	355698	13	137	4.75702e-24	96.2631	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	140	orf140_Lycper1_feature_54_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Superfamily	355698	36	139	6.00996e-08	50.1592	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	147	cox2_Lycper1_feature_66_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Specific	259979	7	141	2.18065e-86	247.869	cd13912	CcO_II_C	-	354382
+ENDDOMAINS
+SITES
+1	Query_41	Specific	CuA binding site	H80,C115,E117,C119,H123,M126	6	6	259979
+1	Query_41	Specific	subunit I/II interface	K90,D92,P95,R97,N99,Q114,C115,S116,E117,V121,H123,G124	12	12	259979
+1	Query_41	Specific	subunit II/IV interface	T110,Y112	2	2	259979
+1	Query_41	Specific	subunit II/VIb interface	P7,T8,T10,K12,E23,R70,S76,R97,L98,N99,Q100	11	11	259979
+1	Query_41	Specific	subunit II/VIc interface	D58,K60,V65,D66,T108	5	5	259979
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	498	nad4_Lycper1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_42	Specific	235622	38	494	3.75402e-138	407.281	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_44	Peptide	238	nad6_Lycper1_feature_6_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Superfamily	354830	1	100	1.10657e-19	83.3469	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	271	cox3_Lycper1_feature_8_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	238834	25	268	1.1134e-119	341.803	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_45	Specific	Subunit I/III interface	E83,N86,G87,S98,F101,S105,I106,H112,S200,V201,S204,C208	12	12	238834
+2	Query_45	Specific	Subunit III/Vb interface	G167	1	1	238834
+2	Query_45	Specific	Subunit III/VIa interface	F136,A137,I138,Y155,V181,S191,E192,A193,A198,D199,S200	11	11	238834
+2	Query_45	Specific	Subunit III/VIb interface	V128	1	1	238834
+2	Query_45	Specific	Subunit III/VIIa interface	L65,R68,D69,I72,T75,Y76,L77	7	7	238834
+2	Query_45	Specific	Phospholipid binding site	W66,F67,V70,V71,G74,H80,G91,I92,F95,F223,R230,F242,N243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_46	Peptide	88	nad4L_Lycper1_feature_12_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Superfamily	351118	5	87	2.89097e-15	64.2829	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	682	nad5_Lycper1_feature_14_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Non-specific	177253	1	634	0	562.322	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	342	nad1_Lycper1_feature_16_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	333876	24	330	2.00085e-120	349.079	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	271	atp6_Lycper1_feature_20_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	273458	56	268	7.51221e-46	153.131	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

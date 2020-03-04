@@ -1,0 +1,134 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Conioc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Conioc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	269	cox3_Conioc1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	278911	12	269	9.34938e-125	355.18	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,V105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	I127	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,I91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	213	nad6_Conioc1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	354830	22	208	1.15966e-23	92.7565	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	442	orf442_Conioc1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	234767	85	266	0.00132784	40.9768	PRK00448	polC	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	560	nad2_Conioc1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	235603	124	481	1.38558e-76	249.738	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	141	nad3_Conioc1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334119	19	112	2.82e-30	104.419	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	250	cox2_Conioc1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	214438	18	247	1.66712e-110	317.155	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	51	atp8_Conioc1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	283561	1	48	6.17073e-09	45.475	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	267	atp6_Conioc1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	273458	31	264	1.15861e-50	165.457	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	89	nad4L_Conioc1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	351118	3	86	3.11613e-16	66.9793	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	669	nad5_Conioc1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	177253	1	633	0	601.227	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	389	cob_Conioc1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214440	10	367	3.70647e-163	461.174	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	578	cox1_Conioc1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	238833	44	546	0	866.027	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_14	Specific	Binuclear center (heme a3/CuB)	H275,H324,H325,H410	4	4	238833
+1	Query_14	Specific	Low-spin heme (heme a) binding site	H96,H412,S416,T458,S495	5	5	238833
+1	Query_14	Specific	D-pathway	Y53,N115,D126,N133,S136,S191,S192,N198,T202	9	9	238833
+1	Query_14	Specific	K-pathway	H275,Y279,S290,H324,H325,T350,K353	7	7	238833
+1	Query_14	Specific	Electron transfer pathway	F411,R472,R473	3	3	238833
+1	Query_14	Specific	Putative proton exit pathway	H325,H402,D403,R472,R473	5	5	238833
+1	Query_14	Specific	Putative water exit pathway	D262,Q267,H268,D398,H402,D403,R472	7	7	238833
+1	Query_14	Specific	Subunit I/II interface	N90,D262,K299,F302,G303,T328,V329,G330,V333,R336,L344,I352,F355,Y362,G363,G364,L376,N394,A395,L397,I399,A400,F401,H402,D403,L467,Q468,R472,R473,I474,G483,W484	32	32	238833
+1	Query_14	Specific	Subunit I/III interface	T44,P125,F129,R131,W138,D179,F183,T201,N205,I225,F232,P235,M243,T252,S253,F254,G259,G260,D262,F272,Y309,M312,G315,V316,I320	25	25	238833
+1	Query_14	Specific	Subunit I/IV interface	M73,S76,G77,M442,K445,V446,D479,V497	8	8	238833
+1	Query_14	Specific	Subunit I/Vb interface	S300,Y304,A545	3	3	238833
+1	Query_14	Specific	Subunit I/VIa interface	V170,R248,N249,F250,N251	5	5	238833
+1	Query_14	Specific	Subunit I/VIb interface	G330	1	1	238833
+1	Query_14	Specific	Subunit I/VIc interface	G363	1	1	238833
+1	Query_14	Specific	Subunit I/VIIa interface	F149,C152	2	2	238833
+1	Query_14	Specific	Subunit I/VIIb interface	D479,G483	2	2	238833
+1	Query_14	Specific	Subunit I/VIIc interface	F59,L63,A66,L70,A151,C152,M434,Y507,L510	9	9	238833
+1	Query_14	Specific	Subunit I/VIIIb interface	L443,W500	2	2	238833
+1	Query_14	Specific	Dimer interface	I225,F232,F272,Y309,M312,G315,V316,I320	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	367	nad1_Conioc1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	333876	12	350	1.00675e-108	320.189	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	182	nad4_Conioc1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	235622	1	182	3.20681e-31	117.226	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

@@ -1,0 +1,136 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Muloch1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Muloch1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	73	atp9_Muloch1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	349422	6	70	5.28418e-14	59.8307	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	270	cox3_Muloch1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	278911	13	268	6.11047e-124	353.254	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Subunit I/III interface	Q82,K85,G86,S97,F100,S104,V105,H111,S199,V200,T203,A207	12	12	238834
+1	Query_4	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_4	Specific	Subunit III/VIa interface	F135,A136,I137,Y154,I180,S190,E191,S192,S197,D198,S199	11	11	238834
+1	Query_4	Specific	Subunit III/VIb interface	Q127	1	1	238834
+1	Query_4	Specific	Subunit III/VIIa interface	L64,R67,D68,T71,T74,Y75,L76	7	7	238834
+1	Query_4	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,Q241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	90	nad4L_Muloch1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	351118	7	87	2.0304e-10	52.3418	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	662	nad5_Muloch1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	177253	1	614	0	642.829	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	52	atp8_Muloch1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	283561	1	48	5.27812e-05	35.4598	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	253	cox2_Muloch1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	214402	7	248	2.26435e-112	322.47	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	385	cob_Muloch1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214440	10	366	4.15447e-165	466.181	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	203	nad6_Muloch1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	354830	8	106	3.99319e-19	81.0357	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	338	nad1_Muloch1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	333876	30	326	2.01244e-114	333.671	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	555	nad2_Muloch1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	356474	138	496	3.27599e-56	195.81	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	96	nad3_Muloch1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	28	96	2.37678e-19	75.1442	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	256	atp6_Muloch1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351082	14	256	3.74799e-45	151.698	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	535	cox1_Muloch1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	238833	15	519	0	847.537	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Binuclear center (heme a3/CuB)	H247,H296,H297,H382	4	4	238833
+1	Query_17	Specific	Low-spin heme (heme a) binding site	H68,H384,S388,T430,S467	5	5	238833
+1	Query_17	Specific	D-pathway	Y24,N87,D98,N105,S108,S163,S164,N170,T174	9	9	238833
+1	Query_17	Specific	K-pathway	H247,Y251,S262,H296,H297,T322,K325	7	7	238833
+1	Query_17	Specific	Electron transfer pathway	F383,R444,R445	3	3	238833
+1	Query_17	Specific	Putative proton exit pathway	H297,H374,D375,R444,R445	5	5	238833
+1	Query_17	Specific	Putative water exit pathway	D234,Q239,H240,D370,H374,D375,R444	7	7	238833
+1	Query_17	Specific	Subunit I/II interface	N62,D234,K271,F274,G275,S300,V301,G302,V305,R308,M316,I324,F327,Y334,G335,G336,L348,N366,A367,L369,L371,A372,L373,H374,D375,L439,A440,R444,R445,I446,G455,W456	32	32	238833
+1	Query_17	Specific	Subunit I/III interface	T15,P97,F101,R103,W110,D151,F155,T173,N177,V197,L204,P207,M215,T224,S225,F226,G231,G232,D234,F244,Y281,F284,G287,I288,L292	25	25	238833
+1	Query_17	Specific	Subunit I/IV interface	L44,S47,S48,L414,K417,I418,D451,M469	8	8	238833
+1	Query_17	Specific	Subunit I/Vb interface	P272,Y276,T518	3	3	238833
+1	Query_17	Specific	Subunit I/VIa interface	I142,R220,N221,F222,N223	5	5	238833
+1	Query_17	Specific	Subunit I/VIb interface	G302	1	1	238833
+1	Query_17	Specific	Subunit I/VIc interface	G335	1	1	238833
+1	Query_17	Specific	Subunit I/VIIa interface	L121,L124	2	2	238833
+1	Query_17	Specific	Subunit I/VIIb interface	D451,G455	2	2	238833
+1	Query_17	Specific	Subunit I/VIIc interface	F30,I34,G37,L41,A123,L124,I406,Y479,F482	9	9	238833
+1	Query_17	Specific	Subunit I/VIIIb interface	L415,V472	2	2	238833
+1	Query_17	Specific	Dimer interface	V197,L204,F244,Y281,F284,G287,I288,L292	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	483	nad4_Muloch1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	235622	31	483	7.11991e-142	416.141	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

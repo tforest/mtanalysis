@@ -1,0 +1,249 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Gelte1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Gelte1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	183	orf183_Gelte1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	198392	42	129	1.44996e-23	88.822	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_2	Specific	putative active site	Y45,Y56,G58,R66,D70,E114,N126	7	7	198392
+1	Query_2	Specific	putative metal binding site	E114	1	1	198392
+1	Query_2	Specific	GIY-YIG motif/motif A	G43,I44,Y45,Y56,I57,G58	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	250	cox2_Gelte1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214438	18	247	5.82941e-111	318.311	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	74	atp9_Gelte1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351103	5	72	1.55313e-16	66.4114	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	261	atp6_Gelte1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	273458	25	258	2.66856e-49	161.99	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	54	atp8_Gelte1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	283561	1	48	8.94361e-11	50.4826	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	537	nad4_Gelte1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235622	74	527	1.41338e-127	381.858	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	448	orf448_Gelte1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	158	256	1.92318e-28	107.707	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	317	418	3.01457e-21	88.0622	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	371	nad1_Gelte1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	333876	25	354	1.18302e-104	310.173	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	313	orf313_Gelte1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	273636	94	309	1.19931e-68	212.631	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	217	orf217_Gelte1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	353929	50	124	2.38564e-06	44.208	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_17	Generic	active site	Y53,Y64,G67,R75,H79,E117	6	6	198380
+1	Query_17	Generic	catalytic site	R75,E117	2	2	198380
+1	Query_17	Generic	metal binding site	E117	1	1	198380
+1	Query_17	Generic	GIY-YIG motif/motif A	C51,I52,Y53,Y64,I66,G67	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	549	cox1_Gelte1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	238833	15	517	0	856.012	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Binuclear center (heme a3/CuB)	H246,H295,H296,H381	4	4	238833
+1	Query_19	Specific	Low-spin heme (heme a) binding site	H67,H383,S387,T429,S466	5	5	238833
+1	Query_19	Specific	D-pathway	Y24,N86,D97,N104,S107,S162,S163,N169,T173	9	9	238833
+1	Query_19	Specific	K-pathway	H246,Y250,S261,H295,H296,T321,K324	7	7	238833
+1	Query_19	Specific	Electron transfer pathway	F382,R443,R444	3	3	238833
+1	Query_19	Specific	Putative proton exit pathway	H296,H373,D374,R443,R444	5	5	238833
+1	Query_19	Specific	Putative water exit pathway	D233,Q238,H239,D369,H373,D374,R443	7	7	238833
+1	Query_19	Specific	Subunit I/II interface	N61,D233,K270,F273,G274,T299,V300,G301,V304,R307,L315,I323,F326,Y333,G334,G335,L347,N365,A366,L368,I370,A371,F372,H373,D374,L438,Q439,R443,R444,I445,G454,W455	32	32	238833
+1	Query_19	Specific	Subunit I/III interface	T15,P96,F100,R102,W109,D150,F154,T172,N176,I196,F203,P206,M214,T223,S224,F225,G230,G231,D233,F243,Y280,M283,G286,I287,I291	25	25	238833
+1	Query_19	Specific	Subunit I/IV interface	M44,S47,G48,V413,K416,A417,D450,V468	8	8	238833
+1	Query_19	Specific	Subunit I/Vb interface	S271,Y275,S516	3	3	238833
+1	Query_19	Specific	Subunit I/VIa interface	V141,R219,N220,F221,N222	5	5	238833
+1	Query_19	Specific	Subunit I/VIb interface	G301	1	1	238833
+1	Query_19	Specific	Subunit I/VIc interface	G334	1	1	238833
+1	Query_19	Specific	Subunit I/VIIa interface	F120,C123	2	2	238833
+1	Query_19	Specific	Subunit I/VIIb interface	D450,G454	2	2	238833
+1	Query_19	Specific	Subunit I/VIIc interface	F30,L34,A37,L41,A122,C123,I405,Y478,L481	9	9	238833
+1	Query_19	Specific	Subunit I/VIIIb interface	L414,W471	2	2	238833
+1	Query_19	Specific	Dimer interface	I196,F203,F243,Y280,M283,G286,I287,I291	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	269	orf269_Gelte1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	273636	49	251	8.86847e-27	103.234	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	359	orf359_Gelte1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	217	316	3.89798e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	324	orf324_Gelte1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	195	291	2.5023e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+1	Query_22	Specific	334330	86	154	5.87351e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	385	cob_Gelte1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	214440	10	367	0	510.479	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	313	orf313_Gelte1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	71	147	3.28977e-05	41.8383	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	327	orf327_Gelte1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	273636	111	313	1.76266e-28	109.398	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	129	orf130_Gelte1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	198392	41	125	4.55901e-24	88.0516	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_31	Specific	putative active site	Y43,Y54,G56,R64,Y68,E114	7	6	198392
+1	Query_31	Specific	putative metal binding site	E114	1	1	198392
+1	Query_31	Specific	GIY-YIG motif/motif A	G41,I42,Y43,Y54,V55,G56	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_34	Peptide	712	nad5_Gelte1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Non-specific	177253	1	666	0	586.204	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	393	orf393_Gelte1_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	334330	274	364	2.37598e-06	45.6903	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	250	orf250_Gelte1_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Specific	334330	14	113	1.76284e-11	58.7871	pfam00961	LAGLIDADG_1	-	45
+1	Query_36	Specific	334330	177	248	7.86224e-09	51.8535	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	162	orf162_Gelte1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	334330	66	132	2.53884e-09	51.4683	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	159	orf159_Gelte1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Specific	334330	36	139	6.9062e-31	106.937	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_40	Peptide	117	orf117_Gelte1_feature_132_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	334330	22	108	5.14072e-22	82.6694	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	122	orf123_Gelte1_feature_136_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	52	121	6.67012e-17	69.9578	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	112	nad4L_Gelte1_feature_138_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	351118	3	80	3.25167e-19	75.4537	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	121	nad3_Gelte1_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334119	8	89	7.24679e-22	82.463	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	463	orf463_Gelte1_feature_142_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	334330	160	258	3.46543e-27	104.626	pfam00961	LAGLIDADG_1	-	45
+2	Query_45	Specific	334330	316	433	4.62375e-24	95.7662	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	461	orf462_Gelte1_feature_144_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	158	256	4.65726e-27	104.241	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	314	431	5.74002e-24	95.381	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	1092	nad2_Gelte1_feature_146_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	235603	134	495	2.57297e-93	305.977	PRK05777	PRK05777	N	356474
+2	Query_47	Specific	334330	829	943	2.59406e-07	49.5423	pfam00961	LAGLIDADG_1	-	45
+2	Query_47	Specific	334330	677	769	0.000122154	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	253	nad6_Gelte1_feature_184_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334114	32	219	1.57487e-19	81.7375	pfam00499	Oxidored_q3	-	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	269	cox3_Gelte1_feature_196_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	278911	12	269	2.46861e-147	412.189	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_51	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+2	Query_51	Specific	Subunit III/Vb interface	G166	1	1	238834
+2	Query_51	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+2	Query_51	Specific	Subunit III/VIb interface	I127	1	1	238834
+2	Query_51	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,F75,L76	7	7	238834
+2	Query_51	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,I91,F94,F222,R229,V241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

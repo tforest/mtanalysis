@@ -1,0 +1,172 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mycafr1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mycafr1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	270	cox3_Mycafr1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	278911	13	270	2.41167e-130	369.432	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	W136,E137,V138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,T75,F76,L77	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W66,F67,I70,S71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	325	nad1_Mycafr1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	333876	7	315	6.91036e-127	364.872	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	197	nad6_Mycafr1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	354830	8	188	1.50396e-26	99.6901	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	48	atp8_Mycafr1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	283561	1	47	1.04609e-05	37.3858	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	234	orf234_Mycafr1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	335245	47	217	2.90658e-53	168.879	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	74	atp9_Mycafr1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	349422	6	70	1.44861e-15	63.6827	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	230	orf231_Mycafr1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273636	27	226	1.42611e-41	140.599	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	387	cob_Mycafr1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	214425	3	380	0	526.006	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	273	orf273_Mycafr1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	273636	62	271	3.49285e-34	122.88	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	528	cox1_Mycafr1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	238833	8	512	0	879.894	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_10	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_10	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_10	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_10	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_10	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_10	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_10	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_10	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,T293,V294,G295,V298,R301,I309,I317,F320,Y327,G328,G329,L341,N359,A360,M362,V364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_10	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_10	Specific	Subunit I/IV interface	L37,A40,G41,L407,Q410,I411,D444,V462	8	8	238833
+1	Query_10	Specific	Subunit I/Vb interface	P265,Y269,S511	3	3	238833
+1	Query_10	Specific	Subunit I/VIa interface	I135,R213,N214,F215,N216	5	5	238833
+1	Query_10	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_10	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_10	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_10	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_10	Specific	Subunit I/VIIc interface	F23,V27,A30,L34,A116,F117,I399,Y472,L475	9	9	238833
+1	Query_10	Specific	Subunit I/VIIIb interface	L408,L465	2	2	238833
+1	Query_10	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	302	orf302_Mycafr1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	273636	46	290	3.18617e-32	118.642	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	358	orf358_Mycafr1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	81	175	4.03085e-23	91.9142	pfam00961	LAGLIDADG_1	-	45
+1	Query_12	Specific	334330	231	320	0.000624135	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	124	nad3_Mycafr1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334119	28	112	1.23686e-36	119.827	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	496	nad2_Mycafr1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	235603	52	444	4.51515e-91	285.561	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	259	atp6_Mycafr1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	273458	13	256	8.13536e-56	178.554	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	802	orf802_Mycafr1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	238828	337	502	2.88016e-26	107.672	cd01651	RT_G2_intron	C	295487
+1	Query_16	Non-specific	279664	687	787	1.03327e-09	57.0943	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+1	Query_16	Specific	putative nucleic acid binding site	S466	1	1	238828
+1	Query_16	Specific	putative NTP binding site	D395,I396,S397,K398,Y399,I400,E465	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_17	Peptide	255	cox2_Mycafr1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	177126	16	255	5.21591e-118	336.753	MTH00051	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	475	nad4_Mycafr1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	214462	1	464	1.34615e-174	498.808	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	88	nad4L_Mycafr1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	351118	5	87	3.92637e-12	56.579	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	624	nad5_Mycafr1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	177253	1	622	0	675.185	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

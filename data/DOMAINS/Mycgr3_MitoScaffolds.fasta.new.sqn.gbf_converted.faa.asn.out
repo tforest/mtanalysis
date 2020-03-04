@@ -1,0 +1,160 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mycgr3_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mycgr3_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	272	cox3_Mycgr3_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	278911	15	272	6.9703e-124	353.254	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A85,K88,G89,S100,L103,A107,I108,H114,G202,A203,S206,F210	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G169	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	F138,E139,L140,Y157,V183,S193,V194,S195,T200,D201,G202	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	M130	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	F67,R70,D71,S74,T77,Y78,I79	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W68,F69,V72,I73,G76,H82,G93,V94,F97,F225,R232,L244,G245	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	386	nad1_Mycgr3_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	333876	25	369	5.86323e-105	311.329	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	676	cox1_Mycgr3_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238833	18	494	0	843.3	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Binuclear center (heme a3/CuB)	H248,H297,H298,H383	4	4	238833
+1	Query_5	Specific	Low-spin heme (heme a) binding site	H69,H385,S389,T431,S468	5	5	238833
+1	Query_5	Specific	D-pathway	Y26,N88,D99,N106,S109,S164,S165,N171,T175	9	9	238833
+1	Query_5	Specific	K-pathway	H248,Y252,S263,H297,H298,T323,K326	7	7	238833
+1	Query_5	Specific	Electron transfer pathway	F384,R445,R446	3	3	238833
+1	Query_5	Specific	Putative proton exit pathway	H298,H375,D376,R445,R446	5	5	238833
+1	Query_5	Specific	Putative water exit pathway	D235,Q240,H241,D371,H375,D376,R445	7	7	238833
+1	Query_5	Specific	Subunit I/II interface	N63,D235,K272,F275,G276,S301,V302,G303,V306,R309,L317,I325,F328,Y335,G336,G337,L349,N367,A368,L370,I372,A373,F374,H375,D376,L440,Q441,R445,R446,I447,G456,W457	32	32	238833
+1	Query_5	Specific	Subunit I/III interface	P98,F102,R104,W111,D152,F156,T174,N178,V198,L205,P208,M216,T225,S226,F227,G232,G233,D235,F245,Y282,M285,G288,V289,V293	25	24	238833
+1	Query_5	Specific	Subunit I/IV interface	L46,S49,G50,M415,K418,V419,D452,V470	8	8	238833
+1	Query_5	Specific	Subunit I/VIa interface	I143,R221,N222,F223,N224	5	5	238833
+1	Query_5	Specific	Subunit I/VIb interface	G303	1	1	238833
+1	Query_5	Specific	Subunit I/VIc interface	G336	1	1	238833
+1	Query_5	Specific	Subunit I/VIIa interface	F122,T125	2	2	238833
+1	Query_5	Specific	Subunit I/VIIb interface	D452,G456	2	2	238833
+1	Query_5	Specific	Subunit I/VIIc interface	F32,L36,A39,L43,S124,T125,I407,Y480,L483	9	9	238833
+1	Query_5	Specific	Subunit I/VIIIb interface	L416,W473	2	2	238833
+1	Query_5	Specific	Dimer interface	V198,L205,F245,Y282,M285,G288,V289,V293	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	155	orf155_Mycgr3_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334321	6	99	3.8736e-08	50.9221	pfam00940	RNA_pol	N	355471
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	246	orf246_Mycgr3_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	355471	28	205	2.98628e-13	68.5114	cl25973	RNA_pol	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	900	nad5_Mycgr3_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	177253	1	627	0	626.65	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	89	nad4L_Mycgr3_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351118	5	86	9.39468e-15	63.1273	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	497	nad4_Mycgr3_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235622	41	492	4.35518e-120	361.057	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	225	nad6_Mycgr3_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	354830	18	223	9.01835e-19	80.4301	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	122	nad3_Mycgr3_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334119	19	112	1.24009e-15	66.2846	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	580	nad2_Mycgr3_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235603	44	486	3.6356e-88	280.554	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	634	orf634_Mycgr3_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	328818	3	214	0.00327586	40.0231	cl21594	Gate	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	74	atp9_Mycgr3_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	349422	6	70	2.90703e-19	72.9275	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	249	cox2_Mycgr3_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	214438	17	246	4.36122e-111	318.696	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	138	orf138_Mycgr3_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	306914	63	138	0.00517827	35.474	pfam00529	HlyD	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	390	cob_Mycgr3_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	214440	10	367	0	517.413	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	351	orf351_Mycgr3_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	164795	174	236	0.000701793	40.6709	PHA00370	III	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	264	atp6_Mycgr3_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	273458	38	261	1.41062e-50	165.072	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	48	atp8_Mycgr3_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	283561	1	48	5.82144e-09	45.475	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

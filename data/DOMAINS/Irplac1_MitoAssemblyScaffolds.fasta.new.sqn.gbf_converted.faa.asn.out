@@ -1,0 +1,1019 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Irplac1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Irplac1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	63	cob_Irplac1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	214440	1	63	2.57418e-27	99.8564	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	283	cox3_Irplac1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238834	33	260	3.95323e-95	280.171	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Subunit I/III interface	I91,H94,S95,T106,C109,S113,S114,H120,G208,A209,S212,F216	12	12	238834
+1	Query_5	Specific	Subunit III/Vb interface	A175	1	1	238834
+1	Query_5	Specific	Subunit III/VIa interface	M144,A145,V146,Y163,I189,D199,V200,A201,A206,D207,G208	11	11	238834
+1	Query_5	Specific	Subunit III/VIb interface	A136	1	1	238834
+1	Query_5	Specific	Subunit III/VIIa interface	L73,A76,D77,M80,T83,Y84,L85	7	7	238834
+1	Query_5	Specific	Phospholipid binding site	W74,W75,C78,I79,G82,H88,G99,V100,F103,A231,R238,I250,G251	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	63	orf63_Irplac1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	48	orf49_Irplac1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	273636	3	44	3.13369e-08	46.6101	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	120	orf121_Irplac1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	108	orf109_Irplac1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	273636	1	100	1.48491e-05	41.6026	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_10	Generic	DNA binding site	N28,T29,F30,Y31,H35,A39	21	6	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	540	nad2_Irplac1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	235603	7	471	1.66162e-78	254.36	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	122	nad3_Irplac1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334119	26	113	6.26286e-29	100.182	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	260	atp6_Irplac1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	273458	35	257	1.61064e-45	151.975	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	145	orf146_Irplac1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	197761	1	46	0.00294554	33.6954	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	224	orf224_Irplac1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	198392	73	161	4.66401e-27	98.8372	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_15	Specific	putative active site	Y76,Y87,G89,R97,Y101,E146,N158	7	7	198392
+1	Query_15	Specific	putative metal binding site	E146	1	1	198392
+1	Query_15	Specific	GIY-YIG motif/motif A	G74,V75,Y76,Y87,V88,G89	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	485	nad4_Irplac1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235622	12	482	5.22152e-143	419.222	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	62	orf61_Irplac1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	355698	9	38	0.000118838	37.3276	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	44	orf44_Irplac1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	355698	2	41	0.000169702	35.9069	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	113	orf114_Irplac1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	273636	72	98	0.00682648	34.2838	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	727	orf727_Irplac1_feature_24_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	281206	98	551	7.59418e-90	288.478	pfam03175	DNA_pol_B_2	-	355698
+1	Query_24	Superfamily	353046	537	618	0.00024528	43.8517	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_24	Generic	active site	D565	8	1	99912
+1	Query_24	Generic	metal-binding site 	D563,D565,S566	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	47	orf48_Irplac1_feature_28_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	2	30	0.00191792	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	64	nad4_Irplac1_feature_38_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Non-specific	214462	4	43	2.3831e-07	45.0429	MTH00217	ND4	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	154	orf155_Irplac1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Superfamily	353929	71	116	5.33311e-07	44.9092	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_30	Generic	active site	Y74,Y85,G87,R95,P99	6	5	198380
+1	Query_30	Generic	catalytic site	R95	2	1	198380
+1	Query_30	Generic	GIY-YIG motif/motif A	G72,F73,Y74,Y85,V86,G87	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_32	Peptide	130	orf130_Irplac1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	355698	27	122	4.27163e-18	78.5439	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	103	orf102_Irplac1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Superfamily	355698	39	96	1.46146e-06	44.6464	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	154	orf154_Irplac1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	238828	1	135	1.7327e-54	170.845	cd01651	RT_G2_intron	C	295487
+ENDDOMAINS
+SITES
+1	Query_34	Specific	putative nucleic acid binding site	G99	1	1	238828
+1	Query_34	Specific	putative NTP binding site	D45,I46,S47,K48,C49,F50,Q98	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	128	orf128_Irplac1_feature_20_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Non-specific	275209	77	114	1.36032e-07	48.2228	TIGR04416	group_II_RT_mat	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	719	orf719_Irplac1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	281206	90	543	6.66981e-90	288.478	pfam03175	DNA_pol_B_2	-	355698
+1	Query_39	Superfamily	353046	529	610	0.000243981	43.8517	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_39	Generic	active site	D557	8	1	99912
+1	Query_39	Generic	metal-binding site 	D555,D557,S558	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_41	Peptide	47	orf48_Irplac1_feature_8_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Specific	334330	2	30	0.00191792	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	64	nad4_Irplac1_feature_18_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_44	Non-specific	214462	4	43	2.3831e-07	45.0429	MTH00217	ND4	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	469	orf468_Irplac1_feature_22_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_45	Superfamily	355698	1	230	3.28626e-46	166.369	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	482	orf482_Irplac1_feature_24_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_46	Superfamily	355698	334	482	1.61937e-24	105.508	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_49	Peptide	681	nad5_Irplac1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Non-specific	177253	1	616	0	626.265	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	90	nad4L_Irplac1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Superfamily	351118	5	90	1.2507e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	129	cox1_Irplac1_feature_6_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Superfamily	350997	1	30	6.90889e-13	63.6561	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+2	Query_51	Generic	Binuclear center (active site)	H18,H19	4	2	238461
+2	Query_51	Generic	K-pathway	H18,H19	7	2	238461
+2	Query_51	Generic	Putative proton exit pathway	H19	5	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_52	Peptide	52	nad1_Irplac1_feature_8_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Superfamily	351105	6	48	0.000499189	34.8859	cl00469	NADHdh	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	283	cox3_Irplac1_feature_14_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	238834	33	260	3.95323e-95	280.171	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_54	Specific	Subunit I/III interface	I91,H94,S95,T106,C109,S113,S114,H120,G208,A209,S212,F216	12	12	238834
+2	Query_54	Specific	Subunit III/Vb interface	A175	1	1	238834
+2	Query_54	Specific	Subunit III/VIa interface	M144,A145,V146,Y163,I189,D199,V200,A201,A206,D207,G208	11	11	238834
+2	Query_54	Specific	Subunit III/VIb interface	A136	1	1	238834
+2	Query_54	Specific	Subunit III/VIIa interface	L73,A76,D77,M80,T83,Y84,L85	7	7	238834
+2	Query_54	Specific	Phospholipid binding site	W74,W75,C78,I79,G82,H88,G99,V100,F103,A231,R238,I250,G251	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_55	Peptide	63	orf63_Irplac1_feature_21_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	48	orf49_Irplac1_feature_23_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Non-specific	273636	3	44	3.13369e-08	46.6101	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	120	orf121_Irplac1_feature_29_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	108	orf109_Irplac1_feature_31_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Non-specific	273636	1	100	1.48491e-05	41.6026	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_59	Generic	DNA binding site	N28,T29,F30,Y31,H35,A39	21	6	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_60	Peptide	540	nad2_Irplac1_feature_35_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	235603	7	471	1.66162e-78	254.36	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	122	nad3_Irplac1_feature_37_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	334119	26	113	6.26286e-29	100.182	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	536	cox1_Irplac1_feature_8_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	238833	13	517	0	861.019	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+2	Query_62	Specific	Binuclear center (heme a3/CuB)	H245,H294,H295,H380	4	4	238833
+2	Query_62	Specific	Low-spin heme (heme a) binding site	H66,H382,S386,T428,S465	5	5	238833
+2	Query_62	Specific	D-pathway	Y22,N85,D96,N103,S106,S161,S162,N168,T172	9	9	238833
+2	Query_62	Specific	K-pathway	H245,Y249,S260,H294,H295,T320,K323	7	7	238833
+2	Query_62	Specific	Electron transfer pathway	F381,R442,R443	3	3	238833
+2	Query_62	Specific	Putative proton exit pathway	H295,H372,D373,R442,R443	5	5	238833
+2	Query_62	Specific	Putative water exit pathway	D232,Q237,H238,D368,H372,D373,R442	7	7	238833
+2	Query_62	Specific	Subunit I/II interface	N60,D232,K269,F272,G273,A298,V299,G300,V303,R306,M314,I322,F325,Y332,G333,G334,L346,N364,A365,M367,I369,A370,L371,H372,D373,L437,A438,R442,R443,I444,G453,W454	32	32	238833
+2	Query_62	Specific	Subunit I/III interface	T13,P95,F99,R101,W108,D149,F153,T171,N175,I195,L202,P205,M213,T222,S223,F224,G229,G230,D232,F242,Y279,F282,G285,I286,L290	25	25	238833
+2	Query_62	Specific	Subunit I/IV interface	L42,A45,A46,F412,K415,V416,D449,V467	8	8	238833
+2	Query_62	Specific	Subunit I/Vb interface	P270,Y274,A516	3	3	238833
+2	Query_62	Specific	Subunit I/VIa interface	I140,R218,N219,F220,N221	5	5	238833
+2	Query_62	Specific	Subunit I/VIb interface	G300	1	1	238833
+2	Query_62	Specific	Subunit I/VIc interface	G333	1	1	238833
+2	Query_62	Specific	Subunit I/VIIa interface	L119,L122	2	2	238833
+2	Query_62	Specific	Subunit I/VIIb interface	D449,G453	2	2	238833
+2	Query_62	Specific	Subunit I/VIIc interface	F28,I32,A35,L39,A121,L122,I404,Y477,F480	9	9	238833
+2	Query_62	Specific	Subunit I/VIIIb interface	L413,A470	2	2	238833
+2	Query_62	Specific	Dimer interface	I195,L202,F242,Y279,F282,G285,I286,L290	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_63	Peptide	120	orf121_Irplac1_feature_10_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	120	orf121_Irplac1_feature_12_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	251	cox2_Irplac1_feature_14_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Specific	214438	20	250	1.95415e-116	332.178	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	187	orf188_Irplac1_feature_24_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Specific	334330	81	176	7.26084e-09	50.6979	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	57	nad3_Irplac1_feature_30_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Specific	334119	17	57	1.64636e-07	43.1726	pfam00507	Oxidored_q4	C	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	163	orf163_Irplac1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Superfamily	354079	67	89	0.000295718	37.0846	cl16352	zf-3CxxC	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	297	orf297_Irplac1_feature_4_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Superfamily	355698	200	291	7.05806e-13	68.1436	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	102	orf103_Irplac1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Superfamily	353929	72	100	1.1556e-07	45.2944	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_70	Generic	active site	Y75,Y86,G88,R96,Y100	6	5	198380
+2	Query_70	Generic	catalytic site	R96	2	1	198380
+2	Query_70	Generic	GIY-YIG motif/motif A	G73,V74,Y75,Y86,V87,G88	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_71	Peptide	82	cob_Irplac1_feature_16_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Non-specific	164624	5	66	2.09742e-19	79.75	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	134	nad5_Irplac1_feature_18_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Non-specific	235836	3	123	1.29306e-46	158.783	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	54	orf55_Irplac1_feature_22_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_74	Specific	334330	1	54	1.30515e-09	48.7719	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	71	orf72_Irplac1_feature_24_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_75	Specific	334330	1	36	8.14766e-07	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	339	nad1_Irplac1_feature_32_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_77	Specific	333876	33	327	1.09765e-119	347.153	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	128	orf128_Irplac1_feature_8_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_80	Non-specific	275209	77	114	1.36032e-07	48.2228	TIGR04416	group_II_RT_mat	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	102	orf103_Irplac1_feature_20_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_82	Superfamily	353929	72	100	1.1556e-07	45.2944	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_82	Generic	active site	Y75,Y86,G88,R96,Y100	6	5	198380
+2	Query_82	Generic	catalytic site	R96	2	1	198380
+2	Query_82	Generic	GIY-YIG motif/motif A	G73,V74,Y75,Y86,V87,G88	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_83	Peptide	297	orf297_Irplac1_feature_22_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_83	Superfamily	355698	200	291	7.05806e-13	68.1436	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	163	orf163_Irplac1_feature_24_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_84	Superfamily	354079	67	89	0.000295718	37.0846	cl16352	zf-3CxxC	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	128	orf128_Irplac1_feature_6_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_86	Non-specific	275209	77	114	1.36032e-07	48.2228	TIGR04416	group_II_RT_mat	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	72	nad3_Irplac1_feature_2_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_89	Specific	334119	43	65	0.00819452	31.6166	pfam00507	Oxidored_q4	NC	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_90	Peptide	540	nad2_Irplac1_feature_4_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_90	Superfamily	356474	7	263	6.75678e-34	133.793	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	108	orf109_Irplac1_feature_8_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_91	Non-specific	273636	1	100	1.48491e-05	41.6026	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_91	Generic	DNA binding site	N28,T29,F30,Y31,H35,A39	21	6	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_92	Peptide	120	orf121_Irplac1_feature_10_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_92	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	48	orf49_Irplac1_feature_16_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_94	Non-specific	273636	3	44	3.13369e-08	46.6101	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	63	orf63_Irplac1_feature_18_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_95	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	283	cox3_Irplac1_feature_22_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_96	Specific	238834	33	260	3.95323e-95	280.171	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_96	Specific	Subunit I/III interface	I91,H94,S95,T106,C109,S113,S114,H120,G208,A209,S212,F216	12	12	238834
+2	Query_96	Specific	Subunit III/Vb interface	A175	1	1	238834
+2	Query_96	Specific	Subunit III/VIa interface	M144,A145,V146,Y163,I189,D199,V200,A201,A206,D207,G208	11	11	238834
+2	Query_96	Specific	Subunit III/VIb interface	A136	1	1	238834
+2	Query_96	Specific	Subunit III/VIIa interface	L73,A76,D77,M80,T83,Y84,L85	7	7	238834
+2	Query_96	Specific	Phospholipid binding site	W74,W75,C78,I79,G82,H88,G99,V100,F103,A231,R238,I250,G251	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_97	Peptide	272	cox3_Irplac1_feature_2_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_97	Specific	238834	36	269	7.74272e-116	332.173	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_97	Specific	Subunit I/III interface	Q84,N87,G88,S99,F102,S106,V107,H113,S201,V202,S205,A209	12	12	238834
+2	Query_97	Specific	Subunit III/Vb interface	G168	1	1	238834
+2	Query_97	Specific	Subunit III/VIa interface	F137,A138,I139,Y156,I182,S192,E193,A194,S199,D200,S201	11	11	238834
+2	Query_97	Specific	Subunit III/VIb interface	Q129	1	1	238834
+2	Query_97	Specific	Subunit III/VIIa interface	L66,R69,D70,T73,T76,Y77,E78	7	7	238834
+2	Query_97	Specific	Phospholipid binding site	W67,L68,V71,T72,A75,H81,G92,F93,F96,F224,R231,Q243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_98	Peptide	187	orf188_Irplac1_feature_8_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_98	Specific	334330	81	176	7.26084e-09	50.6979	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	82	cob_Irplac1_feature_20_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_99	Non-specific	164624	5	66	2.09742e-19	79.75	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_100	Peptide	134	nad5_Irplac1_feature_22_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_100	Non-specific	235836	3	123	1.29306e-46	158.783	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	54	orf55_Irplac1_feature_26_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_102	Specific	334330	1	54	1.30515e-09	48.7719	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_103	Peptide	71	orf72_Irplac1_feature_28_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_103	Specific	334330	1	36	8.14766e-07	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_104	Peptide	209	orf209_Irplac1_feature_32_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_104	Superfamily	355698	14	151	1.05233e-08	54.0112	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_107	Peptide	47	orf48_Irplac1_feature_6_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_107	Specific	334330	2	30	0.00191792	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_109	Peptide	727	orf727_Irplac1_feature_10_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_109	Specific	281206	98	551	7.59418e-90	288.478	pfam03175	DNA_pol_B_2	-	355698
+3	Query_109	Superfamily	353046	537	618	0.00024528	43.8517	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+3	Query_109	Generic	active site	D565	8	1	99912
+3	Query_109	Generic	metal-binding site 	D563,D565,S566	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_110	Peptide	284	nad5_Irplac1_feature_14_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_110	Non-specific	214400	1	246	2.24831e-48	169.487	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_111	Peptide	63	cob_Irplac1_feature_16_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_111	Non-specific	214440	1	63	2.57418e-27	99.8564	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_116	Peptide	113	orf114_Irplac1_feature_2_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_116	Non-specific	273636	72	98	0.00682648	34.2838	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_119	Peptide	176	orf176_Irplac1_feature_10_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_119	Non-specific	275209	15	170	3.56646e-50	164.553	TIGR04416	group_II_RT_mat	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_120	Peptide	117	orf118_Irplac1_feature_14_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_120	Specific	334330	1	97	4.70791e-17	70.343	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_122	Peptide	129	orf129_Irplac1_feature_18_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_122	Specific	334330	42	95	1.47645e-05	40.6827	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_123	Peptide	279	nad4_Irplac1_feature_20_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_123	Non-specific	235622	3	272	2.44041e-86	265.913	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_124	Peptide	86	orf87_Irplac1_feature_2_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_124	Specific	197761	42	81	0.0041828	32.1546	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_125	Peptide	120	orf121_Irplac1_feature_4_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_125	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_127	Peptide	48	orf49_Irplac1_feature_10_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_127	Non-specific	273636	3	44	3.13369e-08	46.6101	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_128	Peptide	63	orf63_Irplac1_feature_12_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_128	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_129	Peptide	283	cox3_Irplac1_feature_16_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_129	Specific	238834	33	260	3.95323e-95	280.171	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+3	Query_129	Specific	Subunit I/III interface	I91,H94,S95,T106,C109,S113,S114,H120,G208,A209,S212,F216	12	12	238834
+3	Query_129	Specific	Subunit III/Vb interface	A175	1	1	238834
+3	Query_129	Specific	Subunit III/VIa interface	M144,A145,V146,Y163,I189,D199,V200,A201,A206,D207,G208	11	11	238834
+3	Query_129	Specific	Subunit III/VIb interface	A136	1	1	238834
+3	Query_129	Specific	Subunit III/VIIa interface	L73,A76,D77,M80,T83,Y84,L85	7	7	238834
+3	Query_129	Specific	Phospholipid binding site	W74,W75,C78,I79,G82,H88,G99,V100,F103,A231,R238,I250,G251	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_130	Peptide	727	orf727_Irplac1_feature_25_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_130	Specific	281206	98	551	7.59418e-90	288.478	pfam03175	DNA_pol_B_2	-	355698
+3	Query_130	Superfamily	353046	537	618	0.00024528	43.8517	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+3	Query_130	Generic	active site	D565	8	1	99912
+3	Query_130	Generic	metal-binding site 	D563,D565,S566	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_132	Peptide	47	orf48_Irplac1_feature_29_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_132	Specific	334330	2	30	0.00191792	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_135	Peptide	64	nad4_Irplac1_feature_2_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_135	Non-specific	214462	4	43	2.3831e-07	45.0429	MTH00217	ND4	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_138	Peptide	47	orf48_Irplac1_feature_12_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_138	Specific	334330	2	30	0.00191792	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_140	Peptide	727	orf727_Irplac1_feature_16_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_140	Specific	281206	98	551	7.59418e-90	288.478	pfam03175	DNA_pol_B_2	-	355698
+3	Query_140	Superfamily	353046	537	618	0.00024528	43.8517	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+3	Query_140	Generic	active site	D565	8	1	99912
+3	Query_140	Generic	metal-binding site 	D563,D565,S566	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_142	Peptide	66	cox1_Irplac1_feature_26_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_142	Superfamily	350997	1	30	2.85925e-14	64.8117	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+3	Query_142	Generic	Binuclear center (active site)	H18,H19	4	2	238461
+3	Query_142	Generic	K-pathway	H18,H19	7	2	238461
+3	Query_142	Generic	Putative proton exit pathway	H19	5	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_143	Peptide	52	nad1_Irplac1_feature_28_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_143	Superfamily	351105	6	48	0.000499189	34.8859	cl00469	NADHdh	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_144	Peptide	103	nad5_Irplac1_feature_30_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_144	Non-specific	235836	1	103	4.43433e-24	94.4549	PRK06590	PRK06590	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_147	Peptide	113	orf114_Irplac1_feature_10_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_147	Non-specific	273636	72	98	0.00682648	34.2838	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_150	Peptide	44	orf44_Irplac1_feature_16_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_150	Superfamily	355698	2	41	0.000169702	35.9069	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_152	Peptide	62	orf61_Irplac1_feature_20_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_152	Superfamily	355698	9	38	0.000118838	37.3276	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_153	Peptide	279	nad4_Irplac1_feature_28_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_153	Non-specific	235622	3	272	2.44041e-86	265.913	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_154	Peptide	129	orf129_Irplac1_feature_30_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_154	Specific	334330	42	95	1.47645e-05	40.6827	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_155	Peptide	64	nad4_Irplac1_feature_2_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_155	Superfamily	357710	1	37	3.48153e-06	41.9724	cl30834	ND4	NC	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_159	Peptide	63	cob_Irplac1_feature_10_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_159	Non-specific	214440	1	63	2.57418e-27	99.8564	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_160	Peptide	284	nad5_Irplac1_feature_12_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_160	Non-specific	214400	1	246	2.24831e-48	169.487	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_162	Peptide	52	nad1_Irplac1_feature_16_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_162	Superfamily	351105	6	48	0.000499189	34.8859	cl00469	NADHdh	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_163	Peptide	129	cox1_Irplac1_feature_18_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_163	Superfamily	350997	1	30	6.90889e-13	63.6561	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+4	Query_163	Generic	Binuclear center (active site)	H18,H19	4	2	238461
+4	Query_163	Generic	K-pathway	H18,H19	7	2	238461
+4	Query_163	Generic	Putative proton exit pathway	H19	5	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_164	Peptide	90	nad4L_Irplac1_feature_20_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_164	Superfamily	351118	5	90	1.2507e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_165	Peptide	681	nad5_Irplac1_feature_22_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_165	Non-specific	177253	1	616	0	626.265	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_169	Peptide	71	orf72_Irplac1_feature_2_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_169	Specific	334330	1	36	8.14766e-07	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_170	Peptide	54	orf55_Irplac1_feature_4_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_170	Specific	334330	1	54	1.30515e-09	48.7719	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_172	Peptide	119	nad5_Irplac1_feature_8_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_172	Non-specific	235836	3	119	1.96104e-44	151.85	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_173	Peptide	82	cob_Irplac1_feature_11_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_173	Non-specific	164624	5	66	2.09742e-19	79.75	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_174	Peptide	82	cob_Irplac1_feature_12_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_174	Non-specific	164624	5	66	2.09742e-19	79.75	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_176	Peptide	305	nad5_Irplac1_feature_24_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_176	Non-specific	214400	1	267	4.3247e-59	198.763	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_182	Peptide	64	nad4_Irplac1_feature_8_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_182	Superfamily	357710	1	37	3.48153e-06	41.9724	cl30834	ND4	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_183	Peptide	71	orf72_Irplac1_feature_10_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_183	Specific	334330	1	36	8.14766e-07	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_184	Peptide	54	orf55_Irplac1_feature_12_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_184	Specific	334330	1	54	1.30515e-09	48.7719	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_186	Peptide	134	ndhF_Irplac1_feature_16_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_186	Non-specific	235836	3	123	1.29306e-46	158.783	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_187	Peptide	82	cob_Irplac1_feature_19_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_187	Non-specific	164624	5	66	2.09742e-19	79.75	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_188	Peptide	82	cob_Irplac1_feature_20_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_188	Non-specific	164624	5	66	2.09742e-19	79.75	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_189	Peptide	279	nad4_Irplac1_feature_4_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_189	Non-specific	235622	3	272	2.44041e-86	265.913	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_190	Peptide	129	orf129_Irplac1_feature_6_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_190	Specific	334330	42	95	1.47645e-05	40.6827	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_192	Peptide	117	orf118_Irplac1_feature_10_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_192	Specific	334330	1	97	4.70791e-17	70.343	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_193	Peptide	176	orf176_Irplac1_feature_14_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_193	Non-specific	275209	15	170	3.56646e-50	164.553	TIGR04416	group_II_RT_mat	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_196	Peptide	284	nad5_Irplac1_feature_22_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_196	Non-specific	214400	1	246	2.24831e-48	169.487	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_197	Peptide	63	cob_Irplac1_feature_24_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_197	Non-specific	214440	1	63	2.57418e-27	99.8564	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_202	Peptide	66	cox1_Irplac1_feature_10_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_202	Superfamily	350997	1	30	2.85925e-14	64.8117	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+4	Query_202	Generic	Binuclear center (active site)	H18,H19	4	2	238461
+4	Query_202	Generic	K-pathway	H18,H19	7	2	238461
+4	Query_202	Generic	Putative proton exit pathway	H19	5	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_203	Peptide	52	nad1_Irplac1_feature_12_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_203	Superfamily	351105	6	48	0.000499189	34.8859	cl00469	NADHdh	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_205	Peptide	284	nad5_Irplac1_feature_16_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_205	Non-specific	214400	1	246	2.24831e-48	169.487	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_206	Peptide	63	cob_Irplac1_feature_18_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_206	Non-specific	214440	1	63	2.57418e-27	99.8564	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_210	Peptide	50	nad4_Irplac1_feature_26_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_210	Superfamily	357710	1	37	3.5128e-06	41.202	cl30834	ND4	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_211	Peptide	51	orf52_Irplac1_feature_2_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_211	Specific	334330	1	36	2.35206e-07	42.6087	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_212	Peptide	54	orf55_Irplac1_feature_4_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_212	Specific	334330	1	54	1.30515e-09	48.7719	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_214	Peptide	119	nad5_Irplac1_feature_8_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_214	Non-specific	235836	3	119	1.96104e-44	151.85	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_215	Peptide	82	cob_Irplac1_feature_10_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_215	Non-specific	164624	5	66	2.09742e-19	79.75	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_216	Peptide	305	nad5_Irplac1_feature_20_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_216	Non-specific	214400	1	267	4.3247e-59	198.763	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_220	Peptide	63	orf63_Irplac1_feature_2_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_220	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_221	Peptide	88	orf89_Irplac1_feature_4_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_221	Superfamily	353929	53	88	1.5792e-08	46.8352	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+4	Query_221	Generic	active site	Y54,Y65,G67,R75,Y79	6	5	198380
+4	Query_221	Generic	catalytic site	R75	2	1	198380
+4	Query_221	Generic	GIY-YIG motif/motif A	V53,Y54,Y65,V66,G67	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_222	Peptide	128	orf128_Irplac1_feature_10_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_222	Superfamily	355698	7	93	1.31934e-11	60.0544	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_224	Peptide	64	nad4_Irplac1_feature_16_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_224	Superfamily	357710	1	37	3.48153e-06	41.9724	cl30834	ND4	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_228	Peptide	63	cob_Irplac1_feature_24_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_228	Non-specific	214440	1	63	2.57418e-27	99.8564	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_229	Peptide	284	nad5_Irplac1_feature_26_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_229	Non-specific	214400	1	246	2.24831e-48	169.487	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_231	Peptide	52	nad1_Irplac1_feature_30_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_231	Superfamily	351105	6	48	0.000499189	34.8859	cl00469	NADHdh	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_233	Peptide	101	nad2_Irplac1_feature_2_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_233	Superfamily	356474	31	73	5.43119e-09	51.3601	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_234	Peptide	63	orf63_Irplac1_feature_4_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_234	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+SESSION	5	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_235	Peptide	283	cox3_Irplac1_feature_8_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_235	Specific	238834	33	260	3.95323e-95	280.171	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+5	Query_235	Specific	Subunit I/III interface	I91,H94,S95,T106,C109,S113,S114,H120,G208,A209,S212,F216	12	12	238834
+5	Query_235	Specific	Subunit III/Vb interface	A175	1	1	238834
+5	Query_235	Specific	Subunit III/VIa interface	M144,A145,V146,Y163,I189,D199,V200,A201,A206,D207,G208	11	11	238834
+5	Query_235	Specific	Subunit III/VIb interface	A136	1	1	238834
+5	Query_235	Specific	Subunit III/VIIa interface	L73,A76,D77,M80,T83,Y84,L85	7	7	238834
+5	Query_235	Specific	Phospholipid binding site	W74,W75,C78,I79,G82,H88,G99,V100,F103,A231,R238,I250,G251	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_237	Peptide	339	nad1_Irplac1_feature_21_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_237	Specific	333876	33	327	1.09765e-119	347.153	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_238	Peptide	97	nad5_Irplac1_feature_23_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_238	Non-specific	214400	8	93	0.00034364	37.7491	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_239	Peptide	283	cox3_Irplac1_feature_2_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_239	Specific	238834	33	260	3.95323e-95	280.171	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+5	Query_239	Specific	Subunit I/III interface	I91,H94,S95,T106,C109,S113,S114,H120,G208,A209,S212,F216	12	12	238834
+5	Query_239	Specific	Subunit III/Vb interface	A175	1	1	238834
+5	Query_239	Specific	Subunit III/VIa interface	M144,A145,V146,Y163,I189,D199,V200,A201,A206,D207,G208	11	11	238834
+5	Query_239	Specific	Subunit III/VIb interface	A136	1	1	238834
+5	Query_239	Specific	Subunit III/VIIa interface	L73,A76,D77,M80,T83,Y84,L85	7	7	238834
+5	Query_239	Specific	Phospholipid binding site	W74,W75,C78,I79,G82,H88,G99,V100,F103,A231,R238,I250,G251	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_240	Peptide	63	orf63_Irplac1_feature_9_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_240	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_241	Peptide	48	orf49_Irplac1_feature_11_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_241	Non-specific	273636	3	44	3.13369e-08	46.6101	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_243	Peptide	120	orf121_Irplac1_feature_17_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_243	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_244	Peptide	108	orf109_Irplac1_feature_19_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_244	Non-specific	273636	1	100	1.48491e-05	41.6026	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+5	Query_244	Generic	DNA binding site	N28,T29,F30,Y31,H35,A39	21	6	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_245	Peptide	108	orf109_Irplac1_feature_25_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_245	Non-specific	273636	1	100	1.48491e-05	41.6026	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+5	Query_245	Generic	DNA binding site	N28,T29,F30,Y31,H35,A39	21	6	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_246	Peptide	120	orf121_Irplac1_feature_27_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_246	Non-specific	273636	54	120	4.13616e-17	73.1889	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_249	Peptide	48	orf49_Irplac1_feature_35_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_249	Non-specific	273636	3	44	3.13369e-08	46.6101	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_250	Peptide	63	orf63_Irplac1_feature_37_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_250	Superfamily	355698	31	62	1.21478e-05	40.024	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_251	Peptide	88	orf89_Irplac1_feature_39_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_251	Superfamily	353929	53	88	1.5792e-08	46.8352	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+5	Query_251	Generic	active site	Y54,Y65,G67,R75,Y79	6	5	198380
+5	Query_251	Generic	catalytic site	R75	2	1	198380
+5	Query_251	Generic	GIY-YIG motif/motif A	V53,Y54,Y65,V66,G67	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_255	Peptide	64	nad4_Irplac1_feature_8_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_255	Superfamily	357710	1	37	3.48153e-06	41.9724	cl30834	ND4	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_256	Peptide	71	orf72_Irplac1_feature_10_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_256	Specific	334330	1	36	8.14766e-07	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_257	Peptide	54	orf55_Irplac1_feature_12_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_257	Specific	334330	1	54	1.30515e-09	48.7719	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_259	Peptide	134	nad5_Irplac1_feature_16_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_259	Non-specific	235836	3	123	1.29306e-46	158.783	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_260	Peptide	62	cob_Irplac1_feature_18_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_260	Non-specific	164624	5	58	2.90566e-19	78.5944	MTH00053	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	5
+ENDDATA

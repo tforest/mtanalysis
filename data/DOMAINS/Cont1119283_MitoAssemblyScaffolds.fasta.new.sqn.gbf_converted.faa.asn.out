@@ -1,0 +1,136 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cont1119283_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cont1119283_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	253	cox2_Cont1119283_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	214402	4	248	4.97885e-112	321.7	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	332	nad1_Cont1119283_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	333876	14	320	3.74122e-121	350.619	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	73	atp9_Cont1119283_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	349422	6	70	4.71213e-16	64.8383	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	581	nad2_Cont1119283_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	235603	57	505	2.10262e-70	234.33	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	126	nad3_Cont1119283_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334119	26	112	3.68257e-28	98.6414	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	388	cob_Cont1119283_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214440	10	366	1.31095e-167	472.344	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	254	atp6_Cont1119283_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	273458	29	251	9.87861e-48	157.368	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	243	orf243_Cont1119283_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	333719	80	199	0.001542	39.4258	NF000535	MSCRAMM_SdrC	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	269	cox3_Cont1119283_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	238834	23	266	2.2679e-119	341.033	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_15	Specific	Subunit I/III interface	Q81,T84,G85,S96,F99,S103,I104,H110,G198,V199,S202,A206	12	12	238834
+1	Query_15	Specific	Subunit III/Vb interface	A165	1	1	238834
+1	Query_15	Specific	Subunit III/VIa interface	F134,A135,I136,Y153,I179,S189,E190,A191,S196,D197,G198	11	11	238834
+1	Query_15	Specific	Subunit III/VIb interface	L126	1	1	238834
+1	Query_15	Specific	Subunit III/VIIa interface	L63,R66,D67,T70,T73,Y74,L75	7	7	238834
+1	Query_15	Specific	Phospholipid binding site	W64,F65,V68,I69,S72,H78,G89,V90,F93,F221,R228,Q240,G241	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	88	nad4L_Cont1119283_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351118	7	88	1.74241e-16	67.7497	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	664	nad5_Cont1119283_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	235836	1	631	0	574.799	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	483	nad4_Cont1119283_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	235622	1	483	2.20297e-145	425	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	211	nad6_Cont1119283_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	354830	8	100	2.17078e-17	76.4133	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	527	cox1_Cont1119283_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	238833	7	511	0	841.374	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_21	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_21	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_21	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_21	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_21	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_21	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_21	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_21	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,S292,V293,G294,V297,R300,M308,I316,F319,Y326,G327,G328,L340,N358,A359,L361,I363,A364,F365,H366,D367,L431,A432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_21	Specific	Subunit I/III interface	T7,P89,F93,R95,W102,D143,F147,S165,N169,I189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_21	Specific	Subunit I/IV interface	L36,S39,S40,F406,K409,I410,D443,I461	8	8	238833
+1	Query_21	Specific	Subunit I/Vb interface	P264,Y268,T510	3	3	238833
+1	Query_21	Specific	Subunit I/VIa interface	I134,R212,N213,F214,N215	5	5	238833
+1	Query_21	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_21	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_21	Specific	Subunit I/VIIa interface	M113,L116	2	2	238833
+1	Query_21	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_21	Specific	Subunit I/VIIc interface	F22,I26,A29,L33,S115,L116,I398,Y471,F474	9	9	238833
+1	Query_21	Specific	Subunit I/VIIIb interface	L407,I464	2	2	238833
+1	Query_21	Specific	Dimer interface	I189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

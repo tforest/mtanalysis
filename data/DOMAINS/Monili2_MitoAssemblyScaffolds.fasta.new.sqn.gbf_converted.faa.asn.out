@@ -1,0 +1,129 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Monili2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Monili2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	184	nad6_Monili2_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	354830	9	73	3.23392e-06	45.2122	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	329	nad1_Monili2_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	333876	22	319	2.22865e-77	238.911	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	245	cox2_Monili2_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	214438	13	243	1.97236e-95	278.636	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	264	atp6_Monili2_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	349411	83	241	5.14541e-36	125.59	cd00310	ATP-synt_Fo_a_6	-	45
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	582	cox1_Monili2_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	238833	7	449	0	707.71	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_7	Specific	Binuclear center (heme a3/CuB)	H238,H287,H288,H373	4	4	238833
+1	Query_7	Specific	D-pathway	Y16,N78,D89,N96,A99,S154,S155,N161,T165	9	9	238833
+1	Query_7	Specific	K-pathway	H238,Y242,S253,H287,H288,T313,K316	7	7	238833
+1	Query_7	Specific	Electron transfer pathway	F374,R435,R436	3	3	238833
+1	Query_7	Specific	Putative proton exit pathway	H288,H365,D366,R435,R436	5	5	238833
+1	Query_7	Specific	Putative water exit pathway	D225,Q230,H231,D361,H365,D366,R435	7	7	238833
+1	Query_7	Specific	Subunit I/II interface	N53,D225,K262,F265,G266,A291,V292,G293,V296,R299,M307,I315,F318,Y325,G326,G327,F339,N357,A358,L360,V362,A363,F364,H365,D366,I430,A431,R435,R436,I437,N446,W447	32	32	238833
+1	Query_7	Specific	Subunit I/III interface	T7,L88,F92,R94,W101,D142,F146,V164,N168,I188,F195,P198,M206,T215,T216,F217,A222,G223,D225,F235,Y272,F275,G278,I279,L283	25	25	238833
+1	Query_7	Specific	Subunit I/IV interface	T36,G39,T40,Y405,F408,I409,D442	8	7	238833
+1	Query_7	Specific	Subunit I/VIa interface	I133,R211,N212,F213,N214	5	5	238833
+1	Query_7	Specific	Subunit I/VIb interface	G293	1	1	238833
+1	Query_7	Specific	Subunit I/VIc interface	G326	1	1	238833
+1	Query_7	Specific	Subunit I/VIIa interface	I112,F115	2	2	238833
+1	Query_7	Specific	Subunit I/VIIb interface	D442,N446	2	2	238833
+1	Query_7	Specific	Dimer interface	I188,F195,F235,Y272,F275,G278,I279,L283	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	433	nad5_Monili2_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	273905	14	223	1.56937e-33	132.406	TIGR01974	NDH_I_L	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	383	cob_Monili2_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214440	10	363	1.32329e-148	424.194	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	269	cox3_Monili2_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	238834	18	265	2.22463e-86	257.444	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_10	Specific	Subunit I/III interface	Y80,N83,G84,T95,F98,G102,F103,H109,S197,I198,T201,C205	12	12	238834
+1	Query_10	Specific	Subunit III/Vb interface	Y164	1	1	238834
+1	Query_10	Specific	Subunit III/VIa interface	Y133,M134,L135,Y152,I178,T188,S189,S190,N195,D196,S197	11	11	238834
+1	Query_10	Specific	Subunit III/VIb interface	V125	1	1	238834
+1	Query_10	Specific	Subunit III/VIIa interface	L62,Y65,D66,K69,T72,Y73,I74	7	7	238834
+1	Query_10	Specific	Phospholipid binding site	W63,M64,I67,I68,A71,H77,G88,F89,F92,M220,R227,I239,G240	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	90	nad4L_Monili2_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	351118	2	79	0.000242001	36.5486	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	498	nad4_Monili2_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	273903	66	419	1.5027e-53	187.454	TIGR01972	NDH_I_M	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	118	nad3_Monili2_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334119	24	116	6.58915e-15	64.3586	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	478	nad2_Monili2_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	356474	89	402	1.58747e-18	87.6962	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	73	atp9_Monili2_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	349422	6	70	1.96666e-18	71.0015	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

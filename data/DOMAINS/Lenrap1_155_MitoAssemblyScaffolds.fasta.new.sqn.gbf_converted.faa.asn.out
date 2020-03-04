@@ -1,0 +1,265 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Lenrap1_155_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Lenrap1_155_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	88	nad4L_Lenrap1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	351118	4	87	3.2233e-15	64.2829	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	669	nad5_Lenrap1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	177253	21	640	0	587.36	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	533	cox1_Lenrap1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	238833	7	485	0	833.285	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_3	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_3	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_3	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_3	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_3	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_3	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_3	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_3	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,A292,V293,G294,V297,R300,M308,I316,F319,Y326,G327,G328,L340,N358,A359,L361,V363,A364,F365,H366,D367,L431,A432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_3	Specific	Subunit I/III interface	T7,P89,F93,R95,W102,D143,F147,S165,N169,I189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_3	Specific	Subunit I/IV interface	L36,S39,A40,F406,K409,I410,D443,V461	8	8	238833
+1	Query_3	Specific	Subunit I/VIa interface	V134,R212,N213,F214,N215	5	5	238833
+1	Query_3	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_3	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_3	Specific	Subunit I/VIIa interface	L113,L116	2	2	238833
+1	Query_3	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_3	Specific	Subunit I/VIIc interface	F22,I26,A29,M33,A115,L116,I398,Y471,F474	9	9	238833
+1	Query_3	Specific	Subunit I/VIIIb interface	L407,M464	2	2	238833
+1	Query_3	Specific	Dimer interface	I189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	344	orf344_Lenrap1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	198392	90	170	1.02088e-19	82.2736	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_4	Non-specific	273636	88	340	1.7532e-10	59.7069	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_4	Specific	putative active site	Y92,Y103,G105,R113,Y117,E162	7	6	198392
+1	Query_4	Specific	putative metal binding site	E162	1	1	198392
+1	Query_4	Specific	GIY-YIG motif/motif A	G90,V91,Y92,Y103,V104,G105	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	109	orf109_Lenrap1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	20	67	6.85217e-05	38.3715	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	347	orf347_Lenrap1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	197	302	1.93978e-11	59.9427	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	76	151	4.41164e-08	50.3127	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	317	orf317_Lenrap1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	193	287	3.8755e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	76	161	0.00174294	37.2159	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	313	orf313_Lenrap1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	193	273	2.03303e-07	48.3867	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	87	153	4.19226e-07	47.2311	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	324	orf324_Lenrap1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	198	292	4.40663e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	87	164	1.9865e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	320	orf320_Lenrap1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	190	287	2.95979e-13	64.565	pfam00961	LAGLIDADG_1	-	45
+1	Query_10	Specific	334330	85	152	3.94814e-05	41.8383	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	291	orf291_Lenrap1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	273636	81	286	3.32842e-35	125.961	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	208	nad6_Lenrap1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	354830	8	100	8.6154e-20	82.5765	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	686	orf686_Lenrap1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	333719	505	646	0.00702677	39.4258	NF000535	MSCRAMM_SdrC	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	252	cox2_Lenrap1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	214402	7	252	1.01598e-108	313.225	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	248	orf248_Lenrap1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	335245	60	230	3.30026e-41	138.833	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	389	cob_Lenrap1_feature_17_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	214440	10	366	4.92982e-178	498.923	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	238	orf238_Lenrap1_feature_25_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	335245	48	221	5.99702e-65	198.924	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	247	orf247_Lenrap1_feature_29_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	353929	1	88	1.38081e-18	77.6512	cl15257	GIY-YIG_SF	-	-
+1	Query_19	Non-specific	273636	2	232	2.15746e-16	75.1149	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_19	Generic	active site	Y11,G13,R23,H27,E73	6	5	198380
+1	Query_19	Generic	catalytic site	R23,E73	2	2	198380
+1	Query_19	Generic	metal binding site	E73	1	1	198380
+1	Query_19	Generic	GIY-YIG motif/motif A	Y11,I12,G13	6	3	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	111	nad1_Lenrap1_feature_36_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	333876	1	99	7.48273e-28	102.551	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	240	orf241_Lenrap1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	335245	51	222	3.50429e-59	184.287	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	261	orf262_Lenrap1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	273636	19	229	2.27908e-28	107.472	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	286	orf286_Lenrap1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	90	269	3.74516e-48	157.708	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	235	orf236_Lenrap1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	42	217	2.19138e-41	138.833	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	52	atp8_Lenrap1_feature_20_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	283561	1	48	1.17715e-06	39.697	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	680	nad2_Lenrap1_feature_14_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	235603	229	598	1.10337e-76	253.205	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	127	nad3_Lenrap1_feature_16_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	334119	28	83	4.97144e-16	67.8254	pfam00507	Oxidored_q4	C	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	484	orf483_Lenrap1_feature_18_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	355698	20	345	3.35437e-70	230.313	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	428	orf428_Lenrap1_feature_20_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Superfamily	355698	328	418	2.47889e-06	49.2688	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_39	Peptide	214	nad1_Lenrap1_feature_14_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	333876	13	212	1.46372e-77	234.674	pfam00146	NADHdh	C	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	73	atp9_Lenrap1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	349422	6	70	2.26838e-21	78.3203	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	487	nad4_Lenrap1_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	235622	27	476	2.44614e-140	412.289	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	763	orf762_Lenrap1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	281206	192	611	4.42678e-73	244.95	pfam03175	DNA_pol_B_2	-	355698
+2	Query_45	Superfamily	353046	592	671	0.00198292	41.1553	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+2	Query_45	Generic	active site	D621	8	1	99912
+2	Query_45	Generic	metal-binding site 	D619,D621,S622	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_46	Peptide	255	atp6_Lenrap1_feature_2_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	273458	25	252	6.69639e-53	170.85	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	276	cox3_Lenrap1_feature_4_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	238834	30	273	1.08103e-97	286.334	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_47	Specific	Subunit I/III interface	E88,N91,G92,S103,F106,S110,V111,H117,S205,V206,T209,A213	12	12	238834
+2	Query_47	Specific	Subunit III/Vb interface	L172	1	1	238834
+2	Query_47	Specific	Subunit III/VIa interface	F141,S142,I143,Y160,V186,T196,D197,S198,A203,D204,S205	11	11	238834
+2	Query_47	Specific	Subunit III/VIb interface	L133	1	1	238834
+2	Query_47	Specific	Subunit III/VIIa interface	F70,S73,D74,I77,S80,F81,L82	7	7	238834
+2	Query_47	Specific	Phospholipid binding site	W71,L72,V75,H76,G79,H85,G96,F97,F100,F228,R235,L247,G248	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_48	Peptide	235	orf235_Lenrap1_feature_8_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	335245	39	216	9.25433e-55	172.731	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

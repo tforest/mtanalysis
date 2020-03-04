@@ -1,0 +1,299 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mycfil1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mycfil1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_3	Peptide	348	orf349_Mycfil1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	52	146	4.6489e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	247	341	0.00939993	35.2899	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	487	orf488_Mycfil1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	367	467	1.04144e-24	97.6922	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	208	309	1.84132e-22	91.529	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	115	orf116_Mycfil1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	273636	24	93	2.18839e-16	71.2629	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	771	orf771_Mycfil1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	238828	293	568	3.88449e-96	297.961	cd01651	RT_G2_intron	-	295487
+1	Query_7	Non-specific	279664	604	738	6.35043e-20	86.3694	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+1	Query_7	Specific	putative active site	D366,I367,K368,G369,F370,F371,Q419,G420,F512,D514,D515,L564,G565	13	13	238828
+1	Query_7	Specific	putative nucleic acid binding site	G420	1	1	238828
+1	Query_7	Specific	putative NTP binding site	D366,I367,K368,G369,F370,F371,Q419,D514	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	392	nad6_Mycfil1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	354830	7	140	3.88211e-17	78.5041	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	52	atp8_Mycfil1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	283561	1	48	5.57528e-05	35.4598	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	535	nad4_Mycfil1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	214462	95	525	8.53164e-118	355.899	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	482	orf482_Mycfil1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	186	284	6.63221e-20	84.2102	pfam00961	LAGLIDADG_1	-	45
+1	Query_13	Specific	334330	347	451	2.98164e-19	82.6694	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	411	orf411_Mycfil1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	286	378	3.98198e-08	50.6979	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	179	238	0.0028259	36.8307	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	193	orf192_Mycfil1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	355698	80	178	0.00471141	37.0625	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	71	atp9_Mycfil1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	349422	6	60	7.72009e-13	56.7492	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	119	orf119_Mycfil1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	273636	4	95	2.52389e-15	68.5665	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	1058	orf1058_Mycfil1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	173412	624	744	0.00616227	40.5095	PTZ00121	PTZ00121	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	343	nad1_Mycfil1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	333876	12	318	3.5418e-117	340.989	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_26	Peptide	190	orf190_Mycfil1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_26	Non-specific	273636	2	186	9.15758e-23	90.5229	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	359	nad5_Mycfil1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_27	Non-specific	214400	1	317	4.23915e-77	248.453	MTH00020	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	631	orf631_Mycfil1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_28	Non-specific	273636	376	614	3.99436e-21	92.0637	TIGR01453	grpIintron_endo	-	45
+2	Query_28	Non-specific	275209	248	308	2.20776e-05	46.682	TIGR04416	group_II_RT_mat	N	45
+2	Query_28	Non-specific	235836	1	23	0.000157494	44.7642	PRK06590	PRK06590	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	607	orf607_Mycfil1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_29	Non-specific	273636	352	590	1.60784e-20	90.1377	TIGR01453	grpIintron_endo	-	45
+2	Query_29	Non-specific	275209	224	284	2.45368e-05	46.682	TIGR04416	group_II_RT_mat	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	319	nad5_Mycfil1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Non-specific	235836	17	318	3.68412e-115	345.605	PRK06590	PRK06590	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	314	orf314_Mycfil1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	335245	103	288	3.7649e-34	122.655	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	54	nad4L_Mycfil1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Superfamily	351118	3	54	9.22953e-06	38.8598	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	269	cox3_Mycfil1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Superfamily	294143	13	267	9.61286e-105	304.333	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+2	Query_36	Specific	Subunit I/III interface	R81,S84,G85,S96,F99,S103,V104,H110,S198,V199,T202,A206	12	12	238834
+2	Query_36	Specific	Subunit III/Vb interface	T165	1	1	238834
+2	Query_36	Specific	Subunit III/VIa interface	F134,G135,L136,L153,L179,N189,E190,A191,A196,D197,S198	11	11	238834
+2	Query_36	Specific	Subunit III/VIb interface	F126	1	1	238834
+2	Query_36	Specific	Subunit III/VIIa interface	L63,R66,D67,T70,T73,F74,L75	7	7	238834
+2	Query_36	Specific	Phospholipid binding site	W64,F65,I68,V69,L72,H78,G89,V90,F93,F221,R228,V240,G241	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	194	orf194_Mycfil1_feature_112_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Non-specific	273636	1	191	2.0522e-23	92.4489	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	95	orf96_Mycfil1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Non-specific	273636	78	95	0.0073042	33.5134	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	550	orf550_Mycfil1_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	310411	293	510	0.000393596	43.0145	pfam05793	TFIIF_alpha	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	113	orf114_Mycfil1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	334330	19	55	0.00087354	35.6751	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	48	orf49_Mycfil1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334330	15	36	0.00154731	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	431	orf431_Mycfil1_feature_133_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	62	154	1.22668e-21	88.8326	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	313	atp6_Mycfil1_feature_135_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	273458	80	310	1.51788e-45	153.901	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	540	cox1_Mycfil1_feature_137_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	238833	7	475	0	795.15	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+2	Query_49	Specific	Binuclear center (heme a3/CuB)	H239,M288,K289,H374	4	4	238833
+2	Query_49	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+2	Query_49	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+2	Query_49	Specific	K-pathway	H239,Y243,S254,M288,K289,T314,K317	7	7	238833
+2	Query_49	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+2	Query_49	Specific	Putative proton exit pathway	K289,H366,D367,R436,R437	5	5	238833
+2	Query_49	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+2	Query_49	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,Y292,F293,F294,V297,R300,M308,I316,F319,Y326,G327,G328,V340,N358,A359,I361,I363,A364,V365,H366,D367,L431,A432,R436,R437,I438,G447,W448	32	32	238833
+2	Query_49	Specific	Subunit I/III interface	T7,P89,F93,R95,W102,D143,F147,S165,N169,V189,I196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+2	Query_49	Specific	Subunit I/IV interface	L36,A39,G40,S406,K409,I410,D443,I461	8	8	238833
+2	Query_49	Specific	Subunit I/VIa interface	I134,R212,N213,F214,N215	5	5	238833
+2	Query_49	Specific	Subunit I/VIb interface	F294	1	1	238833
+2	Query_49	Specific	Subunit I/VIc interface	G327	1	1	238833
+2	Query_49	Specific	Subunit I/VIIa interface	L113,L116	2	2	238833
+2	Query_49	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+2	Query_49	Specific	Subunit I/VIIc interface	F22,I26,A29,L33,A115,L116,I398,F471,F474	9	9	238833
+2	Query_49	Specific	Subunit I/VIIIb interface	L407,I464	2	2	238833
+2	Query_49	Specific	Dimer interface	V189,I196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_50	Peptide	308	orf308_Mycfil1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	59	151	5.09662e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+2	Query_50	Specific	334330	202	286	9.61261e-05	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	106	orf106_Mycfil1_feature_151_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	335245	46	105	6.08292e-10	52.9335	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	416	orf416_Mycfil1_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	335245	213	392	8.88486e-51	168.493	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	427	orf427_Mycfil1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	334330	297	395	1.85364e-23	93.8402	pfam00961	LAGLIDADG_1	-	45
+2	Query_55	Specific	334330	139	239	7.90078e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	265	orf265_Mycfil1_feature_165_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	137	259	5.25907e-07	46.8459	pfam00961	LAGLIDADG_1	-	45
+2	Query_56	Specific	334330	17	121	0.00398441	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	345	orf345_Mycfil1_feature_169_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	198392	74	155	4.03055e-20	83.4292	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_57	Non-specific	273636	73	239	3.43893e-08	53.1585	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+2	Query_57	Specific	putative active site	Y76,Y86,G88,R96,Y100,E145	7	6	198392
+2	Query_57	Specific	putative metal binding site	E145	1	1	198392
+2	Query_57	Specific	GIY-YIG motif/motif A	G74,V75,Y76,Y86,V87,G88	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_58	Peptide	489	orf490_Mycfil1_feature_184_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	334330	192	292	3.03049e-25	99.233	pfam00961	LAGLIDADG_1	-	45
+2	Query_58	Specific	334330	359	459	7.33958e-24	95.381	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	267	orf268_Mycfil1_feature_188_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Non-specific	273636	115	242	4.24676e-25	98.9973	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	295	orf296_Mycfil1_feature_194_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	334330	107	263	4.59056e-08	49.9275	pfam00961	LAGLIDADG_1	-	45
+2	Query_63	Specific	334330	1	49	2.91379e-05	41.8383	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	374	orf374_Mycfil1_feature_196_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Specific	334330	90	181	2.1301e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+2	Query_64	Specific	334330	210	315	0.000171201	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_65	Peptide	148	nad3_Mycfil1_feature_198_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_65	Specific	334119	25	118	2.375e-23	87.0854	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

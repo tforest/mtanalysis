@@ -1,0 +1,154 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mictri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mictri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	401	orf402_Mictri1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	350997	38	134	3.92485e-49	173.053	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_1	Specific	334330	271	381	3.59808e-15	70.7282	pfam00961	LAGLIDADG_1	-	45
+1	Query_1	Specific	334330	151	237	1.17094e-06	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_1	Generic	Low-spin heme binding site	S62,R66,Y83,H90,M94,I95,V99	15	7	238461
+1	Query_1	Generic	D-pathway	Y47,N109,D120,N133	9	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	392	cob_Mictri1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	214440	10	367	1.95469e-178	500.079	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	310	orf310_Mictri1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	68	150	1.95849e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	663	nad5_Mictri1_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	214400	1	630	0	602.452	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	89	nad4L_Mictri1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	351118	3	86	5.69743e-17	68.9053	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	251	cox2_Mictri1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214438	19	248	7.47653e-109	312.918	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	74	atp9_Mictri1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	349422	6	70	3.17446e-20	75.6239	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	141	nad3_Mictri1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334119	19	112	6.45306e-29	100.953	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	553	nad2_Mictri1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235603	124	478	1.87529e-79	257.057	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	269	cox3_Mictri1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	278911	12	269	6.94271e-138	388.307	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_15	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,A203,F207	12	12	238834
+1	Query_15	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_15	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,T190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_15	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_15	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,F75,L76	7	7	238834
+1	Query_15	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,V241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	295	nad6_Mictri1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	354830	87	163	2.52207e-15	72.5613	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	259	atp6_Mictri1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	273458	34	256	1.46607e-47	157.368	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	50	atp8_Mictri1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	283561	1	48	1.37866e-08	44.7046	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	494	nad4_Mictri1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	235622	1	490	1.51332e-128	382.628	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	368	nad1_Mictri1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	333876	26	351	2.1905e-111	327.122	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	439	cox1_Mictri1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	238833	6	423	0	681.901	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_21	Specific	Binuclear center (heme a3/CuB)	H152,H201,H202,H287	4	4	238833
+1	Query_21	Specific	K-pathway	H152,Y156,S167,H201,H202,T227,K230	7	7	238833
+1	Query_21	Specific	Electron transfer pathway	F288,R349,R350	3	3	238833
+1	Query_21	Specific	Putative proton exit pathway	H202,H279,D280,R349,R350	5	5	238833
+1	Query_21	Specific	Putative water exit pathway	D139,Q144,H145,D275,H279,D280,R349	7	7	238833
+1	Query_21	Specific	Subunit I/II interface	D139,K176,F179,G180,T205,V206,G207,V210,R213,L221,I229,F232,Y239,G240,G241,L253,N271,A272,L274,I276,A277,F278,H279,D280,L344,Q345,R349,R350,I351,G360,W361	32	31	238833
+1	Query_21	Specific	Subunit I/III interface	F6,R8,W15,D56,F60,T78,N82,I102,L109,P112,M120,T129,S130,F131,G136,G137,D139,F149,Y186,M189,G192,I193,I197	25	23	238833
+1	Query_21	Specific	Subunit I/Vb interface	S177,Y181,A422	3	3	238833
+1	Query_21	Specific	Subunit I/VIa interface	I47,R125,N126,F127,N128	5	5	238833
+1	Query_21	Specific	Subunit I/VIb interface	G207	1	1	238833
+1	Query_21	Specific	Subunit I/VIc interface	G240	1	1	238833
+1	Query_21	Specific	Subunit I/VIIa interface	F26,V29	2	2	238833
+1	Query_21	Specific	Subunit I/VIIb interface	D356,G360	2	2	238833
+1	Query_21	Specific	Subunit I/VIIIb interface	L320,W377	2	2	238833
+1	Query_21	Specific	Dimer interface	I102,L109,F149,Y186,M189,G192,I193,I197	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	316	orf316_Mictri1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	191	287	1.12894e-19	82.2842	pfam00961	LAGLIDADG_1	-	45
+1	Query_22	Specific	334330	82	162	2.2549e-06	45.3051	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

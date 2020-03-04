@@ -1,0 +1,251 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cysmur1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cysmur1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	398	orf399_Cysmur1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	350997	1	95	3.79072e-66	217.736	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_2	Specific	335245	203	379	2.47172e-41	143.455	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+SITES
+1	Query_2	Generic	Binuclear center (active site)	H35,H84,H85	4	3	238461
+1	Query_2	Generic	K-pathway	H35,Y39,S50,H84,H85	7	5	238461
+1	Query_2	Generic	Putative proton exit pathway	H85	5	1	238461
+1	Query_2	Generic	Putative water exit pathway	D22,Q27,H28	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	351	orf351_Cysmur1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	350997	4	75	4.9211e-27	111.036	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_3	Specific	334330	126	221	1.04734e-14	68.8022	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	261	346	1.58408e-09	54.5499	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_3	Generic	K-pathway	T21,K24	7	2	238461
+1	Query_3	Generic	Putative proton exit pathway	H73,D74	5	2	238461
+1	Query_3	Generic	Putative water exit pathway	D69,H73,D74	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	380	orf381_Cysmur1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	95	194	1.85215e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	258	354	2.79003e-17	76.5062	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	277	cox3_Cysmur1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	238834	30	273	6.36273e-108	312.143	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Subunit I/III interface	E88,A91,G92,S103,F106,S110,V111,H117,S205,I206,T209,A213	12	12	238834
+1	Query_6	Specific	Subunit III/Vb interface	E172	1	1	238834
+1	Query_6	Specific	Subunit III/VIa interface	F141,A142,I143,F160,I186,L196,E197,S198,A203,D204,S205	11	11	238834
+1	Query_6	Specific	Subunit III/VIb interface	V133	1	1	238834
+1	Query_6	Specific	Subunit III/VIIa interface	F70,G73,D74,T77,S80,Y81,L82	7	7	238834
+1	Query_6	Specific	Phospholipid binding site	W71,L72,V75,N76,G79,H85,G96,F97,F100,F228,R235,V247,G248	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	350	orf350_Cysmur1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	69	167	3.40061e-15	70.343	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	213	314	9.00198e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	88	nad4L_Cysmur1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	351118	7	88	1.39434e-15	65.4385	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	707	nad5_Cysmur1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	177253	1	673	0	594.293	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	73	atp9_Cysmur1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	349422	6	69	1.91905e-16	65.9939	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	501	nad4_Cysmur1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235622	53	499	1.75076e-131	390.332	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	216	nad6_Cysmur1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	354830	3	216	2.26076e-17	76.4133	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	254	atp6_Cysmur1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	273458	8	251	2.04227e-48	159.294	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	110	orf111_Cysmur1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	29	110	3.78102e-09	49.5423	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	119	orf120_Cysmur1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	3	73	3.64822e-06	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	422	orf423_Cysmur1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	127	226	9.60542e-21	86.1362	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	285	392	2.07381e-15	71.4986	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	171	orf172_Cysmur1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	13	117	2.31429e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	234	orf235_Cysmur1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	335245	41	217	2.94209e-44	146.152	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	341	orf342_Cysmur1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	353929	76	173	5.47724e-09	52.6132	cl15257	GIY-YIG_SF	-	-
+1	Query_20	Non-specific	273636	75	337	0.000232903	41.6026	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_20	Generic	active site	Y79,Y90,G92,R103,Y107,E162	6	6	198380
+1	Query_20	Generic	catalytic site	R103,E162	2	2	198380
+1	Query_20	Generic	metal binding site	E162	1	1	198380
+1	Query_20	Generic	GIY-YIG motif/motif A	G77,V78,Y79,Y90,V91,G92	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	358	orf359_Cysmur1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	58	157	5.32135e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+1	Query_23	Specific	334330	215	328	1.22401e-15	71.4986	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	593	nad2_Cysmur1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	235603	2	519	3.52276e-83	268.227	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	138	nad3_Cysmur1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334119	27	112	1.58743e-29	102.493	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	52	atp8_Cysmur1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	283561	1	48	0.000771919	32.7634	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	338	nad1_Cysmur1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	333876	20	326	4.6165e-120	347.923	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	123	orf123_Cysmur1_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Non-specific	273636	2	116	1.15841e-19	80.1225	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_34	Generic	DNA binding site	N46,P47,M48,Y49,H53,T57,M61,S62,S66,K67,V87,K91,S96,T99,V101,R102,Y103,Y114	21	18	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	390	cob_Cysmur1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	214440	10	366	2.1016e-173	487.367	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_36	Peptide	108	orf108_Cysmur1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Non-specific	273636	2	97	0.00018103	38.521	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	237	orf237_Cysmur1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	335245	47	220	1.68071e-59	185.057	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	314	orf314_Cysmur1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	334330	69	134	0.000138344	40.2975	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	234	cox2_Cysmur1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	214402	7	229	9.46003e-98	284.72	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	348	orf349_Cysmur1_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Non-specific	273636	107	325	9.19876e-05	42.7582	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	426	orf427_Cysmur1_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Superfamily	350997	33	104	1.09114e-35	136.844	cl00275	Heme_Cu_Oxidase_I	C	-
+2	Query_41	Specific	334330	264	384	1.49364e-15	71.8838	pfam00961	LAGLIDADG_1	-	45
+2	Query_41	Specific	334330	145	230	2.48456e-09	54.1647	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+2	Query_41	Generic	Low-spin heme binding site	S57,R61,F79,H86,M90,I91,V95	15	7	238461
+2	Query_41	Generic	D-pathway	Y42	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	421	orf422_Cysmur1_feature_155_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	138	238	1.71407e-13	66.1058	pfam00961	LAGLIDADG_1	-	45
+2	Query_42	Superfamily	350997	1	47	2.22748e-12	68.2785	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+2	Query_42	Generic	Low-spin heme binding site	W45	15	1	238461
+2	Query_42	Generic	D-pathway	D10,N17,S20	9	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	387	orf388_Cysmur1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	350997	4	68	3.98346e-36	137.229	cl00275	Heme_Cu_Oxidase_I	NC	-
+2	Query_43	Specific	334330	274	374	4.61298e-15	70.343	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	334330	153	250	3.15819e-10	56.4759	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+2	Query_43	Generic	D-pathway	S31,S32,N38,T42	9	4	238461
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

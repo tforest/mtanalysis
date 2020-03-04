@@ -1,0 +1,222 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Benpoi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Benpoi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	389	orf390_Benpoi1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	273636	175	386	4.0449e-50	167.563	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	67	atp9_Benpoi1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	349422	39	67	6.88629e-12	54.0528	cd18182	ATP-synt_Fo_c_ATP5G3	NC	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	233	cox2_Benpoi1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	177126	16	232	1.37059e-108	311.715	MTH00051	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	259	atp6_Benpoi1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	273458	13	256	2.53749e-55	177.013	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	125	nad3_Benpoi1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334119	28	112	1.59911e-39	127.146	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	513	nad2_Benpoi1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235603	120	506	2.69228e-90	284.021	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	422	orf423_Benpoi1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	53	152	9.36865e-18	78.047	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	220	313	5.67027e-12	61.4834	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	146	orf146_Benpoi1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	17	117	6.10688e-29	101.544	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	218	orf218_Benpoi1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	335245	19	198	1.09611e-39	133.825	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	286	orf287_Benpoi1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	143	242	5.14957e-13	63.7946	pfam00961	LAGLIDADG_1	-	45
+1	Query_10	Specific	334330	28	122	2.3363e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	88	nad4L_Benpoi1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	351118	5	88	7.20976e-17	68.5201	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	657	nad5_Benpoi1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	177253	1	630	0	696.756	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	212	orf212_Benpoi1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	335245	6	190	1.59356e-56	176.583	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	329	orf329_Benpoi1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	206	301	1.91888e-17	76.121	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	93	182	1.31181e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	475	nad4_Benpoi1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	214462	1	464	8.38888e-180	511.905	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	48	atp8_Benpoi1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	283561	1	47	5.84988e-06	37.771	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	528	cox1_Benpoi1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	238833	8	512	0	878.738	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_18	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_18	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_18	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_18	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_18	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_18	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_18	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_18	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,T293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,L341,N359,A360,M362,V364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_18	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_18	Specific	Subunit I/IV interface	L37,A40,G41,L407,Q410,I411,D444,V462	8	8	238833
+1	Query_18	Specific	Subunit I/Vb interface	P265,Y269,S511	3	3	238833
+1	Query_18	Specific	Subunit I/VIa interface	V135,R213,N214,F215,N216	5	5	238833
+1	Query_18	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_18	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_18	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_18	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_18	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,A116,F117,I399,Y472,L475	9	9	238833
+1	Query_18	Specific	Subunit I/VIIIb interface	L408,L465	2	2	238833
+1	Query_18	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	360	orf360_Benpoi1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	212	317	5.472e-16	72.6542	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	90	187	3.5646e-11	59.1723	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	305	orf305_Benpoi1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	78	156	7.31383e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	328	orf328_Benpoi1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	273636	32	237	4.44368e-38	134.436	TIGR01453	grpIintron_endo	-	45
+1	Query_22	Specific	197761	271	321	3.22845e-07	46.407	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	325	orf325_Benpoi1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	273636	113	312	3.89071e-30	113.635	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	321	orf321_Benpoi1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	273636	47	313	1.93322e-35	127.502	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	270	cox3_Benpoi1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	278911	13	269	1.32067e-130	370.202	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_25	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_25	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_25	Specific	Subunit III/VIa interface	W136,E137,V138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_25	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_25	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,S75,F76,Q77	7	7	238834
+1	Query_25	Specific	Phospholipid binding site	W66,F67,I70,S71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	385	cob_Benpoi1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	214425	14	380	0	515.221	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	205	orf205_Benpoi1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Non-specific	273636	62	204	2.5633e-27	102.849	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	225	orf225_Benpoi1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	335245	35	206	3.30683e-50	160.789	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	321	orf321_Benpoi1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	202	287	5.16797e-13	64.1798	pfam00961	LAGLIDADG_1	-	45
+1	Query_29	Non-specific	181392	85	235	1.60747e-05	46.6829	PRK08332	PRK08332	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	130	orf130_Benpoi1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	335245	29	59	0.00508493	34.8291	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	212	nad6_Benpoi1_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Superfamily	354830	8	203	2.438e-29	107.394	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	291	nad1_Benpoi1_feature_142_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	333876	7	289	3.79147e-115	333.671	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

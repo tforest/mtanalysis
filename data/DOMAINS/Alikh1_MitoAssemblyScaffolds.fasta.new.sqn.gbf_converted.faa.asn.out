@@ -1,0 +1,188 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Alikh1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Alikh1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	269	cox3_Alikh1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	278911	12	269	1.99285e-134	379.832	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	252	cox2_Alikh1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	214438	22	249	7.71693e-110	315.615	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	364	nad1_Alikh1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	333876	12	347	3.41968e-114	334.056	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	117	orf117_Alikh1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	273636	75	112	2.30341e-09	52.3881	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	135	nad3_Alikh1_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334119	19	113	3.28265e-15	65.8994	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	601	nad2_Alikh1_feature_15_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235603	126	544	1.98387e-75	247.812	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	226	orf226_Alikh1_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	339335	179	222	0.00107405	39.0745	pfam14700	RPOL_N	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	306	orf306_Alikh1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334321	31	306	9.4656e-49	166.482	pfam00940	RNA_pol	C	355471
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	478	orf478_Alikh1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	355698	336	440	9.21863e-05	44.6464	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	911	orf911_Alikh1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	281206	326	769	4.2358e-78	261.129	pfam03175	DNA_pol_B_2	-	355698
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	487	nad4_Alikh1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235622	9	487	5.23094e-124	370.687	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	1133	nad5_Alikh1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	235836	1	629	0	650.298	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	348	orf348_Alikh1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	229	319	7.30069e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	89	nad4L_Alikh1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351118	5	86	2.24207e-14	62.3569	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	531	cox1_Alikh1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	238833	11	512	0	819.032	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Binuclear center (heme a3/CuB)	H241,H290,H291,H376	4	4	238833
+1	Query_17	Specific	Low-spin heme (heme a) binding site	H62,H378,S382,T424,S461	5	5	238833
+1	Query_17	Specific	D-pathway	Y19,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238833
+1	Query_17	Specific	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238833
+1	Query_17	Specific	Electron transfer pathway	F377,R438,R439	3	3	238833
+1	Query_17	Specific	Putative proton exit pathway	H291,H368,D369,R438,R439	5	5	238833
+1	Query_17	Specific	Putative water exit pathway	D228,Q233,H234,D364,H368,D369,R438	7	7	238833
+1	Query_17	Specific	Subunit I/II interface	N56,D228,K265,F268,G269,T294,V295,G296,V299,R302,L310,I318,F321,Y328,G329,G330,L342,N360,A361,L363,I365,A366,F367,H368,D369,L433,Q434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_17	Specific	Subunit I/III interface	P91,F95,R97,W104,D145,F149,T167,N171,I191,L198,P201,M209,T218,S219,F220,G225,G226,D228,F238,Y275,M278,G281,V282,V286	25	24	238833
+1	Query_17	Specific	Subunit I/IV interface	L39,S42,G43,L408,K411,V412,D445,L463	8	8	238833
+1	Query_17	Specific	Subunit I/Vb interface	S266,Y270,C511	3	3	238833
+1	Query_17	Specific	Subunit I/VIa interface	I136,R214,N215,F216,N217	5	5	238833
+1	Query_17	Specific	Subunit I/VIb interface	G296	1	1	238833
+1	Query_17	Specific	Subunit I/VIc interface	G329	1	1	238833
+1	Query_17	Specific	Subunit I/VIIa interface	F115,G118	2	2	238833
+1	Query_17	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_17	Specific	Subunit I/VIIc interface	F25,V29,A32,L36,S117,G118,L400,Y473,L476	9	9	238833
+1	Query_17	Specific	Subunit I/VIIIb interface	L409,W466	2	2	238833
+1	Query_17	Specific	Dimer interface	I191,L198,F238,Y275,M278,G281,V282,V286	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	278	orf278_Alikh1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	173	269	3.52472e-06	44.5347	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	374	orf374_Alikh1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	100	196	2.99195e-19	81.899	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	252	341	9.96454e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	239	nad6_Alikh1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	354830	16	117	3.40743e-17	76.5781	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	256	atp6_Alikh1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	273458	31	253	1.80493e-47	156.983	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	74	atp9_Alikh1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	349422	6	70	9.60688e-20	74.0831	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	386	cob_Alikh1_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	214440	10	368	1.88183e-179	502.39	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	114	orf114_Alikh1_feature_124_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	335245	3	94	2.22149e-31	108.402	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	318	orf318_Alikh1_feature_128_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	74	170	8.60295e-21	84.9806	pfam00961	LAGLIDADG_1	-	45
+1	Query_29	Specific	334330	206	301	8.13841e-05	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	296	orf296_Alikh1_feature_132_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	52	134	1.14124e-06	46.0755	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

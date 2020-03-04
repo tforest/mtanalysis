@@ -1,0 +1,129 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Lepor2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Lepor2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	259	atp6_Lepor2_feature_9_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	351082	14	259	4.91868e-48	159.017	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	48	atp8_Lepor2_feature_11_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	283561	1	48	1.26579e-09	47.0158	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	487	nad4_Lepor2_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	235622	33	484	9.16654e-132	390.717	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	360	nad1_Lepor2_feature_15_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	333876	25	343	1.41251e-110	324.811	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	573	cox1_Lepor2_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	238833	49	550	0	837.522	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Binuclear center (heme a3/CuB)	H279,H328,H329,H414	4	4	238833
+1	Query_6	Specific	Low-spin heme (heme a) binding site	H100,H416,S420,T462,S499	5	5	238833
+1	Query_6	Specific	D-pathway	Y57,N119,D130,N137,S140,S195,S196,N202,T206	9	9	238833
+1	Query_6	Specific	K-pathway	H279,Y283,S294,H328,H329,T354,K357	7	7	238833
+1	Query_6	Specific	Electron transfer pathway	F415,R476,R477	3	3	238833
+1	Query_6	Specific	Putative proton exit pathway	H329,H406,D407,R476,R477	5	5	238833
+1	Query_6	Specific	Putative water exit pathway	D266,Q271,H272,D402,H406,D407,R476	7	7	238833
+1	Query_6	Specific	Subunit I/II interface	N94,D266,K303,F306,G307,T332,V333,G334,V337,R340,L348,I356,F359,Y366,G367,G368,L380,N398,A399,L401,I403,A404,F405,H406,D407,L471,Q472,R476,R477,I478,G487,W488	32	32	238833
+1	Query_6	Specific	Subunit I/III interface	P129,F133,R135,W142,D183,F187,T205,N209,V229,L236,P239,M247,T256,S257,F258,G263,G264,D266,F276,Y313,M316,G319,V320,V324	25	24	238833
+1	Query_6	Specific	Subunit I/IV interface	L77,S80,G81,M446,K449,V450,D483,V501	8	8	238833
+1	Query_6	Specific	Subunit I/Vb interface	S304,Y308,A549	3	3	238833
+1	Query_6	Specific	Subunit I/VIa interface	V174,R252,N253,F254,N255	5	5	238833
+1	Query_6	Specific	Subunit I/VIb interface	G334	1	1	238833
+1	Query_6	Specific	Subunit I/VIc interface	G367	1	1	238833
+1	Query_6	Specific	Subunit I/VIIa interface	F153,G156	2	2	238833
+1	Query_6	Specific	Subunit I/VIIb interface	D483,G487	2	2	238833
+1	Query_6	Specific	Subunit I/VIIc interface	F63,V67,A70,L74,S155,G156,M438,Y511,L514	9	9	238833
+1	Query_6	Specific	Subunit I/VIIIb interface	L447,W504	2	2	238833
+1	Query_6	Specific	Dimer interface	V229,L236,F276,Y313,M316,G319,V320,V324	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	463	cob_Lepor2_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	214440	10	367	2.4721e-177	500.079	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	659	nad5_Lepor2_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	177253	1	628	0	611.627	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	89	nad4L_Lepor2_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	5	86	2.9422e-14	61.9718	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	251	cox2_Lepor2_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	214438	19	248	1.13496e-111	320.237	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	141	nad3_Lepor2_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334119	19	113	6.28931e-15	65.129	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	563	nad2_Lepor2_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235603	126	557	8.54152e-86	274.005	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	269	cox3_Lepor2_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	278911	12	269	1.54718e-130	369.817	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_18	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_18	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_18	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,T190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_18	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_18	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_18	Specific	Phospholipid binding site	W65,W66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	232	nad6_Lepor2_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	354830	30	122	5.9612e-18	78.3393	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

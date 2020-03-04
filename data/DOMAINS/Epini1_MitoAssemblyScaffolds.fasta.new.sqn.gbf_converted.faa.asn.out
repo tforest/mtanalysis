@@ -1,0 +1,382 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Epini1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Epini1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	258	atp6_Epini1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	351082	8	258	1.10018e-48	160.557	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	111	orf111_1_Epini1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	2	35	0.0013062	35.2899	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	198	nad6_Epini1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	354830	20	192	2.69376e-18	78.3393	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	269	cox3_Epini1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	278911	12	269	3.78419e-129	366.35	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_8	Specific	Subunit III/Vb interface	K166	1	1	238834
+1	Query_8	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_8	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_8	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,I76	7	7	238834
+1	Query_8	Specific	Phospholipid binding site	W65,W66,V69,I70,V73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_10	Peptide	106	orf106_Epini1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	20	106	1.18389e-05	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	430	orf430_Epini1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	144	242	1.36156e-24	96.9218	pfam00961	LAGLIDADG_1	-	45
+1	Query_11	Specific	334330	301	399	2.46653e-18	79.5878	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	288	orf288_2_Epini1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	186	281	2.48577e-18	78.047	pfam00961	LAGLIDADG_1	-	45
+1	Query_12	Specific	334330	26	124	1.05559e-16	73.8098	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	441	orf441_Epini1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	350997	39	109	6.89782e-29	118.241	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_14	Specific	198392	187	274	1.18904e-27	105	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_14	Non-specific	273636	186	438	1.30411e-09	57.7809	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_14	Generic	Low-spin heme binding site	S72,R76,Y93,H100,M104,I105,V109	15	7	238461
+1	Query_14	Generic	D-pathway	Y57	9	1	238461
+1	Query_14	Specific	putative active site	Y189,Y200,G202,R210,Y214,E259,N271	7	7	198392
+1	Query_14	Specific	putative metal binding site	E259	1	1	198392
+1	Query_14	Specific	GIY-YIG motif/motif A	G187,I188,Y189,Y200,V201,G202	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	336	orf337_Epini1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	174	290	8.10152e-17	74.5802	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	55	139	2.39498e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	313	orf314_Epini1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	152	270	1.3536e-14	68.417	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	29	126	0.00053897	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	331	orf332_Epini1_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	104	184	0.000324008	39.1419	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	210	303	0.0061886	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	193	orf194_Epini1_feature_105_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	94	173	1.48937e-05	41.8383	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	107	orf107_Epini1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	8	66	5.33906e-10	51.8535	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	443	orf444_Epini1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	154	252	1.31625e-23	94.2254	pfam00961	LAGLIDADG_1	-	45
+1	Query_21	Specific	334330	311	411	5.73096e-16	73.0394	pfam00961	LAGLIDADG_1	-	45
+1	Query_21	Superfamily	350997	3	32	2.51692e-08	55.5669	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+1	Query_21	Generic	K-pathway	Y3,S14	7	2	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	408	orf409_Epini1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	268	367	5.76923e-17	75.7358	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	153	orf153_Epini1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	198392	65	153	1.94958e-22	84.97	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_23	Specific	putative active site	Y68,Y79,G81,R89,Y93,E138,N150	7	7	198392
+1	Query_23	Specific	putative metal binding site	E138	1	1	198392
+1	Query_23	Specific	GIY-YIG motif/motif A	G66,V67,Y68,Y79,V80,G81	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	60	orf61_Epini1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	273636	1	58	1.59916e-12	58.5513	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+SITES
+1	Query_24	Generic	DNA binding site	N41,P42,F43,Y44,H48,S52,I56,I57	21	8	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_25	Peptide	138	orf139_Epini1_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	284793	84	120	4.05671e-08	46.3516	pfam07453	NUMOD1	-	299755
+1	Query_25	Non-specific	273636	1	50	0.000285731	38.9062	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	287	orf288_Epini1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	40	114	4.22295e-08	49.9275	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	353	cox2_Epini1_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	214438	121	350	1.59184e-112	326.4	MTH00154	COX2	-	45
+1	Query_27	Superfamily	350997	1	91	2.58575e-16	79.5269	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_27	Generic	Low-spin heme binding site	R3,R4,F33	15	3	238461
+1	Query_27	Generic	Putative proton exit pathway	R3,R4	5	2	238461
+1	Query_27	Generic	Putative water exit pathway	R3	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	89	nad4L_Epini1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	351118	5	86	2.26658e-14	62.3569	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	673	nad5_Epini1_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Non-specific	177253	1	631	0	606.62	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	428	orf428_1_Epini1_feature_129_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	298	398	5.0488e-31	114.256	pfam00961	LAGLIDADG_1	-	45
+1	Query_30	Specific	334330	138	239	4.49254e-28	106.552	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	217	nad2_Epini1_feature_134_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	356474	2	209	9.1586e-16	74.8573	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	468	nad2_Epini1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	235603	9	393	1.06156e-83	265.531	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	137	nad3_Epini1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	334119	27	112	3.9344e-13	60.5066	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	842	nad4_Epini1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	235622	1	481	4.17398e-134	408.437	PRK05846	PRK05846	-	45
+1	Query_35	Specific	335556	497	575	8.70048e-05	44.0609	pfam03962	Mnd1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	42	cox3_Epini1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Superfamily	294143	5	42	1.02511e-13	61.2723	cl00211	Heme_Cu_Oxidase_III_like	N	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	391	cob_Epini1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	214440	10	364	1.68818e-174	490.064	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	359	orf359_Epini1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Specific	334330	3	63	2.39807e-05	42.6087	pfam00961	LAGLIDADG_1	N	45
+1	Query_38	Specific	197761	296	350	0.00209058	35.6214	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_39	Peptide	321	orf321_Epini1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	273636	106	319	1.36669e-29	112.094	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	371	nad1_Epini1_feature_29_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	333876	12	354	1.23808e-114	335.597	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	330	orf330_Epini1_feature_33_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	334330	208	296	5.04204e-07	47.2311	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	334330	102	161	0.00211402	36.8307	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	205	orf205_1_Epini1_feature_37_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Non-specific	273636	62	184	9.01686e-29	106.701	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	205	orf205_2_Epini1_feature_39_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Non-specific	273636	49	196	2.78295e-25	97.4565	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_45	Generic	DNA binding site	N124,P125,M126,F127,H131,T135,R140,K141,K145,Y146,L148,V167,K171,S176,T179,G181,K182,Y183,S193	21	19	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_47	Peptide	355	nad2_Epini1_feature_48_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Superfamily	356474	2	225	2.479e-16	79.4797	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	768	nad4_Epini1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	235622	1	481	1.46006e-130	397.266	PRK05846	PRK05846	-	45
+2	Query_48	Specific	335556	497	575	7.8279e-05	44.0609	pfam03962	Mnd1	NC	45
+2	Query_48	Non-specific	235622	620	698	0.00288952	40.571	PRK05846	PRK05846	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	137	nad3_Epini1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	334119	27	112	3.9344e-13	60.5066	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	585	nad2_Epini1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	235603	2	510	1.26567e-82	266.301	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	258	atp6_Epini1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Superfamily	351082	8	258	1.10018e-48	160.557	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	111	orf111_2_Epini1_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	334330	2	35	0.0013062	35.2899	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	258	atp6_Epini1_feature_9_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Superfamily	351082	8	258	1.10018e-48	160.557	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	111	orf111_3_Epini1_feature_13_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	2	35	0.0013062	35.2899	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	355	nad2_Epini1_feature_18_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Superfamily	356474	2	225	2.479e-16	79.4797	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	173	nad1_Epini1_feature_26_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	333876	15	156	9.81544e-31	112.951	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	80	orf80_Epini1_feature_28_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Non-specific	273636	1	71	4.6638e-12	58.1661	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_60	Generic	DNA binding site	M1,F2,H6,T10,R15,K16,K20,Y21,L23,V42,K46,S51,T54,G56,K57,Y58,S68	21	17	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_61	Peptide	673	nad5_Epini1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Non-specific	177253	1	631	0	606.62	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	428	orf428_2_Epini1_feature_6_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	334330	298	398	5.0488e-31	114.256	pfam00961	LAGLIDADG_1	-	45
+2	Query_62	Specific	334330	138	239	4.49254e-28	106.552	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	355	nad2_Epini1_feature_11_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Superfamily	356474	2	225	2.479e-16	79.4797	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	173	nad1_Epini1_feature_21_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Specific	333876	15	156	9.81544e-31	112.951	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	51	orf51_Epini1_feature_23_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Specific	197761	4	45	0.000102605	34.851	smart00497	IENR1	N	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	89	nad4L_Epini1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Superfamily	351118	5	86	2.26658e-14	62.3569	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	673	nad5_Epini1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Non-specific	177253	1	631	0	606.62	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_71	Peptide	428	orf428_3_Epini1_feature_8_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Specific	334330	298	398	5.0488e-31	114.256	pfam00961	LAGLIDADG_1	-	45
+3	Query_71	Specific	334330	138	239	4.49254e-28	106.552	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	585	nad2_Epini1_feature_13_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Specific	235603	2	510	1.26567e-82	266.301	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	137	nad3_Epini1_feature_15_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Specific	334119	27	112	3.9344e-13	60.5066	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	315	nad4_Epini1_feature_17_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Non-specific	235622	1	315	1.04282e-68	222	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

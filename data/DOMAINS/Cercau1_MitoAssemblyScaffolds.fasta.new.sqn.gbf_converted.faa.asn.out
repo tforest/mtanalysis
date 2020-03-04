@@ -1,0 +1,180 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cercau1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cercau1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	561	nad2_Cercau1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	235603	120	476	7.45289e-82	263.605	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	137	nad3_Cercau1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334119	19	113	4.84996e-12	57.8102	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	250	cox2_Cercau1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	214438	18	247	2.63197e-112	321.778	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	550	cox1_Cercau1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	238833	28	530	0	861.019	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Binuclear center (heme a3/CuB)	H259,H308,H309,H394	4	4	238833
+1	Query_5	Specific	Low-spin heme (heme a) binding site	H80,H396,S400,T442,S479	5	5	238833
+1	Query_5	Specific	D-pathway	Y37,N99,D110,N117,S120,S175,S176,N182,T186	9	9	238833
+1	Query_5	Specific	K-pathway	H259,Y263,S274,H308,H309,T334,K337	7	7	238833
+1	Query_5	Specific	Electron transfer pathway	F395,R456,R457	3	3	238833
+1	Query_5	Specific	Putative proton exit pathway	H309,H386,D387,R456,R457	5	5	238833
+1	Query_5	Specific	Putative water exit pathway	D246,Q251,H252,D382,H386,D387,R456	7	7	238833
+1	Query_5	Specific	Subunit I/II interface	N74,D246,K283,F286,G287,T312,V313,G314,V317,R320,L328,I336,F339,Y346,G347,G348,L360,N378,A379,L381,I383,A384,F385,H386,D387,L451,Q452,R456,R457,I458,G467,W468	32	32	238833
+1	Query_5	Specific	Subunit I/III interface	T28,P109,F113,R115,W122,D163,F167,T185,N189,I209,L216,P219,M227,T236,S237,F238,G243,G244,D246,F256,Y293,M296,G299,V300,I304	25	25	238833
+1	Query_5	Specific	Subunit I/IV interface	M57,S60,G61,T426,K429,V430,D463,V481	8	8	238833
+1	Query_5	Specific	Subunit I/Vb interface	S284,Y288,A529	3	3	238833
+1	Query_5	Specific	Subunit I/VIa interface	V154,R232,N233,F234,N235	5	5	238833
+1	Query_5	Specific	Subunit I/VIb interface	G314	1	1	238833
+1	Query_5	Specific	Subunit I/VIc interface	G347	1	1	238833
+1	Query_5	Specific	Subunit I/VIIa interface	F133,C136	2	2	238833
+1	Query_5	Specific	Subunit I/VIIb interface	D463,G467	2	2	238833
+1	Query_5	Specific	Subunit I/VIIc interface	F43,L47,A50,L54,A135,C136,I418,Y491,L494	9	9	238833
+1	Query_5	Specific	Subunit I/VIIIb interface	L427,F484	2	2	238833
+1	Query_5	Specific	Dimer interface	I209,L216,F256,Y293,M296,G299,V300,I304	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	89	nad4L_Cercau1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	351118	3	87	4.71429e-17	69.0503	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	676	nad5_Cercau1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	177253	1	626	0	569.641	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	389	cob_Cercau1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214440	10	367	9.88313e-175	490.449	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	413	nad1_Cercau1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	333876	16	396	1.06851e-102	306.707	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	516	nad4_Cercau1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	235622	65	513	4.24231e-130	387.251	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	50	atp8_Cercau1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	283561	1	48	4.13059e-08	43.549	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	268	atp6_Cercau1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	273458	43	265	1.08496e-50	165.457	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	204	nad6_Cercau1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334114	33	191	6.4992e-24	91.7527	pfam00499	Oxidored_q3	-	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	275	cox3_Cercau1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	278911	18	275	6.5915e-142	399.092	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_14	Specific	Subunit I/III interface	A88,K91,G92,S103,L106,A110,I111,H117,G205,A206,T209,F213	12	12	238834
+1	Query_14	Specific	Subunit III/Vb interface	G172	1	1	238834
+1	Query_14	Specific	Subunit III/VIa interface	F141,E142,L143,Y160,I186,S196,V197,S198,S203,D204,G205	11	11	238834
+1	Query_14	Specific	Subunit III/VIb interface	L133	1	1	238834
+1	Query_14	Specific	Subunit III/VIIa interface	F70,K73,D74,S77,T80,F81,L82	7	7	238834
+1	Query_14	Specific	Phospholipid binding site	W71,F72,I75,I76,G79,H85,G96,I97,F100,F228,R235,L247,G248	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	268	atp6_Cercau1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	273458	43	265	1.08496e-50	165.457	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	50	atp8_Cercau1_feature_36_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	283561	1	48	4.13059e-08	43.549	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	204	nad6_Cercau1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334114	33	75	2.49813e-08	50.5363	pfam00499	Oxidored_q3	C	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	275	cox3_Cercau1_feature_22_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	278911	18	275	6.5915e-142	399.092	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Subunit I/III interface	A88,K91,G92,S103,L106,A110,I111,H117,G205,A206,T209,F213	12	12	238834
+1	Query_19	Specific	Subunit III/Vb interface	G172	1	1	238834
+1	Query_19	Specific	Subunit III/VIa interface	F141,E142,L143,Y160,I186,S196,V197,S198,S203,D204,G205	11	11	238834
+1	Query_19	Specific	Subunit III/VIb interface	L133	1	1	238834
+1	Query_19	Specific	Subunit III/VIIa interface	F70,K73,D74,S77,T80,F81,L82	7	7	238834
+1	Query_19	Specific	Phospholipid binding site	W71,F72,I75,I76,G79,H85,G96,I97,F100,F228,R235,L247,G248	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	50	atp8_Cercau1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	283561	1	48	4.13059e-08	43.549	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	268	atp6_Cercau1_feature_6_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	273458	43	265	1.08496e-50	165.457	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	247	cox3_Cercau1_feature_18_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	278911	18	247	6.19153e-123	349.787	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_23	Specific	Subunit I/III interface	A88,K91,G92,S103,L106,A110,I111,H117,G205,A206,T209,F213	12	12	238834
+1	Query_23	Specific	Subunit III/Vb interface	G172	1	1	238834
+1	Query_23	Specific	Subunit III/VIa interface	F141,E142,L143,Y160,I186,S196,V197,S198,S203,D204,G205	11	11	238834
+1	Query_23	Specific	Subunit III/VIb interface	L133	1	1	238834
+1	Query_23	Specific	Subunit III/VIIa interface	F70,K73,D74,S77,T80,F81,L82	7	7	238834
+1	Query_23	Specific	Phospholipid binding site	W71,F72,I75,I76,G79,H85,G96,I97,F100,F228,R235,L247	13	12	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

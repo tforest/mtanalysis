@@ -1,0 +1,138 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Patat1.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Patat1.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	266	atp6_Patat1.fasta.new.sqn.gbf_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	351082	21	266	1.47701e-48	160.557	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	269	cox3_Patat1.fasta.new.sqn.gbf_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	278911	12	269	1.21581e-124	354.794	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_2	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_2	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,T190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_2	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_2	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_2	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	74	atp9_Patat1.fasta.new.sqn.gbf_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	349422	6	70	2.90703e-19	72.9275	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_4	Peptide	489	nad4_Patat1.fasta.new.sqn.gbf_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	235622	33	484	2.82158e-114	345.649	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	356	nad1_Patat1.fasta.new.sqn.gbf_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	333876	18	339	3.90317e-111	325.967	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	1024	cox1_Patat1.fasta.new.sqn.gbf_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	238833	50	551	0	897.613	cd01663	Cyt_c_Oxidase_I	-	350997
+1	Query_7	Superfamily	354370	578	1016	5.31876e-163	486.767	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+SITES
+1	Query_7	Specific	Binuclear center (heme a3/CuB)	H280,H329,H330,H415	4	4	238833
+1	Query_7	Specific	Low-spin heme (heme a) binding site	H101,H417,S421,T463,S500	5	5	238833
+1	Query_7	Specific	D-pathway	Y58,N120,D131,N138,S141,S196,S197,N203,T207	9	9	238833
+1	Query_7	Specific	K-pathway	H280,Y284,S295,H329,H330,T355,K358	7	7	238833
+1	Query_7	Specific	Electron transfer pathway	F416,R477,R478	3	3	238833
+1	Query_7	Specific	Putative proton exit pathway	H330,H407,D408,R477,R478	5	5	238833
+1	Query_7	Specific	Putative water exit pathway	D267,Q272,H273,D403,H407,D408,R477	7	7	238833
+1	Query_7	Specific	Subunit I/II interface	N95,D267,K304,F307,G308,T333,V334,G335,V338,R341,L349,I357,F360,Y367,G368,G369,L381,N399,A400,L402,I404,A405,F406,H407,D408,L472,Q473,R477,R478,I479,G488,W489	32	32	238833
+1	Query_7	Specific	Subunit I/III interface	P130,F134,R136,W143,D184,F188,T206,N210,I230,L237,P240,M248,T257,S258,F259,G264,G265,D267,F277,Y314,M317,G320,V321,V325	25	24	238833
+1	Query_7	Specific	Subunit I/IV interface	L78,S81,G82,L447,K450,T451,D484,I502	8	8	238833
+1	Query_7	Specific	Subunit I/Vb interface	A305,Y309,C550	3	3	238833
+1	Query_7	Specific	Subunit I/VIa interface	I175,R253,N254,F255,N256	5	5	238833
+1	Query_7	Specific	Subunit I/VIb interface	G335	1	1	238833
+1	Query_7	Specific	Subunit I/VIc interface	G368	1	1	238833
+1	Query_7	Specific	Subunit I/VIIa interface	F154,G157	2	2	238833
+1	Query_7	Specific	Subunit I/VIIb interface	D484,G488	2	2	238833
+1	Query_7	Specific	Subunit I/VIIc interface	F64,V68,A71,L75,S156,G157,I439,Y512,L515	9	9	238833
+1	Query_7	Specific	Subunit I/VIIIb interface	L448,W505	2	2	238833
+1	Query_7	Specific	Dimer interface	I230,L237,F277,Y314,M317,G320,V321,V325	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	89	nad4L_Patat1.fasta.new.sqn.gbf_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	351118	5	86	3.77782e-14	61.5866	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	690	nad5_Patat1.fasta.new.sqn.gbf_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	235836	1	624	0	600.992	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	560	nad2_Patat1.fasta.new.sqn.gbf_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	235603	125	556	3.69573e-77	251.279	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	132	nad3_Patat1.fasta.new.sqn.gbf_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334119	19	113	2.21788e-13	60.8918	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	261	cox2_Patat1.fasta.new.sqn.gbf_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214438	28	259	1.93279e-102	297.125	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	396	cob_Patat1.fasta.new.sqn.gbf_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	214440	10	367	0	513.176	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	211	nad6_Patat1.fasta.new.sqn.gbf_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	354830	19	206	7.95716e-16	71.9557	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	448	rps3_Patat1.fasta.new.sqn.gbf_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	273611	332	434	0.00157912	40.5456	TIGR01417	PTS_I_fam	NC	45
+1	Query_16	Non-specific	130082	245	301	0.0021571	39.2221	TIGR01009	rpsC_bact	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

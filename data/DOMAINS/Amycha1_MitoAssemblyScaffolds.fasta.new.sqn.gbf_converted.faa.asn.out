@@ -1,0 +1,105 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Amycha1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Amycha1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	57	nad3_Amycha1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334119	1	52	9.80486e-12	53.9582	pfam00507	Oxidored_q4	N	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	208	nad6_Amycha1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	354830	8	206	1.7735e-22	89.8953	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	385	orf385_Amycha1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	355698	1	222	2.97617e-26	108.975	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	583	orf583_Amycha1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	355698	403	582	1.47944e-12	69.6843	cl28058	DNA_pol_B_2	C	-
+1	Query_7	Non-specific	184921	178	216	0.0051084	39.6796	PRK14957	PRK14957	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	108	orf108_Amycha1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	335245	6	107	2.83679e-12	59.0967	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	109	orf109_Amycha1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	335245	1	56	2.79624e-09	51.3927	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	272	cox3_Amycha1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	278911	15	270	1.13557e-122	350.172	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_10	Specific	Subunit I/III interface	Q84,K87,G88,S99,F102,S106,V107,H113,S201,V202,T205,A209	12	12	238834
+1	Query_10	Specific	Subunit III/Vb interface	G168	1	1	238834
+1	Query_10	Specific	Subunit III/VIa interface	F137,A138,I139,Y156,I182,S192,E193,S194,S199,D200,S201	11	11	238834
+1	Query_10	Specific	Subunit III/VIb interface	L129	1	1	238834
+1	Query_10	Specific	Subunit III/VIIa interface	L66,R69,D70,T73,T76,Y77,L78	7	7	238834
+1	Query_10	Specific	Phospholipid binding site	W67,F68,V71,T72,G75,H81,G92,I93,F96,F224,R231,Q243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	88	nad4L_Amycha1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	351118	7	86	1.03444e-13	60.431	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	666	nad5_Amycha1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	177253	1	614	0	632.813	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	51	atp8_Amycha1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	283561	1	48	2.74656e-05	36.2302	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	485	nad4_Amycha1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	235622	30	480	5.51363e-144	421.533	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	211	nad2_Amycha1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	356474	117	202	2.46259e-18	82.1761	cl29598	Proton_antipo_M	NC	-
+1	Query_19	Non-specific	236332	1	204	2.61955e-07	49.995	PRK08668	PRK08668	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

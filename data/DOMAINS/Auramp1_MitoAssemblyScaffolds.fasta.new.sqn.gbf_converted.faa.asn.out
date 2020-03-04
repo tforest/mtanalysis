@@ -1,0 +1,146 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Auramp1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Auramp1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	505	nad4_Auramp1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	235622	1	501	5.19494e-142	417.296	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	383	cob_Auramp1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	214440	10	366	2.27293e-170	479.278	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	332	nad1_Auramp1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	333876	12	319	5.65591e-111	324.426	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	260	cox2_Auramp1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	214402	18	260	2.36796e-107	310.144	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	73	atp9_Auramp1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	349422	6	70	2.08378e-14	60.6011	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	215	nad6_Auramp1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	354830	8	112	4.35717e-14	67.5537	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	608	nad2_Auramp1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235603	170	552	3.80294e-82	265.916	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	134	nad3_Auramp1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334119	19	112	1.68652e-25	92.093	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	268	cox3_Auramp1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	238834	22	265	2.35204e-100	292.883	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_15	Specific	Subunit I/III interface	Q80,E83,G84,S95,F98,S102,V103,H109,S197,V198,T201,A205	12	12	238834
+1	Query_15	Specific	Subunit III/Vb interface	D164	1	1	238834
+1	Query_15	Specific	Subunit III/VIa interface	F133,S134,L135,Y152,I178,I188,N189,A190,S195,D196,S197	11	11	238834
+1	Query_15	Specific	Subunit III/VIb interface	V125	1	1	238834
+1	Query_15	Specific	Subunit III/VIIa interface	L62,R65,D66,I69,S72,F73,L74	7	7	238834
+1	Query_15	Specific	Phospholipid binding site	W63,T64,I67,V68,G71,H77,G88,F89,F92,F220,R227,I239,G240	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	794	orf794_Auramp1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	223021	563	699	2.20521e-06	51.4777	PHA03247	PHA03247	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	88	nad4L_Auramp1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	351118	18	88	3.23615e-13	59.2754	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	687	nad5_Auramp1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	177253	1	635	0	611.627	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	262	atp6_Auramp1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	351082	18	262	2.66231e-45	152.083	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	527	cox1_Auramp1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	238833	7	489	0	799.387	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_21	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_21	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_21	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_21	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_21	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_21	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_21	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_21	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,A292,V293,G294,V297,R300,M308,I316,F319,F326,G327,G328,L340,N358,A359,L361,V363,A364,F365,H366,D367,M431,S432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_21	Specific	Subunit I/III interface	T7,I89,F93,R95,W102,D143,F147,T165,N169,V189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_21	Specific	Subunit I/IV interface	L36,S39,A40,F406,N409,V410,D443,V461	8	8	238833
+1	Query_21	Specific	Subunit I/VIa interface	I134,R212,N213,F214,N215	5	5	238833
+1	Query_21	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_21	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_21	Specific	Subunit I/VIIa interface	L113,L116	2	2	238833
+1	Query_21	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_21	Specific	Subunit I/VIIc interface	F22,I26,A29,L33,A115,L116,I398,Y471,F474	9	9	238833
+1	Query_21	Specific	Subunit I/VIIIb interface	L407,I464	2	2	238833
+1	Query_21	Specific	Dimer interface	V189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	307	orf307_Auramp1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	186	266	7.43278e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+1	Query_22	Specific	334330	80	147	0.00289503	36.4455	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	52	atp8_Auramp1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	283561	1	48	4.67891e-05	35.845	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

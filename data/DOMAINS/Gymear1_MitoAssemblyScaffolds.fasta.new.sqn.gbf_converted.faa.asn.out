@@ -1,0 +1,449 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Gymear1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Gymear1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	478	orf478_Gymear1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	273344	138	453	0.0010689	41.5196	TIGR00927	2A1904	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	340	orf340_Gymear1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	273636	135	191	1.46111e-05	45.0694	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	225	cox2_Gymear1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	214402	7	224	2.24292e-96	280.868	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	260	orf260_1_Gymear1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	335245	71	241	3.5189e-38	131.514	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	477	orf477_1_Gymear1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273636	204	473	3.46175e-49	167.563	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	321	cob_Gymear1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214440	2	298	3.48744e-140	400.312	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	399	orf399_Gymear1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	273636	159	394	4.23106e-27	107.086	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	244	orf244_Gymear1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	335245	46	226	6.10185e-35	122.655	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	340	nad1_Gymear1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	333876	22	328	5.9796e-120	347.923	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	241	orf241_1_Gymear1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	273636	27	236	4.40344e-44	147.532	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_14	Generic	DNA binding site	N166,P167,M168,F169,H173,T177,M181,S182,S186,K187,V207,N211,S216,T219,G221,R222,Y223,Y234	21	18	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	277	orf277_1_Gymear1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	279664	56	158	3.86835e-24	94.4586	pfam01348	Intron_maturas2	C	45
+1	Query_15	Non-specific	275209	3	72	0.00145857	39.3632	TIGR04416	group_II_RT_mat	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	348	orf348_1_Gymear1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	238828	244	348	1.43844e-52	173.156	cd01651	RT_G2_intron	C	295487
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_17	Peptide	427	orf427_1_Gymear1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	300	398	9.01915e-23	91.9142	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	142	242	1.07666e-20	86.1362	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	330	nad5_Gymear1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	177253	19	285	1.47837e-60	203.701	MTH00210	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	534	cox1_Gymear1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	238833	7	489	0	818.262	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_21	Specific	Binuclear center (heme a3/CuB)	H239,H288,H289,H374	4	4	238833
+1	Query_21	Specific	Low-spin heme (heme a) binding site	H60,H376,S380,T422,S459	5	5	238833
+1	Query_21	Specific	D-pathway	Y16,N79,D90,N97,S100,S155,S156,N162,T166	9	9	238833
+1	Query_21	Specific	K-pathway	H239,Y243,S254,H288,H289,T314,K317	7	7	238833
+1	Query_21	Specific	Electron transfer pathway	F375,R436,R437	3	3	238833
+1	Query_21	Specific	Putative proton exit pathway	H289,H366,D367,R436,R437	5	5	238833
+1	Query_21	Specific	Putative water exit pathway	D226,Q231,H232,D362,H366,D367,R436	7	7	238833
+1	Query_21	Specific	Subunit I/II interface	N54,D226,K263,F266,G267,A292,V293,G294,V297,R300,M308,I316,F319,Y326,G327,G328,I340,N358,A359,L361,V363,A364,F365,H366,D367,M431,A432,R436,R437,I438,G447,W448	32	32	238833
+1	Query_21	Specific	Subunit I/III interface	T7,V89,F93,R95,W102,D143,F147,S165,N169,V189,L196,P199,M207,T216,S217,F218,G223,G224,D226,F236,Y273,F276,G279,I280,L284	25	25	238833
+1	Query_21	Specific	Subunit I/IV interface	L36,A39,S40,F406,K409,I410,D443,V461	8	8	238833
+1	Query_21	Specific	Subunit I/VIa interface	V134,R212,N213,F214,N215	5	5	238833
+1	Query_21	Specific	Subunit I/VIb interface	G294	1	1	238833
+1	Query_21	Specific	Subunit I/VIc interface	G327	1	1	238833
+1	Query_21	Specific	Subunit I/VIIa interface	L113,L116	2	2	238833
+1	Query_21	Specific	Subunit I/VIIb interface	D443,G447	2	2	238833
+1	Query_21	Specific	Subunit I/VIIc interface	F22,I26,A29,M33,A115,L116,I398,F471,F474	9	9	238833
+1	Query_21	Specific	Subunit I/VIIIb interface	L407,V464	2	2	238833
+1	Query_21	Specific	Dimer interface	V189,L196,F236,Y273,F276,G279,I280,L284	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	326	orf326_Gymear1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	353929	69	148	2.77146e-18	78.0364	cl15257	GIY-YIG_SF	-	-
+1	Query_22	Non-specific	273636	67	322	2.5225e-09	56.2401	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_22	Generic	active site	Y71,Y82,G84,R92,Y96,E141	6	6	198380
+1	Query_22	Generic	catalytic site	R92,E141	2	2	198380
+1	Query_22	Generic	metal binding site	E141	1	1	198380
+1	Query_22	Generic	GIY-YIG motif/motif A	G69,V70,Y71,Y82,V83,G84	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	379	orf379_Gymear1_feature_30_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	236	340	1.13954e-13	66.1058	pfam00961	LAGLIDADG_1	-	45
+1	Query_24	Specific	334330	118	203	3.39846e-06	44.9199	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	446	orf446_Gymear1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	144	237	1.08945e-14	69.5726	pfam00961	LAGLIDADG_1	-	45
+1	Query_25	Specific	334330	294	379	5.18239e-07	47.6163	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	354	orf354_Gymear1_feature_38_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	205	310	7.31801e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	84	179	1.03296e-12	63.4094	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	259	orf259_Gymear1_feature_42_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	75	240	9.08185e-48	155.782	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	330	orf330_Gymear1_feature_46_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	273636	110	312	1.23056e-27	107.086	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	306	orf306_Gymear1_feature_50_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Non-specific	273636	94	296	6.20825e-29	110.168	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	226	orf227_Gymear1_feature_53_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	335245	33	208	9.21419e-44	144.611	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	52	atp8_Gymear1_feature_63_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	283561	1	48	1.84369e-05	36.6154	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_35	Peptide	639	nad2_Gymear1_feature_32_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	235603	180	553	5.98484e-77	252.819	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	119	nad3_Gymear1_feature_34_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334119	26	83	3.21048e-17	70.5218	pfam00507	Oxidored_q4	C	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	55	orf55_Gymear1_feature_38_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	339335	12	41	0.00727592	31.7557	pfam14700	RPOL_N	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	340	nad1_Gymear1_feature_42_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	333876	22	328	5.9796e-120	347.923	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	427	orf427_2_Gymear1_feature_46_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	334330	300	398	9.01915e-23	91.9142	pfam00961	LAGLIDADG_1	-	45
+2	Query_41	Specific	334330	142	242	1.07666e-20	86.1362	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	348	orf348_2_Gymear1_feature_50_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	238828	244	348	1.43844e-52	173.156	cd01651	RT_G2_intron	C	295487
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	277	orf277_2_Gymear1_feature_52_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Non-specific	279664	56	158	3.86835e-24	94.4586	pfam01348	Intron_maturas2	C	45
+2	Query_43	Non-specific	275209	3	72	0.00145857	39.3632	TIGR04416	group_II_RT_mat	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	241	orf241_2_Gymear1_feature_54_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	273636	27	236	4.40344e-44	147.532	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+2	Query_44	Generic	DNA binding site	N166,P167,M168,F169,H173,T177,M181,S182,S186,K187,V207,N211,S216,T219,G221,R222,Y223,Y234	21	18	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_49	Peptide	52	atp8_Gymear1_feature_26_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Non-specific	283561	1	48	1.84369e-05	36.6154	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	226	orf227_Gymear1_feature_34_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	335245	33	208	9.21419e-44	144.611	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	102	cox1_Gymear1_feature_36_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Superfamily	350997	2	57	1.18747e-19	81.7604	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_51	Generic	Low-spin heme binding site	R4,R5,F34	15	3	238461
+2	Query_51	Generic	Putative proton exit pathway	R4,R5	5	2	238461
+2	Query_51	Generic	Putative water exit pathway	R4	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_52	Peptide	337	orf338_Gymear1_feature_38_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Non-specific	273636	125	327	2.75473e-29	111.709	TIGR01453	grpIintron_endo	-	45
+2	Query_52	Superfamily	350997	18	41	0.000591209	41.3145	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_52	Generic	Low-spin heme binding site	L34,V35	15	2	238461
+2	Query_52	Generic	Putative proton exit pathway	L34,V35	5	2	238461
+2	Query_52	Generic	Putative water exit pathway	L34	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_53	Peptide	279	orf280_Gymear1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	335245	96	252	5.74099e-47	154.626	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	187	nad4_Gymear1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Non-specific	214462	1	170	5.40435e-51	170.233	MTH00217	ND4	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	208	nad6_Gymear1_feature_12_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Superfamily	354830	8	119	5.96547e-20	83.3469	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	255	atp6_Gymear1_feature_14_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	273458	27	252	6.57558e-50	163.146	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	272	cox3_Gymear1_feature_22_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	238834	26	269	1.71975e-101	295.579	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+2	Query_63	Specific	Subunit I/III interface	E84,N87,G88,S99,F102,S106,V107,H113,S201,A202,S205,A209	12	12	238834
+2	Query_63	Specific	Subunit III/Vb interface	F168	1	1	238834
+2	Query_63	Specific	Subunit III/VIa interface	F137,S138,I139,Y156,V182,T192,D193,S194,A199,D200,S201	11	11	238834
+2	Query_63	Specific	Subunit III/VIb interface	L129	1	1	238834
+2	Query_63	Specific	Subunit III/VIIa interface	F66,S69,D70,M73,S76,F77,L78	7	7	238834
+2	Query_63	Specific	Phospholipid binding site	W67,L68,V71,H72,G75,H81,G92,F93,F96,F224,R231,I243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_64	Peptide	88	nad4L_Gymear1_feature_24_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Superfamily	351118	5	87	7.289e-15	63.5125	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	665	nad5_Gymear1_feature_26_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Non-specific	235836	17	621	0	594.829	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	215	orf215_1_Gymear1_feature_30_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Superfamily	353929	109	175	0.00160557	36.4349	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_66	Generic	active site	Y112,A122,G124,R132,H136	6	5	198380
+2	Query_66	Generic	catalytic site	R132	2	1	198380
+2	Query_66	Generic	GIY-YIG motif/motif A	G110,V111,Y112,A122,I123,G124	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_68	Peptide	361	orf361_1_Gymear1_feature_36_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Specific	334330	70	170	6.20589e-19	80.7434	pfam00961	LAGLIDADG_1	-	45
+2	Query_68	Specific	334330	232	333	2.65583e-08	51.0831	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	391	orf392_Gymear1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Specific	334330	248	352	5.69148e-14	67.2614	pfam00961	LAGLIDADG_1	-	45
+2	Query_69	Specific	334330	130	215	2.10162e-06	45.6903	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_71	Peptide	395	cox1_Gymear1_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Superfamily	350997	7	69	4.48083e-30	120.666	cl00275	Heme_Cu_Oxidase_I	C	-
+3	Query_71	Specific	198392	138	217	4.26327e-19	81.118	cd10445	GIY-YIG_bI1_like	-	353929
+3	Query_71	Non-specific	273636	136	391	5.04046e-11	61.6329	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+3	Query_71	Generic	Low-spin heme binding site	S31,R35,F53,H60,M64,I65,V69	15	7	238461
+3	Query_71	Generic	D-pathway	Y16	9	1	238461
+3	Query_71	Specific	putative active site	Y140,Y151,G153,R161,Y165,E210	7	6	198392
+3	Query_71	Specific	putative metal binding site	E210	1	1	198392
+3	Query_71	Specific	GIY-YIG motif/motif A	G138,V139,Y140,Y151,V152,G153	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_72	Peptide	665	nad5_Gymear1_feature_20_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_72	Non-specific	235836	17	621	0	594.829	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	361	orf361_2_Gymear1_feature_24_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Specific	334330	70	170	6.20589e-19	80.7434	pfam00961	LAGLIDADG_1	-	45
+3	Query_73	Specific	334330	232	333	2.65583e-08	51.0831	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	215	orf215_2_Gymear1_feature_30_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Superfamily	353929	109	175	0.00160557	36.4349	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_75	Generic	active site	Y112,A122,G124,R132,H136	6	5	198380
+3	Query_75	Generic	catalytic site	R132	2	1	198380
+3	Query_75	Generic	GIY-YIG motif/motif A	G110,V111,Y112,A122,I123,G124	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_76	Peptide	88	nad4L_Gymear1_feature_33_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Superfamily	351118	5	87	7.289e-15	63.5125	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	272	cox3_Gymear1_feature_35_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Specific	238834	26	269	1.71975e-101	295.579	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+3	Query_77	Specific	Subunit I/III interface	E84,N87,G88,S99,F102,S106,V107,H113,S201,A202,S205,A209	12	12	238834
+3	Query_77	Specific	Subunit III/Vb interface	F168	1	1	238834
+3	Query_77	Specific	Subunit III/VIa interface	F137,S138,I139,Y156,V182,T192,D193,S194,A199,D200,S201	11	11	238834
+3	Query_77	Specific	Subunit III/VIb interface	L129	1	1	238834
+3	Query_77	Specific	Subunit III/VIIa interface	F66,S69,D70,M73,S76,F77,L78	7	7	238834
+3	Query_77	Specific	Phospholipid binding site	W67,L68,V71,H72,G75,H81,G92,F93,F96,F224,R231,I243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_81	Peptide	255	atp6_Gymear1_feature_43_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	273458	27	252	6.57558e-50	163.146	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	208	nad6_Gymear1_feature_45_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_82	Superfamily	354830	8	119	5.96547e-20	83.3469	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	64	cob_Gymear1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Non-specific	164595	1	55	1.68552e-14	65.1072	MTH00022	CYTB	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_85	Peptide	225	cox2_Gymear1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_85	Non-specific	214402	7	224	2.24292e-96	280.868	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	477	orf477_2_Gymear1_feature_10_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Specific	273636	204	473	3.46175e-49	167.563	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	260	orf260_2_Gymear1_feature_14_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_87	Specific	335245	71	241	3.5189e-38	131.514	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	340	orf340_Gymear1_feature_17_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Non-specific	273636	135	191	1.46111e-05	45.0694	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	478	orf478_Gymear1_feature_23_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_91	Non-specific	273344	138	453	0.0010689	41.5196	TIGR00927	2A1904	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	73	atp9_Gymear1_feature_29_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Specific	349422	6	70	8.45769e-21	76.7795	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_95	Peptide	493	nad4_Gymear1_feature_31_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_95	Specific	235622	31	480	2.18734e-138	407.666	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	258	orf258_Gymear1_feature_35_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Specific	335245	75	231	1.74144e-47	155.011	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

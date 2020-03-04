@@ -1,0 +1,140 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cylol1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cylol1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	206	orf206_Cylol1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	355698	108	193	0.00103857	39.2536	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	229	nad6_Cylol1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334114	34	217	7.38634e-18	76.7299	pfam00499	Oxidored_q3	-	354830
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	269	cox3_Cylol1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	278911	12	269	3.7095e-137	386.766	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,V200,T203,F207	12	12	238834
+1	Query_5	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_5	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_5	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_5	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_5	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	255	atp6_Cylol1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	351082	11	255	2.11623e-56	180.588	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	48	atp8_Cylol1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	283561	1	48	3.93035e-08	43.549	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	485	nad4_Cylol1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	235622	1	482	7.44412e-130	385.71	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	369	nad1_Cylol1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	333876	14	352	2.62389e-112	329.433	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	553	cox1_Cylol1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	238833	31	511	0	839.063	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Binuclear center (heme a3/CuB)	H262,H311,H312,H397	4	4	238833
+1	Query_11	Specific	Low-spin heme (heme a) binding site	H83,H399,S403,T445,S482	5	5	238833
+1	Query_11	Specific	D-pathway	Y40,N102,D113,N120,S123,S178,S179,N185,T189	9	9	238833
+1	Query_11	Specific	K-pathway	H262,Y266,S277,H311,H312,T337,K340	7	7	238833
+1	Query_11	Specific	Electron transfer pathway	F398,R459,R460	3	3	238833
+1	Query_11	Specific	Putative proton exit pathway	H312,H389,D390,R459,R460	5	5	238833
+1	Query_11	Specific	Putative water exit pathway	D249,Q254,H255,D385,H389,D390,R459	7	7	238833
+1	Query_11	Specific	Subunit I/II interface	N77,D249,K286,F289,G290,T315,V316,G317,V320,R323,L331,I339,F342,Y349,G350,G351,L363,N381,A382,L384,I386,A387,F388,H389,D390,L454,Q455,R459,R460,I461,G470,W471	32	32	238833
+1	Query_11	Specific	Subunit I/III interface	T31,P112,F116,R118,W125,D166,F170,T188,N192,I212,L219,P222,M230,T239,S240,F241,G246,G247,D249,F259,Y296,M299,G302,I303,I307	25	25	238833
+1	Query_11	Specific	Subunit I/IV interface	L60,S63,G64,N429,K432,V433,D466,I484	8	8	238833
+1	Query_11	Specific	Subunit I/VIa interface	L157,R235,N236,F237,N238	5	5	238833
+1	Query_11	Specific	Subunit I/VIb interface	G317	1	1	238833
+1	Query_11	Specific	Subunit I/VIc interface	G350	1	1	238833
+1	Query_11	Specific	Subunit I/VIIa interface	F136,C139	2	2	238833
+1	Query_11	Specific	Subunit I/VIIb interface	D466,G470	2	2	238833
+1	Query_11	Specific	Subunit I/VIIc interface	F46,L50,A53,L57,A138,C139,I421,Y494,L497	9	9	238833
+1	Query_11	Specific	Subunit I/VIIIb interface	L430,W487	2	2	238833
+1	Query_11	Specific	Dimer interface	I212,L219,F259,Y296,M299,G302,I303,I307	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	387	cob_Cylol1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214440	10	367	8.9103e-176	493.145	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	664	nad5_Cylol1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	177253	1	632	0	588.901	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	89	nad4L_Cylol1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351118	5	86	4.2919e-17	69.2905	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	249	cox2_Cylol1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	214438	15	248	6.42202e-112	320.622	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	74	atp9_Cylol1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	349422	6	62	1.34871e-18	71.3867	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_17	Peptide	137	nad3_Cylol1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334119	19	113	5.86505e-29	100.953	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	563	nad2_Cylol1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	235603	124	481	5.52197e-86	274.391	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

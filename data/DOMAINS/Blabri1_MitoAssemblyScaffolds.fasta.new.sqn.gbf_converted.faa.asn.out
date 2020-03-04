@@ -1,0 +1,142 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Blabri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Blabri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	356	orf357_Blabri1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334330	86	180	2.63756e-12	62.2538	pfam00961	LAGLIDADG_1	-	45
+1	Query_1	Specific	334330	238	328	9.1961e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	483	orf484_Blabri1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	350997	59	116	7.76503e-35	135.688	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_2	Specific	334330	333	439	7.67362e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	334330	212	308	8.26249e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_2	Generic	D-pathway	S86,S87,N93,T97	9	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	372	orf373_Blabri1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	273636	35	244	5.25528e-36	130.198	TIGR01453	grpIintron_endo	-	45
+1	Query_3	Specific	197761	270	323	0.00121247	36.3918	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	200	nad6_Blabri1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	354830	7	170	1.46411e-16	74.1021	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	48	atp8_Blabri1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	354827	1	33	0.000676505	34.4177	cl21478	ATP-synt_B	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	119	nad3_Blabri1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	351141	4	109	1.85062e-29	102.25	cl00535	Oxidored_q4	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	484	nad2_Blabri1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	235603	89	423	1.06498e-72	237.411	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	486	nad4_Blabri1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	235622	1	479	7.93178e-158	456.972	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	330	nad1_Blabri1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	333876	17	322	1.16459e-122	354.086	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	95	nad4L_Blabri1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351118	9	94	5.17723e-11	53.8826	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	74	atp9_Blabri1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	349422	6	70	1.21862e-16	66.3791	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	222	rps3_Blabri1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	130082	35	216	0.00511763	36.5257	TIGR01009	rpsC_bact	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	383	cob_Blabri1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	214425	3	380	0	514.45	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	192	orf192_Blabri1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	273636	2	190	1.18434e-21	87.4413	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	280	cox3_Blabri1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	278911	21	277	8.36626e-121	345.55	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_15	Specific	Subunit I/III interface	A91,Y94,G95,S106,M109,S113,I114,H120,S208,V209,S212,L216	12	12	238834
+1	Query_15	Specific	Subunit III/Vb interface	A175	1	1	238834
+1	Query_15	Specific	Subunit III/VIa interface	F144,E145,V146,V163,S189,V199,N200,A201,A206,D207,S208	11	11	238834
+1	Query_15	Specific	Subunit III/VIb interface	V136	1	1	238834
+1	Query_15	Specific	Subunit III/VIIa interface	L73,R76,D77,R80,T83,Y84,Q85	7	7	238834
+1	Query_15	Specific	Phospholipid binding site	W74,W75,V78,V79,S82,H88,G99,V100,F103,F231,R238,L250,G251	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	244	cox2_Blabri1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	214402	1	240	1.43592e-103	299.743	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	646	nad5_Blabri1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	177253	1	643	0	646.295	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	265	atp6_Blabri1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	273458	27	260	1.27058e-46	155.057	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

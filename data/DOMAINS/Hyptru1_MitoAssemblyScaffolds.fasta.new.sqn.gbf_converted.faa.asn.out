@@ -1,0 +1,260 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Hyptru1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Hyptru1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	569	cox1_Hyptru1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	47	549	0	837.137	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	H278,H327,H328,H413	4	4	238833
+1	Query_1	Specific	Low-spin heme (heme a) binding site	H99,H415,S419,T461,S498	5	5	238833
+1	Query_1	Specific	D-pathway	Y56,N118,D129,N136,S139,S194,S195,N201,T205	9	9	238833
+1	Query_1	Specific	K-pathway	H278,Y282,S293,H327,H328,T353,K356	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F414,R475,R476	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H328,H405,D406,R475,R476	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D265,Q270,H271,D401,H405,D406,R475	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	N93,D265,K302,F305,G306,T331,V332,G333,V336,R339,L347,I355,F358,Y365,G366,G367,L379,N397,A398,L400,I402,A403,F404,H405,D406,L470,Q471,R475,R476,I477,G486,W487	32	32	238833
+1	Query_1	Specific	Subunit I/III interface	T47,P128,F132,R134,W141,D182,F186,T204,N208,I228,L235,P238,M246,T255,S256,F257,G262,G263,D265,F275,Y312,M315,G318,I319,I323	25	25	238833
+1	Query_1	Specific	Subunit I/IV interface	M76,S79,G80,L445,K448,V449,D482,I500	8	8	238833
+1	Query_1	Specific	Subunit I/Vb interface	S303,Y307,A548	3	3	238833
+1	Query_1	Specific	Subunit I/VIa interface	V173,R251,N252,F253,N254	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G333	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G366	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	F152,V155	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D482,G486	2	2	238833
+1	Query_1	Specific	Subunit I/VIIc interface	F62,L66,A69,L73,A154,V155,I437,Y510,L513	9	9	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	L446,W503	2	2	238833
+1	Query_1	Specific	Dimer interface	I228,L235,F275,Y312,M315,G318,I319,I323	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	272	orf272_Hyptru1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	273636	50	252	5.55859e-25	98.6121	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	408	orf408_Hyptru1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	273636	115	320	1.90202e-59	192.216	TIGR01453	grpIintron_endo	-	45
+1	Query_3	Specific	197761	354	404	6.36099e-09	51.4146	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	349	orf349_Hyptru1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	213	312	3.38678e-18	78.4322	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	339	orf339_Hyptru1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	190	295	5.35888e-14	66.8762	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	69	166	3.87535e-12	61.8686	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	427	orf427_Hyptru1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	353929	184	269	1.48099e-14	68.4064	cl15257	GIY-YIG_SF	-	-
+1	Query_6	Non-specific	273636	184	419	8.85485e-08	52.3881	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_6	Generic	active site	Y186,Y197,G199,R207,Y211,E254	6	6	198380
+1	Query_6	Generic	catalytic site	R207,E254	2	2	198380
+1	Query_6	Generic	metal binding site	E254	1	1	198380
+1	Query_6	Generic	GIY-YIG motif/motif A	G184,V185,Y186,Y197,V198,G199	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	382	cob_Hyptru1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	214440	1	215	9.17366e-101	302.471	MTH00156	CYTB	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	325	orf325_Hyptru1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	80	176	2.30655e-21	86.9066	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	212	307	1.29763e-07	48.7719	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	458	orf458_Hyptru1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	354370	14	442	0	546.858	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	150	cob_Hyptru1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	214440	10	143	1.26681e-69	213.49	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	356	orf356_Hyptru1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	273636	140	341	2.37813e-27	106.701	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	825	nad5_Hyptru1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	177253	1	617	0	632.043	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	89	nad4L_Hyptru1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351118	3	86	2.59991e-17	69.6757	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	552	orf552_Hyptru1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	315878	372	536	2.85025e-26	103.964	pfam13302	Acetyltransf_3	-	356580
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	256	cox2_Hyptru1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	214438	24	253	7.71446e-110	315.615	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	74	atp9_Hyptru1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	349422	8	70	1.75568e-19	73.6979	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	151	nad3_Hyptru1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334119	19	112	2.21049e-30	105.19	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	552	nad2_Hyptru1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	235603	124	478	1.96032e-83	267.457	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	314	orf315_Hyptru1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	26	124	1.04047e-21	87.677	pfam00961	LAGLIDADG_1	-	45
+1	Query_23	Specific	334330	184	281	8.88441e-16	71.4986	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	183	orf184_Hyptru1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	273636	1	140	3.70725e-09	53.9289	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_24	Generic	DNA binding site	N70,T71,L72,I75,T79,I83,S84,K88,G89,T109,K113,S118,T121,S123,R124,I125	21	16	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_25	Peptide	130	orf130_Hyptru1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	353929	58	77	0.00494305	33.6009	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_25	Generic	active site	Y62,G64,R72,H76	6	4	198380
+1	Query_25	Generic	catalytic site	R72	2	1	198380
+1	Query_25	Generic	GIY-YIG motif/motif A	Y62,I63,G64	6	3	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	680	orf680_Hyptru1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	173534	136	315	8.47521e-08	55.5627	PTZ00341	PTZ00341	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	269	cox3_Hyptru1_feature_105_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	278911	12	269	1.01341e-135	382.914	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_27	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_27	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_27	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_27	Specific	Subunit III/VIb interface	I127	1	1	238834
+1	Query_27	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_27	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	219	nad6_Hyptru1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	354830	22	114	1.37899e-16	74.4873	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	530	orf530_Hyptru1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	354370	92	525	0	548.399	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_30	Peptide	512	nad4_Hyptru1_feature_129_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Non-specific	214462	64	475	1.30323e-110	336.639	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	368	nad1_Hyptru1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	333876	26	351	6.02263e-106	313.255	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	121	orf121_Hyptru1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Non-specific	178164	54	81	0.00164708	36.6662	PLN02549	PLN02549	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	353	orf353_Hyptru1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Non-specific	283561	20	54	9.86856e-06	42.0082	pfam05933	Fun_ATP-synt_8	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	50	atp8_Hyptru1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Non-specific	283561	1	48	1.54098e-07	42.0082	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	264	atp6_Hyptru1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Superfamily	351082	19	264	6.08775e-50	164.024	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	345	orf345_Hyptru1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	57	156	1.35162e-26	101.159	pfam00961	LAGLIDADG_1	-	45
+2	Query_36	Specific	334330	216	307	9.04354e-20	82.6694	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	296	orf296_Hyptru1_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	198392	37	123	3.9872e-31	111.549	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_37	Non-specific	273636	36	220	9.95613e-29	109.012	TIGR01453	grpIintron_endo	-	45
+2	Query_37	Specific	197761	241	295	6.4321e-07	45.2514	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_37	Specific	putative active site	Y40,Y51,G53,R61,Y65,E108,N120	7	7	198392
+2	Query_37	Specific	putative metal binding site	E108	1	1	198392
+2	Query_37	Specific	GIY-YIG motif/motif A	G38,I39,Y40,Y51,V52,G53	6	6	198392
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

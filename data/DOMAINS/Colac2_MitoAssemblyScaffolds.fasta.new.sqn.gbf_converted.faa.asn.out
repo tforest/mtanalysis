@@ -1,0 +1,99 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Colac2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Colac2_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_5	Peptide	394	orf394_Colac2_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	356013	63	112	1.55357e-08	53.0392	cl29137	Trypan_PARP	N	-
+1	Query_5	Non-specific	197585	123	214	0.00982282	34.9741	smart00225	BTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	534	orf534_Colac2_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	235728	1	515	1.23991e-92	291.888	PRK06184	PRK06184	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	488	orf488_Colac2_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	223238	148	475	4.96028e-115	346.126	COG0160	GabT	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	184	orf183_Colac2_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	235728	1	65	2.66079e-18	81.1837	PRK06184	PRK06184	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	726	orf726_Colac2_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	260006	126	248	7.26066e-59	194.634	cd09274	RNase_HI_RT_Ty3	-	353835
+1	Query_16	Specific	349274	661	710	2.69271e-21	87.1472	cd00024	CD_CSD	-	355790
+1	Query_16	Specific	334200	360	482	1.12205e-13	67.6746	pfam00665	rve	-	354865
+1	Query_16	Superfamily	295487	2	32	7.04183e-07	49.9013	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+1	Query_16	Specific	active site	D130,E172,D199,D242	4	4	260006
+1	Query_16	Specific	RNA/DNA hybrid binding site	D130,A131,S132,D133,Q167,I168,H169,E172,D199,Y232,R246	11	11	260006
+1	Query_16	Specific	putative peptide binding site	Y661,E662,V663,E664,R665,I680,W682,K683,N684,Y685,E689,T691,W692,E693,P694,T696,N697,L704,D707,Y708	20	20	349274
+1	Query_16	Generic	active site	L28,G29	13	2	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	449	orf449_Colac2_feature_6_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	349274	384	433	1.40668e-21	87.1472	cd00024	CD_CSD	-	355790
+1	Query_19	Specific	334200	83	205	5.28396e-14	68.0598	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+1	Query_19	Specific	putative peptide binding site	Y384,E385,V386,E387,R388,I403,W405,K406,N407,Y408,E412,T414,W415,E416,P417,T419,N420,L427,D430,Y431	20	20	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	726	orf726_Colac2_feature_6_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	260006	126	248	7.26066e-59	194.634	cd09274	RNase_HI_RT_Ty3	-	353835
+1	Query_22	Specific	349274	661	710	2.69271e-21	87.1472	cd00024	CD_CSD	-	355790
+1	Query_22	Specific	334200	360	482	1.12205e-13	67.6746	pfam00665	rve	-	354865
+1	Query_22	Superfamily	295487	2	32	7.04183e-07	49.9013	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+1	Query_22	Specific	active site	D130,E172,D199,D242	4	4	260006
+1	Query_22	Specific	RNA/DNA hybrid binding site	D130,A131,S132,D133,Q167,I168,H169,E172,D199,Y232,R246	11	11	260006
+1	Query_22	Specific	putative peptide binding site	Y661,E662,V663,E664,R665,I680,W682,K683,N684,Y685,E689,T691,W692,E693,P694,T696,N697,L704,D707,Y708	20	20	349274
+1	Query_22	Generic	active site	L28,G29	13	2	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_27	Peptide	457	orf456_Colac2_feature_4_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	356550	93	197	1.07759e-10	58.1148	cl29674	Retrotrans_gag	-	-
+1	Query_27	Specific	306581	282	298	1.09858e-05	41.7361	pfam00098	zf-CCHC	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

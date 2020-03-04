@@ -1,0 +1,189 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Fustri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Fustri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	432	orf433_Fustri1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	350997	44	105	1.81252e-30	122.592	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_1	Specific	198392	180	265	2.73267e-22	90.3628	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_1	Non-specific	273636	179	429	1.58029e-08	54.6993	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_1	Generic	Low-spin heme binding site	S68,R72,Y89,H96,M100,I101,V105	15	7	238461
+1	Query_1	Generic	D-pathway	Y53	9	1	238461
+1	Query_1	Specific	putative active site	Y182,Y191,G193,R201,Y205,E250,N262	7	7	198392
+1	Query_1	Specific	putative metal binding site	E250	1	1	198392
+1	Query_1	Specific	GIY-YIG motif/motif A	G180,V181,Y182,Y191,V192,G193	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	390	cob_Fustri1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	214440	10	367	7.76743e-165	465.411	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	288	orf288_Fustri1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	273636	72	283	1.73395e-26	103.234	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	214	orf214_Fustri1_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	315878	41	195	2.42307e-18	77.7702	pfam13302	Acetyltransf_3	-	356580
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	668	nad5_Fustri1_feature_15_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	177253	1	632	0	609.701	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	307	orf307_Fustri1_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	185	281	9.40998e-12	60.3279	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	70	161	1.39178e-07	48.7719	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	89	nad4L_Fustri1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	351118	5	86	2.71574e-17	69.6757	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	249	cox2_Fustri1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214438	15	248	9.11592e-112	320.237	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	291	orf291_Fustri1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	273636	55	288	9.85275e-56	179.119	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	74	atp9_Fustri1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	349422	6	62	1.47231e-18	71.3867	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	137	nad3_Fustri1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334119	19	113	1.70816e-28	99.797	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	554	nad2_Fustri1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235603	124	479	1.92014e-83	267.457	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	232	nad6_Fustri1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	354830	23	218	1.07063e-17	77.7337	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	269	cox3_Fustri1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	278911	12	269	1.88104e-137	387.536	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,V200,T203,F207	12	12	238834
+1	Query_17	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_17	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_17	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_17	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,L76	7	7	238834
+1	Query_17	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	266	atp6_Fustri1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	273458	41	263	9.49124e-58	183.561	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	48	atp8_Fustri1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	283561	1	48	3.93035e-08	43.549	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	485	nad4_Fustri1_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	235622	1	482	2.64464e-129	384.169	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	369	nad1_Fustri1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	333876	16	352	6.81887e-111	325.967	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	475	cox1_Fustri1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	238833	5	443	0	732.748	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_23	Specific	Binuclear center (heme a3/CuB)	H174,H223,H224,H309	4	4	238833
+1	Query_23	Specific	D-pathway	N14,D25,N32,S35,S90,S91,N97,T101	9	8	238833
+1	Query_23	Specific	K-pathway	H174,Y178,S189,H223,H224,T249,K252	7	7	238833
+1	Query_23	Specific	Electron transfer pathway	F310,R371,R372	3	3	238833
+1	Query_23	Specific	Putative proton exit pathway	H224,H301,D302,R371,R372	5	5	238833
+1	Query_23	Specific	Putative water exit pathway	D161,Q166,H167,D297,H301,D302,R371	7	7	238833
+1	Query_23	Specific	Subunit I/II interface	D161,K198,F201,G202,T227,V228,G229,V232,R235,L243,I251,F254,Y261,G262,G263,L275,N293,A294,L296,I298,A299,F300,H301,D302,L366,Q367,R371,R372,I373,G382,W383	32	31	238833
+1	Query_23	Specific	Subunit I/III interface	P24,F28,R30,W37,D78,F82,T100,N104,I124,L131,P134,M142,T151,S152,F153,G158,G159,D161,F171,Y208,M211,G214,I215,I219	25	24	238833
+1	Query_23	Specific	Subunit I/VIa interface	L69,R147,N148,F149,N150	5	5	238833
+1	Query_23	Specific	Subunit I/VIb interface	G229	1	1	238833
+1	Query_23	Specific	Subunit I/VIc interface	G262	1	1	238833
+1	Query_23	Specific	Subunit I/VIIa interface	F48,C51	2	2	238833
+1	Query_23	Specific	Subunit I/VIIb interface	D378,G382	2	2	238833
+1	Query_23	Specific	Subunit I/VIIIb interface	L342,W399	2	2	238833
+1	Query_23	Specific	Dimer interface	I124,L131,F171,Y208,M211,G214,I215,I219	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	269	orf269_Fustri1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	273636	52	252	4.6688e-27	104.005	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	342	orf342_Fustri1_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	95	169	1.5713e-07	48.7719	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	429	orf429_Fustri1_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	273636	136	341	1.04312e-55	183.356	TIGR01453	grpIintron_endo	-	45
+1	Query_26	Specific	197761	375	425	8.24302e-10	54.111	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	319	orf319_Fustri1_feature_125_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	191	290	6.55699e-16	71.8838	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	80	148	9.38592e-07	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

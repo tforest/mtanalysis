@@ -1,0 +1,158 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Chytri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Chytri1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	137	orf137_Chytri1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	335245	1	38	4.03398e-05	40.9923	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	50	nad4_Chytri1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	223940	2	50	3.55856e-05	38.3443	COG1008	NuoM	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	35	cox3_Chytri1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	294143	7	35	1.53644e-07	44.0157	cl00211	Heme_Cu_Oxidase_III_like	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	305	nad1_Chytri1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	333876	5	293	3.06209e-82	250.467	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	148	orf148_Chytri1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	238828	12	148	9.01856e-61	186.638	cd01651	RT_G2_intron	C	295487
+ENDDOMAINS
+SITES
+1	Query_8	Specific	putative nucleic acid binding site	G137	1	1	238828
+1	Query_8	Specific	putative NTP binding site	D85,I86,K87,P88,C89,F90,Q136	8	7	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	247	cox2_Chytri1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	214402	13	240	2.50622e-97	283.95	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	120	orf121_Chytri1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	1	117	1.06072e-08	48.7719	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	143	orf144_Chytri1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	50	129	4.98339e-05	39.5271	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	78	orf79_Chytri1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	1	70	3.94154e-11	53.3943	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	99	cox1_Chytri1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	350997	5	69	4.0038e-22	88.5803	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_18	Generic	Low-spin heme binding site	S36,R40,Y58,H65,M69	15	5	238461
+1	Query_18	Generic	D-pathway	Y21	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	30	cob_Chytri1_feature_20_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	177203	2	30	3.53332e-11	54.1408	MTH00145	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	77	cob_Chytri1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	177203	2	42	9.48363e-18	74.9416	MTH00145	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	64	nad2_Chytri1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	356474	1	56	2.59072e-10	53.2861	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	36	nad5_Chytri1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	235836	1	22	4.69024e-09	48.231	PRK06590	PRK06590	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	162	cob_Chytri1_feature_12_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Non-specific	214440	2	53	2.85157e-08	51.3212	MTH00156	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	385	nad5_Chytri1_feature_29_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Non-specific	177253	1	385	1.48367e-57	197.538	MTH00210	ND5	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	137	orf137_Chytri1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Superfamily	295487	6	137	1.96989e-27	101.124	cl02808	RT_like	NC	-
+ENDDOMAINS
+SITES
+1	Query_38	Generic	active site	D11,I12,K13,S14,Y15,F16,E62,Y133,D135,N136	13	10	238185
+1	Query_38	Generic	nucleic acid binding site	E62	1	1	238185
+1	Query_38	Generic	NTP binding site	D11,I12,K13,S14,Y15,F16,D135	8	7	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_39	Peptide	91	orf92_Chytri1_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	334330	1	91	0.000616572	35.2899	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	73	cox1_Chytri1_feature_12_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_42	Superfamily	350997	1	24	0.00134329	34.7661	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_42	Generic	Low-spin heme binding site	R24	15	1	238461
+1	Query_42	Generic	Putative proton exit pathway	R24	5	1	238461
+1	Query_42	Generic	Putative water exit pathway	R24	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	283	nad4_Chytri1_feature_14_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_43	Non-specific	235622	9	281	1.6198e-73	233.171	PRK05846	PRK05846	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	91	orf90_Chytri1_feature_6_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_48	Superfamily	355698	25	66	1.39116e-06	44.2612	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

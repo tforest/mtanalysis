@@ -1,0 +1,1068 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Phybla1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Phybla1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	516	orf516_Phybla1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	335181	166	325	1.06977e-17	81.625	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	74	atp9_Phybla1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	349422	6	70	1.2842e-15	63.6827	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	74	atp9_Phybla1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	349422	6	70	1.2842e-15	63.6827	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	74	atp9_Phybla1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	349422	6	70	1.2842e-15	63.6827	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	259	atp6_Phybla1_feature_20_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	273458	13	256	2.57602e-54	174.702	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	255	cox2_Phybla1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Non-specific	214402	17	251	2.26956e-121	345.197	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	331	nad1_Phybla1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	333876	13	321	1.16387e-129	372.191	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	197	nad6_Phybla1_feature_43_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	354830	8	188	3.50825e-30	109.32	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	88	nad4L_Phybla1_feature_55_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	351118	5	88	3.87416e-17	69.2905	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	658	nad5_Phybla1_feature_57_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	177253	1	630	0	700.608	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	190	orf190_1_Phybla1_feature_61_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	1	172	4.66701e-39	131.129	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	120	nad3_Phybla1_feature_64_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334119	28	112	2.4874e-38	124.065	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	389	nad2_Phybla1_feature_66_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	235603	1	377	1.86856e-78	249.353	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	386	cob_Phybla1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Non-specific	214425	14	380	0	517.532	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	168	orf168_Phybla1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	335245	2	145	2.4172e-46	148.848	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	291	orf291_Phybla1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	334330	54	134	0.00099626	37.6011	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	270	cox3_Phybla1_feature_38_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	278911	13	269	4.20955e-133	376.366	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_33	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_33	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_33	Specific	Subunit III/VIa interface	W136,E137,V138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_33	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_33	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,T75,F76,Q77	7	7	238834
+1	Query_33	Specific	Phospholipid binding site	W66,F67,I70,T71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_34	Peptide	475	nad4_Phybla1_feature_40_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Non-specific	214462	1	464	1.83991e-179	511.134	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	129	orf129_Phybla1_feature_10_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Superfamily	295487	3	49	1.71579e-12	60.6869	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+1	Query_39	Generic	active site	D41,L42,K43,S44,G45,Y46	13	6	238185
+1	Query_39	Generic	NTP binding site	D41,L42,K43,S44,G45,Y46	8	6	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_45	Peptide	420	orf420_Phybla1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_45	Superfamily	354865	216	385	1.83014e-20	86.9357	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	212	orf212_Phybla1_feature_12_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_49	Specific	315923	8	177	7.07983e-24	92.3285	pfam13358	DDE_3	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	1524	orf1523_Phybla1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_50	Specific	260006	973	1093	3.58945e-51	176.144	cd09274	RNase_HI_RT_Ty3	-	353835
+1	Query_50	Specific	238825	695	878	3.13314e-43	155.446	cd01647	RT_LTR	-	295487
+1	Query_50	Specific	334200	1225	1332	8.25609e-17	77.6898	pfam00665	rve	-	354865
+1	Query_50	Non-specific	225382	1065	1321	1.36293e-06	51.9983	COG2826	Tra8	C	45
+1	Query_50	Superfamily	353244	483	575	0.000192013	41.5532	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+1	Query_50	Specific	active site	D977,E1019,D1044,D1087	4	4	260006
+1	Query_50	Specific	RNA/DNA hybrid binding site	D977,A978,S979,L980,S1014,T1015,T1016,E1019,D1044,H1077,R1091	11	11	260006
+1	Query_50	Specific	putative active site	D766,L767,S768,N769,A770,Y771,F801,G802,F827,D829,D830,L874,G875	13	13	238825
+1	Query_50	Specific	putative nucleic acid binding site	G802	1	1	238825
+1	Query_50	Specific	putative NTP binding site	D766,L767,S768,N769,A770,Y771,F801,D829	8	8	238825
+1	Query_50	Generic	inhibitor binding site	D493,G495,A497,F522,T523,F524,L568	7	7	133137
+1	Query_50	Generic	catalytic motif	D493,T494,G495	3	3	133137
+1	Query_50	Generic	Catalytic residue	D493	1	1	133137
+1	Query_50	Generic	Active site flap	F522,T523,F524,L525,G530,T531,K532,R533	8	8	133137
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_53	Peptide	1410	orf1410_Phybla1_feature_8_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	238825	538	713	1.20493e-54	188.188	cd01647	RT_LTR	-	295487
+2	Query_53	Specific	260006	809	927	1.331e-51	177.3	cd09274	RNase_HI_RT_Ty3	-	353835
+2	Query_53	Specific	334200	1040	1151	6.35952e-21	89.2458	pfam00665	rve	-	354865
+2	Query_53	Specific	349274	1328	1376	5.00864e-16	72.8948	cd00024	CD_CSD	-	355790
+2	Query_53	Specific	133136	344	421	4.77578e-08	51.9536	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+2	Query_53	Specific	putative active site	D602,L603,K604,S605,A606,F607,F636,G637,F662,D664,D665,L709,G710	13	13	238825
+2	Query_53	Specific	putative nucleic acid binding site	G637	1	1	238825
+2	Query_53	Specific	putative NTP binding site	D602,L603,K604,S605,A606,F607,F636,D664	8	8	238825
+2	Query_53	Specific	active site	D812,E853,D878,D921	4	4	260006
+2	Query_53	Specific	RNA/DNA hybrid binding site	D812,A813,S814,N815,P848,V849,T850,E853,D878,H911,R925	11	11	260006
+2	Query_53	Specific	putative peptide binding site	Y1328,E1329,I1330,Q1331,A1332,V1347,W1349,K1350,N1351,Y1352,Q1356,T1358,W1359,E1360,P1361,S1363,N1364,I1370,K1373,Y1374	20	20	349274
+2	Query_53	Specific	inhibitor binding site	D347,G349,T351,L376,A377,T378,S417	7	7	133136
+2	Query_53	Specific	catalytic motif	D347,T348,G349	3	3	133136
+2	Query_53	Specific	Catalytic residue	D347	1	1	133136
+2	Query_53	Specific	Active site flap	L376,A377,T378,S379,I382,A383,H384,R385	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_56	Peptide	373	orf373_Phybla1_feature_4_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	309014	158	249	2.5018e-13	65.0484	pfam03732	Retrotrans_gag	-	356550
+2	Query_56	Non-specific	173561	323	348	0.00448846	37.0937	PTZ00368	PTZ00368	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	1179	orf1179_Phybla1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	238825	291	467	2.65254e-89	284.873	cd01647	RT_LTR	-	295487
+2	Query_57	Specific	260006	565	684	6.28411e-58	195.019	cd09274	RNase_HI_RT_Ty3	-	353835
+2	Query_57	Specific	334200	836	949	4.89298e-15	72.297	pfam00665	rve	-	354865
+2	Query_57	Specific	133136	73	156	9.13702e-15	70.8284	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+2	Query_57	Specific	putative active site	D354,L355,K356,S357,G358,Y359,F388,G389,Y416,D418,D419,L463,G464	13	13	238825
+2	Query_57	Specific	putative nucleic acid binding site	G389	1	1	238825
+2	Query_57	Specific	putative NTP binding site	D354,L355,K356,S357,G358,Y359,F388,D418	8	8	238825
+2	Query_57	Specific	active site	D569,E611,D636,D679	4	4	260006
+2	Query_57	Specific	RNA/DNA hybrid binding site	D569,A570,S571,D572,P606,A607,Q608,E611,D636,Y669,R683	11	11	260006
+2	Query_57	Specific	inhibitor binding site	D83,G85,S87,V110,E111,T112,I149	7	7	133136
+2	Query_57	Specific	catalytic motif	D83,S84,G85	3	3	133136
+2	Query_57	Specific	Catalytic residue	D83	1	1	133136
+2	Query_57	Specific	Active site flap	V110,E111,T112,A113,S117,I118,K119,I120	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_62	Peptide	667	orf667_Phybla1_feature_4_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	337786	245	341	1.15921e-24	98.4252	pfam10551	MULE	-	355122
+2	Query_62	Non-specific	178645	218	580	4.15881e-09	59.6228	PLN03097	FHY3	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	834	orf834_Phybla1_feature_12_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Specific	335181	160	305	1.70283e-16	78.9286	pfam02992	Transposase_21	C	356247
+2	Query_66	Specific	339022	513	550	0.0095046	36.5629	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	113	orf113_Phybla1_feature_12_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Specific	338478	26	99	8.30716e-15	65.3484	pfam12762	DDE_Tnp_IS1595	NC	351520
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	357	orf357_Phybla1_feature_2_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_74	Specific	337786	228	328	4.89735e-24	94.188	pfam10551	MULE	-	355122
+2	Query_74	Non-specific	178645	106	336	1.78561e-08	55.7708	PLN03097	FHY3	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	211	orf211_Phybla1_feature_14_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_80	Specific	338698	1	118	4.03746e-21	85.3551	pfam13359	DDE_Tnp_4	N	354873
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_88	Peptide	158	orf158_Phybla1_feature_12_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Superfamily	354865	25	158	8.20231e-06	43.023	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_90	Peptide	458	orf458_Phybla1_feature_16_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_90	Specific	335181	161	274	6.68052e-07	49.6535	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_92	Peptide	917	orf916_Phybla1_feature_2_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_92	Specific	238827	571	852	9.89798e-50	174.787	cd01650	RT_nLTR_like	-	295487
+3	Query_92	Superfamily	351117	75	278	2.29904e-14	72.7096	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+3	Query_92	Specific	putative active site	D653,I654,K655,A656,A657,Y658,Q712,G713,F781,D783,D784,L848,G849	13	13	238827
+3	Query_92	Specific	putative nucleic acid binding site	G713	1	1	238827
+3	Query_92	Specific	putative NTP binding site	D653,I654,K655,A656,A657,Y658,Q712,D783	8	8	238827
+3	Query_92	Generic	putative catalytic site	T80,P100,Y163,D191,N193,D249,D273,H274	8	8	197306
+3	Query_92	Generic	putative metal binding site	P100,D273	2	2	197306
+3	Query_92	Generic	putative phosphate binding site	Y163,N193,H274	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_93	Peptide	359	orf359_Phybla1_feature_4_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_93	Superfamily	355018	22	77	0.00460951	36.9179	cl23720	RILP-like	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	358	orf358_Phybla1_feature_10_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_95	Specific	335181	34	176	1.34405e-11	63.1355	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	329	orf329_Phybla1_feature_14_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_97	Specific	337786	53	147	1.28365e-06	46.038	pfam10551	MULE	-	355122
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_108	Peptide	274	orf274_Phybla1_feature_20_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_108	Specific	335181	160	247	1.21441e-11	62.3651	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_114	Peptide	282	orf282_Phybla1_feature_12_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_114	Specific	309540	137	164	0.00122416	35.8567	pfam04434	SWIM	C	327577
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_117	Peptide	904	orf904_Phybla1_feature_2_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_117	Specific	260006	244	364	2.89839e-45	158.425	cd09274	RNase_HI_RT_Ty3	-	353835
+3	Query_117	Specific	238825	38	149	7.3027e-24	99.2069	cd01647	RT_LTR	N	295487
+3	Query_117	Specific	334200	496	603	1.61328e-13	67.6746	pfam00665	rve	-	354865
+3	Query_117	Specific	349274	785	833	3.38377e-12	61.7241	cd00024	CD_CSD	-	355790
+3	Query_117	Non-specific	307923	435	477	0.00954661	34.6193	pfam02022	Integrase_Zn	-	45
+ENDDOMAINS
+SITES
+3	Query_117	Specific	active site	D248,E290,D315,D358	4	4	260006
+3	Query_117	Specific	RNA/DNA hybrid binding site	D248,A249,S250,L251,S285,T286,T287,E290,D315,H348,R362	11	11	260006
+3	Query_117	Specific	putative active site	Y38,R39,N40,A41,Y42,F72,G73,F98,D100,D101,L145,G146	13	12	238825
+3	Query_117	Specific	putative nucleic acid binding site	G73	1	1	238825
+3	Query_117	Specific	putative NTP binding site	Y38,R39,N40,A41,Y42,F72,D100	8	7	238825
+3	Query_117	Specific	putative peptide binding site	Y785,E786,V787,E788,D789,V804,W806,V807,G808,Y809,A813,T815,W816,Q817,M818,N820,D821,I827,K830,Y831	20	20	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_118	Peptide	782	orf782_Phybla1_feature_4_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_118	Superfamily	295487	695	769	1.42765e-09	57.6053	cl02808	RT_like	C	-
+3	Query_118	Superfamily	353244	483	575	8.70545e-05	41.9384	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+3	Query_118	Generic	active site	D766,L767,S768,K769	13	4	238185
+3	Query_118	Generic	NTP binding site	D766,L767,S768,K769	8	4	238185
+3	Query_118	Generic	inhibitor binding site	D493,G495,A497,F522,T523,F524,L568	7	7	133137
+3	Query_118	Generic	catalytic motif	D493,T494,G495	3	3	133137
+3	Query_118	Generic	Catalytic residue	D493	1	1	133137
+3	Query_118	Generic	Active site flap	F522,T523,F524,L525,G530,T531,K532,R533	8	8	133137
+ENDSITES
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_120	Peptide	664	orf664_Phybla1_feature_2_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_120	Specific	335181	22	140	0.000183622	43.1051	pfam02992	Transposase_21	C	356247
+4	Query_120	Specific	339022	351	388	0.00116058	38.8741	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_123	Peptide	829	orf829_Phybla1_feature_8_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_123	Specific	335181	160	302	4.73054e-14	71.6099	pfam02992	Transposase_21	C	356247
+4	Query_123	Specific	339022	484	550	0.00874113	36.5629	pfam13960	DUF4218	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_129	Peptide	322	orf322_Phybla1_feature_8_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_129	Non-specific	307583	85	153	1.60767e-11	58.785	pfam01498	HTH_Tnp_Tc3_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_131	Peptide	199	orf199_Phybla1_feature_14_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_131	Superfamily	354865	76	195	5.47892e-14	66.6264	cl21549	rve	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_133	Peptide	393	orf392_Phybla1_feature_18_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_133	Specific	337786	245	341	4.05316e-22	89.5656	pfam10551	MULE	-	355122
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_134	Peptide	836	orf835_Phybla1_feature_2_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_134	Superfamily	295487	774	836	6.41711e-07	50.2865	cl02808	RT_like	C	-
+4	Query_134	Superfamily	353244	550	650	0.00587199	36.5456	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+4	Query_134	Generic	inhibitor binding site	D559,G561,T563,I600,R601,L602,S644	7	7	133137
+4	Query_134	Generic	catalytic motif	D559,C560,G561	3	3	133137
+4	Query_134	Generic	Catalytic residue	D559	1	1	133137
+4	Query_134	Generic	Active site flap	I600,R601,L602,A603,Q608,I609,K610,R611	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_143	Peptide	283	orf283_Phybla1_feature_6_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_143	Superfamily	354865	76	260	2.80737e-31	114.391	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_146	Peptide	828	orf828_Phybla1_feature_12_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_146	Specific	335181	160	310	7.82909e-16	77.0026	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_147	Peptide	646	orf646_Phybla1_feature_2_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_147	Specific	335181	2	128	2.04726e-11	63.5207	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_149	Peptide	1047	orf1047_Phybla1_feature_6_from_C_19, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_149	Specific	238827	513	777	1.9675e-43	157.068	cd01650	RT_nLTR_like	-	295487
+4	Query_149	Specific	339261	99	225	3.27366e-12	64.2807	pfam14529	Exo_endo_phos_2	-	351117
+ENDDOMAINS
+SITES
+4	Query_149	Specific	putative active site	D600,I601,K602,S603,A604,Y605,Q658,G659,F707,D709,D710,L773,G774	13	13	238827
+4	Query_149	Specific	putative nucleic acid binding site	G659	1	1	238827
+4	Query_149	Specific	putative NTP binding site	D600,I601,K602,S603,A604,Y605,Q658,D709	8	8	238827
+4	Query_149	Generic	putative catalytic site	Y105,D139,N141,D197,D221,H222	8	6	197306
+4	Query_149	Generic	putative metal binding site	D221	2	1	197306
+4	Query_149	Generic	putative phosphate binding site	Y105,N141,H222	3	3	197306
+ENDSITES
+ENDQUERY
+ENDSESSION	4
+SESSION	5	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_152	Peptide	835	orf835_Phybla1_feature_6_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_152	Specific	335181	160	312	4.1969e-17	80.4694	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_155	Peptide	816	orf816_Phybla1_feature_4_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_155	Specific	335181	177	336	7.04946e-14	71.2247	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_161	Peptide	112	orf112_Phybla1_feature_6_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_161	Specific	309540	38	74	0.00554318	32.3899	pfam04434	SWIM	-	327577
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_163	Peptide	827	orf827_Phybla1_feature_10_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_163	Specific	335181	160	319	2.00562e-14	72.7655	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_168	Peptide	834	orf834_Phybla1_feature_6_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_168	Specific	335181	160	305	6.64099e-18	82.7806	pfam02992	Transposase_21	C	356247
+5	Query_168	Specific	339022	513	550	0.0093227	36.5629	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_170	Peptide	726	orf726_Phybla1_feature_2_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_170	Specific	335181	60	219	6.11421e-14	71.2247	pfam02992	Transposase_21	-	356247
+5	Query_170	Specific	339022	413	450	0.00106414	39.2593	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_174	Peptide	854	orf853_Phybla1_feature_10_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_174	Specific	238827	513	777	4.10232e-44	158.608	cd01650	RT_nLTR_like	-	295487
+5	Query_174	Specific	339261	99	225	2.87896e-13	66.9771	pfam14529	Exo_endo_phos_2	-	351117
+ENDDOMAINS
+SITES
+5	Query_174	Specific	putative active site	D600,I601,K602,S603,A604,Y605,Q658,G659,F707,D709,D710,L773,G774	13	13	238827
+5	Query_174	Specific	putative nucleic acid binding site	G659	1	1	238827
+5	Query_174	Specific	putative NTP binding site	D600,I601,K602,S603,A604,Y605,Q658,D709	8	8	238827
+5	Query_174	Generic	putative catalytic site	Y105,D139,N141,D197,D221,H222	8	6	197306
+5	Query_174	Generic	putative metal binding site	D221	2	1	197306
+5	Query_174	Generic	putative phosphate binding site	Y105,N141,H222	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_179	Peptide	365	orf365_Phybla1_feature_10_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_179	Specific	349274	262	311	3.92714e-15	68.6577	cd00024	CD_CSD	-	355790
+5	Query_179	Specific	334200	1	92	2.37057e-09	54.5778	pfam00665	rve	N	354865
+ENDDOMAINS
+SITES
+5	Query_179	Specific	putative peptide binding site	F262,E263,V264,E265,A266,C282,W284,L285,D286,Y287,H291,T293,W294,E295,P296,D298,H299,F305,E308,Y309	20	20	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_180	Peptide	1280	orf1280_Phybla1_feature_12_from_C_25, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_180	Specific	260006	1032	1149	8.69216e-51	174.603	cd09274	RNase_HI_RT_Ty3	-	353835
+5	Query_180	Specific	238825	754	936	1.72755e-50	176.247	cd01647	RT_LTR	-	295487
+5	Query_180	Non-specific	275209	881	1000	0.000158318	45.1412	TIGR04416	group_II_RT_mat	N	45
+5	Query_180	Superfamily	353244	530	630	0.00213447	38.4716	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+5	Query_180	Specific	active site	D1035,E1076,D1101,D1144	4	4	260006
+5	Query_180	Specific	RNA/DNA hybrid binding site	D1035,A1036,S1037,L1038,S1071,A1072,T1073,E1076,D1101,H1134,R1148	11	11	260006
+5	Query_180	Specific	putative active site	D825,L826,K827,S828,A829,F830,F859,G860,F885,D887,D888,L932,G933	13	13	238825
+5	Query_180	Specific	putative nucleic acid binding site	G860	1	1	238825
+5	Query_180	Specific	putative NTP binding site	D825,L826,K827,S828,A829,F830,F859,D887	8	8	238825
+5	Query_180	Generic	inhibitor binding site	D539,G541,T543,I580,R581,L582,S624	7	7	133137
+5	Query_180	Generic	catalytic motif	D539,C540,G541	3	3	133137
+5	Query_180	Generic	Catalytic residue	D539	1	1	133137
+5	Query_180	Generic	Active site flap	I580,R581,L582,A583,T587,I589,K590,R591	8	8	133137
+ENDSITES
+ENDQUERY
+ENDSESSION	5
+SESSION	6	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_183	Peptide	113	orf113_Phybla1_feature_6_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_183	Specific	338478	26	99	1.11088e-13	62.2668	pfam12762	DDE_Tnp_IS1595	NC	351520
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_192	Peptide	1546	orf1546_Phybla1_feature_12_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_192	Specific	260006	886	1006	4.87294e-51	175.759	cd09274	RNase_HI_RT_Ty3	-	353835
+6	Query_192	Specific	238825	608	791	3.8986e-43	155.061	cd01647	RT_LTR	-	295487
+6	Query_192	Specific	334200	1138	1245	8.88294e-17	77.6898	pfam00665	rve	-	354865
+6	Query_192	Specific	349274	1427	1475	2.11828e-12	62.8797	cd00024	CD_CSD	-	355790
+6	Query_192	Non-specific	225382	978	1234	3.87297e-06	50.4575	COG2826	Tra8	C	45
+6	Query_192	Superfamily	353244	396	488	0.000180216	41.9384	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+6	Query_192	Specific	active site	D890,E932,D957,D1000	4	4	260006
+6	Query_192	Specific	RNA/DNA hybrid binding site	D890,A891,S892,L893,S927,T928,T929,E932,D957,H990,R1004	11	11	260006
+6	Query_192	Specific	putative active site	D679,L680,S681,N682,A683,Y684,F714,G715,F740,D742,D743,L787,G788	13	13	238825
+6	Query_192	Specific	putative nucleic acid binding site	G715	1	1	238825
+6	Query_192	Specific	putative NTP binding site	D679,L680,S681,N682,A683,Y684,F714,D742	8	8	238825
+6	Query_192	Specific	putative peptide binding site	Y1427,E1428,V1429,E1430,D1431,V1446,W1448,V1449,G1450,Y1451,A1455,T1457,W1458,Q1459,M1460,N1462,D1463,I1469,K1472,Y1473	20	20	349274
+6	Query_192	Generic	inhibitor binding site	D406,G408,A410,F435,T436,F437,L481	7	7	133137
+6	Query_192	Generic	catalytic motif	D406,T407,G408	3	3	133137
+6	Query_192	Generic	Catalytic residue	D406	1	1	133137
+6	Query_192	Generic	Active site flap	F435,T436,F437,L438,G443,T444,K445,R446	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_193	Peptide	1610	orf1610_Phybla1_feature_2_from_C_28, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_193	Specific	260006	973	1093	3.83672e-51	176.144	cd09274	RNase_HI_RT_Ty3	-	353835
+6	Query_193	Specific	238825	695	878	2.34646e-43	155.831	cd01647	RT_LTR	-	295487
+6	Query_193	Specific	334200	1202	1309	8.74099e-17	77.6898	pfam00665	rve	-	354865
+6	Query_193	Specific	349274	1491	1539	7.81953e-14	67.1169	cd00024	CD_CSD	-	355790
+6	Query_193	Specific	133136	483	575	6.939e-05	43.094	cd00303	retropepsin_like	-	353244
+6	Query_193	Non-specific	307923	1141	1183	0.000480753	38.8565	pfam02022	Integrase_Zn	-	45
+ENDDOMAINS
+SITES
+6	Query_193	Specific	active site	D977,E1019,D1044,D1087	4	4	260006
+6	Query_193	Specific	RNA/DNA hybrid binding site	D977,A978,S979,L980,S1014,T1015,T1016,E1019,D1044,H1077,R1091	11	11	260006
+6	Query_193	Specific	putative active site	D766,L767,S768,N769,A770,Y771,F801,G802,F827,D829,D830,L874,G875	13	13	238825
+6	Query_193	Specific	putative nucleic acid binding site	G802	1	1	238825
+6	Query_193	Specific	putative NTP binding site	D766,L767,S768,N769,A770,Y771,F801,D829	8	8	238825
+6	Query_193	Specific	putative peptide binding site	Y1491,E1492,V1493,E1494,D1495,V1510,W1512,V1513,G1514,Y1515,A1519,T1521,W1522,Q1523,M1524,N1526,D1527,I1533,K1536,Y1537	20	20	349274
+6	Query_193	Specific	inhibitor binding site	D493,G495,A497,F522,T523,F524,L568	7	7	133136
+6	Query_193	Specific	catalytic motif	D493,T494,G495	3	3	133136
+6	Query_193	Specific	Catalytic residue	D493	1	1	133136
+6	Query_193	Specific	Active site flap	F522,T523,F524,L525,G530,T531,K532,R533	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_195	Peptide	394	orf394_Phybla1_feature_2_from_C_29, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_195	Specific	339022	49	115	0.00382743	36.5629	pfam13960	DUF4218	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_200	Peptide	1052	orf1052_Phybla1_feature_12_from_C_29, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_200	Specific	260006	397	517	2.79189e-49	169.981	cd09274	RNase_HI_RT_Ty3	-	353835
+6	Query_200	Specific	238825	119	302	5.01573e-44	157.372	cd01647	RT_LTR	-	295487
+6	Query_200	Specific	334200	649	760	7.70832e-17	77.3046	pfam00665	rve	-	354865
+6	Query_200	Specific	349274	938	986	7.91611e-15	69.4281	cd00024	CD_CSD	-	355790
+6	Query_200	Non-specific	307923	588	630	0.000170948	39.6269	pfam02022	Integrase_Zn	-	45
+ENDDOMAINS
+SITES
+6	Query_200	Specific	active site	D401,E443,D468,D511	4	4	260006
+6	Query_200	Specific	RNA/DNA hybrid binding site	D401,A402,S403,L404,S438,T439,T440,E443,D468,H501,R515	11	11	260006
+6	Query_200	Specific	putative active site	D190,L191,S192,N193,A194,Y195,F225,G226,F251,D253,D254,L298,G299	13	13	238825
+6	Query_200	Specific	putative nucleic acid binding site	G226	1	1	238825
+6	Query_200	Specific	putative NTP binding site	D190,L191,S192,N193,A194,Y195,F225,D253	8	8	238825
+6	Query_200	Specific	putative peptide binding site	Y938,E939,V940,E941,D942,V957,W959,A960,G961,Y962,A966,T968,W969,Q970,K971,E973,D974,I980,K983,Y984	20	20	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_204	Peptide	159	orf159_Phybla1_feature_8_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_204	Specific	339022	2	33	0.00939411	33.8665	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_205	Peptide	311	orf311_Phybla1_feature_10_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_205	Specific	335181	2	92	6.56202e-05	43.1051	pfam02992	Transposase_21	N	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_210	Peptide	365	orf365_Phybla1_feature_20_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_210	Specific	349274	262	311	1.10517e-14	67.5021	cd00024	CD_CSD	-	355790
+6	Query_210	Specific	334200	1	92	1.25889e-09	55.3482	pfam00665	rve	N	354865
+ENDDOMAINS
+SITES
+6	Query_210	Specific	putative peptide binding site	F262,E263,V264,E265,A266,C282,W284,L285,D286,Y287,H291,T293,W294,E295,P296,D298,H299,F305,E308,Y309	20	20	349274
+ENDSITES
+ENDQUERY
+ENDSESSION	6
+SESSION	7	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_220	Peptide	678	orf678_Phybla1_feature_2_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_220	Specific	339120	488	646	3.92595e-51	175.445	pfam14214	Helitron_like_N	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_221	Peptide	906	orf906_Phybla1_feature_4_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_221	Specific	310509	427	786	1.23348e-135	409.45	pfam05970	PIF1	-	355775
+7	Query_221	Specific	350196	832	876	1.73651e-11	60.6531	cd18809	SF1_C_RecD	N	365791
+ENDDOMAINS
+SITES
+7	Query_221	Specific	ATP binding site	Q432,P458,G459,G460,T461,G462,K463,T464,F465,D537,Q583	11	11	350795
+7	Query_221	Specific	ATP binding site	G843	1	1	350196
+ENDSITES
+ENDQUERY
+QUERY	Query_232	Peptide	110	orf110_Phybla1_feature_8_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_232	Specific	334249	10	65	0.00256167	33.7039	pfam00778	DIX	-	351758
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_234	Peptide	510	orf510_Phybla1_feature_12_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_234	Specific	335181	160	312	9.68051e-17	78.9286	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_235	Peptide	323	orf322_Phybla1_feature_14_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_235	Specific	339022	59	96	0.00201511	37.3333	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_241	Peptide	108	orf108_Phybla1_feature_12_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_241	Specific	338698	3	67	0.00289593	34.894	pfam13359	DDE_Tnp_4	NC	354873
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_242	Peptide	1312	orf1312_Phybla1_feature_14_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_242	Specific	260006	652	772	4.31139e-51	175.374	cd09274	RNase_HI_RT_Ty3	-	353835
+7	Query_242	Specific	238825	374	557	4.0364e-43	155.061	cd01647	RT_LTR	-	295487
+7	Query_242	Specific	334200	904	1011	7.06074e-17	77.6898	pfam00665	rve	-	354865
+7	Query_242	Specific	349274	1193	1241	9.98143e-14	66.3465	cd00024	CD_CSD	-	355790
+7	Query_242	Non-specific	225382	744	1000	3.4825e-06	50.4575	COG2826	Tra8	C	45
+7	Query_242	Superfamily	353244	162	254	0.000149264	41.9384	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+7	Query_242	Specific	active site	D656,E698,D723,D766	4	4	260006
+7	Query_242	Specific	RNA/DNA hybrid binding site	D656,A657,S658,L659,S693,T694,T695,E698,D723,H756,R770	11	11	260006
+7	Query_242	Specific	putative active site	D445,L446,S447,N448,A449,Y450,F480,G481,F506,D508,D509,L553,G554	13	13	238825
+7	Query_242	Specific	putative nucleic acid binding site	G481	1	1	238825
+7	Query_242	Specific	putative NTP binding site	D445,L446,S447,N448,A449,Y450,F480,D508	8	8	238825
+7	Query_242	Specific	putative peptide binding site	Y1193,E1194,V1195,E1196,D1197,V1212,W1214,V1215,G1216,Y1217,A1221,T1223,W1224,Q1225,M1226,N1228,D1229,I1235,K1238,Y1239	20	20	349274
+7	Query_242	Generic	inhibitor binding site	D172,G174,A176,F201,T202,F203,L247	7	7	133137
+7	Query_242	Generic	catalytic motif	D172,T173,G174	3	3	133137
+7	Query_242	Generic	Catalytic residue	D172	1	1	133137
+7	Query_242	Generic	Active site flap	F201,T202,F203,L204,G209,T210,K211,R212	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_247	Peptide	1400	orf1400_Phybla1_feature_4_from_C_38, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_247	Specific	260006	745	865	2.02323e-49	170.751	cd09274	RNase_HI_RT_Ty3	-	353835
+7	Query_247	Specific	238825	467	650	5.62764e-44	157.372	cd01647	RT_LTR	-	295487
+7	Query_247	Specific	334200	997	1108	9.0004e-17	77.3046	pfam00665	rve	-	354865
+7	Query_247	Specific	349274	1286	1334	1.65078e-15	71.3541	cd00024	CD_CSD	-	355790
+7	Query_247	Specific	133136	255	347	1.0662e-06	48.1016	cd00303	retropepsin_like	-	353244
+7	Query_247	Non-specific	307923	936	978	0.000279427	39.2417	pfam02022	Integrase_Zn	-	45
+ENDDOMAINS
+SITES
+7	Query_247	Specific	active site	D749,E791,D816,D859	4	4	260006
+7	Query_247	Specific	RNA/DNA hybrid binding site	D749,A750,S751,L752,S786,T787,T788,E791,D816,H849,R863	11	11	260006
+7	Query_247	Specific	putative active site	D538,L539,S540,N541,A542,Y543,F573,G574,F599,D601,D602,L646,G647	13	13	238825
+7	Query_247	Specific	putative nucleic acid binding site	G574	1	1	238825
+7	Query_247	Specific	putative NTP binding site	D538,L539,S540,N541,A542,Y543,F573,D601	8	8	238825
+7	Query_247	Specific	putative peptide binding site	Y1286,E1287,V1288,E1289,D1290,V1305,W1307,A1308,G1309,Y1310,A1314,T1316,W1317,Q1318,K1319,E1321,D1322,I1328,K1331,Y1332	20	20	349274
+7	Query_247	Specific	inhibitor binding site	D265,G267,S269,I291,G292,S293,L340	7	7	133136
+7	Query_247	Specific	catalytic motif	D265,T266,G267	3	3	133136
+7	Query_247	Specific	Catalytic residue	D265	1	1	133136
+7	Query_247	Specific	Active site flap	I291,G292,S293,F294,S302,T303,K304,R305	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_248	Peptide	667	orf667_Phybla1_feature_6_from_C_38, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_248	Specific	337786	245	341	3.13795e-23	94.188	pfam10551	MULE	-	355122
+7	Query_248	Non-specific	178645	218	580	2.19356e-08	57.3116	PLN03097	FHY3	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_250	Peptide	267	orf267_Phybla1_feature_4_from_C_39, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_250	Specific	335181	159	253	1.86697e-06	47.3423	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	7
+SESSION	8	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_256	Peptide	318	orf318_Phybla1_feature_6_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_256	Specific	337786	257	318	1.44362e-08	51.4308	pfam10551	MULE	C	355122
+8	Query_256	Non-specific	178645	73	277	3.58829e-07	51.5336	PLN03097	FHY3	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_264	Peptide	339	orf338_Phybla1_feature_10_from_C_41, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_264	Specific	335181	180	303	3.28295e-06	46.9571	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_266	Peptide	426	orf426_Phybla1_feature_4_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_266	Specific	334200	148	264	1.57012e-11	60.741	pfam00665	rve	-	354865
+8	Query_266	Superfamily	353835	5	31	4.47558e-06	45.5613	cl14782	RNase_H_like	N	-
+ENDDOMAINS
+SITES
+8	Query_266	Generic	RNA/DNA hybrid binding site	P20	10	1	259998
+ENDSITES
+ENDQUERY
+QUERY	Query_267	Peptide	127	orf127_Phybla1_feature_6_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_267	Specific	260006	49	127	6.85718e-34	114.127	cd09274	RNase_HI_RT_Ty3	C	353835
+ENDDOMAINS
+SITES
+8	Query_267	Specific	RNA/DNA hybrid binding site	D52,A53,S54,L55,S88,A89,T90,E93,D118	11	9	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_268	Peptide	124	orf124_Phybla1_feature_8_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_268	Superfamily	295487	1	96	2.89328e-17	73.0133	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+8	Query_268	Generic	active site	D40,L41,K42,S43,A44,F45,F74,G75	13	8	238185
+8	Query_268	Generic	nucleic acid binding site	G75	1	1	238185
+8	Query_268	Generic	NTP binding site	D40,L41,K42,S43,A44,F45,F74	8	7	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_270	Peptide	283	orf283_Phybla1_feature_12_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_270	Specific	309540	134	160	0.00195181	35.0863	pfam04434	SWIM	C	327577
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_274	Peptide	828	orf828_Phybla1_feature_8_from_C_43, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_274	Specific	335181	160	310	7.11775e-16	77.0026	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_280	Peptide	329	orf329_Phybla1_feature_10_from_C_44, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_280	Specific	335181	147	260	3.23034e-08	53.1203	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_281	Peptide	307	orf307_Phybla1_feature_12_from_C_44, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_281	Superfamily	353812	187	230	0.0039142	36.8296	cl14603	C2	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_286	Peptide	417	orf417_Phybla1_feature_10_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_286	Specific	335181	166	325	4.80249e-16	76.2322	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_288	Peptide	1634	orf1633_Phybla1_feature_4_from_C_46, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_288	Specific	260006	1052	1169	6.80455e-52	178.07	cd09274	RNase_HI_RT_Ty3	-	353835
+8	Query_288	Specific	238825	774	956	2.22893e-50	176.247	cd01647	RT_LTR	-	295487
+8	Query_288	Specific	349274	1570	1619	1.90823e-15	71.7393	cd00024	CD_CSD	-	355790
+8	Query_288	Specific	334200	1284	1400	4.06087e-12	64.2078	pfam00665	rve	-	354865
+8	Query_288	Non-specific	275209	901	1020	0.000250061	45.1412	TIGR04416	group_II_RT_mat	N	45
+ENDDOMAINS
+SITES
+8	Query_288	Specific	active site	D1055,E1096,D1121,D1164	4	4	260006
+8	Query_288	Specific	RNA/DNA hybrid binding site	D1055,A1056,S1057,L1058,S1091,A1092,T1093,E1096,D1121,H1154,R1168	11	11	260006
+8	Query_288	Specific	putative active site	D845,L846,K847,S848,A849,F850,F879,G880,F905,D907,D908,L952,G953	13	13	238825
+8	Query_288	Specific	putative nucleic acid binding site	G880	1	1	238825
+8	Query_288	Specific	putative NTP binding site	D845,L846,K847,S848,A849,F850,F879,D907	8	8	238825
+8	Query_288	Specific	putative peptide binding site	F1570,E1571,V1572,E1573,A1574,C1590,W1592,L1593,D1594,Y1595,H1599,T1601,W1602,E1603,P1604,D1606,H1607,F1613,E1616,Y1617	20	20	349274
+ENDSITES
+ENDQUERY
+ENDSESSION	8
+SESSION	9	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_292	Peptide	150	orf150_Phybla1_feature_8_from_C_47, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_292	Superfamily	327362	66	150	4.01426e-05	41.955	cl16937	Ndc10	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_295	Peptide	705	orf705_Phybla1_feature_14_from_C_47, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_295	Specific	335181	30	182	5.26449e-16	77.0026	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_304	Peptide	647	orf646_Phybla1_feature_8_from_C_49, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_304	Superfamily	353244	510	610	0.00447768	36.5456	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+9	Query_304	Generic	inhibitor binding site	D519,G521,T523,I560,R561,L562,S604	7	7	133137
+9	Query_304	Generic	catalytic motif	D519,C520,G521	3	3	133137
+9	Query_304	Generic	Catalytic residue	D519	1	1	133137
+9	Query_304	Generic	Active site flap	I560,R561,L562,A563,Q568,I569,K570,R571	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_305	Peptide	1498	orf1497_Phybla1_feature_2_from_C_50, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_305	Specific	260006	966	1086	9.61503e-50	171.907	cd09274	RNase_HI_RT_Ty3	-	353835
+9	Query_305	Specific	238825	688	871	4.709e-44	157.757	cd01647	RT_LTR	-	295487
+9	Query_305	Specific	334200	1218	1329	2.75957e-17	78.8454	pfam00665	rve	-	354865
+9	Query_305	Specific	133136	476	568	1.14305e-06	48.1016	cd00303	retropepsin_like	-	353244
+9	Query_305	Non-specific	307923	1157	1199	0.000268294	39.6269	pfam02022	Integrase_Zn	-	45
+ENDDOMAINS
+SITES
+9	Query_305	Specific	active site	D970,E1012,D1037,D1080	4	4	260006
+9	Query_305	Specific	RNA/DNA hybrid binding site	D970,A971,S972,L973,S1007,T1008,T1009,E1012,D1037,H1070,R1084	11	11	260006
+9	Query_305	Specific	putative active site	D759,L760,S761,N762,A763,Y764,F794,G795,F820,D822,D823,L867,G868	13	13	238825
+9	Query_305	Specific	putative nucleic acid binding site	G795	1	1	238825
+9	Query_305	Specific	putative NTP binding site	D759,L760,S761,N762,A763,Y764,F794,D822	8	8	238825
+9	Query_305	Specific	inhibitor binding site	D486,G488,S490,I512,G513,S514,L561	7	7	133136
+9	Query_305	Specific	catalytic motif	D486,T487,G488	3	3	133136
+9	Query_305	Specific	Catalytic residue	D486	1	1	133136
+9	Query_305	Specific	Active site flap	I512,G513,S514,F515,S523,T524,K525,R526	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_309	Peptide	818	orf818_Phybla1_feature_2_from_C_51, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_309	Specific	335181	152	318	5.29955e-08	53.8907	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_319	Peptide	733	orf733_Phybla1_feature_8_from_C_53, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_319	Specific	238827	199	463	9.33274e-45	159.764	cd01650	RT_nLTR_like	-	295487
+ENDDOMAINS
+SITES
+9	Query_319	Specific	putative active site	D286,I287,K288,S289,A290,Y291,Q344,G345,F393,D395,D396,L459,G460	13	13	238827
+9	Query_319	Specific	putative nucleic acid binding site	G345	1	1	238827
+9	Query_319	Specific	putative NTP binding site	D286,I287,K288,S289,A290,Y291,Q344,D395	8	8	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_320	Peptide	287	orf287_Phybla1_feature_10_from_C_53, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_320	Specific	339261	99	225	5.97602e-12	61.1991	pfam14529	Exo_endo_phos_2	-	351117
+ENDDOMAINS
+SITES
+9	Query_320	Generic	putative catalytic site	Y105,D139,N141,D197,D221,H222	8	6	197306
+9	Query_320	Generic	putative metal binding site	D221	2	1	197306
+9	Query_320	Generic	putative phosphate binding site	Y105,N141,H222	3	3	197306
+ENDSITES
+ENDQUERY
+ENDSESSION	9
+SESSION	10	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_331	Peptide	118	orf118_Phybla1_feature_4_from_C_55, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_331	Superfamily	295487	24	116	1.20721e-12	61.5382	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+10	Query_331	Generic	active site	D108,Q109,A110,K111,A112,Y113	13	6	238185
+10	Query_331	Generic	NTP binding site	D108,Q109,A110,K111,A112,Y113	8	6	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_341	Peptide	792	orf792_Phybla1_feature_2_from_C_57, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_341	Specific	335181	126	285	3.06556e-15	75.0766	pfam02992	Transposase_21	-	356247
+10	Query_341	Specific	339022	479	516	0.00128771	38.8741	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_342	Peptide	644	orf644_Phybla1_feature_2_from_C_58, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_342	Specific	335181	177	336	1.3911e-14	72.7655	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_343	Peptide	101	orf101_Phybla1_feature_4_from_C_58, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_343	Non-specific	182065	30	72	0.00047986	37.1148	PRK09764	PRK09764	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_349	Peptide	829	orf829_Phybla1_feature_2_from_C_60, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_349	Specific	335181	160	302	4.26117e-14	71.9951	pfam02992	Transposase_21	C	356247
+10	Query_349	Specific	339022	484	550	0.00874113	36.5629	pfam13960	DUF4218	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_354	Peptide	358	orf358_Phybla1_feature_2_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_354	Specific	335181	34	176	3.76902e-11	61.5947	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_355	Peptide	280	orf280_Phybla1_feature_4_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_355	Superfamily	353812	159	228	0.00270564	37.2148	cl14603	C2	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_358	Peptide	572	orf572_Phybla1_feature_10_from_C_62, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_358	Specific	335181	14	127	0.00267692	39.2531	pfam02992	Transposase_21	NC	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_366	Peptide	627	orf627_Phybla1_feature_4_from_C_64, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_366	Specific	337786	205	301	4.63052e-24	96.4992	pfam10551	MULE	-	355122
+10	Query_366	Non-specific	178645	178	400	8.27257e-12	68.0972	PLN03097	FHY3	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	10
+SESSION	11	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_377	Peptide	142	orf142_Phybla1_feature_2_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_377	Superfamily	350997	7	37	8.8403e-19	80.99	cl00275	Heme_Cu_Oxidase_I	NC	-
+11	Query_377	Specific	334330	96	142	3.70021e-05	39.9123	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+SITES
+11	Query_377	Generic	Putative water exit pathway	D29,Q34,H35	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_378	Peptide	423	orf423_Phybla1_feature_4_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_378	Specific	334330	275	380	1.24936e-15	71.8838	pfam00961	LAGLIDADG_1	-	45
+11	Query_378	Superfamily	350997	6	62	2.57738e-12	68.2785	cl00275	Heme_Cu_Oxidase_I	NC	-
+11	Query_378	Specific	334330	153	250	3.04586e-12	62.2538	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+11	Query_378	Generic	D-pathway	T8	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_379	Peptide	423	orf423_Phybla1_feature_6_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_379	Specific	334330	275	380	1.24936e-15	71.8838	pfam00961	LAGLIDADG_1	-	45
+11	Query_379	Superfamily	350997	6	62	2.57738e-12	68.2785	cl00275	Heme_Cu_Oxidase_I	NC	-
+11	Query_379	Specific	334330	153	250	3.04586e-12	62.2538	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+11	Query_379	Generic	D-pathway	T8	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_380	Peptide	185	orf186_Phybla1_feature_8_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_380	Superfamily	350997	7	37	2.75906e-18	81.3752	cl00275	Heme_Cu_Oxidase_I	NC	-
+11	Query_380	Specific	334330	96	152	0.00082549	37.2159	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+SITES
+11	Query_380	Generic	Putative water exit pathway	D29,Q34,H35	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_381	Peptide	428	orf429_Phybla1_feature_10_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_381	Specific	334330	280	385	2.53119e-15	71.1134	pfam00961	LAGLIDADG_1	-	45
+11	Query_381	Superfamily	350997	1	67	2.32371e-12	68.2785	cl00275	Heme_Cu_Oxidase_I	NC	-
+11	Query_381	Specific	334330	158	255	5.38845e-12	61.8686	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+11	Query_381	Generic	D-pathway	N2,T13	9	2	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_382	Peptide	415	orf415_Phybla1_feature_12_from_C_67, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_382	Superfamily	353929	152	257	3.81342e-08	50.302	cl15257	GIY-YIG_SF	-	-
+11	Query_382	Specific	197761	267	320	1.0944e-05	42.1698	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+11	Query_382	Generic	active site	Y155,Y166,G168,R176,Y180,E242	6	6	198380
+11	Query_382	Generic	catalytic site	R176,E242	2	2	198380
+11	Query_382	Generic	metal binding site	E242	1	1	198380
+11	Query_382	Generic	GIY-YIG motif/motif A	G153,I154,Y155,Y166,V167,G168	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_386	Peptide	128	cox1_Phybla1_feature_2_from_C_69, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_386	Superfamily	350997	1	128	4.21388e-76	233.607	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+11	Query_386	Generic	Low-spin heme binding site	S32,R36,Y54,H61,M65,I66,V70,W126	15	8	238461
+11	Query_386	Generic	D-pathway	Y17,N80,D91,N98,S101	9	5	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_387	Peptide	361	orf361_Phybla1_feature_6_from_C_69, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_387	Specific	198392	106	193	5.63e-25	96.526	cd10445	GIY-YIG_bI1_like	-	353929
+11	Query_387	Non-specific	273636	104	358	2.95945e-08	53.5437	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+11	Query_387	Specific	putative active site	Y108,Y119,G121,R129,Y133,E178,N190	7	7	198392
+11	Query_387	Specific	putative metal binding site	E178	1	1	198392
+11	Query_387	Specific	GIY-YIG motif/motif A	G106,V107,Y108,Y119,V120,G121	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_392	Peptide	777	orf777_Phybla1_feature_4_from_C_70, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_392	Specific	335181	160	334	2.40421e-14	72.3803	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_397	Peptide	311	orf311_Phybla1_feature_8_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_397	Superfamily	353812	187	230	0.00446357	36.8296	cl14603	C2	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_398	Peptide	486	orf486_Phybla1_feature_10_from_C_71, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_398	Specific	335181	147	260	3.81867e-08	53.5055	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_402	Peptide	413	orf413_Phybla1_feature_8_from_C_72, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_402	Specific	337786	258	319	1.52687e-06	46.038	pfam10551	MULE	C	355122
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	11
+SESSION	12	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_407	Peptide	818	orf818_Phybla1_feature_4_from_C_74, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_407	Specific	335181	152	318	5.20134e-08	53.8907	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_411	Peptide	770	orf770_Phybla1_feature_6_from_C_75, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_411	Specific	335181	96	248	2.44899e-11	63.5207	pfam02992	Transposase_21	C	356247
+12	Query_411	Specific	339022	443	492	0.000192851	41.5705	pfam13960	DUF4218	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_417	Peptide	676	orf676_Phybla1_feature_6_from_C_77, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_417	Specific	335181	6	165	1.06626e-16	79.3138	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_420	Peptide	74	atp9_Phybla1_feature_8_from_C_78, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_420	Specific	349422	6	70	1.2842e-15	63.6827	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_425	Peptide	510	orf510_Phybla1_feature_10_from_C_79, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_425	Specific	315923	308	474	5.96176e-24	97.3361	pfam13358	DDE_3	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_426	Peptide	90	cox1_Phybla1_feature_2_from_C_80, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_426	Superfamily	350997	1	40	2.47547e-15	69.1265	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+12	Query_426	Generic	Low-spin heme binding site	S32,R36	15	2	238461
+12	Query_426	Generic	D-pathway	Y17	9	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_432	Peptide	88	nad4L_Phybla1_feature_2_from_C_82, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_432	Superfamily	351118	5	88	3.87416e-17	69.2905	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_433	Peptide	254	nad5_Phybla1_feature_4_from_C_82, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_433	Non-specific	177253	1	254	2.63235e-37	137.832	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_434	Peptide	104	cox1_Phybla1_feature_2_from_C_83, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_434	Superfamily	350997	1	103	1.77882e-67	209.647	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+12	Query_434	Generic	Binuclear center (active site)	H20	4	1	238461
+12	Query_434	Generic	Low-spin heme binding site	Y15,H22,L25,S26,R82,R83	15	6	238461
+12	Query_434	Generic	Putative proton exit pathway	H12,D13,R82,R83	5	4	238461
+12	Query_434	Generic	Putative water exit pathway	D8,H12,D13,R82	7	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_435	Peptide	271	orf271_Phybla1_feature_6_from_C_83, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_435	Non-specific	273636	50	262	1.28705e-26	102.849	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_436	Peptide	185	nad4_Phybla1_feature_2_from_C_84, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_436	Non-specific	235622	1	179	1.07036e-53	177.702	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_437	Peptide	411	nad4_Phybla1_feature_4_from_C_84, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_437	Non-specific	214462	1	411	1.73452e-156	450.273	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_438	Peptide	197	nad6_Phybla1_feature_2_from_C_85, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_438	Superfamily	354830	8	188	3.50825e-30	109.32	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_439	Peptide	181	orf182_Phybla1_feature_2_from_C_86, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_439	Specific	335245	1	157	5.73759e-51	161.175	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_440	Peptide	161	orf161_Phybla1_feature_4_from_C_86, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_440	Specific	335245	2	145	5.92968e-35	119.573	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	12
+ENDDATA

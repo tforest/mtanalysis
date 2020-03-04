@@ -1,0 +1,129 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Calmar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Calmar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	269	cox3_Calmar1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	278911	12	269	2.04264e-135	382.144	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,G104,I105,H111,G199,I200,S203,L207	12	12	238834
+1	Query_2	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_2	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,T190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_2	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_2	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_2	Specific	Phospholipid binding site	W65,W66,V69,V70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	222	nad6_Calmar1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	354830	22	98	3.85692e-15	70.6353	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	361	nad1_Calmar1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	333876	25	344	8.5833e-115	335.597	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	504	nad4_Calmar1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	235622	47	498	9.91251e-119	357.975	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	658	nad5_Calmar1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	177253	1	632	0	607.39	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	89	nad4L_Calmar1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	351118	5	86	2.6312e-15	64.6681	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	567	cox1_Calmar1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	238833	47	548	0	827.892	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Binuclear center (heme a3/CuB)	H277,H326,H327,H412	4	4	238833
+1	Query_8	Specific	Low-spin heme (heme a) binding site	H98,H414,S418,T460,S497	5	5	238833
+1	Query_8	Specific	D-pathway	Y55,N117,D128,N135,S138,S193,S194,N200,T204	9	9	238833
+1	Query_8	Specific	K-pathway	H277,Y281,S292,H326,H327,T352,K355	7	7	238833
+1	Query_8	Specific	Electron transfer pathway	F413,R474,R475	3	3	238833
+1	Query_8	Specific	Putative proton exit pathway	H327,H404,D405,R474,R475	5	5	238833
+1	Query_8	Specific	Putative water exit pathway	D264,Q269,H270,D400,H404,D405,R474	7	7	238833
+1	Query_8	Specific	Subunit I/II interface	N92,D264,K301,F304,G305,T330,V331,G332,V335,R338,L346,I354,F357,Y364,G365,G366,L378,N396,A397,L399,I401,A402,F403,H404,D405,L469,Q470,R474,R475,I476,G485,W486	32	32	238833
+1	Query_8	Specific	Subunit I/III interface	P127,F131,R133,W140,D181,F185,T203,N207,I227,L234,P237,M245,T254,S255,F256,G261,G262,D264,F274,Y311,M314,G317,V318,V322	25	24	238833
+1	Query_8	Specific	Subunit I/IV interface	L75,S78,G79,T444,K447,V448,D481,V499	8	8	238833
+1	Query_8	Specific	Subunit I/Vb interface	S302,Y306,A547	3	3	238833
+1	Query_8	Specific	Subunit I/VIa interface	V172,R250,N251,F252,N253	5	5	238833
+1	Query_8	Specific	Subunit I/VIb interface	G332	1	1	238833
+1	Query_8	Specific	Subunit I/VIc interface	G365	1	1	238833
+1	Query_8	Specific	Subunit I/VIIa interface	F151,G154	2	2	238833
+1	Query_8	Specific	Subunit I/VIIb interface	D481,G485	2	2	238833
+1	Query_8	Specific	Subunit I/VIIc interface	F61,L65,A68,L72,S153,G154,I436,Y509,L512	9	9	238833
+1	Query_8	Specific	Subunit I/VIIIb interface	T445,Y502	2	2	238833
+1	Query_8	Specific	Dimer interface	I227,L234,F274,Y311,M314,G317,V318,V322	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	394	cob_Calmar1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214440	10	367	7.09874e-180	503.931	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	251	cox2_Calmar1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214438	19	248	5.58766e-110	315.615	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	144	nad3_Calmar1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334119	19	113	2.46466e-14	63.9734	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	536	nad2_Calmar1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235603	93	455	5.92731e-81	260.523	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	260	atp6_Calmar1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	351082	15	260	2.86715e-48	159.787	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	48	atp8_Calmar1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	283561	1	48	9.61988e-10	47.401	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

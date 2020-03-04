@@ -1,0 +1,642 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Dacruf1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Dacruf1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	104	orf104_Dacruf1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334330	5	61	9.09012e-05	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	98	orf99_Dacruf1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	22	64	5.12157e-05	38.3715	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	198	orf199_Dacruf1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	13	82	1.12078e-13	63.7946	pfam00961	LAGLIDADG_1	N	45
+1	Query_4	Specific	334330	141	191	9.5526e-05	39.9123	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	105	orf106_Dacruf1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	32	102	0.000306135	36.8307	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	81	orf81_Dacruf1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	339260	21	68	0.00692382	31.7492	pfam14528	LAGLIDADG_3	C	352872
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	64	orf65_Dacruf1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	1	58	1.43766e-07	43.7643	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	206	orf207_Dacruf1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	18	119	1.085e-16	71.8838	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	218	orf219_Dacruf1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	89	187	1.35101e-24	92.6846	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	184	orf184_Dacruf1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	139	184	5.81864e-13	61.4834	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	112	orf112_Dacruf1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	355471	14	109	3.46103e-09	52.333	cl25973	RNA_pol	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	232	rps3_Dacruf1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	130082	88	186	0.0012232	38.4517	TIGR01009	rpsC_bact	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	671	nad5_Dacruf1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	177253	1	423	1.02106e-158	470.644	MTH00210	ND5	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	109	orf109_1_Dacruf1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	56	109	1.37611e-12	58.4019	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	191	orf191_1_Dacruf1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	126	184	7.05582e-14	64.1798	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	184	orf184_3_Dacruf1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	1	166	2.04184e-55	172.731	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	142	orf142_1_Dacruf1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	15	113	1.0525e-20	80.3582	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	163	orf163_Dacruf1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	335245	32	113	4.43276e-20	81.4383	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	196	nad4L_Dacruf1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	351118	5	85	7.70944e-07	45.4082	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	54	atp8_Dacruf1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	283561	1	48	8.94157e-05	35.0746	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	528	cox1_Dacruf1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	238833	8	512	0	824.81	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_34	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_34	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_34	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_34	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_34	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_34	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_34	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_34	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,S293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,L341,N359,A360,L362,I364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_34	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,V190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,F277,G280,I281,I285	25	25	238833
+1	Query_34	Specific	Subunit I/IV interface	L37,S40,A41,L407,R410,V411,D444,A462	8	8	238833
+1	Query_34	Specific	Subunit I/Vb interface	P265,R269,S511	3	3	238833
+1	Query_34	Specific	Subunit I/VIa interface	I135,R213,N214,F215,N216	5	5	238833
+1	Query_34	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_34	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_34	Specific	Subunit I/VIIa interface	A114,L117	2	2	238833
+1	Query_34	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_34	Specific	Subunit I/VIIc interface	F23,L27,A30,L34,S116,L117,I399,Y472,F475	9	9	238833
+1	Query_34	Specific	Subunit I/VIIIb interface	L408,A465	2	2	238833
+1	Query_34	Specific	Dimer interface	V190,L197,F237,Y274,F277,G280,I281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	287	orf287_Dacruf1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	334330	183	278	1.23331e-11	59.9427	pfam00961	LAGLIDADG_1	-	45
+1	Query_35	Specific	334330	50	140	3.79337e-06	44.5347	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	182	orf182_Dacruf1_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Non-specific	273636	2	171	6.29179e-13	63.9441	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	177	orf177_Dacruf1_feature_105_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	335245	73	174	1.2824e-12	62.1783	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	255	orf255_Dacruf1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Specific	335245	67	235	1.33938e-56	178.509	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	284	orf284_Dacruf1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	335245	83	265	7.0231e-41	139.218	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	135	orf135_Dacruf1_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Specific	334330	74	135	9.19425e-09	49.5423	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	344	orf344_Dacruf1_feature_133_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_44	Specific	334330	64	161	8.75675e-15	69.1874	pfam00961	LAGLIDADG_1	-	45
+1	Query_44	Specific	334330	193	300	4.0718e-14	67.2614	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	267	orf267_Dacruf1_feature_139_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_45	Specific	334330	43	138	4.66772e-15	68.8022	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	112	orf112_Dacruf1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_46	Specific	335245	12	112	2.97477e-20	79.8975	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	157	orf157_Dacruf1_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_47	Specific	334330	6	102	1.28921e-21	83.4398	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	112	orf112_Dacruf1_feature_149_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_48	Specific	334330	45	112	0.000574523	36.0603	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	339	orf339_Dacruf1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_50	Specific	334330	182	296	5.88205e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+1	Query_50	Specific	334330	46	131	5.09351e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	210	orf210_Dacruf1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_51	Specific	334330	53	164	0.00691416	34.9047	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	67	atp9_Dacruf1_feature_180_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_53	Specific	349422	6	60	5.44712e-11	51.7416	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_54	Peptide	269	cox3_Dacruf1_feature_182_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_54	Specific	278911	13	269	4.47262e-115	330.527	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_54	Specific	Subunit I/III interface	Q82,S85,G86,S97,F100,S104,V105,H111,S199,V200,S203,A207	12	12	238834
+1	Query_54	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_54	Specific	Subunit III/VIa interface	F135,G136,I137,Y154,L180,S190,E191,A192,A197,D198,S199	11	11	238834
+1	Query_54	Specific	Subunit III/VIb interface	Q127	1	1	238834
+1	Query_54	Specific	Subunit III/VIIa interface	L64,R67,D68,T71,T74,Y75,I76	7	7	238834
+1	Query_54	Specific	Phospholipid binding site	W65,F66,V69,I70,E73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_55	Peptide	117	orf117_Dacruf1_feature_188_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	335245	12	97	8.89293e-17	71.0379	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	222	orf223_Dacruf1_feature_209_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	334330	89	186	5.14994e-22	86.1362	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	246	orf247_Dacruf1_feature_211_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	334330	143	234	4.11529e-17	73.8098	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	253	orf253_Dacruf1_feature_213_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	12	104	8.11815e-08	48.7719	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	157	248	2.18889e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	260	atp6_Dacruf1_feature_223_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	273458	14	257	6.13347e-49	160.835	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	384	cob_Dacruf1_feature_229_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Non-specific	214425	5	378	1.81215e-180	505.976	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	171	orf171_Dacruf1_feature_247_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Specific	335245	1	165	1.25177e-45	147.307	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	199	orf199_Dacruf1_feature_253_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Specific	334330	20	68	0.00363896	35.2899	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	144	orf144_Dacruf1_feature_257_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Specific	335245	1	126	5.6011e-42	136.907	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	758	orf758_Dacruf1_feature_267_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Specific	238828	270	541	4.31253e-76	244.803	cd01651	RT_G2_intron	-	295487
+2	Query_71	Non-specific	279664	562	694	2.13981e-15	73.6578	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+2	Query_71	Specific	putative active site	D345,I346,S347,K348,C349,F350,Q403,G404,Y486,D488,D489,L537,G538	13	13	238828
+2	Query_71	Specific	putative nucleic acid binding site	G404	1	1	238828
+2	Query_71	Specific	putative NTP binding site	D345,I346,S347,K348,C349,F350,Q403,D488	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_72	Peptide	208	orf208_Dacruf1_feature_271_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Specific	334330	11	109	1.72434e-14	66.1058	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	264	nad6_Dacruf1_feature_284_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Superfamily	354830	5	125	5.75059e-21	86.9785	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	516	nad4_Dacruf1_feature_290_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_74	Specific	235622	1	500	2.77861e-150	438.867	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_79	Peptide	333	nad1_Dacruf1_feature_305_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_79	Specific	333876	10	317	1.87024e-113	330.974	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	286	orf286_Dacruf1_feature_313_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_80	Non-specific	272953	98	190	1.25744e-06	49.2897	TIGR00194	uvrC	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	242	cox2_Dacruf1_feature_326_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_83	Non-specific	177126	11	41	6.33951e-06	45.542	MTH00051	COX2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	762	orf762_Dacruf1_feature_332_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_84	Specific	238828	264	532	2.06202e-82	261.752	cd01651	RT_G2_intron	-	295487
+2	Query_84	Non-specific	279664	558	663	9.04876e-24	97.5402	pfam01348	Intron_maturas2	-	45
+2	Query_84	Specific	238038	700	751	0.000350909	38.992	cd00085	HNHc	N	350893
+ENDDOMAINS
+SITES
+2	Query_84	Specific	putative active site	D338,I339,Y340,K341,C342,F343,Q391,G392,Y477,D479,D480,L528,G529	13	13	238828
+2	Query_84	Specific	putative nucleic acid binding site	G392	1	1	238828
+2	Query_84	Specific	putative NTP binding site	D338,I339,Y340,K341,C342,F343,Q391,D479	8	8	238828
+2	Query_84	Specific	active site	E711,H713,H714,I715,H717,K730,L731,C743,R744,H747,H751	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_85	Peptide	241	orf241_Dacruf1_feature_336_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_85	Specific	335245	35	223	1.17222e-45	150.004	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	125	nad3_Dacruf1_feature_345_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_86	Specific	334119	28	112	3.036e-30	103.649	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	535	nad2_Dacruf1_feature_347_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_87	Superfamily	356474	142	531	4.84188e-45	164.994	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	377	orf378_Dacruf1_feature_351_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_89	Specific	334330	56	160	4.78008e-16	73.0394	pfam00961	LAGLIDADG_1	-	45
+2	Query_89	Specific	334330	229	327	4.87548e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_90	Peptide	204	orf205_Dacruf1_feature_353_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_90	Specific	198392	38	126	3.0326e-27	98.8372	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+2	Query_90	Specific	putative active site	Y41,Y52,G54,R62,Y66,E111,N123	7	7	198392
+2	Query_90	Specific	putative metal binding site	E111	1	1	198392
+2	Query_90	Specific	GIY-YIG motif/motif A	G39,V40,Y41,Y52,V53,G54	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_91	Peptide	168	orf169_Dacruf1_feature_355_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_91	Non-specific	273636	3	161	6.58709e-12	60.8625	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_92	Peptide	76	orf77_Dacruf1_feature_357_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_92	Superfamily	353929	32	73	1.34312e-06	41.489	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_92	Generic	active site	Y34,Y45,G47,R55,H59	6	5	198380
+3	Query_92	Generic	catalytic site	R55	2	1	198380
+3	Query_92	Generic	GIY-YIG motif/motif A	G32,I33,Y34,Y45,I46,G47	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_93	Peptide	213	orf214_Dacruf1_feature_359_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_93	Specific	334330	56	161	6.69536e-16	69.9578	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	159	orf159_Dacruf1_feature_361_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Specific	334330	66	159	5.71938e-16	68.8022	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	325	orf326_Dacruf1_feature_363_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_95	Specific	334330	199	291	1.82964e-10	56.8611	pfam00961	LAGLIDADG_1	-	45
+3	Query_95	Specific	334330	44	151	6.20605e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	163	orf164_Dacruf1_feature_365_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Specific	334330	44	130	0.000145675	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	207	orf208_Dacruf1_feature_367_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_97	Specific	334330	29	123	1.03376e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_98	Peptide	98	orf99_Dacruf1_feature_369_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_98	Specific	334330	22	64	5.12157e-05	38.3715	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	353	orf354_Dacruf1_feature_371_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_99	Specific	334330	138	237	3.47342e-23	92.2994	pfam00961	LAGLIDADG_1	-	45
+3	Query_99	Specific	334330	296	346	4.38657e-05	41.8383	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_100	Peptide	249	orf249_Dacruf1_feature_373_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_100	Specific	334330	76	151	3.85448e-05	41.4531	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_101	Peptide	248	orf248_Dacruf1_feature_375_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_101	Specific	334330	75	150	3.40529e-05	41.4531	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	134	orf135_Dacruf1_feature_377_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_102	Specific	334330	1	84	1.22669e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_103	Peptide	343	orf344_Dacruf1_feature_379_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_103	Specific	334330	28	127	1.23275e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+3	Query_103	Specific	334330	200	294	4.02263e-07	47.6163	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_104	Peptide	326	orf327_Dacruf1_feature_381_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_104	Specific	334330	18	120	4.46048e-19	80.7434	pfam00961	LAGLIDADG_1	-	45
+3	Query_104	Specific	334330	172	290	9.97843e-11	57.6315	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_105	Peptide	239	orf240_Dacruf1_feature_383_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_105	Specific	334330	110	208	2.79166e-24	92.6846	pfam00961	LAGLIDADG_1	-	45
+3	Query_105	Specific	334330	11	51	3.1682e-07	47.2311	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_106	Peptide	184	orf184_Dacruf1_feature_385_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_106	Specific	334330	139	184	5.81864e-13	61.4834	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_107	Peptide	131	orf131_Dacruf1_feature_387_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_107	Specific	335245	2	109	4.33327e-35	118.803	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_108	Peptide	112	orf112_Dacruf1_feature_389_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_108	Superfamily	355471	14	109	3.46103e-09	52.333	cl25973	RNA_pol	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_109	Peptide	71	ndhF_Dacruf1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_109	Superfamily	356474	13	70	6.49928e-12	58.2937	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_116	Peptide	142	orf143_Dacruf1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_116	Specific	334330	30	133	1.034e-16	70.343	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_117	Peptide	94	orf95_Dacruf1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_117	Superfamily	353929	37	90	3.38687e-11	54.154	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_117	Generic	active site	Y40,Y51,G53,R61,Y65	6	5	198380
+3	Query_117	Generic	catalytic site	R61	2	1	198380
+3	Query_117	Generic	GIY-YIG motif/motif A	G38,V39,Y40,Y51,V52,G53	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_118	Peptide	195	orf196_Dacruf1_feature_20_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_118	Non-specific	273636	1	129	7.96082e-12	61.2477	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_119	Peptide	57	orf58_Dacruf1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_119	Superfamily	353929	9	50	2.06995e-07	43.0298	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_119	Generic	active site	Y11,Y22,G24,R32,H36	6	5	198380
+3	Query_119	Generic	catalytic site	R32	2	1	198380
+3	Query_119	Generic	GIY-YIG motif/motif A	G9,I10,Y11,Y22,I23,G24	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_120	Peptide	75	orf76_Dacruf1_feature_24_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_120	Specific	334330	2	23	1.1429e-05	39.5271	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_121	Peptide	151	orf152_Dacruf1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_121	Specific	334330	56	106	3.71835e-06	42.9939	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_122	Peptide	159	orf159_Dacruf1_feature_28_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_122	Specific	334330	66	159	5.71938e-16	68.8022	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_123	Peptide	75	orf76_Dacruf1_feature_30_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_123	Specific	334330	3	41	0.00869251	31.8231	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_124	Peptide	262	orf263_Dacruf1_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_124	Specific	334330	44	151	3.18739e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_125	Peptide	163	orf164_Dacruf1_feature_34_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_125	Specific	334330	44	130	0.000145675	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_126	Peptide	104	orf104_Dacruf1_feature_36_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_126	Specific	334330	5	61	9.09012e-05	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_127	Peptide	114	orf115_Dacruf1_feature_38_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_127	Specific	334330	29	110	1.51615e-11	56.0907	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_128	Peptide	98	orf99_Dacruf1_feature_40_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_128	Specific	334330	22	64	5.12157e-05	38.3715	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_129	Peptide	353	orf354_Dacruf1_feature_42_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_129	Specific	334330	138	237	3.47342e-23	92.2994	pfam00961	LAGLIDADG_1	-	45
+3	Query_129	Specific	334330	296	346	4.38657e-05	41.8383	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_130	Peptide	413	orf414_Dacruf1_feature_44_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_130	Specific	334330	32	130	1.43435e-07	49.1571	pfam00961	LAGLIDADG_1	-	45
+3	Query_130	Specific	334330	241	316	1.24165e-05	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_131	Peptide	343	orf344_Dacruf1_feature_46_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_131	Specific	334330	28	127	1.23275e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+3	Query_131	Specific	334330	200	294	4.02263e-07	47.6163	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_132	Peptide	326	orf327_Dacruf1_feature_48_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_132	Specific	334330	18	120	4.46048e-19	80.7434	pfam00961	LAGLIDADG_1	-	45
+3	Query_132	Specific	334330	172	290	9.97843e-11	57.6315	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_133	Peptide	239	orf240_Dacruf1_feature_50_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_133	Specific	334330	110	208	2.79166e-24	92.6846	pfam00961	LAGLIDADG_1	-	45
+3	Query_133	Specific	334330	11	51	3.1682e-07	47.2311	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_134	Peptide	184	orf184_Dacruf1_feature_52_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_134	Specific	334330	139	184	5.81864e-13	61.4834	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_135	Peptide	131	orf131_Dacruf1_feature_54_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_135	Specific	335245	2	109	4.33327e-35	118.803	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_136	Peptide	120	orf120_Dacruf1_feature_56_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_136	Superfamily	355471	22	117	3.84392e-09	52.7182	cl25973	RNA_pol	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_137	Peptide	299	orf299_Dacruf1_feature_58_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_137	Superfamily	355471	68	281	8.18261e-46	164.811	cl25973	RNA_pol	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_141	Peptide	671	nad5_Dacruf1_feature_70_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_141	Non-specific	177253	1	634	0	575.419	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_142	Peptide	109	orf109_2_Dacruf1_feature_74_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_142	Specific	334330	56	109	1.37611e-12	58.4019	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_143	Peptide	191	orf191_2_Dacruf1_feature_76_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_143	Specific	334330	126	184	7.05582e-14	64.1798	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_145	Peptide	184	orf184_5_Dacruf1_feature_94_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_145	Specific	335245	1	166	2.04184e-55	172.731	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_146	Peptide	142	orf142_2_Dacruf1_feature_98_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_146	Specific	334330	15	113	1.0525e-20	80.3582	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_147	Peptide	219	orf219_Dacruf1_feature_101_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_147	Specific	335245	1	175	1.1193e-29	108.017	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+ENDDATA

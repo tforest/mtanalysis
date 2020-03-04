@@ -1,0 +1,129 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Naifl1_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Naifl1_MitoScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	382	cob_Naifl1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	214440	10	365	5.29973e-158	448.077	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	479	nad4_Naifl1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	235622	1	477	3.25989e-110	334.863	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	535	cox1_Naifl1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	238833	14	479	0	792.068	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Binuclear center (heme a3/CuB)	H246,H295,H296,H381	4	4	238833
+1	Query_4	Specific	Low-spin heme (heme a) binding site	H67,H383,S387,T429,S466	5	5	238833
+1	Query_4	Specific	D-pathway	Y23,N86,D97,N104,S107,S162,S163,N169,T173	9	9	238833
+1	Query_4	Specific	K-pathway	H246,Y250,S261,H295,H296,T321,K324	7	7	238833
+1	Query_4	Specific	Electron transfer pathway	F382,R443,R444	3	3	238833
+1	Query_4	Specific	Putative proton exit pathway	H296,H373,D374,R443,R444	5	5	238833
+1	Query_4	Specific	Putative water exit pathway	D233,Q238,H239,D369,H373,D374,R443	7	7	238833
+1	Query_4	Specific	Subunit I/II interface	N61,D233,K270,F273,G274,S299,V300,G301,T304,R307,M315,I323,F326,Y333,G334,G335,Y347,N365,A366,L368,T370,A371,F372,H373,D374,L438,A439,R443,R444,I445,F454,W455	32	32	238833
+1	Query_4	Specific	Subunit I/III interface	T14,P96,F100,R102,W109,D150,F154,T172,N176,I196,L203,P206,M214,T223,S224,F225,G230,G231,D233,F243,Y280,F283,G286,I287,I291	25	25	238833
+1	Query_4	Specific	Subunit I/IV interface	M43,A46,S47,V413,T416,T417,D450,I468	8	8	238833
+1	Query_4	Specific	Subunit I/VIa interface	V141,R219,N220,F221,N222	5	5	238833
+1	Query_4	Specific	Subunit I/VIb interface	G301	1	1	238833
+1	Query_4	Specific	Subunit I/VIc interface	G334	1	1	238833
+1	Query_4	Specific	Subunit I/VIIa interface	I120,L123	2	2	238833
+1	Query_4	Specific	Subunit I/VIIb interface	D450,F454	2	2	238833
+1	Query_4	Specific	Subunit I/VIIc interface	F29,L33,A36,L40,S122,L123,I405,Y478	9	8	238833
+1	Query_4	Specific	Subunit I/VIIIb interface	L414,F471	2	2	238833
+1	Query_4	Specific	Dimer interface	I196,L203,F243,Y280,F283,G286,I287,I291	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	271	atp6_Naifl1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	273458	47	267	5.13445e-37	130.404	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	325	nad1_Naifl1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	333876	13	315	8.45464e-106	311.329	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	651	nad5_Naifl1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	177253	1	612	5.43781e-177	516.483	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	64	nad4L_Naifl1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	2	63	2.77213e-07	43.097	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	256	cox2_Naifl1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214438	31	240	1.6566e-94	276.71	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	73	atp9_Naifl1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	349422	6	70	9.03387e-20	74.0831	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	200	nad6_Naifl1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	354830	9	131	1.17667e-16	74.1021	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	115	nad3_Naifl1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334119	18	112	1.88982e-19	75.9146	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	490	nad2_Naifl1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	356474	64	416	1.06744e-62	211.218	cl29598	Proton_antipo_M	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	279	cox3_Naifl1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	294143	22	221	9.16312e-78	236.538	cl00211	Heme_Cu_Oxidase_III_like	C	-
+ENDDOMAINS
+SITES
+1	Query_15	Specific	Subunit I/III interface	F91,S94,G95,S106,F109,S113,I114,H120,S208,V209,S212,F216	12	12	238834
+1	Query_15	Specific	Subunit III/Vb interface	K175	1	1	238834
+1	Query_15	Specific	Subunit III/VIa interface	F144,A145,I146,F163,A189,I199,E200,S201,N206,D207,S208	11	11	238834
+1	Query_15	Specific	Subunit III/VIb interface	L136	1	1	238834
+1	Query_15	Specific	Subunit III/VIIa interface	L73,R76,D77,S80,S83,F84,I85	7	7	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

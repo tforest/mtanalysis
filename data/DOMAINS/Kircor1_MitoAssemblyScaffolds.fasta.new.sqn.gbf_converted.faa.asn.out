@@ -1,0 +1,201 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Kircor1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Kircor1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	259	cox2_Kircor1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	177126	16	253	2.3047e-90	266.647	MTH00051	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	259	atp6_Kircor1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	273458	13	256	1.54007e-57	182.791	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	270	cox3_Kircor1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	278911	13	269	2.92395e-132	374.44	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_4	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_4	Specific	Subunit III/VIa interface	W136,E137,V138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_4	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_4	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,T75,F76,Q77	7	7	238834
+1	Query_4	Specific	Phospholipid binding site	W66,F67,I70,S71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	197	nad6_Kircor1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	354830	8	188	7.36294e-30	108.55	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	325	nad1_Kircor1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	333876	7	315	3.18698e-130	373.346	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	48	atp8_Kircor1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	283561	1	47	1.31615e-06	39.697	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	475	nad4_Kircor1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	214462	1	464	0	517.298	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	657	nad5_Kircor1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	177253	1	630	0	695.986	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	88	nad4L_Kircor1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351118	5	87	1.02172e-16	68.1349	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	528	cox1_Kircor1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	238833	8	512	0	883.746	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_11	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_11	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_11	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_11	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_11	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_11	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_11	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,T293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,L341,N359,A360,M362,V364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_11	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_11	Specific	Subunit I/IV interface	L37,A40,G41,L407,Q410,I411,D444,V462	8	8	238833
+1	Query_11	Specific	Subunit I/Vb interface	P265,Y269,S511	3	3	238833
+1	Query_11	Specific	Subunit I/VIa interface	I135,R213,N214,F215,N216	5	5	238833
+1	Query_11	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_11	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_11	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_11	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_11	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,A116,F117,I399,Y472,L475	9	9	238833
+1	Query_11	Specific	Subunit I/VIIIb interface	L408,L465	2	2	238833
+1	Query_11	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	508	nad2_Kircor1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235603	52	501	2.00251e-87	276.702	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	125	nad3_Kircor1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334119	19	112	3.54725e-42	134.08	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	385	cob_Kircor1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	214425	14	380	0	515.221	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	248	orf249_Kircor1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	273636	27	245	1.62708e-45	151.384	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	52	atp9_Kircor1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	349422	6	52	3.73914e-08	44.0376	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_17	Peptide	325	nad1_Kircor1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	333876	7	315	3.18698e-130	373.346	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	197	nad6_Kircor1_feature_13_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	354830	8	188	7.36294e-30	108.55	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	270	cox3_Kircor1_feature_37_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	278911	13	269	2.92395e-132	374.44	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_19	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_19	Specific	Subunit III/VIa interface	W136,E137,V138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_19	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_19	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,T75,F76,Q77	7	7	238834
+1	Query_19	Specific	Phospholipid binding site	W66,F67,I70,S71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	259	atp6_Kircor1_feature_41_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	273458	13	256	1.54007e-57	182.791	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	255	cox2_Kircor1_feature_43_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	214402	17	251	2.15767e-119	340.189	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	52	atp9_Kircor1_feature_47_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	349422	6	52	3.73914e-08	44.0376	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	248	orf249_Kircor1_feature_49_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	273636	27	245	1.62708e-45	151.384	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	385	cob_Kircor1_feature_53_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	214425	14	380	0	515.221	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	125	nad3_Kircor1_feature_55_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334119	19	112	3.54725e-42	134.08	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	508	nad2_Kircor1_feature_57_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	235603	52	501	2.00251e-87	276.702	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

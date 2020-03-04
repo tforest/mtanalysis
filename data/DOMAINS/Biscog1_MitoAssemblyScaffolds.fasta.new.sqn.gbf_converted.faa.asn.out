@@ -1,0 +1,691 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Biscog1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Biscog1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	191	orf192_Biscog1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	61	159	1.83083e-25	94.2254	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	123	orf124_Biscog1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	17	115	2.62167e-22	83.825	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	332	orf332_Biscog1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	24	120	3.12043e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	168	273	1.63311e-12	62.639	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	231	orf232_Biscog1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	74	180	4.80511e-12	60.3279	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	313	orf314_Biscog1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	25	123	4.74596e-22	88.4474	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	183	283	1.12269e-18	79.2026	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	457	orf458_Biscog1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	163	266	1.42518e-24	97.307	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	325	422	4.02776e-21	87.677	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	262	orf263_Biscog1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	273636	46	258	2.54837e-39	135.976	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	635	orf636_Biscog1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	275209	110	471	1.64893e-115	349.064	TIGR04416	group_II_RT_mat	-	45
+1	Query_11	Specific	338877	68	149	3.03396e-26	102.148	pfam13655	RVT_N	-	45
+1	Query_11	Specific	238038	548	599	5.01291e-09	52.4739	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+1	Query_11	Specific	active site	E571,H573,H574,I575,P577,N588,V589,H593,Q594,H597	11	10	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	269	cox3_Biscog1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	278911	12	269	3.61979e-136	384.07	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_13	Specific	Subunit I/III interface	S82,K85,G86,S97,L100,A104,I105,H111,G199,V200,T203,F207	12	12	238834
+1	Query_13	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_13	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_13	Specific	Subunit III/VIb interface	V127	1	1	238834
+1	Query_13	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_13	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	388	orf388_Biscog1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	103	202	3.2652e-16	73.4246	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	258	351	9.76143e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	350	orf350_Biscog1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	46	146	4.0711e-26	100.003	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	204	318	2.02423e-21	87.2918	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	367	orf367_Biscog1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	76	176	3.51218e-27	103.085	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	234	335	5.39129e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	498	orf498_Biscog1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	273636	294	497	1.7049e-38	139.443	TIGR01453	grpIintron_endo	-	45
+1	Query_17	Specific	335245	55	215	3.08179e-31	118.417	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	494	orf494_Biscog1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	99	195	2.64573e-14	68.417	pfam00961	LAGLIDADG_1	-	45
+1	Query_18	Specific	334330	239	352	3.9774e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	578	orf578_Biscog1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	287	386	6.44542e-28	107.322	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	447	547	9.03506e-25	98.4626	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	35	136	1.68511e-23	94.9958	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	241	orf241_Biscog1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	102	218	1.66863e-14	66.8762	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	107	orf107_Biscog1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	30	87	5.91895e-06	41.0679	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	138	orf138_Biscog1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	29	117	8.41032e-17	70.343	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	188	orf189_Biscog1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	67	162	9.83061e-29	102.7	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	316	orf317_Biscog1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	177	270	3.00007e-18	78.4322	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	3	95	1.014e-15	71.4986	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	204	orf204_Biscog1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	335245	9	182	4.18474e-54	170.034	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	111	orf112_Biscog1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	1	77	2.30336e-09	50.3127	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	209	orf210_Biscog1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	25	124	1.27412e-23	89.9882	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	327	orf328_Biscog1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	334330	194	294	4.85215e-27	101.929	pfam00961	LAGLIDADG_1	-	45
+1	Query_32	Specific	334330	35	136	5.51925e-23	91.1438	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	477	orf478_Biscog1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Specific	334330	79	176	3.01924e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+1	Query_33	Specific	334330	230	342	1.82523e-05	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	424	orf425_Biscog1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	334330	141	239	2.83882e-26	101.544	pfam00961	LAGLIDADG_1	-	45
+1	Query_34	Specific	334330	297	392	2.35988e-22	90.7586	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_38	Peptide	264	atp6_Biscog1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	273458	39	261	3.28466e-46	153.901	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	258	orf258_Biscog1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	198392	1	83	1.22786e-25	96.1408	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_39	Non-specific	273636	2	180	1.56287e-24	97.0713	TIGR01453	grpIintron_endo	-	45
+2	Query_39	Specific	284793	204	240	1.14802e-06	44.0404	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+SITES
+2	Query_39	Specific	putative active site	Y11,G13,R21,Y25,E68,N80	7	6	198392
+2	Query_39	Specific	putative metal binding site	E68	1	1	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_40	Peptide	50	atp8_Biscog1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Non-specific	283561	1	48	4.56455e-05	35.845	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	77	orf78_Biscog1_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	334330	1	41	0.005404	32.5935	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	71	orf72_Biscog1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	25	71	3.21059e-08	45.6903	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	511	nad4_Biscog1_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	235622	1	489	1.77883e-126	378.006	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	429	orf429_Biscog1_feature_124_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334330	298	398	1.12719e-23	94.6106	pfam00961	LAGLIDADG_1	-	45
+2	Query_44	Specific	334330	136	234	2.30686e-23	93.455	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	368	nad1_Biscog1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	333876	13	351	2.70531e-107	316.722	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	106	orf106_Biscog1_feature_135_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	27	106	2.46545e-06	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	673	orf673_Biscog1_feature_141_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	334582	256	333	5.54322e-10	55.8037	pfam01541	GIY-YIG	-	353929
+2	Query_49	Specific	284793	532	571	1.95908e-05	41.7292	pfam07453	NUMOD1	-	299755
+2	Query_49	Specific	197761	455	510	0.000155641	39.4734	smart00497	IENR1	-	299755
+2	Query_49	Specific	197761	613	666	0.000295037	38.703	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_49	Generic	active site	Y260,Y271,G274,R282,H286,E324	6	6	198380
+2	Query_49	Generic	catalytic site	R282,E324	2	2	198380
+2	Query_49	Generic	metal binding site	E324	1	1	198380
+2	Query_49	Generic	GIY-YIG motif/motif A	G258,I259,Y260,Y271,I273,G274	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_50	Peptide	120	orf120_Biscog1_feature_145_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	15	50	4.02053e-05	39.5271	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	260	orf260_Biscog1_feature_151_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	334330	142	254	1.00651e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	549	cox1_Biscog1_feature_160_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	238833	25	526	0	772.038	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+2	Query_54	Specific	Binuclear center (heme a3/CuB)	H253,H304,H305,H390	4	4	238833
+2	Query_54	Specific	Low-spin heme (heme a) binding site	H77,H392,S396,T438,S475	5	5	238833
+2	Query_54	Specific	D-pathway	Y34,N96,D107,N114,S117,S172,S173,N179,T183	9	9	238833
+2	Query_54	Specific	K-pathway	H253,Y257,H304,H305,T330,K333	7	6	238833
+2	Query_54	Specific	Electron transfer pathway	F391,R452,R453	3	3	238833
+2	Query_54	Specific	Putative proton exit pathway	H305,H382,D383,R452,R453	5	5	238833
+2	Query_54	Specific	Putative water exit pathway	D243,Q248,H249,D378,H382,D383,R452	7	7	238833
+2	Query_54	Specific	Subunit I/II interface	N71,D243,K267,F270,T271,T308,V309,G310,V313,R316,L324,I332,F335,Y342,G343,G344,L356,N374,A375,L377,I379,A380,F381,H382,D383,L447,Q448,R452,R453,I454,G463,W464	32	32	238833
+2	Query_54	Specific	Subunit I/III interface	T25,P106,F110,R112,W119,D160,F164,T182,N186,I206,L213,P216,M224,T233,S234,F235,G240,G241,D243,Y289,M292,G295,I296,I300	25	24	238833
+2	Query_54	Specific	Subunit I/IV interface	M54,S57,G58,L422,K425,V426,D459,V477	8	8	238833
+2	Query_54	Specific	Subunit I/Vb interface	Q268,Y284,A525	3	3	238833
+2	Query_54	Specific	Subunit I/VIa interface	I151,R229,N230,F231,N232	5	5	238833
+2	Query_54	Specific	Subunit I/VIb interface	G310	1	1	238833
+2	Query_54	Specific	Subunit I/VIc interface	G343	1	1	238833
+2	Query_54	Specific	Subunit I/VIIa interface	F130,V133	2	2	238833
+2	Query_54	Specific	Subunit I/VIIb interface	D459,G463	2	2	238833
+2	Query_54	Specific	Subunit I/VIIc interface	F40,L44,A47,L51,A132,V133,I414,Y487,L490	9	9	238833
+2	Query_54	Specific	Subunit I/VIIIb interface	L423,W480	2	2	238833
+2	Query_54	Specific	Dimer interface	I206,L213,Y289,M292,G295,I296,I300	8	7	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_55	Peptide	270	orf270_Biscog1_feature_164_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Non-specific	273636	11	261	8.88905e-30	111.324	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	271	orf271_Biscog1_feature_168_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	198392	53	141	4.74916e-27	100.378	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_56	Non-specific	273636	52	254	9.79367e-27	103.234	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+2	Query_56	Specific	putative active site	Y56,Y67,G69,R77,Y81,E126,N138	7	7	198392
+2	Query_56	Specific	putative metal binding site	E126	1	1	198392
+2	Query_56	Specific	GIY-YIG motif/motif A	G54,V55,Y56,Y67,I68,G69	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_57	Peptide	169	orf169_Biscog1_feature_172_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	334330	77	153	1.98404e-07	46.8459	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	272	orf272_Biscog1_feature_176_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	334330	47	142	4.49238e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+2	Query_59	Specific	334330	182	267	4.97862e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	432	orf432_Biscog1_feature_180_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	273636	139	344	4.44242e-58	189.519	TIGR01453	grpIintron_endo	-	45
+2	Query_60	Specific	197761	378	428	1.55058e-08	50.259	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	293	orf293_Biscog1_feature_184_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Non-specific	273636	87	287	1.45502e-33	121.724	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	449	orf449_Biscog1_feature_186_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	335245	252	417	6.52392e-46	156.552	pfam03161	LAGLIDADG_2	-	45
+2	Query_62	Specific	334330	93	185	1.33129e-11	60.7131	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	687	orf687_Biscog1_feature_200_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Specific	334330	556	655	1.50012e-25	101.159	pfam00961	LAGLIDADG_1	-	45
+2	Query_64	Specific	334330	398	498	1.31622e-17	78.4322	pfam00961	LAGLIDADG_1	-	45
+2	Query_64	Specific	334330	99	186	4.5723e-06	45.3051	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	302	orf302_Biscog1_feature_202_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Specific	334330	181	276	4.53996e-18	77.6618	pfam00961	LAGLIDADG_1	-	45
+2	Query_65	Specific	334330	62	149	1.21916e-06	46.0755	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	252	orf252_Biscog1_feature_206_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Specific	335245	67	234	2.60402e-52	167.338	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	142	orf142_Biscog1_feature_212_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Specific	334330	59	134	5.50923e-13	60.7131	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	415	orf415_Biscog1_feature_216_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Superfamily	353929	173	258	5.53099e-15	69.562	cl15257	GIY-YIG_SF	-	-
+2	Query_69	Specific	197761	268	321	3.64375e-06	43.7106	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_69	Generic	active site	Y175,Y186,G188,R196,Y200,E243	6	6	198380
+2	Query_69	Generic	catalytic site	R196,E243	2	2	198380
+2	Query_69	Generic	metal binding site	E243	1	1	198380
+2	Query_69	Generic	GIY-YIG motif/motif A	G173,V174,Y175,Y186,V187,G188	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_70	Peptide	349	orf349_Biscog1_feature_220_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Specific	334330	71	163	1.77952e-17	76.5062	pfam00961	LAGLIDADG_1	-	45
+2	Query_70	Specific	334330	220	308	0.000286367	39.5271	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	201	orf201_Biscog1_feature_222_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Specific	334330	42	160	5.69424e-13	62.2538	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	220	orf220_Biscog1_feature_226_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Superfamily	295038	71	122	0.00444209	37.2147	cl01807	DUF1517	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	221	orf221_Biscog1_feature_228_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Specific	335245	9	178	1.90555e-51	163.871	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_74	Peptide	899	orf899_Biscog1_feature_232_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Non-specific	275209	310	713	1.14469e-94	301.684	TIGR04416	group_II_RT_mat	-	45
+3	Query_74	Specific	238038	840	899	9.65775e-08	49.3924	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+3	Query_74	Specific	active site	H867,H869,H870,I871,P873,N885,L886,H890,P891,H894,H899	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_75	Peptide	760	orf760_Biscog1_feature_236_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Specific	238828	254	523	7.79124e-97	299.501	cd01651	RT_G2_intron	-	295487
+3	Query_75	Non-specific	279664	544	671	5.22436e-22	92.5326	pfam01348	Intron_maturas2	-	45
+3	Query_75	Specific	238038	684	742	0.000848793	37.8364	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+3	Query_75	Specific	putative active site	D328,I329,S330,Q331,C332,F333,Q381,G382,Y467,D469,D470,L519,G520	13	13	238828
+3	Query_75	Specific	putative nucleic acid binding site	G382	1	1	238828
+3	Query_75	Specific	putative NTP binding site	D328,I329,S330,Q331,C332,F333,Q381,D469	8	8	238828
+3	Query_75	Specific	active site	E702,H704,H705,V706,K708,K721,L722,C734,R735,H738,H742	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_76	Peptide	902	orf902_Biscog1_feature_240_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Specific	238828	347	618	3.49792e-74	242.492	cd01651	RT_G2_intron	-	295487
+3	Query_76	Non-specific	279664	648	787	5.05467e-17	78.2802	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+3	Query_76	Specific	putative active site	D422,I423,S424,K425,C426,F427,Q477,G478,Y563,D565,D566,L614,G615	13	13	238828
+3	Query_76	Specific	putative nucleic acid binding site	G478	1	1	238828
+3	Query_76	Specific	putative NTP binding site	D422,I423,S424,K425,C426,F427,Q477,D565	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_77	Peptide	845	orf845_Biscog1_feature_242_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Specific	238828	290	561	1.65039e-74	242.492	cd01651	RT_G2_intron	-	295487
+3	Query_77	Non-specific	279664	591	730	4.39574e-17	78.6654	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+3	Query_77	Specific	putative active site	D365,I366,S367,K368,C369,F370,Q420,G421,Y506,D508,D509,L557,G558	13	13	238828
+3	Query_77	Specific	putative nucleic acid binding site	G421	1	1	238828
+3	Query_77	Specific	putative NTP binding site	D365,I366,S367,K368,C369,F370,Q420,D508	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_78	Peptide	158	orf159_Biscog1_feature_247_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Specific	334330	55	144	2.16319e-11	56.8611	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_79	Peptide	148	orf149_Biscog1_feature_249_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_79	Specific	198392	32	119	8.81538e-28	98.452	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+3	Query_79	Specific	putative active site	Y35,Y46,G48,R56,Y60,E104,N116	7	7	198392
+3	Query_79	Specific	putative metal binding site	E104	1	1	198392
+3	Query_79	Specific	GIY-YIG motif/motif A	G33,V34,Y35,Y46,V47,G48	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_81	Peptide	143	orf143_Biscog1_feature_253_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	334330	19	84	8.28486e-07	44.5347	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	477	orf477_Biscog1_feature_259_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_84	Superfamily	354370	14	452	0	567.659	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_85	Peptide	116	orf116_Biscog1_feature_261_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_85	Superfamily	356580	31	55	0.000452534	36.9391	cl29704	Acetyltransf_3	C	-
+3	Query_85	Specific	224584	25	103	0.00152807	36.0794	COG1670	RimL	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	315	orf315_Biscog1_feature_263_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Specific	315878	135	266	1.29193e-13	66.5994	pfam13302	Acetyltransf_3	-	356580
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	199	orf200_Biscog1_feature_267_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Non-specific	273636	21	184	1.73221e-17	76.6557	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	126	orf127_Biscog1_feature_269_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Specific	334330	42	112	9.62651e-17	69.5726	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_90	Peptide	147	orf148_Biscog1_feature_271_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_90	Specific	334330	1	62	3.72207e-10	53.3943	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	51	orf52_Biscog1_feature_273_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_91	Specific	334330	24	51	0.00129556	32.9787	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_92	Peptide	40	orf40_Biscog1_feature_275_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_92	Superfamily	353929	18	36	0.0011194	32.5829	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_92	Generic	active site	Y21,Y32,G34	6	3	198380
+3	Query_92	Generic	GIY-YIG motif/motif A	G19,I20,Y21,Y32,I33,G34	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_93	Peptide	249	orf249_Biscog1_feature_277_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_93	Specific	335245	65	229	5.69361e-30	109.943	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	185	orf185_Biscog1_feature_279_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Specific	335245	100	185	8.76667e-21	84.1347	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_95	Peptide	546	cob_Biscog1_feature_283_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_95	Specific	214440	10	367	0	531.665	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_96	Peptide	302	orf302_Biscog1_feature_287_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Specific	334330	48	157	1.89292e-06	45.3051	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	458	orf458_Biscog1_feature_301_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_99	Specific	334330	61	155	1.27242e-18	80.7434	pfam00961	LAGLIDADG_1	-	45
+3	Query_99	Specific	334330	211	310	0.000211026	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	284	orf284_Biscog1_feature_309_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_102	Specific	334330	2	88	4.42599e-15	69.1874	pfam00961	LAGLIDADG_1	-	45
+3	Query_102	Specific	334330	154	256	1.43425e-14	68.0318	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_103	Peptide	465	orf465_Biscog1_feature_311_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_103	Specific	334330	229	330	1.25976e-07	49.5423	pfam00961	LAGLIDADG_1	-	45
+3	Query_103	Specific	334330	66	170	1.25976e-07	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_104	Peptide	663	nad5_Biscog1_feature_314_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_104	Non-specific	214400	1	628	0	604.763	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_105	Peptide	575	orf575_Biscog1_feature_318_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_105	Specific	335245	95	263	3.45043e-44	154.626	pfam03161	LAGLIDADG_2	-	45
+3	Query_105	Specific	335245	355	547	1.10031e-17	80.6679	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_106	Peptide	407	orf407_Biscog1_feature_322_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_106	Specific	334330	277	377	1.84092e-29	110.019	pfam00961	LAGLIDADG_1	-	45
+4	Query_106	Specific	334330	118	219	9.36394e-24	94.6106	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_107	Peptide	519	orf519_Biscog1_feature_326_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_107	Specific	334330	123	221	1.95533e-19	83.0546	pfam00961	LAGLIDADG_1	-	45
+4	Query_107	Specific	334330	269	382	1.60819e-06	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_110	Peptide	75	orf76_Biscog1_feature_333_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_110	Specific	334330	2	66	8.33246e-12	55.3203	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_111	Peptide	157	nad4L_Biscog1_feature_335_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_111	Specific	177231	3	80	2.50483e-21	82.3873	MTH00180	ND4L	-	351118
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_112	Peptide	118	orf119_Biscog1_feature_341_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_112	Superfamily	353929	62	118	2.08537e-08	47.6056	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+4	Query_112	Generic	active site	Y65,Y76,G78,R86,Y90	6	5	198380
+4	Query_112	Generic	catalytic site	R86	2	1	198380
+4	Query_112	Generic	GIY-YIG motif/motif A	G63,V64,Y65,Y76,I77,G78	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_113	Peptide	250	cox2_Biscog1_feature_343_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_113	Specific	214438	18	248	1.16468e-108	312.533	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_114	Peptide	260	orf260_Biscog1_feature_347_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_114	Superfamily	353929	108	207	4.0603e-10	54.9244	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+4	Query_114	Generic	active site	Y111,Y122,G124,R132,Y136,E192	6	6	198380
+4	Query_114	Generic	catalytic site	R132,E192	2	2	198380
+4	Query_114	Generic	metal binding site	E192	1	1	198380
+4	Query_114	Generic	GIY-YIG motif/motif A	G109,I110,Y111,Y122,V123,G124	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_116	Peptide	100	orf100_Biscog1_feature_353_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_116	Specific	334330	8	94	2.11088e-19	75.3506	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_117	Peptide	296	orf296_Biscog1_feature_357_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_117	Specific	273636	61	295	2.96832e-58	185.667	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_118	Peptide	422	orf422_Biscog1_feature_361_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_118	Specific	334330	296	393	6.32771e-25	97.6922	pfam00961	LAGLIDADG_1	-	45
+4	Query_118	Specific	334330	136	235	2.95642e-22	90.3734	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_119	Peptide	423	orf423_Biscog1_feature_365_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_119	Specific	334330	134	233	1.57141e-25	99.6182	pfam00961	LAGLIDADG_1	-	45
+4	Query_119	Specific	334330	291	390	2.35376e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_120	Peptide	449	orf449_Biscog1_feature_368_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_120	Superfamily	354370	19	443	9.64463e-162	463.655	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_121	Peptide	263	orf264_Biscog1_feature_370_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_121	Non-specific	273636	43	259	9.00415e-34	121.339	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_122	Peptide	63	atp9_Biscog1_feature_372_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_122	Specific	349422	6	61	3.65666e-16	64.8383	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_123	Peptide	57	orf58_Biscog1_feature_374_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_123	Superfamily	353929	10	57	5.39307e-07	41.8277	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+4	Query_123	Generic	active site	Y13,Y24,G26,R34,Y39	6	5	198380
+4	Query_123	Generic	catalytic site	R34	2	1	198380
+4	Query_123	Generic	GIY-YIG motif/motif A	G11,V12,Y13,Y24,V25,G26	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_125	Peptide	150	nad3_Biscog1_feature_378_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_125	Specific	334119	19	112	3.27977e-32	109.812	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_126	Peptide	924	nad2_Biscog1_feature_380_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_126	Specific	235603	124	489	2.11342e-85	281.709	PRK05777	PRK05777	N	356474
+4	Query_126	Specific	334330	639	737	4.92612e-20	85.751	pfam00961	LAGLIDADG_1	-	45
+4	Query_126	Specific	334330	795	896	1.91157e-17	78.4322	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_127	Peptide	419	orf419_Biscog1_feature_384_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_127	Specific	334330	129	227	1.35451e-23	94.2254	pfam00961	LAGLIDADG_1	-	45
+4	Query_127	Specific	334330	289	390	4.05326e-21	87.2918	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_128	Peptide	431	orf431_Biscog1_feature_388_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_128	Specific	334330	138	239	1.02286e-27	105.396	pfam00961	LAGLIDADG_1	-	45
+4	Query_128	Specific	334330	302	399	9.80618e-21	86.5214	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_129	Peptide	368	orf368_Biscog1_feature_392_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_129	Specific	334330	240	339	2.23412e-27	103.47	pfam00961	LAGLIDADG_1	-	45
+4	Query_129	Specific	334330	83	182	3.40744e-22	89.603	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_130	Peptide	458	orf458_Biscog1_feature_396_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_130	Specific	334330	174	272	5.78059e-28	106.552	pfam00961	LAGLIDADG_1	-	45
+4	Query_130	Specific	334330	330	430	6.98574e-23	92.6846	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+ENDDATA

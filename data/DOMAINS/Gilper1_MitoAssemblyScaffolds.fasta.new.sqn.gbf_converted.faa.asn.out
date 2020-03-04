@@ -1,0 +1,139 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Gilper1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Gilper1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	88	nad4L_Gilper1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	351118	5	87	1.02172e-16	68.1349	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	657	nad5_Gilper1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	177253	1	630	0	695.986	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	391	cob_Gilper1_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	214425	3	380	0	526.777	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	125	nad3_Gilper1_feature_15_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334119	28	112	4.02424e-40	128.687	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	511	nad2_Gilper1_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	235603	114	504	1.59178e-86	274.391	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	197	nad6_Gilper1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	354830	8	188	2.86031e-30	109.32	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	331	nad1_Gilper1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	333876	13	321	2.31665e-129	371.42	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	528	cox1_Gilper1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	238833	8	512	0	882.976	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_9	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_9	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_9	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_9	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_9	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_9	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_9	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_9	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,T293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,L341,N359,A360,M362,V364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_9	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,I190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,L277,G280,V281,I285	25	25	238833
+1	Query_9	Specific	Subunit I/IV interface	L37,A40,G41,V407,Q410,I411,D444,V462	8	8	238833
+1	Query_9	Specific	Subunit I/Vb interface	P265,Y269,S511	3	3	238833
+1	Query_9	Specific	Subunit I/VIa interface	V135,R213,N214,F215,N216	5	5	238833
+1	Query_9	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_9	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_9	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+1	Query_9	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_9	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,A116,F117,I399,Y472,L475	9	9	238833
+1	Query_9	Specific	Subunit I/VIIIb interface	L408,L465	2	2	238833
+1	Query_9	Specific	Dimer interface	I190,L197,F237,Y274,L277,G280,V281,I285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_10	Peptide	303	orf303_Gilper1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	273636	46	295	1.5204e-40	140.214	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	259	atp6_Gilper1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	273458	13	256	2.08634e-57	182.406	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	233	cox2_Gilper1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	214402	17	232	1.89912e-108	311.684	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	304	orf305_Gilper1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	273636	59	301	8.46809e-46	154.081	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	48	atp8_Gilper1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	283561	1	47	5.84988e-06	37.771	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	475	nad4_Gilper1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	214462	1	464	2.14541e-180	513.446	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	265	cox3_Gilper1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	278911	8	264	4.79853e-132	373.669	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_18	Specific	Subunit I/III interface	A78,K81,G82,S93,F96,S100,I101,H107,G195,V196,S199,M203	12	12	238834
+1	Query_18	Specific	Subunit III/Vb interface	G162	1	1	238834
+1	Query_18	Specific	Subunit III/VIa interface	W131,E132,V133,Y150,V176,Y186,N187,A188,S193,D194,G195	11	11	238834
+1	Query_18	Specific	Subunit III/VIb interface	A123	1	1	238834
+1	Query_18	Specific	Subunit III/VIIa interface	L60,K63,D64,R67,T70,F71,Q72	7	7	238834
+1	Query_18	Specific	Phospholipid binding site	W61,F62,I65,T66,G69,H75,G86,F87,F90,F218,R225,L237,G238	13	13	238834
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

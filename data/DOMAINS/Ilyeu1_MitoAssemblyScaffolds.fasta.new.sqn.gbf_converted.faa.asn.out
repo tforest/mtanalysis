@@ -1,0 +1,135 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Ilyeu1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Ilyeu1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	269	cox3_Ilyeu1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	278911	12	269	3.58261e-129	366.35	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,V200,T203,F207	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W65,F66,I69,V70,G73,H79,G90,V91,F94,F222,R229,V241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	236	nad6_Ilyeu1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	354830	22	223	2.20611e-18	79.8801	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	569	nad2_Ilyeu1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	235603	124	487	9.61581e-86	274.005	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	137	nad3_Ilyeu1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334119	19	113	2.29309e-28	99.4118	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	74	atp9_Ilyeu1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	349422	6	62	3.82039e-18	70.2311	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_8	Peptide	249	cox2_Ilyeu1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	214438	15	248	8.0179e-110	315.229	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	89	nad4L_Ilyeu1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	3	87	2.5059e-17	69.8207	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	666	nad5_Ilyeu1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	177253	1	632	0	586.589	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	390	cob_Ilyeu1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	214440	10	367	6.03844e-176	493.916	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	545	cox1_Ilyeu1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	238833	27	507	0	839.448	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_12	Specific	Binuclear center (heme a3/CuB)	H258,H307,H308,H393	4	4	238833
+1	Query_12	Specific	Low-spin heme (heme a) binding site	H79,H395,S399,T441,S478	5	5	238833
+1	Query_12	Specific	D-pathway	Y36,N98,D109,N116,S119,S174,S175,N181,T185	9	9	238833
+1	Query_12	Specific	K-pathway	H258,Y262,S273,H307,H308,T333,K336	7	7	238833
+1	Query_12	Specific	Electron transfer pathway	F394,R455,R456	3	3	238833
+1	Query_12	Specific	Putative proton exit pathway	H308,H385,D386,R455,R456	5	5	238833
+1	Query_12	Specific	Putative water exit pathway	D245,Q250,H251,D381,H385,D386,R455	7	7	238833
+1	Query_12	Specific	Subunit I/II interface	N73,D245,K282,F285,G286,T311,V312,G313,V316,R319,L327,I335,F338,Y345,G346,G347,L359,N377,A378,L380,I382,A383,F384,H385,D386,L450,Q451,R455,R456,I457,G466,W467	32	32	238833
+1	Query_12	Specific	Subunit I/III interface	T27,P108,F112,R114,W121,D162,F166,T184,N188,I208,L215,P218,M226,T235,S236,F237,G242,G243,D245,F255,Y292,M295,G298,I299,I303	25	25	238833
+1	Query_12	Specific	Subunit I/IV interface	L56,S59,G60,N425,K428,V429,D462,I480	8	8	238833
+1	Query_12	Specific	Subunit I/VIa interface	L153,R231,N232,F233,N234	5	5	238833
+1	Query_12	Specific	Subunit I/VIb interface	G313	1	1	238833
+1	Query_12	Specific	Subunit I/VIc interface	G346	1	1	238833
+1	Query_12	Specific	Subunit I/VIIa interface	F132,C135	2	2	238833
+1	Query_12	Specific	Subunit I/VIIb interface	D462,G466	2	2	238833
+1	Query_12	Specific	Subunit I/VIIc interface	F42,L46,A49,L53,A134,C135,I417,Y490,L493	9	9	238833
+1	Query_12	Specific	Subunit I/VIIIb interface	L426,W483	2	2	238833
+1	Query_12	Specific	Dimer interface	I208,L215,F255,Y292,M295,G298,I299,I303	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	369	nad1_Ilyeu1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	333876	16	352	1.52044e-109	322.5	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	485	nad4_Ilyeu1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	235622	1	482	5.92369e-132	391.103	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	48	atp8_Ilyeu1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	283561	1	48	4.94903e-08	43.1638	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	262	atp6_Ilyeu1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	351082	18	262	8.56082e-57	181.743	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

@@ -1,0 +1,1414 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Pilano1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Pilano1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	112	orf112_Pilano1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	354865	13	76	2.24122e-15	66.9053	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	173	orf173_Pilano1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	354325	20	63	2.70032e-08	47.416	cl17238	RING_Ubox	-	-
+1	Query_2	Non-specific	227547	17	107	1.30884e-05	43.9672	COG5222	COG5222	N	45
+ENDDOMAINS
+SITES
+1	Query_2	Specific	Zn binding site	C21,C24,C37,H39,C42,C45,C60,C63	8	8	319481
+ENDSITES
+MOTIFS
+1	Query_2	RING-HC finger (C3HC4-type)	C21	63C	319481
+ENDMOTIFS
+ENDQUERY
+QUERY	Query_3	Peptide	318	orf318_Pilano1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	350766	113	282	1.71006e-72	223.703	cd18008	DEXDc_SHPRH-like	N	355775
+ENDDOMAINS
+SITES
+1	Query_3	Specific	DEAD box helicase motif	D194,E195,A196,H197	4	4	350766
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	112	orf112_Pilano1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	354865	13	76	2.24122e-15	66.9053	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	143	orf143_Pilano1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	338793	79	123	0.000135113	37.5373	pfam13518	HTH_28	-	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	143	orf143_Pilano1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	173561	78	115	3.51315e-05	40.9457	PTZ00368	PTZ00368	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	190	orf190_Pilano1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	338698	42	141	3.39823e-05	41.8276	pfam13359	DDE_Tnp_4	C	354873
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	347	orf347_Pilano1_feature_54_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_51	Superfamily	354865	235	281	7.02163e-06	44.949	cl21549	rve	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	184	orf184_Pilano1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_52	Specific	335181	6	105	9.67807e-08	49.6535	pfam02992	Transposase_21	N	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	357	orf357_Pilano1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_57	Superfamily	354865	220	340	5.22293e-21	88.5827	cl21549	rve	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_71	Peptide	181	orf181_Pilano1_feature_40_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Non-specific	227596	33	116	0.00142341	38.4416	COG5271	MDN1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	237	orf237_Pilano1_feature_42_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Specific	349334	142	194	1.59732e-09	51.9332	cd18978	CD_DDE_transposase_like	-	355790
+ENDDOMAINS
+SITES
+2	Query_72	Specific	putative peptide binding site	Y145,E146,V147,Q148,A149,V165,W167,V168,G169,Y170,Y175,T177,W178,Q179,S180,A182,S183,P189,D192,Y193	20	20	349334
+ENDSITES
+ENDQUERY
+QUERY	Query_76	Peptide	450	orf450_Pilano1_feature_8_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_76	Specific	315923	245	414	8.07849e-23	93.8693	pfam13358	DDE_3	-	354865
+2	Query_76	Superfamily	277695	27	233	0.000185751	43.8249	cl22980	Csx12	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_84	Peptide	323	orf323_Pilano1_feature_24_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_84	Specific	133136	42	128	3.6003e-11	58.502	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+2	Query_84	Specific	inhibitor binding site	D52,G54,S56,F80,T81,L82,L121	7	7	133136
+2	Query_84	Specific	catalytic motif	D52,C53,G54	3	3	133136
+2	Query_84	Specific	Catalytic residue	D52	1	1	133136
+2	Query_84	Specific	Active site flap	F80,T81,L82,G83,K87,H88,A89,S90	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_85	Peptide	466	orf466_Pilano1_feature_26_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_85	Specific	238825	107	294	6.62181e-81	247.894	cd01647	RT_LTR	-	295487
+2	Query_85	Superfamily	353835	388	430	1.01961e-10	58.6581	cl14782	RNase_H_like	C	-
+ENDDOMAINS
+SITES
+2	Query_85	Specific	putative active site	D181,M182,T183,S184,G185,F186,M215,G216,Y243,D245,D246,L290,G291	13	13	238825
+2	Query_85	Specific	putative nucleic acid binding site	G216	1	1	238825
+2	Query_85	Specific	putative NTP binding site	D181,M182,T183,S184,G185,F186,M215,D245	8	8	238825
+2	Query_85	Generic	RNA/DNA hybrid binding site	D392,A393,S394,I395,I430	10	5	259998
+ENDSITES
+ENDQUERY
+QUERY	Query_108	Peptide	190	orf190_Pilano1_feature_14_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_108	Superfamily	295487	1	145	5.80547e-15	70.0126	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+2	Query_108	Generic	active site	D48,Q49,Q50,K51,A52,Y53,Q107,G108,F145	13	9	238185
+2	Query_108	Generic	nucleic acid binding site	G108	1	1	238185
+2	Query_108	Generic	NTP binding site	D48,Q49,Q50,K51,A52,Y53,Q107	8	7	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_110	Peptide	472	orf472_Pilano1_feature_18_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_110	Specific	339027	298	361	0.00101864	37.632	pfam13966	zf-RVT	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_111	Peptide	278	orf278_Pilano1_feature_20_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_111	Specific	238827	111	277	2.75145e-33	120.859	cd01650	RT_nLTR_like	C	295487
+ENDDOMAINS
+SITES
+2	Query_111	Specific	putative nucleic acid binding site	G255	1	1	238827
+2	Query_111	Specific	putative NTP binding site	D195,Q196,E197,K198,A199,Y200,Q254	8	7	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_112	Peptide	194	orf194_Pilano1_feature_22_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_112	Specific	335306	1	89	0.000376513	39.921	pfam03372	Exo_endo_phos	N	351117
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_114	Peptide	233	orf233_Pilano1_feature_26_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_114	Non-specific	227414	5	40	0.00184413	37.908	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_115	Peptide	136	orf136_Pilano1_feature_28_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_115	Non-specific	79176	17	52	0.0016174	37.0933	PRK12718	flgL	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_119	Peptide	1487	orf1487_Pilano1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_119	Specific	238825	681	854	8.231e-75	245.968	cd01647	RT_LTR	-	295487
+3	Query_119	Specific	260006	950	1063	1.21713e-53	183.078	cd09274	RNase_HI_RT_Ty3	-	353835
+3	Query_119	Specific	334200	1200	1313	1.9751e-20	88.0902	pfam00665	rve	-	354865
+3	Query_119	Specific	133136	505	588	3.99117e-08	51.9536	cd00303	retropepsin_like	-	353244
+3	Query_119	Non-specific	173561	338	366	0.000419532	42.1013	PTZ00368	PTZ00368	NC	45
+3	Query_119	Superfamily	356550	183	263	0.00171913	39.24	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+SITES
+3	Query_119	Specific	putative active site	D744,L745,K746,S747,G748,Y749,F778,G779,Y804,D806,D807,L851,G852	13	13	238825
+3	Query_119	Specific	putative nucleic acid binding site	G779	1	1	238825
+3	Query_119	Specific	putative NTP binding site	D744,L745,K746,S747,G748,Y749,F778,D806	8	8	238825
+3	Query_119	Specific	RNA/DNA hybrid binding site	D953,A954,S955,N956,S985,V986,T987,E990,D1015,H1048,R1062	11	11	260006
+3	Query_119	Specific	inhibitor binding site	D512,G514,T516,V539,I540,T541,I581	7	7	133136
+3	Query_119	Specific	catalytic motif	D512,T513,G514	3	3	133136
+3	Query_119	Specific	Catalytic residue	D512	1	1	133136
+3	Query_119	Specific	Active site flap	V539,I540,T541,Y542,S546,T547,Q548,T549	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_122	Peptide	577	orf577_Pilano1_feature_8_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_122	Specific	260007	278	396	6.54291e-51	170.542	cd09275	RNase_HI_RT_DIRS1	-	353835
+3	Query_122	Specific	239684	50	167	2.47884e-29	112.052	cd03714	RT_DIRS1	-	295487
+3	Query_122	Superfamily	323057	397	498	1.4415e-11	62.82	cl05442	Dam	C	-
+ENDDOMAINS
+SITES
+3	Query_122	Specific	RNA/DNA hybrid binding site	D282,A283,S284,N285,S309,I310,N311,E314,D338,H379,R393	11	11	260007
+3	Query_122	Specific	putative active site	D51,L52,S53,D54,A55,F56,F85,G86,Y115,D117,D118,L163,G164	13	13	239684
+3	Query_122	Specific	putative nucleic acid binding site	G86	1	1	239684
+3	Query_122	Specific	putative NTP binding site	D51,L52,S53,D54,A55,F56,F85,D117	8	8	239684
+ENDSITES
+ENDQUERY
+QUERY	Query_124	Peptide	1009	orf1009_Pilano1_feature_12_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_124	Superfamily	350955	820	981	0.0036828	39.5897	cl00213	DNA_BRE_C	-	-
+ENDDOMAINS
+SITES
+3	Query_124	Generic	active site	R829,V941,R944,W967,Y977	5	5	271175
+3	Query_124	Generic	DNA binding site	R829,P830,A919,S921,V941,Y977	7	6	271175
+ENDSITES
+ENDQUERY
+QUERY	Query_125	Peptide	577	orf577_Pilano1_feature_14_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_125	Specific	260007	278	396	6.54291e-51	170.542	cd09275	RNase_HI_RT_DIRS1	-	353835
+3	Query_125	Specific	239684	50	167	2.47884e-29	112.052	cd03714	RT_DIRS1	-	295487
+3	Query_125	Superfamily	323057	397	498	1.4415e-11	62.82	cl05442	Dam	C	-
+ENDDOMAINS
+SITES
+3	Query_125	Specific	RNA/DNA hybrid binding site	D282,A283,S284,N285,S309,I310,N311,E314,D338,H379,R393	11	11	260007
+3	Query_125	Specific	putative active site	D51,L52,S53,D54,A55,F56,F85,G86,Y115,D117,D118,L163,G164	13	13	239684
+3	Query_125	Specific	putative nucleic acid binding site	G86	1	1	239684
+3	Query_125	Specific	putative NTP binding site	D51,L52,S53,D54,A55,F56,F85,D117	8	8	239684
+ENDSITES
+ENDQUERY
+QUERY	Query_129	Peptide	938	orf938_Pilano1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_129	Specific	260006	176	302	5.71526e-35	129.15	cd09274	RNase_HI_RT_Ty3	-	353835
+3	Query_129	Specific	334200	483	593	3.51438e-14	69.6006	pfam00665	rve	-	354865
+3	Query_129	Specific	349334	770	821	2.52269e-12	61.9484	cd18978	CD_DDE_transposase_like	-	355790
+ENDDOMAINS
+SITES
+3	Query_129	Specific	RNA/DNA hybrid binding site	D179,A180,S181,A182,S221,T222,T223,E226,D252,W286,R300	11	11	260006
+3	Query_129	Specific	putative peptide binding site	Y773,E774,F775,D776,G777,I792,W794,K795,N796,Y797,D801,S803,W804,I805,T806,D808,M809,H815,D818,Y819	20	20	349334
+ENDSITES
+ENDQUERY
+QUERY	Query_137	Peptide	871	orf871_Pilano1_feature_22_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_137	Specific	260006	166	286	1.09169e-37	136.854	cd09274	RNase_HI_RT_Ty3	-	353835
+3	Query_137	Specific	334200	418	531	4.50802e-21	89.2458	pfam00665	rve	-	354865
+3	Query_137	Superfamily	295487	1	67	9.42132e-11	61.4573	cl02808	RT_like	N	-
+3	Query_137	Specific	349274	715	764	9.6865e-11	57.4869	cd00024	CD_CSD	-	355790
+ENDDOMAINS
+SITES
+3	Query_137	Specific	RNA/DNA hybrid binding site	D170,A171,S172,N173,S207,T208,N209,E212,D237,Y270,R284	11	11	260006
+3	Query_137	Generic	active site	Y15,D17,D18,L64,G65	13	5	238185
+3	Query_137	Generic	NTP binding site	D17	8	1	238185
+3	Query_137	Specific	putative peptide binding site	Y715,E716,V717,Q718,S719,V735,W737,K738,G739,Y740,D744,T746,W747,E748,P749,S751,H752,R761,Y762	20	19	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_138	Peptide	136	orf136_Pilano1_feature_24_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_138	Specific	349334	32	84	4.0075e-11	54.2444	cd18978	CD_DDE_transposase_like	-	355790
+ENDDOMAINS
+SITES
+3	Query_138	Specific	putative peptide binding site	Y35,E36,V37,Q38,A39,V54,W56,L57,G58,Y59,D64,T66,W67,Q68,K69,S71,D72,H78,L81,Y82	20	20	349334
+ENDSITES
+ENDQUERY
+QUERY	Query_139	Peptide	679	orf679_Pilano1_feature_26_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_139	Specific	260006	110	229	1.71571e-32	121.446	cd09274	RNase_HI_RT_Ty3	-	353835
+3	Query_139	Specific	334200	427	536	1.20396e-20	87.705	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+3	Query_139	Specific	RNA/DNA hybrid binding site	D114,A115,S116,N117,S150,T151,T152,E155,D180,H213,R227	11	11	260006
+ENDSITES
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_140	Peptide	384	orf384_Pilano1_feature_28_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_140	Superfamily	295487	246	375	2.70611e-18	81.4877	cl02808	RT_like	C	-
+4	Query_140	Specific	133136	37	131	4.57051e-06	44.6348	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+4	Query_140	Generic	active site	D319,I320,R321,S322,C323,F324,F355,G356	13	8	238185
+4	Query_140	Generic	nucleic acid binding site	G356	1	1	238185
+4	Query_140	Generic	NTP binding site	D319,I320,R321,S322,C323,F324,F355	8	7	238185
+4	Query_140	Specific	inhibitor binding site	D51,G53,T55,I80,S81,L82,L127	7	7	133136
+4	Query_140	Specific	catalytic motif	D51,T52,G53	3	3	133136
+4	Query_140	Specific	Catalytic residue	D51	1	1	133136
+4	Query_140	Specific	Active site flap	I80,S81,L82,G83,N87,K88,H89,Q90	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_143	Peptide	264	orf263_Pilano1_feature_2_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_143	Specific	238825	5	192	2.03292e-38	132.334	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+4	Query_143	Specific	putative active site	D78,I79,R80,A81,C82,F83,F114,G115,Y140,D142,D143,L188,G189	13	13	238825
+4	Query_143	Specific	putative nucleic acid binding site	G115	1	1	238825
+4	Query_143	Specific	putative NTP binding site	D78,I79,R80,A81,C82,F83,F114,D142	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_146	Peptide	1786	orf1786_Pilano1_feature_8_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_146	Specific	238825	746	928	4.76248e-39	143.89	cd01647	RT_LTR	-	295487
+4	Query_146	Specific	260006	1024	1150	2.73869e-36	133.772	cd09274	RNase_HI_RT_Ty3	-	353835
+4	Query_146	Specific	349274	1629	1677	5.14311e-12	62.1093	cd00024	CD_CSD	-	355790
+4	Query_146	Specific	334200	1342	1448	7.62923e-09	54.963	pfam00665	rve	-	354865
+4	Query_146	Superfamily	353244	543	634	0.000282815	41.5532	cl11403	pepsin_retropepsin_like	-	-
+4	Query_146	Superfamily	356550	228	323	0.00344525	38.4696	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+SITES
+4	Query_146	Specific	putative active site	D816,I817,S818,G819,A820,F821,F850,G851,Y877,D879,D880,L924,G925	13	13	238825
+4	Query_146	Specific	putative nucleic acid binding site	G851	1	1	238825
+4	Query_146	Specific	putative NTP binding site	D816,I817,S818,G819,A820,F821,F850,D879	8	8	238825
+4	Query_146	Specific	RNA/DNA hybrid binding site	D1027,A1028,S1029,N1030,C1069,V1070,T1071,E1074,D1100,W1134,R1148	11	11	260006
+4	Query_146	Specific	putative peptide binding site	Y1629,E1630,F1631,D1632,A1633,I1648,W1650,K1651,N1652,Y1653,H1657,S1659,W1660,I1661,P1662,K1664,N1665,A1671,T1674,Y1675	20	20	349274
+4	Query_146	Generic	inhibitor binding site	D555,G557,T559,L585,S586,F587,L630	7	7	133137
+4	Query_146	Generic	catalytic motif	D555,T556,G557	3	3	133137
+4	Query_146	Generic	Catalytic residue	D555	1	1	133137
+4	Query_146	Generic	Active site flap	L585,S586,F587,I588,Y593,I594,P595,R596	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_158	Peptide	208	orf208_Pilano1_feature_2_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_158	Specific	238825	16	181	1.59827e-57	179.328	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+4	Query_158	Specific	putative active site	D68,C69,L70,K71,G72,F73,M102,G103,Y130,D132,D133,L177,G178	13	13	238825
+4	Query_158	Specific	putative nucleic acid binding site	G103	1	1	238825
+4	Query_158	Specific	putative NTP binding site	D68,C69,L70,K71,G72,F73,M102,D132	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_159	Peptide	312	orf312_Pilano1_feature_4_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_159	Non-specific	224117	17	225	1.01999e-06	50.098	COG1196	Smc	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_160	Peptide	301	orf301_Pilano1_feature_6_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_160	Non-specific	225949	106	244	3.99959e-07	48.1466	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_161	Peptide	110	orf110_Pilano1_feature_8_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_161	Superfamily	354865	10	74	6.57701e-19	75.7649	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_166	Peptide	119	orf119_Pilano1_feature_18_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_166	Specific	335181	6	105	8.1933e-09	50.8091	pfam02992	Transposase_21	N	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_172	Peptide	205	orf205_Pilano1_feature_30_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_172	Non-specific	227414	69	115	1.02505e-08	52.5455	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_176	Peptide	555	orf555_Pilano1_feature_2_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_176	Specific	310509	137	434	6.81572e-38	142.892	pfam05970	PIF1	-	355775
+4	Query_176	Specific	350196	479	522	9.20224e-10	54.8751	cd18809	SF1_C_RecD	N	365791
+ENDDOMAINS
+SITES
+4	Query_176	Specific	ATP binding site	A161,A162,G163,T164,G165,K166,S167,F168,D235,Q275	11	10	350795
+4	Query_176	Specific	ATP binding site	S489	1	1	350196
+ENDSITES
+ENDQUERY
+QUERY	Query_178	Peptide	363	orf363_Pilano1_feature_6_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_178	Specific	339120	193	362	6.92252e-23	94.1681	pfam14214	Helitron_like_N	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_182	Peptide	295	orf295_Pilano1_feature_14_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_182	Specific	310509	2	167	1.34494e-13	70.0895	pfam05970	PIF1	N	355775
+4	Query_182	Non-specific	223581	146	258	5.31958e-10	59.8117	COG0507	RecD	N	45
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_183	Peptide	54	sufC_Pilano1_feature_16_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_183	Non-specific	274289	9	54	8.97256e-06	40.1749	TIGR02768	TraA_Ti	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+SESSION	5	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_191	Peptide	451	orf451_Pilano1_feature_32_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_191	Specific	334200	35	148	1.31353e-16	75.3786	pfam00665	rve	-	354865
+5	Query_191	Specific	349274	330	378	1.42134e-12	61.7241	cd00024	CD_CSD	-	355790
+ENDDOMAINS
+SITES
+5	Query_191	Specific	putative peptide binding site	F330,K331,V332,E333,D334,V349,W351,L352,S353,Y354,E358,T360,W361,Q362,K363,S365,D366,I372,K375,Y376	20	20	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_192	Peptide	768	orf768_Pilano1_feature_34_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_192	Specific	238825	472	655	3.37377e-42	151.209	cd01647	RT_LTR	-	295487
+5	Query_192	Specific	133136	254	350	1.55787e-08	52.3388	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+5	Query_192	Specific	putative active site	D543,L544,S545,N546,A547,Y548,F577,G578,F603,D605,D606,L651,G652	13	13	238825
+5	Query_192	Specific	putative nucleic acid binding site	G578	1	1	238825
+5	Query_192	Specific	putative NTP binding site	D543,L544,S545,N546,A547,Y548,F577,D605	8	8	238825
+5	Query_192	Specific	inhibitor binding site	D268,G270,E272,N298,F299,L300,L343	7	7	133136
+5	Query_192	Specific	catalytic motif	D268,T269,G270	3	3	133136
+5	Query_192	Specific	Catalytic residue	D268	1	1	133136
+5	Query_192	Specific	Active site flap	N298,F299,L300,S301,N305,A306,S307,R308	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_199	Peptide	108	orf108_Pilano1_feature_10_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_199	Non-specific	227414	5	49	1.04291e-06	44.8416	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_202	Peptide	898	orf898_Pilano1_feature_2_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_202	Specific	238827	317	597	2.46333e-48	170.935	cd01650	RT_nLTR_like	-	295487
+ENDDOMAINS
+SITES
+5	Query_202	Specific	putative active site	D406,F407,M408,K409,A410,Y411,Q465,G466,Y518,D520,D521,L593,G594	13	13	238827
+5	Query_202	Specific	putative nucleic acid binding site	G466	1	1	238827
+5	Query_202	Specific	putative NTP binding site	D406,F407,M408,K409,A410,Y411,Q465,D520	8	8	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_203	Peptide	346	orf346_Pilano1_feature_4_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_203	Superfamily	351117	129	345	3.61057e-13	68.1469	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+5	Query_203	Generic	putative catalytic site	N133,E165,Y237,D273,N275,D325	8	6	197306
+5	Query_203	Generic	putative metal binding site	E165	2	1	197306
+5	Query_203	Generic	putative phosphate binding site	Y237,N275	3	2	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_204	Peptide	438	orf438_Pilano1_feature_6_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_204	Non-specific	173561	234	284	1.58398e-05	44.4125	PTZ00368	PTZ00368	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_206	Peptide	195	orf195_Pilano1_feature_10_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_206	Non-specific	173561	78	115	2.88336e-09	53.272	PTZ00368	PTZ00368	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_212	Peptide	201	orf201_Pilano1_feature_4_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_212	Superfamily	354865	78	166	4.34342e-09	52.6529	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_213	Peptide	478	orf478_Pilano1_feature_6_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_213	Specific	349274	266	315	5.07185e-12	60.1833	cd00024	CD_CSD	-	355790
+5	Query_213	Specific	334200	42	82	8.99239e-05	41.8662	pfam00665	rve	N	354865
+ENDDOMAINS
+SITES
+5	Query_213	Specific	putative peptide binding site	Y266,E267,V268,Q269,S270,V286,W288,K289,G290,Y291,D295,T297,W298,E299,P300,S302,H303,R312,Y313	20	19	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_216	Peptide	1396	orf1396_Pilano1_feature_12_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_216	Specific	260006	1023	1142	3.36068e-42	150.336	cd09274	RNase_HI_RT_Ty3	-	353835
+5	Query_216	Specific	238825	741	928	7.75843e-33	125.4	cd01647	RT_LTR	-	295487
+5	Query_216	Superfamily	356550	183	280	7.49474e-07	48.4848	cl29674	Retrotrans_gag	-	-
+5	Query_216	Specific	334200	1324	1384	4.87222e-05	43.7922	pfam00665	rve	C	354865
+ENDDOMAINS
+SITES
+5	Query_216	Specific	RNA/DNA hybrid binding site	D1027,A1028,S1029,N1030,G1063,T1064,S1065,E1068,D1093,H1126,R1140	11	11	260006
+5	Query_216	Specific	putative active site	D814,I815,K816,S817,C818,F819,F850,G851,Y876,D878,D879,L924,G925	13	13	238825
+5	Query_216	Specific	putative nucleic acid binding site	G851	1	1	238825
+5	Query_216	Specific	putative NTP binding site	D814,I815,K816,S817,C818,F819,F850,D878	8	8	238825
+ENDSITES
+ENDQUERY
+ENDSESSION	5
+SESSION	6	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_226	Peptide	316	orf316_Pilano1_feature_32_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_226	Non-specific	227414	88	123	0.000258755	40.9896	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_227	Peptide	741	orf741_Pilano1_feature_34_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_227	Specific	238827	574	740	2.52647e-32	124.711	cd01650	RT_nLTR_like	C	295487
+6	Query_227	Superfamily	351117	52	283	2.04463e-09	58.5169	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+6	Query_227	Specific	putative nucleic acid binding site	G718	1	1	238827
+6	Query_227	Specific	putative NTP binding site	D658,Q659,E660,K661,A662,Y663,Q717	8	7	238827
+6	Query_227	Generic	putative catalytic site	N56,E88,Y158,D193,N195,D247,D275,H276	8	8	197306
+6	Query_227	Generic	putative metal binding site	E88,D275	2	2	197306
+6	Query_227	Generic	putative phosphate binding site	Y158,N195,H276	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_230	Peptide	211	orf211_Pilano1_feature_4_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_230	Non-specific	227414	65	111	2.76888e-09	54.4715	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_238	Peptide	608	orf608_Pilano1_feature_4_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_238	Specific	334200	217	327	1.704e-14	69.9858	pfam00665	rve	-	354865
+6	Query_238	Specific	349334	504	555	2.93064e-12	61.5632	cd18978	CD_DDE_transposase_like	-	355790
+6	Query_238	Superfamily	353835	3	36	0.00429041	37.4721	cl14782	RNase_H_like	N	-
+ENDDOMAINS
+SITES
+6	Query_238	Specific	putative peptide binding site	Y507,E508,F509,D510,G511,I526,W528,K529,N530,Y531,D535,S537,W538,I539,T540,D542,M543,H549,D552,Y553	20	20	349334
+6	Query_238	Generic	RNA/DNA hybrid binding site	P22,R34	10	2	259998
+ENDSITES
+ENDQUERY
+QUERY	Query_239	Peptide	185	orf185_Pilano1_feature_6_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_239	Superfamily	295487	1	66	2.41502e-15	69.9317	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+6	Query_239	Generic	active site	Y15,D17,D18,L62,G63	13	5	238185
+6	Query_239	Generic	NTP binding site	D17	8	1	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_240	Peptide	298	orf298_Pilano1_feature_8_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_240	Superfamily	353244	39	143	3.04544e-06	44.6352	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+6	Query_240	Generic	inhibitor binding site	D52,G54,Q56,A83,Y84,V85,I129	7	7	133137
+6	Query_240	Generic	catalytic motif	D52,T53,G54	3	3	133137
+6	Query_240	Generic	Catalytic residue	D52	1	1	133137
+6	Query_240	Generic	Active site flap	A83,Y84,V85,Q86,F90,S91,E92,R93	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_243	Peptide	708	orf708_Pilano1_feature_14_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_243	Specific	238827	496	698	2.30449e-37	138.963	cd01650	RT_nLTR_like	C	295487
+6	Query_243	Superfamily	351117	27	186	1.12814e-16	78.8728	cl00490	EEP	N	-
+6	Query_243	Superfamily	353336	303	372	0.00570346	38.7941	cl12013	BAR	NC	-
+ENDDOMAINS
+SITES
+6	Query_243	Specific	putative active site	D582,I583,K584,S585,A586,Y587,Q642,G643,F689,D691,D692	13	11	238827
+6	Query_243	Specific	putative nucleic acid binding site	G643	1	1	238827
+6	Query_243	Specific	putative NTP binding site	D582,I583,K584,S585,A586,Y587,Q642,D691	8	8	238827
+6	Query_243	Generic	putative catalytic site	Y68,D96,N98,D154,D181,H182	8	6	197306
+6	Query_243	Generic	putative metal binding site	D181	2	1	197306
+6	Query_243	Generic	putative phosphate binding site	Y68,N98,H182	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_245	Peptide	278	orf278_Pilano1_feature_18_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_245	Specific	337711	96	167	0.00586197	37.5191	pfam10351	Apt1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_250	Peptide	266	orf266_Pilano1_feature_28_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_250	Superfamily	295487	3	198	1.25295e-26	103.14	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+6	Query_250	Generic	active site	D18,I19,K20,S21,A22,Y23,Q78,G79,F124,D126,D127,L194,G195	13	13	238185
+6	Query_250	Generic	nucleic acid binding site	G79	1	1	238185
+6	Query_250	Generic	NTP binding site	D18,I19,K20,S21,A22,Y23,Q78,D126	8	8	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_251	Peptide	371	orf371_Pilano1_feature_30_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_251	Specific	339261	66	132	0.00281093	37.3167	pfam14529	Exo_endo_phos_2	N	351117
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_253	Peptide	346	orf346_Pilano1_feature_34_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_253	Specific	335240	130	175	0.000562448	41.3654	pfam03148	Tektin	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_254	Peptide	976	orf976_Pilano1_feature_36_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_254	Specific	238827	366	633	5.23879e-49	172.861	cd01650	RT_nLTR_like	-	295487
+6	Query_254	Superfamily	353336	173	242	0.00826353	38.7941	cl12013	BAR	NC	-
+ENDDOMAINS
+SITES
+6	Query_254	Specific	putative active site	D452,I453,K454,S455,A456,Y457,Q512,G513,F559,D561,D562,L629,G630	13	13	238827
+6	Query_254	Specific	putative nucleic acid binding site	G513	1	1	238827
+6	Query_254	Specific	putative NTP binding site	D452,I453,K454,S455,A456,Y457,Q512,D561	8	8	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_256	Peptide	825	orf824_Pilano1_feature_2_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_256	Superfamily	356550	234	320	2.08361e-07	49.2552	cl29674	Retrotrans_gag	-	-
+6	Query_256	Superfamily	295487	744	824	2.20893e-07	51.4421	cl02808	RT_like	C	-
+6	Query_256	Superfamily	353244	541	632	0.000127124	41.5532	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+6	Query_256	Generic	active site	D814,I815,S816,G817,A818,F819	13	6	238185
+6	Query_256	Generic	NTP binding site	D814,I815,S816,G817,A818,F819	8	6	238185
+6	Query_256	Generic	inhibitor binding site	D553,G555,T557,L583,S584,F585,L628	7	7	133137
+6	Query_256	Generic	catalytic motif	D553,T554,G555	3	3	133137
+6	Query_256	Generic	Catalytic residue	D553	1	1	133137
+6	Query_256	Generic	Active site flap	L583,S584,F585,I586,Y591,I592,P593,R594	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_258	Peptide	413	orf413_Pilano1_feature_6_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+6	Query_258	Specific	339120	195	368	1.83234e-28	109.961	pfam14214	Helitron_like_N	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	6
+SESSION	7	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_262	Peptide	198	orf198_Pilano1_feature_14_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_262	Superfamily	353244	130	189	1.64003e-05	41.5532	cl11403	pepsin_retropepsin_like	C	-
+7	Query_262	Specific	306581	30	46	0.000158369	37.4989	pfam00098	zf-CCHC	-	45
+ENDDOMAINS
+SITES
+7	Query_262	Generic	inhibitor binding site	D133,G135,T137,I164,E165,V166	7	6	133137
+7	Query_262	Generic	catalytic motif	D133,T134,G135	3	3	133137
+7	Query_262	Generic	Catalytic residue	D133	1	1	133137
+7	Query_262	Generic	Active site flap	I164,E165,V166,A167,V175,V176,I177,V178	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_263	Peptide	138	orf138_Pilano1_feature_16_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_263	Superfamily	295487	17	79	1.38857e-24	92.2733	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+7	Query_263	Generic	active site	D73,M74,I75,G76,A77,Y78	13	6	238185
+7	Query_263	Generic	NTP binding site	D73,M74,I75,G76,A77,Y78	8	6	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_264	Peptide	711	orf711_Pilano1_feature_18_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_264	Specific	260006	89	209	7.7955e-58	191.552	cd09274	RNase_HI_RT_Ty3	-	353835
+7	Query_264	Specific	334200	398	490	1.17392e-13	67.6746	pfam00665	rve	-	354865
+7	Query_264	Specific	349274	675	708	5.62635e-13	63.6501	cd00024	CD_CSD	C	355790
+7	Query_264	Specific	225361	316	512	0.00281731	39.9385	COG2801	Tra5	-	45
+ENDDOMAINS
+SITES
+7	Query_264	Specific	RNA/DNA hybrid binding site	D92,A93,S94,D95,Q129,V130,Y131,E134,D161,Y194,R208	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_265	Peptide	266	orf266_Pilano1_feature_20_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_265	Superfamily	356550	183	264	0.0046931	35.388	cl29674	Retrotrans_gag	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_267	Peptide	1247	orf1247_Pilano1_feature_24_from_C_15, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_267	Specific	260006	762	881	6.06133e-42	149.18	cd09274	RNase_HI_RT_Ty3	-	353835
+7	Query_267	Specific	238825	486	667	6.55948e-31	120.008	cd01647	RT_LTR	-	295487
+7	Query_267	Specific	334200	1063	1174	1.02101e-20	88.4754	pfam00665	rve	-	354865
+7	Query_267	Superfamily	353244	242	334	0.00190282	38.4716	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+7	Query_267	Specific	RNA/DNA hybrid binding site	D766,A767,S768,N769,G802,T803,S804,E807,D832,H865,R879	11	11	260006
+7	Query_267	Specific	putative active site	D553,I554,K555,S556,C557,F558,F589,G590,Y615,D617,D618,L663,G664	13	13	238825
+7	Query_267	Specific	putative nucleic acid binding site	G590	1	1	238825
+7	Query_267	Specific	putative NTP binding site	D553,I554,K555,S556,C557,F558,F589,D617	8	8	238825
+7	Query_267	Generic	inhibitor binding site	D256,G258,N260,L285,G286,Q287,V328	7	7	133137
+7	Query_267	Generic	catalytic motif	D256,S257,G258	3	3	133137
+7	Query_267	Generic	Catalytic residue	D256	1	1	133137
+7	Query_267	Generic	Active site flap	L285,G286,Q287,S288,I292,N293,R294,V295	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_271	Peptide	333	orf333_Pilano1_feature_4_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_271	Superfamily	354873	184	319	5.28883e-72	221.781	cl21562	DDE_Tnp_4	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_279	Peptide	399	orf399_Pilano1_feature_20_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_279	Specific	337049	160	237	0.00537142	38.0465	pfam08424	NRDE-2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_283	Peptide	143	orf143_Pilano1_feature_28_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_283	Superfamily	356550	37	131	0.00131584	35.7732	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_288	Peptide	223	orf223_Pilano1_feature_4_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_288	Specific	334200	36	144	2.43275e-21	85.0086	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_295	Peptide	345	orf345_Pilano1_feature_18_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_295	Specific	239684	81	198	6.17095e-33	118.6	cd03714	RT_DIRS1	-	295487
+ENDDOMAINS
+SITES
+7	Query_295	Specific	putative active site	D82,L83,K84,D85,A86,Y87,F116,G117,Y146,D148,D149,L194,G195	13	13	239684
+7	Query_295	Specific	putative nucleic acid binding site	G117	1	1	239684
+7	Query_295	Specific	putative NTP binding site	D82,L83,K84,D85,A86,Y87,F116,D148	8	8	239684
+ENDSITES
+ENDQUERY
+QUERY	Query_297	Peptide	976	orf976_Pilano1_feature_22_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+7	Query_297	Specific	260006	319	439	1.63528e-51	176.144	cd09274	RNase_HI_RT_Ty3	-	353835
+7	Query_297	Specific	238825	42	224	1.57816e-42	152.75	cd01647	RT_LTR	-	295487
+7	Query_297	Specific	334200	560	673	3.20681e-16	75.3786	pfam00665	rve	-	354865
+7	Query_297	Specific	349274	855	903	6.10491e-14	66.7317	cd00024	CD_CSD	-	355790
+ENDDOMAINS
+SITES
+7	Query_297	Specific	RNA/DNA hybrid binding site	D323,A324,S325,L326,N360,T361,T362,E365,D390,H423,R437	11	11	260006
+7	Query_297	Specific	putative active site	D113,L114,S115,N116,A117,Y118,F147,G148,F173,D175,D176,L220,G221	13	13	238825
+7	Query_297	Specific	putative nucleic acid binding site	G148	1	1	238825
+7	Query_297	Specific	putative NTP binding site	D113,L114,S115,N116,A117,Y118,F147,D175	8	8	238825
+7	Query_297	Specific	putative peptide binding site	F855,E856,V857,E858,D859,V874,W876,L877,S878,Y879,E883,T885,W886,Q887,K888,S890,D891,I897,K900,Y901	20	20	349274
+ENDSITES
+ENDQUERY
+ENDSESSION	7
+SESSION	8	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_299	Peptide	375	orf375_Pilano1_feature_26_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_299	Specific	271175	123	307	0.00270626	38.2299	cd00397	DNA_BRE_C	-	350955
+ENDDOMAINS
+SITES
+8	Query_299	Specific	active site	R153,H271,R274,W297,Y307	5	5	271175
+8	Query_299	Specific	DNA binding site	Q139,R153,R155,T249,S251,H271,Y307	7	7	271175
+ENDSITES
+ENDQUERY
+QUERY	Query_301	Peptide	342	orf342_Pilano1_feature_30_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_301	Superfamily	351117	5	109	0.00248863	38.8717	cl00490	EEP	N	-
+ENDDOMAINS
+SITES
+8	Query_301	Generic	putative catalytic site	D19,N21,D75,D101,H102	8	5	197306
+8	Query_301	Generic	putative metal binding site	D101	2	1	197306
+8	Query_301	Generic	putative phosphate binding site	N21,H102	3	2	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_302	Peptide	178	orf177_Pilano1_feature_32_from_C_17, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_302	Specific	238827	22	177	6.29567e-37	127.022	cd01650	RT_nLTR_like	C	295487
+ENDDOMAINS
+SITES
+8	Query_302	Specific	putative nucleic acid binding site	G161	1	1	238827
+8	Query_302	Specific	putative NTP binding site	D101,Q102,E103,K104,A105,Y106,Q160	8	7	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_303	Peptide	1675	orf1675_Pilano1_feature_2_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_303	Specific	238825	637	820	7.63064e-80	260.605	cd01647	RT_LTR	-	295487
+8	Query_303	Specific	260006	919	1041	9.38477e-45	157.654	cd09274	RNase_HI_RT_Ty3	-	353835
+8	Query_303	Specific	334200	1199	1311	4.14737e-17	78.4602	pfam00665	rve	-	354865
+8	Query_303	Specific	133136	405	487	2.47154e-11	61.1984	cd00303	retropepsin_like	-	353244
+8	Query_303	Superfamily	356550	75	168	5.37482e-05	43.4772	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+SITES
+8	Query_303	Specific	putative active site	D707,L708,K709,S710,G711,Y712,F741,G742,Y769,D771,D772,V816,G817	13	13	238825
+8	Query_303	Specific	putative nucleic acid binding site	G742	1	1	238825
+8	Query_303	Specific	putative NTP binding site	D707,L708,K709,S710,G711,Y712,F741,D771	8	8	238825
+8	Query_303	Specific	RNA/DNA hybrid binding site	D922,A923,S924,D925,P961,A962,Q963,E966,D993,Y1026,R1040	11	11	260006
+8	Query_303	Specific	inhibitor binding site	D414,G416,S418,V441,E442,T443,I480	7	7	133136
+8	Query_303	Specific	catalytic motif	D414,S415,G416	3	3	133136
+8	Query_303	Specific	Catalytic residue	D414	1	1	133136
+8	Query_303	Specific	Active site flap	V441,E442,T443,A444,I448,S449,E450	8	7	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_304	Peptide	815	orf815_Pilano1_feature_6_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_304	Specific	260006	110	229	7.95219e-33	122.601	cd09274	RNase_HI_RT_Ty3	-	353835
+8	Query_304	Specific	334200	425	538	4.93734e-19	83.0826	pfam00665	rve	-	354865
+8	Query_304	Specific	349334	717	767	2.90556e-10	56.1704	cd18978	CD_DDE_transposase_like	-	355790
+ENDDOMAINS
+SITES
+8	Query_304	Specific	RNA/DNA hybrid binding site	D114,A115,S116,N117,S150,T151,T152,E155,D180,H213,R227	11	11	260006
+8	Query_304	Specific	putative peptide binding site	F718,E719,V720,Q721,A722,V737,W739,L740,G741,Y742,D747,T749,W750,Q751,T752,Q754,D755,H761,L764,Y765	20	20	349334
+ENDSITES
+ENDQUERY
+QUERY	Query_307	Peptide	424	orf424_Pilano1_feature_14_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_307	Specific	335405	51	302	3.05736e-59	192.754	pfam03629	SASA	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_308	Peptide	111	orf111_Pilano1_feature_16_from_C_18, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_308	Superfamily	354812	1	105	4.15199e-51	163.081	cl21455	P-loop_NTPase	N	-
+ENDDOMAINS
+SITES
+8	Query_308	Generic	GTP/Mg2+ binding site	N27,K28,D30,D83,A84,T85	14	6	206648
+8	Query_308	Generic	G4 box	N27,K28,I29,D30	4	4	206648
+8	Query_308	Generic	G5 box	D83,A84,T85	3	3	206648
+ENDSITES
+ENDQUERY
+QUERY	Query_325	Peptide	121	orf121_Pilano1_feature_12_from_C_20, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_325	Non-specific	227414	5	49	1.488e-06	44.8416	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_327	Peptide	472	orf472_Pilano1_feature_4_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_327	Specific	315923	271	436	2.97285e-33	122.759	pfam13358	DDE_3	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_330	Peptide	324	orf324_Pilano1_feature_10_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_330	Specific	133136	238	324	4.80518e-06	44.2496	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+8	Query_330	Specific	inhibitor binding site	D250,G252,S254,L277,V278,G279,L320	7	7	133136
+8	Query_330	Specific	catalytic motif	D250,T251,G252	3	3	133136
+8	Query_330	Specific	Catalytic residue	D250	1	1	133136
+8	Query_330	Specific	Active site flap	L277,V278,G279,F280,S284,A285,P286,S287	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_333	Peptide	286	orf286_Pilano1_feature_16_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_333	Specific	349334	191	243	1.37535e-09	52.7036	cd18978	CD_DDE_transposase_like	-	355790
+ENDDOMAINS
+SITES
+8	Query_333	Specific	putative peptide binding site	Y194,E195,V196,Q197,A198,V214,W216,V217,G218,Y219,Y224,T226,W227,Q228,S229,A231,S232,P238,D241,Y242	20	20	349334
+ENDSITES
+ENDQUERY
+QUERY	Query_334	Peptide	582	orf582_Pilano1_feature_18_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_334	Specific	260006	169	288	1.3176e-40	143.017	cd09274	RNase_HI_RT_Ty3	-	353835
+8	Query_334	Specific	334200	470	579	5.36319e-20	85.3938	pfam00665	rve	-	354865
+8	Query_334	Superfamily	295487	6	74	4.52359e-09	55.6793	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+8	Query_334	Specific	RNA/DNA hybrid binding site	D173,A174,S175,N176,G209,T210,S211,E214,D239,H272,R286	11	11	260006
+8	Query_334	Generic	active site	Y22,D24,D25,L70,G71	13	5	238185
+8	Query_334	Generic	NTP binding site	D24	8	1	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_335	Peptide	463	orf463_Pilano1_feature_20_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+8	Query_335	Superfamily	353244	295	387	0.000425367	39.242	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+8	Query_335	Generic	inhibitor binding site	D309,G311,N313,L338,G339,Q340,V381	7	7	133137
+8	Query_335	Generic	catalytic motif	D309,S310,G311	3	3	133137
+8	Query_335	Generic	Catalytic residue	D309	1	1	133137
+8	Query_335	Generic	Active site flap	L338,G339,Q340,S341,I345,N346,R347,V348	8	8	133137
+ENDSITES
+ENDQUERY
+ENDSESSION	8
+SESSION	9	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_338	Peptide	314	orf314_Pilano1_feature_26_from_C_21, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_338	Non-specific	307583	39	109	4.76939e-12	60.3258	pfam01498	HTH_Tnp_Tc3_2	-	45
+9	Query_338	Superfamily	354865	117	265	1.01107e-08	53.0381	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_344	Peptide	280	orf280_Pilano1_feature_8_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_344	Specific	337786	107	208	8.20944e-28	102.662	pfam10551	MULE	-	355122
+9	Query_344	Non-specific	178645	24	239	4.42717e-14	71.9492	PLN03097	FHY3	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_352	Peptide	380	orf380_Pilano1_feature_24_from_C_22, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_352	Specific	334200	41	150	1.29324e-21	88.8606	pfam00665	rve	-	354865
+9	Query_352	Specific	349274	333	372	1.67254e-08	50.1681	cd00024	CD_CSD	C	355790
+ENDDOMAINS
+SITES
+9	Query_352	Specific	putative peptide binding site	F333,E334,V335,Q336,A337,V352,W354,L355,G356,Y357,D362,T364,W365,Q366,K367,S369,D370	20	17	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_359	Peptide	1555	orf1555_Pilano1_feature_4_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_359	Specific	238825	571	747	7.28893e-44	157.372	cd01647	RT_LTR	-	295487
+9	Query_359	Specific	260006	846	966	7.50815e-38	138.009	cd09274	RNase_HI_RT_Ty3	-	353835
+9	Query_359	Specific	334200	1098	1211	2.51958e-22	93.483	pfam00665	rve	-	354865
+9	Query_359	Specific	349274	1395	1444	7.51416e-12	61.3389	cd00024	CD_CSD	-	355790
+9	Query_359	Specific	338873	336	450	0.00155835	39.1979	pfam13650	Asp_protease_2	-	353244
+ENDDOMAINS
+SITES
+9	Query_359	Specific	putative active site	D635,L636,K637,S638,C639,F640,F669,G670,Y695,D697,D698,L744,G745	13	13	238825
+9	Query_359	Specific	putative nucleic acid binding site	G670	1	1	238825
+9	Query_359	Specific	putative NTP binding site	D635,L636,K637,S638,C639,F640,F669,D697	8	8	238825
+9	Query_359	Specific	RNA/DNA hybrid binding site	D850,A851,S852,N853,S887,T888,N889,E892,D917,Y950,R964	11	11	260006
+9	Query_359	Specific	putative peptide binding site	Y1395,E1396,V1397,Q1398,S1399,V1415,W1417,K1418,G1419,Y1420,D1424,T1426,W1427,E1428,P1429,S1431,H1432,R1441,Y1442	20	19	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_360	Peptide	304	orf304_Pilano1_feature_6_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_360	Specific	335181	21	165	1.67404e-07	50.8091	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_366	Peptide	490	orf490_Pilano1_feature_18_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_366	Specific	334200	77	186	1.49724e-18	81.1566	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_367	Peptide	328	orf328_Pilano1_feature_20_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_367	Specific	238825	1	113	1.12857e-52	171.239	cd01647	RT_LTR	N	295487
+9	Query_367	Specific	260006	207	326	2.14794e-51	165.744	cd09274	RNase_HI_RT_Ty3	-	353835
+ENDDOMAINS
+SITES
+9	Query_367	Specific	putative active site	M1,T2,S3,G4,F5,M34,G35,Y62,D64,D65,L109,G110	13	12	238825
+9	Query_367	Specific	putative nucleic acid binding site	G35	1	1	238825
+9	Query_367	Specific	putative NTP binding site	M1,T2,S3,G4,F5,M34,D64	8	7	238825
+9	Query_367	Specific	RNA/DNA hybrid binding site	D211,A212,S213,I214,G248,I249,S250,E253,D278,Y311,R325	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_368	Peptide	144	orf144_Pilano1_feature_22_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_368	Superfamily	295487	81	127	3.49293e-06	44.2608	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_369	Peptide	508	orf508_Pilano1_feature_24_from_C_23, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_369	Superfamily	353244	199	308	6.30445e-11	59.4885	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+9	Query_369	Specific	catalytic motif	D217,C218,G219	3	3	133146
+9	Query_369	Specific	Catalytic residue	D217	1	1	133146
+ENDSITES
+ENDQUERY
+QUERY	Query_375	Peptide	145	orf145_Pilano1_feature_10_from_C_24, ORGANISM Genus species Unclassified.,
+DOMAINS
+9	Query_375	Non-specific	227414	13	59	1.41324e-08	51.0047	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	9
+SESSION	10	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_397	Peptide	117	orf117_Pilano1_feature_16_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_397	Specific	338793	79	113	0.0018419	33.6853	pfam13518	HTH_28	C	354815
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_398	Peptide	294	orf294_Pilano1_feature_18_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_398	Specific	315923	48	213	1.21187e-27	104.27	pfam13358	DDE_3	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_399	Peptide	778	orf778_Pilano1_feature_20_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_399	Specific	350766	172	410	3.79616e-97	301.129	cd18008	DEXDc_SHPRH-like	-	355775
+10	Query_399	Specific	223627	127	770	1.32239e-83	284.32	COG0553	HepA	N	45
+ENDDOMAINS
+SITES
+10	Query_399	Specific	ATP binding site	M201,G202,L203,G204,K205,T206,I207,E260,D322,E323	10	10	350766
+10	Query_399	Specific	DEAD box helicase motif	D322,E323,A324,H325	4	4	350766
+ENDSITES
+ENDQUERY
+QUERY	Query_402	Peptide	1382	orf1382_Pilano1_feature_26_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_402	Specific	238827	576	853	1.92286e-42	154.756	cd01650	RT_nLTR_like	-	295487
+10	Query_402	Superfamily	351117	56	287	2.96412e-10	61.9837	cl00490	EEP	-	-
+10	Query_402	Specific	339027	1181	1272	2.04055e-06	46.4916	pfam13966	zf-RVT	-	45
+ENDDOMAINS
+SITES
+10	Query_402	Specific	putative active site	D660,Q661,E662,K663,A664,Y665,Q719,G720,Y772,D774,D775,L849,G850	13	13	238827
+10	Query_402	Specific	putative nucleic acid binding site	G720	1	1	238827
+10	Query_402	Specific	putative NTP binding site	D660,Q661,E662,K663,A664,Y665,Q719,D774	8	8	238827
+10	Query_402	Generic	putative catalytic site	N60,E92,Y162,D197,N199,D251,D279,H280	8	8	197306
+10	Query_402	Generic	putative metal binding site	E92,D279	2	2	197306
+10	Query_402	Generic	putative phosphate binding site	Y162,N199,H280	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_403	Peptide	505	orf505_Pilano1_feature_28_from_C_26, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_403	Non-specific	227414	277	326	0.000220988	42.1452	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_405	Peptide	254	orf254_Pilano1_feature_4_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_405	Specific	349334	137	188	1.56871e-12	60.4076	cd18978	CD_DDE_transposase_like	-	355790
+ENDDOMAINS
+SITES
+10	Query_405	Specific	putative peptide binding site	Y140,E141,F142,D143,G144,I159,W161,K162,N163,Y164,D168,S170,W171,I172,T173,D175,M176,H182,D185,Y186	20	20	349334
+ENDSITES
+ENDQUERY
+QUERY	Query_406	Peptide	697	orf697_Pilano1_feature_6_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_406	Specific	238825	13	145	2.15092e-37	137.342	cd01647	RT_LTR	N	295487
+10	Query_406	Specific	260006	241	367	5.23301e-35	128.764	cd09274	RNase_HI_RT_Ty3	-	353835
+10	Query_406	Specific	334200	548	658	1.98079e-14	69.9858	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+10	Query_406	Specific	putative active site	D33,I34,T35,G36,A37,F38,F67,G68,Y94,D96,D97,L141,G142	13	13	238825
+10	Query_406	Specific	putative nucleic acid binding site	G68	1	1	238825
+10	Query_406	Specific	putative NTP binding site	D33,I34,T35,G36,A37,F38,F67,D96	8	8	238825
+10	Query_406	Specific	RNA/DNA hybrid binding site	D244,A245,S246,A247,S286,T287,T288,E291,D317,W351,R365	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_407	Peptide	217	orf217_Pilano1_feature_8_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_407	Superfamily	353244	39	143	1.80485e-06	44.6352	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+10	Query_407	Generic	inhibitor binding site	D52,G54,Q56,A83,Y84,V85,I129	7	7	133137
+10	Query_407	Generic	catalytic motif	D52,T53,G54	3	3	133137
+10	Query_407	Generic	Catalytic residue	D52	1	1	133137
+10	Query_407	Generic	Active site flap	A83,Y84,V85,Q86,F90,S91,E92,R93	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_410	Peptide	1652	orf1652_Pilano1_feature_14_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_410	Specific	238825	777	960	4.19371e-65	218.234	cd01647	RT_LTR	-	295487
+10	Query_410	Specific	260006	1059	1180	4.30855e-41	147.254	cd09274	RNase_HI_RT_Ty3	-	353835
+10	Query_410	Specific	133136	513	598	1.10627e-14	70.8284	cd00303	retropepsin_like	-	353244
+10	Query_410	Specific	334200	1345	1458	3.10279e-13	67.6746	pfam00665	rve	-	354865
+10	Query_410	Superfamily	356550	141	233	9.82702e-07	48.4848	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+SITES
+10	Query_410	Specific	putative active site	D845,L846,Q847,S848,G849,F850,F879,G880,Y907,D909,D910,L956,G957	13	13	238825
+10	Query_410	Specific	putative nucleic acid binding site	G880	1	1	238825
+10	Query_410	Specific	putative NTP binding site	D845,L846,Q847,S848,G849,F850,F879,D909	8	8	238825
+10	Query_410	Specific	RNA/DNA hybrid binding site	D1063,S1064,S1065,D1066,P1102,A1103,Q1104,E1107,D1132,Y1165,R1179	11	11	260006
+10	Query_410	Specific	inhibitor binding site	D525,G527,S529,V553,E554,T555,I592	7	7	133136
+10	Query_410	Specific	catalytic motif	D525,S526,G527	3	3	133136
+10	Query_410	Specific	Catalytic residue	D525	1	1	133136
+10	Query_410	Specific	Active site flap	V553,E554,T555,A556,R560,T561,E562,I563	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_412	Peptide	301	orf301_Pilano1_feature_20_from_C_27, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_412	Specific	335181	2	147	7.71557e-09	54.6611	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_417	Peptide	112	orf112_Pilano1_feature_6_from_C_28, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_417	Superfamily	354865	13	76	7.77968e-15	65.3645	cl21549	rve	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_418	Peptide	675	orf675_Pilano1_feature_8_from_C_28, ORGANISM Genus species Unclassified.,
+DOMAINS
+10	Query_418	Specific	337786	270	365	5.3842e-08	50.6604	pfam10551	MULE	-	355122
+10	Query_418	Specific	309540	558	586	0.00145221	36.6271	pfam04434	SWIM	C	327577
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	10
+SESSION	11	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_423	Peptide	138	orf138_Pilano1_feature_2_from_C_29, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_423	Specific	349447	15	59	0.00255604	36.2085	cd06228	M14-like	NC	353238
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_434	Peptide	387	orf386_Pilano1_feature_2_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_434	Specific	309014	92	182	5.93399e-15	69.6708	pfam03732	Retrotrans_gag	-	356550
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_449	Peptide	385	orf385_Pilano1_feature_34_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_449	Specific	334200	69	177	9.58226e-20	83.853	pfam00665	rve	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_451	Peptide	283	orf283_Pilano1_feature_38_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_451	Specific	238825	1	164	1.46373e-51	166.617	cd01647	RT_LTR	-	295487
+11	Query_451	Superfamily	353835	258	282	0.00228498	37.0869	cl14782	RNase_H_like	C	-
+ENDDOMAINS
+SITES
+11	Query_451	Specific	putative active site	D49,L50,R51,S52,G53,F54,Q83,G84,Y111,D113,D114,L160,G161	13	13	238825
+11	Query_451	Specific	putative nucleic acid binding site	G84	1	1	238825
+11	Query_451	Specific	putative NTP binding site	D49,L50,R51,S52,G53,F54,Q83,D113	8	8	238825
+11	Query_451	Generic	RNA/DNA hybrid binding site	D262,A263,S264,I265	10	4	259998
+ENDSITES
+ENDQUERY
+QUERY	Query_452	Peptide	533	orf533_Pilano1_feature_40_from_C_30, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_452	Specific	133136	109	200	9.23789e-12	61.1984	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+11	Query_452	Specific	inhibitor binding site	D123,G125,A127,F151,T152,L153,I193	7	7	133136
+11	Query_452	Specific	catalytic motif	D123,T124,G125	3	3	133136
+11	Query_452	Specific	Catalytic residue	D123	1	1	133136
+11	Query_452	Specific	Active site flap	F151,T152,L153,G154,K158,Q159,A160,S161	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_453	Peptide	1784	orf1784_Pilano1_feature_2_from_C_31, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_453	Specific	238825	744	926	5.08994e-39	143.505	cd01647	RT_LTR	-	295487
+11	Query_453	Specific	260006	1022	1148	3.41923e-36	133.387	cd09274	RNase_HI_RT_Ty3	-	353835
+11	Query_453	Specific	349274	1627	1675	5.94826e-12	61.7241	cd00024	CD_CSD	-	355790
+11	Query_453	Specific	334200	1340	1446	7.62039e-09	54.963	pfam00665	rve	-	354865
+11	Query_453	Superfamily	356550	234	320	6.79105e-07	48.87	cl29674	Retrotrans_gag	-	-
+11	Query_453	Superfamily	353244	541	632	0.000282491	41.5532	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+11	Query_453	Specific	putative active site	D814,I815,S816,G817,A818,F819,F848,G849,Y875,D877,D878,L922,G923	13	13	238825
+11	Query_453	Specific	putative nucleic acid binding site	G849	1	1	238825
+11	Query_453	Specific	putative NTP binding site	D814,I815,S816,G817,A818,F819,F848,D877	8	8	238825
+11	Query_453	Specific	RNA/DNA hybrid binding site	D1025,A1026,S1027,N1028,C1067,V1068,T1069,E1072,D1098,W1132,R1146	11	11	260006
+11	Query_453	Specific	putative peptide binding site	Y1627,E1628,F1629,D1630,A1631,I1646,W1648,K1649,N1650,Y1651,H1655,S1657,W1658,I1659,P1660,K1662,N1663,A1669,T1672,Y1673	20	20	349274
+11	Query_453	Generic	inhibitor binding site	D553,G555,T557,L583,S584,F585,L628	7	7	133137
+11	Query_453	Generic	catalytic motif	D553,T554,G555	3	3	133137
+11	Query_453	Generic	Catalytic residue	D553	1	1	133137
+11	Query_453	Generic	Active site flap	L583,S584,F585,I586,Y591,I592,P593,R594	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_456	Peptide	281	orf281_Pilano1_feature_8_from_C_31, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_456	Superfamily	356550	26	122	2.621e-06	44.6328	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_459	Peptide	204	orf204_Pilano1_feature_14_from_C_31, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_459	Specific	133136	37	131	7.71794e-06	42.7088	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+11	Query_459	Specific	inhibitor binding site	D51,G53,T55,I80,S81,L82,L127	7	7	133136
+11	Query_459	Specific	catalytic motif	D51,T52,G53	3	3	133136
+11	Query_459	Specific	Catalytic residue	D51	1	1	133136
+11	Query_459	Specific	Active site flap	I80,S81,L82,P85,F86,K87,K88	8	7	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_461	Peptide	261	orf261_Pilano1_feature_18_from_C_31, ORGANISM Genus species Unclassified.,
+DOMAINS
+11	Query_461	Specific	337786	76	182	9.00359e-25	94.188	pfam10551	MULE	-	355122
+11	Query_461	Superfamily	354815	31	57	0.00578624	34.526	cl21459	HTH	N	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	11
+SESSION	12	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_468	Peptide	213	orf213_Pilano1_feature_4_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_468	Specific	238827	32	193	1.86447e-32	116.622	cd01650	RT_nLTR_like	C	295487
+ENDDOMAINS
+SITES
+12	Query_468	Specific	putative nucleic acid binding site	G180	1	1	238827
+12	Query_468	Specific	putative NTP binding site	D120,I121,A122,T123,A124,Y125,Q179	8	7	238827
+ENDSITES
+ENDQUERY
+QUERY	Query_469	Peptide	388	orf388_Pilano1_feature_6_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_469	Superfamily	295487	1	60	0.0019226	39.1966	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+12	Query_469	Generic	active site	L56,G57	13	2	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_471	Peptide	163	orf163_Pilano1_feature_10_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_471	Specific	336320	37	99	0.000687183	37.1531	pfam06156	YabB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_479	Peptide	463	orf463_Pilano1_feature_26_from_C_33, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_479	Superfamily	351117	143	307	4.71201e-13	67.7021	cl00490	EEP	-	-
+ENDDOMAINS
+SITES
+12	Query_479	Generic	putative catalytic site	Y194,D222,N224,D280,D306,H307	8	6	197306
+12	Query_479	Generic	putative metal binding site	D306	2	1	197306
+12	Query_479	Generic	putative phosphate binding site	Y194,N224,H307	3	3	197306
+ENDSITES
+ENDQUERY
+QUERY	Query_487	Peptide	105	orf105_Pilano1_feature_10_from_C_34, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_487	Non-specific	227414	13	59	6.7684e-07	45.2268	COG5082	AIR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_491	Peptide	275	orf274_Pilano1_feature_2_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_491	Specific	260006	65	185	1.62545e-54	171.907	cd09274	RNase_HI_RT_Ty3	-	353835
+ENDDOMAINS
+SITES
+12	Query_491	Specific	RNA/DNA hybrid binding site	D69,A70,S71,L72,N106,T107,T108,E111,D136,H169,R183	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_492	Peptide	357	orf357_Pilano1_feature_4_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_492	Specific	238825	164	346	2.80738e-45	152.75	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+12	Query_492	Specific	putative active site	D235,L236,S237,N238,A239,Y240,F269,G270,F295,D297,D298,L342,G343	13	13	238825
+12	Query_492	Specific	putative nucleic acid binding site	G270	1	1	238825
+12	Query_492	Specific	putative NTP binding site	D235,L236,S237,N238,A239,Y240,F269,D297	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_497	Peptide	360	orf360_Pilano1_feature_14_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_497	Specific	307583	85	155	4.4976e-16	71.8818	pfam01498	HTH_Tnp_Tc3_2	-	45
+12	Query_497	Superfamily	354865	163	321	4.07792e-11	60.3569	cl21549	rve	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_498	Peptide	663	orf663_Pilano1_feature_16_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_498	Specific	133136	421	515	3.00037e-06	45.7904	cd00303	retropepsin_like	-	353244
+ENDDOMAINS
+SITES
+12	Query_498	Specific	inhibitor binding site	D435,G437,T439,I464,S465,L466,L511	7	7	133136
+12	Query_498	Specific	catalytic motif	D435,T436,G437	3	3	133136
+12	Query_498	Specific	Catalytic residue	D435	1	1	133136
+12	Query_498	Specific	Active site flap	I464,S465,L466,G467,N471,K472,H473,Q474	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_499	Peptide	628	orf627_Pilano1_feature_18_from_C_35, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_499	Specific	260006	287	406	3.24116e-34	126.068	cd09274	RNase_HI_RT_Ty3	-	353835
+12	Query_499	Specific	238825	17	192	3.43962e-32	122.319	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+12	Query_499	Specific	RNA/DNA hybrid binding site	D291,A292,S293,N294,S327,T328,T329,E332,D357,H390,R404	11	11	260006
+12	Query_499	Specific	putative active site	D78,I79,R80,S81,C82,F83,F114,G115,Y140,D142,D143,L188,G189	13	13	238825
+12	Query_499	Specific	putative nucleic acid binding site	G115	1	1	238825
+12	Query_499	Specific	putative NTP binding site	D78,I79,R80,S81,C82,F83,F114,D142	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_501	Peptide	208	orf208_Pilano1_feature_4_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_501	Specific	339157	10	128	6.03727e-14	66.4168	pfam14303	NAM-associated	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_503	Peptide	265	orf265_Pilano1_feature_8_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_503	Superfamily	295487	20	64	1.98275e-12	62.3612	cl02808	RT_like	C	-
+ENDDOMAINS
+SITES
+12	Query_503	Generic	active site	D21,L22,K23,D24,A25,Y26,F55,G56	13	8	238185
+12	Query_503	Generic	nucleic acid binding site	G56	1	1	238185
+12	Query_503	Generic	NTP binding site	D21,L22,K23,D24,A25,Y26,F55	8	7	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_504	Peptide	149	orf149_Pilano1_feature_10_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_504	Specific	260007	3	71	1.50139e-15	68.0787	cd09275	RNase_HI_RT_DIRS1	N	353835
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_505	Peptide	312	orf312_Pilano1_feature_12_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_505	Specific	315923	106	276	5.57142e-26	100.418	pfam13358	DDE_3	-	354865
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_506	Peptide	239	orf239_Pilano1_feature_14_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+12	Query_506	Specific	338698	194	239	0.00133111	37.9756	pfam13359	DDE_Tnp_4	C	354873
+12	Query_506	Superfamily	321775	49	106	0.00713635	37.1698	cl02025	Glm_e	N	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	12
+SESSION	13	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_508	Peptide	458	orf458_Pilano1_feature_18_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_508	Specific	337786	293	388	9.56286e-31	113.833	pfam10551	MULE	-	355122
+13	Query_508	Non-specific	178645	51	455	6.86092e-20	92.75	PLN03097	FHY3	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_511	Peptide	128	orf128_Pilano1_feature_24_from_C_36, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_511	Non-specific	227371	6	51	0.00192622	36.6607	COG5038	COG5038	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_535	Peptide	258	orf258_Pilano1_feature_10_from_C_39, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_535	Specific	338698	34	193	4.90238e-37	127.727	pfam13359	DDE_Tnp_4	-	354873
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_538	Peptide	470	orf470_Pilano1_feature_16_from_C_39, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_538	Specific	315923	262	427	2.10345e-30	114.67	pfam13358	DDE_3	-	354865
+13	Query_538	Non-specific	225949	113	244	0.000239431	40.8278	COG3415	COG3415	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_541	Peptide	354	orf354_Pilano1_feature_22_from_C_39, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_541	Superfamily	354865	142	284	4.36671e-10	57.2753	cl21549	rve	-	-
+13	Query_541	Non-specific	307583	66	134	6.22097e-06	43.377	pfam01498	HTH_Tnp_Tc3_2	-	45
+13	Query_541	Non-specific	225310	6	57	0.00013828	42.8072	COG2512	COG2512	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_543	Peptide	451	orf451_Pilano1_feature_2_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_543	Specific	334200	35	148	1.31353e-16	75.3786	pfam00665	rve	-	354865
+13	Query_543	Specific	349274	330	378	1.10746e-13	64.8057	cd00024	CD_CSD	-	355790
+ENDDOMAINS
+SITES
+13	Query_543	Specific	putative peptide binding site	F330,E331,V332,E333,D334,V349,W351,L352,S353,Y354,E358,T360,W361,Q362,K363,S365,D366,I372,K375,Y376	20	20	349274
+ENDSITES
+ENDQUERY
+QUERY	Query_544	Peptide	659	orf659_Pilano1_feature_4_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_544	Specific	260006	441	561	8.21309e-53	177.3	cd09274	RNase_HI_RT_Ty3	-	353835
+13	Query_544	Specific	238825	164	346	1.0928e-42	151.594	cd01647	RT_LTR	-	295487
+ENDDOMAINS
+SITES
+13	Query_544	Specific	RNA/DNA hybrid binding site	D445,A446,S447,L448,N482,T483,T484,E487,D512,H545,R559	11	11	260006
+13	Query_544	Specific	putative active site	D235,L236,S237,N238,A239,Y240,F269,G270,F295,D297,D298,L342,G343	13	13	238825
+13	Query_544	Specific	putative nucleic acid binding site	G270	1	1	238825
+13	Query_544	Specific	putative NTP binding site	D235,L236,S237,N238,A239,Y240,F269,D297	8	8	238825
+ENDSITES
+ENDQUERY
+QUERY	Query_549	Peptide	541	orf541_Pilano1_feature_14_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_549	Superfamily	356550	183	280	9.30087e-06	44.2476	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_550	Peptide	749	orf749_Pilano1_feature_16_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_550	Specific	260006	517	636	5.65372e-42	148.41	cd09274	RNase_HI_RT_Ty3	-	353835
+13	Query_550	Specific	238825	235	422	2.70589e-32	123.089	cd01647	RT_LTR	-	295487
+13	Query_550	Superfamily	353244	32	124	0.00141284	38.4716	cl11403	pepsin_retropepsin_like	-	-
+ENDDOMAINS
+SITES
+13	Query_550	Specific	RNA/DNA hybrid binding site	D521,A522,S523,N524,G557,T558,S559,E562,D587,H620,R634	11	11	260006
+13	Query_550	Specific	putative active site	D308,I309,K310,S311,C312,F313,F344,G345,Y370,D372,D373,L418,G419	13	13	238825
+13	Query_550	Specific	putative nucleic acid binding site	G345	1	1	238825
+13	Query_550	Specific	putative NTP binding site	D308,I309,K310,S311,C312,F313,F344,D372	8	8	238825
+13	Query_550	Generic	inhibitor binding site	D46,G48,N50,L75,G76,Q77,V118	7	7	133137
+13	Query_550	Generic	catalytic motif	D46,S47,G48	3	3	133137
+13	Query_550	Generic	Catalytic residue	D46	1	1	133137
+13	Query_550	Generic	Active site flap	L75,G76,Q77,S78,I82,N83,R84,V85	8	8	133137
+ENDSITES
+ENDQUERY
+QUERY	Query_551	Peptide	465	orf465_Pilano1_feature_18_from_C_40, ORGANISM Genus species Unclassified.,
+DOMAINS
+13	Query_551	Specific	334200	77	188	2.23556e-20	86.1642	pfam00665	rve	-	354865
+13	Query_551	Specific	349334	370	422	1.96615e-10	55.7852	cd18978	CD_DDE_transposase_like	-	355790
+ENDDOMAINS
+SITES
+13	Query_551	Specific	putative peptide binding site	Y373,E374,V375,Q376,A377,V393,W395,V396,G397,Y398,Y403,T405,W406,Q407,S408,A410,S411,P417,D420,Y421	20	20	349334
+ENDSITES
+ENDQUERY
+ENDSESSION	13
+SESSION	14	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_552	Peptide	307	orf307_Pilano1_feature_2_from_C_41, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_552	Non-specific	274531	164	225	0.00478542	38.4728	TIGR03348	VI_IcmF	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_559	Peptide	331	orf331_Pilano1_feature_16_from_C_41, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_559	Specific	335181	87	227	1.23601e-08	54.2759	pfam02992	Transposase_21	-	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_563	Peptide	356	orf356_Pilano1_feature_24_from_C_41, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_563	Superfamily	354865	233	321	8.57956e-09	53.4233	cl21549	rve	N	-
+14	Query_563	Non-specific	307583	101	150	1.49819e-05	42.2214	pfam01498	HTH_Tnp_Tc3_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_566	Peptide	895	orf895_Pilano1_feature_4_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_566	Specific	335181	198	349	2.02848e-05	46.5719	pfam02992	Transposase_21	C	356247
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_567	Peptide	1066	orf1066_Pilano1_feature_6_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_567	Specific	238825	20	203	1.9061e-78	254.057	cd01647	RT_LTR	-	295487
+14	Query_567	Specific	260006	302	424	1.92772e-49	170.366	cd09274	RNase_HI_RT_Ty3	-	353835
+14	Query_567	Specific	334200	583	695	1.40453e-19	85.0086	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+14	Query_567	Specific	putative active site	D90,L91,K92,S93,G94,Y95,F124,G125,Y152,D154,D155,V199,G200	13	13	238825
+14	Query_567	Specific	putative nucleic acid binding site	G125	1	1	238825
+14	Query_567	Specific	putative NTP binding site	D90,L91,K92,S93,G94,Y95,F124,D154	8	8	238825
+14	Query_567	Specific	RNA/DNA hybrid binding site	D305,A306,S307,D308,P344,A345,Q346,E349,D376,Y409,R423	11	11	260006
+ENDSITES
+ENDQUERY
+QUERY	Query_568	Peptide	618	orf618_Pilano1_feature_8_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_568	Specific	133136	397	482	2.24975e-11	60.0428	cd00303	retropepsin_like	-	353244
+14	Query_568	Specific	197667	263	279	0.000193871	38.5784	smart00343	ZnF_C2HC	-	45
+14	Query_568	Superfamily	356550	78	168	0.00494805	36.5436	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+SITES
+14	Query_568	Specific	inhibitor binding site	D409,G411,S413,V436,E437,T438,I475	7	7	133136
+14	Query_568	Specific	catalytic motif	D409,S410,G411	3	3	133136
+14	Query_568	Specific	Catalytic residue	D409	1	1	133136
+14	Query_568	Specific	Active site flap	V436,E437,T438,A439,V443,S444,E445,I446	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_569	Peptide	412	orf412_Pilano1_feature_10_from_C_42, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_569	Specific	338478	106	267	7.69358e-13	65.3484	pfam12762	DDE_Tnp_IS1595	-	351520
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_587	Peptide	1021	orf1021_Pilano1_feature_2_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_587	Specific	238825	744	926	2.84596e-39	143.505	cd01647	RT_LTR	-	295487
+14	Query_587	Specific	133136	541	632	1.04206e-05	44.6348	cd00303	retropepsin_like	-	353244
+14	Query_587	Superfamily	356550	240	326	0.000280407	40.7808	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+SITES
+14	Query_587	Specific	putative active site	D814,I815,S816,G817,A818,F819,F848,G849,Y875,D877,D878,L922,G923	13	13	238825
+14	Query_587	Specific	putative nucleic acid binding site	G849	1	1	238825
+14	Query_587	Specific	putative NTP binding site	D814,I815,S816,G817,A818,F819,F848,D877	8	8	238825
+14	Query_587	Specific	inhibitor binding site	D553,G555,T557,L583,S584,F585,L628	7	7	133136
+14	Query_587	Specific	catalytic motif	D553,T554,G555	3	3	133136
+14	Query_587	Specific	Catalytic residue	D553	1	1	133136
+14	Query_587	Specific	Active site flap	L583,S584,F585,V586,H591,I592,P593,R594	8	8	133136
+ENDSITES
+ENDQUERY
+QUERY	Query_588	Peptide	571	orf571_Pilano1_feature_4_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+14	Query_588	Specific	349274	522	568	4.22724e-12	60.5685	cd00024	CD_CSD	-	355790
+14	Query_588	Specific	334200	235	341	2.90787e-09	54.963	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+14	Query_588	Specific	putative peptide binding site	Y522,E523,F524,D525,A526,I541,W543,K544,N545,Y546,H550,S552,W553,I554,P555,K557,N558,A564,T567,Y568	20	20	349274
+ENDSITES
+ENDQUERY
+ENDSESSION	14
+SESSION	15	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_589	Peptide	544	orf544_Pilano1_feature_6_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_589	Superfamily	356550	209	295	0.000169367	40.7808	cl29674	Retrotrans_gag	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_590	Peptide	1170	orf1170_Pilano1_feature_8_from_C_45, ORGANISM Genus species Unclassified.,
+DOMAINS
+15	Query_590	Specific	238825	125	307	1.41407e-38	141.964	cd01647	RT_LTR	-	295487
+15	Query_590	Specific	260006	403	529	3.52016e-37	135.698	cd09274	RNase_HI_RT_Ty3	-	353835
+15	Query_590	Specific	349274	1013	1061	4.12206e-13	64.4205	cd00024	CD_CSD	-	355790
+15	Query_590	Specific	334200	726	832	6.31505e-09	54.963	pfam00665	rve	-	354865
+ENDDOMAINS
+SITES
+15	Query_590	Specific	putative active site	D195,I196,S197,G198,A199,F200,F229,G230,Y256,D258,D259,L303,G304	13	13	238825
+15	Query_590	Specific	putative nucleic acid binding site	G230	1	1	238825
+15	Query_590	Specific	putative NTP binding site	D195,I196,S197,G198,A199,F200,F229,D258	8	8	238825
+15	Query_590	Specific	RNA/DNA hybrid binding site	D406,A407,S408,N409,C448,V449,T450,E453,D479,W513,R527	11	11	260006
+15	Query_590	Specific	putative peptide binding site	Y1013,E1014,F1015,D1016,A1017,I1032,W1034,K1035,N1036,Y1037,H1041,S1043,W1044,I1045,P1046,K1048,N1049,A1055,T1058,Y1059	20	20	349274
+ENDSITES
+ENDQUERY
+ENDSESSION	15
+ENDDATA

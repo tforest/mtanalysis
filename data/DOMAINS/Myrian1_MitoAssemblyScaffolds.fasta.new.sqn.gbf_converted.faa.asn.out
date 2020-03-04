@@ -1,0 +1,152 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Myrian1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Myrian1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	128	nad3_Myrian1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334119	19	112	4.45244e-06	42.017	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	48	atp8_Myrian1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	283561	1	48	7.6596e-09	45.0898	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	181	atp6_Myrian1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Superfamily	351082	12	181	5.92621e-42	140.527	cl00413	ATP-synt_A	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	269	cox3_Myrian1_feature_9_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	278911	12	269	3.0851e-127	361.343	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_4	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_4	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_4	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,T190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_4	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_4	Specific	Subunit III/VIIa interface	L64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_4	Specific	Phospholipid binding site	W65,F66,V69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	74	atp9_Myrian1_feature_11_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	349422	6	70	7.88639e-20	74.4683	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_6	Peptide	518	nad4_Myrian1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235622	62	515	5.5497e-131	389.562	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	223	nad6_Myrian1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	354830	22	114	1.30781e-18	79.8801	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	363	nad1_Myrian1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	333876	25	346	8.19665e-112	327.893	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	322	orf322_Myrian1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Non-specific	130009	1	264	0.00646946	38.0402	TIGR00934	2a38euk	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	260	cox2_Myrian1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	214438	28	257	2.30833e-112	322.163	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	533	cox1_Myrian1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	238833	16	517	0	825.581	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_12	Specific	Binuclear center (heme a3/CuB)	H246,H295,H296,H381	4	4	238833
+1	Query_12	Specific	Low-spin heme (heme a) binding site	H67,H383,S387,T429,S466	5	5	238833
+1	Query_12	Specific	D-pathway	Y24,N86,D97,N104,S107,S162,S163,N169,T173	9	9	238833
+1	Query_12	Specific	K-pathway	H246,Y250,S261,H295,H296,T321,K324	7	7	238833
+1	Query_12	Specific	Electron transfer pathway	F382,R443,R444	3	3	238833
+1	Query_12	Specific	Putative proton exit pathway	H296,H373,D374,R443,R444	5	5	238833
+1	Query_12	Specific	Putative water exit pathway	D233,Q238,H239,D369,H373,D374,R443	7	7	238833
+1	Query_12	Specific	Subunit I/II interface	N61,D233,K270,F273,G274,S299,V300,G301,V304,R307,L315,I323,F326,Y333,G334,G335,L347,N365,A366,L368,I370,A371,F372,H373,D374,L438,Q439,R443,R444,I445,G454,W455	32	32	238833
+1	Query_12	Specific	Subunit I/III interface	P96,F100,R102,W109,D150,F154,T172,N176,V196,L203,P206,M214,T223,S224,F225,G230,G231,D233,F243,Y280,M283,G286,V287,V291	25	24	238833
+1	Query_12	Specific	Subunit I/IV interface	L44,S47,G48,M413,K416,V417,D450,V468	8	8	238833
+1	Query_12	Specific	Subunit I/Vb interface	S271,Y275,C516	3	3	238833
+1	Query_12	Specific	Subunit I/VIa interface	I141,R219,N220,F221,N222	5	5	238833
+1	Query_12	Specific	Subunit I/VIb interface	G301	1	1	238833
+1	Query_12	Specific	Subunit I/VIc interface	G334	1	1	238833
+1	Query_12	Specific	Subunit I/VIIa interface	F120,V123	2	2	238833
+1	Query_12	Specific	Subunit I/VIIb interface	D450,G454	2	2	238833
+1	Query_12	Specific	Subunit I/VIIc interface	F30,L34,A37,L41,S122,V123,M405,Y478,L481	9	9	238833
+1	Query_12	Specific	Subunit I/VIIIb interface	L414,Y471	2	2	238833
+1	Query_12	Specific	Dimer interface	V196,L203,F243,Y280,M283,G286,V287,V291	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	89	nad4L_Myrian1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	351118	2	87	8.33518e-18	70.9763	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	656	nad5_Myrian1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	235836	1	633	0	603.304	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	411	cob_Myrian1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	214440	10	367	0	512.02	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	467	orf467_Myrian1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	340095	280	455	5.23096e-09	58.3004	pfam17380	DUF5401	NC	45
+1	Query_16	Non-specific	317322	30	176	0.00170516	40.3813	pfam14897	EpsG	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	221	orf221_Myrian1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	273636	33	216	4.49087e-33	118.257	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	595	nad2_Myrian1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	235603	134	584	2.77995e-76	250.123	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

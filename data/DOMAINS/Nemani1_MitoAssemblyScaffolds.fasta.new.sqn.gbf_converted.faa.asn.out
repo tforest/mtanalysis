@@ -1,0 +1,362 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Nemani1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Nemani1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	554	cox1_Nemani1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	34	536	0	823.655	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	H265,F314,H315,H400	4	4	238833
+1	Query_1	Specific	Low-spin heme (heme a) binding site	H86,H402,S406,T448,S485	5	5	238833
+1	Query_1	Specific	D-pathway	Y43,N105,D116,N123,S126,S181,S182,N188,T192	9	9	238833
+1	Query_1	Specific	K-pathway	H265,Y269,S280,F314,H315,T340,K343	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F401,R462,R463	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H315,H392,D393,R462,R463	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D252,Q257,H258,D388,H392,D393,R462	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	N80,D252,K289,F292,G293,T318,V319,G320,V323,R326,L334,I342,F345,Y352,G353,G354,L366,N384,A385,L387,I389,A390,F391,H392,D393,L457,Q458,R462,R463,I464,G473,W474	32	32	238833
+1	Query_1	Specific	Subunit I/III interface	T34,P115,F119,R121,W128,D169,F173,T191,N195,I215,L222,P225,M233,T242,S243,F244,G249,G250,D252,F262,Y299,M302,G305,V306,I310	25	25	238833
+1	Query_1	Specific	Subunit I/IV interface	M63,S66,G67,Q432,N435,I436,D469,V487	8	8	238833
+1	Query_1	Specific	Subunit I/Vb interface	S290,Y294,A535	3	3	238833
+1	Query_1	Specific	Subunit I/VIa interface	V160,R238,N239,F240,N241	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G320	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G353	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	F139,V142	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D469,G473	2	2	238833
+1	Query_1	Specific	Subunit I/VIIc interface	F49,L53,A56,I60,A141,V142,I424,Y497,L500	9	9	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	L433,W490	2	2	238833
+1	Query_1	Specific	Dimer interface	I215,L222,F262,Y299,M302,G305,V306,I310	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	187	orf187_Nemani1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	198392	50	141	2.08902e-24	91.1332	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_2	Specific	putative active site	Y53,Y64,G66,R74,Y78,E127,N139	7	7	198392
+1	Query_2	Specific	putative metal binding site	E127	1	1	198392
+1	Query_2	Specific	GIY-YIG motif/motif A	G51,V52,Y53,Y64,I65,G66	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	454	orf454_Nemani1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	273636	160	365	2.49707e-56	185.667	TIGR01453	grpIintron_endo	-	45
+1	Query_3	Specific	197761	399	449	1.43881e-09	53.3406	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	156	orf156_Nemani1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	32	125	3.2493e-18	74.5802	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	348	orf348_Nemani1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	212	311	4.24373e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	372	orf372_Nemani1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	247	343	1.15685e-15	71.8838	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	138	206	0.000119838	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	442	orf442_Nemani1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	353929	199	284	4.02185e-15	70.3324	cl15257	GIY-YIG_SF	-	-
+1	Query_8	Non-specific	273636	199	434	1.59813e-07	51.6177	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_8	Generic	active site	Y201,Y212,G214,R222,Y226,E269	6	6	198380
+1	Query_8	Generic	catalytic site	R222,E269	2	2	198380
+1	Query_8	Generic	metal binding site	E269	1	1	198380
+1	Query_8	Generic	GIY-YIG motif/motif A	G199,V200,Y201,Y212,V213,G214	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	544	cob_Nemani1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214440	10	367	0	535.132	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	296	orf296_Nemani1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	53	135	1.3936e-05	42.9939	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	675	nad5_Nemani1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	177253	1	628	0	594.293	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	394	orf394_Nemani1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	261	365	1.56569e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+1	Query_12	Specific	334330	133	237	1.25749e-07	49.1571	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	610	orf610_Nemani1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	132	229	8.61625e-22	89.9882	pfam00961	LAGLIDADG_1	-	45
+1	Query_13	Specific	334330	334	439	0.00130697	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	436	nad4L_Nemani1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	147	249	1.5779e-27	105.011	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	177231	3	79	1.19503e-25	99.7213	MTH00180	ND4L	-	351118
+1	Query_14	Specific	334330	310	402	2.35971e-21	88.0622	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	249	cox2_Nemani1_feature_57_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	214438	17	246	5.92534e-111	318.311	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	418	orf418_Nemani1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	353929	80	167	5.66049e-13	64.1692	cl15257	GIY-YIG_SF	-	-
+1	Query_17	Non-specific	273636	80	323	7.27731e-06	46.6101	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_17	Generic	active site	Y83,Y94,G96,R104,Y107,E152	6	6	198380
+1	Query_17	Generic	catalytic site	R104,E152	2	2	198380
+1	Query_17	Generic	metal binding site	E152	1	1	198380
+1	Query_17	Generic	GIY-YIG motif/motif A	G81,V82,Y83,Y94,V95,G96	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	386	orf386_Nemani1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	353929	142	232	5.28628e-11	58.3912	cl15257	GIY-YIG_SF	-	-
+1	Query_18	Non-specific	273636	141	379	3.51081e-08	53.1585	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_18	Generic	active site	Y145,Y156,G158,R166,Y170,E217	6	6	198380
+1	Query_18	Generic	catalytic site	R166,E217	2	2	198380
+1	Query_18	Generic	metal binding site	E217	1	1	198380
+1	Query_18	Generic	GIY-YIG motif/motif A	G143,V144,Y145,Y156,V157,G158	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	380	orf380_Nemani1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	353929	126	226	4.20786e-10	55.6948	cl15257	GIY-YIG_SF	-	-
+1	Query_19	Non-specific	273636	125	379	2.2848e-06	47.7657	TIGR01453	grpIintron_endo	-	45
+1	Query_19	Non-specific	236123	69	155	0.000592727	41.8272	PRK07883	PRK07883	NC	45
+ENDDOMAINS
+SITES
+1	Query_19	Generic	active site	Y129,Y140,G142,R150,Y154,E211	6	6	198380
+1	Query_19	Generic	catalytic site	R150,E211	2	2	198380
+1	Query_19	Generic	metal binding site	E211	1	1	198380
+1	Query_19	Generic	GIY-YIG motif/motif A	G127,V128,Y129,Y140,V141,G142	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	315	orf315_Nemani1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	273636	56	310	4.50546e-58	185.667	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	173	nad3_Nemani1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334119	19	112	1.58657e-18	75.5294	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	553	nad2_Nemani1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	235603	124	478	4.81363e-83	266.687	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	805	orf805_Nemani1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	238828	285	556	1.9748e-80	257.515	cd01651	RT_G2_intron	-	295487
+1	Query_23	Non-specific	279664	581	705	2.01784e-15	73.6578	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+1	Query_23	Specific	putative active site	D360,I361,S362,K363,C364,F365,Q415,G416,Y502,D504,D505,L553,G554	13	13	238828
+1	Query_23	Specific	putative nucleic acid binding site	G416	1	1	238828
+1	Query_23	Specific	putative NTP binding site	D360,I361,S362,K363,C364,F365,Q415,D504	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_24	Peptide	434	orf434_Nemani1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	297	396	1.9405e-25	99.233	pfam00961	LAGLIDADG_1	-	45
+1	Query_24	Specific	334330	141	239	5.30222e-24	95.381	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_26	Peptide	256	orf256_Nemani1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_26	Specific	273636	40	255	5.5465e-41	139.828	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	258	orf259_Nemani1_feature_113_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_27	Non-specific	273636	44	254	1.73014e-33	120.568	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	603	orf604_Nemani1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_28	Specific	275209	103	463	1.35291e-117	353.301	TIGR04416	group_II_RT_mat	-	45
+2	Query_28	Specific	338877	57	138	5.83433e-22	89.8215	pfam13655	RVT_N	-	45
+2	Query_28	Specific	238038	534	591	1.30088e-12	62.4891	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+2	Query_28	Specific	active site	E561,H563,H564,I565,P567,N578,I579,H583,R584,H587,T591	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	269	cox3_Nemani1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Specific	278911	12	269	1.7452e-130	369.817	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_30	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+2	Query_30	Specific	Subunit III/Vb interface	G166	1	1	238834
+2	Query_30	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,N190,V191,S192,S197,D198,G199	11	11	238834
+2	Query_30	Specific	Subunit III/VIb interface	L127	1	1	238834
+2	Query_30	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+2	Query_30	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,I91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_31	Peptide	248	orf248_Nemani1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	335245	55	228	5.44862e-52	166.182	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	216	nad6_Nemani1_feature_136_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Superfamily	354830	22	211	6.82378e-19	80.4301	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	506	orf506_Nemani1_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	96	194	6.73505e-18	78.8174	pfam00961	LAGLIDADG_1	-	45
+2	Query_33	Specific	334330	244	357	8.26952e-06	44.5347	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	372	orf373_Nemani1_feature_159_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Non-specific	273636	133	369	4.00584e-27	106.701	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	608	orf608_Nemani1_feature_163_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Non-specific	275209	19	466	3.0472e-79	254.305	TIGR04416	group_II_RT_mat	-	45
+2	Query_36	Specific	214702	538	584	0.000372379	38.5929	smart00507	HNHc	N	350893
+ENDDOMAINS
+SITES
+2	Query_36	Specific	active site	E548,H550,H551,V552,H554,N573,R574,C580,R581,H584,H588	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_39	Peptide	355	orf355_Nemani1_feature_169_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Non-specific	227596	123	300	0.00580668	38.8268	COG5271	MDN1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	265	atp6_Nemani1_feature_171_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	273458	40	262	5.84631e-49	161.22	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	294	orf294_Nemani1_feature_175_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	198392	35	121	1.62336e-30	110.008	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_41	Non-specific	273636	34	218	5.61222e-28	107.086	TIGR01453	grpIintron_endo	-	45
+2	Query_41	Specific	197761	239	293	5.355e-08	48.333	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_41	Specific	putative active site	Y38,Y49,G51,R59,Y63,E106,N118	7	7	198392
+2	Query_41	Specific	putative metal binding site	E106	1	1	198392
+2	Query_41	Specific	GIY-YIG motif/motif A	G36,I37,Y38,Y49,V50,G51	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	50	atp8_Nemani1_feature_178_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Non-specific	283561	1	48	3.42769e-08	43.549	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	499	nad4_Nemani1_feature_180_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	235622	34	494	1.09586e-115	349.886	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	369	nad1_Nemani1_feature_182_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	333876	13	351	9.48356e-107	315.181	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	307	orf307_Nemani1_feature_186_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	273636	88	304	1.4493e-65	204.542	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	535	orf535_Nemani1_feature_190_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	197761	380	439	1.24794e-05	42.555	smart00497	IENR1	-	299755
+2	Query_46	Superfamily	353929	122	187	5.12561e-05	41.8277	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+2	Query_46	Generic	active site	Y123,G125,R133,H137,E175	6	5	198380
+2	Query_46	Generic	catalytic site	R133,E175	2	2	198380
+2	Query_46	Generic	metal binding site	E175	1	1	198380
+2	Query_46	Generic	GIY-YIG motif/motif A	Y123,I124,G125	6	3	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_47	Peptide	272	orf272_Nemani1_feature_194_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	147	241	7.19178e-24	92.2994	pfam00961	LAGLIDADG_1	-	45
+2	Query_47	Specific	334330	1	89	7.33373e-17	73.8098	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	501	orf501_Nemani1_feature_198_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	334582	67	144	1.00488e-06	46.1737	pfam01541	GIY-YIG	-	353929
+2	Query_48	Non-specific	273636	67	249	6.9228e-06	46.9953	TIGR01453	grpIintron_endo	-	45
+2	Query_48	Specific	197761	284	339	0.000287844	38.703	smart00497	IENR1	-	299755
+2	Query_48	Specific	284793	362	397	0.000533006	37.492	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+SITES
+2	Query_48	Generic	active site	Y71,Y83,G85,R93,H97,E135	6	6	198380
+2	Query_48	Generic	catalytic site	R93,E135	2	2	198380
+2	Query_48	Generic	metal binding site	E135	1	1	198380
+2	Query_48	Generic	GIY-YIG motif/motif A	G69,L70,Y71,Y83,I84,G85	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_49	Peptide	458	cox1_Nemani1_feature_205_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Superfamily	350997	15	80	8.41473e-30	121.051	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_49	Generic	Low-spin heme binding site	R31,R32,F61	15	3	238461
+2	Query_49	Generic	Putative proton exit pathway	R31,R32	5	2	238461
+2	Query_49	Generic	Putative water exit pathway	R31	7	1	238461
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

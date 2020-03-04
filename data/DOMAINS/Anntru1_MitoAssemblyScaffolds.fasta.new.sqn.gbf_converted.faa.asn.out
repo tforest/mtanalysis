@@ -1,0 +1,678 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Anntru1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Anntru1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	262	orf263_Anntru1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	273636	46	258	2.54837e-39	135.976	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	435	orf436_Anntru1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	148	246	3.42066e-25	98.8478	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	304	403	1.27231e-22	91.529	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	448	orf449_Anntru1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	353929	142	228	2.23214e-16	73.7992	cl15257	GIY-YIG_SF	-	-
+1	Query_4	Non-specific	273636	141	376	5.78519e-07	50.0769	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_4	Generic	active site	Y145,Y156,G158,R166,Y170,E213	6	6	198380
+1	Query_4	Generic	catalytic site	R166,E213	2	2	198380
+1	Query_4	Generic	metal binding site	E213	1	1	198380
+1	Query_4	Generic	GIY-YIG motif/motif A	G143,V144,Y145,Y156,V157,G158	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_5	Peptide	367	orf368_Anntru1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	61	158	7.25507e-24	94.2254	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	210	334	7.57425e-13	63.7946	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	400	orf400_Anntru1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	17	115	9.42676e-20	83.4398	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	162	273	9.79972e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	60	orf61_Anntru1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	273636	22	58	2.28281e-07	44.6842	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	309	orf310_Anntru1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	273636	74	299	2.61189e-34	124.035	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	469	orf469_Anntru1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	334330	182	280	6.12771e-25	98.4626	pfam00961	LAGLIDADG_1	-	45
+1	Query_10	Specific	334330	340	438	1.68995e-21	88.8326	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	261	orf262_Anntru1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	335245	36	208	1.93819e-37	129.588	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	561	nad2_Anntru1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235603	138	487	1.46812e-80	260.138	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	425	orf425_Anntru1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	141	239	3.26751e-25	98.4626	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	297	397	3.15207e-22	90.3734	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	408	orf408_Anntru1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	7	107	3.80415e-28	106.167	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	165	265	1.34699e-20	85.751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	163	nad3_Anntru1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334119	19	113	2.42267e-18	74.759	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	74	atp9_Anntru1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	349422	6	70	3.30863e-17	67.9199	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	253	cox2_Anntru1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	214438	20	249	8.31249e-106	305.214	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	298	orf298_Anntru1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	273636	61	295	5.10346e-56	179.889	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	794	orf794_Anntru1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	238828	282	542	3.04646e-69	227.469	cd01651	RT_G2_intron	-	295487
+1	Query_21	Non-specific	279664	567	692	9.51233e-18	80.2062	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+1	Query_21	Specific	putative active site	D352,I353,S354,K355,C356,F357,Q407,G408,Y490,D492,D493,L541,G542	13	13	238828
+1	Query_21	Specific	putative nucleic acid binding site	G408	1	1	238828
+1	Query_21	Specific	putative NTP binding site	D352,I353,S354,K355,C356,F357,Q407,D492	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	427	orf427_Anntru1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	315878	247	411	4.4415e-26	102.423	pfam13302	Acetyltransf_3	-	356580
+1	Query_23	Non-specific	225105	35	139	0.00439772	39.2902	COG2194	OpgE	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	89	nad4L_Anntru1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	351118	3	86	6.64506e-13	58.505	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	973	nad5_Anntru1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	214400	1	744	0	591.281	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	520	orf520_Anntru1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	111	209	4.41093e-19	82.2842	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	271	384	3.32682e-07	48.3867	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	429	orf429_Anntru1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	299	399	3.21515e-31	115.026	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	139	240	7.18432e-27	103.085	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	595	orf595_Anntru1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334330	465	565	3.74501e-21	88.4474	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	334330	305	407	1.39408e-20	86.5214	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	335245	31	200	1.22823e-16	77.5863	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_29	Peptide	207	orf207_Anntru1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_29	Specific	335245	25	191	2.33384e-44	145.381	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	346	orf346_Anntru1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Specific	334330	186	305	5.04898e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+2	Query_30	Specific	334330	66	152	7.58695e-07	46.8459	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	444	orf444_Anntru1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	340095	300	444	6.00453e-07	51.752	pfam17380	DUF5401	NC	45
+2	Query_31	Superfamily	354837	76	252	0.000102363	44.0087	cl21495	Acyl_transf_3	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	392	cob_Anntru1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Specific	214440	10	368	2.31487e-179	502.39	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	284	orf284_Anntru1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	154	256	1.34901e-14	68.0318	pfam00961	LAGLIDADG_1	-	45
+2	Query_33	Specific	334330	2	88	5.02781e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	279	orf279_Anntru1_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	334330	24	131	0.000666449	37.9863	pfam00961	LAGLIDADG_1	-	45
+2	Query_35	Specific	197761	212	268	0.00495381	34.4658	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	461	orf461_Anntru1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	59	154	1.04631e-21	89.2178	pfam00961	LAGLIDADG_1	-	45
+2	Query_36	Specific	334330	215	315	4.23943e-06	44.9199	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	299	orf299_Anntru1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	48	158	8.88277e-07	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	328	orf328_Anntru1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	334330	86	151	8.44162e-05	40.6827	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	290	orf290_Anntru1_feature_133_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	334330	49	117	1.37634e-06	45.6903	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	334	orf334_Anntru1_feature_137_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	334330	74	170	5.32208e-21	86.1362	pfam00961	LAGLIDADG_1	-	45
+2	Query_40	Specific	334330	221	316	6.9926e-07	46.8459	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	229	orf229_Anntru1_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	335245	48	219	2.58683e-49	158.863	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	318	orf318_Anntru1_feature_149_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	273636	139	316	2.35413e-40	140.214	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	454	orf455_Anntru1_feature_152_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	334330	67	157	1.31695e-14	69.1874	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	334330	205	311	1.09892e-11	61.0983	pfam00961	LAGLIDADG_1	-	45
+2	Query_43	Specific	284793	395	430	0.00148394	35.9512	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	515	cox1_Anntru1_feature_156_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	238833	1	492	0	796.306	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+2	Query_44	Specific	Binuclear center (heme a3/CuB)	H221,H270,H271,H356	4	4	238833
+2	Query_44	Specific	Low-spin heme (heme a) binding site	H42,H358,S362,T404,S441	5	5	238833
+2	Query_44	Specific	D-pathway	N61,D72,N79,S82,S137,S138,N144,T148	9	8	238833
+2	Query_44	Specific	K-pathway	H221,Y225,S236,H270,H271,T296,K299	7	7	238833
+2	Query_44	Specific	Electron transfer pathway	F357,R418,R419	3	3	238833
+2	Query_44	Specific	Putative proton exit pathway	H271,H348,D349,R418,R419	5	5	238833
+2	Query_44	Specific	Putative water exit pathway	D208,Q213,H214,D344,H348,D349,R418	7	7	238833
+2	Query_44	Specific	Subunit I/II interface	N36,D208,K245,F248,G249,T274,V275,G276,V279,R282,L290,I298,F301,Y308,G309,G310,L322,N340,A341,L343,I345,A346,F347,H348,D349,L413,Q414,R418,R419,I420,G429,W430	32	32	238833
+2	Query_44	Specific	Subunit I/III interface	P71,F75,R77,W84,D125,F129,T147,N151,I171,L178,P181,M189,T198,S199,F200,G205,G206,D208,F218,Y255,M258,G261,I262,I266	25	24	238833
+2	Query_44	Specific	Subunit I/IV interface	M19,S22,G23,L388,K391,V392,D425,V443	8	8	238833
+2	Query_44	Specific	Subunit I/Vb interface	S246,Y250,A491	3	3	238833
+2	Query_44	Specific	Subunit I/VIa interface	V116,R194,N195,F196,N197	5	5	238833
+2	Query_44	Specific	Subunit I/VIb interface	G276	1	1	238833
+2	Query_44	Specific	Subunit I/VIc interface	G309	1	1	238833
+2	Query_44	Specific	Subunit I/VIIa interface	F95,V98	2	2	238833
+2	Query_44	Specific	Subunit I/VIIb interface	D425,G429	2	2	238833
+2	Query_44	Specific	Subunit I/VIIc interface	F5,L9,A12,L16,A97,V98,I380,Y453,L456	9	9	238833
+2	Query_44	Specific	Subunit I/VIIIb interface	L389,W446	2	2	238833
+2	Query_44	Specific	Dimer interface	I171,L178,F218,Y255,M258,G261,I262,I266	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_45	Peptide	327	orf327_Anntru1_feature_160_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	334330	177	286	2.93622e-18	78.4322	pfam00961	LAGLIDADG_1	-	45
+2	Query_45	Specific	334330	59	153	2.39346e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	791	orf791_Anntru1_feature_164_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Non-specific	275209	210	652	5.66806e-100	313.24	TIGR04416	group_II_RT_mat	-	45
+2	Query_46	Specific	238038	723	773	5.16877e-06	44.3848	cd00085	HNHc	N	350893
+ENDDOMAINS
+SITES
+2	Query_46	Specific	active site	E733,H735,H736,V737,H739,N758,R759,C765,R766,H769,H773	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_47	Peptide	207	orf207_2_Anntru1_feature_168_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	46	166	2.75819e-18	76.121	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	346	orf346_2_Anntru1_feature_172_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	334330	74	166	2.92528e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+2	Query_48	Specific	334330	224	311	0.00102506	37.9863	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	423	orf423_Anntru1_feature_176_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	334330	135	236	1.30606e-26	102.315	pfam00961	LAGLIDADG_1	-	45
+2	Query_49	Specific	334330	294	394	1.29543e-23	94.2254	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	451	orf451_2_Anntru1_feature_180_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Superfamily	353929	209	294	1.64617e-13	65.71	cl15257	GIY-YIG_SF	-	-
+2	Query_50	Specific	197761	304	357	3.15156e-05	41.0142	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_50	Generic	active site	Y211,Y222,G224,R232,Y236,E279	6	6	198380
+2	Query_50	Generic	catalytic site	R232,E279	2	2	198380
+2	Query_50	Generic	metal binding site	E279	1	1	198380
+2	Query_50	Generic	GIY-YIG motif/motif A	G209,V210,Y211,Y222,V223,G224	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_51	Peptide	785	orf785_Anntru1_feature_184_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	238828	270	538	2.05253e-95	296.42	cd01651	RT_G2_intron	-	295487
+2	Query_51	Non-specific	279664	561	675	1.44218e-24	99.8514	pfam01348	Intron_maturas2	-	45
+2	Query_51	Specific	238038	714	764	0.00246778	36.6808	cd00085	HNHc	N	350893
+ENDDOMAINS
+SITES
+2	Query_51	Specific	putative active site	D344,I345,S346,K347,C348,F349,Q397,G398,Y483,D485,D486,L534,G535	13	13	238828
+2	Query_51	Specific	putative nucleic acid binding site	G398	1	1	238828
+2	Query_51	Specific	putative NTP binding site	D344,I345,S346,K347,C348,F349,Q397,D485	8	8	238828
+2	Query_51	Specific	active site	E724,H726,H727,V728,H730,K743,L744,C756,R757,H760,H764	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_52	Peptide	348	orf348_Anntru1_feature_188_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	334330	78	175	3.7219e-12	61.8686	pfam00961	LAGLIDADG_1	-	45
+2	Query_52	Specific	334330	199	304	5.63767e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	312	orf312_2_Anntru1_feature_194_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	334330	184	281	1.17925e-09	54.5499	pfam00961	LAGLIDADG_1	-	45
+2	Query_54	Specific	334330	67	152	3.06094e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	644	orf644_Anntru1_feature_200_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	334330	57	155	1.26412e-17	78.4322	pfam00961	LAGLIDADG_1	-	45
+2	Query_55	Specific	334330	526	613	0.000523584	39.5271	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_56	Peptide	344	orf344_Anntru1_feature_202_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_56	Specific	334330	115	186	8.20513e-06	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	347	orf347_1_Anntru1_feature_210_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_59	Specific	334330	211	310	1.20355e-18	79.5878	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	317	orf317_Anntru1_feature_214_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_60	Specific	334330	188	283	1.68391e-14	68.0318	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	440	orf440_Anntru1_feature_218_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_61	Specific	273636	147	352	5.36003e-60	194.527	TIGR01453	grpIintron_endo	-	45
+3	Query_61	Specific	197761	386	436	1.96291e-09	52.9554	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	285	orf285_Anntru1_feature_222_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_62	Specific	334330	52	145	5.18954e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+3	Query_62	Specific	334330	187	280	9.36791e-08	49.1571	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	333	orf333_Anntru1_feature_224_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_63	Specific	334330	48	150	8.01038e-21	85.3658	pfam00961	LAGLIDADG_1	-	45
+3	Query_63	Specific	334330	210	307	2.82171e-19	81.1286	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	79	orf80_Anntru1_feature_233_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_66	Superfamily	353929	45	79	6.32446e-06	39.9017	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_66	Generic	active site	Y48,Y59,G61,R69,Y73	6	5	198380
+3	Query_66	Generic	catalytic site	R69	2	1	198380
+3	Query_66	Generic	GIY-YIG motif/motif A	G46,V47,Y48,Y59,V60,G61	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_67	Peptide	126	orf127_Anntru1_feature_235_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_67	Non-specific	273636	1	118	2.10696e-29	105.16	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_67	Generic	DNA binding site	N46,P47,F48,Y49,H53,S57,M61,I62,S66,A67,P69,K87,K91,N96,T99,V101,K102,N103,E113	21	19	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_69	Peptide	151	cox1_Anntru1_feature_239_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_69	Superfamily	350997	1	130	9.68941e-50	165.734	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+3	Query_69	Generic	Low-spin heme binding site	R56,R57,F86	15	3	238461
+3	Query_69	Generic	Putative proton exit pathway	R56,R57	5	2	238461
+3	Query_69	Generic	Putative water exit pathway	R56	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_70	Peptide	134	orf135_Anntru1_feature_243_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_70	Superfamily	353929	42	118	3.004e-05	39.9017	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+3	Query_70	Generic	active site	Y43,Y55,G57,R65,H69,E107	6	6	198380
+3	Query_70	Generic	catalytic site	R65,E107	2	2	198380
+3	Query_70	Generic	metal binding site	E107	1	1	198380
+3	Query_70	Generic	GIY-YIG motif/motif A	I42,Y43,Y55,I56,G57	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_72	Peptide	116	orf116_Anntru1_feature_247_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_72	Specific	197761	59	114	0.00223605	33.6954	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	187	orf187_Anntru1_feature_249_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Specific	214677	42	107	2.37844e-05	40.8676	smart00465	GIYc	C	353929
+ENDDOMAINS
+SITES
+3	Query_73	Specific	active site	Y46,Y58,G60,R68,H72	6	5	198380
+3	Query_73	Specific	GIY-YIG motif/motif A	G44,I45,Y46,Y58,I59,G60	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_74	Peptide	327	nad1_Anntru1_feature_251_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Specific	333876	8	309	1.65045e-92	277.431	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	185	orf185_Anntru1_feature_255_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Specific	334330	143	185	2.90297e-07	46.4607	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_76	Peptide	187	orf187_Anntru1_feature_257_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Specific	334330	56	157	1.03245e-22	86.9066	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	272	orf272_Anntru1_feature_261_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Specific	334330	147	241	7.86733e-25	94.9958	pfam00961	LAGLIDADG_1	-	45
+3	Query_77	Specific	334330	1	89	2.61476e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	238	orf238_Anntru1_feature_265_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Non-specific	273636	79	189	9.62506e-33	117.872	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_79	Peptide	460	orf460_Anntru1_feature_267_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_79	Specific	334330	63	155	1.51028e-16	74.5802	pfam00961	LAGLIDADG_1	-	45
+3	Query_79	Specific	334330	201	316	0.000149352	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	182	orf183_Anntru1_feature_270_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_80	Non-specific	273636	7	107	1.43877e-12	63.1737	TIGR01453	grpIintron_endo	N	45
+3	Query_80	Specific	333876	135	165	2.99802e-08	51.7045	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+SITES
+3	Query_80	Generic	DNA binding site	N35,P36,M37,Y38,V42,N46,I50,S51,R55,K56,L60,A76,K80,S85,T88,V90,K91,Y92,K102	21	19	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_81	Peptide	487	nad4_Anntru1_feature_272_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	235622	37	484	2.19784e-109	333.323	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	50	atp8_Anntru1_feature_274_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_82	Non-specific	283561	1	48	2.21321e-07	41.623	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	266	atp6_Anntru1_feature_276_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Specific	273458	40	263	6.11798e-50	163.531	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	386	orf386_Anntru1_feature_280_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_84	Non-specific	273636	49	247	1.20024e-36	132.124	TIGR01453	grpIintron_endo	-	45
+3	Query_84	Specific	284793	267	302	0.000234872	37.8772	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_85	Peptide	126	orf126_Anntru1_feature_284_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_85	Non-specific	273636	7	104	5.5417e-12	59.7069	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_85	Generic	DNA binding site	S27,P28,N29,F30,H34,T38,I42,S43,L47,G48,L52,S53,K57,T85,E89,T94,S97,S99,K100,R101	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_86	Peptide	222	orf222_Anntru1_feature_286_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Non-specific	273636	1	144	4.03332e-15	70.8777	TIGR01453	grpIintron_endo	-	45
+3	Query_86	Specific	197761	167	221	1.6216e-06	43.7106	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	444	orf444_Anntru1_feature_289_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_87	Superfamily	354370	7	425	1.75221e-174	495.627	cl18945	Beta_elim_lyase	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	348	orf349_Anntru1_feature_291_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Specific	334330	65	159	5.59126e-24	94.2254	pfam00961	LAGLIDADG_1	-	45
+3	Query_88	Specific	334330	222	316	8.60071e-18	77.2766	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	468	orf468_Anntru1_feature_293_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Specific	334330	170	269	2.35795e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+3	Query_89	Specific	334330	327	437	9.63503e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_90	Peptide	450	orf451_Anntru1_feature_295_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_90	Specific	334330	161	258	4.54501e-26	101.159	pfam00961	LAGLIDADG_1	-	45
+3	Query_90	Specific	334330	318	419	5.31481e-20	84.5954	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	245	orf246_Anntru1_feature_297_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_91	Specific	198392	83	172	5.4015e-24	91.5184	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+3	Query_91	Specific	putative active site	Y86,Y97,G99,R107,Y111,E157,N169	7	7	198392
+3	Query_91	Specific	putative metal binding site	E157	1	1	198392
+3	Query_91	Specific	GIY-YIG motif/motif A	G84,I85,Y86,Y97,I98,G99	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_92	Peptide	299	orf300_Anntru1_feature_301_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_92	Specific	334330	45	163	2.40899e-06	45.3051	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	296	orf297_Anntru1_feature_317_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Specific	334330	154	253	5.21093e-17	74.5802	pfam00961	LAGLIDADG_1	-	45
+3	Query_94	Specific	334330	16	90	6.64495e-15	68.8022	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_95	Peptide	590	orf591_Anntru1_feature_319_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_95	Specific	334330	174	272	6.22459e-18	79.2026	pfam00961	LAGLIDADG_1	-	45
+4	Query_95	Specific	334330	336	449	9.0882e-07	47.2311	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	269	cox3_Anntru1_feature_325_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_97	Specific	278911	12	269	1.91115e-131	372.128	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+4	Query_97	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+4	Query_97	Specific	Subunit III/Vb interface	G166	1	1	238834
+4	Query_97	Specific	Subunit III/VIa interface	F135,E136,L137,F154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+4	Query_97	Specific	Subunit III/VIb interface	A127	1	1	238834
+4	Query_97	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+4	Query_97	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,I91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_98	Peptide	325	orf325_Anntru1_feature_329_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_98	Specific	334330	181	293	2.71918e-11	59.1723	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	238	orf238_Anntru1_feature_331_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_99	Specific	334330	82	197	6.19773e-09	51.8535	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_100	Peptide	347	orf347_Anntru1_feature_335_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_100	Specific	334330	58	159	1.0165e-22	90.7586	pfam00961	LAGLIDADG_1	-	45
+4	Query_100	Specific	334330	217	317	2.62401e-22	89.603	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_101	Peptide	158	orf158_Anntru1_feature_337_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_101	Specific	335245	1	141	8.15557e-38	126.892	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	255	orf255_Anntru1_feature_341_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_102	Specific	335245	56	228	3.64423e-52	166.953	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_103	Peptide	372	orf372_Anntru1_feature_345_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_103	Specific	334330	81	181	5.60028e-28	105.396	pfam00961	LAGLIDADG_1	-	45
+4	Query_103	Specific	334330	239	340	8.05976e-21	86.1362	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_104	Peptide	442	orf442_Anntru1_feature_349_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_104	Superfamily	353929	162	263	5.16995e-14	67.2508	cl15257	GIY-YIG_SF	-	-
+4	Query_104	Non-specific	273636	162	436	2.04862e-10	60.0921	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+4	Query_104	Generic	active site	Y165,Y176,G178,R186,Y191,E251	6	6	198380
+4	Query_104	Generic	catalytic site	R186,E251	2	2	198380
+4	Query_104	Generic	metal binding site	E251	1	1	198380
+4	Query_104	Generic	GIY-YIG motif/motif A	G163,V164,Y165,Y176,I177,G178	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_105	Peptide	569	orf569_Anntru1_feature_352_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_105	Specific	333719	316	413	2.86976e-06	50.2114	NF000535	MSCRAMM_SdrC	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_106	Peptide	99	orf100_Anntru1_feature_360_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_106	Superfamily	353929	43	68	2.04181e-06	41.8277	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+4	Query_106	Generic	active site	Y45,Y56,G58,R66	6	4	198380
+4	Query_106	Generic	catalytic site	R66	2	1	198380
+4	Query_106	Generic	GIY-YIG motif/motif A	G43,V44,Y45,Y56,V57,G58	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_107	Peptide	311	orf312_Anntru1_feature_362_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_107	Specific	334330	108	188	2.38584e-14	67.6466	pfam00961	LAGLIDADG_1	C	45
+4	Query_107	Specific	334330	1	50	2.90402e-05	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_108	Peptide	63	orf64_Anntru1_feature_364_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_108	Superfamily	353929	6	55	1.01492e-09	49.1464	cl15257	GIY-YIG_SF	N	-
+ENDDOMAINS
+SITES
+4	Query_108	Generic	active site	Y8,E49	6	2	198380
+4	Query_108	Generic	catalytic site	E49	2	1	198380
+4	Query_108	Generic	metal binding site	E49	1	1	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_109	Peptide	263	orf264_Anntru1_feature_366_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_109	Specific	273636	46	258	2.61155e-40	138.288	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_110	Peptide	1202	orf1202_Anntru1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_110	Specific	281206	449	865	1.79716e-78	265.751	pfam03175	DNA_pol_B_2	-	355698
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_111	Peptide	1352	orf1352_Anntru1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_111	Specific	334321	935	1351	1.7327e-84	281.271	pfam00940	RNA_pol	-	355471
+4	Query_111	Non-specific	227439	510	1350	1.60427e-67	249.137	COG5108	RPO41	N	45
+4	Query_111	Specific	333719	289	433	7.05627e-11	66.775	NF000535	MSCRAMM_SdrC	N	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+ENDDATA

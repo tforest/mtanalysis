@@ -1,0 +1,135 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	AcreTS7_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	AcreTS7_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	548	cox1_AcreTS7_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	28	508	0	836.752	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	H259,H308,H309,H394	4	4	238833
+1	Query_1	Specific	Low-spin heme (heme a) binding site	H80,H396,S400,T442,S479	5	5	238833
+1	Query_1	Specific	D-pathway	Y37,N99,D110,N117,S120,S175,S176,N182,T186	9	9	238833
+1	Query_1	Specific	K-pathway	H259,Y263,S274,H308,H309,T334,K337	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F395,R456,R457	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H309,H386,D387,R456,R457	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D246,Q251,H252,D382,H386,D387,R456	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	N74,D246,K283,F286,G287,T312,V313,G314,V317,R320,L328,I336,F339,Y346,G347,G348,L360,N378,A379,L381,I383,A384,F385,H386,D387,L451,Q452,R456,R457,I458,G467,W468	32	32	238833
+1	Query_1	Specific	Subunit I/III interface	T28,P109,F113,R115,W122,D163,F167,T185,N189,I209,L216,P219,M227,T236,S237,F238,G243,G244,D246,F256,Y293,M296,G299,I300,I304	25	25	238833
+1	Query_1	Specific	Subunit I/IV interface	L57,S60,G61,T426,K429,V430,D463,I481	8	8	238833
+1	Query_1	Specific	Subunit I/VIa interface	L154,R232,N233,F234,N235	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G314	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G347	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	L133,C136	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D463,G467	2	2	238833
+1	Query_1	Specific	Subunit I/VIIc interface	F43,L47,A50,L54,A135,C136,I418,Y491,L494	9	9	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	M427,W484	2	2	238833
+1	Query_1	Specific	Dimer interface	I209,L216,F256,Y293,M296,G299,I300,I304	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	358	nad1_AcreTS7_feature_9_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	333876	13	344	2.26101e-109	321.729	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	483	nad4_AcreTS7_feature_15_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	235622	1	480	2.60579e-127	379.161	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	254	cox2_AcreTS7_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	214438	18	251	6.5571e-113	323.319	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	48	atp8_AcreTS7_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	283561	1	48	1.04376e-07	42.3934	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	259	atp6_AcreTS7_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273458	28	256	1.30993e-52	170.079	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	269	cox3_AcreTS7_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	278911	12	269	5.50244e-137	386.381	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_8	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_8	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,V180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_8	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_8	Specific	Subunit III/VIIa interface	L64,R67,D68,A71,T74,Y75,L76	7	7	238834
+1	Query_8	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	216	nad6_AcreTS7_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	354830	27	119	3.00983e-12	62.5462	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	550	nad2_AcreTS7_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	235603	2	474	2.40106e-89	282.865	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	137	nad3_AcreTS7_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334119	19	113	1.11262e-20	79.7666	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	75	atp9_AcreTS7_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	349422	7	63	1.51448e-18	71.3867	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	89	nad4L_AcreTS7_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351118	3	87	2.22283e-17	69.8207	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	660	nad5_AcreTS7_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	177253	1	629	0	587.36	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	298	cob_AcreTS7_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	214440	10	298	1.08838e-151	428.432	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

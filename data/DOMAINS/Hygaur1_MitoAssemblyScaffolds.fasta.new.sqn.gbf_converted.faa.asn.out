@@ -1,0 +1,158 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Hygaur1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Hygaur1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	125	nad3_Hygaur1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	334119	19	112	1.87715e-30	104.419	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	533	nad2_Hygaur1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	235603	116	521	1.03402e-80	259.753	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	205	nad6_Hygaur1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	354830	5	195	6.25696e-20	82.7413	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	251	cox2_Hygaur1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	214402	7	251	9.34788e-111	318.233	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	259	atp6_Hygaur1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351082	17	259	1.49415e-44	150.157	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	503	cox1_Hygaur1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	238833	1	487	0	823.27	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_12	Specific	Binuclear center (heme a3/CuB)	H215,H264,H265,H350	4	4	238833
+1	Query_12	Specific	Low-spin heme (heme a) binding site	H36,H352,S356,T398,S435	5	5	238833
+1	Query_12	Specific	D-pathway	N55,D66,N73,S76,S131,S132,N138,T142	9	8	238833
+1	Query_12	Specific	K-pathway	H215,Y219,S230,H264,H265,T290,K293	7	7	238833
+1	Query_12	Specific	Electron transfer pathway	F351,R412,R413	3	3	238833
+1	Query_12	Specific	Putative proton exit pathway	H265,H342,D343,R412,R413	5	5	238833
+1	Query_12	Specific	Putative water exit pathway	D202,Q207,H208,D338,H342,D343,R412	7	7	238833
+1	Query_12	Specific	Subunit I/II interface	N30,D202,K239,F242,G243,S268,V269,G270,V273,R276,M284,I292,F295,Y302,G303,G304,I316,N334,A335,L337,I339,A340,L341,H342,D343,L407,A408,R412,R413,I414,G423,W424	32	32	238833
+1	Query_12	Specific	Subunit I/III interface	P65,F69,R71,W78,D119,F123,T141,N145,V165,L172,P175,M183,T192,S193,F194,G199,G200,D202,F212,Y249,F252,G255,I256,L260	25	24	238833
+1	Query_12	Specific	Subunit I/IV interface	L12,A15,A16,F382,K385,I386,D419,M437	8	8	238833
+1	Query_12	Specific	Subunit I/Vb interface	P240,Y244,S486	3	3	238833
+1	Query_12	Specific	Subunit I/VIa interface	I110,R188,N189,F190,N191	5	5	238833
+1	Query_12	Specific	Subunit I/VIb interface	G270	1	1	238833
+1	Query_12	Specific	Subunit I/VIc interface	G303	1	1	238833
+1	Query_12	Specific	Subunit I/VIIa interface	V89,L92	2	2	238833
+1	Query_12	Specific	Subunit I/VIIb interface	D419,G423	2	2	238833
+1	Query_12	Specific	Subunit I/VIIc interface	I2,A5,L9,S91,L92,I374,Y447,F450	9	8	238833
+1	Query_12	Specific	Subunit I/VIIIb interface	L383,V440	2	2	238833
+1	Query_12	Specific	Dimer interface	V165,L172,F212,Y249,F252,G255,I256,L260	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	323	orf323_Hygaur1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	183	288	1.29372e-16	73.8098	pfam00961	LAGLIDADG_1	-	45
+1	Query_13	Specific	334330	61	148	1.48317e-11	59.9427	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	399	orf399_Hygaur1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	124	218	1.23309e-14	69.1874	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	274	366	0.000517277	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	484	nad4_Hygaur1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235622	31	482	1.02012e-140	413.444	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	665	nad5_Hygaur1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	177253	1	616	0	614.709	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	88	nad4L_Hygaur1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	351118	7	88	1.41514e-14	62.7421	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	276	cox3_Hygaur1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	238834	30	273	8.71572e-123	349.892	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Subunit I/III interface	Q88,K91,G92,S103,F106,S110,V111,H117,S205,V206,S209,A213	12	12	238834
+1	Query_19	Specific	Subunit III/Vb interface	G172	1	1	238834
+1	Query_19	Specific	Subunit III/VIa interface	F141,A142,I143,Y160,I186,S196,E197,A198,S203,D204,S205	11	11	238834
+1	Query_19	Specific	Subunit III/VIb interface	Q133	1	1	238834
+1	Query_19	Specific	Subunit III/VIIa interface	L70,R73,D74,V77,T80,Y81,L82	7	7	238834
+1	Query_19	Specific	Phospholipid binding site	W71,F72,V75,I76,G79,H85,G96,I97,F100,F228,R235,Q247,G248	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	385	cob_Hygaur1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	214440	10	366	1.09155e-170	480.048	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	238	orf238_Hygaur1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	335245	45	218	5.09815e-46	150.774	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	328	nad1_Hygaur1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	333876	22	316	7.75789e-115	334.441	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	52	atp8_Hygaur1_feature_102_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	283561	1	48	7.84252e-06	37.771	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	73	atp9_Hygaur1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	349422	6	70	3.19361e-14	60.2159	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	707	orf707_Hygaur1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	281206	223	660	5.44309e-88	283.085	pfam03175	DNA_pol_B_2	-	355698
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

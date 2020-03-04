@@ -1,0 +1,129 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Bombar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Bombar1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	269	cox3_Bombar1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	278911	12	269	3.97059e-143	401.789	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,T203,F207	12	12	238834
+1	Query_1	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_1	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_1	Specific	Subunit III/VIb interface	I127	1	1	238834
+1	Query_1	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,L76	7	7	238834
+1	Query_1	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	261	atp6_Bombar1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	273458	14	258	4.94938e-50	163.531	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	50	atp8_Bombar1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	283561	1	48	1.19536e-08	44.7046	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	514	nad4_Bombar1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	235622	53	511	1.80074e-130	388.406	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	352	nad1_Bombar1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	333876	19	335	1.61306e-111	326.737	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	551	cox1_Bombar1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	238833	30	532	0	841.759	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Binuclear center (heme a3/CuB)	H261,H310,H311,H396	4	4	238833
+1	Query_6	Specific	Low-spin heme (heme a) binding site	H82,H398,S402,T444,S481	5	5	238833
+1	Query_6	Specific	D-pathway	Y39,N101,D112,N119,S122,S177,S178,N184,T188	9	9	238833
+1	Query_6	Specific	K-pathway	H261,Y265,S276,H310,H311,T336,K339	7	7	238833
+1	Query_6	Specific	Electron transfer pathway	F397,R458,R459	3	3	238833
+1	Query_6	Specific	Putative proton exit pathway	H311,H388,D389,R458,R459	5	5	238833
+1	Query_6	Specific	Putative water exit pathway	D248,Q253,H254,D384,H388,D389,R458	7	7	238833
+1	Query_6	Specific	Subunit I/II interface	N76,D248,K285,F288,G289,T314,V315,G316,V319,R322,L330,I338,F341,Y348,G349,G350,L362,N380,A381,L383,I385,A386,F387,H388,D389,L453,Q454,R458,R459,I460,G469,W470	32	32	238833
+1	Query_6	Specific	Subunit I/III interface	T30,P111,F115,R117,W124,D165,F169,T187,N191,I211,L218,P221,M229,T238,S239,F240,G245,G246,D248,F258,Y295,M298,G301,I302,I306	25	25	238833
+1	Query_6	Specific	Subunit I/IV interface	L59,S62,G63,T428,K431,V432,D465,I483	8	8	238833
+1	Query_6	Specific	Subunit I/Vb interface	S286,Y290,A531	3	3	238833
+1	Query_6	Specific	Subunit I/VIa interface	V156,R234,N235,F236,N237	5	5	238833
+1	Query_6	Specific	Subunit I/VIb interface	G316	1	1	238833
+1	Query_6	Specific	Subunit I/VIc interface	G349	1	1	238833
+1	Query_6	Specific	Subunit I/VIIa interface	F135,C138	2	2	238833
+1	Query_6	Specific	Subunit I/VIIb interface	D465,G469	2	2	238833
+1	Query_6	Specific	Subunit I/VIIc interface	F45,L49,A52,L56,A137,C138,I420,Y493,L496	9	9	238833
+1	Query_6	Specific	Subunit I/VIIIb interface	L429,W486	2	2	238833
+1	Query_6	Specific	Dimer interface	I211,L218,F258,Y295,M298,G301,I302,I306	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	394	cob_Bombar1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	214440	10	367	2.94365e-179	502.39	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	670	nad5_Bombar1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	177253	1	628	0	603.538	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	89	nad4L_Bombar1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	3	86	1.62122e-16	67.7497	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	250	cox2_Bombar1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	214438	18	247	4.95995e-109	313.303	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	138	nad3_Bombar1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334119	19	113	7.26789e-20	77.8406	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	553	nad2_Bombar1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	235603	120	475	1.46305e-76	249.738	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	220	nad6_Bombar1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	354830	22	215	4.1216e-19	81.2005	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

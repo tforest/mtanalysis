@@ -1,0 +1,247 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	LobpulSw1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	LobpulSw1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	89	nad4L_LobpulSw1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	351118	5	86	3.60524e-17	69.2905	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	1249	nad5_LobpulSw1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	214400	1	628	0	679.492	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	109	orf109_LobpulSw1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	40	87	0.0016526	34.9047	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	317	orf317_LobpulSw1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	82	171	6.31816e-09	52.6239	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	195	291	0.000105478	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	385	orf385_LobpulSw1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	266	356	0.00184864	37.2159	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	261	atp6_LobpulSw1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	273458	28	258	7.49813e-43	145.042	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	909	orf909_LobpulSw1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	355698	103	524	7.54599e-63	219.527	cl28058	DNA_pol_B_2	-	-
+1	Query_10	Superfamily	353046	538	618	0.00352662	40.3849	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_10	Generic	active site	D573	8	1	99912
+1	Query_10	Generic	metal-binding site 	D571,D573,S574	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	75	nad4_LobpulSw1_feature_31_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	223940	28	75	0.00351241	33.7219	COG1008	NuoM	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	258	nad3_LobpulSw1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334119	19	113	1.85914e-12	61.6622	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	605	nad2_LobpulSw1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	235603	131	498	3.28035e-76	250.123	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	269	cox3_LobpulSw1_feature_46_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	278911	12	268	8.13006e-123	350.172	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,S199,T200,S203,F207	12	12	238834
+1	Query_17	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_17	Specific	Subunit III/VIa interface	Y135,E136,L137,Y154,Y180,T190,V191,S192,S197,D198,S199	11	11	238834
+1	Query_17	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_17	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,Y75,Q76	7	7	238834
+1	Query_17	Specific	Phospholipid binding site	W65,F66,V69,I70,S73,H79,G90,I91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	336	cox2_LobpulSw1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	214402	26	261	1.5683e-106	310.914	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	1180	cox1_LobpulSw1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	238833	13	404	0	673.042	cd01663	Cyt_c_Oxidase_I	C	350997
+1	Query_19	Non-specific	214440	693	800	9.34482e-53	188.837	MTH00156	CYTB	C	45
+1	Query_19	Specific	334330	893	992	3.93606e-23	94.9958	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	1051	1147	2.03712e-11	61.4834	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Binuclear center (heme a3/CuB)	H243,H292,H293,Q378	4	4	238833
+1	Query_19	Specific	D-pathway	Y21,N83,D94,N101,S104,S159,S160,N166,T170	9	9	238833
+1	Query_19	Specific	K-pathway	H243,Y247,S258,H292,H293,T318,K321	7	7	238833
+1	Query_19	Specific	Putative water exit pathway	D230,Q235,H236,D366,H370,D371	7	6	238833
+1	Query_19	Specific	Subunit I/III interface	P93,F97,R99,W106,D147,F151,I169,N173,I193,L200,P203,M211,T220,S221,F222,G227,G228,D230,F240,Y277,M280,G283,V284,V288	25	24	238833
+1	Query_19	Specific	Subunit I/VIa interface	I138,R216,N217,F218,N219	5	5	238833
+1	Query_19	Specific	Subunit I/VIb interface	G298	1	1	238833
+1	Query_19	Specific	Subunit I/VIc interface	G331	1	1	238833
+1	Query_19	Specific	Subunit I/VIIa interface	F117,G120	2	2	238833
+1	Query_19	Specific	Dimer interface	I193,L200,F240,Y277,M280,G283,V284,V288	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	225	orf225_LobpulSw1_feature_9_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	350997	1	126	1.8536e-64	206.95	cl00275	Heme_Cu_Oxidase_I	NC	-
+ENDDOMAINS
+SITES
+1	Query_20	Generic	Binuclear center (active site)	H14,H15,Q100	4	3	238461
+1	Query_20	Generic	Low-spin heme binding site	Y95,D112,L115,E116	15	4	238461
+1	Query_20	Generic	K-pathway	H14,H15,T40,K43	7	4	238461
+1	Query_20	Generic	Putative proton exit pathway	H15,H92,D93	5	3	238461
+1	Query_20	Generic	Putative water exit pathway	D88,H92,D93	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	512	cob_LobpulSw1_feature_11_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	214440	190	496	2.83735e-144	418.031	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	379	orf379_LobpulSw1_feature_15_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	92	191	3.5037e-21	86.9066	pfam00961	LAGLIDADG_1	-	45
+1	Query_22	Specific	334330	250	346	6.71756e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	230	nad6_LobpulSw1_feature_12_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	354830	25	112	5.57373e-17	76.0281	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	51	atp6_LobpulSw1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Superfamily	351082	7	51	0.000181478	36.1379	cl00413	ATP-synt_A	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_28	Peptide	189	atp9_LobpulSw1_feature_8_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_28	Specific	349422	6	60	2.22278e-16	69.4607	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	102	atp9_LobpulSw1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Specific	349422	16	84	2.23566e-13	59.0604	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_31	Peptide	93	cob_LobpulSw1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Non-specific	214440	2	91	1.82038e-30	109.872	MTH00156	CYTB	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	140	orf140_LobpulSw1_feature_4_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Superfamily	355698	1	97	8.60299e-20	83.5515	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	120	orf120_LobpulSw1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Superfamily	355698	2	88	8.85304e-05	40.024	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	87	orf87_LobpulSw1_feature_10_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Superfamily	355698	28	72	0.00572679	33.8608	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	813	nad4_LobpulSw1_feature_2_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	235622	33	487	9.45015e-123	378.391	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	48	atp8_LobpulSw1_feature_4_from_C_8, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Non-specific	283561	1	48	1.29723e-08	44.7046	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	74	atp9_LobpulSw1_feature_4_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	349422	6	70	4.50861e-20	75.2387	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_47	Peptide	332	orf332_LobpulSw1_feature_2_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	77	153	3.33695e-06	44.9199	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	267	cox1_LobpulSw1_feature_4_from_C_12, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	350997	1	130	1.23078e-55	185.764	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_48	Generic	Low-spin heme binding site	R56,R57,F86	15	3	238461
+2	Query_48	Generic	Putative proton exit pathway	R56,R57	5	2	238461
+2	Query_48	Generic	Putative water exit pathway	R56	7	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_49	Peptide	84	atp9_LobpulSw1_feature_2_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	349422	1	66	4.78956e-12	55.2084	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_50	Peptide	363	nad1_LobpulSw1_feature_4_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	333876	14	346	3.35126e-116	339.063	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	275	atp9_LobpulSw1_feature_2_from_C_16, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Superfamily	356013	140	227	1.83874e-05	43.4092	cl29137	Trypan_PARP	NC	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

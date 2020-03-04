@@ -1,0 +1,254 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Pipbet1_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Pipbet1_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	269	orf269_Pipbet1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	128542	129	145	0.00413094	33.7125	smart00246	WH2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	302	orf302_Pipbet1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	226809	69	192	0.000110799	43.475	COG4372	COG4372	NC	45
+1	Query_5	Non-specific	291739	165	275	0.00501254	37.2182	pfam15080	DUF4547	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	123	nad3_Pipbet1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334119	26	112	6.1491e-29	100.567	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	535	nad2_Pipbet1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	235603	6	473	1.12668e-80	259.753	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	251	cox2_Pipbet1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Non-specific	214402	7	248	5.51722e-113	324.011	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	658	nad5_Pipbet1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Non-specific	177253	1	616	0	643.214	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	87	nad4L_Pipbet1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	351118	7	87	2.59228e-14	61.9718	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	278	cox3_Pipbet1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	238834	32	275	5.18177e-117	335.255	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Subunit I/III interface	Q90,R93,G94,S105,F108,S112,V113,H119,S207,V208,S211,A215	12	12	238834
+1	Query_11	Specific	Subunit III/Vb interface	D174	1	1	238834
+1	Query_11	Specific	Subunit III/VIa interface	F143,A144,I145,Y162,V188,S198,E199,A200,S205,D206,S207	11	11	238834
+1	Query_11	Specific	Subunit III/VIb interface	Q135	1	1	238834
+1	Query_11	Specific	Subunit III/VIIa interface	F72,K75,D76,D79,T82,Y83,E84	7	7	238834
+1	Query_11	Specific	Phospholipid binding site	W73,F74,I77,S78,A81,H87,G98,V99,F102,F230,R237,I249,G250	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	52	atp8_Pipbet1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	283561	1	48	6.35851e-05	35.4598	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	338	nad1_Pipbet1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	333876	33	326	1.5286e-112	328.663	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	385	cob_Pipbet1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	214440	10	366	2.18685e-173	486.982	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	236	orf236_Pipbet1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	335245	47	216	1.814e-45	149.233	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	528	cox1_Pipbet1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	238833	8	512	0	852.545	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_17	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_17	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_17	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_17	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_17	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_17	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_17	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_17	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,A293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,L341,N359,A360,M362,I364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_17	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,V190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,F277,G280,I281,L285	25	25	238833
+1	Query_17	Specific	Subunit I/IV interface	L37,S40,S41,F407,K410,V411,D444,V462	8	8	238833
+1	Query_17	Specific	Subunit I/Vb interface	P265,Y269,S511	3	3	238833
+1	Query_17	Specific	Subunit I/VIa interface	I135,R213,N214,F215,N216	5	5	238833
+1	Query_17	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_17	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_17	Specific	Subunit I/VIIa interface	L114,L117	2	2	238833
+1	Query_17	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_17	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,A116,L117,I399,F472,F475	9	9	238833
+1	Query_17	Specific	Subunit I/VIIIb interface	L408,V465	2	2	238833
+1	Query_17	Specific	Dimer interface	V190,L197,F237,Y274,F277,G280,I281,L285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	300	orf300_Pipbet1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	37	131	1.23432e-21	86.9066	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	187	276	6.12124e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	321	orf321_Pipbet1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	334330	198	287	7.16942e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+1	Query_20	Specific	334330	92	158	4.16069e-05	41.8383	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	348	orf348_Pipbet1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	219	316	6.5443e-18	77.6618	pfam00961	LAGLIDADG_1	-	45
+1	Query_21	Specific	339260	107	165	0.000116694	39.8384	pfam14528	LAGLIDADG_3	-	352872
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	293	orf293_Pipbet1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	190	287	4.58881e-15	69.1874	pfam00961	LAGLIDADG_1	-	45
+1	Query_22	Specific	334330	85	163	8.60761e-06	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	247	orf247_Pipbet1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	156	247	4.22936e-12	60.7131	pfam00961	LAGLIDADG_1	-	45
+1	Query_23	Specific	334330	21	112	1.22601e-10	56.4759	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	348	orf348_Pipbet1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	101	177	3.67802e-08	50.6979	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	482	nad4_Pipbet1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	235622	31	480	2.78456e-139	409.592	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	255	atp6_Pipbet1_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	351082	13	255	1.37956e-45	152.468	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	73	atp9_Pipbet1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	349422	6	70	2.88233e-13	57.9048	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_29	Peptide	207	nad6_Pipbet1_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	354830	8	200	6.45342e-21	85.6581	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	389	orf389_Pipbet1_feature_130_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Non-specific	130082	246	342	4.07925e-05	44.2297	TIGR01009	rpsC_bact	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	868	orf867_Pipbet1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Superfamily	355698	304	729	2.57313e-58	206.43	cl28058	DNA_pol_B_2	-	-
+1	Query_34	Superfamily	353046	712	794	0.000237342	44.2369	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_34	Generic	active site	D740	8	1	99912
+1	Query_34	Generic	metal-binding site 	D738,D740,S741	3	3	99912
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_38	Peptide	624	orf623_Pipbet1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Superfamily	355698	304	622	4.6121e-40	152.117	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	868	orf867_Pipbet1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Superfamily	355698	304	729	2.57313e-58	206.43	cl28058	DNA_pol_B_2	-	-
+2	Query_39	Superfamily	353046	712	794	0.000237342	44.2369	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+2	Query_39	Generic	active site	D740	8	1	99912
+2	Query_39	Generic	metal-binding site 	D738,D740,S741	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	868	orf867_Pipbet1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Superfamily	355698	304	729	2.57313e-58	206.43	cl28058	DNA_pol_B_2	-	-
+2	Query_42	Superfamily	353046	712	794	0.000237342	44.2369	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+2	Query_42	Generic	active site	D740	8	1	99912
+2	Query_42	Generic	metal-binding site 	D738,D740,S741	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	868	orf867_Pipbet1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	355698	304	729	2.57313e-58	206.43	cl28058	DNA_pol_B_2	-	-
+2	Query_43	Superfamily	353046	712	794	0.000237342	44.2369	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+2	Query_43	Generic	active site	D740	8	1	99912
+2	Query_43	Generic	metal-binding site 	D738,D740,S741	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_44	Peptide	440	orf439_Pipbet1_feature_4_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Superfamily	355698	304	440	3.3979e-10	61.5952	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	868	orf867_Pipbet1_feature_2_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Superfamily	355698	304	729	2.57313e-58	206.43	cl28058	DNA_pol_B_2	-	-
+2	Query_45	Superfamily	353046	712	794	0.000237342	44.2369	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+2	Query_45	Generic	active site	D740	8	1	99912
+2	Query_45	Generic	metal-binding site 	D738,D740,S741	3	3	99912
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

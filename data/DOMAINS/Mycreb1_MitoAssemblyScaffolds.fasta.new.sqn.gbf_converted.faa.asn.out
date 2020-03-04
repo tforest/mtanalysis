@@ -1,0 +1,280 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mycreb1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mycreb1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	50	atp9_Mycreb1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	349422	6	43	0.000581974	33.252	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_3	Peptide	53	atp8_Mycreb1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	283561	1	48	4.17461e-05	35.845	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	743	nad5_Mycreb1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	235836	10	680	0	575.184	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	155	orf155_Mycreb1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	335245	1	136	4.00869e-32	112.254	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	454	orf454_Mycreb1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	320	423	2.89254e-29	110.019	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	161	262	4.90433e-26	101.159	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	90	nad4L_Mycreb1_feature_35_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	351118	13	89	5.78673e-13	58.505	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	271	cox3_Mycreb1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	294143	15	269	4.35553e-106	308.185	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+1	Query_8	Specific	Subunit I/III interface	R83,S86,G87,S98,F101,S105,V106,H112,S200,V201,T204,A208	12	12	238834
+1	Query_8	Specific	Subunit III/Vb interface	T167	1	1	238834
+1	Query_8	Specific	Subunit III/VIa interface	F136,G137,L138,L155,L181,G191,E192,A193,S198,D199,S200	11	11	238834
+1	Query_8	Specific	Subunit III/VIb interface	F128	1	1	238834
+1	Query_8	Specific	Subunit III/VIIa interface	F65,R68,D69,T72,T75,F76,L77	7	7	238834
+1	Query_8	Specific	Phospholipid binding site	W66,F67,I70,V71,S74,H80,G91,V92,F95,F223,R230,V242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	456	cox1_Mycreb1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	238833	6	403	0	719.651	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Binuclear center (heme a3/CuB)	H154,H203,H204,H289	4	4	238833
+1	Query_11	Specific	K-pathway	H154,Y158,S169,H203,H204,T229,K232	7	7	238833
+1	Query_11	Specific	Electron transfer pathway	F290,R351,R352	3	3	238833
+1	Query_11	Specific	Putative proton exit pathway	H204,H281,D282,R351,R352	5	5	238833
+1	Query_11	Specific	Putative water exit pathway	D141,Q146,H147,D277,H281,D282,R351	7	7	238833
+1	Query_11	Specific	Subunit I/II interface	D141,K178,F181,G182,T207,I208,G209,V212,R215,M223,I231,F234,Y241,G242,G243,I255,N273,A274,I276,I278,A279,V280,H281,D282,L346,A347,R351,R352,I353,G362,W363	32	31	238833
+1	Query_11	Specific	Subunit I/III interface	F8,R10,W17,D58,F62,S80,N84,V104,I111,P114,M122,T131,S132,F133,G138,G139,D141,F151,Y188,F191,G194,I195,L199	25	23	238833
+1	Query_11	Specific	Subunit I/VIa interface	I49,R127,N128,F129,N130	5	5	238833
+1	Query_11	Specific	Subunit I/VIb interface	G209	1	1	238833
+1	Query_11	Specific	Subunit I/VIc interface	G242	1	1	238833
+1	Query_11	Specific	Subunit I/VIIa interface	L28,L31	2	2	238833
+1	Query_11	Specific	Subunit I/VIIb interface	D358,G362	2	2	238833
+1	Query_11	Specific	Subunit I/VIIIb interface	W322,I379	2	2	238833
+1	Query_11	Specific	Dimer interface	V104,I111,F151,Y188,F191,G194,I195,L199	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	262	orf262_Mycreb1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	273636	53	260	2.24049e-31	115.176	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	308	orf308_Mycreb1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	62	160	2.10327e-11	59.5575	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	432	orf432_Mycreb1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	334330	301	399	4.15054e-15	70.7282	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	172	231	0.000106002	41.0679	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	282	orf282_Mycreb1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	159	254	5.1043e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	45	134	1.69629e-07	48.3867	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	444	orf445_Mycreb1_feature_62_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	279	404	2.90457e-14	68.0318	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	394	orf395_Mycreb1_feature_64_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	209	328	1.25444e-14	69.1874	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	68	153	1.84964e-09	54.5499	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	418	orf418_Mycreb1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	350997	11	73	1.59564e-27	113.732	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_18	Specific	198392	147	228	1.16626e-18	79.9624	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_18	Non-specific	273636	146	312	9.80146e-10	58.1661	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_18	Generic	Low-spin heme binding site	S35,R39,F57,H64,M68,I69,V73	15	7	238461
+1	Query_18	Generic	D-pathway	Y20	9	1	238461
+1	Query_18	Specific	putative active site	Y149,Y159,G161,R169,Y173,E218	7	6	198392
+1	Query_18	Specific	putative metal binding site	E218	1	1	198392
+1	Query_18	Specific	GIY-YIG motif/motif A	G147,V148,Y149,Y159,V160,G161	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	401	cob_Mycreb1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	214440	13	367	4.95189e-170	479.278	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	180	orf180_Mycreb1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	198392	35	122	6.24072e-24	89.5924	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_21	Specific	putative active site	Y38,Y49,G51,R59,Y63,E108,N120	7	7	198392
+1	Query_21	Specific	putative metal binding site	E108	1	1	198392
+1	Query_21	Specific	GIY-YIG motif/motif A	G36,V37,Y38,Y49,I50,G51	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	164	orf164_Mycreb1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334330	54	142	9.16099e-05	39.5271	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	206	orf206_Mycreb1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	109	202	0.000315951	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	512	orf512_Mycreb1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Non-specific	273636	275	491	4.73515e-34	127.502	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	416	orf416_Mycreb1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	334330	31	123	1.42011e-18	80.3582	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	156	nad3_Mycreb1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334119	25	118	4.69124e-25	91.7078	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	744	nad2_Mycreb1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	235603	206	657	9.00088e-75	249.738	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	411	orf411_Mycreb1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	335245	224	393	2.25047e-52	172.345	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	374	atp6_Mycreb1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	273458	141	371	7.22854e-50	166.998	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	564	nad4_Mycreb1_feature_108_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	235622	21	555	1.99002e-128	384.939	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_31	Peptide	469	orf469_Mycreb1_feature_112_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	334330	335	439	5.65182e-24	95.7662	pfam00961	LAGLIDADG_1	-	45
+2	Query_31	Specific	334330	166	264	2.41591e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	241	orf240_Mycreb1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Superfamily	353046	39	127	2.05253e-05	44.6221	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+2	Query_36	Generic	active site	D71	8	1	99912
+2	Query_36	Generic	metal-binding site 	D69,D71,S72	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	203	orf203_Mycreb1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	335245	8	184	4.62107e-40	134.211	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	360	orf360_Mycreb1_feature_129_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	334330	43	144	9.67106e-16	71.8838	pfam00961	LAGLIDADG_1	-	45
+2	Query_38	Specific	334330	218	310	2.51744e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	390	orf390_Mycreb1_feature_133_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Non-specific	273636	154	379	6.04494e-07	49.6917	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	235	cox2_Mycreb1_feature_135_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Non-specific	214402	14	229	5.77745e-97	282.794	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	256	orf256_Mycreb1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	335245	66	238	6.38843e-41	138.063	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	663	orf663_Mycreb1_feature_146_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	275163	24	128	0.000246671	43.6867	TIGR04370	glyco_rpt_poly	C	45
+2	Query_44	Specific	310328	599	643	0.00323409	36.3632	pfam05647	Epiglycanin_TR	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	331	nad1_Mycreb1_feature_148_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	333876	13	319	2.75161e-118	343.301	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	574	orf574_Mycreb1_feature_152_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	117	208	1.2146e-12	63.7946	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	274	398	7.07912e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Non-specific	273636	515	555	0.00205522	39.6766	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	247	orf247_Mycreb1_feature_156_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Non-specific	273636	36	240	8.06634e-28	105.546	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	207	nad6_Mycreb1_feature_183_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Superfamily	354830	7	80	3.83768e-14	67.3333	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

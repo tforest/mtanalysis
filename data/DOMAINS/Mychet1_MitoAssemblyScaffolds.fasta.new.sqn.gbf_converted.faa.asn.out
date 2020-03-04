@@ -1,0 +1,135 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mychet1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mychet1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	250	cox2_Mychet1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	214438	18	247	4.05532e-108	310.992	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	417	nad3_Mychet1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334119	19	112	3.40315e-20	84.389	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	562	nad2_Mychet1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	235603	124	487	9.8705e-82	263.22	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	224	nad6_Mychet1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	354830	25	218	1.16165e-24	95.8381	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	269	cox3_Mychet1_feature_56_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	278911	12	269	5.47127e-128	363.269	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_7	Specific	Subunit I/III interface	A82,K85,G86,S97,L100,A104,I105,H111,G199,A200,A203,F207	12	12	238834
+1	Query_7	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_7	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,N190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_7	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_7	Specific	Subunit III/VIIa interface	F64,R67,D68,S71,T74,F75,L76	7	7	238834
+1	Query_7	Specific	Phospholipid binding site	W65,F66,V69,I70,G73,H79,G90,V91,F94,F222,R229,V241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_9	Peptide	262	atp6_Mychet1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	273458	15	259	5.05965e-52	168.924	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	55	atp8_Mychet1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	283561	1	48	8.73572e-10	47.7862	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	524	nad4_Mychet1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	235622	73	524	1.66317e-130	388.791	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	377	nad1_Mychet1_feature_72_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	333876	25	360	3.53824e-111	326.737	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	729	cox1_Mychet1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	238833	1	495	0	874.501	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_13	Specific	Binuclear center (heme a3/CuB)	H224,H273,H274,H359	4	4	238833
+1	Query_13	Specific	Low-spin heme (heme a) binding site	H45,H361,S365,T407,S444	5	5	238833
+1	Query_13	Specific	D-pathway	Y2,N64,D75,N82,S85,S140,S141,N147,T151	9	9	238833
+1	Query_13	Specific	K-pathway	H224,Y228,S239,H273,H274,T299,K302	7	7	238833
+1	Query_13	Specific	Electron transfer pathway	F360,R421,R422	3	3	238833
+1	Query_13	Specific	Putative proton exit pathway	H274,H351,D352,R421,R422	5	5	238833
+1	Query_13	Specific	Putative water exit pathway	D211,Q216,H217,D347,H351,D352,R421	7	7	238833
+1	Query_13	Specific	Subunit I/II interface	N39,D211,K248,F251,G252,T277,V278,G279,V282,R285,L293,I301,F304,Y311,G312,G313,L325,N343,A344,L346,I348,A349,F350,H351,D352,L416,Q417,R421,R422,I423,G432,W433	32	32	238833
+1	Query_13	Specific	Subunit I/III interface	P74,F78,R80,W87,D128,F132,T150,N154,I174,L181,P184,M192,T201,S202,F203,G208,G209,D211,F221,Y258,M261,G264,I265,I269	25	24	238833
+1	Query_13	Specific	Subunit I/IV interface	M22,S25,G26,L391,K394,V395,D428,V446	8	8	238833
+1	Query_13	Specific	Subunit I/Vb interface	S249,Y253,A494	3	3	238833
+1	Query_13	Specific	Subunit I/VIa interface	I119,R197,N198,F199,N200	5	5	238833
+1	Query_13	Specific	Subunit I/VIb interface	G279	1	1	238833
+1	Query_13	Specific	Subunit I/VIc interface	G312	1	1	238833
+1	Query_13	Specific	Subunit I/VIIa interface	F98,C101	2	2	238833
+1	Query_13	Specific	Subunit I/VIIb interface	D428,G432	2	2	238833
+1	Query_13	Specific	Subunit I/VIIc interface	F8,L12,A15,L19,A100,C101,I383,Y456,L459	9	9	238833
+1	Query_13	Specific	Subunit I/VIIIb interface	L392,G449	2	2	238833
+1	Query_13	Specific	Dimer interface	I174,L181,F221,Y258,M261,G264,I265,I269	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	390	cob_Mychet1_feature_78_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	214440	10	368	0	509.324	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	683	nad5_Mychet1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	214400	1	642	0	591.281	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	436	orf436_Mychet1_feature_84_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	315	405	7.14527e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	207	274	0.000220157	39.9123	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	89	nad4L_Mychet1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	351118	3	86	1.60366e-16	67.7497	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

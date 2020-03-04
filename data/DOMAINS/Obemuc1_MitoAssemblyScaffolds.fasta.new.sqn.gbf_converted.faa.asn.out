@@ -1,0 +1,193 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Obemuc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Obemuc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_7	Peptide	298	cox2_Obemuc1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	214402	7	235	9.37705e-90	267.001	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	206	atp6_Obemuc1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	351082	8	205	2.88899e-25	97.662	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	305	nad1_Obemuc1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	333876	5	292	4.18281e-76	234.674	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	244	cox3_Obemuc1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	294143	7	244	1.70975e-89	264.83	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+1	Query_11	Specific	Subunit I/III interface	T75,K78,G79,S90,M93,S97,F98,H104,S192,V193,T196,F200	12	12	238834
+1	Query_11	Specific	Subunit III/Vb interface	T159	1	1	238834
+1	Query_11	Specific	Subunit III/VIa interface	W128,S129,L130,L147,G173,V183,Y184,C185,A190,D191,S192	11	11	238834
+1	Query_11	Specific	Subunit III/VIb interface	V120	1	1	238834
+1	Query_11	Specific	Subunit III/VIIa interface	L58,R61,D62,R65,K68,G69	7	6	238834
+1	Query_11	Specific	Phospholipid binding site	W59,W60,V63,V64,A67,H72,G83,F84,F87,F215,R222,L234,G235	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	515	cox1_Obemuc1_feature_39_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	238833	12	493	0	685.368	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_14	Specific	Binuclear center (heme a3/CuB)	F243,N293,I294,H379	4	4	238833
+1	Query_14	Specific	Low-spin heme (heme a) binding site	H65,H381,S385,V427,T464	5	5	238833
+1	Query_14	Specific	D-pathway	Y21,N84,D95,N102,S105,S159,S160,N166,T170	9	9	238833
+1	Query_14	Specific	K-pathway	F243,Y248,S259,N293,I294,T319,K322	7	7	238833
+1	Query_14	Specific	Electron transfer pathway	F380,R441,R442	3	3	238833
+1	Query_14	Specific	Putative proton exit pathway	I294,H371,D372,R441,R442	5	5	238833
+1	Query_14	Specific	Putative water exit pathway	D230,Q235,H236,D367,H371,D372,R441	7	7	238833
+1	Query_14	Specific	Subunit I/II interface	N59,D230,K268,F271,G272,G297,I298,P299,V302,R305,M313,I321,F324,Y331,G332,G333,L345,N363,S364,L366,V368,A369,L370,H371,D372,L436,N437,R441,R442,I443,G452,W453	32	32	238833
+1	Query_14	Specific	Subunit I/III interface	T12,P94,F98,R100,W107,D147,L151,T169,N173,*193,L200,P203,M211,T220,G221,F222,S227,G228,D230,F240,Y278,L281,G284,L285,I289	25	25	238833
+1	Query_14	Specific	Subunit I/IV interface	*41,S44,S45,K411,Q414,V415,D448,L466	8	8	238833
+1	Query_14	Specific	Subunit I/VIa interface	N138,R216,N217,L218,N219	5	5	238833
+1	Query_14	Specific	Subunit I/VIb interface	P299	1	1	238833
+1	Query_14	Specific	Subunit I/VIc interface	G332	1	1	238833
+1	Query_14	Specific	Subunit I/VIIa interface	T118,F121	2	2	238833
+1	Query_14	Specific	Subunit I/VIIb interface	D448,G452	2	2	238833
+1	Query_14	Specific	Subunit I/VIIc interface	L27,I31,A34,L38,L120,F121,I403,A476,I479	9	9	238833
+1	Query_14	Specific	Subunit I/VIIIb interface	F412,L469	2	2	238833
+1	Query_14	Specific	Dimer interface	*193,L200,F240,Y278,L281,G284,L285,I289	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_17	Peptide	340	orf340_Obemuc1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	189	292	8.30433e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	68	153	0.000641875	38.3715	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	264	orf264_Obemuc1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	335245	68	239	9.18593e-51	163.871	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	273	orf273_Obemuc1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334330	26	121	6.39095e-13	63.0242	pfam00961	LAGLIDADG_1	-	45
+1	Query_21	Specific	334330	160	245	3.36452e-09	53.0091	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	133	nad2_Obemuc1_feature_88_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	356474	1	43	1.3519e-12	62.9161	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	645	nad5_Obemuc1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	177253	1	629	3.93446e-155	460.629	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	645	nad5_Obemuc1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Non-specific	177253	1	629	3.93446e-155	460.629	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	382	cob_Obemuc1_feature_21_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	214440	10	368	1.96776e-143	411.098	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	433	orf433_Obemuc1_feature_27_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Specific	334330	37	126	6.0928e-21	86.9066	pfam00961	LAGLIDADG_1	-	45
+1	Query_32	Specific	334330	176	295	8.12587e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	136	orf136_Obemuc1_feature_31_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Non-specific	273636	62	122	4.78418e-10	55.0845	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	126	orf126_Obemuc1_feature_33_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	335245	4	90	4.76052e-15	67.1859	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	159	orf159_Obemuc1_feature_37_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	335245	1	68	4.35527e-14	65.6451	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	337	nad4_Obemuc1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_45	Specific	235622	1	337	1.43913e-104	315.218	PRK05846	PRK05846	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	472	nad2_Obemuc1_feature_15_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_46	Superfamily	356474	129	459	2.34163e-49	175.394	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	93	orf94_Obemuc1_feature_32_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_47	Non-specific	273636	5	61	1.74507e-10	54.6993	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	101	atp9_Obemuc1_feature_34_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_48	Specific	349422	6	60	6.14988e-22	81.0167	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_51	Peptide	107	orf108_Obemuc1_feature_40_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	334330	2	76	5.16548e-15	64.565	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	188	orf189_Obemuc1_feature_42_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Specific	334330	15	111	4.66788e-10	54.1647	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	132	orf132_Obemuc1_feature_46_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	335245	1	127	1.74408e-29	104.55	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	93	cox3_Obemuc1_feature_50_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Superfamily	294143	25	90	1.45926e-17	73.7041	cl00211	Heme_Cu_Oxidase_III_like	C	-
+ENDDOMAINS
+SITES
+2	Query_56	Generic	Subunit I/III interface	K65,G66,W80,S84,I85	9	5	238227
+ENDSITES
+ENDQUERY
+ENDSESSION	2
+ENDDATA

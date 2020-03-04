@@ -1,0 +1,335 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mersum1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mersum1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	344	cox1_Mersum1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Superfamily	350997	8	273	1.26361e-150	432.677	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_1	Generic	Binuclear center (active site)	H240	4	1	238461
+1	Query_1	Generic	Low-spin heme binding site	S32,R36,F54,H61,M65,I66,V70,W126	15	8	238461
+1	Query_1	Generic	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238461
+1	Query_1	Generic	K-pathway	H240,Y244,S255	7	3	238461
+1	Query_1	Generic	Putative water exit pathway	D227,Q232,H233	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	340	orf340_1_Mersum1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	214	308	1.22975e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	334330	106	169	0.000994772	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	311	orf311_1_Mersum1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	84	164	8.65331e-07	46.4607	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	190	283	0.000106163	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	359	orf359_1_Mersum1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	237	330	4.55153e-15	69.9578	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	59	144	7.76447e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	346	orf346_Mersum1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	197	302	1.10892e-17	77.2766	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	75	172	1.66043e-13	65.7206	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	363	orf363_Mersum1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	92	186	2.15355e-21	87.2918	pfam00961	LAGLIDADG_1	-	45
+1	Query_6	Specific	334330	242	334	0.000175395	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	324	orf324_Mersum1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	334330	164	281	3.86019e-11	58.7871	pfam00961	LAGLIDADG_1	-	45
+1	Query_7	Specific	334330	45	130	0.000391503	39.1419	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	342	orf342_Mersum1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	334330	183	299	1.39427e-14	68.417	pfam00961	LAGLIDADG_1	-	45
+1	Query_8	Specific	334330	47	136	6.15656e-08	49.9275	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	894	orf893_Mersum1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	281206	314	761	5.20952e-92	298.108	pfam03175	DNA_pol_B_2	-	355698
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	697	orf697_Mersum1_feature_49_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	355471	124	692	2.87298e-72	249.94	cl25973	RNA_pol	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	776	orf776_Mersum1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	331416	15	211	0.00512718	39.9635	cl26595	DUF2070	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	384	cob_Mersum1_feature_59_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	214440	13	366	4.72676e-159	450.773	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	256	orf256_Mersum1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	335245	63	215	1.26568e-50	163.101	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	297	orf297_Mersum1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	54	130	4.16861e-06	44.5347	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	520	orf520_Mersum1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	335245	336	481	2.25764e-13	67.9563	pfam03161	LAGLIDADG_2	-	45
+1	Query_19	Specific	334330	43	148	0.000220325	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	303	orf303_Mersum1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	273636	84	297	2.56003e-24	97.4565	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	256	orf256_Mersum1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	335245	58	236	3.27517e-38	131.129	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	251	cox2_Mersum1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Non-specific	214402	7	248	2.12913e-113	325.166	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	337	nad1_Mersum1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	333876	31	325	2.05189e-116	338.678	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	673	nad5_Mersum1_feature_132_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Non-specific	177253	1	616	0	629.732	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_35	Peptide	132	orf132_Mersum1_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	335245	25	115	9.00859e-14	64.1043	pfam03161	LAGLIDADG_2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	340	orf340_Mersum1_feature_144_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	334330	47	149	2.2341e-23	92.2994	pfam00961	LAGLIDADG_1	-	45
+2	Query_36	Specific	334330	207	306	4.75733e-23	91.529	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	273	orf273_Mersum1_feature_148_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	335245	76	254	9.67513e-48	156.167	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	169	orf169_Mersum1_feature_152_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Specific	334330	35	135	3.86863e-30	105.396	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	172	orf172_Mersum1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	335245	1	158	2.05122e-43	141.529	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	192	nad4L_Mersum1_feature_159_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Superfamily	351118	12	64	6.22877e-15	66.9793	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	170	orf170_Mersum1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	335245	6	152	3.41331e-34	118.032	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	258	cox3_Mersum1_feature_163_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	214439	11	252	5.42497e-111	319.819	MTH00155	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_43	Specific	Subunit I/III interface	E84,K87,G88,S99,F102,S106,I107,H113,S201,V202,S205,C209	12	12	238834
+2	Query_43	Specific	Subunit III/Vb interface	G168	1	1	238834
+2	Query_43	Specific	Subunit III/VIa interface	F137,A138,I139,Y156,I182,S192,E193,A194,S199,D200,S201	11	11	238834
+2	Query_43	Specific	Subunit III/VIb interface	Q129	1	1	238834
+2	Query_43	Specific	Subunit III/VIIa interface	L66,R69,D70,T73,T76,Y77,L78	7	7	238834
+2	Query_43	Specific	Phospholipid binding site	W67,F68,I71,I72,G75,H81,G92,V93,F96,F224,R231,L243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_44	Peptide	127	nad3_Mersum1_feature_165_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	334119	26	112	4.89031e-30	103.264	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	655	nad2_Mersum1_feature_167_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Superfamily	356474	142	534	7.01265e-61	210.448	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	505	rps3_Mersum1_feature_169_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Non-specific	283074	314	407	0.00155876	40.6579	pfam05316	VAR1	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	228	orf227_Mersum1_feature_173_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Superfamily	355698	90	205	9.8269e-08	51.58	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	73	atp9_Mersum1_feature_175_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	349422	6	70	5.28418e-14	59.8307	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_50	Peptide	261	atp6_Mersum1_feature_179_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Superfamily	351082	19	261	9.9127e-46	153.239	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	177	nad6_Mersum1_feature_181_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Superfamily	354830	3	174	4.66023e-14	66.7833	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	323	cox1_Mersum1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Superfamily	350997	1	307	0	519.347	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_52	Generic	Binuclear center (active site)	H33,H84,H85,H170	4	4	238461
+2	Query_52	Generic	Low-spin heme binding site	Y165,H172,L175,S176,R232,R233,F262	15	7	238461
+2	Query_52	Generic	K-pathway	H33,Y37,S50,H84,H85,T110,K113	7	7	238461
+2	Query_52	Generic	Putative proton exit pathway	H85,H162,D163,R232,R233	5	5	238461
+2	Query_52	Generic	Putative water exit pathway	D20,Q25,H26,D158,H162,D163,R232	7	7	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_53	Peptide	359	orf359_2_Mersum1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	334330	237	330	4.55153e-15	69.9578	pfam00961	LAGLIDADG_1	-	45
+2	Query_53	Specific	334330	59	144	7.76447e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	311	orf311_2_Mersum1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	334330	84	164	8.65331e-07	46.4607	pfam00961	LAGLIDADG_1	-	45
+2	Query_54	Specific	334330	190	283	0.000106163	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	339	orf339_Mersum1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	334330	213	307	1.33385e-17	76.8914	pfam00961	LAGLIDADG_1	-	45
+2	Query_55	Specific	334330	105	168	0.000991379	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	179	orf179_Mersum1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	57	152	7.93554e-21	81.899	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	210	orf210_Mersum1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	334330	145	209	4.66063e-10	54.5499	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	259	orf259_Mersum1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	335245	76	240	4.52978e-53	169.649	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	311	orf311_3_Mersum1_feature_30_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Non-specific	273636	101	310	1.19098e-30	114.79	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	483	nad4_Mersum1_feature_33_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	235622	1	480	2.70558e-152	442.719	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	247	orf247_Mersum1_feature_37_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	335245	64	227	7.87395e-54	170.805	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	186	orf186_Mersum1_feature_46_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	338751	45	100	0.00675374	34.9577	pfam13452	MaoC_dehydrat_N	C	351126
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	52	atp8_Mersum1_feature_68_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Non-specific	283561	1	48	9.65809e-06	37.3858	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	249	orf250_Mersum1_feature_76_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Non-specific	273636	41	244	2.86864e-24	96.3009	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	203	nad6_Mersum1_feature_80_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Superfamily	354830	1	195	5.64932e-21	85.4377	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	261	atp6_Mersum1_feature_82_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Superfamily	351082	19	261	9.9127e-46	153.239	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	73	atp9_Mersum1_feature_86_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Specific	349422	6	70	5.28418e-14	59.8307	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_72	Peptide	228	orf227_Mersum1_feature_88_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Superfamily	355698	90	205	9.8269e-08	51.58	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

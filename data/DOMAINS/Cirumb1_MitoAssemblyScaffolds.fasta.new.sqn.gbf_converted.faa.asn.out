@@ -1,0 +1,370 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Cirumb1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Cirumb1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	451	cox1_Cirumb1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238833	2	435	0	742.378	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_1	Specific	Binuclear center (heme a3/CuB)	H163,H212,H213,H298	4	4	238833
+1	Query_1	Specific	D-pathway	N2,D13,N20,S23,S79,S80,N86,T90	9	8	238833
+1	Query_1	Specific	K-pathway	H163,Y167,S178,H212,H213,T238,K241	7	7	238833
+1	Query_1	Specific	Electron transfer pathway	F299,R360,R361	3	3	238833
+1	Query_1	Specific	Putative proton exit pathway	H213,H290,D291,R360,R361	5	5	238833
+1	Query_1	Specific	Putative water exit pathway	D150,Q155,H156,D286,H290,D291,R360	7	7	238833
+1	Query_1	Specific	Subunit I/II interface	D150,K187,F190,G191,T216,V217,G218,V221,R224,M232,I240,F243,Y250,G251,G252,L264,N282,A283,M285,V287,A288,L289,H290,D291,L355,A356,R360,R361,I362,G371,W372	32	31	238833
+1	Query_1	Specific	Subunit I/III interface	P12,F16,R18,W25,D67,F71,T89,N93,I113,L120,P123,M131,T140,S141,F142,G147,G148,D150,F160,Y197,L200,G203,V204,I208	25	24	238833
+1	Query_1	Specific	Subunit I/Vb interface	P188,Y192,S434	3	3	238833
+1	Query_1	Specific	Subunit I/VIa interface	I58,R136,N137,F138,N139	5	5	238833
+1	Query_1	Specific	Subunit I/VIb interface	G218	1	1	238833
+1	Query_1	Specific	Subunit I/VIc interface	G251	1	1	238833
+1	Query_1	Specific	Subunit I/VIIa interface	A36,F39	2	2	238833
+1	Query_1	Specific	Subunit I/VIIb interface	D367,G371	2	2	238833
+1	Query_1	Specific	Subunit I/VIIIb interface	L331,L388	2	2	238833
+1	Query_1	Specific	Dimer interface	I113,L120,F160,Y197,L200,G203,V204,I208	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	319	orf319_1_Cirumb1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	167	277	5.78802e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+1	Query_2	Specific	334330	45	141	4.44374e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	359	orf359_1_Cirumb1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	83	176	7.46056e-24	93.8402	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	232	321	0.00634952	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	360	orf360_1_Cirumb1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	212	317	7.76339e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+1	Query_4	Specific	334330	90	187	2.27176e-10	56.8611	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	355	orf355_2_Cirumb1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	230	313	8.98948e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	124	183	0.00110855	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	271	orf271_1_Cirumb1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	273636	9	180	4.9861e-30	112.094	TIGR01453	grpIintron_endo	-	45
+1	Query_6	Specific	197761	214	264	4.29947e-08	48.333	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	303	orf303_1_Cirumb1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	273636	46	290	9.70602e-41	140.599	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	552	orf552_Cirumb1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	311769	238	530	0.00220252	40.5391	pfam07964	Red1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	124	nad3_Cirumb1_feature_45_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334119	29	112	1.06539e-37	122.524	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	489	nad2_Cirumb1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235603	6	477	6.14217e-74	240.878	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	325	nad1_Cirumb1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	333876	7	304	5.44816e-126	362.561	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	248	orf248_Cirumb1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	273636	47	242	9.56904e-20	83.9745	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	174	orf174_Cirumb1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	46	145	1.31827e-24	91.529	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	249	orf250_Cirumb1_feature_93_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	273636	52	245	8.50082e-27	102.849	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	319	orf320_Cirumb1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	353929	90	122	0.000122422	40.2932	cl15257	GIY-YIG_SF	C	-
+1	Query_28	Non-specific	273636	98	279	0.000204619	41.6026	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_28	Generic	active site	Y101,Y112,G114,R122	6	4	198380
+1	Query_28	Generic	catalytic site	R122	2	1	198380
+1	Query_28	Generic	GIY-YIG motif/motif A	G99,V100,Y101,Y112,I113,G114	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	270	cox3_Cirumb1_feature_126_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	278911	13	269	1.26408e-130	370.202	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_30	Specific	Subunit I/III interface	A83,K86,G87,S98,F101,S105,I106,H112,G200,V201,S204,M208	12	12	238834
+1	Query_30	Specific	Subunit III/Vb interface	G167	1	1	238834
+1	Query_30	Specific	Subunit III/VIa interface	W136,E137,I138,Y155,I181,Y191,N192,A193,S198,D199,G200	11	11	238834
+1	Query_30	Specific	Subunit III/VIb interface	A128	1	1	238834
+1	Query_30	Specific	Subunit III/VIIa interface	L65,K68,D69,R72,T75,F76,Q77	7	7	238834
+1	Query_30	Specific	Phospholipid binding site	W66,F67,I70,T71,G74,H80,G91,F92,F95,F223,R230,L242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_31	Peptide	200	orf200_Cirumb1_feature_137_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Non-specific	225913	4	191	8.71867e-29	111.758	COG3378	COG3378	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	391	cob_Cirumb1_feature_147_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Non-specific	214425	14	380	0	522.154	MTH00119	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	179	orf179_Cirumb1_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	335245	9	159	9.45463e-46	147.693	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	321	orf321_Cirumb1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Specific	334330	202	287	2.06984e-14	68.0318	pfam00961	LAGLIDADG_1	-	45
+1	Query_36	Specific	334330	96	176	0.00133369	37.6011	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	332	orf332_Cirumb1_feature_163_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	334330	88	182	2.52788e-24	94.9958	pfam00961	LAGLIDADG_1	-	45
+1	Query_37	Specific	334330	220	316	0.00400797	36.0603	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_38	Peptide	292	orf292_Cirumb1_feature_169_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Non-specific	273636	62	287	1.75462e-33	121.724	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	213	orf213_Cirumb1_feature_176_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Non-specific	310273	35	97	0.00402014	37.4174	pfam05557	MAD	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	255	cox2_Cirumb1_feature_178_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Non-specific	177126	16	255	1.21062e-120	343.301	MTH00051	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	126	orf126_Cirumb1_feature_182_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	197761	83	113	0.000270806	36.3918	smart00497	IENR1	N	299755
+2	Query_42	Non-specific	273636	45	113	0.00633329	34.669	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	142	orf142_Cirumb1_feature_184_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Superfamily	299755	48	84	0.00798195	32.0992	cl11508	NUMOD1	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	259	atp6_Cirumb1_feature_187_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	273458	13	256	2.67872e-55	177.013	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	113	orf113_Cirumb1_feature_191_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Non-specific	273636	7	105	1.24476e-06	44.6842	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	166	orf166_Cirumb1_feature_193_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Superfamily	353929	78	144	4.8433e-07	45.2944	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+2	Query_46	Generic	active site	Y79,Y90,G92,R100,Y104	6	5	198380
+2	Query_46	Generic	catalytic site	R100	2	1	198380
+2	Query_46	Generic	GIY-YIG motif/motif A	I78,Y79,Y90,I91,G92	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_47	Peptide	48	atp8_Cirumb1_feature_198_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Non-specific	283561	1	47	5.3586e-05	35.4598	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	475	nad4_Cirumb1_feature_200_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Non-specific	214462	1	464	0	514.986	MTH00217	ND4	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	102	nad4L_Cirumb1_feature_219_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	223785	3	79	1.47481e-13	60.6972	COG0713	NuoK	-	351118
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	193	orf194_Cirumb1_feature_221_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	335245	77	186	1.26957e-18	78.3567	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	657	nad5_Cirumb1_feature_223_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Non-specific	177253	1	630	0	696.371	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_54	Peptide	185	orf185_Cirumb1_feature_231_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_54	Specific	335245	63	184	7.22334e-30	107.247	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	126	orf126_Cirumb1_feature_233_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	335245	14	126	1.57758e-20	81.4383	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	529	cox1_Cirumb1_feature_236_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	238833	8	513	0	859.478	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+2	Query_56	Specific	Binuclear center (heme a3/CuB)	H241,H290,H291,H376	4	4	238833
+2	Query_56	Specific	Low-spin heme (heme a) binding site	H61,H378,S382,T424,S461	5	5	238833
+2	Query_56	Specific	D-pathway	Y17,N80,D91,N98,S101,S157,S158,N164,T168	9	9	238833
+2	Query_56	Specific	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238833
+2	Query_56	Specific	Electron transfer pathway	F377,R438,R439	3	3	238833
+2	Query_56	Specific	Putative proton exit pathway	H291,H368,D369,R438,R439	5	5	238833
+2	Query_56	Specific	Putative water exit pathway	D228,Q233,H234,D364,H368,D369,R438	7	7	238833
+2	Query_56	Specific	Subunit I/II interface	N55,D228,K265,F268,G269,T294,V295,G296,V299,R302,M310,I318,F321,Y328,G329,G330,L342,N360,A361,M363,V365,A366,L367,H368,D369,L433,A434,R438,R439,I440,G449,W450	32	32	238833
+2	Query_56	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D145,F149,T167,N171,I191,L198,P201,M209,T218,S219,F220,G225,G226,D228,F238,Y275,L278,G281,V282,I286	25	25	238833
+2	Query_56	Specific	Subunit I/IV interface	L37,A40,G41,L408,Q411,I412,D445,V463	8	8	238833
+2	Query_56	Specific	Subunit I/Vb interface	P266,Y270,S512	3	3	238833
+2	Query_56	Specific	Subunit I/VIa interface	I136,R214,N215,F216,N217	5	5	238833
+2	Query_56	Specific	Subunit I/VIb interface	G296	1	1	238833
+2	Query_56	Specific	Subunit I/VIc interface	G329	1	1	238833
+2	Query_56	Specific	Subunit I/VIIa interface	A114,F117	2	2	238833
+2	Query_56	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+2	Query_56	Specific	Subunit I/VIIc interface	F23,I27,A30,L34,A116,F117,I400,Y473,L476	9	9	238833
+2	Query_56	Specific	Subunit I/VIIIb interface	L409,L466	2	2	238833
+2	Query_56	Specific	Dimer interface	I191,L198,F238,Y275,L278,G281,V282,I286	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_57	Peptide	832	orf832_Cirumb1_feature_240_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	238828	265	566	2.43385e-80	257.515	cd01651	RT_G2_intron	-	295487
+2	Query_57	Non-specific	279664	615	720	9.02561e-28	109.096	pfam01348	Intron_maturas2	C	45
+2	Query_57	Specific	238038	772	817	0.00318855	36.2956	cd00085	HNHc	N	350893
+ENDDOMAINS
+SITES
+2	Query_57	Specific	putative active site	N342,I343,K344,S345,Y346,F347,Q397,G398,Y510,D512,D513,L562,G563	13	13	238828
+2	Query_57	Specific	putative nucleic acid binding site	G398	1	1	238828
+2	Query_57	Specific	putative NTP binding site	N342,I343,K344,S345,Y346,F347,Q397,D512	8	8	238828
+2	Query_57	Specific	active site	E782,H784,H785,V786,S788,N802,R803,C809,R810,H813,H817	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_59	Peptide	319	orf319_2_Cirumb1_feature_248_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	334330	167	277	5.78802e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+2	Query_59	Specific	334330	45	141	4.44374e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	359	orf359_2_Cirumb1_feature_254_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	83	176	7.46056e-24	93.8402	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	232	321	0.00634952	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	360	orf360_2_Cirumb1_feature_258_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	334330	212	317	7.76339e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+2	Query_61	Specific	334330	90	187	2.27176e-10	56.8611	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	355	orf355_3_Cirumb1_feature_262_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	334330	230	313	8.98948e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+2	Query_62	Specific	334330	124	183	0.00110855	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	271	orf271_2_Cirumb1_feature_266_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Non-specific	273636	9	180	4.9861e-30	112.094	TIGR01453	grpIintron_endo	-	45
+2	Query_63	Specific	197761	214	264	4.29947e-08	48.333	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	303	orf303_2_Cirumb1_feature_274_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Specific	273636	46	290	9.70602e-41	140.599	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	339	cox1_Cirumb1_feature_281_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Superfamily	350997	14	323	0	534.755	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_68	Generic	Binuclear center (active site)	H51,H100,H101,H186	4	4	238461
+2	Query_68	Generic	Low-spin heme binding site	Y181,H188,L191,S192,R248,R249,F278	15	7	238461
+2	Query_68	Generic	K-pathway	H51,Y55,S66,H100,H101,T126,K129	7	7	238461
+2	Query_68	Generic	Putative proton exit pathway	H101,H178,D179,R248,R249	5	5	238461
+2	Query_68	Generic	Putative water exit pathway	D38,Q43,H44,D174,H178,D179,R248	7	7	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_69	Peptide	303	orf303_3_Cirumb1_feature_285_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Specific	273636	46	290	9.70602e-41	140.599	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	271	orf271_3_Cirumb1_feature_293_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_71	Non-specific	273636	9	180	4.9861e-30	112.094	TIGR01453	grpIintron_endo	-	45
+2	Query_71	Specific	197761	214	264	4.29947e-08	48.333	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	355	orf355_4_Cirumb1_feature_297_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_72	Specific	334330	230	313	8.98948e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+2	Query_72	Specific	334330	124	183	0.00110855	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	189	orf189_Cirumb1_feature_301_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_73	Specific	334330	41	146	9.33447e-15	66.491	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

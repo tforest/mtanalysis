@@ -1,0 +1,265 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Hyssto1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Hyssto1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_4	Peptide	324	nad1_Hyssto1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	333876	18	312	1.14374e-115	336.367	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	106	orf106_Hyssto1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	273636	1	87	2.7157e-12	60.0921	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+1	Query_5	Generic	DNA binding site	N33,P34,M35,F36,H40,T44,M48,S49,S53,K54,F55,L57,V74,K78,S83,T86	21	16	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	225	nad6_Hyssto1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	354830	8	125	9.76351e-20	82.9617	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	386	cob_Hyssto1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	214440	10	366	0	511.635	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	300	orf301_Hyssto1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	198392	156	247	2.31922e-19	80.7328	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_10	Specific	putative active site	Y159,Y170,G172,R182,H186,E232,N244	7	7	198392
+1	Query_10	Specific	putative metal binding site	E232	1	1	198392
+1	Query_10	Specific	GIY-YIG motif/motif A	G157,I158,Y159,Y170,I171,G172	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	279	orf279_Hyssto1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	198392	135	226	2.12238e-19	80.3476	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+1	Query_11	Specific	putative active site	Y138,Y149,G151,R161,H165,E211,N223	7	7	198392
+1	Query_11	Specific	putative metal binding site	E211	1	1	198392
+1	Query_11	Specific	GIY-YIG motif/motif A	G136,I137,Y138,Y149,I150,G151	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	449	orf449_Hyssto1_feature_37_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	334330	173	260	9.40444e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	54	orf54_Hyssto1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	355698	25	53	1.93094e-06	41.95	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	129	nad2_Hyssto1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	235622	4	129	2.2256e-45	153.434	PRK05846	PRK05846	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	253	cox2_Hyssto1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Specific	214438	22	251	1.65605e-105	304.444	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	375	orf375_Hyssto1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	184	357	2.65737e-44	150.389	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	73	atp9_Hyssto1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	349422	6	70	5.28418e-14	59.8307	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	537	cox1_Hyssto1_feature_119_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Specific	238833	10	498	0	868.338	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_37	Specific	Binuclear center (heme a3/CuB)	H242,H291,H292,H377	4	4	238833
+1	Query_37	Specific	Low-spin heme (heme a) binding site	H63,H379,S383,T425,S462	5	5	238833
+1	Query_37	Specific	D-pathway	Y19,N82,D93,N100,S103,S158,S159,N165,T169	9	9	238833
+1	Query_37	Specific	K-pathway	H242,Y246,S257,H291,H292,T317,K320	7	7	238833
+1	Query_37	Specific	Electron transfer pathway	F378,R439,R440	3	3	238833
+1	Query_37	Specific	Putative proton exit pathway	H292,H369,D370,R439,R440	5	5	238833
+1	Query_37	Specific	Putative water exit pathway	D229,Q234,H235,D365,H369,D370,R439	7	7	238833
+1	Query_37	Specific	Subunit I/II interface	N57,D229,K266,F269,G270,A295,V296,G297,V300,R303,M311,I319,F322,Y329,G330,G331,L343,N361,A362,L364,V366,A367,L368,H369,D370,L434,A435,R439,R440,I441,E450,W451	32	32	238833
+1	Query_37	Specific	Subunit I/III interface	T10,P92,F96,R98,W105,D146,F150,T168,N172,V192,L199,P202,M210,T219,S220,F221,G226,G227,D229,F239,Y276,F279,G282,I283,V287	25	25	238833
+1	Query_37	Specific	Subunit I/IV interface	L39,S42,A43,L409,K412,I413,D446,V464	8	8	238833
+1	Query_37	Specific	Subunit I/Vb interface	P267,Y271,M497	3	3	238833
+1	Query_37	Specific	Subunit I/VIa interface	I137,R215,N216,F217,N218	5	5	238833
+1	Query_37	Specific	Subunit I/VIb interface	G297	1	1	238833
+1	Query_37	Specific	Subunit I/VIc interface	G330	1	1	238833
+1	Query_37	Specific	Subunit I/VIIa interface	L116,L119	2	2	238833
+1	Query_37	Specific	Subunit I/VIIb interface	D446,E450	2	2	238833
+1	Query_37	Specific	Subunit I/VIIc interface	F25,I29,A32,L36,S118,L119,I401,Y474,F477	9	9	238833
+1	Query_37	Specific	Subunit I/VIIIb interface	L410,V467	2	2	238833
+1	Query_37	Specific	Dimer interface	V192,L199,F239,Y276,F279,G282,I283,V287	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_38	Peptide	298	orf298_Hyssto1_feature_123_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Specific	334330	122	218	4.77894e-21	85.3658	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	339	orf339_Hyssto1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	334330	68	162	4.97683e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+1	Query_39	Specific	334330	190	295	3.64452e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	313	orf313_Hyssto1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_40	Specific	334330	173	271	3.3208e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+1	Query_40	Specific	334330	41	130	1.66257e-05	42.9939	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	308	orf308_Hyssto1_feature_135_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Specific	334330	151	253	1.65677e-13	65.3354	pfam00961	LAGLIDADG_1	-	45
+1	Query_41	Specific	334330	40	104	0.00823387	35.2899	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	470	orf470_Hyssto1_feature_139_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_42	Specific	334330	339	444	2.45388e-12	62.639	pfam00961	LAGLIDADG_1	-	45
+1	Query_42	Specific	334330	234	296	5.55637e-05	41.8383	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	283	orf283_Hyssto1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_43	Specific	334330	38	138	9.35398e-08	49.1571	pfam00961	LAGLIDADG_1	-	45
+1	Query_43	Specific	334330	177	251	1.78049e-05	42.6087	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	492	nad4_Hyssto1_feature_148_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_44	Specific	235622	41	488	8.93025e-144	421.533	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_45	Peptide	261	orf261_Hyssto1_feature_152_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	335245	69	234	6.40651e-53	169.264	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	276	cox3_Hyssto1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	214439	18	271	4.9789e-120	343.316	MTH00155	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_47	Specific	Subunit I/III interface	E88,T91,G92,S103,F106,S110,I111,H117,S205,V206,S209,C213	12	12	238834
+2	Query_47	Specific	Subunit III/Vb interface	G172	1	1	238834
+2	Query_47	Specific	Subunit III/VIa interface	F141,A142,I143,Y160,I186,L196,E197,A198,A203,D204,S205	11	11	238834
+2	Query_47	Specific	Subunit III/VIb interface	Y133	1	1	238834
+2	Query_47	Specific	Subunit III/VIIa interface	L70,R73,D74,V77,T80,Y81,L82	7	7	238834
+2	Query_47	Specific	Phospholipid binding site	W71,F72,V75,I76,G79,H85,G96,V97,F100,F228,R235,L247,G248	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_48	Peptide	53	atp8_Hyssto1_feature_162_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Non-specific	283561	1	48	3.20956e-05	36.2302	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	185	orf186_Hyssto1_feature_168_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	334330	123	179	0.000406256	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	78	orf79_Hyssto1_feature_170_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	11	45	8.73284e-05	37.2159	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	60	nad4L_Hyssto1_feature_172_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Superfamily	351118	9	60	5.17699e-07	42.3266	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	693	nad5_Hyssto1_feature_174_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Non-specific	235836	1	653	0	639.512	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	431	orf432_Hyssto1_feature_180_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	334330	303	401	3.31225e-27	104.241	pfam00961	LAGLIDADG_1	-	45
+2	Query_55	Specific	334330	143	244	8.89064e-26	100.389	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	264	orf265_Hyssto1_feature_182_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	144	243	1.8531e-24	93.8402	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	234	orf235_Hyssto1_feature_184_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	334330	56	195	2.38981e-12	61.0983	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	261	atp6_Hyssto1_feature_196_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Superfamily	351082	13	261	4.97492e-45	151.313	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	305	orf306_Hyssto1_feature_210_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	334330	81	171	8.43545e-07	46.4607	pfam00961	LAGLIDADG_1	-	45
+2	Query_62	Specific	334330	195	297	9.69775e-06	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	127	nad3_Hyssto1_feature_212_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	334119	30	110	1.0977e-20	79.3814	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	1282	orf1281_Hyssto1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Superfamily	355471	487	1218	7.18347e-69	248.4	cl25973	RNA_pol	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	1137	orf1136_Hyssto1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Specific	281206	513	970	5.05277e-71	244.565	pfam03175	DNA_pol_B_2	-	355698
+2	Query_69	Non-specific	234767	169	321	0.00011051	46.3696	PRK00448	polC	C	45
+2	Query_69	Non-specific	235594	959	1042	0.000722346	43.5242	PRK05761	PRK05761	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

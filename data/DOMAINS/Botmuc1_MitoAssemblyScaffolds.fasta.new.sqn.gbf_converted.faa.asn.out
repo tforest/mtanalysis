@@ -1,0 +1,123 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Botmuc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Botmuc1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	502	nad4_Botmuc1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	235622	47	499	8.57907e-112	339.871	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	75	atp9_Botmuc1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Superfamily	351103	2	74	1.82643e-20	76.4266	cl00466	ATP-synt_C	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	273	cox3_Botmuc1_feature_26_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Superfamily	294143	16	270	1.17318e-90	268.895	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+1	Query_5	Specific	Subunit I/III interface	V83,K86,S87,T98,M101,A105,A106,H112,S200,V201,T204,F208	12	12	238834
+1	Query_5	Specific	Subunit III/Vb interface	S167	1	1	238834
+1	Query_5	Specific	Subunit III/VIa interface	L136,G137,L138,W155,L181,Y191,N192,S193,A198,D199,S200	11	11	238834
+1	Query_5	Specific	Subunit III/VIb interface	L128	1	1	238834
+1	Query_5	Specific	Subunit III/VIIa interface	L65,K68,D69,V72,T75,Y76,L77	7	7	238834
+1	Query_5	Specific	Phospholipid binding site	W66,L67,V70,S71,G74,H80,G91,F92,F95,M223,R230,V242,G243	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	714	nad5_Botmuc1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Non-specific	177253	1	638	4.13107e-168	496.067	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	568	nad2_Botmuc1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	356474	143	510	4.29795e-31	126.089	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	133	nad3_Botmuc1_feature_40_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334119	32	123	6.55301e-13	59.7362	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	245	cox2_Botmuc1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214438	12	242	2.09132e-108	311.377	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	542	cox1_Botmuc1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	350997	14	209	1.7333e-97	304.021	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_15	Generic	Low-spin heme binding site	S38,R42,F60,H67,M71,I72,V76,W132	15	8	238461
+1	Query_15	Generic	D-pathway	Y23,N86,D97,N104,A107,S162,S163,N169,T173	9	9	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	728	orf728_Botmuc1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	279664	518	654	9.1502e-14	68.6503	pfam01348	Intron_maturas2	-	45
+1	Query_16	Superfamily	295487	346	495	5.49071e-10	59.9072	cl02808	RT_like	N	-
+ENDDOMAINS
+SITES
+1	Query_16	Generic	active site	G393,V443,D445,E446,I491,G492	13	6	238185
+1	Query_16	Generic	nucleic acid binding site	G393	1	1	238185
+1	Query_16	Generic	NTP binding site	D445	8	1	238185
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	248	atp6_Botmuc1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	273458	7	245	4.40745e-51	165.842	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	48	atp8_Botmuc1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Non-specific	283561	1	48	1.04376e-07	42.3934	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	390	cob_Botmuc1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	214440	10	368	4.14144e-161	456.166	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	351	nad1_Botmuc1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	333876	11	330	6.86275e-108	317.492	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	295	nad6_Botmuc1_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334114	37	93	0.000141469	40.9064	pfam00499	Oxidored_q3	C	354830
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

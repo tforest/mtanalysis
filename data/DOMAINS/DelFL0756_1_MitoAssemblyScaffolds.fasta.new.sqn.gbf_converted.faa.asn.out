@@ -1,0 +1,199 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	DelFL0756_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	DelFL0756_1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	664	nad5_DelFL0756_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Non-specific	177253	1	607	0	584.663	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	387	orf387_DelFL0756_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	268	358	9.7328e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	297	orf297_DelFL0756_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	188	284	2.86458e-11	58.7871	pfam00961	LAGLIDADG_1	-	45
+1	Query_3	Specific	334330	75	158	7.50044e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	89	nad4L_DelFL0756_feature_13_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	351118	3	87	7.39334e-18	70.9763	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	123	nad3_DelFL0756_feature_17_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334119	19	112	2.07351e-11	55.499	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	575	nad2_DelFL0756_feature_19_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	235603	126	499	5.39513e-74	243.575	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	206	nad6_DelFL0756_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Superfamily	354830	19	201	1.15904e-19	82.1913	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	259	atp6_DelFL0756_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	273458	12	256	7.71875e-47	155.442	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	269	cox3_DelFL0756_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	278911	12	269	6.8062e-131	370.588	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_9	Specific	Subunit I/III interface	A82,R85,G86,S97,L100,A104,I105,H111,G199,A200,S203,F207	12	12	238834
+1	Query_9	Specific	Subunit III/Vb interface	R166	1	1	238834
+1	Query_9	Specific	Subunit III/VIa interface	F135,E136,L137,Y154,I180,S190,V191,S192,S197,D198,G199	11	11	238834
+1	Query_9	Specific	Subunit III/VIb interface	M127	1	1	238834
+1	Query_9	Specific	Subunit III/VIIa interface	F64,R67,D68,A71,T74,Y75,M76	7	7	238834
+1	Query_9	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,L241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_12	Peptide	290	cox2_DelFL0756_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	214438	58	287	2.61693e-110	318.311	MTH00154	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	241	orf241_DelFL0756_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	350997	11	222	2.08381e-111	328.288	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+1	Query_13	Generic	Binuclear center (active site)	H86	4	1	238461
+1	Query_13	Generic	Low-spin heme binding site	Y81,H88,L91,S92,R148,R149,F178	15	7	238461
+1	Query_13	Generic	K-pathway	T26,K29	7	2	238461
+1	Query_13	Generic	Putative proton exit pathway	H78,D79,R148,R149	5	4	238461
+1	Query_13	Generic	Putative water exit pathway	D74,H78,D79,R148	7	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	396	orf397_DelFL0756_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	350997	19	103	1.15708e-30	122.206	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_14	Specific	334330	266	363	3.32451e-18	79.2026	pfam00961	LAGLIDADG_1	-	45
+1	Query_14	Specific	334330	161	224	0.00105408	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+SITES
+1	Query_14	Generic	Binuclear center (active site)	H64,H65	4	2	238461
+1	Query_14	Generic	K-pathway	Y19,S30,H64,H65,K81	7	5	238461
+1	Query_14	Generic	Putative proton exit pathway	H65	5	1	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	331	orf331_DelFL0756_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	334330	205	299	2.89055e-18	78.4322	pfam00961	LAGLIDADG_1	-	45
+1	Query_15	Specific	334330	94	171	0.000469096	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	321	orf322_DelFL0756_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	350997	1	26	1.3491e-13	70.9749	cl00275	Heme_Cu_Oxidase_I	NC	-
+1	Query_17	Specific	334330	192	289	1.13538e-07	49.1571	pfam00961	LAGLIDADG_1	-	45
+1	Query_17	Specific	334330	75	160	0.000903481	37.9863	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_17	Generic	Putative water exit pathway	D18,Q23,H24	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	525	orf526_DelFL0756_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	350997	65	163	8.09583e-52	183.453	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_18	Specific	334330	255	342	3.81222e-13	65.3354	pfam00961	LAGLIDADG_1	-	45
+1	Query_18	Specific	334330	376	481	1.6896e-10	57.6315	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+1	Query_18	Generic	Low-spin heme binding site	W97	15	1	238461
+1	Query_18	Generic	D-pathway	N69,S72,S127,S128,N134,T138	9	6	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	295	orf296_DelFL0756_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	145	254	2.63024e-16	72.6542	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	27	121	0.000353633	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	604	cox1_DelFL0756_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	350997	11	185	1.08752e-46	171.127	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+1	Query_20	Generic	Binuclear center (active site)	H162	4	1	238461
+1	Query_20	Generic	Low-spin heme binding site	S34,R38,Y55,H62,M66,I67,V71,Y157,H164,L167,S168	15	11	238461
+1	Query_20	Generic	D-pathway	Y19,N81,D92,N103,N107	9	5	238461
+1	Query_20	Generic	Putative proton exit pathway	H154,D155	5	2	238461
+1	Query_20	Generic	Putative water exit pathway	D150,H154,D155	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	87	nad4_DelFL0756_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	235622	17	70	2.25119e-13	63.2977	PRK05846	PRK05846	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	371	nad1_DelFL0756_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	333876	12	354	1.40315e-116	340.219	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	428	cob_DelFL0756_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	214440	10	365	0	510.864	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	318	orf318_DelFL0756_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	334330	73	169	1.99776e-21	86.9066	pfam00961	LAGLIDADG_1	-	45
+1	Query_24	Specific	334330	205	300	5.68602e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	420	nad4_DelFL0756_feature_13_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	214462	1	346	9.09758e-86	269.614	MTH00217	ND4	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	58	nad4_DelFL0756_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Non-specific	235622	10	58	1.18018e-07	45.5786	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	344	orf344_DelFL0756_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Non-specific	274008	95	237	0.00256454	39.6547	TIGR02168	SMC_prok_B	NC	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

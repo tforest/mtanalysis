@@ -1,0 +1,156 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Denmi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Denmi1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	271	atp6_Denmi1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	273458	46	268	3.32958e-48	159.294	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_2	Peptide	255	cox2_Denmi1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Non-specific	214402	9	253	9.30211e-110	315.922	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	310	orf310_Denmi1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	273636	74	309	1.39515e-55	179.119	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	755	cob_Denmi1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	214440	10	365	1.35492e-175	507.012	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	73	atp9_Denmi1_feature_43_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	349422	6	69	2.46326e-15	62.9123	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	186	orf186_Denmi1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	335245	1	166	3.9388e-38	128.818	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	88	nad4L_Denmi1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	351118	7	87	1.09219e-13	60.431	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	275	cox3_Denmi1_feature_53_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Superfamily	294143	13	272	2.69264e-98	288.328	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+1	Query_10	Specific	Subunit I/III interface	E85,K88,G89,S100,F103,S107,V108,H114,S202,V203,S206,C210	12	12	238834
+1	Query_10	Specific	Subunit III/Vb interface	Q169	1	1	238834
+1	Query_10	Specific	Subunit III/VIa interface	Y138,S139,V140,F157,L183,L193,D194,T195,S200,D201,S202	11	11	238834
+1	Query_10	Specific	Subunit III/VIb interface	L130	1	1	238834
+1	Query_10	Specific	Subunit III/VIIa interface	L67,W70,D71,V74,T77,F78,L79	7	7	238834
+1	Query_10	Specific	Phospholipid binding site	W68,L69,V72,I73,S76,H82,G93,F94,F97,G225,R232,V244,G245	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	52	atp8_Denmi1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	283561	1	48	0.000141447	34.6894	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	336	orf336_Denmi1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	237177	59	215	0.00378201	38.6058	PRK12704	PRK12704	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	517	nad4_Denmi1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	235622	60	513	3.72205e-140	413.059	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	335	nad1_Denmi1_feature_79_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	333876	17	323	4.91593e-122	352.931	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	186	orf187_Denmi1_feature_92_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	20	123	1.55141e-08	49.9275	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	122	nad3_Denmi1_feature_94_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334119	28	113	4.15232e-25	90.5522	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	819	nad2_Denmi1_feature_96_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	235603	39	656	6.76089e-71	240.878	PRK05777	PRK05777	-	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	227	nad6_Denmi1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Superfamily	354830	1	138	2.62282e-16	74.1021	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	532	cox1_Denmi1_feature_100_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	238833	9	487	0	824.81	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_22	Specific	Binuclear center (heme a3/CuB)	H241,H290,H291,H376	4	4	238833
+1	Query_22	Specific	Low-spin heme (heme a) binding site	H62,H378,S382,T424,S461	5	5	238833
+1	Query_22	Specific	D-pathway	Y18,N81,D92,N99,S102,S157,S158,N164,T168	9	9	238833
+1	Query_22	Specific	K-pathway	H241,Y245,S256,H290,H291,T316,K319	7	7	238833
+1	Query_22	Specific	Electron transfer pathway	F377,R438,R439	3	3	238833
+1	Query_22	Specific	Putative proton exit pathway	H291,H368,D369,R438,R439	5	5	238833
+1	Query_22	Specific	Putative water exit pathway	D228,Q233,H234,D364,H368,D369,R438	7	7	238833
+1	Query_22	Specific	Subunit I/II interface	N56,D228,K265,F268,G269,S294,V295,G296,V299,R302,M310,I318,F321,Y328,G329,G330,I342,N360,A361,I363,V365,A366,F367,H368,D369,M433,A434,R438,R439,I440,G449,W450	32	32	238833
+1	Query_22	Specific	Subunit I/III interface	T9,V91,F95,R97,W104,D145,F149,S167,N171,V191,L198,P201,M209,T218,S219,F220,G225,G226,D228,F238,Y275,F278,G281,I282,L286	25	25	238833
+1	Query_22	Specific	Subunit I/IV interface	L38,A41,S42,F408,K411,I412,D445,F463	8	8	238833
+1	Query_22	Specific	Subunit I/VIa interface	V136,R214,N215,F216,N217	5	5	238833
+1	Query_22	Specific	Subunit I/VIb interface	G296	1	1	238833
+1	Query_22	Specific	Subunit I/VIc interface	G329	1	1	238833
+1	Query_22	Specific	Subunit I/VIIa interface	L115,L118	2	2	238833
+1	Query_22	Specific	Subunit I/VIIb interface	D445,G449	2	2	238833
+1	Query_22	Specific	Subunit I/VIIc interface	F24,I28,A31,I35,A117,L118,I400,Y473,F476	9	9	238833
+1	Query_22	Specific	Subunit I/VIIIb interface	L409,L466	2	2	238833
+1	Query_22	Specific	Dimer interface	V191,L198,F238,Y275,F278,G281,I282,L286	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	345	orf345_Denmi1_feature_104_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	187	303	1.2274e-15	71.4986	pfam00961	LAGLIDADG_1	-	45
+1	Query_23	Specific	334330	51	136	2.28994e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+ENDDATA

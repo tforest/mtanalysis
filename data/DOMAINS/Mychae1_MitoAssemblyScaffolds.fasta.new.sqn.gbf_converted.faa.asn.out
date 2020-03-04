@@ -1,0 +1,390 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Mychae1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Mychae1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_6	Peptide	83	orf83_Mychae1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Superfamily	355698	4	66	1.02899e-11	58.5136	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	284	orf284_Mychae1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	54	153	5.76472e-18	76.8914	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	73	atp9_Mychae1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	349422	6	69	3.98825e-15	62.5271	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	122	cob_Mychae1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	214440	10	121	5.04817e-54	172.274	MTH00156	CYTB	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	149	orf150_Mychae1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	273636	1	137	9.80246e-09	51.6177	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	545	orf546_Mychae1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Non-specific	273636	325	538	4.72095e-30	117.102	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	256	cob_Mychae1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Non-specific	177203	1	249	5.89244e-98	291.039	MTH00145	CYTB	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	53	atp8_Mychae1_feature_47_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Non-specific	283561	1	48	8.07075e-06	37.771	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	678	nad5_Mychae1_feature_51_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Non-specific	235836	6	641	0	585.199	PRK06590	PRK06590	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	332	orf332_Mychae1_feature_55_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Superfamily	353929	62	121	7.59269e-15	68.7916	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_18	Generic	active site	Y63,Y74,G76,R84,Y88	6	5	198380
+1	Query_18	Generic	catalytic site	R84	2	1	198380
+1	Query_18	Generic	GIY-YIG motif/motif A	I62,Y63,Y74,I75,G76	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_20	Peptide	325	orf325_Mychae1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	335245	105	299	8.12794e-30	111.484	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	169	orf169_Mychae1_feature_65_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	335245	1	127	1.02294e-32	114.18	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	56	nad4L_Mychae1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	351118	19	55	2.54357e-05	37.7359	cl00492	Oxidored_q2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	648	orf648_Mychae1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Superfamily	351118	1	43	1.08796e-07	50.0306	cl00492	Oxidored_q2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	168	orf168_Mychae1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	197761	122	168	0.00239471	34.4658	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	361	orf362_Mychae1_feature_10_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	350997	25	87	1.40545e-27	112.576	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_25	Superfamily	353929	161	247	5.91417e-17	74.9548	cl15257	GIY-YIG_SF	-	-
+1	Query_25	Specific	197761	279	332	0.00279836	35.2362	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+1	Query_25	Generic	Low-spin heme binding site	S49,R53,F71,H78,M82,I83,V87	15	7	238461
+1	Query_25	Generic	D-pathway	Y34	9	1	238461
+1	Query_25	Generic	active site	Y163,Y173,G175,R183,Y187,E237	6	6	198380
+1	Query_25	Generic	catalytic site	R183,E237	2	2	198380
+1	Query_25	Generic	metal binding site	E237	1	1	198380
+1	Query_25	Generic	GIY-YIG motif/motif A	G161,V162,Y163,Y173,V174,G175	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	405	orf406_Mychae1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	334330	224	347	8.28798e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+1	Query_26	Specific	334330	86	171	1.22027e-09	54.9351	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	408	orf409_Mychae1_feature_14_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	241	365	2.03375e-13	65.7206	pfam00961	LAGLIDADG_1	-	45
+1	Query_27	Specific	334330	119	211	4.83494e-05	41.8383	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	404	orf405_Mychae1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334330	262	362	1.38134e-13	66.1058	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	334330	150	228	1.19935e-05	43.7643	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_29	Peptide	359	cox1_Mychae1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_29	Superfamily	350997	18	359	0	570.964	cl00275	Heme_Cu_Oxidase_I	-	-
+ENDDOMAINS
+SITES
+2	Query_29	Generic	Binuclear center (active site)	H164,M213,K214,H299	4	4	238461
+2	Query_29	Generic	Low-spin heme binding site	*50,V294,H301,L304,S305	15	5	238461
+2	Query_29	Generic	D-pathway	N22,S25,S80,S81,N87,T91	9	6	238461
+2	Query_29	Generic	K-pathway	H164,Y168,S179,M213,K214,T239,K242	7	7	238461
+2	Query_29	Generic	Putative proton exit pathway	K214,H291,D292	5	3	238461
+2	Query_29	Generic	Putative water exit pathway	D151,Q156,H157,D287,H291,D292	7	6	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_30	Peptide	402	orf402_Mychae1_feature_22_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Specific	334330	127	220	7.08576e-17	75.3506	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	396	orf396_Mychae1_feature_28_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	334330	121	208	4.081e-14	67.6466	pfam00961	LAGLIDADG_1	-	45
+2	Query_31	Specific	334330	246	351	6.04832e-12	61.4834	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	313	orf313_Mychae1_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_32	Specific	334330	85	174	1.02098e-05	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	476	orf476_Mychae1_feature_36_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	359	439	3.96879e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+2	Query_33	Specific	334330	253	319	0.000174366	40.6827	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	154	orf154_Mychae1_feature_40_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	335245	90	141	1.16097e-08	51.0075	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	276	orf276_Mychae1_feature_44_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	334330	49	144	8.0143e-13	63.0242	pfam00961	LAGLIDADG_1	-	45
+2	Query_35	Specific	334330	186	271	4.54044e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	285	cox3_Mychae1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	278911	29	283	4.8598e-109	315.889	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_36	Specific	Subunit I/III interface	R97,S100,G101,S112,F115,S119,V120,H126,S214,V215,T218,A222	12	12	238834
+2	Query_36	Specific	Subunit III/Vb interface	T181	1	1	238834
+2	Query_36	Specific	Subunit III/VIa interface	F150,G151,L152,L169,L195,S205,E206,A207,S212,D213,S214	11	11	238834
+2	Query_36	Specific	Subunit III/VIb interface	F142	1	1	238834
+2	Query_36	Specific	Subunit III/VIIa interface	L79,R82,D83,M86,T89,F90,L91	7	7	238834
+2	Query_36	Specific	Phospholipid binding site	W80,F81,I84,V85,G88,H94,G105,F106,F109,F237,R244,V256,G257	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_37	Peptide	367	orf367_Mychae1_feature_8_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Specific	334330	210	326	2.12874e-12	62.639	pfam00961	LAGLIDADG_1	-	45
+2	Query_37	Specific	334330	88	186	0.000110218	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	331	nad1_Mychae1_feature_19_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	333876	13	319	8.82738e-121	349.464	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	277	atp6_Mychae1_feature_28_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	273458	44	274	9.75958e-44	148.123	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	520	nad4_Mychae1_feature_16_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	235622	44	511	1.21058e-126	378.776	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	132	nad3_Mychae1_feature_25_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	334119	32	118	5.30282e-22	83.2334	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	122	nad2_Mychae1_feature_27_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Superfamily	356474	2	66	1.32569e-07	48.2785	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	200	orf201_Mychae1_feature_29_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Specific	334330	29	138	4.57139e-06	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	168	orf168_Mychae1_feature_6_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	197761	122	168	0.00239471	34.4658	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	205	cox2_Mychae1_feature_12_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Non-specific	214402	7	202	1.98771e-81	241.963	MTH00023	COX2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	263	orf263_Mychae1_feature_16_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	335245	75	245	1.29846e-33	119.573	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	393	orf393_Mychae1_feature_20_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	273636	147	389	2.94986e-49	165.637	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	237	cox1_Mychae1_feature_16_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Superfamily	350997	2	179	4.45879e-116	340.229	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+2	Query_61	Generic	Binuclear center (active site)	H79	4	1	238461
+2	Query_61	Generic	Low-spin heme binding site	Y74,H81,L84,S85,R141,R142,F171	15	7	238461
+2	Query_61	Generic	K-pathway	T19,K22	7	2	238461
+2	Query_61	Generic	Putative proton exit pathway	H71,D72,R141,R142	5	4	238461
+2	Query_61	Generic	Putative water exit pathway	D67,H71,D72,R141	7	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_62	Peptide	191	orf191_Mychae1_feature_20_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	198392	68	158	1.98124e-23	88.4368	cd10445	GIY-YIG_bI1_like	-	353929
+ENDDOMAINS
+SITES
+2	Query_62	Specific	putative active site	Y71,Y82,G84,R92,Y96,E143,S155	7	7	198392
+2	Query_62	Specific	putative metal binding site	E143	1	1	198392
+2	Query_62	Specific	GIY-YIG motif/motif A	I69,I70,Y71,Y82,V83,G84	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_63	Peptide	281	orf281_Mychae1_feature_26_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	334330	54	149	6.83178e-13	63.4094	pfam00961	LAGLIDADG_1	-	45
+2	Query_63	Specific	334330	191	276	4.02637e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	132	nad3_Mychae1_feature_4_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Specific	334119	32	118	5.30282e-22	83.2334	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	200	orf201_Mychae1_feature_6_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Specific	334330	29	138	4.57139e-06	43.3791	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	77	orf78_Mychae1_feature_10_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_68	Specific	334330	2	45	7.77249e-07	42.6087	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	210	orf211_Mychae1_feature_12_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_69	Specific	334330	2	101	2.19095e-29	105.011	pfam00961	LAGLIDADG_1	-	45
+2	Query_69	Specific	334330	160	196	5.8103e-05	40.6827	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	475	ndhD_Mychae1_feature_14_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_70	Superfamily	356474	167	317	9.38713e-38	143.808	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_71	Peptide	367	nad5_Mychae1_feature_16_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Superfamily	356474	59	209	1.39463e-39	146.119	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_72	Peptide	326	nad4_Mychae1_feature_19_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_72	Superfamily	356474	18	168	1.58281e-39	144.578	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	326	nad4_Mychae1_feature_20_from_C_6, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Superfamily	356474	18	168	1.58281e-39	144.578	cl29598	Proton_antipo_M	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	207	nad6_Mychae1_feature_10_from_C_7, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Superfamily	354830	7	123	4.42727e-16	72.7261	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_77	Peptide	207	nad6_Mychae1_feature_2_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Superfamily	354830	7	123	4.42727e-16	72.7261	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	157	cox3_Mychae1_feature_6_from_C_9, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Superfamily	294143	29	89	5.00786e-17	75.1395	cl00211	Heme_Cu_Oxidase_III_like	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_79	Peptide	140	orf141_Mychae1_feature_2_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_79	Specific	334330	34	133	2.01319e-17	71.8838	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	245	orf246_Mychae1_feature_4_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_80	Specific	335245	55	226	3.58708e-58	181.975	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	277	atp6_Mychae1_feature_8_from_C_10, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	273458	44	274	9.75958e-44	148.123	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	219	orf219_Mychae1_feature_10_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Specific	335245	6	182	5.13265e-44	144.996	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	214	orf214_Mychae1_feature_12_from_C_11, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_84	Specific	334330	52	153	2.16963e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	446	nad4L_Mychae1_feature_2_from_C_13, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_87	Superfamily	351118	1	41	1.18483e-06	46.5638	cl00492	Oxidored_q2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	140	orf140_Mychae1_feature_4_from_C_14, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Superfamily	351118	1	41	3.67077e-06	42.7118	cl00492	Oxidored_q2	C	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

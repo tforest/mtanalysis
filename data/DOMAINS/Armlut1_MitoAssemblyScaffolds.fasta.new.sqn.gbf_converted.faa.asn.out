@@ -1,0 +1,536 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Armlut1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Armlut1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	857	cox1_Armlut1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	238828	310	598	2.48578e-90	284.479	cd01651	RT_G2_intron	-	295487
+1	Query_1	Non-specific	279664	629	783	1.77901e-22	94.0734	pfam01348	Intron_maturas2	-	45
+1	Query_1	Superfamily	350997	1	42	2.91693e-15	79.064	cl00275	Heme_Cu_Oxidase_I	C	-
+1	Query_1	Specific	238038	781	840	0.00512056	35.9104	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+1	Query_1	Specific	putative active site	D384,I385,K386,S387,Y388,F389,Q439,G440,Y533,D535,D536,L594,G595	13	13	238828
+1	Query_1	Specific	putative nucleic acid binding site	G440	1	1	238828
+1	Query_1	Specific	putative NTP binding site	D384,I385,K386,S387,Y388,F389,Q439,D535	8	8	238828
+1	Query_1	Generic	Low-spin heme binding site	S7,R11,F29,H36,M40,I41	15	6	238461
+1	Query_1	Specific	active site	E803,H805,H806,V807,A809,N825,R826,C832,F833,H836,H840	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	257	orf257_Armlut1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	65	176	2.26548e-10	56.0907	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	106	orf107_Armlut1_feature_6_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Specific	334330	36	100	9.37318e-05	37.9863	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	52	atp8_Armlut1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	283561	1	48	0.000124028	34.6894	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	356	orf357_Armlut1_feature_30_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Specific	334330	135	234	4.72663e-22	89.2178	pfam00961	LAGLIDADG_1	-	45
+1	Query_5	Specific	334330	292	342	9.35188e-07	46.4607	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	278	orf278_Armlut1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	334330	17	109	1.0566e-09	54.5499	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	469	nad2_Armlut1_feature_36_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	356474	25	456	1.11447e-59	202.486	cl29598	Proton_antipo_M	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	122	nad3_Armlut1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334119	27	112	6.28513e-25	90.167	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	474	orf474_Armlut1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Superfamily	355698	274	448	7.46029e-19	88.5591	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	105	orf105_Armlut1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Superfamily	355698	22	91	7.78458e-08	48.1132	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	134	orf134_Armlut1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Superfamily	355698	32	134	5.10317e-13	64.2916	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	216	orf216_Armlut1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	355698	37	149	0.00596234	37.0625	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	90	orf90_Armlut1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Superfamily	355698	1	38	0.000138025	38.4832	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_16	Peptide	197	nad6_Armlut1_feature_68_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Superfamily	354830	8	191	2.34832e-21	86.2081	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	696	orf696_Armlut1_feature_70_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	355471	150	567	1.53771e-44	170.974	cl25973	RNA_pol	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	285	cox3_Armlut1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	294143	25	281	9.11728e-102	297.785	cl00211	Heme_Cu_Oxidase_III_like	-	-
+ENDDOMAINS
+SITES
+1	Query_19	Specific	Subunit I/III interface	E95,K98,G99,S110,M113,T117,V118,H124,G211,I212,T215,C219	12	12	238834
+1	Query_19	Specific	Subunit III/Vb interface	D178	1	1	238834
+1	Query_19	Specific	Subunit III/VIa interface	F147,S148,I149,Y166,V192,S202,N203,S204,S209,D210,G211	11	11	238834
+1	Query_19	Specific	Subunit III/VIb interface	L139	1	1	238834
+1	Query_19	Specific	Subunit III/VIIa interface	F77,G80,D81,T84,S87,I88,L89	7	7	238834
+1	Query_19	Specific	Phospholipid binding site	W78,F79,I82,N83,G86,H92,G103,F104,F107,F234,R241,V253,G254	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_22	Peptide	253	cox2_Armlut1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Non-specific	214402	7	251	5.09813e-104	301.284	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	266	orf266_Armlut1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	335245	75	242	3.80416e-58	182.746	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	184	orf184_Armlut1_feature_101_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Superfamily	353929	100	179	3.06612e-05	40.7186	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+1	Query_24	Generic	active site	Y103,Y114,G116,R124,H128,E171	6	6	198380
+1	Query_24	Generic	catalytic site	R124,E171	2	2	198380
+1	Query_24	Generic	metal binding site	E171	1	1	198380
+1	Query_24	Generic	GIY-YIG motif/motif A	G101,T102,Y103,Y114,I115,G116	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	167	orf167_Armlut1_feature_111_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	335245	11	163	2.73415e-32	113.025	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	391	cob_Armlut1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	214440	10	366	2.44309e-168	474.656	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	165	orf165_Armlut1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	335245	4	146	7.85732e-36	121.884	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	465	orf465_Armlut1_feature_128_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	50	147	3.17337e-19	82.2842	pfam00961	LAGLIDADG_1	-	45
+1	Query_30	Specific	334330	193	310	3.07379e-06	45.3051	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	784	orf784_Armlut1_feature_132_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	238828	278	547	3.13718e-95	295.649	cd01651	RT_G2_intron	-	295487
+1	Query_31	Non-specific	279664	567	696	3.7251e-33	124.504	pfam01348	Intron_maturas2	-	45
+ENDDOMAINS
+SITES
+1	Query_31	Specific	putative active site	D352,I353,K354,G355,C356,F357,Q405,G406,Y492,D494,D495,L543,G544	13	13	238828
+1	Query_31	Specific	putative nucleic acid binding site	G406	1	1	238828
+1	Query_31	Specific	putative NTP binding site	D352,I353,K354,G355,C356,F357,Q405,D494	8	8	238828
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_33	Peptide	263	orf263_Armlut1_feature_142_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_33	Specific	334330	6	114	5.90435e-07	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	240	orf240_Armlut1_feature_146_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_34	Specific	198392	22	111	1.84952e-20	82.2736	cd10445	GIY-YIG_bI1_like	-	353929
+2	Query_34	Non-specific	273636	22	235	4.32141e-18	79.3521	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+2	Query_34	Specific	putative active site	Y25,Y36,G38,R48,H52,E96,N108	7	7	198392
+2	Query_34	Specific	putative metal binding site	E96	1	1	198392
+2	Query_34	Specific	GIY-YIG motif/motif A	G23,T24,Y25,Y36,V37,G38	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_35	Peptide	262	orf262_Armlut1_feature_150_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_35	Specific	334330	132	234	4.05829e-10	55.3203	pfam00961	LAGLIDADG_1	-	45
+2	Query_35	Specific	334330	3	61	1.58632e-05	42.6087	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	184	nad1_Armlut1_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_36	Specific	333876	1	172	4.60386e-57	181.132	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	292	orf292_Armlut1_feature_157_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_37	Superfamily	353929	1	84	0.00615474	34.8941	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+2	Query_37	Generic	active site	Y11,G13,R21,Y25,E72	6	5	198380
+2	Query_37	Generic	catalytic site	R21,E72	2	2	198380
+2	Query_37	Generic	metal binding site	E72	1	1	198380
+2	Query_37	Generic	GIY-YIG motif/motif A	Y11,I12,G13	6	3	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_38	Peptide	132	orf132_1_Armlut1_feature_161_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_38	Non-specific	273636	2	118	6.56387e-20	80.8929	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+2	Query_38	Generic	DNA binding site	N46,P47,M48,Y49,H53,S57,I61,S62,S66,T68,T69,G71,V87,Q91,T96,T99,S101,K102,Y103,Y114	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_39	Peptide	484	orf485_Armlut1_feature_164_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	214677	60	144	7.99019e-09	52.4236	smart00465	GIYc	-	353929
+2	Query_39	Specific	197761	430	474	0.00100929	36.777	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+2	Query_39	Specific	active site	Y64,Y76,G78,R86,H90,E130	6	6	198380
+2	Query_39	Specific	catalytic site	R86,E130	2	2	198380
+2	Query_39	Specific	metal binding site	E130	1	1	198380
+2	Query_39	Specific	GIY-YIG motif/motif A	G62,I63,Y64,Y76,I77,G78	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_40	Peptide	777	orf777_Armlut1_feature_2_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	238828	230	518	5.94379e-91	284.479	cd01651	RT_G2_intron	-	295487
+2	Query_40	Non-specific	279664	549	703	3.20499e-22	92.9178	pfam01348	Intron_maturas2	-	45
+2	Query_40	Specific	238038	701	760	0.00441186	35.9104	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+2	Query_40	Specific	putative active site	D304,I305,K306,S307,Y308,F309,Q359,G360,Y453,D455,D456,L514,G515	13	13	238828
+2	Query_40	Specific	putative nucleic acid binding site	G360	1	1	238828
+2	Query_40	Specific	putative NTP binding site	D304,I305,K306,S307,Y308,F309,Q359,D455	8	8	238828
+2	Query_40	Specific	active site	E723,H725,H726,V727,A729,N745,R746,C752,F753,H756,H760	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_41	Peptide	492	cox1_Armlut1_feature_4_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Superfamily	350997	49	450	0	645.307	cl00275	Heme_Cu_Oxidase_I	-	-
+ENDDOMAINS
+SITES
+2	Query_41	Generic	Binuclear center (active site)	H220,H269,H270,H339	4	4	238461
+2	Query_41	Generic	Low-spin heme binding site	V50,W106,N334,H341,L344,S345,R401,R402,F431	15	9	238461
+2	Query_41	Generic	D-pathway	N60,D71,N78,S81,S136,S137,N143,T147	9	8	238461
+2	Query_41	Generic	K-pathway	H220,Y224,S235,H269,H270,T295,K298	7	7	238461
+2	Query_41	Generic	Putative proton exit pathway	H270,H331,D332,R401,R402	5	5	238461
+2	Query_41	Generic	Putative water exit pathway	D207,Q212,H213,D327,H331,D332,R401	7	7	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_42	Peptide	342	orf342_2_Armlut1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	334330	179	302	5.62397e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+2	Query_42	Specific	334330	61	152	1.92861e-07	48.3867	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	277	orf277_1_Armlut1_feature_12_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	334330	118	237	2.49533e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	165	orf165_2_Armlut1_feature_16_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	335245	1	138	8.35756e-43	139.603	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_45	Peptide	485	orf485_2_Armlut1_feature_20_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	334330	65	163	3.30525e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	304	orf304_Armlut1_feature_26_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	334330	170	261	1.2256e-10	57.2463	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	51	122	5.81369e-06	44.1495	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	424	orf424_Armlut1_feature_30_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	197	263	6.63212e-05	41.4531	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	315	orf315_Armlut1_feature_32_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	334330	38	137	1.16194e-23	92.6846	pfam00961	LAGLIDADG_1	-	45
+2	Query_48	Specific	334330	196	288	2.27018e-20	83.825	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	107	orf107_2_Armlut1_feature_36_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	334330	1	58	2.6577e-05	39.5271	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	299	orf299_Armlut1_feature_40_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	335245	96	277	1.0816e-51	167.338	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_51	Peptide	327	orf327_Armlut1_feature_42_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_51	Non-specific	273636	42	245	3.35378e-27	105.931	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_52	Peptide	267	orf267_Armlut1_feature_44_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Non-specific	273636	9	179	2.56288e-38	133.28	TIGR01453	grpIintron_endo	-	45
+2	Query_52	Specific	197761	214	263	9.61249e-05	39.0882	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	259	orf259_Armlut1_feature_48_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_53	Specific	334330	31	122	3.0791e-14	66.491	pfam00961	LAGLIDADG_1	-	45
+2	Query_53	Specific	334330	170	255	3.07988e-08	50.3127	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_55	Peptide	255	atp6_Armlut1_feature_53_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	273458	25	252	9.58381e-49	160.064	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	63	atp9_Armlut1_feature_55_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	349422	6	56	2.65411e-13	57.5196	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_57	Peptide	295	orf296_Armlut1_feature_57_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	335245	107	277	1.02616e-56	180.049	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	593	orf594_Armlut1_feature_61_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	275209	65	429	4.10347e-124	369.479	TIGR04416	group_II_RT_mat	-	45
+2	Query_58	Specific	338877	19	100	1.39907e-20	85.9695	pfam13655	RVT_N	-	45
+2	Query_58	Specific	238038	517	569	3.36198e-10	55.5555	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+2	Query_58	Specific	active site	E539,H541,H542,V543,P545,N556,I557,H561,Q562,H565,T569	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_59	Peptide	593	orf594_Armlut1_feature_2_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	275209	65	429	4.10347e-124	369.479	TIGR04416	group_II_RT_mat	-	45
+2	Query_59	Specific	338877	19	100	1.39907e-20	85.9695	pfam13655	RVT_N	-	45
+2	Query_59	Specific	238038	517	569	3.36198e-10	55.5555	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+2	Query_59	Specific	active site	E539,H541,H542,V543,P545,N556,I557,H561,Q562,H565,T569	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_60	Peptide	335	orf335_Armlut1_feature_4_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	22	125	4.56186e-23	91.529	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	179	289	5.40939e-12	61.0983	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	334	orf335_Armlut1_feature_6_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	334330	21	120	4.86949e-14	66.8762	pfam00961	LAGLIDADG_1	-	45
+2	Query_61	Specific	334330	188	282	5.16748e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	313	orf314_Armlut1_feature_10_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Non-specific	273636	40	302	2.1473e-20	87.4413	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_64	Peptide	81	atp9_Armlut1_feature_12_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_64	Superfamily	351103	1	32	0.000178759	36.1006	cl00466	ATP-synt_C	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	244	orf245_Armlut1_feature_14_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_65	Specific	335245	37	213	4.18255e-49	158.863	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	257	orf258_Armlut1_feature_16_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_66	Specific	335245	53	232	9.91412e-41	137.677	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	479	nad4_Armlut1_feature_22_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_67	Specific	235622	27	478	3.98888e-137	403.814	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_68	Peptide	88	nad4L_Armlut1_feature_24_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_68	Superfamily	351118	1	88	2.04816e-14	62.3569	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_69	Peptide	660	nad5_Armlut1_feature_26_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_69	Non-specific	177253	1	616	0	601.227	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_70	Peptide	104	nad1_Armlut1_feature_32_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_70	Specific	333876	20	100	4.94043e-27	100.24	pfam00146	NADHdh	C	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	284	orf285_Armlut1_feature_34_from_C_2, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Specific	335245	84	257	2.39186e-43	145.381	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	117	orf117_Armlut1_feature_2_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Specific	335245	3	90	2.95049e-21	82.5939	pfam03161	LAGLIDADG_2	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_75	Peptide	207	nad1_Armlut1_feature_4_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Superfamily	351105	2	207	2.38283e-77	234.701	cl00469	NADHdh	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	574	orf574_Armlut1_feature_14_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Specific	214677	150	234	4.88622e-09	53.194	smart00465	GIYc	-	353929
+3	Query_78	Specific	197761	520	564	0.000801975	37.5474	smart00497	IENR1	-	299755
+3	Query_78	Specific	197761	443	491	0.00845918	34.4658	smart00497	IENR1	-	299755
+ENDDOMAINS
+SITES
+3	Query_78	Specific	active site	Y154,Y166,G168,R176,H180,E220	6	6	198380
+3	Query_78	Specific	catalytic site	R176,E220	2	2	198380
+3	Query_78	Specific	metal binding site	E220	1	1	198380
+3	Query_78	Specific	GIY-YIG motif/motif A	G152,I153,Y154,Y166,I167,G168	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_79	Peptide	132	orf132_2_Armlut1_feature_18_from_C_3, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_79	Non-specific	273636	2	118	6.56387e-20	80.8929	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+SITES
+3	Query_79	Generic	DNA binding site	N46,P47,M48,Y49,H53,S57,I61,S62,S66,T68,T69,G71,V87,Q91,T96,T99,S101,K102,Y103,Y114	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_80	Peptide	174	orf175_Armlut1_feature_2_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_80	Specific	334330	21	120	1.03706e-15	68.417	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	335	orf335_Armlut1_feature_4_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	334330	22	125	4.56186e-23	91.529	pfam00961	LAGLIDADG_1	-	45
+3	Query_81	Specific	334330	179	289	5.40939e-12	61.0983	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_82	Peptide	593	orf594_Armlut1_feature_6_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_82	Specific	275209	65	429	4.10347e-124	369.479	TIGR04416	group_II_RT_mat	-	45
+3	Query_82	Specific	338877	19	100	1.39907e-20	85.9695	pfam13655	RVT_N	-	45
+3	Query_82	Specific	238038	517	569	3.36198e-10	55.5555	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+3	Query_82	Specific	active site	E539,H541,H542,V543,P545,N556,I557,H561,Q562,H565,T569	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_83	Peptide	295	orf296_Armlut1_feature_10_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Specific	335245	107	277	1.02616e-56	180.049	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	63	atp9_Armlut1_feature_12_from_C_4, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_84	Specific	349422	6	56	2.65411e-13	57.5196	cd18182	ATP-synt_Fo_c_ATP5G3	C	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_85	Peptide	173	cox1_Armlut1_feature_2_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_85	Superfamily	350997	7	159	7.03116e-80	244.7	cl00275	Heme_Cu_Oxidase_I	C	-
+ENDDOMAINS
+SITES
+3	Query_85	Generic	Low-spin heme binding site	S31,R35,F53,H60,M64,I65,V69,W125	15	8	238461
+3	Query_85	Generic	D-pathway	Y16,N79,D90,N97,S100,S155,S156	9	7	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_86	Peptide	277	orf277_2_Armlut1_feature_6_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Specific	334330	118	237	2.49533e-09	53.3943	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_87	Peptide	342	orf342_3_Armlut1_feature_10_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_87	Specific	334330	179	302	5.62397e-10	55.7055	pfam00961	LAGLIDADG_1	-	45
+3	Query_87	Specific	334330	61	152	1.92861e-07	48.3867	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	814	orf814_Armlut1_feature_14_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Specific	238828	267	555	6.67627e-91	285.249	cd01651	RT_G2_intron	-	295487
+3	Query_88	Non-specific	279664	586	740	2.45187e-22	93.303	pfam01348	Intron_maturas2	-	45
+3	Query_88	Specific	238038	738	797	0.00574626	35.5252	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+3	Query_88	Specific	putative active site	D341,I342,K343,S344,Y345,F346,Q396,G397,Y490,D492,D493,L551,G552	13	13	238828
+3	Query_88	Specific	putative nucleic acid binding site	G397	1	1	238828
+3	Query_88	Specific	putative NTP binding site	D341,I342,K343,S344,Y345,F346,Q396,D492	8	8	238828
+3	Query_88	Specific	active site	E760,H762,H763,V764,A766,N782,R783,C789,F790,H793,H797	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_89	Peptide	147	orf147_Armlut1_feature_18_from_C_5, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Specific	334330	1	66	2.07033e-06	43.3791	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+ENDDATA

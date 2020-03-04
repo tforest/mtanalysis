@@ -1,0 +1,779 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Olipa1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Olipa1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	73	atp9_Olipa1_feature_2_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	349422	6	69	1.21859e-14	61.3715	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_2	Peptide	123	orf123_Olipa1_feature_4_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	334330	32	113	1.83671e-17	71.4986	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	187	orf188_Olipa1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	334330	77	176	2.93223e-13	62.639	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_7	Peptide	278	orf278_Olipa1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	335245	13	185	6.331e-46	151.93	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	213	orf213_Olipa1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Specific	335245	20	195	8.26889e-45	146.537	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	474	orf475_Olipa1_feature_18_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	334330	186	286	2.07194e-26	102.315	pfam00961	LAGLIDADG_1	-	45
+1	Query_9	Specific	334330	345	445	8.15392e-25	98.0774	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_10	Peptide	331	nad4L_Olipa1_feature_20_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	177231	4	83	6.78492e-18	77.3797	MTH00180	ND4L	-	351118
+1	Query_10	Specific	334330	134	232	1.63225e-17	76.5062	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	83	orf84_Olipa1_feature_22_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	334330	6	53	8.6397e-05	37.2159	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	666	nad5_Olipa1_feature_24_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Non-specific	177253	1	631	0	619.717	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_13	Peptide	295	orf295_Olipa1_feature_28_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	334330	23	133	3.3402e-10	56.0907	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	282	orf282_Olipa1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	335245	94	265	1.12417e-57	181.975	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	193	orf193_Olipa1_feature_42_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Superfamily	353929	117	179	1.95572e-12	59.932	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_17	Generic	active site	Y120,Y131,G133,R141,H145	6	5	198380
+1	Query_17	Generic	catalytic site	R141	2	1	198380
+1	Query_17	Generic	GIY-YIG motif/motif A	G118,I119,Y120,Y131,I132,G133	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_18	Peptide	102	orf102_Olipa1_feature_44_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Non-specific	273636	3	66	7.41935e-09	50.4621	TIGR01453	grpIintron_endo	NC	45
+ENDDOMAINS
+SITES
+1	Query_18	Generic	DNA binding site	K49,A50,K51,F52,R56,T60,M64,S65,L69,G70	21	10	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_23	Peptide	261	atp6_Olipa1_feature_61_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	273458	27	258	7.07705e-52	168.539	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	304	orf304_Olipa1_feature_63_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	198392	123	209	1.73934e-27	102.304	cd10445	GIY-YIG_bI1_like	-	353929
+1	Query_24	Non-specific	273636	122	299	6.90664e-24	96.6861	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+1	Query_24	Specific	putative active site	Y126,Y137,G139,R147,Y151,E195,N207	7	7	198392
+1	Query_24	Specific	putative metal binding site	E195	1	1	198392
+1	Query_24	Specific	GIY-YIG motif/motif A	G124,I125,Y126,Y137,I138,G139	6	6	198392
+ENDSITES
+ENDQUERY
+QUERY	Query_26	Peptide	434	orf435_Olipa1_feature_67_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Specific	273636	211	430	3.171e-45	156.007	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	171	orf172_Olipa1_feature_69_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Specific	334330	21	85	8.16228e-06	42.2235	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_28	Peptide	234	orf235_Olipa1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	334330	51	133	7.60855e-08	48.7719	pfam00961	LAGLIDADG_1	-	45
+1	Query_28	Specific	197761	180	234	0.00692355	33.6954	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	402	orf403_Olipa1_feature_73_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Specific	334330	304	401	5.85948e-18	78.4322	pfam00961	LAGLIDADG_1	-	45
+1	Query_29	Superfamily	351105	143	178	1.08499e-07	53.0713	cl00469	NADHdh	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_30	Peptide	203	orf204_Olipa1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_30	Specific	334330	72	170	3.61571e-26	96.5366	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	166	orf167_Olipa1_feature_77_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_31	Specific	334330	66	150	1.19148e-20	81.1286	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_33	Peptide	191	orf191_Olipa1_feature_81_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_33	Superfamily	353929	135	184	1.07951e-10	55.3096	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_33	Generic	active site	Y138,Y149,G151,R159,Y163	6	5	198380
+1	Query_33	Generic	catalytic site	R159	2	1	198380
+1	Query_33	Generic	GIY-YIG motif/motif A	G136,I137,Y138,Y149,V150,G151	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_34	Peptide	137	orf138_Olipa1_feature_83_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Non-specific	273636	1	129	6.35058e-22	86.2857	TIGR01453	grpIintron_endo	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_35	Peptide	87	orf88_Olipa1_feature_85_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_35	Specific	334330	2	57	1.21314e-13	60.3279	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_36	Peptide	482	orf483_Olipa1_feature_87_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_36	Non-specific	273636	63	231	4.91538e-09	56.2401	TIGR01453	grpIintron_endo	-	45
+1	Query_36	Specific	197761	270	315	0.00139114	36.3918	smart00497	IENR1	-	299755
+1	Query_36	Specific	284793	337	374	0.00800191	34.0252	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_37	Peptide	288	orf289_Olipa1_feature_89_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_37	Non-specific	273636	74	280	4.12456e-33	120.568	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_38	Peptide	321	orf322_Olipa1_feature_91_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_38	Specific	334330	35	137	3.94834e-24	94.2254	pfam00961	LAGLIDADG_1	-	45
+1	Query_38	Specific	334330	197	293	4.38666e-15	69.5726	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_39	Peptide	255	orf255_Olipa1_feature_93_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_39	Specific	335245	68	237	1.47337e-57	180.82	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_40	Peptide	122	orf123_Olipa1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_40	Specific	334330	2	97	1.14966e-21	82.2842	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	127	orf128_Olipa1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_41	Specific	334330	9	96	1.54828e-22	84.5954	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	227	nad1_Olipa1_feature_99_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_42	Specific	333876	2	216	1.08719e-72	223.118	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_43	Peptide	620	orf620_Olipa1_feature_103_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_43	Specific	334582	208	284	0.000118526	40.7809	pfam01541	GIY-YIG	-	353929
+2	Query_43	Specific	284793	482	521	0.00210474	35.9512	pfam07453	NUMOD1	-	299755
+ENDDOMAINS
+SITES
+2	Query_43	Specific	active site	Y211,Y223,G225,R233,H237,E275	6	6	198380
+2	Query_43	Specific	catalytic site	R233,E275	2	2	198380
+2	Query_43	Specific	metal binding site	E275	1	1	198380
+2	Query_43	Specific	GIY-YIG motif/motif A	I210,Y211,Y223,I224,G225	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_44	Peptide	255	orf255_Olipa1_feature_107_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_44	Specific	273636	44	252	9.98648e-51	164.866	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+2	Query_44	Generic	DNA binding site	N180,P181,M182,F183,H187,T191,M195,S196,S200,I201,N202,L204,V221,N225,H230,T233,F235,K236,Y237,Y249	21	20	238175
+ENDSITES
+ENDQUERY
+QUERY	Query_45	Peptide	336	orf337_Olipa1_feature_116_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_45	Specific	334330	49	149	9.26658e-23	90.7586	pfam00961	LAGLIDADG_1	-	45
+2	Query_45	Specific	334330	208	305	1.6931e-20	84.5954	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_46	Peptide	1344	orf1345_Olipa1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_46	Specific	335245	1150	1322	4.98443e-51	177.353	pfam03161	LAGLIDADG_2	-	45
+2	Query_46	Specific	335245	866	1036	4.69158e-36	134.596	pfam03161	LAGLIDADG_2	-	45
+2	Query_46	Specific	334330	522	623	1.32292e-27	107.707	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	296	394	1.9136e-27	107.322	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	138	238	2.25691e-26	104.241	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Specific	334330	683	780	9.10712e-20	85.3658	pfam00961	LAGLIDADG_1	-	45
+2	Query_46	Non-specific	214429	2	33	4.18873e-06	49.3304	MTH00139	COX2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_47	Peptide	235	orf236_Olipa1_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_47	Specific	334330	1	92	1.12666e-21	85.751	pfam00961	LAGLIDADG_1	-	45
+2	Query_47	Specific	334330	150	230	1.38342e-16	72.269	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_48	Peptide	52	orf53_Olipa1_feature_122_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_48	Specific	334330	3	22	0.00143688	32.9787	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	237	orf237_Olipa1_feature_124_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_49	Specific	335245	33	219	3.95874e-40	135.751	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	492	orf492_Olipa1_feature_126_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_50	Specific	334330	192	290	2.66035e-18	79.973	pfam00961	LAGLIDADG_1	-	45
+2	Query_50	Specific	334330	351	461	1.78361e-14	68.8022	pfam00961	LAGLIDADG_1	-	45
+2	Query_50	Superfamily	354382	43	71	3.47779e-09	54.8838	cl19115	Cupredoxin	C	-
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_52	Peptide	489	orf489_Olipa1_feature_130_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_52	Superfamily	353929	147	241	4.00954e-10	56.08	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+2	Query_52	Generic	active site	Y149,Y160,G162,R170,Y174,E226	6	6	198380
+2	Query_52	Generic	catalytic site	R170,E226	2	2	198380
+2	Query_52	Generic	metal binding site	E226	1	1	198380
+2	Query_52	Generic	GIY-YIG motif/motif A	G147,V148,Y149,Y160,V161,G162	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_55	Peptide	164	orf165_Olipa1_feature_140_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_55	Specific	334330	35	137	8.18971e-16	68.417	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_56	Peptide	508	orf509_Olipa1_feature_142_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	334330	115	203	3.25498e-14	68.417	pfam00961	LAGLIDADG_1	-	45
+2	Query_56	Specific	334330	253	365	1.331e-06	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_57	Peptide	448	orf449_Olipa1_feature_144_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_57	Specific	334330	64	153	7.40108e-12	61.4834	pfam00961	LAGLIDADG_1	-	45
+2	Query_57	Specific	334330	202	312	9.84914e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+2	Query_57	Specific	197761	389	435	6.73551e-07	45.6366	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_58	Peptide	194	orf194_Olipa1_feature_146_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Specific	335245	7	176	2.34822e-62	190.45	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_59	Peptide	392	orf392_Olipa1_feature_148_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_59	Specific	334330	3	89	6.30662e-14	66.8762	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_60	Peptide	311	orf311_Olipa1_feature_150_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_60	Specific	334330	74	168	1.41419e-18	79.2026	pfam00961	LAGLIDADG_1	-	45
+2	Query_60	Specific	334330	221	311	0.00604068	35.6751	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_61	Peptide	309	orf310_Olipa1_feature_152_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_61	Specific	334330	72	166	2.0999e-18	78.4322	pfam00961	LAGLIDADG_1	-	45
+2	Query_61	Specific	334330	219	309	0.00764629	35.2899	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_62	Peptide	318	cob_Olipa1_feature_154_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_62	Specific	214440	1	298	1.07389e-144	411.483	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_63	Peptide	444	orf444_Olipa1_feature_158_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_63	Specific	334330	71	164	1.37419e-16	74.9654	pfam00961	LAGLIDADG_1	-	45
+2	Query_63	Specific	334330	217	318	0.00076616	38.7567	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_64	Peptide	250	orf250_Olipa1_feature_160_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_64	Specific	334330	119	216	6.35158e-12	60.3279	pfam00961	LAGLIDADG_1	-	45
+2	Query_64	Specific	334330	1	60	0.000242547	39.1419	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_65	Peptide	214	orf214_Olipa1_feature_164_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_65	Non-specific	273636	2	199	1.74633e-23	93.2193	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_66	Peptide	317	orf317_Olipa1_feature_168_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_66	Specific	334330	74	172	0.00131421	37.6011	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_67	Peptide	392	orf392_Olipa1_feature_172_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_67	Specific	334330	103	206	2.10526e-23	93.455	pfam00961	LAGLIDADG_1	-	45
+2	Query_67	Specific	334330	264	357	2.33734e-16	73.8098	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+SESSION	3	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_70	Peptide	469	orf470_Olipa1_feature_207_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_70	Specific	334330	176	277	4.72151e-25	98.4626	pfam00961	LAGLIDADG_1	-	45
+3	Query_70	Specific	334330	335	438	2.72434e-24	96.5366	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_71	Peptide	362	orf363_Olipa1_feature_209_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_71	Specific	334330	72	180	1.26958e-08	51.8535	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_73	Peptide	85	orf86_Olipa1_feature_213_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_73	Specific	334330	8	49	2.31172e-07	44.1495	pfam00961	LAGLIDADG_1	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_74	Peptide	492	orf493_Olipa1_feature_219_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_74	Superfamily	350997	19	86	4.84696e-32	128.447	cl00275	Heme_Cu_Oxidase_I	C	-
+3	Query_74	Specific	334330	362	462	3.04838e-21	88.0622	pfam00961	LAGLIDADG_1	-	45
+3	Query_74	Specific	334330	206	303	7.16717e-19	81.5138	pfam00961	LAGLIDADG_1	-	45
+3	Query_74	Superfamily	353929	154	194	7.13003e-05	41.4425	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+3	Query_74	Generic	Low-spin heme binding site	S48,R52,F70,H77,M81,I82,V86	15	7	238461
+3	Query_74	Generic	D-pathway	Y33	9	1	238461
+3	Query_74	Generic	active site	Y156,Y167,G169,R177,Y181	6	5	198380
+3	Query_74	Generic	catalytic site	R177	2	1	198380
+3	Query_74	Generic	GIY-YIG motif/motif A	G154,V155,Y156,Y167,V168,G169	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_75	Peptide	231	orf231_Olipa1_feature_221_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_75	Superfamily	353929	1	59	3.48956e-13	63.0136	cl15257	GIY-YIG_SF	N	-
+3	Query_75	Non-specific	273636	7	224	0.000118423	41.6026	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+SITES
+3	Query_75	Generic	active site	E44	6	1	198380
+3	Query_75	Generic	catalytic site	E44	2	1	198380
+3	Query_75	Generic	metal binding site	E44	1	1	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_76	Peptide	412	orf413_Olipa1_feature_223_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_76	Superfamily	353929	151	238	1.47473e-06	45.6796	cl15257	GIY-YIG_SF	-	-
+ENDDOMAINS
+SITES
+3	Query_76	Generic	active site	Y152,L163,G165,R173,Y177,E223	6	6	198380
+3	Query_76	Generic	catalytic site	R173,E223	2	2	198380
+3	Query_76	Generic	metal binding site	E223	1	1	198380
+3	Query_76	Generic	GIY-YIG motif/motif A	V151,Y152,L163,V164,G165	6	5	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_77	Peptide	372	orf373_Olipa1_feature_225_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_77	Specific	334330	94	191	7.8976e-21	86.1362	pfam00961	LAGLIDADG_1	-	45
+3	Query_77	Specific	334330	251	344	2.95409e-18	78.8174	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_78	Peptide	1003	orf1004_Olipa1_feature_227_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_78	Specific	273636	181	366	2.76543e-38	142.14	TIGR01453	grpIintron_endo	-	45
+3	Query_78	Specific	334330	872	972	2.06531e-22	92.6846	pfam00961	LAGLIDADG_1	-	45
+3	Query_78	Specific	334330	715	814	1.36129e-21	90.3734	pfam00961	LAGLIDADG_1	-	45
+3	Query_78	Specific	334330	400	495	2.53706e-11	61.0983	pfam00961	LAGLIDADG_1	-	45
+3	Query_78	Specific	334330	519	626	5.4897e-05	42.9939	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_79	Peptide	272	orf273_Olipa1_feature_229_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_79	Specific	334330	60	173	8.55424e-18	76.5062	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_80	Peptide	323	orf324_Olipa1_feature_231_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_80	Specific	334330	169	278	2.2363e-14	67.6466	pfam00961	LAGLIDADG_1	-	45
+3	Query_80	Specific	334330	47	143	7.74163e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_81	Peptide	298	orf298_Olipa1_feature_233_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_81	Specific	334330	159	257	7.15259e-11	58.0167	pfam00961	LAGLIDADG_1	-	45
+3	Query_81	Specific	334330	48	113	0.00799648	35.2899	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_83	Peptide	311	orf312_Olipa1_feature_237_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_83	Specific	334330	27	126	2.1178e-27	102.7	pfam00961	LAGLIDADG_1	-	45
+3	Query_83	Specific	334330	187	287	4.20368e-27	101.929	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_84	Peptide	254	orf255_Olipa1_feature_239_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_84	Specific	334330	98	213	9.49008e-15	68.0318	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_85	Peptide	398	orf399_Olipa1_feature_241_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_85	Specific	334330	118	211	1.47144e-18	79.973	pfam00961	LAGLIDADG_1	-	45
+3	Query_85	Specific	334330	268	353	0.00327863	36.4455	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_86	Peptide	425	orf425_Olipa1_feature_243_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_86	Superfamily	350997	4	45	1.3022e-07	53.2557	cl00275	Heme_Cu_Oxidase_I	NC	-
+3	Query_86	Specific	334330	121	218	1.38391e-07	49.1571	pfam00961	LAGLIDADG_1	-	45
+3	Query_86	Specific	334330	242	368	1.08053e-06	46.4607	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+3	Query_86	Generic	D-pathway	N4,T8	9	2	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_87	Peptide	349	orf350_Olipa1_feature_245_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_87	Specific	334330	201	305	1.20621e-10	57.6315	pfam00961	LAGLIDADG_1	-	45
+3	Query_87	Specific	334330	81	177	2.46056e-05	42.6087	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_88	Peptide	165	orf166_Olipa1_feature_247_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_88	Specific	335245	50	156	1.47657e-31	111.099	pfam03161	LAGLIDADG_2	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_89	Peptide	323	orf324_Olipa1_feature_249_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_89	Specific	334330	199	293	6.68301e-17	74.5802	pfam00961	LAGLIDADG_1	-	45
+3	Query_89	Specific	334330	80	167	1.05861e-07	49.1571	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_90	Peptide	1071	orf1072_Olipa1_feature_251_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_90	Specific	334330	639	740	4.71648e-23	94.6106	pfam00961	LAGLIDADG_1	-	45
+3	Query_90	Specific	334330	72	172	5.42484e-20	85.751	pfam00961	LAGLIDADG_1	-	45
+3	Query_90	Specific	334330	231	331	5.80691e-20	85.751	pfam00961	LAGLIDADG_1	-	45
+3	Query_90	Specific	334330	483	581	1.39595e-18	81.899	pfam00961	LAGLIDADG_1	-	45
+3	Query_90	Specific	334330	942	1030	9.46578e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+3	Query_90	Specific	334330	836	902	0.00616703	37.2159	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_91	Peptide	266	orf267_Olipa1_feature_253_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_91	Specific	334330	146	226	2.11193e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+3	Query_91	Specific	334330	40	106	5.96198e-05	41.0679	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_92	Peptide	311	orf312_Olipa1_feature_255_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_92	Specific	334330	180	277	2.65887e-17	75.7358	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_93	Peptide	329	orf329_Olipa1_feature_257_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_93	Specific	334330	205	301	4.57191e-22	88.8326	pfam00961	LAGLIDADG_1	-	45
+3	Query_93	Specific	334330	96	164	0.000136542	40.2975	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_94	Peptide	722	orf723_Olipa1_feature_259_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_94	Specific	334330	175	274	4.60498e-16	74.195	pfam00961	LAGLIDADG_1	-	45
+3	Query_94	Specific	334330	332	431	3.74253e-14	68.417	pfam00961	LAGLIDADG_1	-	45
+3	Query_94	Superfamily	350997	16	55	4.92669e-09	59.0337	cl00275	Heme_Cu_Oxidase_I	NC	-
+3	Query_94	Specific	334330	599	688	7.28992e-07	48.0015	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+SITES
+3	Query_94	Generic	Binuclear center (active site)	Q20	4	1	238461
+3	Query_94	Generic	K-pathway	Q20,Y24,S35	7	3	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_96	Peptide	112	orf112_Olipa1_feature_263_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_96	Specific	339260	49	88	0.00932594	32.5196	pfam14528	LAGLIDADG_3	C	352872
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_97	Peptide	330	orf331_Olipa1_feature_265_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+3	Query_97	Specific	334330	44	143	3.89706e-21	86.1362	pfam00961	LAGLIDADG_1	-	45
+3	Query_97	Specific	334330	201	299	1.01643e-20	84.9806	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	3
+SESSION	4	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_98	Peptide	300	orf301_Olipa1_feature_267_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_98	Specific	334330	162	271	5.48458e-13	63.7946	pfam00961	LAGLIDADG_1	-	45
+4	Query_98	Specific	334330	54	139	0.00028562	39.1419	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_99	Peptide	294	cox1_Olipa1_feature_269_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_99	Superfamily	350997	19	245	5.46003e-136	393.387	cl00275	Heme_Cu_Oxidase_I	N	-
+ENDDOMAINS
+SITES
+4	Query_99	Generic	Binuclear center (active site)	H44,H45,H130	4	3	238461
+4	Query_99	Generic	Low-spin heme binding site	V125,H132,L135,S136,R192,R193,F222	15	7	238461
+4	Query_99	Generic	K-pathway	H44,H45,T70,K73	7	4	238461
+4	Query_99	Generic	Putative proton exit pathway	H45,H122,D123,R192,R193	5	5	238461
+4	Query_99	Generic	Putative water exit pathway	D118,H122,D123,R192	7	4	238461
+ENDSITES
+ENDQUERY
+QUERY	Query_100	Peptide	364	orf364_Olipa1_feature_273_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_100	Specific	334330	220	319	2.11423e-16	73.8098	pfam00961	LAGLIDADG_1	-	45
+4	Query_100	Specific	334330	100	193	3.26352e-05	42.2235	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_101	Peptide	225	orf225_Olipa1_feature_277_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_101	Specific	335245	38	204	1.71529e-54	171.96	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_102	Peptide	539	orf539_Olipa1_feature_281_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_102	Non-specific	273636	333	533	3.4999e-36	133.665	TIGR01453	grpIintron_endo	-	45
+4	Query_102	Specific	335245	78	258	6.25188e-19	84.1347	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_103	Peptide	268	orf268_Olipa1_feature_285_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_103	Specific	335245	62	253	6.83185e-26	99.5427	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_104	Peptide	170	orf170_Olipa1_feature_289_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_104	Superfamily	353929	137	167	2.90686e-08	48.7612	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+4	Query_104	Generic	active site	Y140,Y151,G153,R161,Y165	6	5	198380
+4	Query_104	Generic	catalytic site	R161	2	1	198380
+4	Query_104	Generic	GIY-YIG motif/motif A	G138,V139,Y140,Y151,V152,G153	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_105	Peptide	146	orf146_Olipa1_feature_291_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_105	Non-specific	273636	3	58	1.28374e-08	51.2325	TIGR01453	grpIintron_endo	N	45
+4	Query_105	Specific	197761	92	142	1.32203e-08	47.9478	smart00497	IENR1	-	299755
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_106	Peptide	272	orf272_Olipa1_feature_295_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_106	Specific	334330	47	142	3.44047e-17	74.5802	pfam00961	LAGLIDADG_1	-	45
+4	Query_106	Specific	334330	182	267	6.63817e-09	52.2387	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_107	Peptide	289	orf289_Olipa1_feature_297_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_107	Specific	334330	50	145	6.01209e-07	46.8459	pfam00961	LAGLIDADG_1	-	45
+4	Query_107	Specific	334330	190	289	6.07925e-05	41.0679	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_108	Peptide	358	orf358_Olipa1_feature_299_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_108	Specific	334330	97	171	3.57115e-10	56.0907	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_109	Peptide	323	orf323_Olipa1_feature_303_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_109	Non-specific	273636	110	309	7.81801e-36	128.658	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_110	Peptide	283	orf283_Olipa1_feature_307_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_110	Non-specific	273636	73	276	3.71089e-32	117.872	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_111	Peptide	443	nad2_Olipa1_feature_310_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_111	Superfamily	356474	124	236	3.52387e-19	89.4949	cl29598	Proton_antipo_M	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_112	Peptide	356	orf356_Olipa1_feature_312_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_112	Specific	334330	74	173	2.60992e-30	111.174	pfam00961	LAGLIDADG_1	-	45
+4	Query_112	Specific	334330	234	331	2.07837e-19	81.899	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_113	Peptide	195	nad3_Olipa1_feature_314_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_113	Specific	334119	26	113	2.59823e-31	109.042	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_114	Peptide	72	orf72_Olipa1_feature_316_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_114	Superfamily	353929	38	71	7.60337e-09	47.2204	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+4	Query_114	Generic	active site	Y41,N52,G54,R62,Y66	6	5	198380
+4	Query_114	Generic	catalytic site	R62	2	1	198380
+4	Query_114	Generic	GIY-YIG motif/motif A	G39,V40,Y41,N52,V53,G54	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_115	Peptide	120	orf120_Olipa1_feature_318_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_115	Superfamily	353929	1	53	0.00860068	32.9681	cl15257	GIY-YIG_SF	N	-
+ENDDOMAINS
+SITES
+4	Query_115	Generic	active site	E38	6	1	198380
+4	Query_115	Generic	catalytic site	E38	2	1	198380
+4	Query_115	Generic	metal binding site	E38	1	1	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_116	Peptide	1047	orf1048_Olipa1_feature_320_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_116	Non-specific	273636	205	454	2.84312e-26	107.472	TIGR01453	grpIintron_endo	-	45
+4	Query_116	Specific	334330	913	1010	1.34169e-22	93.0698	pfam00961	LAGLIDADG_1	-	45
+4	Query_116	Specific	334330	755	855	1.30861e-19	84.5954	pfam00961	LAGLIDADG_1	-	45
+4	Query_116	Non-specific	235622	2	65	2.98721e-10	63.6829	PRK05846	PRK05846	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_117	Peptide	342	orf342_Olipa1_feature_322_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_117	Specific	238828	2	194	1.01908e-27	108.057	cd01651	RT_G2_intron	N	295487
+4	Query_117	Non-specific	279664	219	317	2.13839e-13	66.3391	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+4	Query_117	Specific	putative active site	K11,I12,K13,N14,F15,F16,H80,G81,Y121,Y123,D124,L190,C191	13	13	238828
+4	Query_117	Specific	putative nucleic acid binding site	G81	1	1	238828
+4	Query_117	Specific	putative NTP binding site	K11,I12,K13,N14,F15,F16,H80,Y123	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_118	Peptide	314	nad4_Olipa1_feature_324_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_118	Non-specific	214462	1	306	1.00085e-98	298.889	MTH00217	ND4	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_119	Peptide	383	orf383_Olipa1_feature_328_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_119	Specific	334330	260	350	3.40622e-06	44.9199	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_121	Peptide	232	cox3_Olipa1_feature_339_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_121	Specific	238834	1	229	3.71919e-110	315.995	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+4	Query_121	Specific	Subunit I/III interface	Q44,Q47,G48,S59,F62,S66,V67,H73,S161,A162,T165,A169	12	12	238834
+4	Query_121	Specific	Subunit III/Vb interface	G128	1	1	238834
+4	Query_121	Specific	Subunit III/VIa interface	F97,G98,I99,Y116,I142,I152,E153,A154,A159,D160,S161	11	11	238834
+4	Query_121	Specific	Subunit III/VIb interface	A89	1	1	238834
+4	Query_121	Specific	Subunit III/VIIa interface	L26,R29,D30,L33,T36,F37,L38	7	7	238834
+4	Query_121	Specific	Phospholipid binding site	W27,F28,V31,I32,G35,H41,G52,F53,F56,F184,R191,L203,G204	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_122	Peptide	336	orf337_Olipa1_feature_342_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_122	Specific	334330	184	304	1.3643e-11	60.3279	pfam00961	LAGLIDADG_1	-	45
+4	Query_122	Specific	334330	63	160	0.000367001	39.1419	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_123	Peptide	206	orf206_Olipa1_feature_345_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_123	Specific	334330	54	174	5.29573e-13	62.2538	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_124	Peptide	41	orf41_Olipa1_feature_348_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_124	Superfamily	355698	7	38	0.000710236	34.246	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_126	Peptide	211	nad6_Olipa1_feature_354_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_126	Superfamily	354830	8	106	3.02837e-17	76.0281	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_127	Peptide	344	orf344_Olipa1_feature_356_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_127	Superfamily	355698	130	343	1.31872e-12	68.1436	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_128	Peptide	39	orf39_Olipa1_feature_358_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_128	Superfamily	355698	1	34	6.87325e-07	42.3352	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_130	Peptide	238	orf238_Olipa1_feature_362_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_130	Specific	338904	121	229	9.78014e-06	42.7544	pfam13695	zf-3CxxC	-	354079
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_131	Peptide	273	orf273_Olipa1_feature_364_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_131	Superfamily	355698	172	273	0.000126948	42.8404	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_133	Peptide	56	orf55_Olipa1_feature_368_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_133	Superfamily	355698	2	44	0.00442954	32.7052	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_134	Peptide	108	orf108_Olipa1_feature_370_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_134	Superfamily	355698	3	101	1.59801e-07	47.3428	cl28058	DNA_pol_B_2	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_135	Peptide	94	orf94_Olipa1_feature_372_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+4	Query_135	Superfamily	355698	45	94	7.71547e-06	42.3352	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	4
+SESSION	5	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_136	Peptide	385	orf385_Olipa1_feature_374_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_136	Superfamily	355698	27	225	4.91819e-24	102.812	cl28058	DNA_pol_B_2	N	-
+5	Query_136	Non-specific	223494	209	301	0.000494323	42.0263	COG0417	PolB	N	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_137	Peptide	192	orf192_Olipa1_feature_376_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+5	Query_137	Specific	335245	1	172	1.08634e-30	109.943	pfam03161	LAGLIDADG_2	-	45
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	5
+ENDDATA

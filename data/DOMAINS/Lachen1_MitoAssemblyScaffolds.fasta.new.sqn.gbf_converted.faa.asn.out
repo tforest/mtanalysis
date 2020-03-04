@@ -1,0 +1,193 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Lachen1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Lachen1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_1	Peptide	386	cob_Lachen1_feature_8_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_1	Specific	214440	10	366	1.18346e-168	475.041	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	338	orf338_Lachen1_feature_16_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	273636	115	326	5.82164e-26	102.849	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	251	cox2_Lachen1_feature_21_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Non-specific	214402	10	246	1.3098e-112	322.855	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	52	atp8_Lachen1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	283561	1	48	4.67891e-05	35.845	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	664	nad5_Lachen1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Non-specific	177253	1	640	0	648.607	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_8	Peptide	90	nad4L_Lachen1_feature_32_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_8	Superfamily	351118	7	87	2.0304e-10	52.3418	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	270	cox3_Lachen1_feature_34_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	278911	13	268	3.78371e-122	348.631	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+1	Query_9	Specific	Subunit I/III interface	Q82,K85,G86,S97,F100,S104,V105,H111,S199,V200,T203,A207	12	12	238834
+1	Query_9	Specific	Subunit III/Vb interface	G166	1	1	238834
+1	Query_9	Specific	Subunit III/VIa interface	F135,A136,I137,Y154,I180,S190,E191,S192,S197,D198,S199	11	11	238834
+1	Query_9	Specific	Subunit III/VIb interface	Q127	1	1	238834
+1	Query_9	Specific	Subunit III/VIIa interface	L64,R67,D68,T71,T74,Y75,L76	7	7	238834
+1	Query_9	Specific	Phospholipid binding site	W65,F66,I69,I70,G73,H79,G90,V91,F94,F222,R229,Q241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_11	Peptide	73	atp9_Lachen1_feature_38_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Specific	349422	6	70	5.28418e-14	59.8307	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_13	Peptide	483	nad4_Lachen1_feature_48_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_13	Specific	235622	33	483	5.31257e-143	419.222	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	528	cox1_Lachen1_feature_54_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	238833	8	512	0	839.448	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_14	Specific	Binuclear center (heme a3/CuB)	H240,H289,H290,H375	4	4	238833
+1	Query_14	Specific	Low-spin heme (heme a) binding site	H61,H377,S381,T423,S460	5	5	238833
+1	Query_14	Specific	D-pathway	Y17,N80,D91,N98,S101,S156,S157,N163,T167	9	9	238833
+1	Query_14	Specific	K-pathway	H240,Y244,S255,H289,H290,T315,K318	7	7	238833
+1	Query_14	Specific	Electron transfer pathway	F376,R437,R438	3	3	238833
+1	Query_14	Specific	Putative proton exit pathway	H290,H367,D368,R437,R438	5	5	238833
+1	Query_14	Specific	Putative water exit pathway	D227,Q232,H233,D363,H367,D368,R437	7	7	238833
+1	Query_14	Specific	Subunit I/II interface	N55,D227,K264,F267,G268,S293,V294,G295,V298,R301,M309,I317,F320,Y327,G328,G329,I341,N359,A360,L362,L364,A365,L366,H367,D368,L432,A433,R437,R438,I439,G448,W449	32	32	238833
+1	Query_14	Specific	Subunit I/III interface	T8,P90,F94,R96,W103,D144,F148,T166,N170,V190,L197,P200,M208,T217,S218,F219,G224,G225,D227,F237,Y274,F277,G280,I281,L285	25	25	238833
+1	Query_14	Specific	Subunit I/IV interface	L37,S40,S41,L407,K410,I411,D444,M462	8	8	238833
+1	Query_14	Specific	Subunit I/Vb interface	P265,Y269,T511	3	3	238833
+1	Query_14	Specific	Subunit I/VIa interface	I135,R213,N214,F215,N216	5	5	238833
+1	Query_14	Specific	Subunit I/VIb interface	G295	1	1	238833
+1	Query_14	Specific	Subunit I/VIc interface	G328	1	1	238833
+1	Query_14	Specific	Subunit I/VIIa interface	L114,L117	2	2	238833
+1	Query_14	Specific	Subunit I/VIIb interface	D444,G448	2	2	238833
+1	Query_14	Specific	Subunit I/VIIc interface	F23,I27,G30,L34,A116,L117,I399,Y472,F475	9	9	238833
+1	Query_14	Specific	Subunit I/VIIIb interface	L408,V465	2	2	238833
+1	Query_14	Specific	Dimer interface	V190,L197,F237,Y274,F277,G280,I281,L285	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	235	orf235_Lachen1_feature_60_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	13	104	1.51417e-11	58.7871	pfam00961	LAGLIDADG_1	-	45
+1	Query_16	Specific	334330	144	232	3.76358e-08	49.5423	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	295	orf295_Lachen1_feature_66_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	334330	144	254	1.62193e-20	83.825	pfam00961	LAGLIDADG_1	-	45
+1	Query_18	Specific	334330	26	110	9.76701e-05	40.6827	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_19	Peptide	256	atp6_Lachen1_feature_71_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Superfamily	351082	14	256	2.83349e-45	151.698	cl00413	ATP-synt_A	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	238	orf238_Lachen1_feature_75_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Superfamily	355698	1	219	1.74014e-13	69.034	cl28058	DNA_pol_B_2	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_21	Peptide	124	nad3_Lachen1_feature_95_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Specific	334119	28	112	2.78782e-25	91.3226	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	549	nad2_Lachen1_feature_97_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Superfamily	356474	138	488	1.21199e-60	207.366	cl29598	Proton_antipo_M	N	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_24	Peptide	338	nad1_Lachen1_feature_109_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_24	Specific	333876	30	326	8.86073e-113	329.433	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	203	nad6_Lachen1_feature_115_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	354830	8	104	6.60597e-19	80.2653	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	531	orf531_Lachen1_feature_117_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Superfamily	355698	9	388	1.95235e-62	211.053	cl28058	DNA_pol_B_2	-	-
+1	Query_26	Superfamily	353046	369	453	3.54478e-05	45.8049	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_26	Generic	active site	D404	8	1	99912
+1	Query_26	Generic	metal-binding site 	D402,D404,S405	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	203	nad6_Lachen1_feature_6_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Superfamily	354830	8	104	6.60597e-19	80.2653	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_29	Peptide	531	orf531_Lachen1_feature_8_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_29	Superfamily	355698	9	388	1.95235e-62	211.053	cl28058	DNA_pol_B_2	-	-
+1	Query_29	Superfamily	353046	369	453	3.54478e-05	45.8049	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_29	Generic	active site	D404	8	1	99912
+1	Query_29	Generic	metal-binding site 	D402,D404,S405	3	3	99912
+ENDSITES
+ENDQUERY
+QUERY	Query_32	Peptide	531	orf531_Lachen1_feature_18_from_C_1, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Superfamily	355698	9	388	1.95235e-62	211.053	cl28058	DNA_pol_B_2	-	-
+1	Query_32	Superfamily	353046	369	453	3.54478e-05	45.8049	cl10023	POLBc	NC	-
+ENDDOMAINS
+SITES
+1	Query_32	Generic	active site	D404	8	1	99912
+1	Query_32	Generic	metal-binding site 	D402,D404,S405	3	3	99912
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+ENDDATA

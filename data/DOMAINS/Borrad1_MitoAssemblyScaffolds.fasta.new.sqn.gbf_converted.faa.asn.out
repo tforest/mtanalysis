@@ -1,0 +1,157 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Borrad1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Borrad1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_4	Peptide	336	nad1_Borrad1_feature_10_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Specific	333876	31	324	3.42099e-109	320.189	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	203	nad6_Borrad1_feature_33_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Superfamily	354830	1	108	1.04667e-17	76.9633	cl21484	Oxidored_q3	C	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_14	Peptide	88	nad4L_Borrad1_feature_50_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Superfamily	351118	4	84	1.23699e-15	65.4385	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_15	Peptide	659	nad5_Borrad1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Non-specific	214400	1	629	0	550.065	MTH00020	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	117	nad3_Borrad1_feature_74_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	334119	28	113	9.90574e-25	89.3966	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	522	nad2_Borrad1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	235603	114	510	7.57011e-83	265.146	PRK05777	PRK05777	N	356474
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	108	orf109_Borrad1_feature_80_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Superfamily	353929	34	90	3.17177e-11	54.5392	cl15257	GIY-YIG_SF	C	-
+ENDDOMAINS
+SITES
+1	Query_25	Generic	active site	Y37,Y48,G50,R57,Y61	6	5	198380
+1	Query_25	Generic	catalytic site	R57	2	1	198380
+1	Query_25	Generic	GIY-YIG motif/motif A	I35,I36,Y37,Y48,V49,G50	6	6	198380
+ENDSITES
+ENDQUERY
+QUERY	Query_28	Peptide	257	atp6_Borrad1_feature_98_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_28	Specific	273458	25	190	6.07116e-36	127.322	TIGR01131	ATP_synt_6_or_A	C	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_32	Peptide	241	cox2_Borrad1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_32	Non-specific	214402	3	226	2.10057e-98	286.646	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_34	Peptide	249	atp6_Borrad1_feature_120_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_34	Specific	273458	7	246	1.12592e-38	133.871	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_39	Peptide	309	nad1_Borrad1_feature_132_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_39	Specific	333876	16	57	1.11148e-09	58.2529	pfam00146	NADHdh	C	351105
+1	Query_39	Specific	333876	245	293	0.000582619	40.9189	pfam00146	NADHdh	N	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_41	Peptide	120	orf120_Borrad1_feature_144_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_41	Non-specific	273636	30	105	0.00079455	36.9802	TIGR01453	grpIintron_endo	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_42	Peptide	48	atp9_Borrad1_feature_146_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_42	Specific	349422	10	48	3.9304e-12	53.6676	cd18182	ATP-synt_Fo_c_ATP5G3	N	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_43	Peptide	496	nad4_Borrad1_feature_148_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_43	Specific	235622	46	495	7.70765e-141	414.215	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_44	Peptide	51	atp8_Borrad1_feature_152_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_44	Non-specific	283561	1	48	3.16707e-05	36.2302	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_49	Peptide	383	cob_Borrad1_feature_170_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_49	Specific	214440	10	366	3.3871e-169	476.196	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_50	Peptide	185	orf185_Borrad1_feature_176_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_50	Specific	334330	23	118	8.81907e-09	50.6979	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_53	Peptide	224	orf225_Borrad1_feature_187_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_53	Specific	214677	59	121	4.92034e-06	43.1788	smart00465	GIYc	C	353929
+ENDDOMAINS
+SITES
+1	Query_53	Specific	active site	Y63,Y74,G76,R84,H88	6	5	198380
+1	Query_53	Specific	GIY-YIG motif/motif A	G61,T62,Y63,Y74,V75,G76	6	6	198380
+ENDSITES
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_56	Peptide	274	cox3_Borrad1_feature_195_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_56	Specific	278911	15	270	1.11276e-120	345.164	pfam00510	COX3	-	294143
+ENDDOMAINS
+SITES
+2	Query_56	Specific	Subunit I/III interface	E84,K87,G88,S99,F102,S106,V107,H113,S201,V202,S205,A209	12	12	238834
+2	Query_56	Specific	Subunit III/Vb interface	G168	1	1	238834
+2	Query_56	Specific	Subunit III/VIa interface	F137,S138,I139,W156,V182,S192,E193,S194,A199,D200,S201	11	11	238834
+2	Query_56	Specific	Subunit III/VIb interface	Q129	1	1	238834
+2	Query_56	Specific	Subunit III/VIIa interface	L66,K69,D70,I73,T76,Y77,L78	7	7	238834
+2	Query_56	Specific	Phospholipid binding site	W67,F68,I71,V72,G75,H81,G92,V93,F96,F224,R231,N243,G244	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_58	Peptide	87	orf87_Borrad1_feature_199_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_58	Superfamily	355698	1	79	0.000520461	36.5572	cl28058	DNA_pol_B_2	NC	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA

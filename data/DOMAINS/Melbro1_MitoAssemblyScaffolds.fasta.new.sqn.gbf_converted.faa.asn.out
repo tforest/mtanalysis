@@ -1,0 +1,222 @@
+#Post-RPSBLAST Processing Utility
+
+#Input data file:	Melbro1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn
+#Output data file:	Melbro1_MitoAssemblyScaffolds.fasta.new.sqn.gbf_converted.faa.asn.out
+#Annotation data at:	/opt/rpsbproc/data
+#E-Value cutoff:	0.01
+#Redundancy:	Concise
+#Data requested:	Domain hits and site annotations
+#Output format -- tab-delimited table
+#Show superfamilies: NO
+#DATA
+#SESSION	<session-ordinal>	<program>	<database>	<score-matrix>	<evalue-threshold>
+#QUERY	<query-id>	<seq-type>	<seq-length>	<definition-line>
+#DOMAINS
+#<session-ordinal>	<query-id[readingframe]>	<hit-type>	<PSSM-ID>	<from>	<to>	<E-Value>	<bitscore>	<accession>	<short-name>	<incomplete>	<superfamily PSSM-ID>
+#more such lines......
+#ENDDOMAINS
+#SITES
+#<session-ordinal>	<query-id[readingframe]>	<annot-type>	<title>	<residue(coordinates)>	<complete-size>	<mapped-size>	<source-domain>
+#more such lines......
+#ENDSITES
+#MOTIFS
+#<session-ordinal>	<query-id[readingframe]>	<title>	<from>	<to>	<source-domain>
+#more such lines......
+#ENDMOTIFS
+#ENDQUERY	<query-id>
+#more query sections..
+#ENDSESSION	<session-ordinal>
+#more session sections..
+#ENDDATA
+#=====================================================================
+DATA
+SESSION	1	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_2	Peptide	485	nad4_Melbro1_feature_12_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_2	Specific	235622	16	484	1.54648e-121	364.139	PRK05846	PRK05846	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_3	Peptide	666	nad5_Melbro1_feature_14_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_3	Non-specific	177253	1	618	0	607.775	MTH00210	ND5	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_4	Peptide	88	nad4L_Melbro1_feature_23_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_4	Superfamily	351118	5	88	3.37721e-14	61.5866	cl00492	Oxidored_q2	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_5	Peptide	1015	orf1015_Melbro1_feature_25_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_5	Non-specific	236776	415	511	3.77384e-05	46.9432	PRK10856	PRK10856	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_6	Peptide	270	cox3_Melbro1_feature_27_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_6	Specific	238834	24	267	3.52699e-110	317.535	cd01665	Cyt_c_Oxidase_III	-	294143
+ENDDOMAINS
+SITES
+1	Query_6	Specific	Subunit I/III interface	E82,K85,G86,S97,F100,S104,I105,H111,S199,V200,S203,C207	12	12	238834
+1	Query_6	Specific	Subunit III/Vb interface	F166	1	1	238834
+1	Query_6	Specific	Subunit III/VIa interface	F135,A136,I137,F154,L180,A190,F191,A192,S197,D198,S199	11	11	238834
+1	Query_6	Specific	Subunit III/VIb interface	Q127	1	1	238834
+1	Query_6	Specific	Subunit III/VIIa interface	F64,R67,D68,N71,A74,L75,E76	7	7	238834
+1	Query_6	Specific	Phospholipid binding site	W65,F66,V69,G70,G73,H79,G90,F91,F94,F222,R229,Q241,G242	13	13	238834
+ENDSITES
+ENDQUERY
+QUERY	Query_7	Peptide	386	cob_Melbro1_feature_29_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_7	Specific	214440	10	366	3.42488e-160	453.47	MTH00156	CYTB	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_9	Peptide	655	orf655_Melbro1_feature_41_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_9	Specific	238828	257	507	9.40013e-57	191.645	cd01651	RT_G2_intron	-	295487
+1	Query_9	Non-specific	279664	524	618	3.18394e-11	61.3315	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+1	Query_9	Specific	putative active site	E324,I325,K326,G327,Y328,F329,Q376,G377,Y451,E453,Q454,L503,D504	13	13	238828
+1	Query_9	Specific	putative nucleic acid binding site	G377	1	1	238828
+1	Query_9	Specific	putative NTP binding site	E324,I325,K326,G327,Y328,F329,Q376,E453	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_10	Peptide	337	nad1_Melbro1_feature_46_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_10	Specific	333876	19	325	6.24082e-115	334.826	pfam00146	NADHdh	-	351105
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_11	Peptide	50	atp8_Melbro1_feature_52_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_11	Non-specific	283561	1	48	6.48177e-05	35.4598	pfam05933	Fun_ATP-synt_8	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_12	Peptide	73	atp9_Melbro1_feature_58_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_12	Specific	349422	6	70	1.20532e-14	61.3715	cd18182	ATP-synt_Fo_c_ATP5G3	-	365782
+ENDDOMAINS
+SITES
+ENDSITES
+ENDQUERY
+QUERY	Query_14	Peptide	503	cox1_Melbro1_feature_76_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_14	Specific	238833	1	487	0	823.27	cd01663	Cyt_c_Oxidase_I	-	350997
+ENDDOMAINS
+SITES
+1	Query_14	Specific	Binuclear center (heme a3/CuB)	H215,H264,H265,H350	4	4	238833
+1	Query_14	Specific	Low-spin heme (heme a) binding site	H36,H352,S356,T398,S435	5	5	238833
+1	Query_14	Specific	D-pathway	N55,D66,N73,S76,S131,S132,N138,T142	9	8	238833
+1	Query_14	Specific	K-pathway	H215,Y219,S230,H264,H265,T290,K293	7	7	238833
+1	Query_14	Specific	Electron transfer pathway	F351,R412,R413	3	3	238833
+1	Query_14	Specific	Putative proton exit pathway	H265,H342,D343,R412,R413	5	5	238833
+1	Query_14	Specific	Putative water exit pathway	D202,Q207,H208,D338,H342,D343,R412	7	7	238833
+1	Query_14	Specific	Subunit I/II interface	N30,D202,K239,F242,G243,S268,V269,G270,V273,R276,M284,I292,F295,Y302,G303,G304,I316,N334,A335,L337,I339,A340,L341,H342,D343,L407,A408,R412,R413,I414,G423,W424	32	32	238833
+1	Query_14	Specific	Subunit I/III interface	P65,F69,R71,W78,D119,F123,T141,N145,V165,L172,P175,M183,T192,S193,F194,G199,G200,D202,F212,Y249,F252,G255,I256,L260	25	24	238833
+1	Query_14	Specific	Subunit I/IV interface	L12,M15,S16,F382,K385,V386,D419,V437	8	8	238833
+1	Query_14	Specific	Subunit I/Vb interface	P240,Y244,A486	3	3	238833
+1	Query_14	Specific	Subunit I/VIa interface	I110,R188,N189,F190,N191	5	5	238833
+1	Query_14	Specific	Subunit I/VIb interface	G270	1	1	238833
+1	Query_14	Specific	Subunit I/VIc interface	G303	1	1	238833
+1	Query_14	Specific	Subunit I/VIIa interface	L89,L92	2	2	238833
+1	Query_14	Specific	Subunit I/VIIb interface	D419,G423	2	2	238833
+1	Query_14	Specific	Subunit I/VIIc interface	I2,A5,I9,S91,L92,I374,Y447,F450	9	8	238833
+1	Query_14	Specific	Subunit I/VIIIb interface	L383,I440	2	2	238833
+1	Query_14	Specific	Dimer interface	V165,L172,F212,Y249,F252,G255,I256,L260	8	8	238833
+ENDSITES
+ENDQUERY
+QUERY	Query_15	Peptide	864	orf864_Melbro1_feature_82_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_15	Specific	238828	308	563	1.63903e-88	279.856	cd01651	RT_G2_intron	-	295487
+1	Query_15	Non-specific	279664	590	691	1.28407e-09	57.0943	pfam01348	Intron_maturas2	C	45
+1	Query_15	Specific	238038	795	844	0.0044533	35.9104	cd00085	HNHc	N	350893
+ENDDOMAINS
+SITES
+1	Query_15	Specific	putative active site	D382,I383,K384,S385,F386,F387,Q436,G437,Y508,D510,D511,L559,G560	13	13	238828
+1	Query_15	Specific	putative nucleic acid binding site	G437	1	1	238828
+1	Query_15	Specific	putative NTP binding site	D382,I383,K384,S385,F386,F387,Q436,D510	8	8	238828
+1	Query_15	Specific	active site	E805,H807,H808,I809,G811,N822,I823,C836,L837,H840,H844	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_16	Peptide	302	orf302_Melbro1_feature_86_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_16	Specific	334330	177	273	8.73903e-14	66.1058	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_17	Peptide	348	orf348_Melbro1_feature_90_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_17	Specific	334330	116	196	1.83663e-06	45.6903	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_18	Peptide	763	orf763_Melbro1_feature_106_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_18	Specific	238828	300	562	6.56764e-85	268.3	cd01651	RT_G2_intron	-	295487
+1	Query_18	Non-specific	279664	582	687	2.10563e-12	64.7983	pfam01348	Intron_maturas2	C	45
+ENDDOMAINS
+SITES
+1	Query_18	Specific	putative active site	D376,I377,K378,S379,Y380,F381,Q430,G431,Y507,D509,D510,L558,G559	13	13	238828
+1	Query_18	Specific	putative nucleic acid binding site	G431	1	1	238828
+1	Query_18	Specific	putative NTP binding site	D376,I377,K378,S379,Y380,F381,Q430,D509	8	8	238828
+ENDSITES
+ENDQUERY
+QUERY	Query_19	Peptide	253	orf253_Melbro1_feature_110_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_19	Specific	334330	26	121	2.82944e-11	58.4019	pfam00961	LAGLIDADG_1	-	45
+1	Query_19	Specific	334330	164	252	9.28356e-11	56.8611	pfam00961	LAGLIDADG_1	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_20	Peptide	782	orf782_Melbro1_feature_114_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_20	Specific	238828	260	528	3.6458e-76	245.573	cd01651	RT_G2_intron	-	295487
+1	Query_20	Non-specific	279664	554	703	7.49166e-30	114.874	pfam01348	Intron_maturas2	-	45
+1	Query_20	Specific	238038	707	769	1.43266e-05	42.844	cd00085	HNHc	-	350893
+ENDDOMAINS
+SITES
+1	Query_20	Specific	putative active site	D334,I335,S336,K337,C338,F339,Q388,G389,Y472,D474,D475,L524,G525	13	13	238828
+1	Query_20	Specific	putative nucleic acid binding site	G389	1	1	238828
+1	Query_20	Specific	putative NTP binding site	D334,I335,S336,K337,C338,F339,Q388,D474	8	8	238828
+1	Query_20	Specific	active site	E727,H729,H730,L731,H733,N748,L749,C761,K762,H765,H769	11	11	238038
+ENDSITES
+ENDQUERY
+QUERY	Query_21	Peptide	314	orf314_Melbro1_feature_118_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_21	Non-specific	273636	101	309	2.24113e-26	103.234	TIGR01453	grpIintron_endo	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_22	Peptide	258	atp6_Melbro1_feature_121_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_22	Specific	273458	31	255	1.1229e-44	149.664	TIGR01131	ATP_synt_6_or_A	-	351082
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_23	Peptide	59	orf60_Melbro1_feature_127_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_23	Specific	334330	17	59	9.74843e-09	46.4607	pfam00961	LAGLIDADG_1	C	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_25	Peptide	251	cox2_Melbro1_feature_131_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_25	Non-specific	214402	7	251	6.82126e-114	326.322	MTH00023	COX2	-	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_26	Peptide	437	orf437_Melbro1_feature_143_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_26	Non-specific	214368	108	353	0.000887055	41.8483	CHL00117	rpoC2	NC	45
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_27	Peptide	203	nad6_Melbro1_feature_145_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+1	Query_27	Superfamily	354830	8	203	4.53007e-16	72.5613	cl21484	Oxidored_q3	-	-
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	1
+SESSION	2	blastp	2.10.0+	/opt/rpsbproc/db/Cdd	BLOSUM62	0.01
+QUERY	Query_30	Peptide	557	nad2_Melbro1_feature_151_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_30	Superfamily	356474	1	511	6.77367e-67	224.315	cl29598	Proton_antipo_M	-	-
+ENDDOMAINS
+ENDQUERY
+QUERY	Query_31	Peptide	119	nad3_Melbro1_feature_153_from_C_0, ORGANISM Genus species Unclassified.,
+DOMAINS
+2	Query_31	Specific	334119	27	112	4.69939e-21	80.1518	pfam00507	Oxidored_q4	-	351141
+ENDDOMAINS
+ENDQUERY
+ENDSESSION	2
+ENDDATA
