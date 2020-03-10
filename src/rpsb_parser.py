@@ -40,7 +40,7 @@ def write_res(fasta_kept, fasta_unk, out_file):
                 print(line)
 def compare(fastas, files_list, domains, out_folder):
     for file in files_list:
-        fasta_kept, fasta_unk = fasta.parse(file, domains, extension = '.asn.out')
+        fasta_kept, fasta_unk = fasta.parse_domains(file, domains, extension = '.asn.out')
         out_file = out_folder + '/' + file.split('/')[-1]
         print("Separating file", file, "...")
         write_res(fasta_kept, fasta_unk, out_file)
