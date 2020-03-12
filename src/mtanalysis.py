@@ -178,7 +178,7 @@ def main():
                         help="Tokenize fasta headers",
                         action="store", nargs="*")
     parser.add_argument("-postannot",
-                        help="Post annotation treatment",
+                        help="Post annotation treatment (needs a list of fasta files to be parsed)",
                         action="store", nargs="*")
     parser.add_argument("-clusters",
                         help="Clusters of genes from fasta files",
@@ -214,6 +214,8 @@ def main():
                                                ids=args.ids)
             elif args.clusters:
                 tools.remove_spurious_clusters(fasta, ambiguous_open(args.clusters))
+            else:
+                tools.detect_bad_genomes(fasta)
     except:
         # if mandatory arguments are not specified
         traceback.print_exc()

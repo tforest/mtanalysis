@@ -50,3 +50,37 @@ def remove_spurious_clusters(fastas, clusters, ids=None):
                 if key in max_value:
                     fas_out.write(">"+key+'\n')
                     fas_out.write(fasta_stream[key]+'\n')
+
+def detect_bad_genomes(fastas):
+    duplicates = []
+    species_list = []
+    genes = {}
+    for fas in fastas:        
+        fasta_stream = fasta.parse(fas)
+        for gene in list(fasta_stream.keys()):
+            #print(gene.split('_')[0], gene.split('_')[1])
+            gene_name = gene.split('_')[0]
+            if len(gene.split('_')[1]) == 1:
+                species_id = gene.split('_')[2]
+            else:
+                species_id = gene.split('_')[1]
+            print(species_id, gene.split('_'))
+            if gene_name in genes.keys():
+                genes[gene_name].append(species_id)
+            else:
+                genes[gene_name] = [species_id]
+            
+    for gene in genes:            
+            for species in genes[gene]:
+                if species not in species_list:
+                    species_list.append(species)
+                if genes[gene].count(species) > 1:
+                    #print(gene, species)
+                    #if gene in ['cox1', 'cox2', 'cob']:
+                    if species not in duplicates:
+                        duplicates.append(species)
+    print(duplicates, len(duplicates), len(species_list))
+    for species in species_list:
+        if species not in duplicates:
+            #print(species)
+            continue
