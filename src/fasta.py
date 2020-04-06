@@ -1,10 +1,10 @@
-DEBUG = False
+DEBUG = True
 
 def parse_domains(filename, domains, extension='.asn.out'):
     """
     args:
     extension is the suffit added by the rpsb 
-    """
+    """    
     keep = False
     kept = []
     unknown = []
@@ -40,3 +40,17 @@ def parse(filename):
                     entries[key] = line
 
     return entries
+
+def set_header(stream, names=None):
+    new_stream = {}
+    spec_name = ""
+    spec_id = ""
+    for head, seq in stream.items():
+        for id, name in names.items():
+            if id in head:
+                spec_id = id
+                spec_name = name
+                #new_head = head.split("_")[0]+"; "+name+"; "+id
+                new_head = head.split(";")[0]+"~"+'_'.join(name.split(" "))+"~"+id
+                new_stream[new_head] = seq 
+    return new_stream, spec_name, spec_id

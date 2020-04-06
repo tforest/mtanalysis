@@ -138,7 +138,8 @@ def add_annotation(args,f_lst):
                             annotation = annot[ids.index(id)]
                             break
                     if newname!=False:
-                        newfile.append("  ORGANISM  "+newname.strip()+"\n"+"            "+
+                        newfile.append("  ORGANISM  "+newname.strip()+"\n"+
+                                       "            "+
                                        "; ".join(annotation[0:5]).strip()+"\n")
                     else:
                         newfile.append("  ORGANISM  "+name+"\n")
@@ -178,10 +179,15 @@ def main():
                         help="Tokenize fasta headers",
                         action="store", nargs="*")
     parser.add_argument("-postannot",
-                        help="Post annotation treatment (needs a list of fasta files to be parsed)",
+                        help="Post annotation treatment (needs a list of fasta" \
+                        "files to be parsed)",
                         action="store", nargs="*")
     parser.add_argument("-clusters",
                         help="Clusters of genes from fasta files",
+                        action="store", nargs="*")
+    parser.add_argument("-intersect",
+                        help="Get intersection of orthogroups given a set of " \
+                        "orthologous sequences groups as fasta files",
                         action="store", nargs="*")
     # parser.add_argument("-ids",
     #                     help="Accession IDs file",
@@ -213,9 +219,14 @@ def main():
                 tools.remove_spurious_clusters(fasta, ambiguous_open(args.clusters),
                                                ids=args.ids)
             elif args.clusters:
-                tools.remove_spurious_clusters(fasta, ambiguous_open(args.clusters))
+                #tools.remove_spurious_clusters(fasta, ambiguous_open(args.clusters))
+                tools.split_clusters(fasta, ambiguous_open(args.clusters))
+            elif args.ids:
+                tools.rename_mfannot_proteome(args.postannot, args.ids)
             else:
                 tools.detect_bad_genomes(fasta)
+        if args.intersect:
+            tools.ortho_intersect(args.intersect)
     except:
         # if mandatory arguments are not specified
         traceback.print_exc()
