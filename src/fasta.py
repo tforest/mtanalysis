@@ -41,7 +41,7 @@ def parse(filename):
 
     return entries
 
-def set_header(stream, names=None):
+def set_header(stream, mode, names=None):
     new_stream = {}
     spec_name = ""
     spec_id = ""
@@ -50,7 +50,12 @@ def set_header(stream, names=None):
             if id in head:
                 spec_id = id
                 spec_name = name
-                #new_head = head.split("_")[0]+"; "+name+"; "+id
-                new_head = head.split(";")[0]+"~"+'_'.join(name.split(" "))+"~"+id
+                if mode == 0:
+                    new_head = head.split(";")[0]+"~"+'_'.join(name.split(" "))+"~"+id
+                elif mode == 1:
+                    new_head = head.split("_")[0]+"~"+'_'.join(name.split(" "))+"~"+id
+                else:
+                    print("Error ! Please select a correct mode for renaming headers!")
+                    exit(0)
                 new_stream[new_head] = seq 
     return new_stream, spec_name, spec_id
