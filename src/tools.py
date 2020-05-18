@@ -195,13 +195,27 @@ def subset_seq_from_tax(keyword, taxonomy, fastas):
     The Sequences and taxonomy are link using a corresponding CSV file, linking ID to Taxonomy.
 
     """
+    try:
+        keywds = keyword.split(";")
+        if len(keywds) > 1:
+            print(keywds)
+    except:
+        keywds = keyword
+    
     taxonomy_retain = []
     with open(taxonomy, 'r') as taxo_f:
         for line in taxo_f.readlines():
-            if keyword.lower() in line.lower():
-                print(keyword)
-                retained = line.split(",")[-1]
-                taxonomy_retain.append(retained.strip())
+            if type(keywds) == list:
+                for keyword in keywds:
+                    if keyword.lower() in line.lower():
+                        #print(keyword)
+                        retained = line.split(",")[-1]
+                        taxonomy_retain.append(retained.strip())
+            else:
+                if keyword.lower() in line.lower():
+                    #print(keyword)
+                    retained = line.split(",")[-1]
+                    taxonomy_retain.append(retained.strip())    
     print(taxonomy_retain)
     for k, fas in enumerate(fastas):        
         fasta_stream = fasta.parse(fas)
@@ -222,13 +236,13 @@ def list_common_genes(fastas, gene_pos=0, id_position=-1, delimiter="~"):
             if gene_head[gene_pos] not in genes.keys():
                 genes[gene_head[gene_pos]] = []
             genes[gene_head[gene_pos]].append(head)
-    print(genes.keys())
+    #print(genes.keys())
     for gene, entry in genes.items():
         if len(entry) == min([len(entry) for entry in genes.values()]):
-            print(gene)
+            #print(gene)
             smallest_subset = []
             for ent in sorted(entry):
-                print(ent)
+                #print(ent)
                 smallest_subset.append(ent.split(delimiter)[id_position])
     kept_genes = {}
     kept_species = {}
