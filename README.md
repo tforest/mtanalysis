@@ -40,7 +40,7 @@ python3 mtanalysis.py
                         Concatenate all fasta sequences that have all genes in common in a group of files
   -renamefromid [RENAMEFROMID [RENAMEFROMID ...]]
                         Rename fasta header accordingly to ID spec in taxonomy file
-
+```
 
 ## Author
 
