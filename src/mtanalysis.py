@@ -99,9 +99,25 @@ def check_orientation(entry, eps=0.05):
              'q':qualif
     }
     return stats
+
+def synteny_print(entry):
+    gene = []
+    for line in entry:
+        if line.startswith("     gene"):
+            if "complement" in line:
+                sign = "-"
+            else:
+                sign = "+"
+        if "/gene" in line:
+            if not "trn" in line and not "orf" in line:
+                word = line.strip().split('"')[1]
+                if word not in gene:
+                    gene.append(sign+word)
+    return gene
 def analyse_file(f, fname):
     entries = split_entries(f)
     prop = []
+    synteny = {}
     # print header
     for entry in entries.values():
         orient = check_orientation(entry, eps=0.2)
@@ -119,8 +135,28 @@ def analyse_file(f, fname):
         print(spec_name+","+str(orient['f'])+","+
               str(orient['r'])+","+
               str(orient['prop']))
+        synteny[spec_name] = ",".join(synteny_print(entry))
+    synt = spec_name, ",".join(synteny.values())
+    return synt
     #print("Median:", np.median(prop))
     
+def most_frequent(List): 
+    return max(set(List), key = List.count) 
+  
+def align_synteny(synteny):
+    synt = []
+    ordered_synt = []
+    for elem in synteny:
+        for elem in elem[1].split(','):
+            synt.append(elem)
+    origin = most_frequent(synt)
+    for elem in synteny:
+        spec_name = elem[0]
+        synt = elem[1].split(",")
+        if origin in synt:
+            ind = synt.index(origin)
+            ordered_synt.append(','.join([spec_name]+synt[ind:]+synt[:ind]))
+    return ordered_synt
 def add_annotation(args,f_lst):
     ids = []
     annot = []
@@ -220,10 +256,15 @@ def main():
             data, f_lst = load_data(args)
             if args.a:
                 # if analysis is chosen
+                synteny = []
                 print("spcies_id,nb_fwd,nb_rev,prop")
                 for f in data.values():
                     fname = f_lst[list(data.values()).index(f)].split('/')[-1]
-                    analyse_file(f, fname)
+                    synteny.append(analyse_file(f, fname))
+                synteny = align_synteny(synteny)
+                print("---- SYNTENY ----")
+                for synt in synteny:
+                    print(synt)
             if args.ids:
                 # add annotation mode
                 add_annotation(args, f_lst)
