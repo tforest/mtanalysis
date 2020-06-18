@@ -51,7 +51,7 @@ def remove_spurious_clusters(fastas, clusters, ids=None):
                     fas_out.write(">"+key+'\n')
                     fas_out.write(fasta_stream[key]+'\n')
 
-def split_clusters(fastas, clusters, ids=None, filter=0.1):
+def split_clusters(fastas, clusters, ids=None, filter=0.1, with_treshold=False):
     clusts = load_clusters(clusters)
     all_fastas = {}
     print("Number of species fasta files =", len(fastas),
@@ -67,8 +67,10 @@ def split_clusters(fastas, clusters, ids=None, filter=0.1):
         clustname = "OG"+format(int(clust.split("_")[-1]), '06d')
         print("[", round(i/len(clusts)*100),"% ]", "Cluster",
               clustname, "size =", len(clusts[clust]))
-        if(len(clusts[clust])>len(fastas)-len(fastas)*0.1):
-            print("Keeping", clustname, len(clusts[clust]), ">", len(fastas)-len(fastas)*filter)
+        if(with_treshold and not len(clusts[clust])>len(fastas)-len(fastas)*0.1):
+            pass
+        else:
+            #print("Keeping", clustname, len(clusts[clust]), ">", len(fastas)-len(fastas)*filter)
             with open(clustname+'.fa', 'w') as clust_out:
                 for key in clusts[clust]:
                     for fasta_key in all_fastas.keys():
@@ -114,7 +116,7 @@ def detect_bad_genomes(fastas):
         if species not in duplicates:
             #print(species)
             continue
-def rename_mfannot_proteome(fastas, ids_file, column_id = -1, column_name = -3):
+def rename_mfannot_proteome(fastas, ids_file, column_id = -1, column_name = -3, headermode=1):
     ids = []
     names = {}
     with open(ids_file, 'r') as idsinput:
@@ -128,7 +130,7 @@ def rename_mfannot_proteome(fastas, ids_file, column_id = -1, column_name = -3):
         fasta_stream = fasta.parse(fas)
         # update fasta headers with new names
         fasta_stream, spec_name, spec_id = fasta.set_header(fasta_stream,
-                                                            names)
+                                                            names=names, mode=headermode)
         new_filename = spec_name+"_"+spec_id+".fasta"
         new_filename = new_filename.replace("/", "")
         with open(new_filename, "w") as out:
@@ -171,7 +173,124 @@ def ortho_intersect(fastas):
         print(k, len(new_group[k]))
         with open("GROUP_"+str(i), "w") as output:    
             for entry in new_group[k]:
-                if entry.startswith("orf"):
-                    continue
-                else:
-                    output.write(">"+entry+"\n"+all_fastas[entry]+"\n")
+                #########
+                # if entry.startswith("orf"):
+                #     continue
+                # else:
+                #     output.write(">"+entry+"\n"+all_fastas[entry]+"\n")
+                #########
+                output.write(">"+entry+"\n"+all_fastas[entry]+"\n")
+                
+def subset_seq_from_tax(keyword, taxonomy, fastas):
+    """
+    input:
+    -----
+    keyword (str): sordariales
+    fastas (list): a list of fasta files to analyse
+    
+    Called using -selectgroup flag :
+    mtanalysis -selectgroup "sordariales" taxonomy.csv cox1.fasta
+
+    This will select only sequences with a specific property from taxonomy.
+    The Sequences and taxonomy are link using a corresponding CSV file, linking ID to Taxonomy.
+
+    """
+    try:
+        keywds = keyword.split(";")
+        if len(keywds) > 1:
+            print(keywds)
+    except:
+        keywds = keyword
+    
+    taxonomy_retain = []
+    with open(taxonomy, 'r') as taxo_f:
+        for line in taxo_f.readlines():
+            if type(keywds) == list:
+                for keyword in keywds:
+                    if keyword.lower() in line.lower():
+                        #print(keyword)
+                        retained = line.split(",")[-1]
+                        taxonomy_retain.append(retained.strip())
+            else:
+                if keyword.lower() in line.lower():
+                    #print(keyword)
+                    retained = line.split(",")[-1]
+                    taxonomy_retain.append(retained.strip())    
+    print(taxonomy_retain)
+    for k, fas in enumerate(fastas):        
+        fasta_stream = fasta.parse(fas)
+        with open(fas+".ret", "w") as output:
+            for key, seq in fasta_stream.items():
+                if key.split("~")[-1] in taxonomy_retain:
+                    ret=">"+key+"\n"+seq+"\n"
+                    output.write(ret)
+
+def list_common_genes(fastas, gene_pos=0, id_position=-1, delimiter="~"):
+    genes = {}
+    all_fastas = {}
+    for k, fas in enumerate(fastas):        
+        fasta_stream = fasta.parse(fas)
+        all_fastas.update(fasta_stream)
+        for head, seq in fasta_stream.items():
+            gene_head = head.split(delimiter)
+            if gene_head[gene_pos] not in genes.keys():
+                genes[gene_head[gene_pos]] = []
+            genes[gene_head[gene_pos]].append(head)
+    #print(genes.keys())
+    for gene, entry in genes.items():
+        if len(entry) == min([len(entry) for entry in genes.values()]):
+            #print(gene)
+            smallest_subset = []
+            for ent in sorted(entry):
+                #print(ent)
+                smallest_subset.append(ent.split(delimiter)[id_position])
+    kept_genes = {}
+    kept_species = {}
+    for gene, entry in genes.items():
+        for ent in entry:
+            if ent.split(delimiter)[id_position] in smallest_subset:
+                if gene not in kept_genes.keys():
+                    kept_genes[gene] = []
+                if ent not in kept_species.keys():
+                    kept_species[ent] = []
+                kept_genes[gene].append(ent)
+                kept_species[ent].append(gene)
+    #print(all_fastas)
+    for gene, heads in kept_genes.items():
+        #print(head, all_fastas[head])
+        with open(gene+".fasta", "w") as output:    
+            for header in heads:
+                #all_fastas[header]
+                output.write(">"+header+"\n"+all_fastas[header]+"\n")
+    # concat
+    max_len = 70
+    concat = ""
+
+    for head in kept_species:
+        concat+=all_fastas[head]
+        chunks = [concat[i:i+max_len] for i in range(0, len(concat), max_len)]
+        with open(head.split(delimiter)[-1]+".concat.fasta", "w") as output:    
+            output.write(">"+delimiter.join(head.split(delimiter)[-2:])+"\n")
+            for elem in chunks:
+                output.write(elem+"\n")
+                
+def rename_from_id(ids_file, fastas, delimiter="~", id_indice=-1, species_name_pos=-3):
+
+    names = {}
+    with open(ids_file, "r") as idsinput:
+        for line in idsinput.readlines():
+            line = line.strip()
+            id = line.split(",")[id_indice].strip()
+            names[id] = line.split(",")[species_name_pos].strip()
+    for k, fas in enumerate(fastas):        
+        fasta_stream = fasta.parse(fas)
+        with open(fas, "w") as output:
+            for key, seq in fasta_stream.items():
+                head_lst = key.split(delimiter)
+                id = head_lst[id_indice]
+                #gene = head_lst[0]
+                #species_name = head_lst[1]
+                head_lst[1] = "_".join(names[id].split(" "))
+                head = delimiter.join(head_lst)
+                ret=">"+head+"\n"+seq+"\n"
+                output.write(ret)

@@ -102,16 +102,24 @@ def check_orientation(entry, eps=0.05):
 def analyse_file(f, fname):
     entries = split_entries(f)
     prop = []
+    # print header
     for entry in entries.values():
         orient = check_orientation(entry, eps=0.2)
         prop.append(orient['prop'])       
         # if(orient['q']=='same'):
-        print("Orientation(f/r):{}/{}({}): {} < {}".format(orient['f'],
-                                                      orient['r'],
-                                                      orient['prop'],
-                                                      orient['q'],
-                                                      fname))
-    print("Median:", np.median(prop))
+        # print("Orientation(f/r):{}/{}({}): {} < {}".format(orient['f'],
+        #                                               orient['r'],
+        #                                               orient['prop'],
+        #                                               orient['q'],
+        #                                               fname))
+        if "_Mito" in fname:
+            spec_name = fname.split("_Mito")[0]
+        else:
+            spec_name = fname.split(".")[0]
+        print(spec_name+","+str(orient['f'])+","+
+              str(orient['r'])+","+
+              str(orient['prop']))
+    #print("Median:", np.median(prop))
     
 def add_annotation(args,f_lst):
     ids = []
@@ -182,12 +190,25 @@ def main():
                         help="Post annotation treatment (needs a list of fasta" \
                         "files to be parsed)",
                         action="store", nargs="*")
+    parser.add_argument("-headermode",
+                        help="Specify header mode for postannot" \
+                        "(0, 1 or 2)",
+                        action="store", nargs="*")
     parser.add_argument("-clusters",
                         help="Clusters of genes from fasta files",
                         action="store", nargs="*")
     parser.add_argument("-intersect",
                         help="Get intersection of orthogroups given a set of " \
                         "orthologous sequences groups as fasta files",
+                        action="store", nargs="*")
+    parser.add_argument("-selectgroup",
+                        help="Select specific species from taxonomic characteristics",
+                        action="store", nargs="*")
+    parser.add_argument("-concat",
+                        help="Concatenate all fasta sequences that have all genes in common in a group of files",
+                        action="store", nargs="*")
+    parser.add_argument("-renamefromid",
+                        help="Rename fasta header accordingly to ID spec in taxonomy file",
                         action="store", nargs="*")
     # parser.add_argument("-ids",
     #                     help="Accession IDs file",
@@ -199,6 +220,7 @@ def main():
             data, f_lst = load_data(args)
             if args.a:
                 # if analysis is chosen
+                print("spcies_id,nb_fwd,nb_rev,prop")
                 for f in data.values():
                     fname = f_lst[list(data.values()).index(f)].split('/')[-1]
                     analyse_file(f, fname)
@@ -222,11 +244,21 @@ def main():
                 #tools.remove_spurious_clusters(fasta, ambiguous_open(args.clusters))
                 tools.split_clusters(fasta, ambiguous_open(args.clusters))
             elif args.ids:
-                tools.rename_mfannot_proteome(args.postannot, args.ids)
+                if args.headermode:
+                    tools.rename_mfannot_proteome(args.postannot, args.ids, headermode=args.headermode)
+                else:
+                    tools.rename_mfannot_proteome(args.postannot, args.ids)    
             else:
                 tools.detect_bad_genomes(fasta)
         if args.intersect:
             tools.ortho_intersect(args.intersect)
+        if args.selectgroup:
+            tools.subset_seq_from_tax(args.selectgroup[0], args.selectgroup[1],
+                                      args.selectgroup[2:])
+        if args.concat:
+            tools.list_common_genes(args.concat)
+        if args.renamefromid and args.ids:
+            tools.rename_from_id(args.ids, args.renamefromid)
     except:
         # if mandatory arguments are not specified
         traceback.print_exc()
