@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# fetch_list JGI_USERNAME TREE_PORTION_XML GZ_FILES_FOLDER
+# example:
+# fetch_list thomas.forest@etu.univ-paris-diderot.fr ../../pezizomycotina_mycocosm_assembled_unmasked.xml ../
+
+username=$1
+xml_file=$2
+filesdir=$3
+# store password in local variable
+read -s -p "Enter Password: " password
+# identification
+curl 'https://signon.jgi.doe.gov/signon/create' --data-urlencode 'login='$username'' --data-urlencode 'password='$password'' -c cookies > /dev/null
+while [ $(filestypes $filesdir | grep HTML | wc -l) -gt 0 -o $(filestypes $filesdir | grep empty | wc -l) -gt 0 ]                                                                                                 
+do                                                                                                                                                                                                                
+  curl 'https://signon.jgi.doe.gov/signon/create' --data-urlencode 'login='$username'' --data-urlencode 'password='$password'' -c cookies > /dev/null   
+  fileslist="$(grep "$(filestypes $filesdir | grep HTML | cut -d ":" -f 1 | cut -d "/" -f 2)" $xml_file | grep -oP 'url=\/(.*)(gz)' | cut -d "=" -f 2)"
+  for url in $fileslist; do
+    fetch_files $username $url $filesdir
+  done
+done

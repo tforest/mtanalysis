@@ -1,0 +1,9 @@
+#!/bin/bash
+## 
+outfolder=$2
+extension=$3
+blast_type=$4
+for filename in $1/*$extension; do
+    echo "$blast_type $filename > $outfolder/$filename.blast"
+    $blast_type $filename > $outfolder/$filename.blast
+done
