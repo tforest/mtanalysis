@@ -1,0 +1,5 @@
+#!/bin/bash
+
+for filename in $1/*.stockholm; do
+    hmmbuild $(echo $filename | cut -d "/" -f 2 | cut -d "." -f 1).hmm $filename | tee -a hmmbuild.log
+done
